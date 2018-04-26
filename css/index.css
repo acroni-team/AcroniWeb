@@ -33,3 +33,7 @@
 	align-self: center;
 	float:left;
 }
+
+#tolight:hover, #todark:hover{
+	transform: translateY(-5px);
+}
