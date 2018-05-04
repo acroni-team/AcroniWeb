@@ -10,17 +10,22 @@
 }
 
 #menu{
-	width:100%;
-	height:8vh;
+	width:80px;
+	height:100vh;
 	background-color: #8840b0;
+    float:left;
+    z-index: 2;
+    position: fixed;
 }
 
 #conteudo{
 	width:100%;
-	height:92vh;
+	height:100vh;
 	background-color: #f2f2f2;
 	transition: 0.3s;
 	display: flex;
+    float:left;
+    z-index: 0;
 }
 
 #tolight, #todark{
