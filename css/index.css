@@ -12,7 +12,7 @@
 #menu{
 	width:70px;
 	height:100vh;
-	background-color: #8840b0;
+	background-color: #53098e;
     float:left;
     z-index: 2;
     position: fixed;
@@ -58,6 +58,36 @@
     transition: 0.3s;
 		fill:#fff;
 }
+
+#icon{
+		margin: 0 auto;
+    transition: 0.3s;
+		fill:#fff;
+		display: block;
+}
+
+#icon-box{
+		margin: 0 auto;
+    transition: 0.3s;
+		fill:#fff;
+		display: none;
+}
+
+#icon-dark{
+		margin: 0 auto;
+    transition: 0.3s;
+		fill:#333;
+		display: none;
+}
+
+#icon-box-dark{
+		margin: 0 auto;
+    transition: 0.3s;
+		fill:#333;
+		display: block;
+}
+
+
 .icon-ld:hover{
 
     cursor: pointer;
