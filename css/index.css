@@ -44,20 +44,22 @@
 }
 
 #top-icons{
-    width:100%;
-    height:70%;
-    
-   
+    width:65%;
+    height:60%;
+
+
 }
 #bottom-icons{
-    width:100%;
-   height:30%; 
+    width:65%;
+   height:40%;
 }
 .icon-ld{
-    width:65px;
+
     transition: 0.3s;
+		fill:#fff;
 }
 .icon-ld:hover{
-    opacity:0.5;
+
     cursor: pointer;
+		fill:#000;
 }
