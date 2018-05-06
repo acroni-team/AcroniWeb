@@ -13,9 +13,10 @@
 	width:70px;
 	height:100vh;
 	background-color: #53098e;
-    float:left;
-    z-index: 2;
-    position: fixed;
+  float:left;
+  z-index: 2;
+  position: fixed;
+
 }
 
 #conteudo{
@@ -24,39 +25,39 @@
 	background-color: #f2f2f2;
 	transition: 0.3s;
 	display: flex;
-    float:left;
-    z-index: 0;
+  float:left;
+  z-index: 0;
 }
 
-#tolight, #todark{
-	transition: 0.3s;
-	font-size: 2vw;
-	color: #333;
-	font-family: 'open';
-	cursor:pointer;
-	user-select: none;
-	align-self: center;
-	float:left;
+#logo{
+	width:50%;
+	height:50px;
 }
-
-#tolight:hover, #todark:hover{
-	transform: translateY(-5px);
-}
-
 #top-icons{
-    width:65%;
-    height:60%;
-
-
+	width:55%;
+	height:100px;
 }
+
 #bottom-icons{
-    width:65%;
-   height:40%;
+	width:55%;
+	height: 200px;
+
+
+
 }
-.icon-ld{
+#icon-ld{
 
     transition: 0.3s;
 		fill:#fff;
+
+
+}
+
+.icon{
+		margin: 0 auto;
+    transition: 0.3s;
+		fill:#fff;
+		display: block;
 }
 
 #icon{
@@ -71,6 +72,7 @@
     transition: 0.3s;
 		fill:#fff;
 		display: none;
+		cursor: pointer;
 }
 
 #icon-dark{
@@ -78,6 +80,7 @@
     transition: 0.3s;
 		fill:#333;
 		display: none;
+
 }
 
 #icon-box-dark{
@@ -85,10 +88,11 @@
     transition: 0.3s;
 		fill:#333;
 		display: block;
+		cursor: pointer;
 }
 
 
-.icon-ld:hover{
+#icon-ld:hover{
 
     cursor: pointer;
 		fill:#000;
