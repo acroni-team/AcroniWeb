@@ -4,96 +4,99 @@
 
 @font-face {
 	font-family: 'open';
-    src: url('../fontes/openregular.ttf');
-    font-weight: normal;
-    font-style: normal;
+	src: url('../fontes/openregular.ttf');
+	font-weight: normal;
+	font-style: normal;
 }
 
 #menu{
-	width:70px;
+	width:60px;
 	height:100vh;
 	background-color: #53098e;
-  float:left;
-  z-index: 2;
-  position: fixed;
+	float:left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+#menu > #top-icons{
+	width:50%;
+	margin-bottom:10px;
+	margin-top:10px;
+
 
 }
 
+#menu > #bottom-icons{
+	width:50%;
+	align-self: flex-end;
+}
+
 #conteudo{
-	width:100%;
+	width:95%;
 	height:100vh;
 	background-color: #f2f2f2;
 	transition: 0.3s;
 	display: flex;
-  float:left;
-  z-index: 0;
+	float:left;
+	z-index: 0;
 }
 
 #logo{
 	width:50%;
 	height:50px;
 }
-#top-icons{
-	width:55%;
-	height:100px;
-}
 
-#bottom-icons{
-	width:55%;
-	height: 200px;
-
-
-
-}
 #icon-ld{
 
-    transition: 0.3s;
-		fill:#fff;
+	transition: 0.3s;
+	fill:#fff;
 
 
 }
 
 .icon{
-		margin: 0 auto;
-    transition: 0.3s;
-		fill:#fff;
-		display: block;
+	margin: 0 auto;
+	transition: 0.3s;
+	fill:#fff;
+	display: block;
+	margin-bottom:10px;
 }
 
 #icon{
-		margin: 0 auto;
-    transition: 0.3s;
-		fill:#fff;
-		display: block;
+	margin: 0 auto;
+	transition: 0.3s;
+	fill:#fff;
+	display: block;
 }
 
 #icon-box{
-		margin: 0 auto;
-    transition: 0.3s;
-		fill:#fff;
-		display: none;
-		cursor: pointer;
+	margin: 0 auto;
+	transition: 0.3s;
+	fill:#fff;
+	display: none;
+	cursor: pointer;
 }
 
 #icon-dark{
-		margin: 0 auto;
-    transition: 0.3s;
-		fill:#333;
-		display: none;
+	margin: 0 auto;
+	transition: 0.3s;
+	fill:#333;
+	display: none;
 
 }
 
 #icon-box-dark{
-		margin: 0 auto;
-    transition: 0.3s;
-		fill:#333;
-		display: block;
-		cursor: pointer;
+	margin: 0 auto;
+	transition: 0.3s;
+	fill:#333;
+	display: block;
+	cursor: pointer;
 }
 
 
 #icon-ld:hover{
 
-    cursor: pointer;
-		fill:#000;
+	cursor: pointer;
+	fill:#000;
 }
