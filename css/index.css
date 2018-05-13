@@ -7,7 +7,19 @@
 	src: url('../fontes/openregular.ttf');
 	font-weight: normal;
 	font-style: normal;
+
+	font-family: 'qnelas-light';
+	src: url('../fontes/QanelasSoft-UltraLight.tff');
+	font-weight: normal;
+	font-style: normal;
+
+	font-family: 'qnelas-bold';
+	src: url('../fontes/QanelasSoft-ExtraBold.tff');
+	font-weight: normal;
+	font-style: normal;
 }
+
+
 
 
 body{
@@ -33,14 +45,14 @@ body{
 }
 
 #fsection h1 {
-	
-	
-	
+
+
+
 	font-family: 'open';
 	color:#0093ff;
 	font-weight:bold;
 	font-size:130px;
-	
+
 
 
 }
@@ -57,7 +69,6 @@ body{
 	font-weight:bold;
 	font-size:15px;
 	margin-top: -30px;
-	
+
 
 }
-
