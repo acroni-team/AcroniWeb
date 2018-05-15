@@ -191,9 +191,21 @@ li{
 	font-family: 'open';
 	font-size: 40px;
 	color:#333;
+	transition:0.5s;
 }
-li.active{
+
+a{
+	text-decoration:none;
+	transition:1s;
+}
+
+li a:hover:not(active){
 	color:#0093ff;
+}
+
+li a.active{
+	color:#0093ff;
+	
 }
 
 ul{
@@ -245,13 +257,13 @@ ul{
 #rsection div{
 	position: absolute;
 	align-self: center;
-	top:30%;
+	top:30vh;
 	right:0;
 }
 
 #rsection img{
 	
-	width: 570px;
+	width: 500px;
 
 }
 
