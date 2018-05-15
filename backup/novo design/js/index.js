@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var v = true;
+
 	var c = true;
 	$("#icon-ld").click(function(){
 
@@ -44,27 +44,14 @@ $(document).ready(function(){
 					$("#icon-box-dark").css("display","block");
 					c = true;
 			});
-			
-			
-		$("#menu-icon").click(function(){
-			if(v == true){
-				$("#menu").fadeIn();
-				$("#login").fadeOut();
-				v = false;
-			}
-			else{
-				$("#menu").fadeOut();
-				$("#login").fadeIn();
-				v = true;
-			}
-		});
-			
-		
 
-		$("#menu-icon").click(function(){
-			$('#menu-icon').toggleClass('active');	
-						
-		});	 
+			$("#icon-search").click(function(){
+						 $("#search").fadeIn();
+		 });
+
+			 $("#search p").click(function(){
+						 $("#search").fadeOut();
+		 });
 
 });
 

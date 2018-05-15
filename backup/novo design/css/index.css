@@ -1,0 +1,95 @@
+/*Preparation part*/
+
+*{
+	margin: 0 auto
+}
+
+@font-face {
+	font-family: 'open';
+	src: url('../fontes/openregular.ttf');
+	font-weight: normal;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'qanelas-light';
+	src: url('../fontes/QanelasSoft-UltraLight.otf');
+	font-weight: lighter;
+	font-style: lighter;
+	}
+@font-face {
+	font-family: 'qanelas-bold';
+	src: url('../fontes/QanelasSoft-ExtraBold.otf');
+	font-weight: bold;
+	font-style: bold;
+}
+
+body{
+
+	background-color: #f2f2f2;
+}
+
+/*The Site*/
+
+nav{
+	position: fixed;
+	width: 100%;
+	height:50px;
+	background-color: red;
+	z-index: 2;
+}
+
+
+#lsection{
+	width:50%;
+	height:100vh;
+	background-color: #f2f2f2;
+	transition: 0.3s;
+	float:left;
+	z-index: 0;
+	display: flex;
+}
+
+
+#lsection div{
+	align-self: center;
+}
+
+#lsection h1 {
+	font-family: 'qanelas-bold';
+	color:#0093ff;
+	font-weight:bold;
+	font-size:130px;
+	text-align: center;
+}
+
+#lsection p{
+	text-align: center;
+	font-family: 'open';
+	color:#333;
+	font-weight:normal;
+	font-size:23px;
+	margin-top: -45px;
+}
+
+#rsection{
+	width:50%;
+	height:100vh;
+	background-color: #f2f2f2;
+	transition: 0.3s;
+	float:left;
+	z-index: 0;
+	display: flex;
+	align-items: center;
+}
+
+
+#rsection div{
+	position: absolute;
+	right:0;
+}
+
+#rsection img{
+	align-self: left;
+	width: 570px;
+
+}
