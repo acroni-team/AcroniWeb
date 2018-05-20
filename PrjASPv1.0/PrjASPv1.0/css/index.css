@@ -95,7 +95,7 @@ nav{
 	width:25px;
 	height: 3px;
 	background: #959595;
-	transition: 1s;
+	transition: 0.5s;
 
 
 
@@ -191,7 +191,7 @@ li{
 	font-family: 'open';
 	font-size: 40px;
 	color:#333;
-	transition:0.5s;
+	transition:0.3s;
 }
 
 li a {
@@ -200,7 +200,7 @@ li a {
 
 a {
     text-decoration: none;
-    transition: 1s;
+    transition: 0.3s;
     color:#333;
 }
 
@@ -292,4 +292,9 @@ ul{
 	width: 180px;
 	padding-top:15px;
 	padding-bottom:15px;
+}
+
+#buttons a:hover{
+	color:#f2f2f2;
+	background:#0093ff;
 }
