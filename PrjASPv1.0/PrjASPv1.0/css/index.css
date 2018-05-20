@@ -55,7 +55,7 @@ nav{
 #login p{
 	font-family:'qanelas-bold';
 	font-weight: bold;
-	color:#959595; 
+	color:#959595;
 	align-self: center;
 	z-index:2;
 
@@ -85,7 +85,7 @@ nav{
 	left:50%;
 	transform: translate(-50%,50%);
 	transition:0.5s;
-	
+
 }
 
 
@@ -118,7 +118,7 @@ nav{
 #menu-icon.active .hamburger{
 
 	background:rgba(0,0,0,0);
-	
+
 }
 
 #menu-icon.active .hamburger:before{
@@ -131,7 +131,7 @@ nav{
 
 	transform: rotate(-45deg);
 	top:0;
-	
+
 
 }
 
@@ -163,7 +163,7 @@ nav{
 #right{
 	display:flex;
 	align-items: center;
-	background: #f2f2f2; 
+	background: #f2f2f2;
 }
 #right div{
 	width: 60%;
@@ -179,7 +179,7 @@ nav{
 	padding: 10px;
 	font-family: 'open';
 	font-size: 15px;
-	
+
 }
 
 #menu input.placehoder{
@@ -196,6 +196,7 @@ li{
 
 a{
 	text-decoration:none;
+	color:#333;
 	transition:1s;
 }
 
@@ -205,7 +206,7 @@ li a:hover:not(active){
 
 li a.active{
 	color:#0093ff;
-	
+
 }
 
 ul{
@@ -262,9 +263,7 @@ ul{
 }
 
 #rsection img{
-	
+
 	width: 500px;
 
 }
-
-
