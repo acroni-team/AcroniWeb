@@ -1,0 +1,53 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Layout.master.vb" Inherits="PrjASPv1._0.Layout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title> Testando background </title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/tema.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+ 
+        <div id="menu">
+		<div id="left">
+			<img src="img/logo.png">
+		</div>
+		<div id="right">
+			<div>
+				<input type="text" placeholder="Busque aqui..." name="busca">
+				<ul id="menu-itens">
+					<li><a class="active" href="index.html">Home</a></li>
+					<li><a href="#">Loja</a></li>	
+					<li><a href="#">Download</a></li>
+					<li><a href="#">Fale Conosco</a></li>
+					<li><a href="#">Entrar/Cadastrar</a></li>
+				</ul>	
+			</div>
+		</div>
+	</div>		
+	<nav>
+		<div id="login">
+			<p>ENTRAR<p>
+
+		</div>
+		<div id="menu-icon">
+
+			<div class="hamburger"></div>
+		<div>
+	</nav>
+	
+	   
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+    </form>
+</body>
+</html>
