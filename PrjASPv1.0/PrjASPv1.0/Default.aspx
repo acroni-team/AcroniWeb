@@ -11,7 +11,7 @@
 			    <p> Mais que um teclado, O seu. Apoio ETAPA </p>
                 <div id="buttons">
                     <a href="#">Baixe o software</a>
-                    <a href="#">Teclados mecânicos</a>
+                    <a id="mudaTema">Teclados mecânicos</a>
                 </div>
 		    </div>
 	    </section>

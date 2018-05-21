@@ -44,8 +44,8 @@ $(document).ready(function(){
 					$("#icon-box-dark").css("display","block");
 					c = true;
 			});
-			
-			
+
+
 		$("#menu-icon").click(function(){
 			if(v == true){
 				$("#menu").fadeIn();
@@ -57,14 +57,17 @@ $(document).ready(function(){
 				$("#login").fadeIn();
 				v = true;
 			}
-		});
-			
-		
+    });
 
 		$("#menu-icon").click(function(){
-			$('#menu-icon').toggleClass('active');	
-						
-		});	 
+			$('#menu-icon').toggleClass('active');
+
+		});
+
+
+
+
+
 
 });
 

@@ -99,6 +99,7 @@
     <Content Include="img\logo.png" />
     <Content Include="js\index.js" />
     <Content Include="js\jquery.js" />
+    <Content Include="js\tema.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -58,7 +58,7 @@ nav{
 	color:#959595;
 	align-self: center;
 	z-index:2;
-
+	cursor: pointer;
 }
 
 
@@ -71,7 +71,7 @@ nav{
 	width: 100px;
 	margin: 0px;
 	z-index: 20;
-
+    cursor:pointer;
 }
 
 
@@ -287,14 +287,32 @@ ul{
 	border:2px solid #0093ff;
 	border-radius:5px;
 	color:#0093ff;
-	margin-top:10px;
 	margin:5px;
+	margin-top:20px;
 	width: 180px;
 	padding-top:15px;
 	padding-bottom:15px;
 }
 
+#buttons.active a{
+	font-family:'open';
+	font-size: 15px;
+	text-align: center;
+	float:left;
+	border:2px solid #0093ff;
+	border-radius:5px;
+	color:#0093ff;
+	margin:5px;
+	margin-top:20px;
+	width: 180px;
+	padding-top:15px;
+	padding-bottom:15px;
+	background:#0093ff;
+}
+
 #buttons a:hover{
 	color:#f2f2f2;
 	background:#0093ff;
+	transform: translateY(-5px);
+	cursor:pointer;
 }
