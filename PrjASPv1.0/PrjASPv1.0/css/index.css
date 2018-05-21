@@ -61,6 +61,9 @@ nav{
 	cursor: pointer;
 }
 
+#login.active p {
+    color:#f2f2f2
+}
 
 
 #menu-icon{
@@ -301,7 +304,7 @@ ul{
 	float:left;
 	border:2px solid #0093ff;
 	border-radius:5px;
-	color:#0093ff;
+	color:#f2f2f2;
 	margin:5px;
 	margin-top:20px;
 	width: 180px;
@@ -315,4 +318,8 @@ ul{
 	background:#0093ff;
 	transform: translateY(-5px);
 	cursor:pointer;
+}
+
+#lsection.active p{
+    color:#f2f2f2;
 }

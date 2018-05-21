@@ -28,3 +28,14 @@ C:\Users\TM\Desktop\html-simples\PrjASPv1.0\PrjASPv1.0\obj\Debug\PrjASPv1.0.vbpr
 C:\Users\TM\Desktop\html-simples\PrjASPv1.0\PrjASPv1.0\obj\Debug\PrjASPv1.0.dll
 C:\Users\TM\Desktop\html-simples\PrjASPv1.0\PrjASPv1.0\obj\Debug\PrjASPv1.0.xml
 C:\Users\TM\Desktop\html-simples\PrjASPv1.0\PrjASPv1.0\obj\Debug\PrjASPv1.0.pdb
+C:\Users\gui_m\Desktop\TCM\html-simples\PrjASPv1.0\PrjASPv1.0\bin\PrjASPv1.0.dll.config
+C:\Users\gui_m\Desktop\TCM\html-simples\PrjASPv1.0\PrjASPv1.0\bin\PrjASPv1.0.dll
+C:\Users\gui_m\Desktop\TCM\html-simples\PrjASPv1.0\PrjASPv1.0\bin\PrjASPv1.0.pdb
+C:\Users\gui_m\Desktop\TCM\html-simples\PrjASPv1.0\PrjASPv1.0\bin\PrjASPv1.0.xml
+C:\Users\gui_m\Desktop\TCM\html-simples\PrjASPv1.0\PrjASPv1.0\obj\Debug\PrjASPv1.0.vbprojResolveAssemblyReference.cache
+C:\Users\gui_m\Desktop\TCM\html-simples\PrjASPv1.0\PrjASPv1.0\obj\Debug\PrjASPv1._0.Resources.resources
+C:\Users\gui_m\Desktop\TCM\html-simples\PrjASPv1.0\PrjASPv1.0\obj\Debug\PrjASPv1.0.vbproj.GenerateResource.cache
+C:\Users\gui_m\Desktop\TCM\html-simples\PrjASPv1.0\PrjASPv1.0\obj\Debug\PrjASPv1.0.vbproj.CoreCompileInputs.cache
+C:\Users\gui_m\Desktop\TCM\html-simples\PrjASPv1.0\PrjASPv1.0\obj\Debug\PrjASPv1.0.dll
+C:\Users\gui_m\Desktop\TCM\html-simples\PrjASPv1.0\PrjASPv1.0\obj\Debug\PrjASPv1.0.xml
+C:\Users\gui_m\Desktop\TCM\html-simples\PrjASPv1.0\PrjASPv1.0\obj\Debug\PrjASPv1.0.pdb
