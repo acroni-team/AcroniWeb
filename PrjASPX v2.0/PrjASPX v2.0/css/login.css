@@ -1,0 +1,28 @@
+/*Login css*/
+
+section {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+#right {
+    
+
+}
+
+#right input {
+    background: #fff;
+    width: 100%;
+    height: 35px;
+    border: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    padding-left: 15px;
+    font-family: 'open';
+    font-size: 15px;
+    color: #0093ff;
+    caret-color: #0093ff;
+    user-select: all;
+}
