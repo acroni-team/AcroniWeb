@@ -204,6 +204,8 @@ nav{
     outline-color:#0093ff;
 }
 
+/*light*/
+
 li{
 	text-align: right;
 	font-family: 'open';
@@ -215,8 +217,6 @@ li{
 li a {
     color: #333;
 }
-
-
 
 a {
     text-decoration: none;
@@ -232,14 +232,21 @@ li a.active{
 	color:#0093ff;
 
 }
+
+/*dark*/
+
 li.active a.active {
     color: #0093ff;
 }
 li.active a {
     color:#f2f2f2;
 }
+li.active {
+    color:#f2f2f2;
+}
+
 li.active a:hover:not(.active) {
-    color:#0093ff;
+    color: #0093ff;
 }
 
 
