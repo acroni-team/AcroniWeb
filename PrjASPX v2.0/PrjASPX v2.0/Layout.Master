@@ -22,11 +22,11 @@
 			<div>
 				<input id="busca" type="text" placeholder="Busque aqui..." name="busca" />
 				<ul id="menu-itens">
-					<li>Home</li>
-					<li>Loja</li>	
-					<li>Download</li>
-					<li>Fale Conosco</li>
-					<li>Entrar/Cadastrar</li>
+					<li><a class="active">Home</a></li>
+					<li><a href="#">Loja</a></li>	
+					<li><a href="#">Download</a></li>
+					<li><a href="#">Fale Conosco</a></li>
+					<li><a href="#">Entrar/Cadastrar</a></li>
 				</ul>	
 			</div>
 		</div>
