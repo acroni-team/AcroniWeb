@@ -1,0 +1,94 @@
+*{
+	margin: 0 auto;
+	font-family: 'openregular';
+}
+
+@font-face {font-family: 'openregular';
+    src: url('../fontes/openregular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#esquerda, #direita{
+	
+	background-color: #f2f2f2;
+	width:50%;
+	height:100vh;
+	float:left;
+	display: flex;
+}
+
+#esquerda{
+	
+	align-content: center;	
+}
+
+#direita{
+
+}
+
+#direita div{
+	background-color:#f2f2f2;
+	width:100%;
+	float:left;
+	margin-top:23%;
+}
+
+#direita div p:first-of-type{
+	color:#0093ff;
+	font-size:34px;
+	margin-bottom:15px;
+}
+
+#direita div p {
+	color:#333;
+	font-size:13.5px;
+	margin-bottom:5px;
+}
+
+input[type="text"], input[type="password"]{
+	outline:none;
+	border:1.5px solid #fff;
+	border-radius:5px;
+	padding:17px;
+	font-size:17px;
+	caret-color: #0093ff;
+	color:#333;
+	width:70%;
+	transition: 0.3s;
+	margin-bottom:15px;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder{
+	color:rgba(51, 51, 51, 0.60);
+	transition:0.3s;
+}
+
+input[type="text"]:focus::placeholder, input[type="password"]:focus::placeholder{
+	color:transparent;
+}
+
+input[type="text"]::selection, input[type="password"]::selection{
+	background:rgba(51, 51, 51, 0.45);
+	color:#fff;
+}
+
+button{
+	width:25%;
+	border:none;
+	background:#0093ff;
+	border-radius:5px;
+	padding:20px;
+	color:#f2f2f2;
+	font-size:17px;
+	outline: none;
+	cursor: pointer;
+	transition:0.3s ease-out;
+	float:left;
+	position:relative;
+	top:0px;
+}
+
+.confirmar{
+	display:none;
+}
