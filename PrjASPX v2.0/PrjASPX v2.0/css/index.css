@@ -20,22 +20,22 @@
 	align-self: center;
 }
 
-#lsection h1 {
-	font-family: 'qanelas-bold';
-	color:#0093ff;
-	font-weight:bold;
-	font-size:120px;
-	text-align: center;
-	transition:0.3s;
+#lsection h1, h1.title {
+    font-family: 'qanelas-bold';
+    color: #0093ff;
+    font-weight: bold;
+    font-size: 120px;
+    text-align: center;
+    transition: 0.3s;
 }
 
-#lsection.active h1 {
+#lsection.active h1,{
 
 	color:#f2f2f2;
 	
 }
 
-#lsection p{
+#lsection p, p.desc{
 	text-align: center;
 	font-family: 'open';
 	color:#333;
@@ -66,21 +66,38 @@
 	align-self:center;
 
 }
-#buttons .blue{
-	font-family:'open';
-	font-size: 15px;
-	text-align: center;
-	float:left;
-	border:2px solid #0093ff;
-	border-radius:5px;
-	color:#0093ff;
-	margin:5px;
-	margin-top:20px;
-	width: 165px;
-	padding-top:15px;
-	padding-bottom:15px;
-    transition:0.3s;
-    background:#f2f2f2;
+
+.blue {
+    font-family: 'open';
+    font-size: 15px;
+    text-align: center;
+    float: left;
+    border: 2px solid #0093ff;
+    border-radius: 5px;
+    color: #f2f2f2;
+    margin: 5px;
+    margin-top: 20px;
+    width: 165px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #0093ff;
+}
+
+#buttons .blue {
+    font-family: 'open';
+    font-size: 15px;
+    text-align: center;
+    float: left;
+    border: 2px solid #0093ff;
+    border-radius: 5px;
+    color: #0093ff;
+    margin: 5px;
+    margin-top: 20px;
+    width: 165px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: 0.3s;
+    background: #f2f2f2;
 }
 
 

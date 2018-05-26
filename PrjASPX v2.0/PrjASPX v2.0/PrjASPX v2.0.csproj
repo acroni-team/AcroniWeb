@@ -60,9 +60,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\login.css" />
+    <Content Include="css\fale-conosco.css" />
     <Content Include="css\main.css" />
     <Content Include="css\index.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Fale-conosco.aspx" />
     <Content Include="icon\adjust.svg" />
     <Content Include="icon\check-square.svg" />
     <Content Include="icon\download.svg" />
@@ -74,6 +76,8 @@
     <Content Include="icon\square.svg" />
     <Content Include="img\apple.jpg" />
     <Content Include="img\apple.png" />
+    <Content Include="img\fale-back.jpg" />
+    <Content Include="img\justsauce.jpg" />
     <Content Include="img\logo.png" />
     <Content Include="img\logo2.png" />
     <Content Include="js\index.js" />
@@ -89,6 +93,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fale-conosco.aspx.cs">
+      <DependentUpon>Fale-conosco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fale-conosco.aspx.designer.cs">
+      <DependentUpon>Fale-conosco.aspx</DependentUpon>
     </Compile>
     <Compile Include="Layout.Master.cs">
       <DependentUpon>Layout.Master</DependentUpon>

@@ -7,7 +7,7 @@
     <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <section id="lsection">
 		<div>
-			<h1> Acroni </h1><br>
+			<h1> Acroni </h1><br/>
 			<p> Mais que um teclado. O seu.</p>
 			<div id="buttons">
                 <asp:Button class="blue" runat="server" Text="Baixar o software" />
