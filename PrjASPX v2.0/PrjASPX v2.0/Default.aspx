@@ -10,8 +10,8 @@
 			<h1> Acroni </h1><br>
 			<p> Mais que um teclado. O seu.</p>
 			<div id="buttons">
-                <a href="#">Baixe o software</a> 
-                <a href="#" id="muda">Teclados mecânicos</a>
+                <asp:Button class="blue" runat="server" Text="Baixar o software" />
+                <asp:Button class="blue" runat="server"  Text="Teclados mecânicos" OnClientClick="return false;" />
             </div>
 		</div>
 	    </section>

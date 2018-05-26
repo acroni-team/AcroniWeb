@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     var alo = true;
-    $("#muda").click(function () {
+    $(".blue").click(function () {
 
        
         ////$('#menu-icon').toggleClass('active');
