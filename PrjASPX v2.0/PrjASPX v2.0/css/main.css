@@ -167,6 +167,22 @@ nav{
 	align-items: center;
 }
 
+.st0 {
+    fill: #333333;
+}
+
+.st1 {
+    fill: #3D74DB;
+}
+
+.st2 {
+    fill: #F2F2F2;
+}
+
+#logo {
+    width:500px;
+} 
+
 
 #right{
 	display:flex;
@@ -176,6 +192,7 @@ nav{
 #right div{
 	width: 60%;
 }
+
 
 #menu input{
 
