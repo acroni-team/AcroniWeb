@@ -56,7 +56,7 @@ nav{
 
 }
 
-#login p{
+#login a{
 	font-family:'qanelas-bold';
 	font-weight: bold;
 	color:#959595;
@@ -66,7 +66,7 @@ nav{
 	transition:0.3s;
 }
 
-#login.active p {
+#login.active a {
     color:#f2f2f2
 }
 
