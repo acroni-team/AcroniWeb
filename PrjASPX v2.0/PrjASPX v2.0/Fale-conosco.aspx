@@ -31,4 +31,7 @@
             </form>
         </div>
     </section>
+    <script>
+        document.getElementById("fale-conosco").classList.add("active");
+    </script>
 </asp:Content>

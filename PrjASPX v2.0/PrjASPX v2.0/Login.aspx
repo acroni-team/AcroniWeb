@@ -26,4 +26,7 @@
 			</form>
         </div>
     </section>
+    <script>
+        document.getElementById("entrar").classList.add("active");
+    </script>
 </asp:Content>

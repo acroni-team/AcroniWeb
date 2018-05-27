@@ -24,11 +24,11 @@
 			<div>
 				<input id="busca" type="text" placeholder="Busque aqui..." name="busca" />
 				<ul id="menu-itens">
-					<li><a class="active">Home</a></li>
+					<li><a id="home" href="Default.aspx">Home</a></li>
 					<li><a href="#">Loja</a></li>	
 					<li><a href="#">Download</a></li>
-					<li><a href="Fale-conosco.aspx">Fale Conosco</a></li>
-					<li><a href="Login.aspx">Entrar/Cadastrar</a></li>
+					<li><a id="fale-conosco" href="Fale-conosco.aspx">Fale Conosco</a></li>
+					<li><a id="entrar" href="Login.aspx">Entrar/Cadastrar</a></li>
 				</ul>	
 			</div>
 		</div>
