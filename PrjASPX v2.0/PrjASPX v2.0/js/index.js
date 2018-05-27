@@ -46,29 +46,24 @@ $(document).ready(function(){
 			});
 			
 			
-		$("#menu-icon").click(function(){
+    $("#menu-icon").click(function () {
+        $('#menu-icon').toggleClass('active');	
 			if(v == true){
 				$("#menu").fadeIn();
 				$("#login").fadeOut();
-               
+                $('body').css("overflow-y", "hidden");
 
 				v = false;
 			}
 			else{
 				$("#menu").fadeOut();
-				$("#login").fadeIn();
+                $("#login").fadeIn();
+                $('body').css("overflow-y", "auto");
 				
 				v = true;
 			}
 		});
 			
-		
-
-		$("#menu-icon").click(function(){
-			$('#menu-icon').toggleClass('active');		
-						
-		});
-
 		$('#busca').focus(function () {
             $('#busca').attr("placeholder","")
 		});

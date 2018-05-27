@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.caixxinha,.confirmar').focus(function() { 
+    $('.caixxinha,.confirmar,.campos-pergunta,.pergunta').focus(function() { 
 		$(this).css("border", "1.5px solid #0093ff");
 	})
 	
@@ -9,7 +9,7 @@ $(document).ready(function(){
 		$('.confirmar').slideToggle();
 	})
 	
-	$('.caixxinha,.confirmar').blur(function() { 
+    $('.caixxinha,.confirmar,.campos-pergunta,.pergunta').blur(function() { 
 		$(this).css("border", "1.5px solid #fff");
 	})
 })				 

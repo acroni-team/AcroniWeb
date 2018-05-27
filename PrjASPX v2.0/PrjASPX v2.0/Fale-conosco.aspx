@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" type="text/css" href="css/fale-conosco.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="js/login.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <section class="tela-inteira">
@@ -25,7 +26,7 @@
                 <asp:TextBox class="campos-pergunta" runat="server" type="text" placeholder="Nome"></asp:TextBox>
                 <asp:TextBox class="campos-pergunta" runat="server" type="text" placeholder="Sobrenome"></asp:TextBox><br/>
                 <asp:TextBox class="campos-pergunta email" runat="server" type="text" placeholder="E-mail"></asp:TextBox>
-                <textarea class="pergunta" id="" cols="61" rows="15" placeholder="Sua pergunta"></textarea>
+                <textarea class="pergunta" id="" cols="62" rows="15" placeholder="Sua pergunta"></textarea>
                 <asp:Button class="blue" type="button" Text="Enviar" runat="server"></asp:Button>
             </form>
         </div>

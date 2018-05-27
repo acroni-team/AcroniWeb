@@ -43,7 +43,7 @@ p.desc-dark {
 
 section.form {
     background: url(../img/justsauce.jpg) no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
 }
 
 div#formulario {
@@ -61,8 +61,7 @@ div#formulario {
     }
 
 input.campos-pergunta {
-    border-radius: 0.4vw;
-    width: 45.1%;
+    width: 300px;
     height: 40px;
     background: #fff;
     padding: 10px;
@@ -70,11 +69,29 @@ input.campos-pergunta {
     font-size: 20px;
     border: none;
     margin-left: 2px;
+    border: #fff;
+    border-radius: 3px;
+    padding-left: 15px;
+    color: #0093ff;
+    caret-color: #0093ff;
+    user-select: all;
+}
+
+.input.campos-pergunta {
+    outline: none;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    padding: 17px;
+    font-size: 17px;
+    caret-color: #0093ff;
+    color: #333;
+    transition: 0.3s;
+    margin-bottom: 15px;
 }
 
 input.email {
     margin-top: 5px;
-    width: 94.1%;
+    width: 632px;
 }
 
 textarea.pergunta {
@@ -87,5 +104,20 @@ textarea.pergunta {
     margin-left: 2px;
     padding: 10px;
     resize: none;
+    border: #fff;
+    border-radius: 3px;
 }
 
+.campos-pergunta::-webkit-input-placeholder, .pergunta::-webkit-input-placeholder {
+    color: rgba(51, 51, 51, 0.60);
+    transition: 0.3s;
+}
+
+input.campos-pergunta:focus::-webkit-input-placeholder, .pergunta:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.campos-pergunta::selection, .pergunta::selection {
+    background: rgba(51, 51, 51, 0.45);
+    color: #fff;
+}
