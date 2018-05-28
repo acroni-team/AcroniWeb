@@ -2,7 +2,7 @@
 
     <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        
+        <script type="text/javascript" src="js/tema.js"></script>
 </asp:Content>
 
     <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -11,8 +11,8 @@
 			<h1> Acroni </h1><br/>
 			<p> Mais que um teclado. O seu.</p>
 			<div id="buttons">
-                <asp:Button class="blue" runat="server" Text="Baixar o software" />
-                <asp:Button class="blue" runat="server"  Text="Teclados mecânicos" OnClientClick="return false;" />
+                <asp:Button class="blue2" runat="server" Text="Fale conosco" OnClick="Unnamed1_Click"/>
+                <asp:Button class="blue" runat="server"  Text="Faça o login" OnClick="Unnamed2_Click" /> <%--OnClientClick="return false;"--%>
             </div>
 		</div>
 	    </section>
@@ -21,7 +21,6 @@
 			    <img src="img/apple.png" id="img" />
 		    </div>
 	    </section>
-	    <section style="height:1000px; width:100%;"></section>
         <script>
             document.getElementById("home").classList.add("active");
         </script>

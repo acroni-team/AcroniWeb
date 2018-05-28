@@ -33,7 +33,7 @@ section {
     user-select: all;
 }
 
-#right div p {
+#lblMsg {
     color: #333;
     font-size: 13.5px;
     margin-bottom: 5px;

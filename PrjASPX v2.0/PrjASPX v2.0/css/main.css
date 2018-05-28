@@ -44,7 +44,7 @@ nav{
 	background-color: transparent;
 	z-index: 999;
 	display:flex;
-	transition:0.3s
+	transition:0.3s;
     
 }
 
@@ -73,15 +73,16 @@ nav{
 }
 
 
-#menu-icon{
-	position: absolute;
-	right:0;
-	background: transparent;
-	height: 100%;
-	width: 100px;
-	margin: 0px;
-	z-index: 20;
-    cursor:pointer;
+#menu-icon {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    height: 100%;
+    width: 100px;
+    margin: 0px;
+    z-index: 20;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 

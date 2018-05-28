@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
-	<script type="text/javascript" src="js/tema.js"></script>
+	
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -25,8 +25,8 @@
 				<input id="busca" type="text" placeholder="Busque aqui..." name="busca" />
 				<ul id="menu-itens">
 					<li><a id="home" href="Default.aspx">Home</a></li>
-					<li><a href="#">Loja</a></li>	
-					<li><a href="#">Download</a></li>
+					<li><a href="Construct.aspx">Loja</a></li>	
+					<li><a href="Construct.aspx">Download</a></li>
 					<li><a id="fale-conosco" href="Fale-conosco.aspx">Fale Conosco</a></li>
 					<li><a id="entrar" href="Login.aspx">Entrar/Cadastrar</a></li>
 				</ul>	
@@ -35,7 +35,7 @@
 	</div>		
 	<nav>
 		<div id="login">
-			<a href="Login.aspx">ENTRAR</a>
+			<a href="Default.aspx">HOME</a>
 
 		</div>
 		<div id="menu-icon">

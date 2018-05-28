@@ -16,11 +16,11 @@
            <form method="post">
 				<div>
 					<p>Login</p>
-					<p>Entre para acessar sua galeria.</p>
-					<asp:Textbox class="caixxinha" type="text" placeholder="Usuário" spellcheck="false" autofocus required runat="server"></asp:Textbox>
-					<asp:Textbox class="caixxinha" type="password" placeholder="Senha" spellcheck="false" required style="margin-bottom:px;" runat="server"></asp:Textbox>
-					<asp:Textbox type="password" placeholder="Confirmar senha" spellcheck="false" class="confirmar" style="overflow:hidden" runat="server"></asp:Textbox>
-					<asp:Button class="but" type="button" style="margin-right:10px;" Text="Entrar" runat="server" />
+					<asp:Label runat="server" Text="Entre para acessar sua galeria" id="lblMsg"></asp:Label>
+					<asp:Textbox id="txtUsu" class="caixxinha" type="text" placeholder="Usuário" spellcheck="false" autofocus required runat="server"></asp:Textbox>
+					<asp:Textbox id="txtPass" class="caixxinha" type="password" placeholder="Senha" spellcheck="false" required style="margin-bottom:px;" runat="server"></asp:Textbox>
+					<asp:Textbox id="txtCpass" type="password" placeholder="Confirmar senha" spellcheck="false" class="confirmar" style="overflow:hidden" runat="server"></asp:Textbox>
+					<asp:Button ID="btnEntra" class="but" type="button" style="margin-right:10px;" Text="Entrar" runat="server" OnClick="btnEntra_Click" />
 					<asp:button type="button" class="cadastro" Text="Cadastre-se" runat="server" />
 				</div>
 			</form>
