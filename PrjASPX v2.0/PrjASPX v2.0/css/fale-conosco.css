@@ -122,18 +122,25 @@ input.campos-pergunta:focus::-webkit-input-placeholder, .pergunta:focus::-webkit
     color: #fff;
 }
 
-.blue {
+.azul {
     font-family: 'open';
     font-size: 15px;
     text-align: center;
     float: left;
     border: 2px solid #0093ff;
     border-radius: 5px;
-    color: #f2f2f2;
+    color: #0093ff;
     margin: 5px;
     margin-top: 20px;
     width: 165px;
     padding-top: 15px;
     padding-bottom: 15px;
+    background: #f2f2f2;
+}
+
+.azul:hover {
+    color: #f2f2f2;
     background: #0093ff;
+    transform: translateY(0px);
+    cursor: pointer;
 }

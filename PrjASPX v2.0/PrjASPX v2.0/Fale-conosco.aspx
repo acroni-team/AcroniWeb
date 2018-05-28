@@ -27,7 +27,7 @@
                 <asp:TextBox class="campos-pergunta" runat="server" type="text" placeholder="Sobrenome"></asp:TextBox><br/>
                 <asp:TextBox class="campos-pergunta email" runat="server" type="text" placeholder="E-mail"></asp:TextBox>
                 <textarea class="pergunta" id="" cols="62" rows="15" placeholder="Sua pergunta"></textarea>
-                <asp:Button class="blue" type="button" Text="Enviar" runat="server"></asp:Button>
+                <asp:Button class="azul" type="button" Text="Enviar" runat="server"></asp:Button>
             </form>
         </div>
     </section>

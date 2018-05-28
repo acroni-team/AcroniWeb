@@ -7,19 +7,19 @@ using System.Web.UI.WebControls;
 
 namespace PrjASPX_v2._0
 {
-    
+
 
     public partial class Login : System.Web.UI.Page
     {
-        
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        static String usu ;
-        static String pass ;
+        static String usu;
+        static String pass;
         String cpass;
 
 
@@ -31,7 +31,6 @@ namespace PrjASPX_v2._0
                 lblMsg.ForeColor = System.Drawing.Color.Green;
                 usu = txtUsu.Text + "";
                 pass = txtPass.Text + "";
-                cpass = txtCpass.Text + "";
             }
             else
             {
@@ -40,11 +39,12 @@ namespace PrjASPX_v2._0
                 lblMsg.ForeColor = System.Drawing.Color.Red;
             }
         }
+        
 
 
         protected void btnEntra_Click(object sender, EventArgs e)
         {
-            if (txtUsu.Text == "1" && txtPass.Text == "1")
+            if (txtUsu.Text == usu && txtPass.Text == pass)
             {
                 Session["logado"] = "1";
                 Response.Redirect("AreaRestrita.aspx");

@@ -11,7 +11,7 @@
             <h1>Em Breve</h1>
             <p>Estamos trabalhando para construir essa página</p>
             <input style="width:500px;margin-top:30px;" class="caixxinha" type="text" placeholder="Entre com seu email e seja notificado" name="notifica" />
-            <asp:Button class="button" type="button" Text="Entrar" runat="server"/>
+            <asp:Button class="button" type="button" Text="Enviar" runat="server"/>
         </div>
     </section>
 </asp:Content>
