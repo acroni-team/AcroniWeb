@@ -21,7 +21,7 @@
 					<asp:Textbox id="txtPass" class="caixxinha" type="password" placeholder="Senha" spellcheck="false" required style="margin-bottom:px;" runat="server"></asp:Textbox>
 					<asp:Textbox id="txtCpass" type="password" placeholder="Confirmar senha" spellcheck="false" class="confirmar" style="overflow:hidden" runat="server"></asp:Textbox>
 					<asp:Button ID="btnEntra" class="but" type="button" style="margin-right:10px;" Text="Entrar" runat="server" OnClick="btnEntra_Click" />
-					<asp:button type="button" class="cadastro" Text="Cadastre-se" runat="server" />
+					<%--<asp:button ID="btnCad" type="button" class="cadastro" Text="Cadastre-se" runat="server" OnClick="btnCad_Click" />--%>
 				</div>
 			</form>
         </div>
