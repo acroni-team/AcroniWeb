@@ -1,0 +1,3 @@
+-consertar o placehoder do busca (menu)
+-Consertar o bug de abrir varias vezes do menu
+-Arrumar as transitions (principalmente do teclado)
