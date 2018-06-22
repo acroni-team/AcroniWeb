@@ -5,8 +5,9 @@ $(document).ready(function(){
 	
 	$('.cadastro').click(function(){
 		
-		$('.but,.cadastro').css("transform", "translateY(0px)");
-		$('.confirmar').slideToggle();
+        //('.but,.cadastro').css("transform", "translateY(0px)");
+        $('.confirmar').fadeIn();
+        $('.centralizalogin').css("height", "240px");
 	})
 	
     $('.caixxinha,.confirmar,.campos-pergunta,.pergunta').blur(function() { 

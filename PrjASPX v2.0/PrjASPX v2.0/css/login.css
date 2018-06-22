@@ -1,5 +1,7 @@
 /*Login css*/
 
+
+
 * {
     margin: 0 auto;
     font-family: 'open';
@@ -57,4 +59,20 @@ section {
 
 .confirmar {
     display: none;
+}
+
+
+.centralizalogin {
+    
+    overflow: auto;
+    height: 150px;
+}
+
+.centralizalogin::-webkit-scrollbar {
+    width:0px;
+}
+
+html, body {
+    height: 99%;
+    overflow: hidden;
 }
