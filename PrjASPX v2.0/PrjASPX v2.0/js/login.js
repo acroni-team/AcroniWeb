@@ -1,13 +1,22 @@
-$(document).ready(function(){
+$(document).ready(function () {
+    var bool = false;
     $('.caixxinha,.confirmar,.campos-pergunta,.pergunta').focus(function() { 
 		$(this).css("border", "1.5px solid #0093ff");
 	})
 	
 	$('.cadastro').click(function(){
-		
-        //('.but,.cadastro').css("transform", "translateY(0px)");
-        $('.confirmar').fadeIn();
-        $('.centralizalogin').css("height", "240px");
+        if (bool == false) {
+            //('.but,.cadastro').css("transform", "translateY(0px)");
+
+            $('.centralizalogin').css("height", "225px");
+            $('.confirmar').fadeIn();
+            bool = true;
+        }
+        else {
+            $('.centralizalogin').css("height", "150px");
+            $('.confirmar').fadeOut();
+            bool = false;
+        }
 	})
 	
     $('.caixxinha,.confirmar,.campos-pergunta,.pergunta').blur(function() { 

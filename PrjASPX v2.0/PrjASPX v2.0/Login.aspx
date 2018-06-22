@@ -17,8 +17,7 @@
 				<div style="padding:0;">
 					<p>Login</p>
 					<asp:Label runat="server" Text="Entre para acessar sua galeria" id="lblMsg"></asp:Label>
-                    <div class="centralizalogin2" style="width: 100%;">
-                        <div class="centralizalogin" style="width: 99%;">
+                       <div class="centralizalogin" style="width: 99%;">
 					        <asp:Textbox id="txtUsu" class="caixxinha" type="text" placeholder="Usuário" spellcheck="false" autofocus required runat="server"></asp:Textbox>
                             <asp:Textbox id="txtNome" class="confirmar" type="text" placeholder="Nome" spellcheck="false" autofocus required runat="server"></asp:Textbox>
                             <asp:Textbox id="txtEmail" class="confirmar" type="text" placeholder="Email" spellcheck="false" autofocus required runat="server"></asp:Textbox>
@@ -32,7 +31,6 @@
 					        <asp:Textbox id="txtPass" class="caixxinha" type="password" placeholder="Senha" spellcheck="false" required style="margin-bottom:px;" runat="server"></asp:Textbox>
 					        <asp:Textbox id="txtCpass" type="password" placeholder="Confirmar senha" spellcheck="false" class="confirmar" style="overflow:hidden" runat="server"></asp:Textbox>
                         </div>
-                    </div>
 					<asp:Button ID="btnEntra" class="blue" type="button" style="margin-right:10px;" Text="Entrar" runat="server" OnClick="btnEntra_Click" />
 					<asp:button ID="btnCad" type="button" class="cadastro" Text="Cadastre-se" runat="server" OnClick="btnCad_Click" />
 				</div>

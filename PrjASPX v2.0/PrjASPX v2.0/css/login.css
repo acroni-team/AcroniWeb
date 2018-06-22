@@ -59,16 +59,16 @@ section {
 
 .confirmar {
     display: none;
+
 }
 
 
-.centralizalogin2 {
-    overflow: hidden;
-    height: 150px;
-}  
-.centralizalogin{
+
+.centralizalogin {
     overflow: auto;
     height: 150px;
+    transition: 0.3s;
+    -ms-overflow-style: none;
 }
 
 .centralizalogin::-webkit-scrollbar {
