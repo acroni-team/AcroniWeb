@@ -11,8 +11,8 @@
 			<h1> Acroni </h1><br/>
 			<p> Mais que um teclado. O seu.</p>
 			<div id="buttons">
-                <asp:Button class="blue" runat="server" Text="Baixar o Software" OnClick="Unnamed1_Click" />
-                <asp:Button id="muda" class="blue" runat="server"  Text="Teclados mecânicos" OnClick="Unnamed2_Click" ClientIDMode="Static" OnClientClick="return false;" /> <%--OnClientClick="return false;"--%>
+                <asp:Button class="blue" runat="server" Text="Fale conosco" OnClick="Unnamed1_Click" />
+               <asp:Button id="muda2" class="blue" runat="server"  Text="Faça o login" OnClick="Unnamed2_Click"/> <!-- OnClientClick="return false;">   ClientIDMode="Static" OnClientClick="return false;--> 
             </div>
 		</div>
 	    </section>

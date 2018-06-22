@@ -18,25 +18,12 @@ section {
     margin-bottom: 15px;
 }
 
-.caixxinha, .confirmar {
-    background: #fff;
-    width: 200px;
-    height: 25px;
-    border: #fff;
-    border-radius: 3px;
-    padding: 10px;
-    padding-left: 15px;
-    font-family: 'open';
-    font-size: 15px;
-    color: #0093ff;
-    caret-color: #0093ff;
-    user-select: all;
-}
+
 
 #lblMsg {
     color: #333;
     font-size: 13.5px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .caixxinha, .confirmar {
@@ -47,7 +34,7 @@ section {
     font-size: 17px;
     caret-color: #0093ff;
     color: #333;
-    width: 70%;
+    width: 370px;
     transition: 0.3s;
     margin-bottom: 15px;
 }

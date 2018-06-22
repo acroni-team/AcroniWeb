@@ -84,13 +84,19 @@ body{
         transform: translateY(0px);
         cursor: pointer;
     }
+.blue:hover, .cadastro:hover {
+    color: #f2f2f2;
+    background: #0093ff;
+    transform: translateY(0px);
+    cursor: pointer;
+}
 
-    #buttons.active .blue:hover{
-        color: #f2f2f2;
-        background: transparent;
-        transform: translateY(0px);
-        cursor: pointer;
-    }
+#buttons.active .blue:hover {
+    color: #f2f2f2;
+    background: transparent;
+    transform: translateY(0px);
+    cursor: pointer;
+}
 
 
 /*nav */

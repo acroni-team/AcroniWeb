@@ -13,13 +13,13 @@ namespace PrjASPX_v2._0 {
     public partial class Default {
         
         /// <summary>
-        /// Controle muda.
+        /// Controle muda2.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button muda;
+        protected global::System.Web.UI.WebControls.Button muda2;
         
         /// <summary>
         /// Controle PlaceHolder1.
