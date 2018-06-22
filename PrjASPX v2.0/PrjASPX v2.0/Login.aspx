@@ -17,8 +17,8 @@
 				<div style="padding:0;">
 					<p>Login</p>
 					<asp:Label runat="server" Text="Entre para acessar sua galeria" id="lblMsg"></asp:Label>
-                    <div class="centralizalogin" style="width: 100%;overflow:hidden;">
-                        <div class="centralizalogin" style="width: 100%;">
+                    <div class="centralizalogin2" style="width: 100%;">
+                        <div class="centralizalogin" style="width: 99%;">
 					        <asp:Textbox id="txtUsu" class="caixxinha" type="text" placeholder="Usuário" spellcheck="false" autofocus required runat="server"></asp:Textbox>
                             <asp:Textbox id="txtNome" class="confirmar" type="text" placeholder="Nome" spellcheck="false" autofocus required runat="server"></asp:Textbox>
                             <asp:Textbox id="txtEmail" class="confirmar" type="text" placeholder="Email" spellcheck="false" autofocus required runat="server"></asp:Textbox>

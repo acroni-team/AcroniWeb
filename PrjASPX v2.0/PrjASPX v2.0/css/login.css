@@ -62,8 +62,11 @@ section {
 }
 
 
-.centralizalogin {
-    
+.centralizalogin2 {
+    overflow: hidden;
+    height: 150px;
+}  
+.centralizalogin{
     overflow: auto;
     height: 150px;
 }
