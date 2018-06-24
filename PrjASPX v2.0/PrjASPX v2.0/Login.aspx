@@ -19,15 +19,15 @@
 					<asp:Label runat="server" Text="Entre para acessar sua galeria" id="lblMsg"></asp:Label>
                        <div class="centralizalogin" style="width: 99%;">
 					        <asp:Textbox id="txtUsu" class="caixxinha" type="text" placeholder="Usuário" spellcheck="false" autofocus required runat="server"></asp:Textbox>
-                            <asp:Textbox id="txtNome" class="confirmar" type="text" placeholder="Nome" spellcheck="false" autofocus required runat="server"></asp:Textbox>
-                            <asp:Textbox id="txtEmail" class="confirmar" type="text" placeholder="Email" spellcheck="false" autofocus required runat="server"></asp:Textbox>
-                            <asp:Textbox id="txtEndereco" class="confirmar" type="text" placeholder="Endereco" spellcheck="false" autofocus required runat="server"></asp:Textbox>
-                            <asp:Textbox id="txtCidade" class="confirmar" type="text" placeholder="Cidade" spellcheck="false" autofocus required runat="server"></asp:Textbox>
-                            <asp:Textbox id="txtBairro" class="confirmar" type="text" placeholder="Bairro" spellcheck="false" autofocus required runat="server"></asp:Textbox>
-                            <asp:Textbox id="txtCEP" class="confirmar" type="text" placeholder="CEP" spellcheck="false" autofocus required runat="server"></asp:Textbox>
-                            <asp:Textbox id="txtUF" class="confirmar" type="text" placeholder="UF" spellcheck="false" autofocus required runat="server"></asp:Textbox>
-                            <asp:Textbox id="txtData" class="confirmar" type="text" placeholder="Data" spellcheck="false" autofocus required runat="server"></asp:Textbox>
-                            <asp:Textbox id="txtTelefone" class="confirmar" type="text" placeholder="Telefone" spellcheck="false" autofocus required runat="server"></asp:Textbox>
+                            <asp:Textbox id="txtNome" class="confirmar" type="text" placeholder="Nome" spellcheck="false"  runat="server"></asp:Textbox>
+                            <asp:Textbox id="txtEmail" class="confirmar" type="text" placeholder="Email" spellcheck="false" runat="server"></asp:Textbox>
+                            <asp:Textbox id="txtEndereco" class="confirmar" type="text" placeholder="Endereco" spellcheck="false" runat="server"></asp:Textbox>
+                            <asp:Textbox id="txtCidade" class="confirmar" type="text" placeholder="Cidade" spellcheck="false" runat="server"></asp:Textbox>
+                            <asp:Textbox id="txtBairro" class="confirmar" type="text" placeholder="Bairro" spellcheck="false" runat="server"></asp:Textbox>
+                            <asp:Textbox id="txtCEP" class="confirmar" type="text" placeholder="CEP" spellcheck="false"  runat="server"></asp:Textbox>
+                            <asp:Textbox id="txtUF" class="confirmar" type="text" placeholder="UF" spellcheck="false"  runat="server"></asp:Textbox>
+                            <asp:Textbox id="txtData" class="confirmar" type="text" placeholder="Data" spellcheck="false"  runat="server"></asp:Textbox>
+                            <asp:Textbox id="txtTelefone" class="confirmar" type="text" placeholder="Telefone" spellcheck="false" runat="server"></asp:Textbox>
 					        <asp:Textbox id="txtPass" class="caixxinha" type="password" placeholder="Senha" spellcheck="false" required style="margin-bottom:px;" runat="server"></asp:Textbox>
 					        <asp:Textbox id="txtCpass" type="password" placeholder="Confirmar senha" spellcheck="false" class="confirmar" style="overflow:hidden" runat="server"></asp:Textbox>
                         </div>

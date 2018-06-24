@@ -12,7 +12,7 @@
             <p>Estamos trabalhando para construir essa página</p>
             
             <input style="width:500px;margin-top:30px;" class="caixxinha" type="text" placeholder="Entre com seu email e seja notificado" name="notifica" />
-            <asp:Button class="button" type="button" Text="Entrar" runat="server" OnClick="Unnamed1_Click" />
+            <asp:Button class="button" type="button" Text="Entrar" runat="server" />
             
             
         </div>
