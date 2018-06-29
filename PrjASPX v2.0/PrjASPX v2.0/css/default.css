@@ -4,7 +4,7 @@
     width: 50%;
     height: 100vh;
     background-color: #f2f2f2;
-    transition: 0.3s;
+    transition: background-color 300ms ease;
     float: left;
     z-index: 0;
     display: flex;
@@ -26,7 +26,7 @@
     font-weight: bold;
     font-size: 120px;
     text-align: center;
-    transition: 0.3s;
+    transition: color 300ms ease;
 }
 
 #lsection.active h1, {
@@ -40,7 +40,7 @@
     font-weight: normal;
     font-size: 20px;
     margin-top: -40px;
-    transition: 0.3s
+    transition: color 300ms ease;
 }
 
 #rsection div {
@@ -64,6 +64,7 @@ h3 {
     font-size: 15px;
     color: #0093ff;
     margin-top: 0;
+   
 }
 h3:hover {
    

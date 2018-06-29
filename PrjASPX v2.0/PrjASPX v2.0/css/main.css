@@ -27,8 +27,8 @@
 body{
 
 	background-color: #f2f2f2;
-	transition:0.3s;
-    overflow-x:hidden;
+	transition: background-color 300ms ease;
+    overflow-x: hidden;
  
 }
 
@@ -41,16 +41,6 @@ body{
     align-self: center;
 }
 
-#muda {
-    transition:1s;
-
-}
-#muda.transition {
-    color:#0093ff;
-}
-#muda.transition2 {
-    opacity: 1;
-}
 
 
 
@@ -68,9 +58,8 @@ body{
     width: 165px;
     padding-top: 15px;
     padding-bottom: 15px;
-    transition: 0.3s;
+    transition: background-color 300ms ease;
     background: #f2f2f2;
-   
 }
 
 
@@ -165,35 +154,31 @@ nav{
     margin: 0px;
     z-index: 20;
     cursor: pointer;
-    transition: 0.3s;
+    transition: transform 300ms ease;
 }
 
 
 
-.hamburger{
-	width:25px;
-	height: 3px;
-	background: #959595;
-	position: absolute;
-	top:50%;
-	left:50%;
-	transform: translate(-50%,50%);
-	transition:0.3s;
-
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background: #959595;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    transition: transform 300ms ease;
 }
 
 
-.hamburger:before, .hamburger:after{
-	content: '';
-	position: absolute;
-	width:25px;
-	height: 3px;
-	background: #959595;
-	transition: 0.3s;
-
-
-
-}
+    .hamburger:before, .hamburger:after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background: #959595;
+        transition: transform 300ms ease;
+    }
 
 .hamburger:before{
 
@@ -309,12 +294,12 @@ nav{
 
 /*light*/
 
-li{
-	text-align: right;
-	font-family: 'open';
-	font-size: 40px;
-	color:#333;
-	transition:0.3s;
+li {
+    text-align: right;
+    font-family: 'open';
+    font-size: 40px;
+    color: #333;
+    transition: color 300ms ease;
 }
 
 li a {
@@ -323,8 +308,8 @@ li a {
 
 a {
     text-decoration: none;
-    transition: 0.3s;
-    color:#333;
+    transition: color 300ms ease;
+    color: #333;
 }
 
 li a:hover:not(.active){

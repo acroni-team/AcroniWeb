@@ -8,12 +8,6 @@ G:\Arquivos\00 - TCM\2018 FUNCIONAL\PrjASPX v2.0\PrjASPX v2.0\bin\PrjASPX v2.0.p
 G:\Arquivos\00 - TCM\2018 FUNCIONAL\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.csprojResolveAssemblyReference.cache
 G:\Arquivos\00 - TCM\2018 FUNCIONAL\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.dll
 G:\Arquivos\00 - TCM\2018 FUNCIONAL\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.pdb
-C:\Users\TM\Desktop\html-simples\PrjASPX v2.0\PrjASPX v2.0\bin\PrjASPX v2.0.dll.config
-C:\Users\TM\Desktop\html-simples\PrjASPX v2.0\PrjASPX v2.0\bin\PrjASPX v2.0.dll
-C:\Users\TM\Desktop\html-simples\PrjASPX v2.0\PrjASPX v2.0\bin\PrjASPX v2.0.pdb
-C:\Users\TM\Desktop\html-simples\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.csproj.CoreCompileInputs.cache
-C:\Users\TM\Desktop\html-simples\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.dll
-C:\Users\TM\Desktop\html-simples\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.pdb
 F:\Área de Trabalho\html-simples-asp\html-simples-asp\PrjASPX v2.0\PrjASPX v2.0\bin\PrjASPX v2.0.dll.config
 F:\Área de Trabalho\html-simples-asp\html-simples-asp\PrjASPX v2.0\PrjASPX v2.0\bin\PrjASPX v2.0.dll
 F:\Área de Trabalho\html-simples-asp\html-simples-asp\PrjASPX v2.0\PrjASPX v2.0\bin\PrjASPX v2.0.pdb
@@ -28,4 +22,9 @@ C:\Users\TM\Desktop\html-simples\PrjASPX v2.0 (Entregar para o rubens)\PrjASPX v
 C:\Users\TM\Desktop\html-simples\PrjASPX v2.0 (Entregar para o rubens)\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.csproj.CoreCompileInputs.cache
 C:\Users\TM\Desktop\html-simples\PrjASPX v2.0 (Entregar para o rubens)\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.dll
 C:\Users\TM\Desktop\html-simples\PrjASPX v2.0 (Entregar para o rubens)\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.pdb
-C:\Users\TM\Desktop\html-simples\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.csprojAssemblyReference.cache
+C:\Users\TM\Desktop\html-simples\PrjASPX v2.0\PrjASPX v2.0\bin\PrjASPX v2.0.dll.config
+C:\Users\TM\Desktop\html-simples\PrjASPX v2.0\PrjASPX v2.0\bin\PrjASPX v2.0.dll
+C:\Users\TM\Desktop\html-simples\PrjASPX v2.0\PrjASPX v2.0\bin\PrjASPX v2.0.pdb
+C:\Users\TM\Desktop\html-simples\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.csproj.CoreCompileInputs.cache
+C:\Users\TM\Desktop\html-simples\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.dll
+C:\Users\TM\Desktop\html-simples\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.pdb
