@@ -18,6 +18,18 @@ namespace CadastroLogin
 
         }
 
+        public bool verificaRegistro(String campo, TextBox txtBox)
+        {
+            bool val = false;
+            xx = new ClasseConexao();
+            ds = new DataSet();
+            ds = xx.executa_sql("SELECT " + campo + " FROM tblCliente WHERE " + campo + " = '" + txtBox.Text + "'");
+            if (ds.Tables[0].Rows.Count > 0)
+                val = true;
+
+            return val;
+        }
+
         protected void btnCadastrar_Click(object sender, EventArgs e)
         {
             bool val;
@@ -31,21 +43,29 @@ namespace CadastroLogin
                 val = false;
             else if (txtRG.Text.Replace(" ", "") == "")
                 val = false;
-            else if (txtEndereco.Text.Replace(" ", "") == "")
+            else if (txtEndereco.Text.Replace(" ", "").Length < 3)
                 val = false;
-            else if (txtCidade.Text.Replace(" ", "") == "")
+            else if (txtCidade.Text.Replace(" ", "").Length < 3)
                 val = false;
             else if (txtCEP.Text.Replace(" ", "") == "")
                 val = false;
-            else if (txtUF.Text.Replace(" ", "") == "")
+            else if (txtUF.Text.Replace(" ", "").Length < 1)
                 val = false;
-            else if (txtTelefone.Text.Replace(" ", "") == "")
+            else if (txtTelefone.Text.Replace(" ", "").Length < 8)
                 val = false;
-            else if (txtUsu.Text.Replace(" ", "") == "")
+            else if (txtUsu.Text.Replace(" ", "").Length < 3)
                 val = false;
-            else if (txtPass.Text.Replace(" ", "") == "" || txtPass2.Text.Replace(" ", "") == "")
+            else if (txtPass.Text.Replace(" ", "").Length < 3 || txtPass2.Text.Replace(" ", "").Length < 3)
                 val = false;
             else if (txtPass.Text != txtPass2.Text)
+                val = false;
+            else if (verificaRegistro("usuario", txtUsu))
+                val = false;
+            else if (verificaRegistro("email", txtEmail))
+                val = false;
+            else if (verificaRegistro("cpf", txtCPF))
+                val = false;
+            else if (verificaRegistro("rg", txtRG))
                 val = false;
             else
                 val = true;
