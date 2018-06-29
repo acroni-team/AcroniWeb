@@ -5,15 +5,14 @@
         <script type="text/javascript" src="js/tema.js"></script>
         
         <script>
-            // 2. This code loads the IFrame Player API code asynchronously.
+            // loadando o codigo do IFrame Player API.
             var tag = document.createElement('script');
 
             tag.src = "https://www.youtube.com/iframe_api";
             var firstScriptTag = document.getElementsByTagName('script')[0];
             firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-            // 3. This function creates an <iframe> (and YouTube player)
-            //    after the API code downloads.
+            // Creando um Iframe apartir do div com id = var.
             var player;
             function onYouTubeIframeAPIReady() {
                 player = new YT.Player('player', {
@@ -27,7 +26,7 @@
                 });
             }
 
-            // 4. The API will call this function when the video player is ready.
+            // API chama a função assim que o player termina de ser carregado.
             function onPlayerReady(event) {
                 player.setPlaybackRate(2);
               
