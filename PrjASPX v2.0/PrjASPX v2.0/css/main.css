@@ -41,6 +41,18 @@ body{
     align-self: center;
 }
 
+#muda {
+    transition:1s;
+
+}
+#muda.transition {
+    color:#0093ff;
+}
+#muda.transition2 {
+    opacity: 1;
+}
+
+
 
 
 .blue, .cadastro {
@@ -58,7 +70,7 @@ body{
     padding-bottom: 15px;
     transition: 0.3s;
     background: #f2f2f2;
-    caret-color: transparent;
+   
 }
 
 
@@ -84,6 +96,13 @@ body{
         transform: translateY(0px);
         cursor: pointer;
     }
+
+        #buttons .blue:hover h3 {
+            color: #f2f2f2;
+        }
+        #buttons.active .blue h3 {
+            color: #f2f2f2;
+        }
 .blue:hover, .cadastro:hover {
     color: #f2f2f2;
     background: #0093ff;
@@ -338,6 +357,7 @@ ul{
 	margin-top:20px;
 	list-style-type: none;
 }
+
 
 
 

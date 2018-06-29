@@ -61,11 +61,11 @@
   <ItemGroup>
     <Content Include="AreaRestrita.aspx" />
     <Content Include="Construct.aspx" />
+    <Content Include="css\default.css" />
     <Content Include="css\area-restrita.css" />
     <Content Include="css\login.css" />
     <Content Include="css\fale-conosco.css" />
     <Content Include="css\main.css" />
-    <Content Include="css\index.css" />
     <Content Include="Default.aspx" />
     <Content Include="Fale-conosco.aspx" />
     <Content Include="icon\adjust.svg" />

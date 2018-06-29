@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Layout.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="PrjASPX_v2._0.Default" %>
 
     <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
         <script type="text/javascript" src="js/tema.js"></script>
 </asp:Content>
 
@@ -11,9 +11,12 @@
 			<h1> Acroni </h1><br/>
 			<p> Mais que um teclado. O seu.</p>
 			<div id="buttons">
-                <asp:Button class="blue" runat="server" Text="Fale conosco" OnClick="Unnamed1_Click" />
-               <asp:Button id="muda2" class="blue" runat="server"  Text="Faça o login" OnClick="Unnamed2_Click"/> <!-- OnClientClick="return false;">   ClientIDMode="Static" OnClientClick="return false;--> 
-            </div>
+                <asp:Button class="blue" runat="server" Text="Fale conosco" OnClick="Unnamed1_Click" />   
+                <!-- <asp:Button id="muda" class="blue" runat="server"  Text="Teclados mecânicos" ClientIDMode="Static" OnClientClick="return false"/>  <!-- OnClientClick="return false;">   ClientIDMode="Static" OnClientClick="return false;--> 
+                <div id="muda" class="blue">
+                 <h3 id="fold_p" >Teclados mecânicos</h3>
+                </div>
+           
 		</div>
 	    </section>
 	    <section id="rsection">
