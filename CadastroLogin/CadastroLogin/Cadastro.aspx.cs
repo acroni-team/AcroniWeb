@@ -65,6 +65,17 @@ namespace CadastroLogin
             catch { }
         }
 
-        
+        protected void txtCEP_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var ws = new WSCorreios.AtendeClienteClient();
+                var resposta = ws.consultaCEP(txtCEP.Text);
+                txtEndereco.Text = resposta.end;
+                txtCidade.Text = resposta.cidade;
+                txtUF.Text = resposta.uf;
+            }
+            catch { }
+        }
     }
 }

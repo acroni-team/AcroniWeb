@@ -33,7 +33,8 @@
             <asp:TextBox ID="txtCidade" runat="server" placeholder="Cidade"></asp:TextBox>
             <br />
             <br />
-            <asp:TextBox ID="txtCEP" runat="server" placeholder="CEP"></asp:TextBox>
+            <asp:TextBox ID="txtCEP" runat="server" AutoPostBack="true" placeholder="CEP" OnTextChanged="txtCEP_TextChanged"></asp:TextBox>
+            <!-->AutoPostBack="true" serve para o trigger do TextChanged acionar '-'<-->
             <br />
             <br />
             <asp:TextBox ID="txtUF" runat="server" placeholder="UF"></asp:TextBox>
