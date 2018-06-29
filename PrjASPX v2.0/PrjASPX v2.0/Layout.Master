@@ -7,8 +7,24 @@
     <title> Testando background </title>
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	
+	<script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+
+            $('.preload').addClass('completo');
+
+            //$('.item').each(function (i) {
+            //setTimeout(function () {
+            //$('.item').eq(i).addClass('visivel');
+
+            // }, 100 * i);
+
+            // });
+           
+        });
+         
+	</script>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>

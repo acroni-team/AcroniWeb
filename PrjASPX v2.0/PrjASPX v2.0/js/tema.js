@@ -9,7 +9,7 @@
             $("body,#lsection,#rsection,nav,#right,#left").css("background-color", "#333");
             //(".hamburger,.hamburger:after,.hamburger:before").css("background-color", "#fff");
             //$('.blue').css("background-color", "#262626");
-			$('#img').attr("src","../img/logo2.png");
+			$('#img').attr("src","../img/logo2.png").fadeIn();
 			$('#muda').val("Teclados escritório").addClass("transition");
 
             alo = false;
@@ -19,7 +19,7 @@
             //$(".hamburger,.hamburger:after,.hamburger:before").css("background-color", "#959595");
             $('#busca').css("background-color", "#fff");
             $('#muda').val("Teclados mecânicos").addClass("transition");
-            $('#img').attr("src", "../img/apple.png");
+            $('#img').attr("src", "../img/apple.png").fadeIn();
 
 			alo = true;
         }
