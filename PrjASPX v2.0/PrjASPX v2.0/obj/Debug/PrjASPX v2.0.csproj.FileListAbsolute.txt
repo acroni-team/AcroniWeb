@@ -39,3 +39,10 @@ C:\Users\Gustavo\tcm\asp\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.csproj
 C:\Users\Gustavo\tcm\asp\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.dll
 C:\Users\Gustavo\tcm\asp\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.pdb
 >>>>>>> 49824db2951d19204b4a2aab8cfb364dfee2858e
+C:\Users\TM\Desktop\asp\PrjASPX v2.0\PrjASPX v2.0\bin\PrjASPX v2.0.dll.config
+C:\Users\TM\Desktop\asp\PrjASPX v2.0\PrjASPX v2.0\bin\PrjASPX v2.0.dll
+C:\Users\TM\Desktop\asp\PrjASPX v2.0\PrjASPX v2.0\bin\PrjASPX v2.0.pdb
+C:\Users\TM\Desktop\asp\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.csprojAssemblyReference.cache
+C:\Users\TM\Desktop\asp\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.csproj.CoreCompileInputs.cache
+C:\Users\TM\Desktop\asp\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.dll
+C:\Users\TM\Desktop\asp\PrjASPX v2.0\PrjASPX v2.0\obj\Debug\PrjASPX v2.0.pdb
