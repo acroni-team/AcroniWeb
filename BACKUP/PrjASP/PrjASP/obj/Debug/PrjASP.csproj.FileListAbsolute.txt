@@ -1,0 +1,5 @@
+c:\users\etesp\documents\visual studio 2012\Projects\PrjASP\PrjASP\bin\PrjASP.dll
+c:\users\etesp\documents\visual studio 2012\Projects\PrjASP\PrjASP\bin\PrjASP.pdb
+c:\users\etesp\documents\visual studio 2012\Projects\PrjASP\PrjASP\obj\Debug\PrjASP.csprojResolveAssemblyReference.cache
+c:\users\etesp\documents\visual studio 2012\Projects\PrjASP\PrjASP\obj\Debug\PrjASP.dll
+c:\users\etesp\documents\visual studio 2012\Projects\PrjASP\PrjASP\obj\Debug\PrjASP.pdb
