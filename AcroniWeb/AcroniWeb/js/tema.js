@@ -4,7 +4,7 @@
 
         
         ////$('#menu-icon').toggleClass('active');
-        $('#buttons,#lsection,#login,#menu,li').toggleClass('active');
+        $('#buttons,#lsection,#login,#menu,li,.caixxinha').toggleClass('active');
         if (alo == true) {
             $("body,#lsection,#rsection,nav,#right,#left").css("background-color", "#333");
             //(".hamburger,.hamburger:after,.hamburger:before").css("background-color", "#fff");

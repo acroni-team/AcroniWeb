@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+    
     <script type="text/javascript">
         $(window).on('load', function () {
 
@@ -38,7 +39,7 @@
         </div>
 		<div id="right">
 			<div>
-				<input id="busca" type="text" placeholder="Busque aqui..." name="busca" />
+                <asp:Textbox id="busca" class="caixxinha" type="text" placeholder="Busque aqui..." runat="server"></asp:Textbox>
 				<ul id="menu-itens">
 					<li><a id="home" href="default.aspx">Home</a></li>
 					<li><a href="construct.aspx">Loja</a></li>	

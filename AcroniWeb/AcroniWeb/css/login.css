@@ -28,32 +28,6 @@ section {
     margin-bottom: 15px;
 }
 
-.caixxinha, .confirmar {
-    outline: none;
-    border: 1.5px solid #fff;
-    border-radius: 5px;
-    padding: 17px;
-    font-size: 17px;
-    caret-color: #0093ff;
-    color: #333;
-    width: 85%;
-    transition: 0.3s;
-    margin-bottom: 15px;
-}
-
-    .caixxinha::-webkit-input-placeholder, .confirmar::-webkit-input-placeholder {
-        color: rgba(51, 51, 51, 0.60);
-        transition: 0.3s;
-    }
-
-    .caixxinha:focus::-webkit-input-placeholder, .confirmar:focus::-webkit-input-placeholder {
-        color: transparent;
-    }
-
-    .caixxinha::selection, .confirmar::selection {
-        background: rgba(51, 51, 51, 0.45);
-        color: #fff;
-    }
 
 
 

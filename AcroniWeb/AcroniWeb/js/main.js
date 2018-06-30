@@ -1,8 +1,7 @@
 ﻿$(document).ready(function () {
-    var v = true;
-
     
-
+    //Função do menu
+    var v = true;
     $("#menu-icon").click(function () {
         $('#menu-icon').toggleClass('active');
         if (v == true) {
@@ -21,19 +20,30 @@
         }
     });
 
-    $('#busca').focus(function () {
-        $('#busca').attr("placeholder", "")
-    });
-    $('#busca').focusout(function () {
+    //Função das TextBox e buttons
+    var bool = false;
+    $('.caixxinha,.confirmar,.campos-pergunta,.pergunta').focus(function () {
+        $(this).css("border", "1.5px solid #0093ff");
+    })
 
-        if ($('#busca').attr("placeholder", "")) {
-            $('#busca').attr("placeholder", "Busque aqui...")
+    $('.cadastro').click(function () {
+        if (bool == false) {
+            //('.but,.cadastro').css("transform", "translateY(0px)");
+            $('.centralizalogin').css("height", "225px");
+            $('.confirmar').fadeIn();
+            bool = true;
         }
-    });
+        else {
+            $('.centralizalogin').css("height", "150px");
+            $('.confirmar').fadeOut();
+            bool = false;
+        }
+    })
 
-
-
-
+    $('.caixxinha,.confirmar,.campos-pergunta,.pergunta').blur(function () {
+        $(this).css("border", "1.5px solid #fff");
+    })
+   
 });
 
 //	});
