@@ -1,11 +1,12 @@
 /*Login css*/
 
+/* Pré-comandos */
 
+* {margin: 0 auto;font-family: 'open';}
 
-* {
-    margin: 0 auto;
-    font-family: 'open';
-}
+html, body {height: 99%;overflow: hidden;}
+
+/* Comandos da seção*/
 
 section {
     background: transparent;
@@ -20,23 +21,13 @@ section {
     margin-bottom: 15px;
 }
 
-
-
 #lblMsg {
     color: #333;
     font-size: 13.5px;
     margin-bottom: 15px;
 }
 
-
-
-
-.confirmar {
-    display: none;
-
-}
-
-
+.confirmar {display: none;}
 
 .centralizalogin {
     overflow: auto;
@@ -45,11 +36,5 @@ section {
     -ms-overflow-style: none;
 }
 
-.centralizalogin::-webkit-scrollbar {
-    width:0px;
-}
+.centralizalogin::-webkit-scrollbar { width:0px;}
 
-html, body {
-    height: 99%;
-    overflow: hidden;
-}

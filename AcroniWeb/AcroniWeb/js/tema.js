@@ -1,10 +1,11 @@
 ﻿$(document).ready(function () {
     var alo = true;
-    $("#muda").click(function () {
 
-        
+    //Função para mudar as cores do site/tema de light para dark e vise-versa
+
+    $("#muda").click(function () {
         ////$('#menu-icon').toggleClass('active');
-        $('#buttons,#lsection,#login,#menu,li,.caixxinha').toggleClass('active');
+        $('#buttons,#lsection,#login,#menu,li').toggleClass('active');
         if (alo == true) {
             $("body,#lsection,#rsection,nav,#right,#left").css("background-color", "#333");
             //(".hamburger,.hamburger:after,.hamburger:before").css("background-color", "#fff");
@@ -25,7 +26,7 @@
         }
     });
    
-    
+    //Função para mudar o texto do botão de mudança de temas com um fade
        
     $("#muda").click(function () {
         $("#fold_p").fadeOut(function () {

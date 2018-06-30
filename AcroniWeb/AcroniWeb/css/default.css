@@ -1,4 +1,4 @@
-/* First Section */
+/* Primeira seção (é dividida em duas partes direita (rsection) e esquerda (lsection)) */
 
 #lsection, #rsection {
     width: 50%;
@@ -10,15 +10,11 @@
     display: flex;
 }
 
+#rsection {align-items: center;} 
 
-#rsection {
-    align-items: center;
-}
+#rsection img {width: 1000px;}
 
-
-#lsection div {
-    align-self: center;
-}
+#lsection div, #rsection div {align-self: center;}
 
 #lsection h1, h1.title {
     font-family: 'qanelas-bold';
@@ -29,9 +25,7 @@
     transition: color 300ms ease;
 }
 
-#lsection.active h1, {
-    color: #f2f2f2;
-}
+#lsection.active h1, #lsection.active p {color: #f2f2f2;}
 
 #lsection p, p.desc {
     text-align: center;
@@ -43,19 +37,6 @@
     transition: color 300ms ease;
 }
 
-#rsection div {
-    align-self: center;
-}
-
-#rsection img {
-    width: 1000px;
-}
-
-
-#lsection.active p {
-    color: #f2f2f2;
-}
-
 h3 {
     text-align: center;
     font-family: 'open';
@@ -64,10 +45,6 @@ h3 {
     font-size: 15px;
     color: #0093ff;
     margin-top: 0;
-   
 }
-h3:hover {
-   
-  
-}
+
 

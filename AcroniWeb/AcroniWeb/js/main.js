@@ -5,15 +5,19 @@
     $("#menu-icon").click(function () {
         $('#menu-icon').toggleClass('active');
         if (v == true) {
-            $("#menu").fadeIn();
-            $("#login").fadeOut();
+            $("#menu").css("opacity", "1");
+            $("#menu").css("pointer-events", "auto");
+            $("#login").css("opacity", "0");
+            $("#login").css("pointer-events", "none");
             $('body').css("overflow-y", "hidden");
 
             v = false;
         }
         else {
-            $("#menu").fadeOut();
-            $("#login").fadeIn();
+            $("#menu").css("opacity", "0");
+            $("#menu").css("pointer-events", "none");
+            $("#login").css("opacity", "1");
+            $("#login").css("pointer-events", "auto");
             $('body').css("overflow-y", "auto");
 
             v = true;
