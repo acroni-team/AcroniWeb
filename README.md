@@ -8,6 +8,9 @@
 
 ### Feitos
 
+- Página inicial do site (primeira seção dela)
+- Menu  com ícone hamburger
+- Página de login (porém ainda falta separa-la da de cadastro)
 - Consertar o bug de abrir varias vezes do menu
 - Consertar o placehoder do busca (menu)
 - Adicionar a animacao inicial (na entrada do saite)
