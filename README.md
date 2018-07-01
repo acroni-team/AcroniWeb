@@ -4,6 +4,7 @@
 - Smooth transition na hora de mudar de pagina
 - Possibilidade de fazer o botao que muda de cor trocar de paginas em vez de mudar a cor (animações no page load)
 - Fazer mais páginas
+- Separar o cadastro do login
 
 
 ### Feitos
