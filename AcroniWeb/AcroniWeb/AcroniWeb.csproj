@@ -69,8 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="area-restrita.aspx" />
+    <Content Include="cadastro.aspx" />
     <Content Include="css\area-restrita.css" />
     <Content Include="css\default.css" />
+    <Content Include="css\cadastro.css" />
     <Content Include="css\fale-conosco.css" />
     <Content Include="css\login.css" />
     <Content Include="css\main.css" />
@@ -106,6 +108,13 @@
     </Compile>
     <Compile Include="area-restrita.aspx.designer.cs">
       <DependentUpon>area-restrita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cadastro.aspx.cs">
+      <DependentUpon>cadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cadastro.aspx.designer.cs">
+      <DependentUpon>cadastro.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
