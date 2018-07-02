@@ -136,7 +136,8 @@
     height: 25px;
     width: 25px;
     background-color: #959595;
-   
+    transition:300ms ease;
+    border-radius:3px;
 }
 
 /* On mouse-over, add a grey background color */
