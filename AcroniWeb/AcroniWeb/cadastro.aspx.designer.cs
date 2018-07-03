@@ -13,15 +13,6 @@ namespace AcroniWeb {
     public partial class cadastro {
         
         /// <summary>
-        /// Controle txtNome.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNome;
-        
-        /// <summary>
         /// Controle txtEmail.
         /// </summary>
         /// <remarks>
@@ -49,6 +40,15 @@ namespace AcroniWeb {
         protected global::System.Web.UI.WebControls.TextBox txtCEP;
         
         /// <summary>
+        /// Controle txtUsu.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtUsu;
+        
+        /// <summary>
         /// Controle txtPass.
         /// </summary>
         /// <remarks>
@@ -67,12 +67,21 @@ namespace AcroniWeb {
         protected global::System.Web.UI.WebControls.TextBox txtCPass;
         
         /// <summary>
-        /// Controle Button1.
+        /// Controle btnCad.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnCad;
+        
+        /// <summary>
+        /// Controle lblErro.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblErro;
     }
 }

@@ -49,12 +49,12 @@ namespace AcroniWeb {
         protected global::System.Web.UI.WebControls.Button btnEntra;
         
         /// <summary>
-        /// Controle btnCad.
+        /// Controle btnIrCad.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCad;
+        protected global::System.Web.UI.WebControls.Button btnIrCad;
     }
 }

@@ -24,7 +24,7 @@
 					        <asp:Textbox id="txtPass" class="caixxinha" type="password" placeholder="Senha" spellcheck="false" required runat="server"></asp:Textbox>
                         </div>
 					<asp:Button ID="btnEntra" class="blue" type="button" style="margin-right:10px;" Text="Entrar" runat="server" OnClick="btnEntra_Click" />
-					<asp:button ID="btnCad" type="button" class="blue" Text="Cadastre-se" runat="server" OnClick="btnCad_Click" />
+					<asp:button ID="btnIrCad" type="button" class="blue" Text="Cadastre-se" runat="server" OnClick="btnIrCad_Click" value="ignore" formnovalidate />
 				</div>
 			</form>
         </div>

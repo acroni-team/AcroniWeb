@@ -22,7 +22,7 @@
 #cima {
     width:100%;
     height:100px;
-    padding-top:70px;
+    padding:75px
     
 }
 
@@ -31,6 +31,14 @@
     font-size:60px;
 
 }
+
+#cima p{
+    color:#333;
+    font-size:20px;
+    text-align:center;
+}
+
+
 
 
 
@@ -108,7 +116,6 @@
 }
 
 
-
 /*checkbox*/
 
 .container {
@@ -121,14 +128,14 @@
     user-select: none;
 }
 
-/* Hide the browser's default checkbox */
+/* Esconde a checkbox default */
 .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
-/* Create a custom checkbox */
+/* Cria a checkbox bunitinha :D */
 .checkmark {
     position: absolute;
     top: -2px;
@@ -140,29 +147,29 @@
     border-radius:3px;
 }
 
-/* On mouse-over, add a grey background color */
+/* hover na checkbox */
 .container:hover input ~ .checkmark {
     background-color: #fff;
 }
 
-/* When the checkbox is checked, add a blue background */
+/* adiciona um backgound azul quando a checkbox foi clicada */
 .container input:checked ~ .checkmark {
     background-color: #0093ff;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
+/* Create o certinho/indicador/checkmark (escondido quando nao clidado) */
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-/* Show the checkmark when checked */
+/* mostra o checkmark quando clicado */
 .container input:checked ~ .checkmark:after {
     display: block;
 }
 
-/* Style the checkmark/indicator */
+
 .container .checkmark:after {
     left: 9px;
     top: 5px;

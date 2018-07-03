@@ -116,6 +116,7 @@
     <Compile Include="cadastro.aspx.designer.cs">
       <DependentUpon>cadastro.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ClasseConexao.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -152,6 +153,7 @@
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Valida.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fontes\openregular.ttf" />
