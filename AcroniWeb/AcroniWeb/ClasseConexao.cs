@@ -13,7 +13,7 @@ using System.Data.SqlClient;
         {
             try
             {
-            String strConexao = "Password=banco123; Persist Security Info=True; User ID=sa; Initial Catalog=DB; Data Source=" + Environment.MachineName + "\\SQLEXPRESS";
+            String strConexao = "Password=12345; Persist Security Info=True; User ID=sa; Initial Catalog=DB; Data Source=" + Environment.MachineName;
                 conexao.ConnectionString = strConexao;
                 conexao.Open();
                 return conexao;

@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <link rel="stylesheet" type="text/css" href="css/cadastro.css"/>
-
+    
 </asp:Content>
 
 
@@ -18,12 +18,12 @@
         <div class="left"> 
             <div class="centro" style="margin-right:100px">
                 <div>
-                    <p class="identifica">Email</p>
-                    <asp:Textbox id="txtEmail" class="caixxinha" type="text" spellcheck="false"  autofocus runat="server"></asp:Textbox> 
+                    <p class="identifica">Email</p><!--E-mail nao pode ter autofocus, se tiver vai tirar a borda vermelha de erro-->
+                    <asp:Textbox id="txtEmail" class="caixxinha" type="text" spellcheck="false" runat="server"></asp:Textbox> 
                 </div>
                 <div>
                     <p class="identifica">CPF</p>
-                    <asp:Textbox id="txtCPF" class="caixxinha" type="text" spellcheck="false"  runat="server"></asp:Textbox>  
+                    <asp:Textbox id="txtCPF" class="caixxinha" type="text" spellcheck="false" runat="server"></asp:Textbox>  
                 </div> 
                 <div>
                     <p class="identifica">CEP</p>
