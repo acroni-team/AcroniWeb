@@ -13,6 +13,15 @@ namespace AcroniWeb {
     public partial class cadastro {
         
         /// <summary>
+        /// Controle lblEmail.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEmail;
+        
+        /// <summary>
         /// Controle txtEmail.
         /// </summary>
         /// <remarks>
@@ -20,6 +29,15 @@ namespace AcroniWeb {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        
+        /// <summary>
+        /// Controle lblCPF.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCPF;
         
         /// <summary>
         /// Controle txtCPF.
@@ -31,6 +49,15 @@ namespace AcroniWeb {
         protected global::System.Web.UI.WebControls.TextBox txtCPF;
         
         /// <summary>
+        /// Controle lblCEP.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCEP;
+        
+        /// <summary>
         /// Controle txtCEP.
         /// </summary>
         /// <remarks>
@@ -38,6 +65,15 @@ namespace AcroniWeb {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCEP;
+        
+        /// <summary>
+        /// Controle lblUsu.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblUsu;
         
         /// <summary>
         /// Controle txtUsu.
@@ -49,6 +85,15 @@ namespace AcroniWeb {
         protected global::System.Web.UI.WebControls.TextBox txtUsu;
         
         /// <summary>
+        /// Controle lblPass.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPass;
+        
+        /// <summary>
         /// Controle txtPass.
         /// </summary>
         /// <remarks>
@@ -56,6 +101,15 @@ namespace AcroniWeb {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPass;
+        
+        /// <summary>
+        /// Controle lblCPass.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCPass;
         
         /// <summary>
         /// Controle txtCPass.
@@ -74,14 +128,5 @@ namespace AcroniWeb {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCad;
-        
-        /// <summary>
-        /// Controle lblErro.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblErro;
     }
 }

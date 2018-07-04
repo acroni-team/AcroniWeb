@@ -29,19 +29,32 @@ namespace AcroniWeb
 
         protected void btnEntra_Click(object sender, EventArgs e)
         {
+            
             try
             {
                 xx = new ClasseConexao();
                 ds = new DataSet();
-                ds = xx.executa_sql("SELECT * FROM tblCliente WHERE usuario='" + txtUsu.Text + "' AND senha='" + txtPass.Text + "'");
+                ds = xx.executa_sql("SELECT * FROM tblCliente WHERE usuario='" + txtUsu.Text + "'");
                 if (ds.Tables[0].Rows.Count > 0)
                 {
-                    Response.Redirect("area-restrita.aspx");
+                    xx = new ClasseConexao();
+                    ds = new DataSet();
+                    ds = xx.executa_sql("SELECT * FROM tblCliente WHERE senha='" + txtPass.Text + "'");
+                    if (ds.Tables[0].Rows.Count > 0)
+                        Response.Redirect("area-restrita.aspx");
+                    else
+                    {
+                        lblMsg.Text = "Senha incorreta";
+                        lblMsg.ForeColor = System.Drawing.Color.Red;
+                        txtPass.Attributes.Add("style", "border-color:red");
+                    }
+                    
                 }
                 else
                 {
-                    lblMsg.Text = "Credenciais incorretas";
+                    lblMsg.Text = "Email incorreto";
                     lblMsg.ForeColor = System.Drawing.Color.Red;
+                    txtUsu.Attributes.Add("style", "border-color:red");
                 }
             }
             catch { }
