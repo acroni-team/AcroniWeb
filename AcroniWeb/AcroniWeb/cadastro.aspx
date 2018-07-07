@@ -1,8 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/layout.Master" AutoEventWireup="true" CodeBehind="cadastro.aspx.cs" Inherits="AcroniWeb.cadastro" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
+    
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/mascaras.js"></script>
     <link rel="stylesheet" type="text/css" href="css/cadastro.css"/>
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1"> 
+    
 </asp:Content>
 
 
@@ -23,11 +26,11 @@
                 </div>
                 <div class="separa">
                     <asp:Label ID="lblCPF" class="identifica" runat="server" Text="CPF"></asp:Label>
-                    <asp:Textbox id="txtCPF" class="caixxinha" type="text" spellcheck="false" runat="server"></asp:Textbox>  
+                    <asp:Textbox id="txtCPF" class="caixxinha" type="text" spellcheck="false" runat="server" data-mask="000.000.000-00"></asp:Textbox>  
                 </div> 
                 <div class="separa">
                     <asp:Label ID="lblCEP" class="identifica" runat="server" Text="CEP"></asp:Label>
-                    <asp:Textbox id="txtCEP" type="text" spellcheck="false" class="caixxinha" runat="server" ></asp:Textbox>
+                    <asp:Textbox id="txtCEP" type="text" spellcheck="false" class="caixxinha" runat="server" data-mask="00000-000"></asp:Textbox>
                 </div>
             </div>
         </div>

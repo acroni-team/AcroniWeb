@@ -96,7 +96,9 @@
     <Content Include="img\logo2.png" />
     <Content Include="img\Sem título.png" />
     <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.mask.min.js" />
     <Content Include="js\main.js" />
+    <Content Include="js\mascaras.js" />
     <Content Include="js\tema.js" />
     <Content Include="login.aspx" />
     <Content Include="Web.config" />
