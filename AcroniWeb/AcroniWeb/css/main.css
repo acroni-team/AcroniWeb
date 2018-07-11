@@ -324,7 +324,7 @@ nav{
 
 /*light theme */
 
-li {
+div#right li {
     text-align: right;
     font-family: 'open';
     font-size: 40px;
@@ -332,7 +332,9 @@ li {
     transition: color 300ms ease;
 }
 
-li a {color: #333;}
+div#rightli a {
+    color: #333;
+}
 
 a {
     text-decoration: none;
@@ -340,16 +342,25 @@ a {
     color: #333;
 }
 
-li a:hover:not(.active), li a.active{color:#0093ff;}
+div#right li a:hover:not(.active), div#right li a.active {
+    color: #0093ff;
+}
 
 
 /*dark theme */
 
-li.active a.active, li.active a:hover:not(.active) {color: #0093ff;}
+div#right li.active a.active, div#right li.active a:hover:not(.active) {
+    color: #0093ff;
+}
 
-li.active a, li.active {color: #f2f2f2;}
+div#right li.active a, div#right li.active {
+    color: #f2f2f2;
+}
 
-ul{margin-top:20px;list-style-type: none;}
+div#right ul {
+    margin-top: 20px;
+    list-style-type: none;
+}
 
 
 
