@@ -4,7 +4,7 @@
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/mascaras.js"></script>
     <link rel="stylesheet" type="text/css" href="css/cadastro.css"/>
-    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1"> 
+    
     
 </asp:Content>
 

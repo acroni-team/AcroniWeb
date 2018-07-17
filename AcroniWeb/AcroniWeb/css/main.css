@@ -157,17 +157,26 @@ p {
     outline: none;
     border: 1.5px solid #fff;
     border-radius: 5px;
-    padding: 17px;
+    text-indent: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     font-size: 17px;
     color: #333;
-    width: 85%;
+    width: 100%;
     transition: 0.3s ease-in;
     margin-bottom: 15px;
 }
 
 .caixxinha::-webkit-input-placeholder, .confirmar::-webkit-input-placeholder {
     color: rgba(51, 51, 51, 0.60);
-   
+}
+
+.caixxinha:-ms-input-placeholder, .confirmar:-ms-input-placeholder {
+    color: rgba(51, 51, 51, 0.60);
+}
+
+.caixxinha::-moz-input-placeholder, .confirmar::-moz-input-placeholder {
+    color: rgba(51, 51, 51, 0.60);
 }
 
 .caixxinha:focus::-webkit-input-placeholder, .confirmar:focus::-webkit-input-placeholder {
