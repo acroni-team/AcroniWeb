@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 namespace AcroniWeb
 {
     public partial class login : System.Web.UI.Page
@@ -42,7 +43,9 @@ namespace AcroniWeb
                     ds = xx.executa_sql("SELECT * FROM tblCliente WHERE senha='" + txtPass.Text + "'");
                     if (ds.Tables[0].Rows.Count > 0)
                         Response.Redirect("area-restrita.aspx");
+
                     else
+
                     {
                         lblMsg.Text = "Senha incorreta";
                         lblMsg.ForeColor = System.Drawing.Color.Red;

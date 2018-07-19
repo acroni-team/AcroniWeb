@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Net.Mail;
 
 namespace AcroniWeb
 {
@@ -159,6 +160,7 @@ namespace AcroniWeb
                     ds = new DataSet();
                     xx.executa_sql("INSERT INTO tblCliente (usuario,senha,email,cpf,cep) VALUES ('" + txtUsu.Text + "','" + txtPass.Text + "','" + txtEmail.Text + "','" + txtCPF.Text + "','" + txtCEP.Text + "')");
                     Response.Redirect("login.aspx");
+                  
                 }
                
                     //lblErro.Text = "Campo inválido";

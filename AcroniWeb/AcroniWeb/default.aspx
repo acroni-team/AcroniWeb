@@ -19,7 +19,7 @@
             player = new YT.Player('player', {
                 height: '100%',
                 width: '100%',
-                videoId: 'DEpBYVFCw_U',
+                videoId: 'ocbyhkVsqg4',
                 playerVars: { 'autoplay': 1 },
                 events: {
                     'onReady': onPlayerReady
@@ -29,7 +29,7 @@
 
         // API chama a função assim que o player termina de ser carregado.
         function onPlayerReady(event) {
-            player.setPlaybackRate(2);
+            player.setPlaybackRate(1.25);
 
         }
 
