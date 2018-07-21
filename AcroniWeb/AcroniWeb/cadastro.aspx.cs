@@ -6,14 +6,17 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Net.Mail;
+using System.Data.SqlClient;
 
 namespace AcroniWeb
 {
     public partial class cadastro : System.Web.UI.Page
     {
+
         Valida v = new Valida();
-        ClasseConexao xx = new ClasseConexao();
-        DataSet ds = new DataSet();
+        SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao);
+        SqlCommand comando_SQL;
+       
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -22,13 +25,26 @@ namespace AcroniWeb
         public bool verificaRegistro(String campo, TextBox txtBox)
         {
             bool val = false;
-            xx = new ClasseConexao();
-            ds = new DataSet();
-            ds = xx.executa_sql("SELECT " + campo + " FROM tblCliente WHERE " + campo + " = '" + txtBox.Text + "'");
-            if (ds.Tables[0].Rows.Count > 0)
-                val = true;
-           
-           return val;
+            try
+            {
+                if (conexao_SQL.State == ConnectionState.Closed)
+                    conexao_SQL.Open();
+
+                String select = "SELECT " + campo + " FROM tblCliente e WHERE " + campo + " = '" + txtBox.Text + "'";
+                comando_SQL = new SqlCommand(select, conexao_SQL);
+                SqlDataReader tabela = comando_SQL.ExecuteReader();
+                tabela.Read();
+                if (tabela.HasRows)
+                    val = true;
+                tabela.Close();
+                conexao_SQL.Close();
+                return val;
+            }
+            catch
+            {
+                conexao_SQL.Close();
+                return val;
+            }
         }
 
         protected void btnCad_Click(object sender, EventArgs e)
@@ -152,22 +168,30 @@ namespace AcroniWeb
                 lblCPass.Attributes.Add("style", "color: #0093ff");
             }
 
+
             try
             {
                 if (Array.IndexOf(verify, false) == -1)
                 {
-                    xx = new ClasseConexao();
-                    ds = new DataSet();
-                    xx.executa_sql("INSERT INTO tblCliente (usuario,senha,email,cpf,cep) VALUES ('" + txtUsu.Text + "','" + txtPass.Text + "','" + txtEmail.Text + "','" + txtCPF.Text + "','" + txtCEP.Text + "')");
+                    if (conexao_SQL.State == ConnectionState.Closed)
+                        conexao_SQL.Open();
+
+                    String insert = "INSERT INTO tblCliente (usuario,senha,email,cpf,cep) VALUES ('" + txtUsu.Text + "','" + txtPass.Text + "','" + txtEmail.Text + "','" + txtCPF.Text + "','" + txtCEP.Text + "')";
+                    comando_SQL = new SqlCommand(insert, conexao_SQL);
+                    int n_linhas_afetadas = comando_SQL.ExecuteNonQuery();
                     Response.Redirect("login.aspx");
-                  
+
                 }
-               
-                    //lblErro.Text = "Campo inválido";
+
+                //lblErro.Text = "Campo inválido";
+                conexao_SQL.Close();
             }
-            catch { }
+            catch {
+                conexao_SQL.Close();
+            }
         }
         
+    
        
         
     }

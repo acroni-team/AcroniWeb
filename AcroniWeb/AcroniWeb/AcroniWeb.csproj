@@ -118,7 +118,7 @@
     <Compile Include="cadastro.aspx.designer.cs">
       <DependentUpon>cadastro.aspx</DependentUpon>
     </Compile>
-    <Compile Include="classes\ClasseConexao.cs" />
+    <Compile Include="classes\Conexao.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
