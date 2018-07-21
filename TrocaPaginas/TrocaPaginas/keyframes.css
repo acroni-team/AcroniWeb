@@ -1,0 +1,19 @@
+@keyframes topedaum{
+    0% {
+       transform: translate(0px,100%)
+    }
+    100%{
+        transform: translate(0px,300px)
+    }
+}
+
+@keyframes faderight{
+    0%{
+       transform: translate(100%)
+    }
+    100%{
+        transform: translate(30px)
+    }
+}
+
+

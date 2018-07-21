@@ -1,0 +1,31 @@
+*{margin: 0 auto; overflow-x: hidden}
+
+.light {
+    position: absolute;
+    background: #f2f2f2;
+    width: 100%;
+    height: 100vh;
+    
+    
+}
+
+/* para dar uma explicada: esse div light, esta em cima do div dark com position absolute e ele tem um keyframe de dar um faderight(que no caso n tem fade entao nem sei pq deixei esse nome mas ok),ou seja, no momento em que vc abre a pagina ele vai pro lado e a pagina o segue, ai quando vc clica no alo pra trocar de pagina a funcao faz com que a animacao de ele ir pra direita reverta fazendo ele voltar e dps trocando de pagina :D (n sei se deu pra entender muito, mas qualquer coisa me chama no discord '-') */
+
+.dark{
+    
+    background:#333;
+    width: 100%;
+    height: 100vh;    
+}
+
+.link{
+    position: absolute;
+    color:red;
+    font-size: 20px;
+    top:60%;
+    left:50%;
+   
+}
+
+
+
