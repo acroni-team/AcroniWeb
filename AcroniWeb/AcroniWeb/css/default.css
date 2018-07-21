@@ -1,3 +1,13 @@
+/*Div da troca de paginas*/
+
+.troca{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    background-color:#333;
+   z-index:300000;
+}
+
 /* Primeira seção (é dividida em duas partes direita (rsection) e esquerda (lsection)) */
 
 #lsection, #rsection {
@@ -25,7 +35,7 @@
     transition: color 300ms ease;
 }
 
-#lsection.active h1, #lsection.active p {color: #f2f2f2;}
+
 
 #lsection p, p.desc {
     text-align: center;
@@ -220,3 +230,13 @@ ul#menu-lista li {
     font-size: 1.5vw;
     margin-top: 10%;
 }
+
+
+/* Site layout escuro */
+
+/* lsection (seção da direita) */
+
+#lsection.dark h1, #lsection.dark p {color: #f2f2f2;}
+#lsection.dark, #rsection.dark {background-color:#333}
+#lsection.dark h1, #lsection.dark p {color: #f2f2f2;}
+#lsection.dark, #rsection.dark {background-color:#333}

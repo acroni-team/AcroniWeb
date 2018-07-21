@@ -1,0 +1,42 @@
+
+
+.m-div .troca {
+  -webkit-animation: 0.25s ease-in both;
+  animation-duration: 0.25s ease-in both;
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse; 
+}
+
+
+.m-div .troca--fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+.m-div .troca--topedaum{
+ -webkit-animation-name: topedaum;
+  animation-name: topedaum;
+}
+
+.m-div.saindo-da-pagina .troca {
+  -webkit-animation-direction: normal;
+  animation-direction: normal; 
+}
+
+
+
+
+/*
+.m-div .light--delayed {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s; }
+
+
+.m-scene.saindo-da-pagina .light--delayed {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; }
+
+.m-scene.saindo-da-pagina .light--noexiting {
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse; }
+*/

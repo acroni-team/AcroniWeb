@@ -74,8 +74,11 @@
     <Content Include="css\default.css" />
     <Content Include="css\cadastro.css" />
     <Content Include="css\fale-conosco.css" />
+    <Content Include="css\keyframes.css" />
     <Content Include="css\login.css" />
     <Content Include="css\main.css" />
+    <Content Include="css\transicao.css" />
+    <Content Include="default-dark.aspx" />
     <Content Include="default.aspx" />
     <Content Include="fale-conosco.aspx" />
     <Content Include="icon\adjust.svg" />
@@ -97,9 +100,11 @@
     <Content Include="img\Sem título.png" />
     <Content Include="js\jquery.js" />
     <Content Include="js\jquery.mask.min.js" />
+    <Content Include="js\jquery.smoothState.js" />
     <Content Include="js\main.js" />
     <Content Include="js\mascaras.js" />
     <Content Include="js\tema.js" />
+    <Content Include="js\transition.js" />
     <Content Include="login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -119,6 +124,13 @@
       <DependentUpon>cadastro.aspx</DependentUpon>
     </Compile>
     <Compile Include="classes\Conexao.cs" />
+    <Compile Include="default-dark.aspx.cs">
+      <DependentUpon>default-dark.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default-dark.aspx.designer.cs">
+      <DependentUpon>default-dark.aspx</DependentUpon>
+    </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

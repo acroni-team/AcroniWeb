@@ -1,78 +1,28 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/layout.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="AcroniWeb._default" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/layout.Master" AutoEventWireup="true" CodeBehind="default-dark.aspx.cs" Inherits="AcroniWeb.default_dark" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <script type="text/javascript" src="js/tema.js"></script>
-
-    <script>
-        // loadando o codigo do IFrame Player API.
-        var tag = document.createElement('script');
-
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        // Creando um Iframe apartir do div com id = var.
-        var player;
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                height: '100%',
-                width: '100%',
-                videoId: 'vfCozg8Yhxk',
-                playerVars: { 'autoplay': 1 },
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-        }
-
-        // API chama a função assim que o player termina de ser carregado.
-        function onPlayerReady(event) {
-            player.setPlaybackRate(1);
-
-        }
-
-    </script>
-
 </asp:Content>
-
-
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <%--<div class="preload">
-        <div class="anima">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
-    </div>--%>
-    <div id="main" class="m-div">
-        <div class="troca troca--fadeInLeft"></div>
     
-    
-
-        <section id="lsection">
+<div id="main" class="m-div">
+        <section id="lsection" class="dark">
             <div>
                 <h1>Acroni </h1>
                 <br />
                 <p>Mais que um teclado. O seu.</p>
-                <div id="buttons">
-                    <asp:Button class="blue" runat="server" Text="Fale conosco" OnClick="alo"  />
+                <div id="buttons" class="active">
+                    <asp:Button class="blue" runat="server" Text="Fale conosco" />
                     <!-- <asp:Button id="muda" class="blue" runat="server"  Text="Teclados mecânicos" ClientIDMode="Static" OnClientClick="return false"/>  <!-- OnClientClick="return false;">   ClientIDMode="Static" OnClientClick="return false;-->
-                    <a href="default-dark.aspx"><div id="mud" class="blue">
-                        <h3 id="fold_p">Teclados mecânicos</h3>
+                    <a href="default.aspx"><div id="muda2" class="blue">
+                        <h3 id="fold_p">Teclados escritório</h3>
                     </div></a>
                 </div>
 
-                
+              
             </div>
         </section>
-        <section id="rsection">
+        <section id="rsection" class="dark">
             <div>
                 <img src="img/apple.png" id="img" />
             </div>
@@ -115,13 +65,7 @@
                 <li><a href="#">Sobre a Acroni</a></li>
                 <li><a href="#">Unidades</a></li>
             </ul>
-        </div>
+         </div>
     </footer>
-    </div>
-    <script>
-        document.getElementById("home").classList.add("active");
-    </script>
-    <script type="text/javascript" src="js/jquery.smoothState.js"></script>
-    <script type="text/javascript" src="js/transition.js"></script>
-
+</div>
 </asp:Content>
