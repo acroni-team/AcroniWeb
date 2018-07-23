@@ -8,9 +8,16 @@
 }
 
 
-.m-div .troca--fadeInLeft {
+.m-div .troca.completo {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
+     
+}
+
+.m-div .troca--fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+     
 }
 
 .m-div .troca--topedaum{

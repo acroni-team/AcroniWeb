@@ -24,7 +24,7 @@
         </section>
         <section id="rsection" class="dark section section--fadeIn">
             <div>
-                <img src="img/apple.png" id="img" />
+                <img src="img/logo2.png" id="img" />
             </div>
         </section>
     <section id="facilidade">

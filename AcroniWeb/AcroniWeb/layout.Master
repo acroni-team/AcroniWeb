@@ -13,22 +13,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet"/>
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1"/> 
-    <script type="text/javascript">
-        $(window).on('load', function () {
-
-            $('.preload').addClass('completo');
-
-            //$('.item').each(function (i) {
-            //setTimeout(function () {
-            //$('.item').eq(i).addClass('visivel');
-
-            // }, 100 * i);
-
-            // });
-
-        });
-
-    </script>
+ 
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>

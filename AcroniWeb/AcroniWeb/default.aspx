@@ -27,11 +27,30 @@
             });
         }
 
+
+
         // API chama a função assim que o player termina de ser carregado.
         function onPlayerReady(event) {
             player.setPlaybackRate(1);
 
         }
+
+    </script>
+
+       <script type="text/javascript">
+        $(window).on('load', function () {
+
+            $('.preload').addClass('completo');
+
+            //$('.item').each(function (i) {
+            //setTimeout(function () {
+            //$('.item').eq(i).addClass('visivel');
+
+            // }, 100 * i);
+
+            // });
+
+        });
 
     </script>
 
@@ -41,20 +60,21 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <%--<div class="preload">
-        <div class="anima">
+    <div class="preload">
+        <%--<div class="anima">
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
             <div class="item"></div>
-        </div>
-    </div>--%>
+        </div>--%>
+        <p class="logo animado">Acroni</p>
+    </div>
+    
     <div id="main" class="m-div">
-        <div class="troca troca--fadeInLeft"></div>
-    
-    
+        <div class="troca troca--fadeIn">
+    </div>
 
         <section id="lsection" class="section section--fadeIn">
             <div>
@@ -69,7 +89,7 @@
                     </div></a>
                 </div>
 
-                
+                <div id="player"></div>
             </div>
         </section>
         <section id="rsection" class="section section--fadeIn">
