@@ -6,7 +6,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
 <div id="main" class="m-div">
-        <section id="lsection" class="dark">
+        <section id="lsection" class="dark section section--fadeIn">
             <div>
                 <h1>Acroni </h1>
                 <br />
@@ -22,7 +22,7 @@
               
             </div>
         </section>
-        <section id="rsection" class="dark">
+        <section id="rsection" class="dark section section--fadeIn">
             <div>
                 <img src="img/apple.png" id="img" />
             </div>

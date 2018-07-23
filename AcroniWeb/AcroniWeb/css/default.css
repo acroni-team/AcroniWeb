@@ -6,6 +6,7 @@
     height:100vh;
     background-color:#333;
    z-index:300000;
+   pointer-events:none;
 }
 
 /* Primeira seção (é dividida em duas partes direita (rsection) e esquerda (lsection)) */
@@ -18,7 +19,10 @@
     float: left;
     z-index: 0;
     display: flex;
+    
 }
+
+
 
 #rsection {align-items: center;} 
 

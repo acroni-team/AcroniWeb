@@ -56,7 +56,7 @@
     
     
 
-        <section id="lsection">
+        <section id="lsection" class="section section--fadeIn">
             <div>
                 <h1>Acroni </h1>
                 <br />
@@ -72,7 +72,7 @@
                 
             </div>
         </section>
-        <section id="rsection">
+        <section id="rsection" class="section section--fadeIn">
             <div>
                 <img src="img/apple.png" id="img" />
             </div>

@@ -9,8 +9,8 @@
 
 
 .m-div .troca--fadeInLeft {
-    -webkit-animation-name: fadeInLeft;
-    animation-name: fadeInLeft;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
 
 .m-div .troca--topedaum{
@@ -19,12 +19,29 @@
 }
 
 .m-div.saindo-da-pagina .troca {
-  -webkit-animation-direction: normal;
-  animation-direction: normal; 
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+ 
 }
 
+.m-div .section {
+    -webkit-animation: 0.25s ease-in both;
+    animation-duration: 0.25s ease-in both;
+    
+    opacity: 0;
 
+}
 
+.m-div .section--fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.m-div.saindo-da-pagina .section {
+    -webkit-animation-direction: alternate-reverse;
+    animation-direction: alternate-reverse;
+    
+}
 
 /*
 .m-div .light--delayed {
