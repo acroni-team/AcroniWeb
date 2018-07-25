@@ -38,10 +38,10 @@
     </script>
 
        <script type="text/javascript">
-        $(window).on('load', function () {
-
-            $('.preload').addClass('completo');
-
+           $(window).on('load', function () {
+               setInterval(function () {
+                   $('.preload').addClass('completo');
+               },2000);
             //$('.item').each(function (i) {
             //setTimeout(function () {
             //$('.item').eq(i).addClass('visivel');
