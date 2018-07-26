@@ -5,9 +5,13 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+<<<<<<< HEAD
 
 //Vamo ver se a disgraca do ammend vai funfar
 
+=======
+//FODA-SE
+>>>>>>> c2ebbe18706efa72996195db4492ed5992bbadf9
 namespace CadastroLogin
 {
     public partial class Cadastro : System.Web.UI.Page
