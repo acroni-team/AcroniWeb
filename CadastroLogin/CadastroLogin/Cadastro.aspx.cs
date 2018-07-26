@@ -6,6 +6,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+//Vamo ver se a disgraca do ammend vai funfar
+
 namespace CadastroLogin
 {
     public partial class Cadastro : System.Web.UI.Page
