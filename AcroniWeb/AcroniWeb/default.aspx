@@ -41,6 +41,7 @@
            $(window).on('load', function () {
                setInterval(function () {
                    $('.preload').addClass('completo');
+                   $('body').addClass('completo');
                },2000);
             //$('.item').each(function (i) {
             //setTimeout(function () {
