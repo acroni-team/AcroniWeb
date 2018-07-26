@@ -53,6 +53,7 @@
             <br />
             <br />
             <asp:Label ID="lblErro" runat="server"></asp:Label>
+            <asp:Label ID="lblErro2" runat="server">oimota</asp:Label>
             <br />
             <br />
             <asp:Button ID="btnCadastrar" runat="server" OnClick="btnCadastrar_Click" Text="Cadastrar" />
