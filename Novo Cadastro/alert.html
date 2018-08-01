@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> ALO </title>
+	<style type="text/css">
+		#main{
+		  width:100%;
+		  height:100vh;
+		  display:flex;
+		  justify-content:center;
+		}
+		#alert{
+		  width:300px;
+		  height:300px;
+		  background:red;
+		  align-self:center;
+		  opacity:0;
+		  pointer-events:none;
+		  
+		}
+		#trigger{
+		  width:60px;
+		  height:60px;
+		  background:blue;
+		}
+		#alert.open{
+		  animation: ScaleUP 300ms ease-in forwards;
+		  pointer-events:all;
+		}
+		#alert.open2{
+		  animation: ScaleDown 300ms ease-in forwards;
+		}
+
+		@keyframes ScaleUP{
+		  0%{
+			opacity:0;
+			
+		  }
+		  100%{
+			opacity:1;
+			
+		  }
+		} 
+		@keyframes ScaleDown{
+		  0%{
+			opacity:1;
+			
+		  }
+		  100%{
+			opacity:0;
+			
+		  }
+		} 
+	
+	
+	</style>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script>
+	$(document).ready(function(){
+		$('#trigger').on('click',function(){
+			if($('#alert').hasClass('open')){
+				$('#alert').removeClass('open');
+				$('#alert').addClass('open2');
+			}
+			else{
+				$('#alert').removeClass('open2');
+				$('#alert').addClass('open');
+			}
+		});
+	});
+	</script>
+</head>
+
+<body>
+   <div id="trigger"></div>
+<div id="main">
+  
+    <div id="alert">
+	<a href="cadastro.htm">alo<a/>
+    </div>
+  
+</div>
+</body>
+
+</html>

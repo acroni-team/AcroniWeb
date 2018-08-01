@@ -1,0 +1,36 @@
+.m-div .light {
+    -webkit-animation: 0.25s ease-in both;
+    animation-duration: 0.25s ease-in both;
+}
+
+
+.m-div .light--faderight {
+    -webkit-animation-name: faderight;
+    animation-name: faderight;
+}
+
+.m-div .light--topedaum {
+    -webkit-animation-name: topedaum;
+    animation-name: topedaum;
+}
+
+.m-div.saindo-da-pagina .light {
+    -webkit-animation-direction: alternate-reverse;
+    animation-direction: alternate-reverse;
+}
+
+
+/*
+.m-div .light--delayed {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s; }
+
+
+.m-scene.saindo-da-pagina .light--delayed {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; }
+
+.m-scene.saindo-da-pagina .light--noexiting {
+  -webkit-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse; }
+*/

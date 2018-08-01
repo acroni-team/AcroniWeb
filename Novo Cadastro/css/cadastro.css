@@ -1,0 +1,108 @@
+/*Preparacao*/
+
+body{
+    background-color:#f2f2f2;
+   
+}
+
+#padrao{
+    display:flex;
+    width:100vw;
+    height:100vh;
+    z-index: 1;
+    align-content: center;
+    justify-content: center;
+		vertical-align:middle;
+}
+
+
+.alinha{
+    display: flex;
+    align-self: center;
+    width:100%;
+    position: absolute;
+
+}
+
+.alinhado{
+    width:600px;
+    
+}
+
+/*inputs e botao */
+
+.identifica{
+    margin-bottom:10px;
+    color: rgba(0,0,0,0.7);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.caixa{
+    border:none;
+    caret-color: #0093ff;
+    font-size: 3em;
+    font-family: 'qanelas-bold';
+    background-color:#f2f2f2; 
+    opacity: 0;
+        
+}
+input::-webkit-input-placeholder {
+    color: rgb(0,0,0,0.2); 
+    
+    
+}
+
+input:focus, button:focus{
+     outline: none;
+}
+
+
+.bluev2, .bluev22{
+    border: none;
+    float: left;
+    align-self: center;
+    margin-left: 10px;
+    height:100%;
+    background-color:#0093ff; 
+    font-family: 'open';
+    padding-left:15px;
+    padding-right:15px;
+    color:#fff;
+    transition: 100ms ease-in;
+    border-radius: 5px;
+    pointer-events: all;
+    z-index: 28193812939218932;
+}
+
+.bluev22{
+    opacity: 0;
+    pointer-events: none;
+}
+
+button:hover{
+    background-color: rgba(0, 147, 255,0.5);
+}
+
+.alo{
+    opacity: 1;
+    pointer-events: none;
+    float:left;
+}
+
+.identifica.animacao, .caixa.animacao {
+    animation: fadeInTop 200ms ease-in alternate-reverse;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.identifica.animacao2, .caixa.animacao2{
+    animation: fadeOutBottom 200ms ease-in forwards;
+    opacity: 0;
+    pointer-events: all;
+}
+
+.identifica.animacao{
+    animation-duration: 400ms;
+
+}
