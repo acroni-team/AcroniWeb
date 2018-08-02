@@ -1,38 +1,17 @@
-/*Pré-comandos*/
+/*Prï¿½-comandos*/
 
 *{margin: 0 auto; user-select:none;}
 
 @font-face {font-family: 'open';src: url('../fontes/OpenSans-Regular.ttf');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'open-semi-bold';src: url('../fontes/OpenSans-SemiBold.ttf');font-weight: normal;font-style: normal;}
 @font-face {font-family: 'qanelas-light';src: url('../fontes/QanelasSoft-UltraLight.otf');font-weight: lighter;font-style: lighter;}
 @font-face {font-family: 'qanelas-bold';src: url('../fontes/QanelasSoft-ExtraBold.otf');font-weight: bold;font-style: bold;}
 
 body{background-color: #f2f2f2;transition: background-color 300ms ease;  overflow-x: hidden; position:fixed;}
 
-h1 {
-    font-family:'qanelas-bold';
+h1 {font-family:'qanelas-bold';}
 
-}
-
-p {
-    font-family:'open'
-}
-
-/* Keyframes */
-
-/* Keyframe aconi = animação de preload do site (aqueles quadradinhos) */
-@keyframes acroni {
-    0% {transform: translate(-30px) scale(1);opacity:1;}
-    40% {transform: scale(0.5) rotate(90deg);}
-    100% {transform: scale(0) rotate(30deg);opacity:0;}
-}
-
-@keyframes fadeOut {
-    0% { opacity: 1;}
-    100%{ opacity: 0;}
-}
-
-
-/*animação de preload*/
+p {font-family:'open'}
 
 .anima {
     position: absolute;
@@ -66,11 +45,11 @@ p {
     .item.visivel:nth-child(4), .item.visivel:nth-child(5), .item.visivel:nth-child(6) {
         background-color: #333;
     }
-        
+
     .item.visivel {
         animation: acroni 1s ease-out reverse forwards;
     }
-     */   
+     */
 
 
 /* Preload */
@@ -155,7 +134,7 @@ body.completo {
     cursor: pointer;
 }
 
-/* Configurações padrões de textbox (inputs) */
+/* Configuraï¿½ï¿½es padrï¿½es de textbox (inputs) */
 
 .caixxinha, .confirmar {
     outline: none;
@@ -201,8 +180,8 @@ nav{
 	background-color: transparent;
 	z-index: 999;
 	display:flex;
-	transition:0.3s;  
-    
+	transition:0.3s;
+
 }
 
 #login{
@@ -221,7 +200,7 @@ nav{
 	align-self: center;
 	z-index:2;
 	cursor: pointer;
-	transition: opacity 300ms ease; 
+	transition: opacity 300ms ease;
 }
 
 #login.active a {color:#f2f2f2}
@@ -234,7 +213,7 @@ nav{
     width: 100%;
 	z-index: 3;
     align-self: center;
-     
+
 }
 
 #pageSection p{
@@ -244,9 +223,9 @@ nav{
 	align-self: center;
 	z-index:2;
 	cursor: pointer;
-	transition: opacity 300ms ease; 
-    
-    
+	transition: opacity 300ms ease;
+
+
 }
 
 #menu-icon {
@@ -292,7 +271,7 @@ nav{
 #menu-icon.active .hamburger{
 
 	background-color:rgba(0,0,0,0);
-	
+
 }
 
 #menu-icon.active .hamburger:before{transform: rotate(45deg);top:0;}
@@ -309,7 +288,7 @@ nav{
     background: #000;
     z-index: 3;
     opacity: 0;
-    transition: opacity 300ms ease; 
+    transition: opacity 300ms ease;
 }
 
 #left, #right{
@@ -328,7 +307,7 @@ nav{
 
 .st2 {fill: #F2F2F2;}
 
-#logo {width:500px;} 
+#logo {width:500px;}
 
 
 #right{
@@ -397,7 +376,3 @@ div#right ul {
     margin-top: 20px;
     list-style-type: none;
 }
-
-
-
-

@@ -1,8 +1,8 @@
 /*Preparacao*/
 
 body{
-    background-color:#f2f2f2;
-   
+    background-color:#333;
+
 }
 
 #padrao{
@@ -21,21 +21,23 @@ body{
     align-self: center;
     width:100%;
     position: absolute;
-
+    pointer-events: none;
 }
 
 .alinhado{
     width:600px;
-    
+
 }
 
 /*inputs e botao */
 
 .identifica{
-    margin-bottom:10px;
-    color: rgba(0,0,0,0.7);
+    font-family: 'open-semi-bold';
+    margin-bottom:13px;
+    color: #fff;
     opacity: 0;
     pointer-events: none;
+    z-index: 0;
 }
 
 .caixa{
@@ -43,14 +45,16 @@ body{
     caret-color: #0093ff;
     font-size: 3em;
     font-family: 'qanelas-bold';
-    background-color:#f2f2f2; 
+    background-color:transparent;
     opacity: 0;
-        
+    z-index: 10;
+    color:#fff
+
 }
 input::-webkit-input-placeholder {
-    color: rgb(0,0,0,0.2); 
-    
-    
+    color: #636363;
+
+
 }
 
 input:focus, button:focus{
@@ -64,15 +68,15 @@ input:focus, button:focus{
     align-self: center;
     margin-left: 10px;
     height:100%;
-    background-color:#0093ff; 
+    background-color:#0093ff;
     font-family: 'open';
-    padding-left:15px;
-    padding-right:15px;
+    padding-left:22px;
+    padding-right:22px;
     color:#fff;
     transition: 100ms ease-in;
     border-radius: 5px;
     pointer-events: all;
-    z-index: 28193812939218932;
+    z-index: 999;
 }
 
 .bluev22{
@@ -85,24 +89,24 @@ button:hover{
 }
 
 .alo{
-    opacity: 1;
-    pointer-events: none;
     float:left;
 }
 
-.identifica.animacao, .caixa.animacao {
-    animation: fadeInTop 200ms ease-in alternate-reverse;
+.identifica.aparece, .caixa.aparece {
+    animation: fadeInTop 200ms ease-in alternate-reverse ;
     opacity: 1;
     pointer-events: all;
+
 }
 
-.identifica.animacao2, .caixa.animacao2{
+.identifica.some, .caixa.some{
     animation: fadeOutBottom 200ms ease-in forwards;
     opacity: 0;
     pointer-events: none;
+
 }
 
-.identifica.animacao{
+.identifica.aparece{
     animation-duration: 400ms;
 }
 

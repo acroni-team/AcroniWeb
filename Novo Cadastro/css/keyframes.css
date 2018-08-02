@@ -1,23 +1,42 @@
 @keyframes fadeInTop{
     0% {
-        opacity: 1;
-       transform: translate(0px,0px)
+      opacity: 1;
+      transform: translate(0px,0px)
     }
     100%{
-        opacity: 0;
-        transform: translate(0px,-40px)
+      opacity: 0;
+      transform: translate(0px,-40px)
     }
 }
 
 @keyframes fadeOutBottom{
     0%{
-        opacity: 1;
-       transform: translate(0px,0px)
+      opacity: 1;
+      transform: translate(0px,0px)
+    }
+    50%{
+      opacity: 0;
     }
     100%{
-        opacity: 0;
-        transform: translate(0px,40px)
+
+      transform: translate(0px,40px)
     }
 }
 
+/* Keyframes */
 
+/* Keyframe aconi = anima��o de preload do site (aqueles quadradinhos) */
+
+
+/*anima��o de preload*/
+
+@keyframes acroni {
+    0% {transform: translate(-30px) scale(1);opacity:1;}
+    40% {transform: scale(0.5) rotate(90deg);}
+    100% {transform: scale(0) rotate(30deg);opacity:0;}
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1;}
+    100%{ opacity: 0;}
+}
