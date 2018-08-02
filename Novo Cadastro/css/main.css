@@ -4,8 +4,8 @@
 
 @font-face {font-family: 'open';src: url('../fontes/OpenSans-Regular.ttf');font-weight: normal;font-style: normal;}
 @font-face {font-family: 'open-semi-bold';src: url('../fontes/OpenSans-SemiBold.ttf');font-weight: normal;font-style: normal;}
-@font-face {font-family: 'qanelas-light';src: url('../fontes/QanelasSoft-UltraLight.otf');font-weight: lighter;font-style: lighter;}
-@font-face {font-family: 'qanelas-bold';src: url('../fontes/QanelasSoft-ExtraBold.otf');font-weight: bold;font-style: bold;}
+@font-face {font-family: 'qanelas-light';src: url('../fontes/Qanelas-Light.ttf');font-weight: lighter;font-style: lighter;}
+@font-face {font-family: 'qanelas-bold';src: url('../fontes/Qanelas-Bold.ttf');font-weight: bold;font-style: bold;}
 
 body{background-color: #f2f2f2;transition: background-color 300ms ease;  overflow-x: hidden; position:fixed;}
 
