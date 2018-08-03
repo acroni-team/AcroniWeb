@@ -1,0 +1,139 @@
+section.tela-inteira {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fale-back.jpg) no-repeat;
+}
+
+div.texto {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+}
+
+h1.title {
+    font-size: 5vw;
+}
+
+section.div-dark {
+    width: 100%;
+    height: 60vh;
+    background-color: #333;
+}
+
+div.texto-dark {
+    width: 40%;
+    position: relative;
+    top: 33%;
+}
+
+h2.title-dark {
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 3.4vw;
+}
+
+p.desc-dark {
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+section.form {
+    background: url(../img/justsauce.jpg) no-repeat;
+    background-size: 100%;
+}
+
+div#formulario {
+    width: 35%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    left: 25%;
+}
+
+div#formulario h1 {
+    color: #0093ff;
+    font-size: 3vw;
+}
+
+input.campos-pergunta {
+    width: 300px;
+    height: 40px;
+    background: #fff;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    margin-left: 2px;
+    border: #fff;
+    border-radius: 3px;
+    padding-left: 15px;
+    color: #0093ff;
+    caret-color: #0093ff;
+    user-select: all;
+}
+
+.input.campos-pergunta {
+    outline: none;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    padding: 17px;
+    font-size: 17px;
+    caret-color: #0093ff;
+    color: #333;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+input.email {
+    margin-top: 5px;
+    width: 632px;
+}
+
+textarea.pergunta {
+    border: none;
+    border-radius: 0.4vw;
+    background: #fff;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 2px;
+    padding: 10px;
+    resize: none;
+    border: #fff;
+    border-radius: 3px;
+}
+
+.campos-pergunta::-webkit-input-placeholder, .pergunta::-webkit-input-placeholder {
+    color: rgba(51, 51, 51, 0.60);
+    transition: 0.3s;
+}
+
+input.campos-pergunta:focus::-webkit-input-placeholder, .pergunta:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.campos-pergunta::selection, .pergunta::selection {
+    background: rgba(51, 51, 51, 0.45);
+    color: #fff;
+}
+
+.azul {
+    font-size: 15px;
+    text-align: center;
+    float: left;
+    border: 2px solid #0093ff;
+    border-radius: 5px;
+    color: #0093ff;
+    margin: 5px;
+    margin-top: 20px;
+    width: 165px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #f2f2f2;
+}
+
+.azul:hover {
+    color: #f2f2f2;
+    background: #0093ff;
+    transform: translateY(0px);
+    cursor: pointer;
+}

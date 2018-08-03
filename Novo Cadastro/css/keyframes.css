@@ -1,3 +1,25 @@
+/* Keyframes */
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 @keyframes fadeInTop{
     0% {
       opacity: 1;
@@ -14,29 +36,24 @@
       opacity: 1;
       transform: translate(0px,0px)
     }
-    50%{
-      opacity: 0;
-    }
-    100%{
+    50%{opacity: 0;}
 
+    100%{
       transform: translate(0px,40px)
     }
 }
 
-/* Keyframes */
 
-/* Keyframe aconi = anima��o de preload do site (aqueles quadradinhos) */
+/*animação de preload (animação nova)*/
 
 
-/*anima��o de preload*/
-
-@keyframes acroni {
-    0% {transform: translate(-30px) scale(1);opacity:1;}
-    40% {transform: scale(0.5) rotate(90deg);}
-    100% {transform: scale(0) rotate(30deg);opacity:0;}
+@keyframes escrever {
+    0% {width: 0;}
+    20%, 100% {width: 3.2em;}
 }
 
-@keyframes fadeOut {
-    0% { opacity: 1;}
-    100%{ opacity: 0;}
+@keyframes piscaCursor {
+    from {border-right-color: rgba(255, 255, 255, 0.75);}
+
+    to {border-right-color: transparent;}
 }

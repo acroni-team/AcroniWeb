@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+@font-face {
+    font-family: 'Qanelas';
+    src: url('qanelas.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+      min-height: 100%;
+      overflow: hidden;
+}
+
+body {
+      height: 100vh;
+      
+      color: rgba(255, 255, 255, 1);
+      font-family: 'Qanelas';
+      background-color: #333;
+}
+
+.logo {
+      position: relative;
+      top: 50%;
+      width: 3.2em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      font-size: 180%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+}
+
+
+.animado {
+      animation: escrever 3.5s steps(6) 1s infinite normal both,
+      piscaCursor 500ms steps(40) infinite normal;
+
+}
+
+@keyframes escrever {
+      0% {
+            width: 0;
+      }
+      20%, 100% {
+            width: 3.2em;
+      }
+}
+
+@keyframes piscaCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}

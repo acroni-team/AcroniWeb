@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Acroni </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/keyframes.css" />
+    <link rel="stylesheet" type="text/css" href="css/transicao.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet"/>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1"/>
+
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <script type="text/javascript" src="js/tema.js"></script>
+
+    <script>
+        // loadando o codigo do IFrame Player API.
+        var tag = document.createElement('script');
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // Creando um Iframe apartir do div com id = var.
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '100%',
+                width: '100%',
+                videoId: 'bnK3kh8ZEgA',
+                playerVars: { 'autoplay': 1 },
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+        // API chama a função assim que o player termina de ser carregado.
+        function onPlayerReady(event) {
+            player.setPlaybackRate(1);
+
+        }
+
+    </script>
+
+       <script type="text/javascript">
+           $(window).on('load', function () {
+               setInterval(function () {
+                   $('.preload').addClass('completo');
+                   $('body').addClass('completo');
+               },2000);
+            //$('.item').each(function (i) {
+            //setTimeout(function () {
+            //$('.item').eq(i).addClass('visivel');
+
+            // }, 100 * i);
+
+            // });
+        });
+    </script>
+
+</head>
+<body>
+    <div class="preload">
+			<div class="anima">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+			</div>
+		</div>
+</body>
+</html>

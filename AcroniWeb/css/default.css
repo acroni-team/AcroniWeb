@@ -1,0 +1,232 @@
+/* Primeira seção (é dividida em duas partes direita (rsection) e esquerda (lsection)) */
+
+#lsection, #rsection {
+    width: 50%;
+    height: 100vh;
+    background-color: #f2f2f2;
+    transition: background-color 300ms ease;
+    float: left;
+    z-index: 0;
+    display: flex;
+
+}
+
+
+
+#rsection {align-items: center;}
+
+#rsection img {width: 1000px;}
+
+#lsection div, #rsection div {align-self: center;}
+
+#lsection h1, h1.title {
+    font-family: 'qanelas-extra-bold';
+    color: #0093ff;
+    font-weight: bold;
+    font-size: 120px;
+    text-align: center;
+    transition: color 300ms ease;
+}
+
+
+
+#lsection p, p.desc {
+    text-align: center;
+    color: #333;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -40px;
+    transition: color 300ms ease;
+}
+
+h3 {
+    text-align: center;
+    font-weight:normal;
+    transition: none;
+    font-size: 15px;
+    color: #0093ff;
+    margin-top: 0;
+}
+
+/* Segunda seção */
+
+section#facilidade {
+    width: 100%;
+    height: 50vh;
+    background-color: #333;
+    float: right;
+}
+
+h2.title-subsection {
+    text-align: center;
+    font-family: 'Open Sans'; /*Open Sans BOLD*/
+    font-size: 2.5vw;
+    margin-top: 3%;
+}
+
+h2.light {
+    color: #f2f2f2;
+}
+
+h2.dark {
+    color: #333;
+}
+
+h2.tamanhos {
+    text-align: left;
+    margin-top: 20%;
+}
+
+p.desc {
+    font-size: 1.1vw;
+    text-align: justify;
+}
+
+p.desc-facilidade {
+    color: #f2f2f2;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 1%;
+}
+
+p.first {
+    margin-top: 4%;
+}
+
+.same-height {
+    width: 100%;
+    height: 80vh;
+    float: left;
+    position: relative;
+}
+
+img#dois-teclados {
+    position: absolute;
+    width: auto;
+    height: 110%;
+    top: 16%;
+    left: 10%;
+}
+
+#tamanhos {
+    background-color: #f2f2f2;
+}
+
+#escolha-cor {
+    background-color: #fff;
+}
+
+.lsection {
+    float: left;
+    width: 55%;
+    height: 100%;
+}
+
+.rsection {
+    float: left;
+    width: 45%;
+    height: 100%;
+}
+
+p.desc-tamanhos {
+    margin-top: 10%;
+    padding-right: 50%;
+}
+
+.btn-comece-ja {
+    margin-left: 17%;
+    margin-top: 7%;
+}
+
+div.section-white {
+    background-color: #fff;
+    float: left;
+}
+
+footer#footi {
+    width: 100%;
+    height: 40vh;
+    background-color: #f2f2f2;
+    float: right;
+    position:relative;
+}
+
+.lsection-escolha {
+    width: 40%;
+    height: 80vh;
+}
+
+.rsection-escolha {
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+img#demo-acroni {
+    width: 70%;
+    height: auto;
+}
+
+h2.title-escolha {
+    text-align: left;
+    margin-top: 27%;
+    padding-left: 10%;
+}
+
+p.escolha {
+    padding-left: 10%;
+    margin-top: 5%;
+}
+
+.divisor {
+    width: 7px;
+    height: 30vh;
+    position: absolute;
+    margin-top: 3%;
+    left: 49.8%;
+    background-color: #0093ff;
+    float: left;
+    border: none;
+}
+
+div#div-logo {
+    float: left;
+    position:absolute;
+    top: 32%;
+    left: 31%;
+}
+
+#logo-footer {
+    font-size: 5vw;
+    text-align: center;
+}
+
+div#menu-footer {
+    position: absolute;
+    top: 27%;
+    right: 35%;
+}
+
+#subtitulo-logo-footer {
+    text-align: center;
+    font-size: 1vw;
+}
+
+ul#menu-lista li {
+    font-family: 'Open Sans';
+    color: #333;
+    text-align: left;
+    font-size: 1.5vw;
+    margin-top: 10%;
+}
+
+
+/* Site layout escuro */
+
+/* lsection (se��o da direita) */
+
+#lsection.dark h1, #lsection.dark p {color: #f2f2f2;}
+#lsection.dark, #rsection.dark {background-color:#333}
+#lsection.dark h1, #lsection.dark p {color: #f2f2f2;}
+#lsection.dark, #rsection.dark {background-color:#333}

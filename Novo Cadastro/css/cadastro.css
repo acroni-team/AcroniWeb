@@ -25,7 +25,7 @@ body{
 }
 
 .alinhado{
-    width:600px;
+    width:650px;
 
 }
 
@@ -44,7 +44,7 @@ body{
     border:none;
     caret-color: #0093ff;
     font-size: 3em;
-    font-family: 'qanelas-bold';
+    font-family: 'qanelas-extra-bold';
     background-color:transparent;
     opacity: 0;
     z-index: 10;
