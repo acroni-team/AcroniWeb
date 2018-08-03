@@ -4,8 +4,10 @@
 
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <script type="text/javascript" src="js/tema.js"></script>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  
     <script>
+        
         // loadando o codigo do IFrame Player API.
         var tag = document.createElement('script');
 
@@ -99,26 +101,26 @@
             </div>
         </section>
     <section id="facilidade">
-        <h2 class="title-subsection light">Facilidade</h2>
-        <p class="desc desc-facilidade first">Já pensou em ter um teclado que você sente que é só seu? Fazer tudo isso é mais fácil do que você pensa, e vem com um prazer a mais, o de poder dizer orgulhosamente que foi elaborado por você.</p>
-        <p class="desc desc-facilidade">Na Acroni seu desejo pode ser realizado. Com o nosso software você poderá fazer tudo que imaginava para o teclado dos sonhos sem sair do conforto do seu computador.</p>
+        <h2 data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="title-subsection light">Facilidade</h2>
+        <p data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="desc desc-facilidade first">Já pensou em ter um teclado que você sente que é só seu? Fazer tudo isso é mais fácil do que você pensa, e vem com um prazer a mais, o de poder dizer orgulhosamente que foi elaborado por você.</p>
+        <p data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="desc desc-facilidade">Na Acroni seu desejo pode ser realizado. Com o nosso software você poderá fazer tudo que imaginava para o teclado dos sonhos sem sair do conforto do seu computador.</p>
     </section>
     <section class="same-height" id="tamanhos">
         <div class="lsection">
             <img id="dois-teclados" src="img/dois-teclados.png" alt="Alternate Text" />
         </div>
         <div class="rsection">
-            <h2 class="title-subsection dark tamanhos">Tamanhos para todos</h2>
+            <h2 data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="title-subsection dark tamanhos">Tamanhos para todos</h2>
             <br />
-            <p class="desc desc-tamanhos">Aqui você escolhe o tamanho de teclado que mais combina com você e que melhor cabe em sua mesa.</p>
-            <asp:Button ID="btnComeceJa" class="blue btn-comece-ja" runat="server" Text="Começe já" />
+            <p data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="desc desc-tamanhos">Aqui você escolhe o tamanho de teclado que mais combina com você e que melhor cabe em sua mesa.</p>
+            <asp:Button data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" ID="btnComeceJa" class="blue btn-comece-ja" runat="server" Text="Começe já" />
         </div>
     </section>
     <section class="same-height" id="escolha-cor">
         <div class="lsection-escolha section-white">
-            <h2 class="title-subsection title-escolha">Escolha a sua cor</h2>
-            <p class="desc escolha">Escolha suas cores preferidas para criar um teclado único, elaborado por você.</p>
-            <p class="desc escolha">Nosso software oferece a customização de forma fácil e rápida. Em apenas alguns minutos você conseguirá criar o teclado dos seus sonhos.</p>
+            <h2 data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="title-subsection title-escolha">Escolha a sua cor</h2>
+            <p data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="desc escolha">Escolha suas cores preferidas para criar um teclado único, elaborado por você.</p>
+            <p data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="desc escolha">Nosso software oferece a customização de forma fácil e rápida. Em apenas alguns minutos você conseguirá criar o teclado dos seus sonhos.</p>
         </div>
         <div class="rsection-escolha section-white">
             <img src="img/demo-acroni.jpg" id="demo-acroni" alt="Alternate Text" />
@@ -144,5 +146,8 @@
     </script>
     <script type="text/javascript" src="js/jquery.smoothState.js"></script>
     <script type="text/javascript" src="js/transition.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </asp:Content>
