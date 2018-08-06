@@ -25,14 +25,19 @@ $(document).ready(function () {
 
     function animate(alo) {
         if(i == 0 || i == 1) {
-            $(alo).eq(0).addClass("some"); //remove o 1
-            $(alo).eq(1).addClass("aparece").focus();  //adiciona o 2
-            i = i + 1;
+            changeGroup(0, 1, alo);
         } else if(i == 2 || i == 3) {
-            $(alo).eq(1).addClass("some"); //remove o 2
-            $(alo).eq(2).addClass("aparece").focus();  //adiciona o 3
-            i = i + 1;
+            changeGroup(1, 2, alo);
         }
+        else if(i == 4 || i == 5) {
+            changeGroup(2, 3, alo);
+        }
+    }
+
+    function changeGroup(f, l, seletor) {
+        $(seletor).eq(f).addClass("some");             //remove o 1
+        $(seletor).eq(l).addClass("aparece").focus();  //adiciona o 2
+        i = i + 1;
     }
 
     $(".bluev2").click(animateBoth);
