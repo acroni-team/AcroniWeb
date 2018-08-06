@@ -14,10 +14,10 @@ namespace AcroniWeb
 
         }
 
-        protected void alo(object sender, EventArgs e)
+        protected void redireciona(object sender, EventArgs e)
         {
 
-            Response.Redirect("fale-conosco.aspx");
+            Response.Redirect("loja.aspx");
         }
        
     }

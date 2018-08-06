@@ -41,6 +41,7 @@
 
        <script type="text/javascript">
            $(window).on('load', function () {
+                 
                setInterval(function () {
                    $('.preload').addClass('completo');
                    $('body').addClass('completo');
@@ -56,6 +57,7 @@
         });
 
     </script>
+
 
 </asp:Content>
 
@@ -85,7 +87,7 @@
                 <br />
                 <p>Mais que um teclado. O seu.</p>
                 <div id="buttons">
-                    <asp:Button class="blue" runat="server" Text="Fale conosco" OnClick="alo"  />
+                    <asp:Button class="blue" runat="server" Text="Conheça a Loja" OnClick="redireciona"  />
                     <!-- <asp:Button id="muda" class="blue" runat="server"  Text="Teclados mecânicos" ClientIDMode="Static" OnClientClick="return false"/>  <!-- OnClientClick="return false;">   ClientIDMode="Static" OnClientClick="return false;-->
                     <a href="default-dark.aspx"><div id="mud" class="blue">
                         <h3 id="fold_p">Teclados mecânicos</h3>

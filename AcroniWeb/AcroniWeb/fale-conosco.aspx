@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/layout.Master" AutoEventWireup="true" CodeBehind="fale-conosco.aspx.cs" Inherits="AcroniWeb.fale_conosco" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-    <link rel="stylesheet" type="text/css" href="css/fale-conosco.css" />
     <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/fale-conosco.css" />
 
 
 </asp:Content>

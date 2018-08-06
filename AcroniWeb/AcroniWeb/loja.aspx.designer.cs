@@ -10,24 +10,15 @@
 namespace AcroniWeb {
     
     
-    public partial class _default {
+    public partial class loja {
         
         /// <summary>
-        /// muda control.
+        /// DataList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button muda;
-        
-        /// <summary>
-        /// btnComeceJa control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnComeceJa;
+        protected global::System.Web.UI.WebControls.DataList DataList1;
     }
 }

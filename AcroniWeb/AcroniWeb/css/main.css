@@ -6,7 +6,7 @@
 @font-face {font-family: 'qanelas-light';src: url('../fontes/QanelasSoft-UltraLight.otf');font-weight: lighter;font-style: lighter;}
 @font-face {font-family: 'qanelas-bold';src: url('../fontes/QanelasSoft-ExtraBold.otf');font-weight: bold;font-style: bold;}
 
-body{background-color: #f2f2f2;transition: background-color 300ms ease;  overflow-x: hidden; position:fixed;}
+body{background-color: #f2f2f2;transition: background-color 300ms ease;  overflow-x: hidden; font-family: 'open'}
 
 h1 {
     font-family:'qanelas-bold';
@@ -83,9 +83,6 @@ p {
     z-index:99999;
 }
 
-body.completo {
-    position: initial;
-}
 
 .preload.completo {
    animation: fadeOut 1s ease forwards;

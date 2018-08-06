@@ -7,7 +7,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <div id="main" class="m-div">
     <section>
         <div id="left">
 	         <div id="logo">
@@ -31,6 +31,7 @@
 			</form>
         </div>
     </section>
+        </div>
     <script>
         document.getElementById("entrar").classList.add("active");
     </script>

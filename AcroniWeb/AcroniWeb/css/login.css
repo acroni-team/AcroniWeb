@@ -2,16 +2,17 @@
 
 /* Pré-comandos */
 
-* {margin: 0 auto;font-family: 'open';}
+* {margin: 0 auto;opacity:1}
 
-html, body {height: 99%;overflow: hidden;}
+
+
 
 /* Comandos da seção*/
 
 section {
     background: transparent;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 

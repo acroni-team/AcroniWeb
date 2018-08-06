@@ -76,6 +76,7 @@
     <Content Include="css\fale-conosco.css" />
     <Content Include="css\keyframes.css" />
     <Content Include="css\login.css" />
+    <Content Include="css\loja.css" />
     <Content Include="css\main.css" />
     <Content Include="css\transicao.css" />
     <Content Include="default-dark.aspx" />
@@ -94,6 +95,12 @@
     <Content Include="img\apple.png" />
     <Content Include="construct.aspx" />
     <Content Include="img\fale-back.jpg" />
+    <Content Include="img\Img %281%29.jpg" />
+    <Content Include="img\Img %282%29.jpg" />
+    <Content Include="img\Img %282%29.png" />
+    <Content Include="img\Img %283%29.jpg" />
+    <Content Include="img\Img %284%29.jpg" />
+    <Content Include="img\Img %285%29.jpg" />
     <Content Include="img\justsauce.jpg" />
     <Content Include="img\logo.png" />
     <Content Include="img\logo2.png" />
@@ -106,6 +113,7 @@
     <Content Include="js\tema.js" />
     <Content Include="js\transition.js" />
     <Content Include="login.aspx" />
+    <Content Include="loja.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -165,6 +173,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loja.aspx.cs">
+      <DependentUpon>loja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loja.aspx.designer.cs">
+      <DependentUpon>loja.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="classes\Valida.cs" />

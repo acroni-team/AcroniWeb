@@ -1,5 +1,10 @@
-/*Div da troca de paginas*/
+/* Preload */
 
+body {position:fixed;}
+body.completo {position:initial}
+
+
+/*Div da troca de paginas*/
 .troca {
     position: absolute;
     width: 100%;
