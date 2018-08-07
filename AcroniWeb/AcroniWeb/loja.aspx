@@ -31,8 +31,9 @@
 
                 <div id="Produto<%# Eval("id") %>" class="fundo">
                     <div class="janela">
+                        <a href="#fecha" class="fecha-janela">x</a>
                         <div class="right">
-
+                            <asp:Image ID="Image1" class="img-grande" runat="server"  ImageUrl='<%# Bind("id","~/img/produtos/Img ({0}).jpg") %>' /></a>
                         </div>
                         <div class="left">
                             
@@ -45,5 +46,8 @@
       </ul>
        <!--<a href="Produto<%# Eval("id") %>.aspx"><div class="info">-->
        <!--<a href="Produto<%# Eval("id") %>.aspx">Produto <%# Eval("id") %></a>-->
+       <script>
+            if (window.location.hash.substr(1) == 'janela') { document.getElementById('Produto<%# Eval("id") %>').checked = true }
+        </script> 
 </asp:Content>
 

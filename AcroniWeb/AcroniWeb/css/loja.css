@@ -28,7 +28,8 @@
 .grid figure {
     margin: 0;
     position: relative;
-     overflow:hidden;
+    overflow:hidden;
+    background-color:#333;
      
 }
 
@@ -84,34 +85,41 @@ figure:hover figcaption {
 
 
 
-.fundo
-{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100vh;
-    opacity:0;
-    pointer-events:none;
-    z-index:999;
-    transition:opacity 300ms ease-in;
-    background-color:rgba(0,0,0,0.5);
+.fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+    transition: opacity 300ms ease-in;
+    background-color: rgba(0,0,0,0.5);
+    
 }
 
 .fundo:target {
     opacity: 1;
-    pointer-events: all;
+    pointer-events: all;  
 }
 
 
+.janela {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #0093ff;
+    width: 1180px;
+    height: 620px;
+    transform: translate(-50%,-50%) scale(0);
+    transition: transform 300ms ease-in;
+}
 
-.janela
-{
-    position:absolute;
-    top:50%;
-    left:50%;
-    background-color:#0093ff;
-    width:500px;
-    height:500px;
-    transform:translate(-50%,-50%);
+.fundo:target .janela {
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.fundo:target body {
+    position:fixed;
 }
