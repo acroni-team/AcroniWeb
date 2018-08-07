@@ -29,7 +29,7 @@ body.completo {position:initial}
     overflow: hidden;
     transform: translateY(-50%);
     font-family:'qanelas-bold';
-    color:#fff;
+    color:#f2f2f2;
 }
 
 
@@ -49,7 +49,7 @@ body.completo {position:initial}
 
 @keyframes piscaCursor {
     from {
-        border-right-color: rgba(255, 255, 255, 0.75);
+        border-right-color: #DFDFDF;
     }
 
     to {

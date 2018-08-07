@@ -70,6 +70,7 @@
   <ItemGroup>
     <Content Include="area-restrita.aspx" />
     <Content Include="cadastro.aspx" />
+    <Content Include="img\produtos\Img %281%29.png" />
     <Content Include="css\area-restrita.css" />
     <Content Include="css\default.css" />
     <Content Include="css\cadastro.css" />
@@ -96,7 +97,7 @@
     <Content Include="construct.aspx" />
     <Content Include="img\fale-back.jpg" />
     <Content Include="img\produtos\Img %281%29.jpg" />
-    <Content Include="img\produtos\Img %281%29.png" />
+    <Content Include="img\produtos\Img1 %281%29.png" />
     <Content Include="img\produtos\Img %282%29.jpg" />
     <Content Include="img\produtos\Img %282%29.png" />
     <Content Include="img\produtos\Img %283%29.jpg" />
