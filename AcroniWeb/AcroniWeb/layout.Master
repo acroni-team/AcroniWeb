@@ -53,8 +53,8 @@
             </div>
         </div>
         <nav>
-            <div id="login">
-                <a href="default.aspx">HOME</a>
+            <div id="home">
+                <a href="default.aspx">Acroni</a>
 
             </div>
             <div id="menu-icon">

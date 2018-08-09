@@ -70,9 +70,11 @@
   <ItemGroup>
     <Content Include="area-restrita.aspx" />
     <Content Include="cadastro.aspx" />
+    <Content Include="css\default.css" />
+    <Content Include="default.aspx" />
     <Content Include="img\produtos\Img %281%29.png" />
     <Content Include="css\area-restrita.css" />
-    <Content Include="css\default.css" />
+    <Content Include="css\default-old.css" />
     <Content Include="css\cadastro.css" />
     <Content Include="css\fale-conosco.css" />
     <Content Include="css\keyframes.css" />
@@ -81,7 +83,7 @@
     <Content Include="css\main.css" />
     <Content Include="css\transicao.css" />
     <Content Include="default-dark.aspx" />
-    <Content Include="default.aspx" />
+    <Content Include="default-old.aspx" />
     <Content Include="fale-conosco.aspx" />
     <Content Include="icon\adjust.svg" />
     <Content Include="icon\check-square.svg" />
@@ -143,6 +145,13 @@
     </Compile>
     <Compile Include="default-dark.aspx.designer.cs">
       <DependentUpon>default-dark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default-old.aspx.cs">
+      <DependentUpon>default-old.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default-old.aspx.designer.cs">
+      <DependentUpon>default-old.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>

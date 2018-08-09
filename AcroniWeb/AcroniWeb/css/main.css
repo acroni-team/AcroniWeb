@@ -201,7 +201,7 @@ nav{
 	transition:0.3s;  
 }
 
-#login{
+#home{
 	display: flex;
 	background: transparent;
 	height: 100%;
@@ -210,17 +210,18 @@ nav{
 	z-index: 2;
 }
 
-#login a{
+#home a{
 	font-family:'qanelas-bold';
 	font-weight: bold;
-	color:#959595;
+    font-size:1.4em;
+	color:#f2f2f2;
 	align-self: center;
 	z-index:2;
 	cursor: pointer;
 	transition: opacity 300ms ease; 
 }
 
-#login.active a {color:#f2f2f2}
+#home.active a {color:#f2f2f2}
 
 
 #menu-icon {
