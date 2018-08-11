@@ -1,0 +1,49 @@
+/* Buttons */
+@import '../var-import/cor';
+
+
+    .blue, .cadastro {
+        font-family: 'open';
+        font-size: 15px;
+        text-align: center;
+        float: left;
+        border: 2px solid $cor-primaria;
+        border-radius: 5px;
+        color: $cor-primaria;
+        margin: 5px;
+        margin-top: 20px;
+        width: 165px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        transition: background-color 300ms ease;
+        background-color: $branco;
+
+        &:hover {
+            color: $branco;
+            background-color: $cor-primaria;
+            transform: translateY(0px);
+            cursor: pointer;
+
+            h3 {
+                color: $branco;
+            }
+        }
+
+        &.dark {
+            border: 2px solid $cor-primaria;
+            color: $branco;
+            background-color: $cor-primaria;
+
+            &:hover {
+                color: $cor-primaria;
+                background-color: transparent;
+                transform: translateY(0px);
+                cursor: pointer;
+
+                h3 {
+                    color: $branco;
+                }
+            }
+        }
+        
+    }

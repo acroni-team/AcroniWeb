@@ -1,0 +1,235 @@
+@import 'var-import/todos';
+
+
+/*Pré-comandos*/
+*{margin: 0 auto; user-select:none;}
+
+body{background-color: #f2f2f2;transition: background-color 300ms ease;  overflow-x: hidden; font-family: 'open'; font-weight:$normal;}
+
+
+/*The Site*/
+
+/* Configurações padrões de textbox (inputs) */
+
+.caixxinha, .confirmar {
+    outline: none;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    text-indent: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 17px;
+    color: #333;
+    width: 100%;
+    transition: 0.3s ease-in;
+    margin-bottom: 15px;
+}
+
+.caixxinha::-webkit-input-placeholder, .confirmar::-webkit-input-placeholder {
+    color: rgba(51, 51, 51, 0.60);
+}
+
+.caixxinha:-ms-input-placeholder, .confirmar:-ms-input-placeholder {
+    color: rgba(51, 51, 51, 0.60);
+}
+
+.caixxinha::-moz-input-placeholder, .confirmar::-moz-input-placeholder {
+    color: rgba(51, 51, 51, 0.60);
+}
+
+.caixxinha:focus::-webkit-input-placeholder, .confirmar:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.caixxinha::selection, .confirmar::selection {
+    background: rgba(51, 51, 51, 0.45);
+    color: #fff;
+}
+
+/*nav (barra do menu) */
+
+nav{
+	position: fixed;
+	width: 100%;
+	height:70px;
+	background-color: transparent;
+	z-index: 999;
+	display:flex;
+	transition:0.3s;  
+}
+
+#logotext{
+	display: flex;
+	background: transparent;
+	height: 100%;
+	width: 200px;
+	margin: 0px;
+	z-index: 2;
+}
+
+#logotext a{
+	font-family:'qanelas-extra-bold';
+	font-weight: bold;
+    font-size:1.4em;
+	color:#f2f2f2;
+	align-self: center;
+	z-index:2;
+	cursor: pointer;
+	transition: opacity 300ms ease; 
+}
+
+#home.active a {color:#f2f2f2}
+
+
+#menu-icon {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    height: 100%;
+    width: 100px;
+    margin: 0px;
+    z-index: 20;
+    cursor: pointer;
+    transition: transform 300ms ease, background-color 300ms ease;
+}
+
+/* Hamburger Icon */
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background: #959595;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    transition: transform 300ms ease, background-color 300ms ease;
+}
+
+.hamburger:before, .hamburger:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #959595;
+    transition: transform 300ms ease, background-color 300ms ease;
+}
+
+.hamburger:before{top: -8px;}
+
+.hamburger:after{top: 8px;}
+
+#menu-icon.active {z-index:20;}
+
+#menu-icon.active .hamburger{
+
+	background-color:rgba(0,0,0,0);
+	
+}
+
+#menu-icon.active .hamburger:before{transform: rotate(45deg);top:0;}
+
+#menu-icon.active .hamburger:after{transform: rotate(-45deg);top:0;}
+
+/* Menu  */
+
+#menu {
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 300ms ease; 
+}
+
+#left, #right{
+	width: 50%;
+	height: 100%;
+	background: #f2f2f2;
+	float:left;
+
+}
+
+#left{display: flex;align-items: center;}
+
+.st0 {fill: #333333;}
+
+.st1 {fill: #0093FF;}
+
+.st2 {fill: #F2F2F2;}
+
+#logo {width:500px;} 
+
+
+#right{
+	display:flex;
+	align-items: center;
+	background: #f2f2f2;
+}
+
+#right div{width: 60%;}
+
+#menu input{
+	background: #fff;
+	width: 100%;
+	height: 35px;
+	border:#fff;
+	border-radius: 3px;
+	padding: 10px;
+    padding-left:15px;
+	font-family: 'open';
+	font-size: 15px;
+    color:#0093ff;
+    user-select:all;
+}
+
+
+#menu.active input::-webkit-input-placeholder{color:#f2f2f2;}
+
+#menu input:focus{outline-color:#0093ff;}
+
+/*light theme */
+
+div#right li {
+    text-align: right;
+    font-family: 'open';
+    font-size: 40px;
+    color: #333;
+    transition: color 300ms ease;
+}
+
+div#rightli a {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    transition: color 300ms ease;
+    color: #333;
+}
+
+div#right li a:hover:not(.active), div#right li a.active {
+    color: #0093ff;
+}
+
+
+/*dark theme */
+
+div#right li.active a.active, div#right li.active a:hover:not(.active) {
+    color: #0093ff;
+}
+
+div#right li.active a, div#right li.active {
+    color: #f2f2f2;
+}
+
+div#right ul {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+
+
+

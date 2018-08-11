@@ -1,0 +1,12 @@
+﻿/* mixin */
+
+
+@mixin wh($valor) {
+    width: 100%;
+    height: $valor;
+}
+
+@mixin hw($valor) {
+    width: $valor;
+    height: 100%;
+}
