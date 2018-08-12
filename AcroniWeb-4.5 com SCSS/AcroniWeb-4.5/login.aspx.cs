@@ -30,44 +30,44 @@ namespace AcroniWeb
 
         protected void btnEntra_Click(object sender, EventArgs e)
         {
-                if (conexao_SQL.State == ConnectionState.Closed)
-                    conexao_SQL.Open();
+                //if (conexao_SQL.State == ConnectionState.Closed)
+                //    conexao_SQL.Open();
                 
-                String select = "SELECT * FROM tblCliente WHERE usuario='" + txtUsu.Text + "'";
-                comando_SQL = new SqlCommand(select, conexao_SQL);
-                tabela = comando_SQL.ExecuteReader();
-                tabela.Read();
-                if (tabela.HasRows)
-                {
-                    tabela.Close();
-                    String select2 = "SELECT * FROM tblCliente WHERE senha='" + txtPass.Text + "'";
-                    comando_SQL = new SqlCommand(select2, conexao_SQL);
-                    SqlDataReader tabela2 = comando_SQL.ExecuteReader();
-                    tabela2.Read();
-                    if (tabela2.HasRows)
-                    { 
-                        Session["logado"] = "1";
-                        Response.Redirect("area-restrita.aspx");
-                    }
-                    else
-                    {
-                        lblMsg.Text = "Senha incorreta";
-                        lblMsg.ForeColor = System.Drawing.Color.Red;
-                        txtPass.Attributes.Add("style", "border-color:red");
-                    }
-                    tabela2.Close();
-                    conexao_SQL.Close();
+                //String select = "SELECT * FROM tblCliente WHERE usuario='" + txtUsu.Text + "'";
+                //comando_SQL = new SqlCommand(select, conexao_SQL);
+                //tabela = comando_SQL.ExecuteReader();
+                //tabela.Read();
+                //if (tabela.HasRows)
+                //{
+                //    tabela.Close();
+                //    String select2 = "SELECT * FROM tblCliente WHERE senha='" + txtPass.Text + "'";
+                //    comando_SQL = new SqlCommand(select2, conexao_SQL);
+                //    SqlDataReader tabela2 = comando_SQL.ExecuteReader();
+                //    tabela2.Read();
+                //    if (tabela2.HasRows)
+                //    { 
+                //        Session["logado"] = "1";
+                //        Response.Redirect("area-restrita.aspx");
+                //    }
+                //    else
+                //    {
+                //        lblMsg.Text = "Senha incorreta";
+                //        lblMsg.ForeColor = System.Drawing.Color.Red;
+                //        txtPass.Attributes.Add("style", "border-color:red");
+                //    }
+                //    tabela2.Close();
+                //    conexao_SQL.Close();
                     
-                }                 
-                else
-                {
-                    lblMsg.Text = "Usuário incorreto";
-                    lblMsg.ForeColor = System.Drawing.Color.Red;
-                    txtUsu.Attributes.Add("style", "border-color:red");
-                }
+                //}                 
+                //else
+                //{
+                //    lblMsg.Text = "Usuário incorreto";
+                //    lblMsg.ForeColor = System.Drawing.Color.Red;
+                //    txtUsu.Attributes.Add("style", "border-color:red");
+                //}
 
-                tabela.Close();
-                conexao_SQL.Close();
+                //tabela.Close();
+                //conexao_SQL.Close();
         }
     }
 }

@@ -33,8 +33,8 @@
 					<asp:Label runat="server" Text="Relaxa, não vamos usar seus dados para o mal." id="lblMsg"></asp:Label>
                     </div>
                     <div class="centralizalogin" style="width: 99%;">
-					   <asp:Textbox id="txtUsu" class="caixxinha" type="text" placeholder="Usuário" spellcheck="false" required runat="server"></asp:Textbox>
-					   <asp:Textbox id="txtPass" class="caixxinha" type="password" placeholder="Senha" spellcheck="false" required runat="server"></asp:Textbox>
+					   <asp:Textbox id="txtUsu" class="caixxinha" type="text" AutoPostBack="true" placeholder="Usuário" spellcheck="false" required runat="server" OnTextChanged="txtUsu_TextChanged"></asp:Textbox>
+					   <asp:Textbox id="txtPass" class="caixxinha" type="password" AutoPostBack="true" placeholder="Senha" spellcheck="false" required runat="server" OnTextChanged="txtPass_TextChanged"></asp:Textbox>
                        <a class="link">Por acaso você esqueceu a senha?</a>
                     </div>
                     <div class="centralizabotao" style="width: 100%;">
