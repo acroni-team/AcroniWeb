@@ -1,0 +1,36 @@
+// SCSS
+@import '../var-import/cor';
+
+//TEXTBOX
+
+.caixxinha {
+    outline: none;
+    border: 1.5px solid lighten($branco, 10);
+    border-radius: 5px;
+    text-indent: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 17px;
+    color: #333;
+    width: 100%;
+    transition: 0.3s ease-in;
+    margin-bottom: 15px;
+
+    .selecionada {
+        border: 1.5px solid $cor-primaria;
+    }
+
+    &::-webkit-input-placeholder, &:-ms-input-placeholder {
+        color: rgba(51,51,51,0.7);
+    }
+
+
+    &:focus::-webkit-input-placeholder, &:focus:-ms-input-placeholder {
+        color: #fff;
+    }
+
+    &::selection {
+        background: rgba(51, 51, 51, 0.45);
+        color: #fff;
+    }
+}

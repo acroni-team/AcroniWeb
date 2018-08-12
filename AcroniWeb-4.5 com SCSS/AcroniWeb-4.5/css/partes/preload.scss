@@ -1,17 +1,24 @@
-/* Preload */
+// SCSS
+
+@import '../var-import/todos';
 
 
-body {
-    position:fixed;
-    &.completo {position:initial}
+// Preload
+
+body{
+    overflow-y:hidden;
+    &.completo{
+        overflow-y:scroll;
+    }
+
 }
 
 .preload {
     position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: #0093ff;
+    @include wh(100vh);
+    background-color: $cor-primaria;
     z-index: 99999;
+    position:fixed;
 
     &.completo {
         animation: fadeIn 1s ease reverse forwards;
@@ -32,8 +39,9 @@ body {
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
-    font-family: 'qanelas-bold';
-    color: #f2f2f2;
+    font-family: 'qanelas';
+    font-weight:$extra-bold;
+    color: lighten($branco, 10);
 }
 
 

@@ -91,8 +91,9 @@
     <Content Include="construct.aspx" />
     <Content Include="css\var-import\fontes.scss" />
     <Content Include="css\main.scss" />
-    <Content Include="css\partes\botoes.scss" />
+    <Content Include="css\partes\button.scss" />
     <None Include="css\paginas\default.scss" />
+    <Content Include="css\partes\textbox.scss" />
     <None Include="css\partes\transicao.scss" />
     <None Include="css\var-import\keyframes.scss" />
     <None Include="css\paginas\login.scss" />

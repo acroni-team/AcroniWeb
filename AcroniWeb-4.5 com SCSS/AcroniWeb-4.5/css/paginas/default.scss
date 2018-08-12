@@ -1,24 +1,33 @@
-@import '../base';
-@import '../partes/botoes';
-/* media */
+// SCSS
+@import '../var-import/todos';
+@import '../partes/button';
+@import '../partes/textbox';
+
+// media 
 
 @media (max-width:576px) {
 }
 @media (max-width:768px) {
 }
 @media (max-width:992px) {
+    
 }
-@media (max-width:1200px) {
+@media (max-width:1366px) {
+    .centraliza{
+        width:85%;
+    }
 }
 
-/* Primeira seção (é dividida em duas partes direita (rsection) e esquerda (lsection)) */
+// Primeira seção (é dividida em duas partes direita (principal) e esquerda (login) 
 
+
+//comandos gerais
 
 section {
     @include wh(100vh);
 
     h1 {
-        font-weight: $bold;
+        font-weight: $extra-bold;
         font-size: 3em;
         color: #f2f2f2;
        
@@ -28,7 +37,7 @@ section {
 
 section:first-of-type p {
     color: #f2f2f2;
-    font-size:1.3em;
+    font-size:1em;
 }
 
 #principal, #login{
@@ -39,30 +48,63 @@ section:first-of-type p {
     align-items:center;
 }
 
+//Principal
+
 #principal {
     background-color: $cor-primaria;
     width: 60%;
+    div{
+        width:60%;
+        height:60%;
+    }
 }
+
+//login
 
 #login {
     background-color: #f2f2f2;
-    width:40%;
+    width: 40%;
+
+    p:first-of-type {
+        color: $cor-primaria;
+        font-size: 34px;
+        margin-left: 10px;
+    }
+
+    #cadastre-se {
+        color: $cinza;
+        font-size: 15px;
+        margin-top:30px;
+        text-align:center;
+
+        a {
+            color: $cor-primaria;
+        }
+    }
+
+    div:nth-of-type(1) {
+        margin-bottom: 50px;
+    }
+
+    span {
+        color: #333;
+        font-size: 13.5px;
+        margin-left: 10px;
+    }
+
+    input:first-of-type {
+        width: 100%;
+    }
 }
 
-#principal div{
-    height:60%;
+
+.centralizabotao {
+    display: flex;
+    align-content: center;
 }
 
 
-h3 {
-    text-align: center;
-    transition: none;
-    font-size: 15px;
-    color: $cor-primaria;
-    margin-top: 0;
-}
-
-/* Segunda seção */
+// Segunda seção
 
 section#facilidade {
     @include wh(50vh);

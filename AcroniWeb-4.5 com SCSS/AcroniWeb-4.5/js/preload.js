@@ -2,9 +2,7 @@
 
 $(window).on('load', function () {
     $('.preload').addClass('completo');
-    setInterval(function () {
-        $('body').addClass('completo');
-    }, 1100);
+    $('body').addClass('completo');
     
     //$('.item').each(function (i) {
     //setTimeout(function () {
@@ -25,13 +23,13 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-// Creando um Iframe apartir do div com id = var.
+// Creando um Iframe apartir do div com id = variavel (nesse caso player).
 var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-        height: '100%',
+        height: '65%',
         width: '100%',
-        videoId: 'dQw4w9WgXcQ',
+        videoId: 'FEQaC7SWoHQ',
         playerVars: { 'autoplay': 1 },
         events: {
             'onReady': onPlayerReady
@@ -46,3 +44,4 @@ function onPlayerReady(event) {
     player.setPlaybackRate(1);
 
 }
+

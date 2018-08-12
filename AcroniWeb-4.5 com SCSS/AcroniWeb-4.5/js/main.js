@@ -1,5 +1,6 @@
-﻿$(document).ready(function () {
-    
+﻿//$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', () => {
+
     //Função do menu
     var v = true;
     $("#menu-icon").click(function () {
@@ -26,36 +27,28 @@
 
     //Função das TextBox e buttons
     var bool = false;
-    $('.caixxinha,.confirmar,.campos-pergunta,.pergunta').focus(function () {
+    $('.caixxinha,.campos-pergunta,.pergunta').focus(function () {
         $(this).css("border", "1.5px solid #0093ff");
     })
 
-    $('.cadastro').click(function () {
-        if (bool == false) {
-            //('.but,.cadastro').css("transform", "translateY(0px)");
-            $('.centralizalogin').css("height", "225px");
-            $('.confirmar').fadeIn();
-            bool = true;
-        }
-        else {
-            $('.centralizalogin').css("height", "150px");
-            $('.confirmar').fadeOut();
-            bool = false;
-        }
-    })
-
-    $('.caixxinha,.confirmar,.campos-pergunta,.pergunta').blur(function () {
+    $('.caixxinha,.campos-pergunta,.pergunta').blur(function () {
         $(this).css("border", "1.5px solid #fff");
     })
-   
 
 
 
-// --------- Mascaras -----------
 
-$(document).ready(function () {
+    // --------- Mascaras -----------
+
+
     $('#ContentPlaceHolder1_txtCPF').mask('000.000.000-00');
     $('#ContentPlaceHolder1_txtCEP').mask('00000-000');
-});
 
-});
+
+    //Preload
+    $(window).on('load', function () {
+          $('body').addClass('completo');
+    });
+
+})
+
