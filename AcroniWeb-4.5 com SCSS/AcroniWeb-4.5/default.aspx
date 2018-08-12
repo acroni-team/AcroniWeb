@@ -18,8 +18,9 @@
         <div id="principal">
             <div data-aos="fade-up" data-aos-delay="300">
                 <h1>Compre teclados de marcas famosas ou crie o seu.</h1>
-                <p>Obtenha uma conta agora - e tenha acesso à nossa plataforma <a> completa </a>, de graça.</p>
+                <h3>Obtenha uma conta agora - e tenha acesso à nossa plataforma <a> completa </a>, de graça.</h3>
                 <%--<div id="player"></div>--%>
+                <div class="c-quadrado"></div>
                 
             </div>
         </div>
@@ -34,6 +35,7 @@
                     <div class="centralizalogin" style="width: 99%;">
 					   <asp:Textbox id="txtUsu" class="caixxinha" type="text" placeholder="Usuário" spellcheck="false" required runat="server"></asp:Textbox>
 					   <asp:Textbox id="txtPass" class="caixxinha" type="password" placeholder="Senha" spellcheck="false" required runat="server"></asp:Textbox>
+                       <a class="link">Por acaso você esqueceu a senha?</a>
                     </div>
                     <div class="centralizabotao" style="width: 100%;">
 					   <asp:Button ID="btnEntra" class="blue dark" type="button" Text="Entrando!" runat="server" OnClick="btnEntra_Click" />  

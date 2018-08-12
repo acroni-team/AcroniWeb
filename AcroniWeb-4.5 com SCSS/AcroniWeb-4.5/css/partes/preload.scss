@@ -11,7 +11,7 @@ body {
   
 
     &.completo {
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 }
 
@@ -43,7 +43,7 @@ body {
     transform: translateY(-50%);
     font-family: 'qanelas';
     font-weight:$extra-bold;
-    color: lighten($branco, 10);
+    color: lighten($texto, 10);
 }
 
 

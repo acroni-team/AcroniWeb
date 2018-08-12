@@ -127,6 +127,7 @@
     <Content Include="img\produtos\Img1 %281%29.png" />
     <Content Include="js\jquery.js" />
     <Content Include="js\jquery.mask.min.js" />
+    <Content Include="js\jquery.nicescroll.min.js" />
     <Content Include="js\jquery.smoothState.js" />
     <Content Include="js\main.js" />
     <Content Include="js\preload.js" />

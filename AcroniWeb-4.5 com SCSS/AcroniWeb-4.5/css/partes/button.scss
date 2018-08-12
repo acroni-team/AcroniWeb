@@ -11,27 +11,27 @@
         border-radius: 5px;
         color: $cor-primaria;
         margin: 5px;
-        margin-top: 20px;
+        margin-top: 40px;
         width: 165px;
         padding-top: 15px;
         padding-bottom: 15px;
         transition: background-color 300ms ease;
-        background-color: $branco;
+        background-color: transparent;
 
         &:hover {
-            color: $branco;
+            color: $texto;
             background-color: $cor-primaria;
             transform: translateY(0px);
             cursor: pointer;
 
             h3 {
-                color: $branco;
+                color: $texto;
             }
         }
 
         &.dark {
             border: 2px solid $cor-primaria;
-            color: $branco;
+            color: $texto;
             background-color: $cor-primaria;
 
             &:hover {
@@ -41,7 +41,7 @@
                 cursor: pointer;
 
                 h3 {
-                    color: $branco;
+                    color: $texto;
                 }
             }
         }

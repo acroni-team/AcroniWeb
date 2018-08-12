@@ -29,23 +29,26 @@ section {
     h1 {
         font-weight: $extra-bold;
         font-size: 2.1em;
-        color: $branco;
+        color: $texto;
         width: 340px;
         margin: 0;
     }
+
+    
 }
 
 
-section:first-of-type{ 
-    p {
-        color: $branco;
+section{ 
+    h3 {
+        color: $texto;
         font-size:0.9em;
         width:290px;
         margin: 0;
+        font-weight:$normal;
 
         a {
-            color: $branco;
-            font-weight:bold;
+            color: $texto;
+            font-weight:$bold;
         }
     }
 }
@@ -62,7 +65,7 @@ section:first-of-type{
 
 #principal {
     background-color: $cor-primaria;
-    width: 65%;
+    width: 60%;
     opacity: 0.67;
     background: rgba(0,149,255,1);
     background: -moz-linear-gradient(-45deg, rgba(0,149,255,1) 0%, rgba(61,116,219,1) 100%);
@@ -71,11 +74,22 @@ section:first-of-type{
     background: -o-linear-gradient(-45deg, rgba(0,149,255,1) 0%, rgba(61,116,219,1) 100%);
     background: -ms-linear-gradient(-45deg, rgba(0,149,255,1) 0%, rgba(61,116,219,1) 100%);
     background: linear-gradient(135deg, rgba(0,149,255,1) 0%, rgba(61,116,219,1) 100%);
-    align-items:flex-end;
+    align-items: flex-end;
 
     div {
         width: 75%;
         height: 40%;
+    }
+
+    .c-quadrado {
+        position: absolute;
+        top: 5px;
+        left: -7.5px;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.3);
+        transform: rotate(45deg);
+        border-radius: 7px;
     }
 }
 
@@ -91,8 +105,8 @@ section:first-of-type{
 //login
 
 #login {
-    background-color: #f2f2f2;
-    width: 35%;
+    background-color: $cor-fundo;
+    width: 40%;
     align-items: center;
 
     p:first-of-type {
@@ -110,11 +124,6 @@ section:first-of-type{
         font-size: 15px;
         margin-top: 30px;
         text-align: center;
-
-        .link {
-            color: $cor-primaria;
-            font-weight: $normal
-        }
     }
 
     div:nth-of-type(1) {
@@ -130,8 +139,19 @@ section:first-of-type{
     input:first-of-type {
         width: 100%;
     }
+
+    .link {
+        color: $cor-primaria;
+        font-weight: $normal
+    }
 }
 
+.centralizalogin {
+    .link {
+        font-size:13px;
+        margin-top:0;
+    }
+}
 
 .centralizabotao {
     display: flex;
@@ -155,7 +175,7 @@ h2.title-subsection {
 }
 
 h2.light {
-    color: $branco;
+    color: $texto;
 }
 
 h2.dark {
@@ -173,7 +193,7 @@ p.desc {
 }
 
 p.desc-facilidade {
-    color: $branco;
+    color: $texto;
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 1%;
@@ -198,11 +218,11 @@ img#dois-teclados {
 }
 
 #tamanhos {
-    background-color: $branco;
+    background-color: $cor-fundo;
 }
 
 #escolha-cor {
-    background-color: lighten($branco, 15);
+    background-color: $texto;
 }
 
 .lsection {
@@ -231,7 +251,7 @@ div.section-white {
 
 footer#footi {
     @include wh(40vh);
-    background-color: $branco;
+    background-color: $cor-fundo;
     float: right;
     position:relative;
 }

@@ -50,5 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
           $('body').addClass('completo');
     });
 
+    //Scroll
+
+    $("html").niceScroll({
+        cursorwidth: "12px"
+    });
+
+
+
 })
 
