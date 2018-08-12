@@ -16,7 +16,7 @@ body{background-color: #f2f2f2;transition: background-color 300ms ease;  overflo
 
 nav{
 	position: fixed;
-    @include wh(70px);
+    @include wh(100px);
 	background-color: transparent;
 	z-index: 999;
 	display:flex;

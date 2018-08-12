@@ -28,16 +28,26 @@ section {
 
     h1 {
         font-weight: $extra-bold;
-        font-size: 3em;
-        color: #f2f2f2;
-       
+        font-size: 2.1em;
+        color: $branco;
+        width: 340px;
+        margin: 0;
     }
 }
 
 
-section:first-of-type p {
-    color: #f2f2f2;
-    font-size:1em;
+section:first-of-type{ 
+    p {
+        color: $branco;
+        font-size:0.9em;
+        width:290px;
+        margin: 0;
+
+        a {
+            color: $branco;
+            font-weight:bold;
+        }
+    }
 }
 
 #principal, #login{
@@ -45,7 +55,7 @@ section:first-of-type p {
     float: left;
     z-index: 0;
     display: flex;
-    align-items:center;
+   
 }
 
 //Principal
@@ -53,29 +63,37 @@ section:first-of-type p {
 #principal {
     background-color: $cor-primaria;
     width: 65%;
-    opacity:0.8;
+    opacity: 0.67;
+    background: rgba(0,149,255,1);
+    background: -moz-linear-gradient(-45deg, rgba(0,149,255,1) 0%, rgba(61,116,219,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,149,255,1)), color-stop(100%, rgba(61,116,219,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(0,149,255,1) 0%, rgba(61,116,219,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(0,149,255,1) 0%, rgba(61,116,219,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(0,149,255,1) 0%, rgba(61,116,219,1) 100%);
+    background: linear-gradient(135deg, rgba(0,149,255,1) 0%, rgba(61,116,219,1) 100%);
+    align-items:flex-end;
 
     div {
-        width: 55%;
-        height: 50%;
+        width: 75%;
+        height: 40%;
     }
-
-  
 }
 
 #bg-img {
-    margin:0;
+    margin: 0;
     z-index: 0;
-    width:65%;
-    height:100vh;
+    width: 65%;
+    height: 100vh;
     background: url("../img/index-bg.jpg") no-repeat;
-    background-size: 100%;
+    background-size: 118%;
+    background-position: bottom 0px right 0px;
 }
 //login
 
 #login {
     background-color: #f2f2f2;
     width: 35%;
+    align-items: center;
 
     p:first-of-type {
         color: $cor-primaria;
@@ -83,14 +101,19 @@ section:first-of-type p {
         margin-left: 10px;
     }
 
+    #logintitle {
+        font-weight: $semi-bold;
+    }
+
     #cadastre-se {
         color: $cinza;
         font-size: 15px;
-        margin-top:30px;
-        text-align:center;
+        margin-top: 30px;
+        text-align: center;
 
-        a {
+        .link {
             color: $cor-primaria;
+            font-weight: $normal
         }
     }
 
@@ -99,7 +122,7 @@ section:first-of-type p {
     }
 
     span {
-        color: #333;
+        color: $cor-primaria;
         font-size: 13.5px;
         margin-left: 10px;
     }

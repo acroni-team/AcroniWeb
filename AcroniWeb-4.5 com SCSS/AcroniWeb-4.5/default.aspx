@@ -18,7 +18,7 @@
         <div id="principal">
             <div data-aos="fade-up" data-aos-delay="300">
                 <h1>Compre teclados de marcas famosas ou crie o seu.</h1>
-                <p>obtenha uma conta agora e tenha acesso à nossa plataforma completa, de graça.</p>
+                <p>Obtenha uma conta agora - e tenha acesso à nossa plataforma <a> completa </a>, de graça.</p>
                 <%--<div id="player"></div>--%>
                 
             </div>
@@ -28,17 +28,17 @@
             <form  method="post">
 				<div class="centraliza" data-aos="fade-up" data-aos-delay="300">
                     <div>
-					<p>Entrar</p>
-					<asp:Label runat="server" Text="Entre com sua conta para ter acesso total ao site" id="lblMsg"></asp:Label>
+					<p id="logintitle">Entrar</p>
+					<asp:Label runat="server" Text="Relaxa, não vamos usar seus dados para o mal." id="lblMsg"></asp:Label>
                     </div>
                     <div class="centralizalogin" style="width: 99%;">
 					   <asp:Textbox id="txtUsu" class="caixxinha" type="text" placeholder="Usuário" spellcheck="false" required runat="server"></asp:Textbox>
 					   <asp:Textbox id="txtPass" class="caixxinha" type="password" placeholder="Senha" spellcheck="false" required runat="server"></asp:Textbox>
                     </div>
                     <div class="centralizabotao" style="width: 100%;">
-					   <asp:Button ID="btnEntra" class="blue dark" type="button" Text="Me deixa entrar!" runat="server" OnClick="btnEntra_Click" />  
+					   <asp:Button ID="btnEntra" class="blue dark" type="button" Text="Entrando!" runat="server" OnClick="btnEntra_Click" />  
                     </div>
-                    <p id="cadastre-se">Ainda não tem conta? <a>Crie uma!</a></p>
+                    <p id="cadastre-se">Ainda não tem conta? <a class="link">Crie uma!</a></p>
                 </div>
 			</form>
 
