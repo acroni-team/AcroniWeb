@@ -5,7 +5,7 @@
 
 .caixxinha {
     outline: none;
-    border: 1.5px solid lighten($branco, 10);
+    border: 1.5px solid #dfdfdf;
     border-radius: 5px;
     text-indent: 17px;
     padding-top: 17px;
@@ -15,6 +15,7 @@
     width: 100%;
     transition: 0.3s ease-in;
     margin-bottom: 15px;
+    background-color: #dfdfdf;
 
     .selecionada {
         border: 1.5px solid $cor-primaria;

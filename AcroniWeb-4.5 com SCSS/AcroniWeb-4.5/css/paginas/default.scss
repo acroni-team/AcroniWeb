@@ -12,9 +12,9 @@
 @media (max-width:992px) {
     
 }
-@media (max-width:1366px) {
+@media (max-width:1600px) {
     .centraliza{
-        width:85%;
+        width:75%;
     }
 }
 
@@ -52,12 +52,12 @@ section:first-of-type p {
 
 #principal {
     background-color: $cor-primaria;
-    width: 60%;
+    width: 65%;
     opacity:0.8;
 
     div {
-        width: 60%;
-        height: 60%;
+        width: 55%;
+        height: 50%;
     }
 
   
@@ -66,7 +66,7 @@ section:first-of-type p {
 #bg-img {
     margin:0;
     z-index: 0;
-    width:60%;
+    width:65%;
     height:100vh;
     background: url("../img/index-bg.jpg") no-repeat;
     background-size: 100%;
@@ -75,7 +75,7 @@ section:first-of-type p {
 
 #login {
     background-color: #f2f2f2;
-    width: 40%;
+    width: 35%;
 
     p:first-of-type {
         color: $cor-primaria;

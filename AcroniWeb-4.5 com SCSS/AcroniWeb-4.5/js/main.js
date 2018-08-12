@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     $('.caixxinha,.campos-pergunta,.pergunta').blur(function () {
-        $(this).css("border", "1.5px solid #fff");
+        $(this).css("border", "1.5px solid #dfdfdf");
     })
 
 
