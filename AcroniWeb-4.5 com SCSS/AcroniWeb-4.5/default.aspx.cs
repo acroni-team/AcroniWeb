@@ -38,18 +38,14 @@ namespace AcroniWeb
                 Response.Redirect("area-restrita.aspx");
 
             }
-            else if (checku == false)
-            {
-                lblMsg.Text = "Usuário incorreto";
-                lblMsg.ForeColor = System.Drawing.Color.Red;
-                txtUsu.Attributes.Add("style", "border-color:red");
-            }
-            else if (checks == false)
-            {
-                lblMsg.Text = "Senha incorreta";
-                lblMsg.ForeColor = System.Drawing.Color.Red;
-                txtPass.Attributes.Add("style", "border-color:red");
-            }
+            //else if (checku == false)
+            //{
+                
+            //}
+            //else if (checks == false)
+            //{
+                
+            //}
             else if (checku == false & checks == false)
             {
                 lblMsg.Text = "Usuário e Senha incorretos";
@@ -76,7 +72,12 @@ namespace AcroniWeb
                 if (tabela.HasRows)
                     checku = true;
                 else
+                {
                     checku = false;
+                    lblMsg.Text = "Usuário incorreto";
+                    lblMsg.ForeColor = System.Drawing.Color.Red;
+                    txtUsu.Attributes.Add("style", "border-color:red");
+                }
 
                 tabela.Close();
                 select = "";
@@ -87,6 +88,7 @@ namespace AcroniWeb
                 tabela.Close();
                 conexao_SQL.Close();
             }
+            SCPanel.Update();
         }
 
         protected void txtPass_TextChanged(object sender, EventArgs e)
@@ -103,7 +105,12 @@ namespace AcroniWeb
                 if (tabela.HasRows)
                     checks = true;
                 else
+                {
                     checks = false;
+                    lblMsg.Text = "Senha incorreta";
+                    lblMsg.ForeColor = System.Drawing.Color.Red;
+                    txtPass.Attributes.Add("style", "border-color:red");
+                }
 
                 tabela.Close();
                 select = "";
@@ -114,6 +121,7 @@ namespace AcroniWeb
                 tabela.Close();
                 conexao_SQL.Close();
             }
+            SCPanel.Update();
         }
     }
 }

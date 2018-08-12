@@ -3,16 +3,16 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script type="text/javascript" src="js/preload.js"></script>
+    <%--<script type="text/javascript" src="js/preload.js"></script>--%>
 </asp:Content>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <!--        Preloader       -->
-     <div class="preload">
+  <%--   <div class="preload">
         <p class="logo animado">Acroni</p>
-    </div>
+    </div>--%>
 
     <section>
         <div id="principal">
@@ -25,9 +25,14 @@
             </div>
         </div>
         <div id="login">
-        
+            
+            
             <form  method="post">
+                
 				<div class="centraliza" data-aos="fade-up" data-aos-delay="300">
+                    <asp:ScriptManager ID="SCManager" runat="server" />
+                    <asp:UpdatePanel ID="SCPanel" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="false">
+                    <ContentTemplate>
                     <div>
 					<p id="logintitle">Entrar</p>
 					<asp:Label runat="server" Text="Relaxa, não vamos usar seus dados para o mal." id="lblMsg"></asp:Label>
@@ -41,8 +46,12 @@
 					   <asp:Button ID="btnEntra" class="blue dark" type="button" Text="Entrando!" runat="server" OnClick="btnEntra_Click" />  
                     </div>
                     <p id="cadastre-se">Ainda não tem conta? <a class="link">Crie uma!</a></p>
+                        </ContentTemplate>
+                       </asp:UpdatePanel>
                 </div>
+               
 			</form>
+               
 
         </div>
         <div id="bg-img"></div>
