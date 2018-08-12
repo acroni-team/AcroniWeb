@@ -53,12 +53,24 @@ section:first-of-type p {
 #principal {
     background-color: $cor-primaria;
     width: 60%;
-    div{
-        width:60%;
-        height:60%;
+    opacity:0.8;
+
+    div {
+        width: 60%;
+        height: 60%;
     }
+
+  
 }
 
+#bg-img {
+    margin:0;
+    z-index: 0;
+    width:60%;
+    height:100vh;
+    background: url("../img/index-bg.jpg") no-repeat;
+    background-size: 100%;
+}
 //login
 
 #login {

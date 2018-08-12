@@ -5,12 +5,14 @@
 
 // Preload
 
-body{
-    overflow-y:hidden;
-    &.completo{
-        overflow-y:scroll;
-    }
+body {
+    overflow-y: hidden;
 
+  
+
+    &.completo {
+        overflow-y: scroll;
+    }
 }
 
 .preload {

@@ -19,10 +19,12 @@
             <div data-aos="fade-up" data-aos-delay="300">
                 <h1>Compre teclados de marcas famosas ou crie o seu.</h1>
                 <p>obtenha uma conta agora e tenha acesso à nossa plataforma completa, de graça.</p>
-                <div id="player"></div>
+                <%--<div id="player"></div>--%>
+                
             </div>
         </div>
         <div id="login">
+        
             <form  method="post">
 				<div class="centraliza" data-aos="fade-up" data-aos-delay="300">
                     <div>
@@ -41,7 +43,7 @@
 			</form>
 
         </div>
-
+        <div id="bg-img"></div>
     </section>
 
     <section id="facilidade">
