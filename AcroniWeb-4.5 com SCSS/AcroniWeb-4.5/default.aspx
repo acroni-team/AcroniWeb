@@ -3,16 +3,16 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <%--<script type="text/javascript" src="js/preload.js"></script>--%>
+    <script type="text/javascript" src="js/preload.js"></script>
 </asp:Content>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <!--        Preloader       -->
-  <%--   <div class="preload">
+     <div class="preload">
         <p class="logo animado">Acroni</p>
-    </div>--%>
+    </div>
 
     <section>
         <div id="principal">
@@ -38,8 +38,8 @@
 					<asp:Label runat="server" Text="Relaxa, não vamos usar seus dados para o mal." id="lblMsg"></asp:Label>
                     </div>
                     <div class="centralizalogin" style="width: 99%;">
-					   <asp:Textbox id="txtUsu" class="caixxinha" type="text" AutoPostBack="true" placeholder="Usuário" spellcheck="false" required runat="server" OnTextChanged="txtUsu_TextChanged"></asp:Textbox>
-					   <asp:Textbox id="txtPass" class="caixxinha" type="password" AutoPostBack="true" placeholder="Senha" spellcheck="false" required runat="server" OnTextChanged="txtPass_TextChanged"></asp:Textbox>
+					   <asp:Textbox id="txtUsu" class="caixxinha" type="text" AutoPostBack="true" placeholder="Usuário" spellcheck="false" required runat="server"></asp:Textbox>
+					   <asp:Textbox id="txtPass" class="caixxinha" type="password" AutoPostBack="true" placeholder="Senha" spellcheck="false" required runat="server"></asp:Textbox>
                        <a class="link">Por acaso você esqueceu a senha?</a>
                     </div>
                     <div class="centralizabotao" style="width: 100%;">
