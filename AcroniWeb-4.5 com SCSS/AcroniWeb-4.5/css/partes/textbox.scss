@@ -16,6 +16,7 @@
     transition: 0.3s ease-in;
     margin-top: 15px;
     background-color: #dfdfdf;
+	box-sizing:border-box;
 
     .selecionada {
         border: 1.5px solid $cor-primaria;

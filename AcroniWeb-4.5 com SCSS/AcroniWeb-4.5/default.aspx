@@ -13,7 +13,11 @@
      <div class="preload">
         <p class="logo animado">Acroni</p>
     </div>
-
+    <div class="fundo" id="fundo-senha">
+        <div class="esqueceu-senha">
+            <asp:Textbox id="txtEmail" class="caixxinha" type="text"  placeholder="nuncamaispercoasenha@example.com" spellcheck="false" required runat="server"></asp:Textbox>
+         </div>
+    </div>
     <section>
         <div id="principal">
             <div data-aos="fade-up" data-aos-delay="300">
@@ -38,9 +42,9 @@
 					<asp:Label runat="server" Text="Relaxa, não vamos usar seus dados para o mal." id="lblMsg"></asp:Label>
                     </div>
                     <div class="centralizalogin" style="width: 99%;">
-					   <asp:Textbox id="txtUsu" class="caixxinha" type="text" AutoPostBack="true" placeholder="Usuário" spellcheck="false" required runat="server"></asp:Textbox>
-					   <asp:Textbox id="txtPass" class="caixxinha" type="password" AutoPostBack="true" placeholder="Senha" spellcheck="false" required runat="server"></asp:Textbox>
-                       <a class="link">Por acaso você esqueceu a senha?</a>
+					   <asp:Textbox id="txtUsu" class="caixxinha" type="text" placeholder="Usuário" spellcheck="false" required runat="server"></asp:Textbox>
+					   <asp:Textbox id="txtPass" class="caixxinha" type="password" placeholder="Senha" spellcheck="false" required runat="server"></asp:Textbox>
+                       <a href="#fundo-senha" class="link">Por acaso você esqueceu a senha?</a>
                     </div>
                     <div class="centralizabotao" style="width: 100%;">
 					   <asp:Button ID="btnEntra" class="blue dark" type="button" Text="Entrando!" runat="server" OnClick="btnEntra_Click" />  

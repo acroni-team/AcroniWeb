@@ -18,6 +18,30 @@
     }
 }
 
+
+//esqueceu senha
+
+
+
+
+.esqueceu-senha {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: $texto;
+    width: 500px;
+    height: 200px;
+    transform: translate(-50%,-50%) scale(0);
+    transition: transform 300ms ease-in;
+	padding:40px;
+	border-radius: 10px;
+}
+
+.fundo:target .esqueceu-senha {
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
 // Primeira seção (é dividida em duas partes direita (principal) e esquerda (login) 
 
 
