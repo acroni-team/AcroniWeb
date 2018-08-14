@@ -1,0 +1,4 @@
+c:\users\etesp\documents\visual studio 2012\Projects\CalculoFreteV2\CalculoFreteV2\bin\CalculoFreteV2.dll
+c:\users\etesp\documents\visual studio 2012\Projects\CalculoFreteV2\CalculoFreteV2\bin\CalculoFreteV2.pdb
+c:\users\etesp\documents\visual studio 2012\Projects\CalculoFreteV2\CalculoFreteV2\obj\Debug\CalculoFreteV2.dll
+c:\users\etesp\documents\visual studio 2012\Projects\CalculoFreteV2\CalculoFreteV2\obj\Debug\CalculoFreteV2.pdb
