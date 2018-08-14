@@ -1,19 +1,3 @@
-// -------Preloader------
-
-$(window).on('load', function () {
-    $('.preload').addClass('completo');
-    $('body').addClass('completo');
-    
-    //$('.item').each(function (i) {
-    //setTimeout(function () {
-    //$('.item').eq(i).addClass('visivel');
-
-    // }, 100 * i);
-
-    // });
-
-});
-
 // --------Função do youtube player;-----
 
 // loadando o codigo do IFrame Player API.
@@ -27,8 +11,6 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-        height: '65%',
-        width: '100%',
         videoId: 'FEQaC7SWoHQ',
         playerVars: { 'autoplay': 1 },
         events: {

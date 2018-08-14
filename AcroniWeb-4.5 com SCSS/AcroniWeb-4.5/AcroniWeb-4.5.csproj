@@ -94,6 +94,7 @@
     <Content Include="css\partes\button.scss" />
     <None Include="css\paginas\default.scss" />
     <Content Include="css\partes\textbox.scss" />
+    <Content Include="css\partes\modal.scss" />
     <None Include="css\partes\transicao.scss" />
     <None Include="css\var-import\keyframes.scss" />
     <None Include="css\paginas\login.scss" />

@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
             $("#menu").css("pointer-events", "auto");
             $("#login").css("opacity", "0");
             $("#login").css("pointer-events", "none");
-            $('body').css("overflow-y", "hidden");
 
             v = false;
         }
@@ -19,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
             $("#menu").css("pointer-events", "none");
             $("#login").css("opacity", "1");
             $("#login").css("pointer-events", "auto");
-            $('body').css("overflow-y", "auto");
 
             v = true;
         }
@@ -35,9 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
         $(this).css("border", "1.5px solid #dfdfdf");
     })
 
-
-
-
     // --------- Mascaras -----------
 
 
@@ -45,10 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     $('#ContentPlaceHolder1_txtCEP').mask('00000-000');
 
 
-    //Preload
-    $(window).on('load', function () {
-          $('body').addClass('completo');
-    });
+
 
     //Scroll
 

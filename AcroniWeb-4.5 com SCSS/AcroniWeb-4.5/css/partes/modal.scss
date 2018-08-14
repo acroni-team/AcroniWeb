@@ -1,0 +1,37 @@
+// SCSS
+
+@import '../var-import/todos';
+
+//esqueceu senha
+
+
+
+
+.fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+    transition: opacity 200ms ease-in;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+#abre-janela:target {
+
+    .fundo {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .esqueceu-senha {
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
+
+

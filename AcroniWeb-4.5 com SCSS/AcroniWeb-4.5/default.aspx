@@ -4,6 +4,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script type="text/javascript" src="js/preload.js"></script>
+    <script>
+        //Preload
+        $(window).on('load', function () {
+             $('.preload').addClass('completo');
+              $('body').addClass('completo');
+        });
+    </script>
+
 </asp:Content>
 
 
@@ -13,17 +21,24 @@
      <div class="preload">
         <p class="logo animado">Acroni</p>
     </div>
-    <div class="fundo" id="fundo-senha">
+    <div id="abre-janela">
         <div class="esqueceu-senha">
-            <asp:Textbox id="txtEmail" class="caixxinha" type="text"  placeholder="nuncamaispercoasenha@example.com" spellcheck="false" required runat="server"></asp:Textbox>
+            <asp:Label runat="server" Text="Pode acontecer com qualquer um." id="lblH1" class="senha-titulo" type="h1"></asp:Label>
+            <asp:Label runat="server" Text="Não esquenta,coloca seu email aqui em baixo que a gente resolve." id="lblP" class="senha-msg"></asp:Label>
+
+            <asp:Textbox id="txtEmail" class="caixxinha" type="text"  placeholder="nuncamaispercoasenha@example.com" spellcheck="false" runat="server"></asp:Textbox>
          </div>
-    </div>
+        <a href="#fechar"><div class="fundo" id="fundo-senha"></div></a>
+     </div>
     <section>
+         <div id="player"></div>
         <div id="principal">
+           
             <div data-aos="fade-up" data-aos-delay="300">
+                
                 <h1>Compre teclados de marcas famosas ou crie o seu.</h1>
                 <h3>Obtenha uma conta agora - e tenha acesso à nossa plataforma <a> completa </a>, de graça.</h3>
-                <%--<div id="player"></div>--%>
+                
                 <div class="c-quadrado"></div>
                 
             </div>
@@ -41,10 +56,11 @@
 					<p id="logintitle">Entrar</p>
 					<asp:Label runat="server" Text="Relaxa, não vamos usar seus dados para o mal." id="lblMsg"></asp:Label>
                     </div>
-                    <div class="centralizalogin" style="width: 99%;">
-					   <asp:Textbox id="txtUsu" class="caixxinha" type="text" placeholder="Usuário" spellcheck="false" required runat="server"></asp:Textbox>
-					   <asp:Textbox id="txtPass" class="caixxinha" type="password" placeholder="Senha" spellcheck="false" required runat="server"></asp:Textbox>
-                       <a href="#fundo-senha" class="link">Por acaso você esqueceu a senha?</a>
+                    <div class="
+                        login" style="width: 99%;">
+					   <asp:Textbox id="txtUsu" class="caixxinha" type="text" placeholder="Usuário" spellcheck="false" runat="server"></asp:Textbox>
+					   <asp:Textbox id="txtPass" class="caixxinha" type="password" placeholder="Senha" spellcheck="false" runat="server"></asp:Textbox>
+                       <a href="#abre-janela" class="link">Por acaso você esqueceu a senha?</a>
                     </div>
                     <div class="centralizabotao" style="width: 100%;">
 					   <asp:Button ID="btnEntra" class="blue dark" type="button" Text="Entrando!" runat="server" OnClick="btnEntra_Click" />  

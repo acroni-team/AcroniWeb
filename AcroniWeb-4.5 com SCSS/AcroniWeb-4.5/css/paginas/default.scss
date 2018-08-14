@@ -2,6 +2,7 @@
 @import '../var-import/todos';
 @import '../partes/button';
 @import '../partes/textbox';
+@import '../partes/modal';
 
 // media 
 
@@ -17,12 +18,23 @@
         width:75%;
     }
 }
+@media (min-width:1366px) {
+    .centraliza {
+        width: 410px;
+    }
+}
 
+//comandos gerais
+#player {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    z-index: 7;
+}
 
-//esqueceu senha
-
-
-
+// esqueceu-senha
 
 .esqueceu-senha {
     position: absolute;
@@ -30,22 +42,33 @@
     left: 50%;
     background-color: $texto;
     width: 500px;
-    height: 200px;
+    height: 170px;
     transform: translate(-50%,-50%) scale(0);
-    transition: transform 300ms ease-in;
-	padding:40px;
-	border-radius: 10px;
+    transition: opacity 300ms ease-in 250ms, transform 300ms ease-in 100ms;
+    padding: 40px;
+    border-radius: 10px;
+    opacity: 1;
+    z-index: 30;
+    text-align: center;
+
+    .senha-titulo {
+        color: $cor-primaria;
+        font-size: 1.6em;
+        font-weight: $semi-bold;
+    }
+
+    .senha-msg {
+        font-size: 0.8em;
+        margin-bottom: 20px;
+        float: left;
+        width:500px;
+    }
 }
 
-.fundo:target .esqueceu-senha {
-    transform: translate(-50%,-50%) scale(1);
-}
 
 
 // Primeira seção (é dividida em duas partes direita (principal) e esquerda (login) 
 
-
-//comandos gerais
 
 section {
     @include wh(100vh);

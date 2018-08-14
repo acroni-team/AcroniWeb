@@ -21,18 +21,26 @@
     .selecionada {
         border: 1.5px solid $cor-primaria;
     }
+}
 
-    &::-webkit-input-placeholder, &:-ms-input-placeholder {
-        color: rgba(51,51,51,0.7);
-    }
+.caixxinha::-webkit-input-placeholder {
+    transition: 0.2s ease-in;
+    color: rgba($cinza, 0.60);
+}
 
+.caixxinha:-ms-input-placeholder {
+    color: rgba($cinza, 0.60);
+}
 
-    &:focus::-webkit-input-placeholder, &:focus:-ms-input-placeholder {
-        color: #fff;
-    }
+.caixxinha::-moz-input-placeholder {
+    color: rgba($cinza, 0.60);
+}
 
-    &::selection {
-        background: rgba(51, 51, 51, 0.45);
-        color: #fff;
-    }
+.caixxinha:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+
+.caixxinha::selection {
+    background: rgba($cinza, 0.45);
+    color: $texto;
 }
