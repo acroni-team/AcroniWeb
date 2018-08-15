@@ -6,6 +6,7 @@
 <head runat="server">
     <title>Acroni </title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script> 
     <script type="text/javascript" src="js/main.js"></script>
@@ -39,7 +40,7 @@
             </div>
             <div id="right">
                 <div>
-                    <asp:TextBox class="caixxinha" type="text" placeholder="Busque aqui..." runat="server"></asp:TextBox>
+                    <asp:TextBox class="textbox" type="text" placeholder="Busque aqui..." runat="server"></asp:TextBox>
                     <ul id="menu-itens">
                         <li><a id="home" href="default.aspx">Home</a></li>
                         <li><a href="construct.aspx">Loja</a></li>

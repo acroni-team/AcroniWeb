@@ -2,12 +2,11 @@
 
 @import '../var-import/todos';
 
-//esqueceu senha
+
+// Geral
 
 
-
-
-.fundo {
+.background {
     position: fixed;
     top: 0;
     left: 0;
@@ -20,18 +19,54 @@
     background-color: rgba(0,0,0,0.5);
 }
 
-
-#abre-janela:target {
-
-    .fundo {
-        opacity: 1;
-        pointer-events: all;
-    }
-
-    .esqueceu-senha {
-        opacity: 1;
-        transform: translate(-50%,-50%) scale(1);
+.modal-wrap{
+    display:none;
+    &.is-showing{
+        display:block;
     }
 }
 
+.modal-wrap.is-showing {
+    display: block;
+}
 
+
+.modal-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: $cor-fundo;
+    width: 500px;
+    height: 170px;
+    transform: translate(-50%,-50%);
+    transition: opacity 300ms ease-in 250ms, transform 300ms ease-in 100ms;
+    padding: 40px;
+    border-radius: 10px;
+    opacity: 1;
+    z-index: 30;
+    text-align: center;
+    display:none;
+
+
+    h1 {
+        color: $cor-primaria;
+        font-size: 1.6em;
+        font-weight: $semi-bold;
+    }
+
+    p {
+        font-size: 0.8em;
+        margin-bottom: 20px;
+        float: left;
+        width: 500px;
+    }
+
+    &.is-showing {
+        display: block;
+   
+    }
+}
+
+textbox-senha{
+    text-align:center;
+}

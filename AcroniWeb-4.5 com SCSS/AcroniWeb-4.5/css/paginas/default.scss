@@ -34,39 +34,6 @@
     z-index: 7;
 }
 
-// esqueceu-senha
-
-.esqueceu-senha {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: $texto;
-    width: 500px;
-    height: 170px;
-    transform: translate(-50%,-50%) scale(0);
-    transition: opacity 300ms ease-in 250ms, transform 300ms ease-in 100ms;
-    padding: 40px;
-    border-radius: 10px;
-    opacity: 1;
-    z-index: 30;
-    text-align: center;
-
-    .senha-titulo {
-        color: $cor-primaria;
-        font-size: 1.6em;
-        font-weight: $semi-bold;
-    }
-
-    .senha-msg {
-        font-size: 0.8em;
-        margin-bottom: 20px;
-        float: left;
-        width:500px;
-    }
-}
-
-
-
 // Primeira seção (é dividida em duas partes direita (principal) e esquerda (login) 
 
 
@@ -189,7 +156,8 @@ section{
 
     .link {
         color: $cor-primaria;
-        font-weight: $normal
+        font-weight: $normal;
+        cursor:pointer;
     }
 }
 
@@ -197,6 +165,7 @@ section{
     .link {
         font-size:13px;
         margin-top:0;
+        cursor:pointer;
     }
 }
 

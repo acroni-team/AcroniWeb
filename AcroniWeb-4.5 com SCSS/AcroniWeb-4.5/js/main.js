@@ -23,14 +23,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Modal
+
+    $('#abre-senha').click(function () {
+        $('.modal-wrap').toggleClass('is-showing aparece');
+
+    });
+
     //Função das TextBox e buttons
     var bool = false;
-    $('.caixxinha,.campos-pergunta,.pergunta').focus(function () {
-        $(this).css("border", "1.5px solid #0093ff");
+    $('.textbox,.campos-pergunta,.pergunta').focus(function () {
+        //$(this).css("border", "1.5px solid #0093ff");
+        $(this).addClass('foco');
     })
 
-    $('.caixxinha,.campos-pergunta,.pergunta').blur(function () {
-        $(this).css("border", "1.5px solid #dfdfdf");
+    $('.textbox,.campos-pergunta,.pergunta').blur(function () {
+        //$(this).css("border", "1.5px solid #dfdfdf");
+        $(this).removeClass('foco');
     })
 
     // --------- Mascaras -----------
@@ -38,15 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     $('#ContentPlaceHolder1_txtCPF').mask('000.000.000-00');
     $('#ContentPlaceHolder1_txtCEP').mask('00000-000');
-
-
-
-
-    //Scroll
-
-    $("html").niceScroll({
-        cursorwidth: "12px"
-    });
 
 
 

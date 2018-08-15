@@ -3,7 +3,7 @@
 
 //TEXTBOX
 
-.caixxinha {
+.textbox {
     outline: none;
     border: 1.5px solid #dfdfdf;
     border-radius: 5px;
@@ -18,29 +18,29 @@
     background-color: #dfdfdf;
 	box-sizing:border-box;
 
-    .selecionada {
+    &.foco {
         border: 1.5px solid $cor-primaria;
     }
 }
 
-.caixxinha::-webkit-input-placeholder {
+.textbox::-webkit-input-placeholder {
     transition: 0.2s ease-in;
     color: rgba($cinza, 0.60);
 }
 
-.caixxinha:-ms-input-placeholder {
+.textbox:-ms-input-placeholder {
     color: rgba($cinza, 0.60);
 }
 
-.caixxinha::-moz-input-placeholder {
+.textbox::-moz-input-placeholder {
     color: rgba($cinza, 0.60);
 }
 
-.caixxinha:focus::-webkit-input-placeholder{
+.textbox:focus::-webkit-input-placeholder{
     color: transparent;
 }
 
-.caixxinha::selection {
+.textbox::selection {
     background: rgba($cinza, 0.45);
     color: $texto;
 }

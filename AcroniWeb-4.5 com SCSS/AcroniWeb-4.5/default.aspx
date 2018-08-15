@@ -21,33 +21,44 @@
      <div class="preload">
         <p class="logo animado">Acroni</p>
     </div>
-    <div id="abre-janela">
-        <div class="esqueceu-senha">
-            <asp:Label runat="server" Text="Pode acontecer com qualquer um." id="lblH1" class="senha-titulo" type="h1"></asp:Label>
-            <asp:Label runat="server" Text="Não esquenta,coloca seu email aqui em baixo que a gente resolve." id="lblP" class="senha-msg"></asp:Label>
 
-            <asp:Textbox id="txtEmail" class="caixxinha" type="text"  placeholder="nuncamaispercoasenha@example.com" spellcheck="false" runat="server"></asp:Textbox>
+    <!--    Esqueceu a senha    -->
+    <div class="modal-wrap">
+        <div class="modal-body modal-body-step1 is-showing">
+            <h1>Pode acontecer com qualquer um.</h1>
+            <p>Não esquenta,coloca seu email aqui em baixo que a gente resolve.</p>
+            <asp:Textbox id="txtEmail" class="textbox textbox-senha" type="text"  placeholder="nuncamaispercoasenha@example.com" spellcheck="false" runat="server"></asp:Textbox>
          </div>
-        <a href="#fechar"><div class="fundo" id="fundo-senha"></div></a>
+        <div class="modal-body modal-body-step2">
+            <h1>Pode acontecer com qualquer um.</h1>
+            <p>Não esquenta,coloca seu email aqui em baixo que a gente resolve.</p>
+            <asp:Textbox id="txtCodigo" class="textbox textbox-senha" type="text"  placeholder="Digite seu código" spellcheck="false" runat="server"></asp:Textbox>
+         </div>
+        <div class="modal-body modal-body-step3 ">
+            <h1>Pode acontecer com qualquer um.</h1>
+            <p>Não esquenta,coloca seu email aqui em baixo que a gente resolve.</p>
+            <asp:Textbox id="txtSenha" class="textbox textbox-senha" type="text"  placeholder="Senha" spellcheck="false" runat="server"></asp:Textbox>
+            <asp:Textbox id="txtCSenha" class="textbox textbox-senha" type="text"  placeholder="Confirmar Senha" spellcheck="false" runat="server"></asp:Textbox>
+
+         </div>
+        <div class="modal-background"></div>
      </div>
+
+    <!--    Primeira seção -->
     <section>
+
          <div id="player"></div>
-        <div id="principal">
-           
+
+        <div id="principal"> 
             <div data-aos="fade-up" data-aos-delay="300">
-                
                 <h1>Compre teclados de marcas famosas ou crie o seu.</h1>
                 <h3>Obtenha uma conta agora - e tenha acesso à nossa plataforma <a> completa </a>, de graça.</h3>
-                
                 <div class="c-quadrado"></div>
-                
             </div>
         </div>
+
         <div id="login">
-            
-            
-            <form  method="post">
-                
+            <form  method="post">               
 				<div class="centraliza" data-aos="fade-up" data-aos-delay="300">
                     <asp:ScriptManager ID="SCManager" runat="server" />
                     <asp:UpdatePanel ID="SCPanel" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="false">
@@ -56,26 +67,26 @@
 					<p id="logintitle">Entrar</p>
 					<asp:Label runat="server" Text="Relaxa, não vamos usar seus dados para o mal." id="lblMsg"></asp:Label>
                     </div>
-                    <div class="
-                        login" style="width: 99%;">
-					   <asp:Textbox id="txtUsu" class="caixxinha" type="text" placeholder="Usuário" spellcheck="false" runat="server"></asp:Textbox>
-					   <asp:Textbox id="txtPass" class="caixxinha" type="password" placeholder="Senha" spellcheck="false" runat="server"></asp:Textbox>
-                       <a href="#abre-janela" class="link">Por acaso você esqueceu a senha?</a>
+                    <div class="login" style="width: 99%;">
+					   <asp:Textbox id="txtUsu" class="textbox" type="text" placeholder="Usuário" spellcheck="false" runat="server"></asp:Textbox>
+					   <asp:Textbox id="txtPass" class="textbox" type="password" placeholder="Senha" spellcheck="false" runat="server"></asp:Textbox>
+                       <a id="abre-senha" class="link">Por acaso você esqueceu a senha?</a>
                     </div>
                     <div class="centralizabotao" style="width: 100%;">
 					   <asp:Button ID="btnEntra" class="blue dark" type="button" Text="Entrando!" runat="server" OnClick="btnEntra_Click" />  
                     </div>
                     <p id="cadastre-se">Ainda não tem conta? <a class="link">Crie uma!</a></p>
-                        </ContentTemplate>
-                       </asp:UpdatePanel>
+                    </ContentTemplate>
+                    </asp:UpdatePanel>
                 </div>
-               
 			</form>
-               
-
         </div>
+
         <div id="bg-img"></div>
+
     </section>
+
+    <!--    Segunda seção -->
 
     <section id="facilidade">
         <h2 data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="title-subsection light">Faxcility</h2>

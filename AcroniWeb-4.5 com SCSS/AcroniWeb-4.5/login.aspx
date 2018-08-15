@@ -24,8 +24,8 @@
 					<asp:Label runat="server" Text="Entre para acessar sua galeria" id="lblMsg"></asp:Label>
                        <div class="
                            login" style="width: 99%;">
-					        <asp:Textbox id="txtUsu" class="caixxinha" AutoPostBack="true" type="text" placeholder="Usuário" spellcheck="false" required runat="server"></asp:Textbox>
-					        <asp:Textbox id="txtPass" class="caixxinha" AutoPostBack="true" type="password" placeholder="Senha" spellcheck="false" required runat="server"></asp:Textbox>
+					        <asp:Textbox id="txtUsu" class="textbox" AutoPostBack="true" type="text" placeholder="Usuário" spellcheck="false" required runat="server"></asp:Textbox>
+					        <asp:Textbox id="txtPass" class="textbox" AutoPostBack="true" type="password" placeholder="Senha" spellcheck="false" required runat="server"></asp:Textbox>
                         </div>
                     <div class="centralizabotao" style="width: 100%;">
 					    <asp:Button ID="btnEntra" class="blue" type="button" Text="Entrar" runat="server" OnClick="btnEntra_Click" />
