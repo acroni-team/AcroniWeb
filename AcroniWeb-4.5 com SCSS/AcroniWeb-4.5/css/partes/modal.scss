@@ -4,19 +4,24 @@
 
 
 // Geral
+body.completo.blur {
+    filter: blur(2px);
+}
 
-
-.background {
+.modal-background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     opacity: 0;
-    pointer-events: none;
     z-index: 10;
-    transition: opacity 200ms ease-in;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.0);
+    cursor:pointer;
+
+    &.fadeIn {
+        animation: fadeIn 200ms ease-in forwards;
+    }
 }
 
 .modal-wrap{
@@ -26,9 +31,6 @@
     }
 }
 
-.modal-wrap.is-showing {
-    display: block;
-}
 
 
 .modal-body {
@@ -45,7 +47,7 @@
     opacity: 1;
     z-index: 30;
     text-align: center;
-    display:none;
+    display: none;
 
 
     h1 {
@@ -63,7 +65,13 @@
 
     &.is-showing {
         display: block;
-   
+    }
+
+    &.animate-in {
+        animation: in 300ms cubic-bezier(0.42, 0, 0.19, 1.73) forwards;
+    }
+    &.animate-out{
+        animation: out 300ms ease-out forwards;
     }
 }
 

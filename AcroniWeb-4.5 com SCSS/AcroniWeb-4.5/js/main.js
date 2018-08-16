@@ -26,9 +26,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Modal
 
     $('#abre-senha').click(function () {
-        $('.modal-wrap').toggleClass('is-showing aparece');
-
+         $('.modal-wrap').addClass('is-showing');
+         $('body').addClass('blur');
     });
+
+    $('.modal-background').click(function () {
+        var $step = $('.modal-body-step1');
+        $step.toggleClass('animate-in animate-out');
+        setTimeout(function () {
+            $('body').removeClass('blur');
+            $('.modal-wrap').removeClass('is-showing');
+            $step.toggleClass('animate-out animate-in');
+            
+        }, 300);
+    });
+
 
     //Função das TextBox e buttons
     var bool = false;

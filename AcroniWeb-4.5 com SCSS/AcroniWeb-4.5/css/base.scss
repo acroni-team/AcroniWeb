@@ -4,7 +4,14 @@
 /*Pré-comandos*/
 *{margin: 0 auto; user-select:none;}
 
-body{background-color: #f2f2f2;transition: background-color 300ms ease;  overflow-x: hidden; font-family: 'open'; font-weight:$normal;}
+body {
+    background-color: #f2f2f2;
+    transition: background-color 300ms ease;
+    overflow-x: hidden;
+    font-family: 'open';
+    font-weight: $normal;
+    transition: filter 200ms ease-in;
+}
 
 
 /*The Site*/

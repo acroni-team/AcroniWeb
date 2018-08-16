@@ -24,7 +24,7 @@
 
     <!--    Esqueceu a senha    -->
     <div class="modal-wrap">
-        <div class="modal-body modal-body-step1 is-showing">
+        <div class="modal-body modal-body-step1 is-showing animate-in">
             <h1>Pode acontecer com qualquer um.</h1>
             <p>Não esquenta,coloca seu email aqui em baixo que a gente resolve.</p>
             <asp:Textbox id="txtEmail" class="textbox textbox-senha" type="text"  placeholder="nuncamaispercoasenha@example.com" spellcheck="false" runat="server"></asp:Textbox>
@@ -41,7 +41,7 @@
             <asp:Textbox id="txtCSenha" class="textbox textbox-senha" type="text"  placeholder="Confirmar Senha" spellcheck="false" runat="server"></asp:Textbox>
 
          </div>
-        <div class="modal-background"></div>
+        <div class="modal-background fadeIn"></div>
      </div>
 
     <!--    Primeira seção -->
