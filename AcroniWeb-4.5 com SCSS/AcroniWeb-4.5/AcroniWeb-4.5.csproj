@@ -89,12 +89,14 @@
   <ItemGroup>
     <Content Include="area-restrita.aspx" />
     <Content Include="construct.aspx" />
+    <Content Include="css\partes\fontawesome.css" />
     <Content Include="css\var-import\fontes.scss" />
     <Content Include="css\main.scss" />
     <Content Include="css\partes\button.scss" />
     <None Include="css\paginas\default.scss" />
     <Content Include="css\partes\textbox.scss" />
     <Content Include="css\partes\modal.scss" />
+    <Content Include="css\partes\searchbox.scss" />
     <None Include="css\partes\transicao.scss" />
     <None Include="css\var-import\keyframes.scss" />
     <None Include="css\paginas\login.scss" />
@@ -105,7 +107,6 @@
     <Content Include="css\area-restrita.css" />
     <Content Include="default-old.aspx" />
     <Content Include="default.aspx" />
-    <Content Include="icon\search.svg" />
     <Content Include="img\apple.jpg" />
     <Content Include="img\apple.png" />
     <Content Include="img\demo-acroni.jpg" />
@@ -223,7 +224,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="icon\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

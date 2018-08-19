@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Acroni </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -40,7 +41,12 @@
             </div>
             <div id="right">
                 <div>
-                    <asp:TextBox class="textbox" type="text" placeholder="Busque aqui..." runat="server"></asp:TextBox>
+                    <aside class="caixa-search">
+                        <asp:TextBox ID="TextBox1" runat="server" class="texto-search" placeholder="Pesquisar"></asp:TextBox>
+			            <a class="botao-search" href="#">
+				            <i class="fas fa-search"></i>
+			            </a>
+		            </aside>
                     <ul id="menu-itens">
                         <li><a id="home" href="default.aspx">Home</a></li>
                         <li><a href="construct.aspx">Loja</a></li>

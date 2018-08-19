@@ -47,7 +47,7 @@
     <!--    Primeira seção -->
     <section>
 
-         <div id="player"></div>
+         <%--<div id="player"></div>--%>
 
         <div id="principal"> 
             <div data-aos="fade-up" data-aos-delay="300">
