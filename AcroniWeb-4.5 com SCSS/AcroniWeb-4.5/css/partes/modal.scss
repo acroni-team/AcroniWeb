@@ -4,7 +4,7 @@
 
 
 // Geral
-body.completo.blur {
+body.blur {
     filter: blur(2px);
 }
 
@@ -75,6 +75,59 @@ body.completo.blur {
     }
 }
 
-textbox-senha{
-    text-align:center;
+
+
+.modal-body-loja{
+    background-color: $cor-primaria;
+    width: 1180px;
+    height: 620px;
+    transform: translate(-50%,-50%) scale(0);
+    transition: transform 300ms ease-in;
+	padding:0px;
+	display:block;
+
+
 }
+
+.modal-wrap-loja {
+    display: block;
+    opacity: 1;
+    pointer-events: none;
+
+    &:target .modal-body-loja {
+        transform: translate(-50%,-50%) scale(1);
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    &.is-showing {
+        .modal-body-loja {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    &.animate-in {
+        .modal-body-loja {
+        animation: in 300ms cubic-bezier(0.42, 0, 0.19, 1.73) forwards;
+        }
+    }
+
+    &.animate-out {
+        .modal-body-loja {
+        animation: out 300ms ease-out forwards;
+        }
+    }
+}
+
+
+
+
+.background:target .modal-body-loja {
+	transform: translate(-50%,-50%) scale(0);
+    opacity: 0;
+    pointer-events: none;  
+
+
+}
+

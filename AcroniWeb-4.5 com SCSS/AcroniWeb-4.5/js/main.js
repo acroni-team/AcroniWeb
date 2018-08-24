@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Modal
+    // Modal-eas
 
     $('#abre-senha').click(function () {
          $('.modal-wrap').addClass('is-showing');

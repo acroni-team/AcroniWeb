@@ -19,8 +19,8 @@
             <ItemTemplate>
                 
                 <li>  
-                    <figure>
-                        <a href="#Produto<%# Eval("id") %>"><asp:Image ID="imgFoto" class="img" runat="server"  ImageUrl='<%# Bind("id","~/img/produtos/Img ({0}).jpg") %>' /></a>
+                    <figure id="click<%# Eval("id") %>" name="<%# Eval("id") %>">
+                        <%--<a href="#Produto<%# Eval("id") %>">--%><asp:Image ID="imgFoto" class="img" runat="server"  ImageUrl='<%# Bind("id","~/img/produtos/Img ({0}).jpg") %>' /><%--</a>--%>
                         <figcaption>
                             <asp:Label class="descricao" ID="lblNome" runat="server" Text='<%# Bind("nome") %>'></asp:Label>
                             <asp:Label class="descricao" ID="lblCidade" runat="server" Text=' <%# Bind("descricao") %>'></asp:Label>
@@ -29,16 +29,15 @@
                     </figure>
                 </li>
 
-                <div id="Produto<%# Eval("id") %>" class="fundo" >
-                    <div class="janela">
-                        <a href="#fecha" class="fecha-janela">x</a>
+                <div id="Produto<%# Eval("id") %>" class="modal-wrap modal-wrap-loja">
+                    <div class="modal-body modal-body-loja">
+                        <a class="fecha-janela">x</a>
                         <div class="right">
                             <asp:Image ID="Image1" class="img-grande" runat="server"  ImageUrl='<%# Bind("id","~/img/produtos/Img ({0}).png") %>' /></a>
                         </div>
                         <div class="left">
-                            
-                         </div>
-                    <div>
+                        </div>
+                    <div class="modal-background"><div>
                  </div>
 
             </ItemTemplate>
@@ -46,8 +45,18 @@
       </ul>
        <!--<a href="Produto<%# Eval("id") %>.aspx"><div class="info">-->
        <!--<a href="Produto<%# Eval("id") %>.aspx">Produto <%# Eval("id") %></a>-->
-       <script>
-            if (window.location.hash.substr(1) == 'janela') { document.getElementById('Produto<%# Eval("id") %>').checked = true }
-        </script> 
+    <script>
+        $('figure').click(function () {
+            var id = $(this).attr("name"); 
+            $("#Produto"+id).removeClass("animate-out").addClass("is-showing animate-in");
+             $("body").niceScroll().remove();
+        
+        $('.modal-background, .fecha-janela').click(function () {
+            $("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none" });
+            $("#Produto"+id).removeClass("is-showing animate-in").addClass("animate-out");
+        });
+        });
+     
+    </script>
 </asp:Content>
 

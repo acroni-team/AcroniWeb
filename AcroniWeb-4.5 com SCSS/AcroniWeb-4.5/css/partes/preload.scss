@@ -4,17 +4,6 @@
 
 
 // Preload
-
-body {
-    overflow-y: hidden;
-
-  
-
-    &.completo {
-        overflow-y: auto;
-    }
-}
-
 .preload {
     position: absolute;
     @include wh(100vh);

@@ -1,3 +1,9 @@
+use master
+go
+
+IF EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = 'ACRONI_SQL')
+	DROP DATABASE ACRONI_SQL
+
 CREATE DATABASE ACRONI_SQL
 GO
 USE ACRONI_SQL
@@ -11,10 +17,7 @@ CREATE TABLE tblCliente (
 
 )
 GO
-INSERT INTO tblCliente VALUES ('Mota','oi','jota@jot.com',28128192,219219201)
-SELECT * FROM tblCliente Where usuario = 'tm22' and senha = '123'
-delete from tblCliente
-
+INSERT INTO tblCliente VALUES ('fax', 'fez','imai@gmail.com',2423432,24323)
 GO
 create table tblProdutos
 (
@@ -25,14 +28,14 @@ create table tblProdutos
 	preco decimal(6,2),
 )
 GO
-insert into tblProdutos values('Rubens','ele é um RUBANCO bem LOCO','bem loco impolganti leite pao de batata',69,89)
+insert into tblProdutos values('Rubens','ele é um RUBANCO bem LOCO','bem loco impolganti leite pao de batata',69.89)
 insert into tblProdutos values('TETRAEDRO KRL','VOCE N SABE NEM EU','bem loco impolganti irineu',727)
 insert into tblProdutos values('OI MOUTA','Aquele que escreveu Mouta como nome na lista','bem leite eunsei kkj',420)
 insert into tblProdutos values('AGORA SIM','Famoso Rodrigao da Massa','fritas francesas JOBS Gabriel TORRES',50)
 insert into tblProdutos values('OI, eu sou um tecladinho bunitinho :D','digo, PERFECTUS','PERFEITINHOS PALHACTUOPLANCTUM JOTA É PALHATROLITICO ',999)
 
---OMEGALUL
 
-UPDATE tblCliente SET usuario = 'Mota',senha = 'oimota' WHERE email = 'oimota@gmail.com'
 
-ALTER TABLE tblCliente add cep varchar(15), cpf varchar(15)
+
+
+SELECT * FROM tblCliente

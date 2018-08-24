@@ -99,7 +99,6 @@
     <Content Include="css\partes\searchbox.scss" />
     <None Include="css\partes\transicao.scss" />
     <None Include="css\var-import\keyframes.scss" />
-    <None Include="css\paginas\login.scss" />
     <None Include="css\var-import\cor.scss" />
     <None Include="css\paginas\loja.scss" />
     <None Include="css\partes\preload.scss" />
@@ -134,7 +133,6 @@
     <Content Include="js\main.js" />
     <Content Include="js\preload.js" />
     <Content Include="js\transition.js" />
-    <Content Include="login.aspx" />
     <Content Include="loja.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -175,13 +173,6 @@
     </Compile>
     <Compile Include="layout.Master.designer.cs">
       <DependentUpon>layout.Master</DependentUpon>
-    </Compile>
-    <Compile Include="login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="loja.aspx.cs">
       <DependentUpon>loja.aspx</DependentUpon>

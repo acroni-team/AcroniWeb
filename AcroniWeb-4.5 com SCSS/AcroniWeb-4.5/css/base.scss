@@ -7,7 +7,7 @@
 body {
     background-color: #f2f2f2;
     transition: background-color 300ms ease;
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: 'open';
     font-weight: $normal;
     transition: filter 200ms ease-in;

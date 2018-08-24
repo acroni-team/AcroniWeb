@@ -13,7 +13,12 @@
     <script type="text/javascript" src="js/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"/>
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1"/> 
- 
+        <script>
+            $(window).on('load', function () {
+                $("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none" });
+                 $('.preload').addClass('completo');
+            });
+    </script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -73,13 +78,6 @@
 
     </form>
 
-    <script>
-        $("body").niceScroll({
-            cursorcolor:"#0093ff",
-            cursorwidth: "10px",
-            cursorborder:"none"
-        });
-    </script>
 
 </body>
 </html>

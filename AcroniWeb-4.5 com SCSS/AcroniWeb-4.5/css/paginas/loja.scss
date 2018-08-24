@@ -88,30 +88,6 @@ figure:hover figcaption {
 
 
 
-.fundo:target {
-    opacity: 1;
-    pointer-events: all;  
-}
-
-
-.janela {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: $cor-primaria;
-    width: 1180px;
-    height: 620px;
-    transform: translate(-50%,-50%) scale(0);
-    transition: transform 300ms ease-in;
-}
-
-.fundo:target .janela {
-    transform: translate(-50%,-50%) scale(1);
-}
-
-.fundo:target body {
-    position:fixed;
-}
 
 .right {
     width:60%;
@@ -131,7 +107,7 @@ figure:hover figcaption {
 
 .fecha-janela {
     position:absolute;
-    font-family:'qanelas-bold';
+    font-family:'qanelas';
     font-size:30px;
     right:15px;
 }
