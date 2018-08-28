@@ -1,0 +1,281 @@
+c:\users\aluno\documents\visual studio 2012\Projects\AcroniWeb-4.5\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+c:\users\aluno\documents\visual studio 2012\Projects\AcroniWeb-4.5\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+c:\users\aluno\documents\visual studio 2012\Projects\AcroniWeb-4.5\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+c:\users\aluno\documents\visual studio 2012\Projects\AcroniWeb-4.5\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+c:\users\aluno\documents\visual studio 2012\Projects\AcroniWeb-4.5\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojResolveAssemblyReference.cache
+C:\Users\gusta\Desktop\AcroniWeb-4.5\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+C:\Users\gusta\Desktop\AcroniWeb-4.5\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+C:\Users\gusta\Desktop\AcroniWeb-4.5\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+C:\Users\gusta\Desktop\AcroniWeb-4.5\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+C:\Users\gusta\Desktop\AcroniWeb-4.5\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\LibSassHost.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\WebGrease.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\LibSassHost.xml
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 - Copy\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.dll
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\WebGrease.dll
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.xml
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+E:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.dll
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\WebGrease.dll
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.xml
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojResolveAssemblyReference.cache
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+J:\Arquivos\00 - TCM\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\WebGrease.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.xml
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+C:\Users\gusta\Desktop\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\x64\libsass.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\x64\libsass.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\WebGrease.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.xml
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\x64\libsass.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\WebGrease.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.xml
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\x64\libsass.dll
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.dll
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\WebGrease.dll
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.xml
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojResolveAssemblyReference.cache
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+G:\Arquivos\00 - TCM\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\x64\libsass.dll
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.dll
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\WebGrease.dll
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.xml
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojResolveAssemblyReference.cache
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+D:\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\x64\libsass.dll
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.dll
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\WebGrease.dll
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.xml
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+E:\Arquivos\Cu\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\x64\libsass.dll
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.dll
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\WebGrease.dll
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.xml
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojResolveAssemblyReference.cache
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+D:\asp-master\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\x64\libsass.dll
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.dll
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\WebGrease.dll
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.xml
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+E:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\x64\libsass.dll
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.dll
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\WebGrease.dll
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\LibSassHost.xml
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojResolveAssemblyReference.cache
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+G:\Arquivos\00 - TCM\asp-master LOOUJA\asp-master\AcroniWeb-4.5 com SCSS\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\x64\libsass.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\LibSassHost.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\WebGrease.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\LibSassHost.xml
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+C:\Users\gusta\Desktop\GitHub\asp\AcroWeb -from zero\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
