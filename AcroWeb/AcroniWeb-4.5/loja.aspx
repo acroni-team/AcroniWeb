@@ -20,7 +20,7 @@
                 
                 <li>  
                     <figure id="click<%# Eval("id") %>" name="<%# Eval("id") %>">
-                        <%--<a href="#Produto<%# Eval("id") %>">--%><asp:Image ID="imgFoto" class="img" runat="server"  ImageUrl='<%# Bind("id","~/img/produtos/Img ({0}).jpg") %>' /><%--</a>--%>
+                        <%--<a href="#Produto<%# Eval("id") %>">--%><asp:Image ID="imgFoto" class="img" runat="server"  ImageUrl='<%# Bind("id","~/img/produtos/Img({0}).png") %>' /><%--</a>--%>
                         <figcaption>
                             <asp:Label class="descricao" ID="lblNome" runat="server" Text='<%# Bind("nome") %>'></asp:Label>
                             <asp:Label class="descricao" ID="lblCidade" runat="server" Text=' <%# Bind("descricao") %>'></asp:Label>
@@ -33,11 +33,12 @@
                     <div class="modal-body modal-body-loja">
                         <a class="fecha-janela">x</a>
                         <div class="right">
-                            <asp:Image ID="Image1" class="img-grande" runat="server"  ImageUrl='<%# Bind("id","~/img/produtos/Img ({0}).png") %>' /></a>
+                            <asp:Image ID="Image1" class="img-grande" runat="server"  ImageUrl='<%# Bind("id","~/img/produtos/Img({0}).png") %>' /></a>
                         </div>
                         <div class="left">
                         </div>
-                    <div class="modal-background"><div>
+                     </div>
+                    <%--<div class="modal-background"><div>--%>
                  </div>
 
             </ItemTemplate>

@@ -54,7 +54,7 @@
 		            </aside>
                     <ul id="menu-itens">
                         <li><a id="home" href="default.aspx">Home</a></li>
-                        <li><a href="construct.aspx">Loja</a></li>
+                        <li><a href="loja.aspx">Loja</a></li>
                         <li><a href="construct.aspx">Download</a></li>
                         <li><a id="construct.aspx" href="fale-conosco.aspx">Fale Conosco</a></li>
                         <li><a id="entrar" href="login.aspx">Entrar/Cadastrar</a></li>
