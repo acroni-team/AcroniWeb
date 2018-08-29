@@ -88,7 +88,7 @@
                     <div class="centralizabotao" style="width: 100%;">
 					   <asp:Button ID="btnEntra" class="blue dark" type="button" Text="Entrando!" runat="server" OnClick="btnEntra_Click" />  
                     </div>
-                    <p id="cadastre-se">Ainda não tem conta? <a class="link">Crie uma!</a></p>
+                    <p id="cadastre-se">Ainda não tem conta? <a href="cadastro.aspx" class="link">Crie uma!</a></p>
                     </ContentTemplate>
                     </asp:UpdatePanel>
                 </div>

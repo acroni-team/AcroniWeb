@@ -301,3 +301,69 @@ C:\Users\gusta\Desktop\GitHub\asp\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.
 C:\Users\gusta\Desktop\GitHub\asp\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
 C:\Users\gusta\Desktop\GitHub\asp\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
 C:\Users\gusta\Desktop\GitHub\asp\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\x64\libsass.dll
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\LibSassHost.dll
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\WebGrease.dll
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\LibSassHost.xml
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+C:\Users\gui_m\Documents\Visual Studio 2017\Projects\asp\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\x64\libsass.dll
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\LibSassHost.dll
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\WebGrease.dll
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\LibSassHost.xml
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+G:\Arquivos\00 - TCM\asp com cadastro no aspzinho\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\x64\libsass.dll
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\LibSassHost.dll
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\WebGrease.dll
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\LibSassHost.xml
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+C:\Users\gusta\Desktop\Asp Cadastro\AcroWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb

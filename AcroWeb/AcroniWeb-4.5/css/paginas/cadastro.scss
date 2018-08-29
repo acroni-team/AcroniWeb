@@ -1,0 +1,130 @@
+/*Preparacao*/
+@import '../var-import/todos';
+
+body{
+    background-color:#333;
+
+}
+
+#padrao{
+    display:flex;
+    width:100vw;
+    height:100vh;
+    z-index: 1;
+    align-content: center;
+    justify-content: center;
+		vertical-align:middle;
+}
+
+
+.alinha{
+    display: flex;
+    align-self: center;
+    width:100%;
+    position: absolute;
+    pointer-events: none;
+}
+
+.alinhado{
+    width:650px;
+
+}
+
+/*inputs e botao */
+
+.identifica{
+    font-family: 'open';
+    font-weight:$normal;
+    margin-bottom:13px;
+    color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+    display:inline-block;
+}
+
+.caixa{
+    border:none;
+    caret-color: $cor-primaria;
+    font-size: 3em;
+    font-family: 'qanelas';
+    font-weight:$extra-bold;
+    background-color:transparent;
+    opacity: 0;
+    z-index: 10;
+    color:$texto;
+
+}
+input::-webkit-input-placeholder {
+    color: #636363;
+
+
+}
+
+input:focus, button:focus{
+     outline: none;
+}
+
+
+.bluev2, .bluev22{
+    border: none;
+    float: left;
+    align-self: center;
+    margin-left: 10px;
+    height:100%;
+    background-color:$cor-primaria;
+    font-family: 'open';
+    padding-left:22px;
+    padding-right:22px;
+    color:#fff;
+    transition: 100ms ease-in;
+    border-radius: 5px;
+    pointer-events: all;
+    z-index: 999;
+
+}
+
+.bluev22{
+    opacity: 0;
+    pointer-events: none;
+}
+
+button:hover{
+    background-color: rgba(0, 147, 255,0.5);
+}
+
+.alo{
+    float:left;
+    width:90%;
+}
+
+.identifica.aparece, .caixa.aparece {
+    animation: fadeInTop 200ms ease-in alternate-reverse ;
+    opacity: 1;
+    pointer-events: all;
+
+}
+
+.identifica.some, .caixa.some{
+    animation: fadeOutBottom 200ms ease-in forwards;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.identifica.aparece{
+    animation-duration: 400ms;
+}
+
+/*#senha-p, #senha-input {
+    opacity: 0;
+    pointer-events: none;
+}*/
+
+#erro {
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    margin-top: 200px;
+    color:$texto;
+}

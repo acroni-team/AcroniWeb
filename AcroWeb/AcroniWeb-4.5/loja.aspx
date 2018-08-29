@@ -38,7 +38,7 @@
                         <div class="left">
                         </div>
                      </div>
-                    <%--<div class="modal-background"><div>--%>
+                    <div class="modal-background"></div>
                  </div>
 
             </ItemTemplate>

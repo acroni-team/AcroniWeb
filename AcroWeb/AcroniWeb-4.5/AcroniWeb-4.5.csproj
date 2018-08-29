@@ -87,8 +87,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="area-restrita.aspx" />
+    <Content Include="cadastro.aspx" />
     <Content Include="construct.aspx" />
+    <None Include="css\paginas\cadastro.scss" />
     <Content Include="css\partes\fontawesome.css" />
     <Content Include="css\var-import\fontes.scss" />
     <Content Include="css\main.scss" />
@@ -129,6 +130,7 @@
     <Content Include="img\produtos\Img%282%29.png" />
     <Content Include="img\produtos\Img%283%29.png" />
     <Content Include="img\produtos\Img1 %281%29.png" />
+    <Content Include="js\cadastro.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\jquery.mask.min.js" />
     <Content Include="js\jquery.nicescroll.min.js" />
@@ -140,12 +142,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="area-restrita.aspx.cs">
-      <DependentUpon>area-restrita.aspx</DependentUpon>
+    <Compile Include="cadastro.aspx.cs">
+      <DependentUpon>cadastro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="area-restrita.aspx.designer.cs">
-      <DependentUpon>area-restrita.aspx</DependentUpon>
+    <Compile Include="cadastro.aspx.designer.cs">
+      <DependentUpon>cadastro.aspx</DependentUpon>
     </Compile>
     <Compile Include="classes\Conexao.cs" />
     <Compile Include="classes\Valida.cs" />
