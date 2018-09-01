@@ -1,11 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/layout.Master" AutoEventWireup="true" CodeBehind="cadastro.aspx.cs" Inherits="AcroniWeb_4._5.cadastro" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <%--<script type="text/javascript" src="js/cadastro.js"></script>--%>
+    
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/cadastro.js"></script>
+    <script src="js/verificaSenha.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    <div id="padrao">
+    <div id="padrao" ng-controller="validaSenha">
         <div class="alinha">
             <div class="alinhado">
                 <div class="alo">
@@ -43,7 +47,7 @@
             <div class="alinhado">
                 <div class="alo">
                     <asp:Label ID="lblSenha" runat="server" Text="Entre com sua senha" class="identifica"></asp:Label>
-                    <asp:TextBox  ID="txtSenha" runat="server" type="text" class="caixa" placeholder="Senha" autocomplete="off" autofocus></asp:TextBox>
+                    <asp:TextBox ng-model="senha" TextMode="Password" ng-change="verificar()" ID="txtSenha" runat="server" type="text" class="caixa" placeholder="Senha" autocomplete="off" autofocus></asp:TextBox>
                 </div>
             </div>
         </div>
@@ -52,13 +56,14 @@
                 <div class="alo">
                     <asp:Label ID="lblCSenha" runat="server" Text="Confirme sua senha" class="identifica"></asp:Label>
                     <asp:TextBox  ID="txtCSenha" runat="server" type="text" class="caixa" placeholder="Confirmar Senha" autocomplete="off" autofocus></asp:TextBox>
-
                 </div>
                <asp:Button ID="btnValida" class="bluev2" runat="server" Text=">" OnClick="btnValida_Click"/>
             </div>
         </div>
         <div id="erro">
-            <asp:Label ID="lblErro" runat="server" Text=""></asp:Label>
+            <asp:Label ID="lblErro" runat="server" Text=""></asp:Label><br/>
+            <asp:Label ng-bind="mensagem" ID="lblNivelSenha" runat="server" Text=""></asp:Label><br/>
+            <asp:Label ID="lblDica" runat="server" Text=""></asp:Label>
         </div>
         <div id="info">
 

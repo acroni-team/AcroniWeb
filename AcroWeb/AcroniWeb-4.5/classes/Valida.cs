@@ -84,8 +84,8 @@ public class Valida
         }
     }
 
-    
 
+    //Validacões utilizando regex
     public bool ValidaCep(string cep)
     {
         bool retorno = false;
@@ -104,9 +104,33 @@ public class Valida
             return retorno;
         }
     }
+        
+    public bool ValidaNome(string nome)
+    {
+        Regex rg = new Regex(@"^[a-zA-Z áàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÒÖÚÇÑ]{4,}$");
+        bool retorno = false;
+        
+        if(rg.IsMatch(nome))
+            retorno = true;
+        else
+            retorno = false;
+        
+        return retorno;
+    }
 
+    public bool ValidaUsu(string usu)
+    {
+        Regex rg = new Regex(@"[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÒÖÚÇÑ]{4,}[0-9_\-]{0,}");
+        bool retorno = false;
+
+        if (rg.IsMatch(usu))
+            retorno = true;
+        else
+            retorno = false;
+
+        return retorno;
+    }
     
 
-    
 
 }

@@ -25,7 +25,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body ng-app="acroni">
     <form id="form1" runat="server">
         <div id="menu">
             <div id="left">

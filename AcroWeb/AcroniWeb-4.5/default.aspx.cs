@@ -106,9 +106,8 @@ namespace AcroniWeb
             if (resposta.HasRows)
                 existe = true;
             else
-            {
                 existe = false;
-            }
+            
             conexao_SQL.Close();
             if (validacao_email.IsMatch(txtEmail.Text) && existe)
             {

@@ -138,6 +138,7 @@
     <Content Include="js\main.js" />
     <Content Include="js\preload.js" />
     <Content Include="js\transition.js" />
+    <Content Include="js\verificaSenha.js" />
     <Content Include="loja.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
