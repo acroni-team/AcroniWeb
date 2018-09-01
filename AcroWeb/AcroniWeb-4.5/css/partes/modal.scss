@@ -17,18 +17,25 @@ section.blur {
     opacity: 0;
     z-index: 10;
     background-color: rgba(0,0,0,0.3);
-    cursor:pointer;
-    pointer-events:none;
+    cursor: pointer;
+    pointer-events: none;
 
     &.fadeIn {
         animation: fadeIn 200ms ease-in forwards;
     }
 }
 
-.modal-wrap{
-    display:none;
-    &.is-showing{
-        display:block;
+.modal-wrap {
+    display: none;
+
+    &.is-showing {
+        display: block;
+
+        .modal-background {
+            opacity: 1;
+            pointer-events: all;
+        
+        }
     }
 }
 
@@ -82,16 +89,17 @@ section.blur {
 
 
 
-.modal-body-loja{
+.modal-body-loja {
     background-color: $cor-primaria;
     width: 1180px;
     height: 620px;
-    transform: translate(-50%,-50%) scale(0);
+    transform: translate(-50%,-50%) scale(1.25);
     transition: transform 300ms ease-in;
-	padding:0px;
-	display:block;
-
-
+    padding: 0px;
+    display: block;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal-wrap-loja {
@@ -114,6 +122,7 @@ section.blur {
         .modal-background {
             opacity: 1;
             pointer-events: all;
+            z-index: 1000;
         }
     }
 

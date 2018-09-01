@@ -15,77 +15,72 @@
     margin: 0 auto;
     list-style: none;
     text-align: center;
+   
 
+
+    li {
+        display: inline-block;
+        margin: 0;
+        padding: 20px;
+        text-align: left;
+        position: relative;
+        text-decoration: none;
+    }
+
+    figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        background-color: $cor-primaria;
+        cursor: pointer;
+
+        .img {
+            max-width: 100%;
+            display: block;
+            position: relative;
+            transition: transform 0.4s;
+        }
+
+        &:hover .img {
+            transform: translateY(-50px);
+        }
+
+        &:hover figcaption {
+            opacity: 1;
+            transform: translateY(0px);
+            transition: transform 0.4s, opacity 0.1s;
+        }
+    }
+
+    figcaption {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        background: #262626;
+        color: $texto;
+        opacity: 0;
+        height: 60px;
+        transform: translateY(100%);
+        transition: transform 0.4s, opacity 0.1s 0.3s;
+
+        .descricao {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        a {
+            text-align: center;
+            padding: 5px 10px;
+            border-radius: 2px;
+            display: inline-block;
+            background: #ed4e6e;
+            color: #fff;
+        }
+    }
 }
-
-.grid li {
-    display: inline-block;
-    margin: 0;
-    padding: 20px;
-    text-align: left;
-    position: relative;
-    text-decoration:none;
-}
-
-.grid figure {
-    margin: 0;
-    position: relative;
-    overflow:hidden;
-    background-color:$cor-primaria;
-     
-}
-
-.grid figure .img {
-    max-width: 100%;
-    display: block;
-    position: relative;
-    transition: transform 0.4s;
-
-}
-
-.grid figcaption {
-    position: absolute;
-    top: auto;
-    bottom:0;
-    left: 0;
-    padding: 20px;
-    background: #262626;
-    color: #F2F2F2;
-    opacity:0;
-    height:60px;
-    transform: translateY(100%);
-    transition: transform 0.4s, opacity 0.1s 0.3s;
-}
-
-
-.grid figcaption .descricao {
-	margin: 0;
-	padding: 0;
-	color: #fff;
-}
-
-
-.grid figcaption a {
-	text-align: center;
-	padding: 5px 10px;
-	border-radius: 2px;
-	display: inline-block;
-	background: #ed4e6e;
-	color: #fff;
-}
-
-
- figure:hover .img{
-     transform: translateY(-50px);
- }
-
-figure:hover figcaption {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: transform 0.4s, opacity 0.1s;
-}
-
-
 
 
 
@@ -101,7 +96,7 @@ figure:hover figcaption {
 .left {
     width:40%;
     height:100%;
-    background-color:#fff;
+    background-color:$cor-fundo;
     float:left;
 }
 
@@ -110,6 +105,7 @@ figure:hover figcaption {
     font-family:'qanelas';
     font-size:30px;
     right:15px;
+    cursor:pointer;
 }
 
 .img-grande {

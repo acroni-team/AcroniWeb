@@ -26,8 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Modal-eas
 
     $('#abre-senha').click(function () {
-         $('.modal-wrap').addClass('is-showing');
-         $('section').addClass('blur');
+        $('.modal-wrap').addClass('is-showing');
+        $('section').addClass('blur');
+        $("body").niceScroll().remove();
     });
 
     $('.modal-background').click(function () {
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
             $('section').removeClass('blur');
             $('.modal-wrap').removeClass('is-showing');
             $step.toggleClass('animate-out animate-in');
+            $("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none" });
             
         }, 300);
     });
