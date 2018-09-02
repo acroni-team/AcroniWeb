@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Validator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style href="css.css"></style>
+        <!--<script src="js.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+        <script src="angula.js"></script>
+    </head>
+    <body ng-app="acroni" ng-controller="validaSenha">
+        <div class="container">
+            <label for="psw">Password:</label>
+            <input ng-model="senha" ng-change="verificar()" type="password" autocomplete="off" id="psw" name="psw">
+        </div>
+        <div id="message">
+            <h3>Test Your Password</h3>
+            <p id="lengthCounter"><b>Number of Characters:</b></p>
+            <p id="PSWlength" class="invalid"><b>Minimum 8 Characters in Length</b></p>
+            <p id="upper" class="invalid"><b>Uppercase Letters</b></p>
+            <p id="lower" class="invalid"><b>Lowercase Letters</b></p>
+            <p id="number" class="invalid"><b>Numbers</b></p>
+            <p id="symbol" class="invalid"><b>Symbols</b></p>
+            <p id="resposta">{{mensagem}}</p>
+        </div>
+    </body>
+</html>
