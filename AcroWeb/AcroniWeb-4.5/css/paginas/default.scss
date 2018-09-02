@@ -140,10 +140,6 @@ section{
         text-align: center;
     }
 
-    div:nth-of-type(1) {
-        margin-bottom: 50px;
-    }
-
     span {
         color: $cor-primaria;
         font-size: 13.5px;
@@ -159,6 +155,15 @@ section{
         font-weight: $normal;
         cursor:pointer;
     }
+
+    #abre-senha{
+        font-size:13.5px;
+    }
+}
+
+.login{
+    width:100%;
+    margin-top:30px;
 }
 
 .centralizalogin {
@@ -176,6 +181,49 @@ section{
 
 
 // Segunda seção
+
+section#video {
+    @include wh(110vh);
+    background-color: $texto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .conteiner {
+        padding: 0 40px;
+        width: 1200px;
+        height: 100vh;
+        display: flex;
+    }
+
+    .conteiner-video {
+        flex: 0 1 100%;
+        align-self: center;
+
+        div:first-of-type {
+            margin-bottom: 17px;
+        }
+
+        h1 {
+            font-weight: $semi-bold;
+            color: $cinza-escuro;
+            font-size: 2em;
+            width: 100%;
+        }
+
+        p {
+            font-size: 1em;
+            color: $cinza;
+        }
+    }
+}
+
+
+
+
+
+
+// Terceira seção
 
 section#facilidade {
     @include wh(50vh);

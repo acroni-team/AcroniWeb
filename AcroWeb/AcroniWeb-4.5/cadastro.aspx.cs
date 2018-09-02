@@ -158,14 +158,16 @@ namespace AcroniWeb_4._5
                     }
 
                 case 5:
-                    if (txtCSenha.Text != ViewState["csenha"].ToString())
+                    if (txtCSenha.Text != ViewState["senha"].ToString())
                     {
                         IsNotValid(txtCSenha, "As senhas não coincidem", 5, txtCSenha);
                         break;
                     }
                     else
                     {
+                        lblErro.Text = "BOA 06, PADRAO";
                         //Exibir a revisão dos dados para finalizar o cadastro
+                        //"PALMA GOD DMS" -PezinhoAmaASP 2018
                         break;
                     }
 

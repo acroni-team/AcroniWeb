@@ -55,7 +55,7 @@
             <div class="alinhado">
                 <div class="alo">
                     <asp:Label ID="lblCSenha" runat="server" Text="Confirme sua senha" class="identifica"></asp:Label>
-                    <asp:TextBox  ID="txtCSenha" runat="server" type="text" class="caixa" placeholder="Confirmar Senha" autocomplete="off" autofocus></asp:TextBox>
+                    <asp:TextBox  ID="txtCSenha" TextMode="Password" runat="server" type="text" class="caixa" placeholder="Confirmar Senha" autocomplete="off" autofocus></asp:TextBox>
                 </div>
                <asp:Button ID="btnValida" class="bluev2" runat="server" Text=">" OnClick="btnValida_Click"/>
             </div>
