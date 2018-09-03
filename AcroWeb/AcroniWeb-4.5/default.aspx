@@ -10,6 +10,16 @@
              $('.preload').addClass('completo');
               $('body').addClass('completo');
         });
+
+        //$('.blue-eas').on('click', function (loader) {
+            
+        //});
+
+        function loader(){
+            $('.lds-ellipsis').css("opacity", "1");
+            $('.blue-eas').css("color", "#0093ff");
+        }
+
     </script>
 
 </asp:Content>
@@ -32,7 +42,8 @@
             <h1>Pode acontecer com qualquer um.</h1>
             <p>Não esquenta,coloca seu email aqui em baixo que a gente resolve.</p>
             <asp:Textbox id="txtEmail" class="textbox textbox-eas" type="text"  placeholder="nuncamaispercoasenha@example.com" spellcheck="false" runat="server"></asp:Textbox>
-            <asp:Button ID="btnSendEmail" runat="server" Text="Enviar" class="blue dark blue-eas" OnClick="btnSendEmail_Click"/>
+            <asp:Button ID="btnSendEmail" runat="server" Text="Enviar" class="blue dark blue-eas" OnClick="btnSendEmail_Click" OnClientClick="loader();"/>
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
             <asp:Label runat="server" Text="" id="lblErro1"></asp:Label>
          </div>
         <div class="modal-body modal-body-step2" id="step2" runat="server">
@@ -103,7 +114,7 @@
     <!--    Segunda seção -->
 
     <section id="video">
-        <div class="conteiner">
+        <div class="conteiner" data-aos="fade-up" data-aos-delay="300">
             <div class="conteiner-video">
                 <div>
                     <h1>Vídeo promocional da Acroni</h1>

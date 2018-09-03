@@ -57,7 +57,7 @@ namespace AcroniWeb
                     if (tabela.HasRows)
                     {
                         Session["logado"] = "1";
-                        Response.Redirect("area-restrita.aspx");
+                        Response.Redirect("construct.aspx");
                         txtPass.Attributes.Add("style", "border-color:#0093ff");
                     }
                     else
@@ -107,7 +107,8 @@ namespace AcroniWeb
                 existe = true;
             else
                 existe = false;
-            
+
+            resposta.Close();
             conexao_SQL.Close();
             if (validacao_email.IsMatch(txtEmail.Text) && existe)
             {
@@ -133,7 +134,7 @@ namespace AcroniWeb
                 txtEmail.Attributes.Add("style", "border-color:red");
                 //KK ESSA MERDA ATUALIZA A PAGINA
             }
-
+            conexao_SQL.Close();
             SCPanel2.Update();
            
         }

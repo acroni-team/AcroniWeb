@@ -75,21 +75,28 @@ namespace AcroniWeb_4._5
                     if (!v.ValidaUsu(usuario))
                     {
                         IsNotValid(txtNome, "O nome de usuário deve ter no mínimo 4 letras <br /> Caracteres especiais, exceto _ e - não são permitidos", 1, txtUsu);
+                        conexao_SQL.Close();
                         break;
+                       
                     }
                     else if (resposta.HasRows)
                     {
                         IsNotValid(txtNome, "Usuário já em uso", 1, txtUsu);
+                        resposta.Close();
+                        conexao_SQL.Close();
                         break;
+                        
                     }
                     else if (usuario.Contains(" "))
                     {
                         IsNotValid(txtNome, "O usuário não pode conter espaços", 1, txtUsu);
+                        conexao_SQL.Close();
                         break;
                     }
                     else
                     {
                         IsValid("usu", txtUsu, lblUsu, txtEmail, lblEmail, 2, usuario);
+                        conexao_SQL.Close();
                         break;
                     }
                     
@@ -120,6 +127,7 @@ namespace AcroniWeb_4._5
                     {
                         IsNotValid(txtUsu, "Email já em uso.", 2, txtEmail);
                         select = "";
+                        resposta.Close();
                         conexao_SQL.Close();
                         break;
                     }
