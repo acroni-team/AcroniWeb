@@ -57,7 +57,7 @@
                     <asp:Label ID="lblCSenha" runat="server" Text="Confirme sua senha" class="identifica"></asp:Label>
                     <asp:TextBox  ID="txtCSenha" TextMode="Password" runat="server" type="text" class="caixa" placeholder="Confirmar Senha" autocomplete="off" autofocus></asp:TextBox>
                 </div>
-               <asp:Button ID="btnValida" class="bluev2" runat="server" Text=">" OnClick="btnValida_Click"/>
+               <asp:Button ID="btnValida" class="buttonv2" runat="server" Text=">" OnClick="btnValida_Click"/>
             </div>
         </div>
         <div id="erro">

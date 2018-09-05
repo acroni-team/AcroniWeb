@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Modal-eas
 
     $('#abre-senha').click(function () {
+        $('.modal-overflow').removeClass('hidden');
         $('.modal-wrap').addClass('is-showing');
         $('section').addClass('blur');
         $("body").niceScroll().remove();
@@ -33,25 +34,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     $('.modal-background').click(function () {
         var $step = $('.modal-body-step1');
-        $step.toggleClass('animate-in animate-out');
+        $step.toggleClass('animate-first-in animate-first-out');
         setTimeout(function () {
             $('section').removeClass('blur');
             $('.modal-wrap').removeClass('is-showing');
-            $step.toggleClass('animate-out animate-in');
+            $step.toggleClass('animate-first-out animate-first-in');
             $("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none" });
+            $('.modal-overflow').addClass('hidden');
             
-        }, 300);
+        }, 200);
     });
 
 
     //Função das TextBox e buttons
     var bool = false;
-    $('.textbox,.campos-pergunta,.pergunta').focus(function () {
+    $('.textbox,.campos-pergunta,.pergunta,.textbox-eas').focus(function () {
         //$(this).css("border", "1.5px solid #0093ff");
         $(this).addClass('foco');
     })
 
-    $('.textbox,.campos-pergunta,.pergunta').blur(function () {
+    $('.textbox,.campos-pergunta,.pergunta,.textbox-eas').blur(function () {
         //$(this).css("border", "1.5px solid #dfdfdf");
         $(this).removeClass('foco');
     })

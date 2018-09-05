@@ -1,6 +1,6 @@
 $(function(){
   'use strict';
-  var $page = $('#main'),
+  var $page = $('#modal'),
       options = {
        debug: true, //Ainda tentando entender esses comandos aqui
         prefetch: true,

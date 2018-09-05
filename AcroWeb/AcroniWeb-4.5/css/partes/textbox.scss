@@ -39,8 +39,3 @@
 .textbox:focus::-webkit-input-placeholder{
     color: transparent;
 }
-
-.textbox::selection {
-    background: rgba($cinza, 0.45);
-    color: $texto;
-}

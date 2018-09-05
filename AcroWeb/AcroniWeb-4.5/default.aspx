@@ -11,13 +11,13 @@
               $('body').addClass('completo');
         });
 
-        //$('.blue-eas').on('click', function (loader) {
+        //$('.button-eas').on('click', function (loader) {
             
         //});
 
         function loader(){
             $('.lds-ellipsis').css("opacity", "1");
-            $('.blue-eas').css("color", "#0093ff");
+            $('.button-eas').css("color", "#0093ff");
         }
 
     </script>
@@ -36,13 +36,15 @@
     
     <!--    Esqueceu a senha    -->
     <div class="modal-wrap" id="modal" runat="server">
+      
         <asp:UpdatePanel ID="SCPanel2" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="false">
         <ContentTemplate>
-        <div class="modal-body modal-body-step1 is-showing animate-in" id="step1" runat="server">
+        <div class="modal-overflow hidden">
+        <div class="modal-body modal-body-step1 is-showing animate-first-in" id="step1" runat="server">
             <h1>Pode acontecer com qualquer um.</h1>
             <p>Não esquenta,coloca seu email aqui em baixo que a gente resolve.</p>
             <asp:Textbox id="txtEmail" class="textbox textbox-eas" type="text"  placeholder="nuncamaispercoasenha@example.com" spellcheck="false" runat="server"></asp:Textbox>
-            <asp:Button ID="btnSendEmail" runat="server" Text="Enviar" class="blue dark blue-eas" OnClick="btnSendEmail_Click" OnClientClick="loader();"/>
+            <asp:Button ID="btnSendEmail" runat="server" Text="Enviar" class="button dark button-eas" OnClick="btnSendEmail_Click" OnClientClick="loader();"/>
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
             <asp:Label runat="server" Text="" id="lblErro1"></asp:Label>
          </div>
@@ -50,7 +52,8 @@
             <h1>Só precisamos confirmar que é você mesmo.</h1>
             <p>A gente te enviou um código no e-mail. Cuidado pra não errar.</p>
             <asp:Textbox id="txtCodigo" class="textbox textbox-eas" type="text"  placeholder="Digite seu código" spellcheck="false" runat="server"></asp:Textbox>
-            <asp:Button ID="btnSendCode" runat="server" Text="Enviar" class="blue dark blue-eas" OnClick="btnSendCode_Click"/>
+            <asp:Button ID="btnSendCode" runat="server" Text="Enviar" class="button dark button-eas" OnClick="btnSendCode_Click" OnClientClick="loader();"/>
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
             <asp:Label runat="server" Text="" id="lblErro2"></asp:Label>
          </div>
         <div class="modal-body modal-body-step3" id="step3" runat="server">
@@ -58,12 +61,13 @@
             <p>Esperamos que você consiga lembrar dessa.</p>
             <asp:Textbox id="txtSenha" class="textbox" type="text"  placeholder="Nova Senha" spellcheck="false" runat="server"></asp:Textbox>
             <asp:Textbox id="txtCSenha" class="textbox" type="text"  placeholder="Confirmar Nova Senha" spellcheck="false" runat="server"></asp:Textbox>
-            <asp:Button ID="btnTrocaSenha" runat="server" Text="Enviar" class="blue dark blue-eas-final" OnClick="btnTrocaSenha_Click"/>
+            <asp:Button ID="btnTrocaSenha" runat="server" Text="Enviar" class="button dark button-eas-final" OnClick="btnTrocaSenha_Click"/>
             <asp:Label runat="server" Text="" id="lblErro3"></asp:Label>
          </div>
+        </div>
         </ContentTemplate>
          </asp:UpdatePanel>
-        
+      
         <div class="modal-background fadeIn"></div>
 
      </div>
@@ -97,7 +101,7 @@
                        <a id="abre-senha" class="link">Por acaso você esqueceu a senha?</a>
                     </div>
                     <div class="centralizabotao" style="width: 100%;">
-					   <asp:Button ID="btnEntra" class="blue dark" type="button" Text="Entrando!" runat="server" OnClick="btnEntra_Click" />  
+					   <asp:Button ID="btnEntra" class="button-hover button dark" type="button" Text="Entrando!" runat="server" OnClick="btnEntra_Click" />  
                     </div>
                     <p id="cadastre-se">Ainda não tem conta? <a href="cadastro.aspx" class="link">Crie uma!</a></p>
                     </ContentTemplate>
@@ -142,7 +146,7 @@
             <h2 data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="title-subsection dark tamanhos">Tamanhos para todos</h2>
             <br />
             <p data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="desc desc-tamanhos">Aqui você escolhe o tamanho de teclado que mais combina com você e que melhor cabe em sua mesa.</p>
-            <asp:Button data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" ID="btnComeceJa" class="blue btn-comece-ja" runat="server" Text="Começe já" />
+            <asp:Button data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" ID="btnComeceJa" class="button-hover button dark btn-comece-ja" runat="server" Text="Começe já" />
         </div>
     </section>
     <section class="same-height" id="escolha-cor">

@@ -2,7 +2,7 @@
 @import '../var-import/cor';
 
 /* Buttons */
-    .blue, .cadastro {
+    .button {
         font-family: 'open';
         font-size: 15px;
         text-align: center;
@@ -17,10 +17,32 @@
         padding-bottom: 15px;
         transition: background-color 300ms ease;
         background-color: transparent;
+        cursor:pointer;
 
-        &:hover {
+        &.dark {
+            border: 2px solid $cor-primaria;
             color: $texto;
             background-color: $cor-primaria;
+        }
+        
+    }
+
+.button-hover {
+    &:hover {
+        color: $texto;
+        background-color: $cor-primaria;
+        transform: translateY(0px);
+        cursor: pointer;
+
+        h3 {
+            color: $texto;
+        }
+    }
+
+    &.dark {
+        &:hover {
+            color: $cor-primaria;
+            background-color: transparent;
             transform: translateY(0px);
             cursor: pointer;
 
@@ -28,25 +50,9 @@
                 color: $texto;
             }
         }
-
-        &.dark {
-            border: 2px solid $cor-primaria;
-            color: $texto;
-            background-color: $cor-primaria;
-
-            &:hover {
-                color: $cor-primaria;
-                background-color: transparent;
-                transform: translateY(0px);
-                cursor: pointer;
-
-                h3 {
-                    color: $texto;
-                }
-            }
-        }
-        
     }
+}
+
 
 /* Loader */
 

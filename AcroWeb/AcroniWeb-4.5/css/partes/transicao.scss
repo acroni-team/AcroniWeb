@@ -5,7 +5,7 @@
 
 // Configuração da animação da troca de páginas
 
-.m-div {
+/*.m-div {
     .troca {
         position: absolute;
         @include wh(100vh);
@@ -57,8 +57,17 @@
         animation-direction: alternate-reverse;
         }
     }
-}
+}*/
 
+.modal-wrap {
+
+    .saindo-da-pagina {
+        .step1 {
+            -webkit-animation-direction: alternate-reverse;
+            animation-direction: alternate-reverse;
+        }
+    }
+}
 
 /*
 .m-div .light--delayed {

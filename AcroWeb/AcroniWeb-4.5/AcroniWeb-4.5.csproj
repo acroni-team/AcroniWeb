@@ -105,7 +105,6 @@
     <None Include="css\partes\preload.scss" />
     <None Include="css\base.scss" />
     <Content Include="css\area-restrita.css" />
-    <Content Include="default-old.aspx" />
     <Content Include="default.aspx" />
     <Content Include="img\apple.jpg" />
     <Content Include="img\apple.png" />
@@ -160,13 +159,6 @@
     </Compile>
     <Compile Include="construct.aspx.designer.cs">
       <DependentUpon>construct.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="default-old.aspx.cs">
-      <DependentUpon>default-old.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="default-old.aspx.designer.cs">
-      <DependentUpon>default-old.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>

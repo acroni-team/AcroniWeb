@@ -93,6 +93,7 @@ namespace AcroniWeb
 
         protected void btnSendEmail_Click(object sender, EventArgs e)
         {
+            step1.Attributes["class"] = "modal-body modal-body-step1 is-showing";
             bool existe = true;
 
             if (conexao_SQL.State == ConnectionState.Closed)
@@ -118,7 +119,7 @@ namespace AcroniWeb
                 lblErro1.ForeColor = System.Drawing.Color.Green;
 
                 modal.Attributes["class"] = "modal-wrap  is-showing";
-                step1.Attributes["class"] = "modal-body modal-body-step1 animate-out";
+                step1.Attributes["class"] = "modal-body modal-body-step1 is-showing animate-out";
                 step2.Attributes["class"] = "modal-body modal-body-step2 is-showing animate-in";
 
                 envia_email();
@@ -140,11 +141,12 @@ namespace AcroniWeb
         }
 
         protected void btnSendCode_Click(object sender, EventArgs e) {
+            step2.Attributes["class"] = "modal-body modal-body-step2 is-showing";
             if (txtCodigo.Text.Equals(Session["codigo"]))
             {
                 //ELE VAI MANDAR PRA OUTRA PAGE SE O CODIGO CORRESPONDER COM O MANDADO NO IMAI PADRAO
                 modal.Attributes["class"] = "modal-wrap  is-showing";
-                step2.Attributes["class"] = "modal-body modal-body-step2 animate-out";
+                step2.Attributes["class"] = "modal-body modal-body-step2 is-showing animate-out";
                 step3.Attributes["class"] = "modal-body modal-body-step3 is-showing animate-in";
             }
             else
@@ -160,6 +162,7 @@ namespace AcroniWeb
 
         protected void btnTrocaSenha_Click(object sender, EventArgs e)
         {
+            step3.Attributes["class"] = "modal-body modal-body-step3 is-showing";
             //AQUI É A MERDA, VAI TER QUE DAR UNS UPDATE* :D boa 06
             //ai é gg, fax
             if (txtSenha.Text.Equals(txtCSenha.Text))
