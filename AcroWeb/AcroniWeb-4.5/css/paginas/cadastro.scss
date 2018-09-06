@@ -99,11 +99,15 @@ button:hover{
 }
 
 .identifica.aparece, .caixa.aparece {
-    animation: fadeInTop 200ms ease-in alternate-reverse ;
     opacity: 1;
     pointer-events: all;
 
 }
+
+.caixa.animate-in {
+    animation: fadeInTop 200ms ease-in alternate-reverse;
+}
+
 
 .identifica.some, .caixa.some{
     animation: fadeOutBottom 200ms ease-in forwards;
@@ -112,8 +116,8 @@ button:hover{
 
 }
 
-.identifica.aparece{
-    animation-duration: 400ms;
+.identifica.animate-in {
+    animation: fadeInTop 400ms ease-in alternate-reverse;
 }
 
 /*#senha-p, #senha-input {
@@ -126,5 +130,5 @@ button:hover{
     align-self: center;
     text-align: center;
     margin-top: 200px;
-    color:$texto;
+    color:red;
 }

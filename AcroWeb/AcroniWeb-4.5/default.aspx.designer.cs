@@ -40,6 +40,24 @@ namespace AcroniWeb {
         protected global::System.Web.UI.UpdatePanel SCPanel2;
         
         /// <summary>
+        /// overflow control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl overflow;
+        
+        /// <summary>
+        /// SendEmailPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel SendEmailPanel;
+        
+        /// <summary>
         /// step1 control.
         /// </summary>
         /// <remarks>
@@ -76,6 +94,15 @@ namespace AcroniWeb {
         protected global::System.Web.UI.WebControls.Label lblErro1;
         
         /// <summary>
+        /// SendCodePanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel SendCodePanel;
+        
+        /// <summary>
         /// step2 control.
         /// </summary>
         /// <remarks>
@@ -110,6 +137,15 @@ namespace AcroniWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblErro2;
+        
+        /// <summary>
+        /// TrocaSenhaPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel TrocaSenhaPanel;
         
         /// <summary>
         /// step3 control.

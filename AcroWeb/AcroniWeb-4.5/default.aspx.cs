@@ -115,13 +115,11 @@ namespace AcroniWeb
             {
                 //ISSO AQUI É SE TIVER CERTO
                 txtEmail.Attributes.Add("style", "border-color:#0093ff");
-                lblErro1.Text = "Boa! Agora da uma checadinha no seu email que enviamos um código";
-                lblErro1.ForeColor = System.Drawing.Color.Green;
+                lblErro1.Text = "";
 
-                modal.Attributes["class"] = "modal-wrap  is-showing";
+                modal.Attributes["class"] = "modal-wrap is-showing";
                 step1.Attributes["class"] = "modal-body modal-body-step1 is-showing animate-out";
                 step2.Attributes["class"] = "modal-body modal-body-step2 is-showing animate-in";
-
                 envia_email();
 
                 //ATÉ AQUI
@@ -129,7 +127,6 @@ namespace AcroniWeb
 
             else
             {
-                modal.Attributes["class"] = "modal-wrap  is-showing";
                 lblErro1.Text = "Acho que você tem que colocar o e-mail que registrou antes";
                 lblErro1.ForeColor = System.Drawing.Color.Red;
                 txtEmail.Attributes.Add("style", "border-color:red");
@@ -137,7 +134,7 @@ namespace AcroniWeb
             }
             conexao_SQL.Close();
             SCPanel2.Update();
-           
+
         }
 
         protected void btnSendCode_Click(object sender, EventArgs e) {
@@ -145,15 +142,22 @@ namespace AcroniWeb
             if (txtCodigo.Text.Equals(Session["codigo"]))
             {
                 //ELE VAI MANDAR PRA OUTRA PAGE SE O CODIGO CORRESPONDER COM O MANDADO NO IMAI PADRAO
-                modal.Attributes["class"] = "modal-wrap  is-showing";
+                txtCodigo.Attributes.Add("style", "border-color:#0093ff");
+                lblErro1.Text = "";
+
+                modal.Attributes["class"] = "modal-wrap is-showing";
                 step2.Attributes["class"] = "modal-body modal-body-step2 is-showing animate-out";
                 step3.Attributes["class"] = "modal-body modal-body-step3 is-showing animate-in";
+                overflow.Attributes.Add("style", "height: 350px");
+                btnSendCode.Attributes.Add("style", "display:none");
+                txtCodigo.Attributes.Add("style", "display:none");
             }
             else
             {
                 lblErro2.Text = "Eu tenho a impressão de que esse não é o código";
                 lblErro2.ForeColor = System.Drawing.Color.Red;
                 txtCodigo.Attributes.Add("style", "border-color:red");
+
             }
             SCPanel2.Update();
 
@@ -162,10 +166,18 @@ namespace AcroniWeb
 
         protected void btnTrocaSenha_Click(object sender, EventArgs e)
         {
+            step2.Attributes["class"] = "modal-body modal-body-step2";
             step3.Attributes["class"] = "modal-body modal-body-step3 is-showing";
             //AQUI É A MERDA, VAI TER QUE DAR UNS UPDATE* :D boa 06
             //ai é gg, fax
-            if (txtSenha.Text.Equals(txtCSenha.Text))
+            if (string.IsNullOrEmpty(txtSenha.Text) || string.IsNullOrWhiteSpace(txtSenha.Text))
+            {
+                lblErro3.Text = "Você tem que digitar uma senha";
+                lblErro3.ForeColor = System.Drawing.Color.Red;
+                txtSenha.Attributes.Add("style", "border-color:red");
+                txtCSenha.Attributes.Add("style", "border-color:red");
+            }
+            else if (txtSenha.Text.Equals(txtCSenha.Text))
             {
                 updateSenha();
                 Response.Redirect("default.aspx");

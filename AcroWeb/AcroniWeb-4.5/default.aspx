@@ -39,34 +39,40 @@
       
         <asp:UpdatePanel ID="SCPanel2" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="false">
         <ContentTemplate>
-        <div class="modal-overflow hidden">
-        <div class="modal-body modal-body-step1 is-showing animate-first-in" id="step1" runat="server">
-            <h1>Pode acontecer com qualquer um.</h1>
-            <p>Não esquenta,coloca seu email aqui em baixo que a gente resolve.</p>
-            <asp:Textbox id="txtEmail" class="textbox textbox-eas" type="text"  placeholder="nuncamaispercoasenha@example.com" spellcheck="false" runat="server"></asp:Textbox>
-            <asp:Button ID="btnSendEmail" runat="server" Text="Enviar" class="button dark button-eas" OnClick="btnSendEmail_Click" OnClientClick="loader();"/>
-            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-            <asp:Label runat="server" Text="" id="lblErro1"></asp:Label>
-         </div>
-        <div class="modal-body modal-body-step2" id="step2" runat="server">
-            <h1>Só precisamos confirmar que é você mesmo.</h1>
-            <p>A gente te enviou um código no e-mail. Cuidado pra não errar.</p>
-            <asp:Textbox id="txtCodigo" class="textbox textbox-eas" type="text"  placeholder="Digite seu código" spellcheck="false" runat="server"></asp:Textbox>
-            <asp:Button ID="btnSendCode" runat="server" Text="Enviar" class="button dark button-eas" OnClick="btnSendCode_Click" OnClientClick="loader();"/>
-            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
-            <asp:Label runat="server" Text="" id="lblErro2"></asp:Label>
-         </div>
-        <div class="modal-body modal-body-step3" id="step3" runat="server">
-            <h1>Ótimo! Agora é só mudar sua senha.</h1>
-            <p>Esperamos que você consiga lembrar dessa.</p>
-            <asp:Textbox id="txtSenha" class="textbox" type="text"  placeholder="Nova Senha" spellcheck="false" runat="server"></asp:Textbox>
-            <asp:Textbox id="txtCSenha" class="textbox" type="text"  placeholder="Confirmar Nova Senha" spellcheck="false" runat="server"></asp:Textbox>
-            <asp:Button ID="btnTrocaSenha" runat="server" Text="Enviar" class="button dark button-eas-final" OnClick="btnTrocaSenha_Click"/>
-            <asp:Label runat="server" Text="" id="lblErro3"></asp:Label>
-         </div>
-        </div>
+            <div class="modal-overflow hidden" id="overflow" runat="server">
+                <asp:Panel DefaultButton="btnSendEmail" runat="server" ID="SendEmailPanel">
+                <div class="modal-body modal-body-step1 is-showing animate-first-in" id="step1" runat="server">
+                    <h1>Pode acontecer com qualquer um.</h1>
+                    <p>Não esquenta,coloca seu email aqui em baixo que a gente resolve.</p>
+                    <asp:Textbox id="txtEmail" class="textbox textbox-eas" type="text" placeholder="nuncamaispercoasenha@example.com" autocomplete="off" spellcheck="false" runat="server"></asp:Textbox>
+                    <asp:Button ID="btnSendEmail" runat="server" Text="Enviar" class="button dark button-eas" OnClick="btnSendEmail_Click" OnClientClick="loader();"/>
+                    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                    <asp:Label runat="server" Text="" id="lblErro1"></asp:Label>
+                 </div> 
+                </asp:Panel>
+                <asp:Panel DefaultButton="btnSendCode" runat="server" ID="SendCodePanel">
+                <div class="modal-body modal-body-step2" id="step2" runat="server">
+                    <h1>Só precisamos confirmar que é você mesmo.</h1>
+                    <p>A gente te enviou um código no e-mail. Cuidado pra não errar.</p>
+                    <asp:Textbox id="txtCodigo" class="textbox textbox-eas" type="text"  placeholder="Digite seu código" autocomplete="off" spellcheck="false" runat="server"></asp:Textbox>
+                    <asp:Button ID="btnSendCode" runat="server" Text="Enviar" class="button dark button-eas" OnClick="btnSendCode_Click" OnClientClick="loader();"/>
+                    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                    <asp:Label runat="server" Text="" id="lblErro2"></asp:Label>
+                 </div>
+                </asp:Panel>
+                <asp:Panel DefaultButton="btnTrocaSenha" runat="server" ID="TrocaSenhaPanel">
+                <div class="modal-body modal-body-step3" id="step3" runat="server">
+                    <h1>Ótimo! Agora é só mudar sua senha.</h1>
+                    <p>Esperamos que você consiga lembrar dessa.</p>
+                    <asp:Textbox id="txtSenha" class="textbox" type="text"  placeholder="Nova Senha" spellcheck="false" autocomplete="off" runat="server"></asp:Textbox>
+                    <asp:Textbox id="txtCSenha" class="textbox" type="text"  placeholder="Confirmar Nova Senha" spellcheck="false" runat="server"></asp:Textbox>
+                    <asp:Button ID="btnTrocaSenha" runat="server" Text="Enviar" class="button dark button-eas-final" OnClick="btnTrocaSenha_Click"/>
+                    <asp:Label runat="server" Text="" id="lblErro3"></asp:Label>
+                 </div>
+                 </asp:Panel>
+            </div>
         </ContentTemplate>
-         </asp:UpdatePanel>
+        </asp:UpdatePanel>
       
         <div class="modal-background fadeIn"></div>
 
@@ -86,7 +92,7 @@
         </div>
 
         <div id="login">
-            <form  method="post">               
+            <form id="loginform" method="post">               
 				<div class="centraliza" data-aos="fade-up" data-aos-delay="300">
                     
                     <asp:UpdatePanel ID="SCPanel" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="false">

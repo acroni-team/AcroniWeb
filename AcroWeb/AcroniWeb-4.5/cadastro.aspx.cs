@@ -45,7 +45,7 @@ namespace AcroniWeb_4._5
                 case 0:
                     if (string.IsNullOrEmpty(txtNome.Text) || string.IsNullOrWhiteSpace(txtNome.Text))
                     {
-                        IsNotValid(txtNome, "Nome completo inválido", 0, txtNome);
+                        IsNotValid(txtNome, lblNome, "Nome completo inválido", 0, txtNome, lblNome);
                         break;
                     }
 
@@ -53,7 +53,7 @@ namespace AcroniWeb_4._5
 
                     if (!v.ValidaNome(nome) || !nome.Contains(" "))
                     {
-                        IsNotValid(txtNome, "Nome completo inválido", 0, txtNome);
+                        IsNotValid(txtNome, lblNome, "Nome completo inválido", 0, txtNome, lblNome);
                         break;
                     }
                     else
@@ -63,6 +63,14 @@ namespace AcroniWeb_4._5
                     }
                     
                 case 1:
+                    
+
+                    if (string.IsNullOrEmpty(txtUsu.Text) || string.IsNullOrWhiteSpace(txtUsu.Text))
+                    {
+                        IsNotValid(txtNome, lblNome, "Usuário deve ser preenchido.", 1, txtUsu, lblUsu);
+                        break;
+                    }
+
                     string usuario = retirarEspacos(txtUsu.Text);
 
                     if (conexao_SQL.State == ConnectionState.Closed)
@@ -74,14 +82,14 @@ namespace AcroniWeb_4._5
                     resposta.Read();
                     if (!v.ValidaUsu(usuario))
                     {
-                        IsNotValid(txtNome, "O nome de usuário deve ter no mínimo 4 letras <br /> Caracteres especiais, exceto _ e - não são permitidos", 1, txtUsu);
+                        IsNotValid(txtNome, lblNome, "O nome de usuário deve ter no mínimo 4 letras <br /> Caracteres especiais, exceto _ e - não são permitidos", 1, txtUsu, lblUsu);
                         conexao_SQL.Close();
                         break;
                        
                     }
                     else if (resposta.HasRows)
                     {
-                        IsNotValid(txtNome, "Usuário já em uso", 1, txtUsu);
+                        IsNotValid(txtNome, lblNome, "Usuário já em uso", 1, txtUsu, lblUsu);
                         resposta.Close();
                         conexao_SQL.Close();
                         break;
@@ -89,7 +97,7 @@ namespace AcroniWeb_4._5
                     }
                     else if (usuario.Contains(" "))
                     {
-                        IsNotValid(txtNome, "O usuário não pode conter espaços", 1, txtUsu);
+                        IsNotValid(txtNome, lblNome, "O usuário não pode conter espaços", 1, txtUsu, lblUsu);
                         conexao_SQL.Close();
                         break;
                     }
@@ -103,7 +111,7 @@ namespace AcroniWeb_4._5
                 case 2:
                     if (string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrWhiteSpace(txtEmail.Text))
                     {
-                        IsNotValid(txtUsu, "Email inválido.", 2, txtEmail);
+                        IsNotValid(txtUsu, lblUsu, "Email inválido.", 2, txtEmail, lblEmail);
                         break;
                     }
 
@@ -118,14 +126,14 @@ namespace AcroniWeb_4._5
 
                     if (!validacao_email.IsMatch(email))
                     {
-                        IsNotValid(txtUsu, "Email inválido.", 2, txtEmail);
+                        IsNotValid(txtUsu, lblUsu, "Email inválido.", 2, txtEmail, lblEmail);
                         select = "";
                         conexao_SQL.Close();
                         break;
                     }
                     else if (resposta.HasRows)
                     {
-                        IsNotValid(txtUsu, "Email já em uso.", 2, txtEmail);
+                        IsNotValid(txtUsu, lblUsu, "Email já em uso.", 2, txtEmail, lblEmail);
                         select = "";
                         resposta.Close();
                         conexao_SQL.Close();
@@ -143,7 +151,7 @@ namespace AcroniWeb_4._5
                 case 3:
                     if (!v.validarCPF(txtCpf.Text))
                     {
-                        IsNotValid(txtEmail, "CPF inválido", 3, txtCpf);
+                        IsNotValid(txtEmail, lblEmail, "CPF inválido", 3, txtCpf, lblCpf);
                         break;
                     }
                     else
@@ -156,7 +164,7 @@ namespace AcroniWeb_4._5
                 case 4:
                     if (txtSenha.Text == "" || string.IsNullOrWhiteSpace(txtSenha.Text))
                     {
-                        IsNotValid(txtEmail, "Campo de senha vazio :/", 4, txtSenha);
+                        IsNotValid(txtEmail, lblEmail, "Campo de senha vazio :/", 4, txtSenha, lblSenha);
                         break;
                     }
                     else
@@ -168,7 +176,7 @@ namespace AcroniWeb_4._5
                 case 5:
                     if (txtCSenha.Text != ViewState["senha"].ToString())
                     {
-                        IsNotValid(txtCSenha, "As senhas não coincidem", 5, txtCSenha);
+                        IsNotValid(txtCSenha, lblCSenha, "As senhas não coincidem", 5, txtCSenha, lblCSenha);
                         break;
                     }
                     else
@@ -192,8 +200,8 @@ namespace AcroniWeb_4._5
             lblErro.Text = "";
             lblCampoCadastrado.Attributes["class"] = "identifica some";
             txtCampoCadastrado.Attributes["class"] = "caixa some";
-            lblProxCampo.Attributes["class"] = "identifica aparece";
-            txtProxCampo.Attributes["class"] = "caixa aparece";
+            lblProxCampo.Attributes["class"] = "identifica aparece animate-in";
+            txtProxCampo.Attributes["class"] = "caixa aparece animate-in";
             ViewState["aux"] = aux;
         }
 
@@ -205,14 +213,19 @@ namespace AcroniWeb_4._5
             lblErro.Text = "";
             lblCampoCadastrado.Attributes["class"] = "identifica some";
             txtCampoCadastrado.Attributes["class"] = "caixa some";
-            lblProxCampo.Attributes["class"] = "identifica aparece";
-            txtProxCampo.Attributes["class"] = "caixa aparece";
+            lblProxCampo.Attributes["class"] = "identifica aparece animate-in";
+            txtProxCampo.Attributes["class"] = "caixa aparece animate-in";
             ViewState["aux"] = aux;
         }
 
-        public void IsNotValid (TextBox txtCampoAnterior, string erro, int aux, TextBox txtCampoErrado)
+        public void IsNotValid (TextBox txtCampoAnterior, Label lblCampoAnterior, string erro, int aux, TextBox txtCampoErrado, Label lblCampoErrado)
         {
+            txtCampoAnterior.Attributes["class"] = "caixa";
+            lblCampoAnterior.Attributes["class"] = "identifica";
+            txtCampoErrado.Attributes["class"] = "caixa aparece";
+            lblCampoErrado.Attributes["class"] = "identifica aparece";
             txtCampoErrado.Text = "";
+            
             if (aux == 0)
             {
                 lblErro.Text = erro;
