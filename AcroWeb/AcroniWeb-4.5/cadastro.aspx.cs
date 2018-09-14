@@ -12,13 +12,8 @@ namespace AcroniWeb_4._5
 {
     public partial class cadastro : System.Web.UI.Page
     {
-        
-        Regex validacao_email = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
         Valida v = new Valida();
-        SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao);
-        SqlCommand comando_SQL;
-        SqlDataReader resposta;
-        String select;
+        Utilitarios ut = new Utilitarios();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -32,12 +27,14 @@ namespace AcroniWeb_4._5
                 ViewState["senha"] = "";
                 ViewState["csenha"] = "";
                 ViewState["aux"] = 0;
+                ViewState["codigo"] = "";
             }
             lblErro.Text = "{{mensagem}}";
         }
                
         protected void btnValida_Click(object sender, EventArgs e)
         {
+            bool existe = true;
             //Switch case para cada caso do AUX
             //Se a validacão der erro, o AUX será o mesmo e assim caindo no mesmo caso até o usuário acertar
             switch (ViewState["aux"])
@@ -49,9 +46,9 @@ namespace AcroniWeb_4._5
                         break;
                     }
 
-                    string nome = retirarEspacos(txtNome.Text);
+                    string nome = ut.retirarEspacos(txtNome.Text);
 
-                    if (!v.ValidaNome(nome) || !nome.Contains(" "))
+                    if (!v.validarNome(nome) || !nome.Contains(" "))
                     {
                         IsNotValid(txtNome, lblNome, "Nome completo inválido", 0, txtNome, lblNome);
                         break;
@@ -63,7 +60,7 @@ namespace AcroniWeb_4._5
                     }
                     
                 case 1:
-                    
+
 
                     if (string.IsNullOrEmpty(txtUsu.Text) || string.IsNullOrWhiteSpace(txtUsu.Text))
                     {
@@ -71,40 +68,27 @@ namespace AcroniWeb_4._5
                         break;
                     }
 
-                    string usuario = retirarEspacos(txtUsu.Text);
-
-                    if (conexao_SQL.State == ConnectionState.Closed)
-                        conexao_SQL.Open();
-
-                    select = "SELECT * FROM tblCliente WHERE usuario = '" + usuario + "'";
-                    comando_SQL = new SqlCommand(select, conexao_SQL);
-                    resposta = comando_SQL.ExecuteReader();
-                    resposta.Read();
-                    if (!v.ValidaUsu(usuario))
+                    string usuario = ut.retirarEspacos(txtUsu.Text);
+                    existe = ut.verificarCampoExistenteBanco("usuario", usuario);
+                    
+                    if (!v.validarUsu(usuario))
                     {
                         IsNotValid(txtNome, lblNome, "O nome de usuário deve ter no mínimo 4 letras <br /> Caracteres especiais, exceto _ e - não são permitidos", 1, txtUsu, lblUsu);
-                        conexao_SQL.Close();
                         break;
-                       
                     }
-                    else if (resposta.HasRows)
+                    else if (existe)
                     {
                         IsNotValid(txtNome, lblNome, "Usuário já em uso", 1, txtUsu, lblUsu);
-                        resposta.Close();
-                        conexao_SQL.Close();
                         break;
-                        
                     }
                     else if (usuario.Contains(" "))
                     {
                         IsNotValid(txtNome, lblNome, "O usuário não pode conter espaços", 1, txtUsu, lblUsu);
-                        conexao_SQL.Close();
                         break;
                     }
                     else
                     {
                         IsValid("usu", txtUsu, lblUsu, txtEmail, lblEmail, 2, usuario);
-                        conexao_SQL.Close();
                         break;
                     }
                     
@@ -115,68 +99,75 @@ namespace AcroniWeb_4._5
                         break;
                     }
 
-                    string email = retirarEspacos(txtEmail.Text);
-                    if (conexao_SQL.State == ConnectionState.Closed)
-                        conexao_SQL.Open();
+                    string email = ut.retirarEspacos(txtEmail.Text);
+                    existe = ut.verificarCampoExistenteBanco("email", email);
 
-                    select = "SELECT * FROM tblCliente WHERE email = '" + email + "'";
-                    comando_SQL = new SqlCommand(select, conexao_SQL);
-                    resposta = comando_SQL.ExecuteReader();
-                    resposta.Read();
-
-                    if (!validacao_email.IsMatch(email))
+                    if (!v.validarEmail(email))
                     {
                         IsNotValid(txtUsu, lblUsu, "Email inválido.", 2, txtEmail, lblEmail);
-                        select = "";
-                        conexao_SQL.Close();
                         break;
                     }
-                    else if (resposta.HasRows)
+                    else if (existe)
                     {
                         IsNotValid(txtUsu, lblUsu, "Email já em uso.", 2, txtEmail, lblEmail);
-                        select = "";
-                        resposta.Close();
-                        conexao_SQL.Close();
                         break;
                     }
                     else
                     {
-                        IsValid("email", txtEmail, lblEmail, txtCpf, lblCpf, 3, email);
-                        select = "";
-                        conexao_SQL.Close();
+                        IsValid("email", txtEmail, lblEmail, txtCodigo, lblCodigo, 3, email);
                         ViewState["email"] = email;
+                        ViewState["codigo"] = ut.gerarStringConfirmacao();
+                        ut.enviarEmailConfirmacao(ViewState["codigo"].ToString(), ViewState["email"].ToString());
                         break;
                     }
 
                 case 3:
-                    if (!v.validarCPF(txtCpf.Text))
+                    
+                    if (!txtCodigo.Text.Equals(ViewState["codigo"]))
                     {
-                        IsNotValid(txtEmail, lblEmail, "CPF inválido", 3, txtCpf, lblCpf);
+                        IsNotValid(txtEmail, lblEmail, "Os códigos não coincidem", 3, txtCodigo, lblCodigo);
                         break;
                     }
                     else
                     {
-                        IsValid("cpf", txtCpf, lblCpf, txtSenha, lblSenha, 4);
-                        lblDica.Text = "Dica: use uma senha que contenha mais de 8 dígitos, letras maiúsculas e minúsculas, números e símbolos.";
+                        IsValid("codigo", txtCodigo, lblCodigo, txtCpf, lblCpf, 4);
                         break;
                     }
 
                 case 4:
-                    if (txtSenha.Text == "" || string.IsNullOrWhiteSpace(txtSenha.Text))
+                    if (!v.validarCPF(txtCpf.Text))
                     {
-                        IsNotValid(txtEmail, lblEmail, "Campo de senha vazio :/", 4, txtSenha, lblSenha);
+                        IsNotValid(txtEmail, lblEmail, "CPF inválido", 4, txtCpf, lblCpf);
+                        break;
+                    }
+                    else if (ut.verificarCampoExistenteBanco("cpf", txtCpf.Text))
+                    {
+                        IsNotValid(txtEmail, lblEmail, "CPF já cadastrado", 4, txtCpf, lblCpf);
                         break;
                     }
                     else
                     {
-                        IsValid("senha", txtSenha, lblSenha, txtCSenha, lblCSenha, 5);
+                        IsValid("cpf", txtCpf, lblCpf, txtSenha, lblSenha, 5);
+                        lblDica.Text = "Dica: use uma senha que contenha mais de 8 dígitos, letras maiúsculas e minúsculas, números e símbolos.";
                         break;
                     }
 
                 case 5:
+                    if (txtSenha.Text == "" || string.IsNullOrWhiteSpace(txtSenha.Text))
+                    {
+                        IsNotValid(txtEmail, lblEmail, "Campo de senha vazio :/", 5, txtSenha, lblSenha);
+                        break;
+                    }
+                    else
+                    {
+                        IsValid("senha", txtSenha, lblSenha, txtCSenha, lblCSenha, 6);
+                        break;
+                    }
+
+                case 6:
                     if (txtCSenha.Text != ViewState["senha"].ToString())
                     {
-                        IsNotValid(txtCSenha, lblCSenha, "As senhas não coincidem", 5, txtCSenha, lblCSenha);
+                        IsNotValid(txtCSenha, lblCSenha, "As senhas não coincidem", 6, txtCSenha, lblCSenha);
                         break;
                     }
                     else
@@ -195,7 +186,9 @@ namespace AcroniWeb_4._5
         //Métodos para evitar a repeticão e enxutar o côdigo
         public void IsValid (string campoCadastrado, TextBox txtCampoCadastrado, Label lblCampoCadastrado, TextBox txtProxCampo, Label lblProxCampo, int aux)
         {
-            ViewState[campoCadastrado] = txtCampoCadastrado.Text;
+            if (!campoCadastrado.Equals("codigo")) 
+                ViewState[campoCadastrado] = txtCampoCadastrado.Text;
+
             txtCampoCadastrado.Text = "";
             lblErro.Text = "";
             lblCampoCadastrado.Attributes["class"] = "identifica some";
@@ -205,7 +198,7 @@ namespace AcroniWeb_4._5
             ViewState["aux"] = aux;
         }
 
-        //Overload para os campos que tem os espacos retirados
+        //Overload para os campos que tem os espacos retirados (sistema retira espacos desnecessários)
         public void IsValid(string campoCadastrado, TextBox txtCampoCadastrado, Label lblCampoCadastrado, TextBox txtProxCampo, Label lblProxCampo, int aux, string valCampoCadastrado)
         {
             ViewState[campoCadastrado] = valCampoCadastrado;
@@ -239,16 +232,7 @@ namespace AcroniWeb_4._5
             }
         }
 
-        public string retirarEspacos (string campo)
-        {
-            while(campo[0].Equals(' '))
-                campo = campo.Remove(0, 1);
-            
-            while(campo[campo.Length - 1].Equals(' '))
-                campo = campo.Remove(campo.Length - 1, 1);
-           
-            return campo;
-        }
+        
 
     }
 }

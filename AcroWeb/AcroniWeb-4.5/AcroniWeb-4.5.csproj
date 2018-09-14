@@ -152,6 +152,7 @@
       <DependentUpon>cadastro.aspx</DependentUpon>
     </Compile>
     <Compile Include="classes\Conexao.cs" />
+    <Compile Include="classes\Utilitarios.cs" />
     <Compile Include="classes\Valida.cs" />
     <Compile Include="construct.aspx.cs">
       <DependentUpon>construct.aspx</DependentUpon>

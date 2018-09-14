@@ -38,6 +38,14 @@
         <div class="alinha">
             <div class="alinhado">
                 <div class="alo">
+                    <asp:Label ID="lblCodigo" runat="server" Text="Entre com seu CPF" class="identifica"></asp:Label>
+                    <asp:TextBox  ID="txtCodigo" runat="server" type="text" class="caixa" placeholder="Enviamos um código no seu email" autocomplete="off" autofocus></asp:TextBox>
+                </div>
+            </div>
+        </div>
+        <div class="alinha">
+            <div class="alinhado">
+                <div class="alo">
                     <asp:Label ID="lblCpf" runat="server" Text="Entre com seu CPF" class="identifica"></asp:Label>
                     <asp:TextBox  ID="txtCpf" runat="server" type="text" class="caixa" placeholder="CPF" autocomplete="off" autofocus></asp:TextBox>
                 </div>

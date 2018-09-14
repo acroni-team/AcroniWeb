@@ -86,7 +86,7 @@ public class Valida
 
 
     //Validacões utilizando regex
-    public bool ValidaCep(string cep)
+    public bool validarCep(string cep)
     {
         bool retorno = false;
         Regex rgx = new Regex("[0-9]{5}-[0-9]{3}");
@@ -105,7 +105,7 @@ public class Valida
         }
     }
         
-    public bool ValidaNome(string nome)
+    public bool validarNome(string nome)
     {
         Regex rg = new Regex(@"^[a-zA-Z áàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÒÖÚÇÑ]{4,}$");
         bool retorno = false;
@@ -118,7 +118,7 @@ public class Valida
         return retorno;
     }
 
-    public bool ValidaUsu(string usu)
+    public bool validarUsu(string usu)
     {
         Regex rg = new Regex(@"[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÒÖÚÇÑ]{4,}[0-9_\-]{0,}");
         bool retorno = false;
@@ -131,6 +131,18 @@ public class Valida
         return retorno;
     }
     
+    public bool validarEmail(string email)
+    {
+        bool retorno = false;
+        Regex validacao_email = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+
+        if (validacao_email.IsMatch(email))
+            retorno = true;
+        else
+            retorno = false;
+
+        return retorno;
+    }
 
 
 }
