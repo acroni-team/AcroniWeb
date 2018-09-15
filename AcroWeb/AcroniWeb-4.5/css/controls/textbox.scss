@@ -1,5 +1,7 @@
 // SCSS
-@import '../var-import/cor';
+@import '../imports/cor';
+@import '../imports/fontes';
+
 
 //TEXTBOX
 
@@ -16,10 +18,12 @@
     transition: 0.3s ease-in;
     margin-top: 15px;
     background-color: #dfdfdf;
-	box-sizing:border-box;
+    box-sizing: border-box;
 
-    &.foco {
-        border: 1.5px solid $cor-primaria;
+    &.focus {
+        &:focus {
+            border: 1.5px solid $cor-primaria;
+        }
     }
 }
 
@@ -38,4 +42,32 @@
 
 .textbox:focus::-webkit-input-placeholder{
     color: transparent;
+}
+
+
+.textbox-type2-overflow {
+    overflow: hidden;
+}
+
+/*inputs e botao */
+
+.textbox-type2 {
+    border-radius: 0;
+    margin: 0;
+    color: $cinza;
+    background-color: $texto;
+    height: 100%;
+    border: none;
+    caret-color: $cor-primaria;
+
+    &.focus {
+        
+    }
+}
+
+
+
+.textbox-type2::-webkit-input-placeholder, .textbox-type2:-ms-input-placeholder, .textbox-type2::-moz-input-placeholder {
+    color: $cinza-claro;
+    font-weight: $semi-bold;
 }

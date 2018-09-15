@@ -1,5 +1,6 @@
 
-@import '../var-import/cor';
+@import '../imports/cor';
+@import '../imports/fontes';
 
 /* Buttons */
     .button {
@@ -54,15 +55,33 @@
 }
 
 
+.button-type2 {
+    border: none;
+    float: left;
+    align-self: center;
+    margin-left: 10px;
+    height: 100%;
+    padding-left: 22px;
+    padding-right: 22px;
+    pointer-events: all;
+    right: 0;
+    margin: 0;
+    border-radius: 0;
+    font-weight: $semi-bold;
+
+}
+
+
+
 /* Loader */
 
 .lds-ellipsis {
     display: inline-block;
     position: absolute;
+    top: 116px;
+    left: 535px;
     width: 64px;
     height: 64px;
-    top: 125px;
-    left: 520px;
     pointer-events: none;
     opacity: 0;
 }

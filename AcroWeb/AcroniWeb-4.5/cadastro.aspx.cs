@@ -42,7 +42,7 @@ namespace AcroniWeb_4._5
                 case 0:
                     if (string.IsNullOrEmpty(txtNome.Text) || string.IsNullOrWhiteSpace(txtNome.Text))
                     {
-                        IsNotValid(txtNome, lblNome, "Nome completo inválido", 0, txtNome, lblNome);
+                        IsNotValid(txtNome, "Nome completo inválido", 0, txtNome);
                         break;
                     }
 
@@ -50,12 +50,12 @@ namespace AcroniWeb_4._5
 
                     if (!v.validarNome(nome) || !nome.Contains(" "))
                     {
-                        IsNotValid(txtNome, lblNome, "Nome completo inválido", 0, txtNome, lblNome);
+                        IsNotValid(txtNome, "Nome completo inválido", 0, txtNome);
                         break;
                     }
                     else
                     {
-                        IsValid("nome", txtNome, lblNome, txtUsu, lblUsu, 1, nome);
+                        IsValid("nome", txtNome, txtUsu, 1, nome);
                         break;
                     }
                     
@@ -64,7 +64,7 @@ namespace AcroniWeb_4._5
 
                     if (string.IsNullOrEmpty(txtUsu.Text) || string.IsNullOrWhiteSpace(txtUsu.Text))
                     {
-                        IsNotValid(txtNome, lblNome, "Usuário deve ser preenchido.", 1, txtUsu, lblUsu);
+                        IsNotValid(txtNome, "Usuário deve ser preenchido.", 1, txtUsu);
                         break;
                     }
 
@@ -73,29 +73,30 @@ namespace AcroniWeb_4._5
                     
                     if (!v.validarUsu(usuario))
                     {
-                        IsNotValid(txtNome, lblNome, "O nome de usuário deve ter no mínimo 4 letras <br /> Caracteres especiais, exceto _ e - não são permitidos", 1, txtUsu, lblUsu);
+                        IsNotValid(txtNome, "O nome de usuário deve ter no mínimo 4 letras <br /> Caracteres especiais, exceto _ e - não são permitidos", 1, txtUsu);
                         break;
                     }
                     else if (existe)
                     {
-                        IsNotValid(txtNome, lblNome, "Usuário já em uso", 1, txtUsu, lblUsu);
+                        IsNotValid(txtNome, "Usuário já em uso", 1, txtUsu);
                         break;
                     }
                     else if (usuario.Contains(" "))
                     {
-                        IsNotValid(txtNome, lblNome, "O usuário não pode conter espaços", 1, txtUsu, lblUsu);
+                        IsNotValid(txtNome, "O usuário não pode conter espaços", 1, txtUsu);
                         break;
                     }
                     else
                     {
-                        IsValid("usu", txtUsu, lblUsu, txtEmail, lblEmail, 2, usuario);
+                        IsValid("usu", txtUsu, txtEmail, 2, usuario);
+                        //btnValida.Attributes["class"] = "buttonv2 extended";
                         break;
                     }
                     
                 case 2:
                     if (string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrWhiteSpace(txtEmail.Text))
                     {
-                        IsNotValid(txtUsu, lblUsu, "Email inválido.", 2, txtEmail, lblEmail);
+                        IsNotValid(txtUsu, "Email inválido.", 2, txtEmail);
                         break;
                     }
 
@@ -104,17 +105,17 @@ namespace AcroniWeb_4._5
 
                     if (!v.validarEmail(email))
                     {
-                        IsNotValid(txtUsu, lblUsu, "Email inválido.", 2, txtEmail, lblEmail);
+                        IsNotValid(txtUsu, "Email inválido.", 2, txtEmail);
                         break;
                     }
                     else if (existe)
                     {
-                        IsNotValid(txtUsu, lblUsu, "Email já em uso.", 2, txtEmail, lblEmail);
+                        IsNotValid(txtUsu, "Email já em uso.", 2, txtEmail);
                         break;
                     }
                     else
                     {
-                        IsValid("email", txtEmail, lblEmail, txtCodigo, lblCodigo, 3, email);
+                        IsValid("email", txtEmail, txtCodigo, 3, email);
                         ViewState["email"] = email;
                         ViewState["codigo"] = ut.gerarStringConfirmacao();
                         ut.enviarEmailConfirmacao(ViewState["codigo"].ToString(), ViewState["email"].ToString());
@@ -125,29 +126,29 @@ namespace AcroniWeb_4._5
                     
                     if (!txtCodigo.Text.Equals(ViewState["codigo"]))
                     {
-                        IsNotValid(txtEmail, lblEmail, "Os códigos não coincidem", 3, txtCodigo, lblCodigo);
+                        IsNotValid(txtEmail, "Os códigos não coincidem", 3, txtCodigo);
                         break;
                     }
                     else
                     {
-                        IsValid("codigo", txtCodigo, lblCodigo, txtCpf, lblCpf, 4);
+                        IsValid("codigo", txtCodigo, txtCpf, 4);
                         break;
                     }
 
                 case 4:
                     if (!v.validarCPF(txtCpf.Text))
                     {
-                        IsNotValid(txtEmail, lblEmail, "CPF inválido", 4, txtCpf, lblCpf);
+                        IsNotValid(txtEmail, "CPF inválido", 4, txtCpf);
                         break;
                     }
                     else if (ut.verificarCampoExistenteBanco("cpf", txtCpf.Text))
                     {
-                        IsNotValid(txtEmail, lblEmail, "CPF já cadastrado", 4, txtCpf, lblCpf);
+                        IsNotValid(txtEmail, "CPF já cadastrado", 4, txtCpf);
                         break;
                     }
                     else
                     {
-                        IsValid("cpf", txtCpf, lblCpf, txtSenha, lblSenha, 5);
+                        IsValid("cpf", txtCpf, txtSenha, 5);
                         lblDica.Text = "Dica: use uma senha que contenha mais de 8 dígitos, letras maiúsculas e minúsculas, números e símbolos.";
                         break;
                     }
@@ -155,19 +156,19 @@ namespace AcroniWeb_4._5
                 case 5:
                     if (txtSenha.Text == "" || string.IsNullOrWhiteSpace(txtSenha.Text))
                     {
-                        IsNotValid(txtEmail, lblEmail, "Campo de senha vazio :/", 5, txtSenha, lblSenha);
+                        IsNotValid(txtEmail, "Campo de senha vazio :/", 5, txtSenha);
                         break;
                     }
                     else
                     {
-                        IsValid("senha", txtSenha, lblSenha, txtCSenha, lblCSenha, 6);
+                        IsValid("senha", txtSenha, txtCSenha, 6);
                         break;
                     }
 
                 case 6:
                     if (txtCSenha.Text != ViewState["senha"].ToString())
                     {
-                        IsNotValid(txtCSenha, lblCSenha, "As senhas não coincidem", 6, txtCSenha, lblCSenha);
+                        IsNotValid(txtCSenha, "As senhas não coincidem", 6, txtCSenha);
                         break;
                     }
                     else
@@ -184,39 +185,33 @@ namespace AcroniWeb_4._5
         }
         
         //Métodos para evitar a repeticão e enxutar o côdigo
-        public void IsValid (string campoCadastrado, TextBox txtCampoCadastrado, Label lblCampoCadastrado, TextBox txtProxCampo, Label lblProxCampo, int aux)
+        public void IsValid (string campoCadastrado, TextBox txtCampoCadastrado, TextBox txtProxCampo, int aux)
         {
             if (!campoCadastrado.Equals("codigo")) 
                 ViewState[campoCadastrado] = txtCampoCadastrado.Text;
 
             txtCampoCadastrado.Text = "";
             lblErro.Text = "";
-            lblCampoCadastrado.Attributes["class"] = "identifica some";
-            txtCampoCadastrado.Attributes["class"] = "caixa some";
-            lblProxCampo.Attributes["class"] = "identifica aparece animate-in";
-            txtProxCampo.Attributes["class"] = "caixa aparece animate-in";
+            txtCampoCadastrado.Attributes["class"] = "textbox textbox-type2 textbox-cad some";
+            txtProxCampo.Attributes["class"] = "textbox textbox-type2 textbox-cad aparece animate-in";
             ViewState["aux"] = aux;
         }
 
         //Overload para os campos que tem os espacos retirados (sistema retira espacos desnecessários)
-        public void IsValid(string campoCadastrado, TextBox txtCampoCadastrado, Label lblCampoCadastrado, TextBox txtProxCampo, Label lblProxCampo, int aux, string valCampoCadastrado)
+        public void IsValid(string campoCadastrado, TextBox txtCampoCadastrado, TextBox txtProxCampo, int aux, string valCampoCadastrado)
         {
             ViewState[campoCadastrado] = valCampoCadastrado;
             txtCampoCadastrado.Text = "";
             lblErro.Text = "";
-            lblCampoCadastrado.Attributes["class"] = "identifica some";
-            txtCampoCadastrado.Attributes["class"] = "caixa some";
-            lblProxCampo.Attributes["class"] = "identifica aparece animate-in";
-            txtProxCampo.Attributes["class"] = "caixa aparece animate-in";
+            txtCampoCadastrado.Attributes["class"] = "textbox textbox-type2 textbox-cad some";
+            txtProxCampo.Attributes["class"] = "textbox textbox-type2 textbox-cad aparece animate-in";
             ViewState["aux"] = aux;
         }
 
-        public void IsNotValid (TextBox txtCampoAnterior, Label lblCampoAnterior, string erro, int aux, TextBox txtCampoErrado, Label lblCampoErrado)
+        public void IsNotValid (TextBox txtCampoAnterior, string erro, int aux, TextBox txtCampoErrado)
         {
-            txtCampoAnterior.Attributes["class"] = "caixa";
-            lblCampoAnterior.Attributes["class"] = "identifica";
-            txtCampoErrado.Attributes["class"] = "caixa aparece";
-            lblCampoErrado.Attributes["class"] = "identifica aparece";
+            txtCampoAnterior.Attributes["class"] = "textbox textbox-type2 textbox-cad";
+            txtCampoErrado.Attributes["class"] = "textbox textbox-type2 textbox-cad aparece";
             txtCampoErrado.Text = "";
             
             if (aux == 0)

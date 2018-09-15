@@ -1,16 +1,16 @@
-﻿// var-import
+﻿// imports
 @import 'base';
 
-// partes
-@import 'partes/preload';
+// controls
+@import 'controls/preload';
 
 
 
-// paginas
-@import 'paginas/default';
-@import 'paginas/loja';
-@import 'paginas/cadastro';
+// pages
+@import 'pages/default';
+@import 'pages/loja';
+@import 'pages/cadastro';
 
-@import 'partes/fontawesome.css';
-@import 'partes/searchbox';
+@import 'controls/fontawesome.css';
+@import 'controls/searchbox';
 

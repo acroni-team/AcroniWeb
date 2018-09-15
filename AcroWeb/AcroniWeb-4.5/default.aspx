@@ -17,7 +17,7 @@
 
         function loader(){
             $('.lds-ellipsis').css("opacity", "1");
-            $('.button-eas').css("color", "#0093ff");
+            $('.button-eas,.button-type2').css("color", "#0093ff");
         }
 
     </script>
@@ -44,9 +44,11 @@
                 <div class="modal-body modal-body-step1 is-showing animate-first-in" id="step1" runat="server">
                     <h1>Pode acontecer com qualquer um.</h1>
                     <p>Não esquenta,coloca seu email aqui em baixo que a gente resolve.</p>
-                    <asp:Textbox id="txtEmail" class="textbox textbox-eas" type="text" placeholder="nuncamaispercoasenha@example.com" autocomplete="off" spellcheck="false" runat="server"></asp:Textbox>
-                    <asp:Button ID="btnSendEmail" runat="server" Text="Enviar" class="button dark button-eas" OnClick="btnSendEmail_Click" OnClientClick="loader();"/>
-                    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                    <div class="textbox-type2-overflow eas-overflow">
+                        <asp:Textbox id="txtEmail" class="textbox textbox-eas-2 textbox-type2" type="text" placeholder="nuncamaispercoasenha@example.com" autocomplete="off" spellcheck="false" runat="server"></asp:Textbox>
+                        <asp:Button ID="btnSendEmail" runat="server" Text="Enviar" class="button dark button-type2" OnClick="btnSendEmail_Click" OnClientClick="loader();"/>
+                        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                    </div>
                     <asp:Label runat="server" Text="" id="lblErro1"></asp:Label>
                  </div> 
                 </asp:Panel>
@@ -54,9 +56,9 @@
                 <div class="modal-body modal-body-step2" id="step2" runat="server">
                     <h1>Só precisamos confirmar que é você mesmo.</h1>
                     <p>A gente te enviou um código no e-mail. Cuidado pra não errar.</p>
-                    <asp:Textbox id="txtCodigo" class="textbox textbox-eas" type="text"  placeholder="Digite seu código" autocomplete="off" spellcheck="false" runat="server"></asp:Textbox>
+                    <asp:Textbox id="txtCodigo" class="textbox focus textbox-eas" type="text"  placeholder="Digite seu código" autocomplete="off" spellcheck="false" runat="server"></asp:Textbox>
                     <asp:Button ID="btnSendCode" runat="server" Text="Enviar" class="button dark button-eas" OnClick="btnSendCode_Click" OnClientClick="loader();"/>
-                    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                    <div class="lds-ellipsis lds-eas"><div></div><div></div><div></div><div></div></div>
                     <asp:Label runat="server" Text="" id="lblErro2"></asp:Label>
                  </div>
                 </asp:Panel>
@@ -102,8 +104,8 @@
 					<asp:Label runat="server" Text="Relaxa, não vamos usar seus dados para o mal." id="lblMsg"></asp:Label>
                     </div>
                     <div class="login" style="width: 99%;">
-					   <asp:Textbox id="txtUsu" class="textbox" type="text" placeholder="Usuário" spellcheck="false" runat="server"></asp:Textbox>
-					   <asp:Textbox id="txtPass" class="textbox" type="password" placeholder="Senha" spellcheck="false" runat="server"></asp:Textbox>
+					   <asp:Textbox id="txtUsu" class="textbox focus" type="text" placeholder="Usuário" spellcheck="false" runat="server"></asp:Textbox>
+					   <asp:Textbox id="txtPass" class="textbox focus" type="password" placeholder="Senha" spellcheck="false" runat="server"></asp:Textbox>
                        <a id="abre-senha" class="link">Por acaso você esqueceu a senha?</a>
                     </div>
                     <div class="centralizabotao" style="width: 100%;">

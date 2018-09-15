@@ -1,8 +1,8 @@
 // SCSS
-@import '../var-import/todos';
-@import '../partes/button';
-@import '../partes/textbox';
-@import '../partes/modal';
+@import '../imports/todos';
+@import '../controls/button';
+@import '../controls/textbox';
+@import '../controls/modal';
 
 // media 
 
@@ -34,7 +34,7 @@
     z-index: 7;
 }
 
-// Primeira seção (é dividida em duas partes direita (principal) e esquerda (login) 
+// Primeira seção (é dividida em duas controls direita (principal) e esquerda (login) 
 
 
 section {

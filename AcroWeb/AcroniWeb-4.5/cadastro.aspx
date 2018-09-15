@@ -10,62 +10,16 @@
 
 
     <div id="padrao" ng-controller="validaSenha">
-        <div class="alinha">
-            <div class="alinhado">
-                <div class="alo">
-                    <asp:Label ID="lblNome" runat="server" Text="Entre com seu nome completo" class="identifica aparece"></asp:Label>
-                    <asp:TextBox  ID="txtNome" runat="server" type="text" class="caixa aparece" placeholder="Nome Completo" autocomplete="off" autofocus></asp:TextBox>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="alinha">
-            <div class="alinhado">
-                <div class="alo">
-                    <asp:Label ID="lblUsu" runat="server" Text="Entre com seu nome de usuário" class="identifica"></asp:Label>
-                    <asp:TextBox  ID="txtUsu" runat="server" type="text" class="caixa" placeholder="Usuario" autocomplete="off" autofocus></asp:TextBox>
-                </div>
-            </div>
-        </div>
-        <div class="alinha">
-            <div class="alinhado">
-                <div class="alo">
-                    <asp:Label ID="lblEmail" runat="server" Text="Entre com seu Email" class="identifica"></asp:Label>
-                    <asp:TextBox  ID="txtEmail" runat="server" type="text" class="caixa" placeholder="Email" autocomplete="off" autofocus></asp:TextBox>
-                </div>
-            </div>
-        </div>
-        <div class="alinha">
-            <div class="alinhado">
-                <div class="alo">
-                    <asp:Label ID="lblCodigo" runat="server" Text="Entre com seu CPF" class="identifica"></asp:Label>
-                    <asp:TextBox  ID="txtCodigo" runat="server" type="text" class="caixa" placeholder="Enviamos um código no seu email" autocomplete="off" autofocus></asp:TextBox>
-                </div>
-            </div>
-        </div>
-        <div class="alinha">
-            <div class="alinhado">
-                <div class="alo">
-                    <asp:Label ID="lblCpf" runat="server" Text="Entre com seu CPF" class="identifica"></asp:Label>
-                    <asp:TextBox  ID="txtCpf" runat="server" type="text" class="caixa" placeholder="CPF" autocomplete="off" autofocus></asp:TextBox>
-                </div>
-            </div>
-        </div>
-        <div class="alinha">
-            <div class="alinhado">
-                <div class="alo">
-                    <asp:Label ID="lblSenha" runat="server" Text="Entre com sua senha" class="identifica"></asp:Label>
-                    <asp:TextBox ng-model="senha" TextMode="Password" ng-change="verificar()" ID="txtSenha" runat="server" type="text" class="caixa" placeholder="Senha" autocomplete="off" autofocus></asp:TextBox>
-                </div>
-            </div>
-        </div>
-        <div class="alinha">
-            <div class="alinhado">
-                <div class="alo">
-                    <asp:Label ID="lblCSenha" runat="server" Text="Confirme sua senha" class="identifica"></asp:Label>
-                    <asp:TextBox  ID="txtCSenha" TextMode="Password" runat="server" type="text" class="caixa" placeholder="Confirmar Senha" autocomplete="off" autofocus></asp:TextBox>
-                </div>
-               <asp:Button ID="btnValida" class="buttonv2" runat="server" Text=">" OnClick="btnValida_Click"/>
+        <div class="cad-wraper">
+            <div class="textbox-type2-overflow overflow-cad">
+               <asp:TextBox  ID="txtNome" runat="server" type="text" class="textbox textbox-type2 textbox-cad aparece" placeholder="Nome Completo" autocomplete="off" autofocus></asp:TextBox>
+               <asp:TextBox  ID="txtUsu" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Usuario" autocomplete="off" autofocus></asp:TextBox>
+               <asp:TextBox  ID="txtEmail" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite o seu email :D" autocomplete="off" autofocus></asp:TextBox>
+               <asp:TextBox  ID="txtCodigo" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Enviamos um código no seu email" autocomplete="off" autofocus></asp:TextBox>
+               <asp:TextBox  ID="txtCpf" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="CPF" autocomplete="off" autofocus></asp:TextBox>
+               <asp:TextBox ng-model="senha" TextMode="Password" ng-change="verificar()" ID="txtSenha" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Senha" autocomplete="off" autofocus></asp:TextBox>
+               <asp:TextBox  ID="txtCSenha" TextMode="Password" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Confirmar Senha" autocomplete="off" autofocus></asp:TextBox>
+               <asp:Button ID="btnValida" class="button dark button-type2 button-cad" runat="server" Text="Enviar" OnClick="btnValida_Click"/>
             </div>
         </div>
         <div id="erro">

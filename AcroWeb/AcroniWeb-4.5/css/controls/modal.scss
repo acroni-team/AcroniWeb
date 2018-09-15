@@ -1,6 +1,6 @@
 // SCSS
 
-@import '../var-import/todos';
+@import '../imports/todos';
 
 
 // Geral
@@ -176,6 +176,11 @@ section.blur {
     width:70%;
 
 }
+.textbox-eas-2 {
+    float: left;
+    width: 445px;
+    font-weight: $semi-bold;
+}
 
 .button-eas {
     margin-top: 15px;
@@ -195,3 +200,13 @@ section.blur {
     margin-top:15px;
 }
 
+.eas-overflow{
+    width:610px;
+    height:65px;
+    border-radius:5px;
+}
+
+lds-eas {
+    top: 125px;
+    left: 520px;
+}

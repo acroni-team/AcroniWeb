@@ -48,16 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Função das TextBox e buttons
     var bool = false;
-    $('.textbox,.campos-pergunta,.pergunta,.textbox-eas').focus(function () {
-        //$(this).css("border", "1.5px solid #0093ff");
-        $(this).addClass('foco');
-    })
-
-    $('.textbox,.campos-pergunta,.pergunta,.textbox-eas').blur(function () {
-        //$(this).css("border", "1.5px solid #dfdfdf");
-        $(this).removeClass('foco');
-    })
-
     // --------- Mascaras -----------
 
 
