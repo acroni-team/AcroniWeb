@@ -20,14 +20,14 @@ namespace AcroniWeb_4._5
             //Se a página estiver loadando pela primeira vez, inicializar as 'variáveis' e o AUX
             if (!IsPostBack)
             {
-                ViewState["usu"] = "";
-                ViewState["email"] = "";
-                ViewState["nome"] = "";
-                ViewState["cpf"] = "";
-                ViewState["senha"] = "";
-                ViewState["csenha"] = "";
-                ViewState["aux"] = 0;
-                ViewState["codigo"] = "";
+                Session["usu"] = "";
+                Session["email"] = "";
+                Session["nome"] = "";
+                Session["cpf"] = "";
+                Session["senha"] = "";
+                Session["csenha"] = "";
+                Session["aux"] = 0;
+                Session["codigo"] = "";
             }
             lblErro.Text = "{{mensagem}}";
         }
@@ -37,7 +37,7 @@ namespace AcroniWeb_4._5
             bool existe = true;
             //Switch case para cada caso do AUX
             //Se a validacão der erro, o AUX será o mesmo e assim caindo no mesmo caso até o usuário acertar
-            switch (ViewState["aux"])
+            switch (Session["aux"])
             {
                 case 0:
                     if (string.IsNullOrEmpty(txtNome.Text) || string.IsNullOrWhiteSpace(txtNome.Text))
@@ -116,15 +116,15 @@ namespace AcroniWeb_4._5
                     else
                     {
                         IsValid("email", txtEmail, txtCodigo, 3, email);
-                        ViewState["email"] = email;
-                        ViewState["codigo"] = ut.gerarStringConfirmacao();
-                        ut.enviarEmailConfirmacao(ViewState["codigo"].ToString(), ViewState["email"].ToString());
+                        Session["email"] = email;
+                        Session["codigo"] = ut.gerarStringConfirmacao();
+                        ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString());
                         break;
                     }
 
                 case 3:
                     
-                    if (!txtCodigo.Text.Equals(ViewState["codigo"]))
+                    if (!txtCodigo.Text.Equals(Session["codigo"]))
                     {
                         IsNotValid(txtEmail, "Os códigos não coincidem", 3, txtCodigo);
                         break;
@@ -166,7 +166,7 @@ namespace AcroniWeb_4._5
                     }
 
                 case 6:
-                    if (txtCSenha.Text != ViewState["senha"].ToString())
+                    if (txtCSenha.Text != Session["senha"].ToString())
                     {
                         IsNotValid(txtCSenha, "As senhas não coincidem", 6, txtCSenha);
                         break;
@@ -188,24 +188,24 @@ namespace AcroniWeb_4._5
         public void IsValid (string campoCadastrado, TextBox txtCampoCadastrado, TextBox txtProxCampo, int aux)
         {
             if (!campoCadastrado.Equals("codigo")) 
-                ViewState[campoCadastrado] = txtCampoCadastrado.Text;
+                Session[campoCadastrado] = txtCampoCadastrado.Text;
 
             txtCampoCadastrado.Text = "";
             lblErro.Text = "";
             txtCampoCadastrado.Attributes["class"] = "textbox textbox-type2 textbox-cad some";
             txtProxCampo.Attributes["class"] = "textbox textbox-type2 textbox-cad aparece animate-in";
-            ViewState["aux"] = aux;
+            Session["aux"] = aux;
         }
 
         //Overload para os campos que tem os espacos retirados (sistema retira espacos desnecessários)
         public void IsValid(string campoCadastrado, TextBox txtCampoCadastrado, TextBox txtProxCampo, int aux, string valCampoCadastrado)
         {
-            ViewState[campoCadastrado] = valCampoCadastrado;
+            Session[campoCadastrado] = valCampoCadastrado;
             txtCampoCadastrado.Text = "";
             lblErro.Text = "";
             txtCampoCadastrado.Attributes["class"] = "textbox textbox-type2 textbox-cad some";
             txtProxCampo.Attributes["class"] = "textbox textbox-type2 textbox-cad aparece animate-in";
-            ViewState["aux"] = aux;
+            Session["aux"] = aux;
         }
 
         public void IsNotValid (TextBox txtCampoAnterior, string erro, int aux, TextBox txtCampoErrado)
@@ -217,13 +217,13 @@ namespace AcroniWeb_4._5
             if (aux == 0)
             {
                 lblErro.Text = erro;
-                ViewState["aux"] = aux;
+                Session["aux"] = aux;
             }
             else
             {
                 txtCampoAnterior.Text = "";
                 lblErro.Text = erro;
-                ViewState["aux"] = aux;
+                Session["aux"] = aux;
             }
         }
 
