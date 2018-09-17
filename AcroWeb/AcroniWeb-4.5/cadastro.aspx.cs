@@ -37,7 +37,7 @@ namespace AcroniWeb_4._5
             bool existe = true;
             //Switch case para cada caso do AUX
             //Se a validacão der erro, o AUX será o mesmo e assim caindo no mesmo caso até o usuário acertar
-            switch (Session["aux"])
+            switch (Convert.ToInt32(Session["aux"]))
             {
                 case 0:
                     if (string.IsNullOrEmpty(txtNome.Text) || string.IsNullOrWhiteSpace(txtNome.Text))
