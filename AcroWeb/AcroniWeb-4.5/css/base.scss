@@ -8,9 +8,13 @@ body {
     background-color: #f2f2f2;
     transition: background-color 300ms ease;
     overflow: hidden;
-    font-family: 'open';
+    font-family: 'open',sans-serif;
     font-weight: $normal;
     transition: filter 200ms ease-in;
+}
+
+input {
+    font-family: 'open',sans-serif;
 }
 
 
@@ -153,7 +157,6 @@ nav{
 
 div#right li {
     text-align: right;
-    font-family: 'open';
     font-size: 40px;
     color: #333;
     transition: color 300ms ease;
