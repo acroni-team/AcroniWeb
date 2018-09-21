@@ -120,7 +120,7 @@ nav{
     transition: opacity 300ms ease; 
 }
 
-#left, #right{
+.left, .right{
 	width: 50%;
 	height: 100%;
 	background: #f2f2f2;
@@ -142,7 +142,6 @@ nav{
 #right{
 	display:flex;
 	align-items: center;
-	background: #f2f2f2;
 }
 
 #right div{width: 60%;}

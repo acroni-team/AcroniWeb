@@ -32,10 +32,10 @@
                 <div id="Produto<%# Eval("id") %>" class="modal-wrap modal-wrap-loja">
                     <div class="modal-body modal-body-loja">
                         <a class="fecha-janela">x</a>
-                        <div class="right">
+                        <div class="right-loja">
                             <asp:Image ID="Image1" class="img-grande" runat="server"  ImageUrl='<%# Bind("id","~/img/produtos/Img({0}).png") %>' /></a>
                         </div>
-                        <div class="left">
+                        <div class="left-loja">
                         </div>
                      </div>
                     <div class="modal-background"></div>

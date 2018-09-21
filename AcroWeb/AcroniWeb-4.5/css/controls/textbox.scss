@@ -1,6 +1,5 @@
 // SCSS
-@import '../imports/cor';
-@import '../imports/fontes';
+@import '../imports/todos';
 
 
 //TEXTBOX
@@ -29,51 +28,10 @@
     }
 }
 
-@mixin transition($transition...) {
-    -webkit-transition: $transition;
-    -moz-transition: $transition;
-    -o-transition: $transition;
-    transition: $transition;
-}
-
-@mixin placeholderOpacity($opacity) {
-    &:-moz-placeholder {
-        opacity: $opacity
-    }
-
-    &:-ms-input-placeholder {
-        opacity: $opacity
-    }
-
-    &::-webkit-input-placeholder {
-        opacity: $opacity
-    }
-
-    &::-moz-placeholder {
-        opacity: $opacity
-    }
-}
-
-@mixin placeholderTransition($transition) {
-    &:-moz-placeholder {
-        @include transition($transition);
-    }
-
-    &:-ms-input-placeholder {
-        @include transition($transition);
-    }
-
-    &::-webkit-input-placeholder {
-        @include transition($transition);
-    }
-
-    &::-moz-placeholder {
-        @include transition($transition);
-    }
-}
 
 input {
     @include placeholderOpacity(1);
+    @include placeholderColor($cinza-claro);
     @include placeholderTransition(opacity 200ms ease-in);
 }
 
@@ -88,26 +46,29 @@ input:focus {
 
 .textbox-type2-overflow {
     overflow: hidden;
+    background-color: $texto;
+    /*@include transition(border-width 0.2s ease-in-out);
+    border: 0rem solid $cor-primaria;
+
+    &:focus-within {
+        border: 0.15rem solid $cor-primaria;
+    }*/
 }
-
 /*inputs e botao */
-
 .textbox-type2 {
     border-radius: 0;
     margin: 0;
     color: $cinza;
-    background-color: $texto;
     height: 100%;
     border: none;
-    
-    
-    
-    
     caret-color: $cor-primaria;
-    font-weight:$normal;
+    font-weight: $normal;
+    background: transparent;
 
-    &.focus {
-        
+    &:focus {
+        .textbox-type2-overflow {
+            border: 0.15rem solid $cor-primaria;
+        }
     }
 }
 

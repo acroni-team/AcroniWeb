@@ -99,13 +99,15 @@
     <Content Include="css\controls\modal.scss" />
     <Content Include="css\controls\searchbox.scss" />
     <None Include="css\controls\transicao.scss" />
-    <None Include="css\imports\keyframes.scss" />
+    <None Include="css\controls\keyframes.scss" />
     <None Include="css\imports\cor.scss" />
+    <Content Include="css\pages\galeria.scss" />
     <None Include="css\pages\loja.scss" />
     <None Include="css\controls\preload.scss" />
     <None Include="css\base.scss" />
     <Content Include="css\area-restrita.css" />
     <Content Include="default.aspx" />
+    <Content Include="galeria.aspx" />
     <Content Include="img\apple.jpg" />
     <Content Include="img\apple.png" />
     <Content Include="img\demo-acroni.jpg" />
@@ -167,6 +169,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="galeria.aspx.cs">
+      <DependentUpon>galeria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="galeria.aspx.designer.cs">
+      <DependentUpon>galeria.aspx</DependentUpon>
     </Compile>
     <Compile Include="layout.Master.cs">
       <DependentUpon>layout.Master</DependentUpon>

@@ -30,7 +30,7 @@
 <body ng-app="acroni">
     <form id="form1" runat="server">
         <div id="menu">
-            <div id="left">
+            <div id="left" class="left">
                 <div id="logo">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
                         <path class="st0" d="M122.6 207.1c0 3.3-2.7 6-6 6H42c-3.3 0-6-2.7-6-6v-74.6c0-3.3 2.7-6 6-6h74.6c3.3 0 6 2.7 6 6V207.1z" />
@@ -48,7 +48,7 @@
                     </svg>
                 </div>
             </div>
-            <div id="right">
+            <div id="right" class="right">
                 <div>
                     <aside class="caixa-search">
                         <asp:TextBox ID="TextBox1" runat="server" class="texto-search" placeholder="Pesquisar"></asp:TextBox>
