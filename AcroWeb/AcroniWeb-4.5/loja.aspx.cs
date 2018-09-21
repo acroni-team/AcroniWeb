@@ -19,7 +19,7 @@ namespace AcroniWeb
             {
                 if (conexao_SQL.State != ConnectionState.Open)
                     conexao_SQL.Open();
-                String select = "SELECT * FROM tblProdutos";
+                String select = "SELECT * FROM tblProdutosDaLoja";
                 SqlDataAdapter da = new SqlDataAdapter(select, conexao_SQL);
                 ds = new DataSet();
                 da.Fill(ds);

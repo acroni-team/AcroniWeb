@@ -19,7 +19,8 @@
                <asp:TextBox  ID="txtCpf" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="CPF" autocomplete="off"></asp:TextBox>
                <asp:TextBox ng-model="senha" TextMode="Password" ng-change="verificar()" ID="txtSenha" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Senha" autocomplete="off"></asp:TextBox>
                <asp:TextBox  ID="txtCSenha" TextMode="Password" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Confirmar Senha" autocomplete="off"></asp:TextBox>
-               <asp:Button ID="btnValida" class="button dark button-type2 button-cad" runat="server" Text="Enviar" OnClick="btnValida_Click"/>
+               <asp:Button ID="btnValida" class="button dark button-type2 button-cad" runat="server" Text="Enviar" OnClick="btnValida_Click" OnClientClick="loader();"/>
+               <div class="lds-ellipsis" style="top:8px;"><div></div><div></div><div></div><div></div></div>
             </div>
         </div>
         <div id="erro">

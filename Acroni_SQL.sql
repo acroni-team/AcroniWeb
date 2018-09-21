@@ -9,19 +9,17 @@ GO
 USE ACRONI_SQL
 GO
 CREATE TABLE tblCliente (
+	id int primary key identity(1,1),
+	nome VARCHAR(30),
 	usuario VARCHAR(30),
 	senha VARCHAR(30),
-	email VARCHAR(50) PRIMARY KEY,
+	email VARCHAR(50),
+	imagem VARBINARY(MAX),
 	cpf VARCHAR(15),
-	cep VARCHAR(15),
-
+	cep VARCHAR(15)
 )
 GO
-
-INSERT INTO tblCliente VALUES ('pezinho', 'amaasp','gustavoplm@55gmail.com',2423432,24323)
-
-GO
-create table tblProdutos
+create table tblProdutosDaLoja
 (
 	id int primary key identity(1,1),
 	nome varchar(50),
@@ -34,21 +32,27 @@ create table tblProdutos
 	preco decimal(6,2),
 )
 GO
+create table tblTecladoCustomizado(
+	id int primary key identity(1,1),
+	id_cliente int foreign key references tblCliente(id),
+	nickname varchar(50),
+	preco decimal(6,2),
 
-SELECT * FROM tblCliente
-SELECT * FROM tblProdutos
+)
+create table tblPedidosTecladoCustomizado
+(
+	id_tecladoCustomizado int foreign key references tblTecladoCustomizado(id),
+	imagem VARBINARY(MAX),
+)
 
+-- Inserts:
+-- Produtos
+--insert into tblProdutos values('Rubens','ele é um RUBANCO bem LOCO','bem loco impolganti leite pao de batata',69.89)
+--insert into tblProdutos values('FRUIT  DOLLY','Bebida de nectar',' DOLLY',56.30,1.98,3.56,5.97,69.89)
+--insert into tblProdutos values('TETRAEDRO KRL','VOCE N SABE NEM EU','bem loco impolganti irineu',727)
+--insert into tblProdutos values('OI MOUTA','Aquele que escreveu Mouta como nome na lista','bem leite eunsei kkj',420)
+--insert into tblProdutos values('AGORA SIM','Famoso Rodrigao da Massa','fritas francesas JOBS Gabriel TORRES',50)
+--insert into tblProdutos values('OI, eu sou um tecladinho bunitinho :D','digo, PERFECTUS','PERFEITINHOS PALHACTUOPLANCTUM JOTA É PALHATROLITICO ',999)
 
---Tralha
-
-insert into tblProdutos values('Rubens','ele é um RUBANCO bem LOCO','bem loco impolganti leite pao de batata',69.89)
-insert into tblProdutos values('FRUIT  DOLLY','Bebida de nectar',' DOLLY',56.30,1.98,3.56,5.97,69.89)
-insert into tblProdutos values('TETRAEDRO KRL','VOCE N SABE NEM EU','bem loco impolganti irineu',727)
-insert into tblProdutos values('OI MOUTA','Aquele que escreveu Mouta como nome na lista','bem leite eunsei kkj',420)
-insert into tblProdutos values('AGORA SIM','Famoso Rodrigao da Massa','fritas francesas JOBS Gabriel TORRES',50)
-insert into tblProdutos values('OI, eu sou um tecladinho bunitinho :D','digo, PERFECTUS','PERFEITINHOS PALHACTUOPLANCTUM JOTA É PALHATROLITICO ',999)
-
-
-
-
-
+---- Cliente:
+--INSERT tblCliente(nome_usuario, senha, email, cpf) VALUES ('felipi', 'facil', 'papel@log.com','518.998.930-59') 

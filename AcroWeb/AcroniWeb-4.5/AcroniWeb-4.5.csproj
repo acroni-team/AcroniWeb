@@ -184,6 +184,13 @@
     <Compile Include="layout.Master.designer.cs">
       <DependentUpon>layout.Master</DependentUpon>
     </Compile>
+    <Compile Include="logado.Master.cs">
+      <DependentUpon>logado.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logado.Master.designer.cs">
+      <DependentUpon>logado.Master</DependentUpon>
+    </Compile>
     <Compile Include="loja.aspx.cs">
       <DependentUpon>loja.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -217,6 +224,7 @@
     <Content Include="fontes\qanelas\Qanelas-SemiBold.ttf" />
     <Content Include="fontes\qanelas\Qanelas-Thin.ttf" />
     <Content Include="fontes\qanelas\Qanelas-UltraLight.ttf" />
+    <Content Include="logado.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

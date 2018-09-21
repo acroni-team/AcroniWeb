@@ -23,6 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    //Loader
+    
+
+
     // Modal-eas
 
     $('#abre-senha').click(function () {

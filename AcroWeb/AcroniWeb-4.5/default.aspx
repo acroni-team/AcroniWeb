@@ -15,11 +15,6 @@
             
         //});
 
-        function loader(){
-            $('.lds-ellipsis').css("opacity", "1");
-            $('.button-eas,.button-type2').css("color", "#0093ff");
-        }
-
     </script>
 
 </asp:Content>
@@ -96,9 +91,10 @@
         <div id="login">
             <form id="loginform" method="post">               
 				<div class="centraliza" data-aos="fade-up" data-aos-delay="300">
-                    
-                    <asp:UpdatePanel ID="SCPanel" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="false">
+                    <a id="abre-senha" class="link">Por acaso você esqueceu a senha?</a>
+                    <asp:UpdatePanel ID="SCPanel"  runat="server" UpdateMode="Conditional" ChildrenAsTriggers="false">
                     <ContentTemplate>
+                    <asp:Panel ID="LoginPanel" DefaultButton="btnEntra" runat="server">
                     <div>
 					<p id="logintitle">Entrar</p>
 					<asp:Label runat="server" Text="Relaxa, não vamos usar seus dados para o mal." id="lblMsg"></asp:Label>
@@ -106,12 +102,13 @@
                     <div class="login" style="width: 99%;">
 					   <asp:Textbox id="txtUsu" class="textbox focus" type="text" placeholder="Usuário" spellcheck="false" runat="server"></asp:Textbox>
 					   <asp:Textbox id="txtPass" class="textbox focus" type="password" placeholder="Senha" spellcheck="false" runat="server"></asp:Textbox>
-                       <a id="abre-senha" class="link">Por acaso você esqueceu a senha?</a>
+                       
                     </div>
                     <div class="centralizabotao" style="width: 100%;">
 					   <asp:Button ID="btnEntra" class="button-hover button dark" type="button" Text="Entrando!" runat="server" OnClick="btnEntra_Click" />  
                     </div>
                     <p id="cadastre-se">Ainda não tem conta? <a href="cadastro.aspx" class="link">Crie uma!</a></p>
+                    </asp:Panel>
                     </ContentTemplate>
                     </asp:UpdatePanel>
                 </div>
