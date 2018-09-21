@@ -25,7 +25,7 @@
         <div id="erro">
             <asp:Label ID="lblErro" runat="server" Text=""></asp:Label><br/>
             <asp:Label ng-bind="mensagem" ID="lblNivelSenha" runat="server" Text=""></asp:Label><br/>
-            <asp:Label ID="lblDica" runat="server" Text=""></asp:Label>
+            <asp:Label ID="lblDica" CssClass="dica" runat="server" Text=""></asp:Label>
         </div>
         <div id="info">
 

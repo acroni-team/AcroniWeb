@@ -173,9 +173,8 @@ namespace AcroniWeb_4._5
                     }
                     else
                     {
-                        lblErro.Text = "BOA 06, PADRAO";
-                        //Exibir a revisão dos dados para finalizar o cadastro
-                        //"PALMA GOD DMS" -PezinhoAmaASP 2018
+                        ut.inserirUsuario(Session["nome"].ToString(), Session["usu"].ToString(), Session["email"].ToString(), Session["cpf"].ToString(), Session["senha"].ToString());
+                        Response.Redirect("default.aspx");
                         break;
                     }
 
