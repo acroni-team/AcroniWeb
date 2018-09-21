@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         $("body").niceScroll().remove();
     });
 
-    $('.modal-background').click(function () {
+    $('.modal-background,.modal-button-cad').click(function () {
         var $step = $('.modal-body-step1');
         $step.toggleClass('animate-first-in animate-first-out');
         setTimeout(function () {

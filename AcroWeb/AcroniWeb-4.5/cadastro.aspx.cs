@@ -119,6 +119,8 @@ namespace AcroniWeb_4._5
                         Session["email"] = email;
                         Session["codigo"] = ut.gerarStringConfirmacao();
                         ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString());
+                        modal.Attributes["class"] = "modal-wrap is-showing";
+                        modalback.Attributes.Add("style", "pointer-events:auto");
                         break;
                     }
 
