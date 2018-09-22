@@ -11,6 +11,10 @@ namespace AcroniWeb_4._5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["logado"].ToString() != "1")
+                Response.Redirect("default.aspx");
+            else
+                lblUser.Text = Session["usuario"].ToString();
 
         }
     }

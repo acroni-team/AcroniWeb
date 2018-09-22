@@ -16,7 +16,7 @@ namespace AcroniWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session["logado"] = "0";
         }
 
         SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao);
@@ -57,7 +57,8 @@ namespace AcroniWeb
                     if (tabela.HasRows)
                     {
                         Session["logado"] = "1";
-                        Response.Redirect("construct.aspx");
+                        Session["usuario"] = txtUsu.Text;
+                        Response.Redirect("galeria.aspx");
                         txtPass.Attributes.Add("style", "border-color:#0093ff");
                     }
                     else
@@ -65,6 +66,7 @@ namespace AcroniWeb
                         lblMsg.Text = "Senha incorreta";
                         lblMsg.ForeColor = System.Drawing.Color.Red;
                         txtPass.Attributes.Add("style", "border-color:red");
+                        Session["logado"] = "0";
                     }
 
                 }
@@ -74,6 +76,7 @@ namespace AcroniWeb
                     lblMsg.ForeColor = System.Drawing.Color.Red;
                     txtUsu.Attributes.Add("style", "border-color:red");
                     txtPass.Attributes.Add("style", "border-color:red");
+                    Session["logado"] = "0";
                 }
 
                 tabela.Close();
