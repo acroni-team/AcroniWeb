@@ -45,6 +45,11 @@ create table tblPedidosTecladoCustomizado
 	imagem VARBINARY(MAX),
 )
 
+SELECT * FROM tblCliente
+SELECT * FROM tblPedidosTecladoCustomizado
+SELECT * FROM tblProdutosDaLoja
+SELECT * FROM tblTecladoCustomizado
+
 -- Inserts:
 -- Produtos
 --insert into tblProdutos values('Rubens','ele é um RUBANCO bem LOCO','bem loco impolganti leite pao de batata',69.89)
