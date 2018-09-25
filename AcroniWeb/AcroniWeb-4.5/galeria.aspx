@@ -29,6 +29,11 @@
             </div>
         </div>    
         <div class="right right-galeria">
+            <asp:DataList ID="DataList1" runat="server">
+                <ItemTemplate>
+                    <asp:Image ID="imgCelecao" class="colecao-picture" runat="server"  ImageUrl='<%# Bind("id_cliente","imagem_colecao") %>' />
+                </ItemTemplate>
+            </asp:DataList>
             <asp:Image ID="imgStatus" class="galeria-status" runat="server"  ImageUrl='img/galeria-vazia.png' />
         </div>
     </section>   
