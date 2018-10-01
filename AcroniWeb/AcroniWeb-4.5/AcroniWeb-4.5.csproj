@@ -89,6 +89,7 @@
   <ItemGroup>
     <Content Include="cadastro.aspx" />
     <Content Include="construct.aspx" />
+    <Content Include="AcroniWeb.cd" />
     <None Include="css\pages\cadastro.scss" />
     <Content Include="css\controls\fontawesome.css" />
     <Content Include="css\imports\fontes.scss" />

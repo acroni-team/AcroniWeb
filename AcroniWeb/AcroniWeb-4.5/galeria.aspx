@@ -8,7 +8,7 @@
                 <div>
                     <figure class="profile-wraper">
                         <div>
-                            <asp:Image ID="profilePicture" class="profile-picture" runat="server"  ImageUrl='img/imgperf.jpeg' />
+                            <asp:Image ID="profilePicture" class="profile-picture" runat="server"  ImageUrl='' />
                         </div>
                     </figure>
                     <figcaption class="profile-settings">
@@ -29,11 +29,7 @@
             </div>
         </div>    
         <div class="right right-galeria">
-            <asp:DataList ID="DataList1" runat="server">
-                <ItemTemplate>
-                    <asp:Image ID="imgCelecao" class="colecao-picture" runat="server"  ImageUrl='<%# Bind("id_cliente","imagem_colecao") %>' />
-                </ItemTemplate>
-            </asp:DataList>
+            <asp:Image ID="imgColecao" class="colecao-picture" runat="server" ImageUrl='' />
             <asp:Image ID="imgStatus" class="galeria-status" runat="server"  ImageUrl='img/galeria-vazia.png' />
         </div>
     </section>   
