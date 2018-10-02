@@ -128,7 +128,12 @@ namespace AcroniWeb_4._5
                     modal.Attributes["class"] = "modal-wrap";
                     modalback.Attributes.Add("style", "pointer-events:none");
 
-                    if (!txtCodigo.Text.Equals(Session["codigo"]))
+                    if (!txtCodigo.Text.ToLower().Equals(Session["codigo"].ToString().ToLower()))
+                    {
+                        IsNotValid(txtEmail, "Os códigos não coincidem", 3, txtCodigo);
+                        break;
+                    }
+                    else if (!(txtCodigo.Text.ToLower().Equals(Session["codigo"].ToString().ToLower())))
                     {
                         IsNotValid(txtEmail, "Os códigos não coincidem", 3, txtCodigo);
                         break;

@@ -142,7 +142,7 @@ namespace AcroniWeb
 
         protected void btnSendCode_Click(object sender, EventArgs e) {
             step2.Attributes["class"] = "modal-body modal-body-step2 is-showing";
-            if (txtCodigo.Text.Equals(Session["codigo"]))
+            if (txtCodigo.Text.ToLower().Equals(Session["codigo"].ToString().ToLower()))
             {
                 //ELE VAI MANDAR PRA OUTRA PAGE SE O CODIGO CORRESPONDER COM O MANDADO NO IMAI PADRAO
                 txtCodigo.Attributes.Add("style", "border-color:#0093ff");
