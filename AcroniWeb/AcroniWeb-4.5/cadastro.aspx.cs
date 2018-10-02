@@ -121,6 +121,7 @@ namespace AcroniWeb_4._5
                         ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString());
                         modal.Attributes["class"] = "modal-wrap is-showing";
                         modalback.Attributes.Add("style", "pointer-events:auto");
+                        btnReenviarEmail.Attributes.Add("style", "display: block");
                         break;
                     }
 
@@ -141,6 +142,7 @@ namespace AcroniWeb_4._5
                     else
                     {
                         IsValid("codigo", txtCodigo, txtCpf, 4);
+                        btnReenviarEmail.Attributes.Add("style", "display: none");
                         break;
                     }
 
@@ -235,7 +237,10 @@ namespace AcroniWeb_4._5
             }
         }
 
-        
-
+        protected void btnReenviarEmail_Click(object sender, EventArgs e)
+        {
+            Session["codigo"] = ut.gerarStringConfirmacao();
+            ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString()); 
+        }
     }
 }
