@@ -102,7 +102,7 @@
                     <div class="login" style="width: 99%;">
 					   <asp:Textbox id="txtUsu" class="textbox focus" type="text" placeholder="Usuário" spellcheck="false" runat="server"></asp:Textbox>
 					   <asp:Textbox id="txtPass" class="textbox focus" type="password" placeholder="Senha" spellcheck="false" runat="server"></asp:Textbox>
-                       
+                       <asp:CheckBox ID="CheckBox1" class="checkbox" runat="server" />
                     </div>
                     <div class="centralizabotao" style="width: 100%;">
 					   <asp:Button ID="btnEntra" class="button-hover button dark" type="button" Text="Entrando!" runat="server" OnClick="btnEntra_Click" />  

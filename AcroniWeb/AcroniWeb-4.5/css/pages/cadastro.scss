@@ -86,16 +86,17 @@ body{
     
 }
 
-.btnReenviarEmail {
-    background-color: transparent;
+.ReenviarEmail {
+    background: none;
     border: none;
     color: #787878;
     text-decoration: none;
     cursor: pointer;
-    position: absolute;
+    text-align: center;
     display: none;
-}
 
-.btnReenviarEmail:hover {
-    text-decoration: underline;
+
+    &:hover {
+        color: $cor-primaria;
+    }
 }

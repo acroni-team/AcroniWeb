@@ -33,10 +33,10 @@
         </div>
         
         <div id="erro">
-            <asp:Button ID="btnReenviarEmail" class="btnReenviarEmail" runat="server" Text="Reenviar email" OnClick="btnReenviarEmail_Click" OnClientClick="loader();"/>
             <asp:Label ID="lblErro" runat="server" Text=""></asp:Label><br/>
             <asp:Label ng-bind="mensagem" ID="lblNivelSenha" runat="server" Text=""></asp:Label><br/>
             <asp:Label ID="lblDica" CssClass="dica" runat="server" Text=""></asp:Label>
+            <asp:Button ID="ReenviarEmail" runat="server" Text="Reenviar Email" OnClientClick="loader();" OnClick="ReenviarEmail_Click" CssClass="ReenviarEmail"/>
         </div>
     </div>
     <div id="info">

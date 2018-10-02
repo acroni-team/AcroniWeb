@@ -90,6 +90,7 @@
     <Content Include="cadastro.aspx" />
     <Content Include="construct.aspx" />
     <Content Include="AcroniWeb.cd" />
+    <Content Include="css\controls\checkbox.scss" />
     <None Include="css\pages\cadastro.scss" />
     <Content Include="css\controls\fontawesome.css" />
     <Content Include="css\imports\fontes.scss" />

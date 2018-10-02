@@ -3,6 +3,7 @@
 @import '../controls/button';
 @import '../controls/textbox';
 @import '../controls/modal';
+@import '../controls/checkbox';
 
 // media 
 
@@ -143,7 +144,6 @@ section{
     span {
         color: $cor-primaria;
         font-size: 13.5px;
-        margin-left: 10px;
     }
 
     input:first-of-type {
