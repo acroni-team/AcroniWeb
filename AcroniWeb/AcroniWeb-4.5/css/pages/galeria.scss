@@ -90,22 +90,33 @@
 // MENU
 
 .menu-lateral {
-    list-style-type: none;
-    text-align: center;
-    padding-top: 50px;
-
-    li {
-        color: $texto;
-        font-size: 20px;
-        margin-bottom: 15px;
-        width: 70%;
-        padding: 5px;
-        border-radius: 5px;
+    ul {
+        list-style-type: none;
         text-align: center;
-    }
+        padding: 0px;
+        margin: 0;
+        padding-top: 60px;
 
-    li.active {
-        font-weight: $semi-bold;
-        background-color: #303339;
+        li {
+            margin-bottom: 20px;
+
+            a {
+                color: $texto;
+                font-size: 20px;
+                padding: 6px;
+                padding-left: 60px;
+                padding-right: 60px;
+                border-radius: 5px;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: #303339;
+                }
+
+                &.active {
+                    background-color: #303339;
+                }
+            }
+        }
     }
 }

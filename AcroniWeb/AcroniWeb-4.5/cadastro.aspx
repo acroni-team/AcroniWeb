@@ -40,4 +40,8 @@
     <div id="info">
 
      </div>
+
+      <script>
+        document.getElementById("cadastro").classList.add("active");
+    </script>
 </asp:Content>

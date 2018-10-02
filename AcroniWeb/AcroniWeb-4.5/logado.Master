@@ -32,10 +32,40 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
+        <section class="galeria-section">
+            <div class="left left-galeria">
+                <div class="perfil-cliente">
+                    <div>
+                        <figure class="profile-wraper">
+                            <div>
+                                <asp:Image ID="profilePicture" class="profile-picture" runat="server"  ImageUrl='' />
+                            </div>
+                        </figure>
+                        <figcaption class="profile-settings">
+                            <asp:Label class="user-name" ID="lblUser" runat="server" Text='Fillers'></asp:Label><br/>
+                            <asp:Label class="user-plan" ID="lblPlan" runat="server" Text='Plano Básico'></asp:Label>
+                        </figcaption>
+                        <div class="line"></div>
+                        <figcaption class="profile-settings">
+                           <asp:Label class="user-mb user-plan" ID="lblMbStart" runat="server" Text='0 MB' style="left:-125px;"></asp:Label>
+                           <asp:Label class="user-mb user-plan" ID="lblMbEnd" runat="server" Text='50 MB' style="right:-125px;"></asp:Label>
+                        </figcaption>
+                    </div>
+                </div>
+                <div class="menu-lateral">
+                    <ul>
+                   <li><a id="galeria" href="galeria.aspx">Minha galeria</a></li>
+                   <li><a id="minha conta" href="minha_conta.aspx">Minha conta</a></li>
+                   <li><a>Customizar por código</a></li>
+                   <li><asp:LinkButton ID="deslogar" runat="server" OnClick="deslogar_Click">Sair</asp:LinkButton></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="right right-galeria">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </section>
     </form>
 </body>
 </html>
