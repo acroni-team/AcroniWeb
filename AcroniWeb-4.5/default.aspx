@@ -105,7 +105,8 @@
                        <asp:CheckBox ID="ckbLogin" class="checkbox" runat="server" />
                     </div>
                     <div class="centralizabotao" style="width: 100%;">
-					   <asp:Button ID="btnEntra" class="button-hover button dark" type="button" Text="Entrando!" runat="server" OnClick="btnEntra_Click" /> 
+					   <asp:Button ID="btnEntra" class="button dark" type="button" Text="Entrando!" OnClientClick="loader();" runat="server" OnClick="btnEntra_Click" /> 
+                       <div class="lds-ellipsis lds-login"><div></div><div></div><div></div><div></div></div>
                     </div>
                     <p id="cadastre-se">Ainda não tem conta? <a href="cadastro.aspx" class="link">Crie uma!</a></p>
                     </asp:Panel>
