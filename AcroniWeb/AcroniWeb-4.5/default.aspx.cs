@@ -14,19 +14,28 @@ namespace AcroniWeb
 {
     public partial class _default1 : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            Session["logado"] = "0";
-        }
-
         SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao);
         SqlCommand comando_SQL;
         SqlDataReader tabela;
         String select;
         public string stringConfirmacao;
         string email = "";
+        public string Email { get; set; }
 
-        public string Email {get; set;}
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            Session["logado"] = "0";
+            HttpCookie cookie = Request.Cookies["credenciais"];
+            if (cookie != null)
+            {
+                txtUsu.Attributes.Add("style", "display: none");
+                txtPass.Attributes.Add("style", "display: none");
+                btnEntra.Attributes.Add("style", "display: none");
+                ckbLogin.Attributes.Add("style", "display: none");
+                btnEntraCookie.Attributes.Add("style", "display: block");
+            }
+            
+        }
 
         protected void btnIrCad_Click(object sender, EventArgs e)
         {
@@ -58,6 +67,26 @@ namespace AcroniWeb
                     {
                         Session["logado"] = "1";
                         Session["usuario"] = txtUsu.Text;
+                        if (ckbLogin.Checked)
+                        {
+                            HttpCookie cookie = Request.Cookies["credenciais"];
+                            if (cookie == null)
+                            {
+                                // Criando a Instância do cookie
+                                cookie = new HttpCookie("credenciais");
+                                //Adicionando a propriedade "usuario" no cookie
+                                cookie.Values.Add("usuario", txtUsu.Text);
+                                //Adicionando a propriedade "senha" no cookie
+                                cookie.Values.Add("senha", txtPass.Text);
+                                //colocando o cookie para expirar em 365 dias
+                                cookie.Expires = DateTime.Now.AddDays(365);
+                                // Definindo a segurança do nosso cookie
+                                cookie.HttpOnly = true;
+                                // Registrando cookie
+                                this.Page.Response.AppendCookie(cookie);
+
+                            }
+                        }
                         Response.Redirect("galeria.aspx");
                         txtPass.Attributes.Add("style", "border-color:#0093ff");
                     }
@@ -197,7 +226,7 @@ namespace AcroniWeb
         }
 
 
-            public void gerar_string_confirmacao()
+        public void gerar_string_confirmacao()
         {
             stringConfirmacao = "";
             char[] alfabeto = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
@@ -256,6 +285,37 @@ namespace AcroniWeb
                 conexao_SQL.Close();
             }
 
+        }
+
+        protected void btnEntraCookie_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                HttpCookie cookie = Request.Cookies["credenciais"];
+                if (cookie != null)
+                {
+                    if (conexao_SQL.State == ConnectionState.Closed)
+                        conexao_SQL.Open();
+                    string[] valores = cookie.Value.ToString().Split('&');
+                    select = "SELECT * FROM tblCliente WHERE usuario='" + valores[0].Replace("usuario=", "") + "' AND senha='" + valores[1].Replace("senha=", "") + "'";
+                    comando_SQL = new SqlCommand(select, conexao_SQL);
+                    tabela = comando_SQL.ExecuteReader();
+                    tabela.Read();
+                    if (tabela.HasRows)
+                    {
+                        Session["usuario"] = valores[0].Replace("usuario=", "");
+                        Session["logado"] = "1";
+                        Response.Redirect("galeria.aspx");
+                    }
+                }
+                tabela.Close();
+                conexao_SQL.Close();
+            }
+            catch
+            {
+                tabela.Close();
+                conexao_SQL.Close();
+            }
         }
     }
 }

@@ -102,10 +102,11 @@
                     <div class="login" style="width: 99%;">
 					   <asp:Textbox id="txtUsu" class="textbox focus" type="text" placeholder="Usuário" spellcheck="false" runat="server"></asp:Textbox>
 					   <asp:Textbox id="txtPass" class="textbox focus" type="password" placeholder="Senha" spellcheck="false" runat="server"></asp:Textbox>
-                       <asp:CheckBox ID="CheckBox1" class="checkbox" runat="server" />
+                       <asp:CheckBox ID="ckbLogin" class="checkbox" runat="server" />
                     </div>
                     <div class="centralizabotao" style="width: 100%;">
-					   <asp:Button ID="btnEntra" class="button-hover button dark" type="button" Text="Entrando!" runat="server" OnClick="btnEntra_Click" />  
+					   <asp:Button ID="btnEntra" class="button-hover button dark" type="button" Text="Entrando!" runat="server" OnClick="btnEntra_Click" /> 
+                       <asp:Button ID="btnEntraCookie" style="display: none" class="button-hover button dark" runat="server" Text="Entrando pelos cuck" OnClick="btnEntraCookie_Click" />
                     </div>
                     <p id="cadastre-se">Ainda não tem conta? <a href="cadastro.aspx" class="link">Crie uma!</a></p>
                     </asp:Panel>
