@@ -1,0 +1,78 @@
+﻿@import 'cor';
+/* mixin */
+
+
+@mixin wh($valor) {
+    width: 100%;
+    height: $valor;
+}
+
+@mixin hw($valor) {
+    width: $valor;
+    height: 100%;
+}
+
+
+/*placeholders*/
+
+
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin placeholderOpacity($opacity) {
+    &:-moz-placeholder {
+        opacity: $opacity
+    }
+
+    &:-ms-input-placeholder {
+        opacity: $opacity
+    }
+
+    &::-webkit-input-placeholder {
+        opacity: $opacity
+    }
+
+    &::-moz-placeholder {
+        opacity: $opacity
+    }
+}
+
+@mixin placeholderTransition($transition) {
+    &:-moz-placeholder {
+        @include transition($transition);
+    }
+
+    &:-ms-input-placeholder {
+        @include transition($transition);
+    }
+
+    &::-webkit-input-placeholder {
+        @include transition($transition);
+    }
+
+    &::-moz-placeholder {
+        @include transition($transition);
+    }
+}
+
+@mixin placeholderColor($cor) {
+    &:-moz-placeholder {
+        color: $cor;
+    }
+
+    &:-ms-input-placeholder {
+        color: $cor;
+    }
+
+    &::-webkit-input-placeholder {
+        color: $cor;
+    }
+
+    &::-moz-placeholder {
+        color: $cor;
+    }
+}

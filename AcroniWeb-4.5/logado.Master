@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="logado.master.cs" Inherits="AcroniWeb_4._5.logado" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Acroni </title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.smoothState.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/transition.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"/>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1"/> 
+        <script>
+            $(window).on('load', function () {
+                $("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none" });
+                 $('.preload').addClass('completo');
+            });
+            function loader(){
+                $('.lds-ellipsis').css("opacity", "1");
+                $('.button-eas,.button-type2').css("color", "#0093ff");
+            }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <section class="galeria-section">
+            <div class="left left-galeria">
+                <div class="perfil-cliente">
+                    <div>
+                        <figure class="profile-wraper">
+                            <div>
+                                <asp:Image ID="profilePicture" class="profile-picture" runat="server"  ImageUrl='' />
+                            </div>
+                        </figure>
+                        <figcaption class="profile-settings">
+                            <asp:Label class="user-name" ID="lblUser" runat="server" Text='Fillers'></asp:Label><br/>
+                            <asp:Label class="user-plan" ID="lblPlan" runat="server" Text='Plano Básico'></asp:Label>
+                        </figcaption>
+                        <div class="line"></div>
+                        <figcaption class="profile-settings">
+                           <asp:Label class="user-mb user-plan" ID="lblMbStart" runat="server" Text='0 MB' style="left:-125px;"></asp:Label>
+                           <asp:Label class="user-mb user-plan" ID="lblMbEnd" runat="server" Text='50 MB' style="right:-125px;"></asp:Label>
+                        </figcaption>
+                    </div>
+                </div>
+                <div class="menu-lateral">
+                    <ul>
+                   <li><a id="galeria" href="galeria.aspx">Minha galeria</a></li>
+                   <li><a id="minha conta" href="minha_conta.aspx">Minha conta</a></li>
+                   <li><a>Customizar por código</a></li>
+                   <li><asp:LinkButton ID="deslogar" runat="server" OnClick="deslogar_Click">Sair</asp:LinkButton></li>
+                    </ul>
+                </div>
+            </div>    
+            <div class="right right-galeria">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </section>
+    </form>
+</body>
+</html>
