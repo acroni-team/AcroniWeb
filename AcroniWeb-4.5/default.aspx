@@ -41,8 +41,8 @@
                     <p>Não esquenta,coloca seu email aqui em baixo que a gente resolve.</p>
                     <div class="textbox-type2-overflow eas-overflow">
                         <asp:Textbox id="txtEmail" class="textbox textbox-eas-2 textbox-type2" type="text" placeholder="nuncamaispercoasenha@example.com" autocomplete="off" spellcheck="false" runat="server"></asp:Textbox>
-                        <asp:Button ID="btnSendEmail" runat="server" Text="Enviar" class="button dark button-type2" OnClick="btnSendEmail_Click" OnClientClick="loader();"/>
-                        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                        <asp:Button ID="btnSendEmail" runat="server" Text="Enviar" class="button dark button-type2" OnClick="btnSendEmail_Click" OnClientClick="loader('.lds-eas-1','.button-type2');"/>
+                        <div class="lds-ellipsis lds-eas-1"><div></div><div></div><div></div><div></div></div>
                     </div>
                     <asp:Label runat="server" Text="" id="lblErro1"></asp:Label>
                  </div> 
@@ -52,7 +52,7 @@
                     <h1>Só precisamos confirmar que é você mesmo.</h1>
                     <p>A gente te enviou um código no e-mail. Cuidado pra não errar.</p>
                     <asp:Textbox id="txtCodigo" class="textbox focus textbox-eas" type="text"  placeholder="Digite seu código" autocomplete="off" spellcheck="false" runat="server"></asp:Textbox>
-                    <asp:Button ID="btnSendCode" runat="server" Text="Enviar" class="button dark button-eas" OnClick="btnSendCode_Click" OnClientClick="loader();"/>
+                    <asp:Button ID="btnSendCode" runat="server" Text="Enviar" class="button dark button-eas" OnClick="btnSendCode_Click" OnClientClick="loader('.lds-eas','.button-eas');"/>
                     <div class="lds-ellipsis lds-eas"><div></div><div></div><div></div><div></div></div>
                     <asp:Label runat="server" Text="" id="lblErro2"></asp:Label>
                  </div>
@@ -105,7 +105,7 @@
                        <asp:CheckBox ID="ckbLogin" class="checkbox" runat="server" />
                     </div>
                     <div class="centralizabotao" style="width: 100%;">
-					   <asp:Button ID="btnEntra" class="button dark" type="button" Text="Entrando!" OnClientClick="loader();" runat="server" OnClick="btnEntra_Click" /> 
+					   <asp:Button ID="btnEntra" class="button dark button-login" type="button" Text="Entrando!" OnClientClick="loader('.lds-login','.button-login');" runat="server" OnClick="btnEntra_Click" /> 
                        <div class="lds-ellipsis lds-login"><div></div><div></div><div></div><div></div></div>
                     </div>
                     <p id="cadastre-se">Ainda não tem conta? <a href="cadastro.aspx" class="link">Crie uma!</a></p>
