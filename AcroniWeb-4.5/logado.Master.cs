@@ -36,6 +36,7 @@ namespace AcroniWeb_4._5
 
                             string imgString = Convert.ToBase64String(imgBytes);
                             profilePicture.ImageUrl = "data:image/png;base64," + imgString;
+                            conexao_SQL.Close();
                         }
                     }
                 }

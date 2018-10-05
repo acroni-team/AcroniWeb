@@ -9,40 +9,57 @@ using System.Web;
 
 public class Utilitarios
 {
-    SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao);
     SqlCommand comando_SQL;
     SqlDataReader resposta;
     string select = "";
     public bool verificarCampoExistenteBanco(string atributo, string campo)
     {
-        bool retorno = false;
-        if (conexao_SQL.State == ConnectionState.Closed)
-            conexao_SQL.Open();
-
-        if (atributo.Equals("usuario"))
-            select = "SELECT * FROM tblCliente WHERE usuario = '" + campo + "'";
-        else if (atributo.Equals("email"))
-            select = "SELECT * FROM tblCliente WHERE email = '" + campo + "'";
-        else if (atributo.Equals("cpf"))
-            select = "SELECT * FROM tblCliente WHERE cpf = '" + campo + "'";
-
-        comando_SQL = new SqlCommand(select, conexao_SQL);
-        resposta = comando_SQL.ExecuteReader();
-        resposta.Read();
-        
-        if (resposta.HasRows)
+        using (SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao))
         {
-            resposta.Close();
-            conexao_SQL.Close();
-            return retorno = true;
-        }
-        else
-        {
-            resposta.Close();
-            conexao_SQL.Close();
-            return retorno = false;
-        }
+            bool retorno = false;
+            try
+            {
+                if (conexao_SQL.State == ConnectionState.Closed)
+                    conexao_SQL.Open();
+
+                if (atributo.Equals("usuario"))
+                    select = "SELECT * FROM tblCliente WHERE usuario = '" + campo + "'";
+                else if (atributo.Equals("email"))
+                    select = "SELECT * FROM tblCliente WHERE email = '" + campo + "'";
+                else if (atributo.Equals("cpf"))
+                    select = "SELECT * FROM tblCliente WHERE cpf = '" + campo + "'";
+
+                using (SqlCommand comando_SQL = new SqlCommand(select, conexao_SQL))
+                {
+                    using (SqlDataReader resposta = comando_SQL.ExecuteReader())
+                    {
+                        resposta.Read();
+                        if (resposta.HasRows)
+                        {
+                            resposta.Close();
+                            conexao_SQL.Close();
+                            return retorno = true;
+                        }
+                        else
+                        {
+                            resposta.Close();
+                            conexao_SQL.Close();
+                            return retorno = false;
+                        }
+
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                conexao_SQL.Close();
+                
+            }
+            return retorno;
+        }    
     }
+    
 
     public string retirarEspacos(string campo)
     {
@@ -92,13 +109,25 @@ public class Utilitarios
 
     public void inserirUsuario(string nome, string usu, string email, string cpf, string senha)
     {
-        if (conexao_SQL.State == ConnectionState.Closed)
-            conexao_SQL.Open();
+        using (SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao))
+        {
+            try
+            {
+                if (conexao_SQL.State == ConnectionState.Closed)
+                    conexao_SQL.Open();
 
-        string insert = $"INSERT INTO tblCliente (nome, usuario, senha, email, cpf) VALUES ('{nome}', '{usu}', '{senha}', '{email}', '{cpf}')";
-        comando_SQL = new SqlCommand(insert, conexao_SQL);
-        comando_SQL.ExecuteNonQuery();
-        conexao_SQL.Close();
+                string insert = $"INSERT INTO tblCliente (nome, usuario, senha, email, cpf) VALUES ('{nome}', '{usu}', '{senha}', '{email}', '{cpf}')";
+                using (comando_SQL = new SqlCommand(insert, conexao_SQL))
+                {
+                    comando_SQL.ExecuteNonQuery();
+                    conexao_SQL.Close();
+                }
+            }
+            catch
+            {
+                conexao_SQL.Close();
+            }
+        }
 
     }
 

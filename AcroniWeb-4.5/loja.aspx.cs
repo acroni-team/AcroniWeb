@@ -15,22 +15,29 @@ namespace AcroniWeb
         DataSet ds;
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
+            using (SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao))
             {
-                if (conexao_SQL.State != ConnectionState.Open)
-                    conexao_SQL.Open();
-                String select = "SELECT * FROM tblProdutosDaLoja";
-                SqlDataAdapter da = new SqlDataAdapter(select, conexao_SQL);
-                ds = new DataSet();
-                da.Fill(ds);
-                DataList1.DataSource = ds.Tables[0];
-                DataList1.DataBind();
+                try
+                {
+                    if (conexao_SQL.State != ConnectionState.Open)
+                        conexao_SQL.Open();
 
-                conexao_SQL.Close();
-            }
-            catch (Exception ex)
-            {
-                conexao_SQL.Close();
+                    String select = "SELECT * FROM tblProdutosDaLoja";
+                    using (SqlCommand comando_SQL = new SqlCommand(select, conexao_SQL))
+                    {
+                        using (SqlDataReader resposta = comando_SQL.ExecuteReader())
+                        {
+                            DataList1.DataSource = resposta[0];
+                            DataList1.DataBind();
+                            conexao_SQL.Close();
+                        }
+
+                    }    
+                }
+                catch (Exception ex)
+                {
+                    conexao_SQL.Close();
+                }
             }
         }
     }  
