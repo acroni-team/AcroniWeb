@@ -543,3 +543,25 @@ C:\Users\gusta\Documents\-- Minha Tralha\GitHub\asp\AcroniWeb-4.5\obj\Debug\Acro
 C:\Users\gusta\Documents\-- Minha Tralha\GitHub\asp\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
 C:\Users\gusta\Documents\-- Minha Tralha\GitHub\asp\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
 C:\Users\gusta\Documents\-- Minha Tralha\GitHub\asp\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\x64\libsass.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\LibSassHost.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\WebGrease.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\LibSassHost.xml
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+F:\Documentos\GitHub\asp\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
