@@ -26,6 +26,12 @@
             border: 0.15rem solid $cor-primaria;
         }
     }
+
+    &.dark {
+        background-color: #36393f;
+        border: 0.15rem solid #36393f;
+        color: #72767d;
+    }
 }
 
 
@@ -33,6 +39,12 @@ input {
     @include placeholderOpacity(1);
     @include placeholderColor($cinza-claro);
     @include placeholderTransition(opacity 200ms ease-in);
+
+    &.dark {
+        @include placeholderOpacity(1);
+        @include placeholderColor(#72767d);
+        @include placeholderTransition(opacity 200ms ease-in);
+    }
 }
 
 input:focus {

@@ -6,26 +6,30 @@
 //FUNDO
 
 .galeria-section {
-    background: #2d2e2f
+    background: #303339;
 }
 
-.left-galeria,.right-galeria{
+.left-galeria,.right-logado{
     background:transparent;
 }
 
 .left-galeria {
     width: 25%;
     background: #36393f;
+    position:fixed;
 }
-.right-galeria {
+.right-logado {
     width: 75%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    margin-left:25%;
 
-    img{
-        width:100px;
+    &.right-galeria {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    img {
+        width: 100px;
     }
 }
 
@@ -35,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120px;
+    height: 150px;
 
     div {
         width: 90px;
@@ -54,7 +58,7 @@
 }
 
 .perfil-cliente {
-    height: 210px;
+    height: 240px;
     background-color: #303339;
     text-align: center;
 
