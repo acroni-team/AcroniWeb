@@ -1,0 +1,41 @@
+// SCSS
+
+@import '../imports/todos';
+
+
+// Preload
+.preload {
+    position: absolute;
+    @include wh(100vh);
+    background-color: $cor-primaria;
+    z-index: 99999;
+    position:fixed;
+
+    &.completo {
+        animation: fadeIn 1s ease reverse forwards;
+        pointer-events: none;
+    }
+}
+
+
+
+.logo {
+    position: relative;
+    top: 50%;
+    width: 3.2em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    font-family: 'qanelas';
+    font-weight:$extra-bold;
+    color: lighten($texto, 10);
+}
+
+
+.animado {
+    animation: escrever 3.5s steps(6) 1s infinite normal both, piscaCursor 500ms steps(40) infinite normal;
+}

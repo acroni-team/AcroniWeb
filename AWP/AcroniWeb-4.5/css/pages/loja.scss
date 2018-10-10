@@ -1,0 +1,113 @@
+// SCSS
+
+@import '../imports/cor';
+
+//
+
+.titulo {
+    width:100%;
+    height:100px;
+}
+
+.grid {
+    padding: 20px 20px 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+   
+
+
+    li {
+        display: inline-block;
+        margin: 0;
+        padding: 20px;
+        text-align: left;
+        position: relative;
+        text-decoration: none;
+    }
+
+    figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        background-color: $cor-primaria;
+        cursor: pointer;
+
+        .img {
+            max-width: 100%;
+            display: block;
+            position: relative;
+            transition: transform 0.4s;
+        }
+
+        &:hover .img {
+            transform: translateY(-50px);
+        }
+
+        &:hover figcaption {
+            opacity: 1;
+            transform: translateY(0px);
+            transition: transform 0.4s, opacity 0.1s;
+        }
+    }
+
+    figcaption {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        background: #262626;
+        color: $texto;
+        opacity: 0;
+        height: 60px;
+        transform: translateY(100%);
+        transition: transform 0.4s, opacity 0.1s 0.3s;
+
+        .descricao {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        a {
+            text-align: center;
+            padding: 5px 10px;
+            border-radius: 2px;
+            display: inline-block;
+            background: #ed4e6e;
+            color: #fff;
+        }
+    }
+}
+
+
+
+.right-loja {
+    width:60%;
+    height:100%;
+    background-color:#6000FF;
+    float:left;
+    display:flex;
+    align-items:center;
+}
+
+.left-loja {
+    width:40%;
+    height:100%;
+    background-color:$cor-fundo;
+    float:left;
+}
+
+.fecha-janela {
+    position:absolute;
+    font-family:'qanelas';
+    font-size:30px;
+    right:15px;
+    cursor:pointer;
+}
+
+.img-grande {
+    width:100%;
+}

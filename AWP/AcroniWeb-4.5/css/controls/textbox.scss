@@ -1,0 +1,92 @@
+// SCSS
+@import '../imports/todos';
+
+
+//TEXTBOX
+
+.textbox {
+    outline: none;
+    border: 0.15rem solid #dfdfdf;
+    border-radius: 5px;
+    text-indent: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 17px;
+    color: #333;
+    width: 100%;
+    transition: 0.3s ease-in;
+    margin-top: 15px;
+    background-color: #dfdfdf;
+    box-sizing: border-box;
+    font-weight: $normal;
+    caret-color: $cor-primaria;
+
+    &.focus {
+        &:focus {
+            border: 0.15rem solid $cor-primaria;
+        }
+    }
+
+    &.dark {
+        background-color: #36393f;
+        border: 0.15rem solid #36393f;
+        color: #72767d;
+    }
+}
+
+
+input {
+    @include placeholderOpacity(1);
+    @include placeholderColor($cinza-claro);
+    @include placeholderTransition(opacity 200ms ease-in);
+
+    &.dark {
+        @include placeholderOpacity(1);
+        @include placeholderColor(#72767d);
+        @include placeholderTransition(opacity 200ms ease-in);
+    }
+}
+
+input:focus {
+    @include placeholderOpacity(0);
+}
+
+.textbox::-webkit-input-placeholder {
+    transition: 0.2s ease-in;
+    color: rgba($cinza, 0.60);
+}
+
+.textbox-type2-overflow {
+    overflow: hidden;
+    background-color: $texto;
+    /*@include transition(border-width 0.2s ease-in-out);
+    border: 0rem solid $cor-primaria;
+
+    &:focus-within {
+        border: 0.15rem solid $cor-primaria;
+    }*/
+}
+/*inputs e botao */
+.textbox-type2 {
+    border-radius: 0;
+    margin: 0;
+    color: $cinza;
+    height: 100%;
+    border: none;
+    caret-color: $cor-primaria;
+    font-weight: $normal;
+    background: transparent;
+
+    &:focus {
+        .textbox-type2-overflow {
+            border: 0.15rem solid $cor-primaria;
+        }
+    }
+}
+
+
+
+.textbox-type2::-webkit-input-placeholder, .textbox-type2:-ms-input-placeholder, .textbox-type2::-moz-input-placeholder {
+    color: $cinza-claro;
+    font-weight: $semi-bold;
+}

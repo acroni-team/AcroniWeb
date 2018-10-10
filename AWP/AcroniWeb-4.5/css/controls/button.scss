@@ -1,0 +1,121 @@
+
+@import '../imports/cor';
+@import '../imports/fontes';
+
+/* Buttons */
+    .button {
+        font-size: 15px;
+        text-align: center;
+        float: left;
+        border: 2px solid $cor-primaria;
+        border-radius: 5px;
+        color: $cor-primaria;
+        margin: 5px;
+        margin-top: 40px;
+        width: 165px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        transition: background-color 300ms ease;
+        background-color: transparent;
+        cursor:pointer;
+        font-size:17px;
+
+        &.dark {
+            border: 2px solid $cor-primaria;
+            color: $texto;
+            background-color: $cor-primaria;
+        }
+        
+    }
+
+.button-hover {
+    &:hover {
+        color: $texto;
+        background-color: $cor-primaria;
+        transform: translateY(0px);
+        cursor: pointer;
+
+        h3 {
+            color: $texto;
+        }
+    }
+
+    &.dark {
+        &:hover {
+            color: $cor-primaria;
+            background-color: transparent;
+            transform: translateY(0px);
+            cursor: pointer;
+
+            h3 {
+                color: $texto;
+            }
+        }
+    }
+}
+
+
+.button-type2 {
+    border: none;
+    float: left;
+    align-self: center;
+    margin-left: 10px;
+    height: 100%;
+    padding-left: 22px;
+    padding-right: 22px;
+    pointer-events: all;
+    right: 0;
+    margin: 0;
+    border-radius: 0;
+    font-weight: $semi-bold;
+
+}
+
+
+
+/* Loader */
+
+.lds-ellipsis {
+    display: inline-block;
+    position: absolute;
+    top: 116px;
+    left: 535px;
+    width: 64px;
+    height: 64px;
+    pointer-events: none;
+    opacity: 0;
+    &.lds-login{
+        top:290px;
+        left:170px;
+    }
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+}

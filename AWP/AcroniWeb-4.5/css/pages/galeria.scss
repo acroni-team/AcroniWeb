@@ -1,0 +1,126 @@
+// SCSS
+
+@import '../imports/todos';
+
+
+//FUNDO
+
+.galeria-section {
+    background: #303339;
+}
+
+.left-galeria,.right-logado{
+    background:transparent;
+}
+
+.left-galeria {
+    width: 25%;
+    background: #36393f;
+    position:fixed;
+}
+.right-logado {
+    width: 75%;
+    margin-left:25%;
+
+    &.right-galeria {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        width: 100px;
+    }
+}
+
+//PERFIL DO CLIENTE
+
+.profile-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+
+    div {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid #6d7178;
+
+        img {
+            width: 120px;
+            margin-left: -15px;
+            margin-top: -15px;
+        }
+    }
+
+}
+
+.perfil-cliente {
+    height: 240px;
+    background-color: #303339;
+    text-align: center;
+
+    .line {
+        background-color: #72767d;
+        width: 90%;
+        height: 5px;
+    }
+}
+
+
+.profile-settings {
+    .user-name {
+        font-weight: $semi-bold;
+        color: $texto;
+        font-size: 18px;
+    }
+
+    .user-plan {
+        color: #4f5259;
+        font-size: 12px;
+        position: relative;
+        top: -7px;
+    }
+
+    .user-mb {
+        top: -5px;
+        font-size: 10px;
+    }
+}
+
+
+// MENU
+
+.menu-lateral {
+    ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0px;
+        margin: 0;
+        padding-top: 60px;
+
+        li {
+            margin-bottom: 20px;
+
+            a {
+                color: $texto;
+                font-size: 20px;
+                padding: 6px;
+                padding-left: 60px;
+                padding-right: 60px;
+                border-radius: 5px;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: #303339;
+                }
+
+                &.active {
+                    background-color: #303339;
+                }
+            }
+        }
+    }
+}
