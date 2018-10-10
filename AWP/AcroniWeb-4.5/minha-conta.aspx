@@ -28,9 +28,9 @@
                 <div id="foto-pricing-conteudo">
                     <div class="foto">
                         <figure>
-                            <figcaption>
+                            <figcaption class="uploadaimg">
                                 <asp:FileUpload ID="FileUpload1" CssClass="upload-imagem" onchange="loadFile(event);" runat="server" accept="image/*"/>
-                                <label for="ContentPlaceHolder1_FileUpload1">ALTERAR</label>
+                                <label class="alteraimg" "ContentPlaceHolder1_FileUpload1">ALTERAR</label>
 
                             </figcaption>
                             <asp:Image ID="fotoPerfil" runat="server" ImageUrl='img/imgperf.jpeg'/>

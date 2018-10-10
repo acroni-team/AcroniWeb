@@ -9,3 +9,10 @@
         //Mensagem de erro pq n ser imagem (popup)
     }
 };
+
+
+$(".uploadaimg").click(function () {
+    $(".upload-imagem").click();
+
+
+});
