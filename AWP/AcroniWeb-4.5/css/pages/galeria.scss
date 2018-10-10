@@ -6,7 +6,7 @@
 //FUNDO
 
 .galeria-section {
-    background: #303339;
+    background: #2d2e2f;
 }
 
 .left-galeria,.right-logado{
@@ -31,6 +31,10 @@
     img {
         width: 100px;
     }
+}
+
+.galeria-status{
+    position:absolute;
 }
 
 //PERFIL DO CLIENTE

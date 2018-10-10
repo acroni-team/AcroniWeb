@@ -30,7 +30,7 @@
     &.dark {
         background-color: #36393f;
         border: 0.15rem solid #36393f;
-        color: #72767d;
+        color: $texto;
     }
 }
 
@@ -89,4 +89,13 @@ input:focus {
 .textbox-type2::-webkit-input-placeholder, .textbox-type2:-ms-input-placeholder, .textbox-type2::-moz-input-placeholder {
     color: $cinza-claro;
     font-weight: $semi-bold;
+}
+
+.textbox-overflow {
+    background-color: #36393f;
+    color: #72767d;
+    border-radius:5px;
+    position:relative;
+    padding:0;
+
 }

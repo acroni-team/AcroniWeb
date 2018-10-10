@@ -16,12 +16,12 @@ namespace AcroniWeb_4._5
         {
             List<string> campos = new List<string>();
             campos = sql.selectCampos("nome, cpf, cep, email, usuario, senha", "tblCliente", "usuario = '" + Session["usuario"] + "'");
-            Nome.Text = campos[0];
-            CPF.Text = campos[1];
-            CEP.Text = campos[2];
-            Email.Text = campos[3];
-            Usuario.Text = campos[4];
-            Senha.Text = campos[5];
+            Nome.Attributes["placeholder"] = campos[0];
+            CPF.Attributes["placeholder"] = campos[1];
+            CEP.Attributes["placeholder"] = campos[2];
+            Email.Attributes["placeholder"] = campos[3];
+            Usuario.Attributes["placeholder"] = campos[4];
+            Senha.Attributes["placeholder"] = campos[5];
         }
 
         protected void btnSalva_Click(object sender, EventArgs e)

@@ -38,7 +38,7 @@
                     <div>
                         <figure class="profile-wraper">
                             <div>
-                                <asp:Image ID="profilePicture" class="profile-picture" runat="server"  ImageUrl='' />
+                                <asp:Image ID="profilePicture" class="profile-picture" runat="server"  ImageUrl='img/imgperf.jpeg' />
                             </div>
                         </figure>
                         <figcaption class="profile-settings">

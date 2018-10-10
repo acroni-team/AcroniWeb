@@ -11,15 +11,33 @@
             <div class="minha-conta-forms">
                 <div id="informacoes-basicas">
                     <h1> Informações básicas </h1>
-                    <asp:TextBox ID="Nome" runat="server" class="textbox focus dark"></asp:TextBox>
-                    <asp:TextBox ID="CPF" runat="server" class="textbox focus dark"></asp:TextBox>
-                    <asp:TextBox ID="CEP" runat="server" class="textbox focus dark"></asp:TextBox>
+                    <div class="textbox-overflow">
+                        <asp:TextBox ID="Nome" runat="server" class="textbox focus dark"></asp:TextBox>
+                        <p>Nome</p>
+                    </div>
+                    <div class="textbox-overflow">
+                        <asp:TextBox ID="CPF" runat="server" class="textbox focus dark"></asp:TextBox>
+                        <p>CPF</p>
+                    </div>
+                    <div class="textbox-overflow">
+                        <asp:TextBox ID="CEP" runat="server" class="textbox focus dark"></asp:TextBox>
+                        <p>CEP</p>
+                    </div>
                 </div>  
                 <div id="credenciais">
                      <h1> Credenciais </h1>
-                    <asp:TextBox ID="Email" runat="server" class="textbox focus dark"></asp:TextBox>
-                    <asp:TextBox ID="Usuario" runat="server" class="textbox focus dark"></asp:TextBox>
-                    <asp:TextBox ID="Senha" runat="server" class="textbox focus dark"></asp:TextBox>
+                    <div class="textbox-overflow">
+                        <asp:TextBox ID="Email" runat="server" class="textbox focus dark"></asp:TextBox>
+                         <p>E-mail</p>
+                    </div>
+                     <div class="textbox-overflow">
+                        <asp:TextBox ID="Usuario" runat="server" class="textbox focus dark"></asp:TextBox>
+                         <p>Usuário</p>
+                    </div>
+                    <div class="textbox-overflow">
+                        <asp:TextBox ID="Senha" runat="server" class="textbox focus dark"></asp:TextBox>
+                         <p>Senha</p>
+                    </div>
                 </div> 
             </div>
             <div class="separa"></div>
@@ -37,10 +55,8 @@
                         </figure>
                      </div>
                     <div class="plano">
-                        <div class="nome-plano">
-                            <p>Você está usando o seguinte plano:</p>
-                            <h1>Básico</h1>
-                        </div>
+                        <p>Você está usando o seguinte plano:</p>
+                        <h1>Básico</h1>
                         <div class="info-plano">
                             <ul>
                                 <li>Coleções ilimitadas;</li>
@@ -49,12 +65,12 @@
                                 <li>Customização basica</li>
                            </ul>
                        </div>
-                        
+                        <asp:Button ID="btnAlteraPlano" runat="server" Text="Alterar Plano" class="button-alt dark minha-conta" OnClick="btnSalva_Click" />
                     </div>
                     
                 </div>
             </div> 
-            <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button dark" OnClick="btnSalva_Click" />
+            <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button dark minha-conta" OnClick="btnSalva_Click" />
         </div>    
      </div>      
      <script>

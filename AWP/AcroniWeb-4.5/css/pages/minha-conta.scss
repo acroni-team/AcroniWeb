@@ -25,8 +25,11 @@
 
 //INFORMAÇÕES BÁSICAS E CREDENCIAIS
 
+
 .right-minha-conta {
-    background-color: #303339;
+    background-color: #30333a;
+    height:auto;
+    min-height:100vh;
 }
 
 #informacoes-basicas, #credenciais, #foto-pricing {
@@ -34,7 +37,12 @@
         width: auto;
         font-size: 17px;
         font-weight: $semi-bold;
+        margin-bottom: 12px;
     }
+}
+
+#credenciais{
+    margin-top:35px;
 }
 
 #informacoes-basicas, #credenciais {
@@ -50,7 +58,7 @@
 }
 
 #foto-pricing-conteudo {
-    height: 504px;
+    height: 484px;
     background-color: #36393f;
     border-radius: 15px;
     width: 400px;
@@ -66,19 +74,20 @@
             background-color: #303339;
             border-radius: 50%;
             overflow: hidden;
-            width: 200px;
-            height: 200px;
+            width: 190px;
+            height: 190px;
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
 
             img {
                 width: 120%;
             }
 
             figcaption {
-                width: 200px;
-                height: 200px;
+                width: 100%;
+                height: 100%;
                 border-radius: 50%;
                 overflow: hidden;
                 position: absolute;
@@ -96,15 +105,20 @@
                 }
 
                 .upload-imagem {
-                    width: 200px;
-                    height: 200px;
+                    /* width: 0.1px;
+                    height: 0.1px;
+                    opacity: 0;
+                    overflow: hidden;
+                    position: absolute;
+                    z-index:-1;*/
+                    width: 100%;
+                    height: 100%;
                     border-radius: 50%;
                     overflow: hidden;
                     position: absolute;
                     cursor: pointer;
                     background-color: rgba(0, 0, 0, 0.2);
-                   opacity:0;
-                   
+                    opacity: 0;
                 }
             }
         }
@@ -113,21 +127,63 @@
     .plano {
         font-weight: $semi-bold;
         color: #72767d;
-
-        .nome-plano {
-            text-align: center;
-            font-size: 15px;
-            margin-bottom: 20px;
-        }
+        text-align:center;
 
         .info-plano {
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align:justify;
 
             ul {
                 font-size: 14px;
             }
         }
+    }
+}
+
+
+//TEXTBOX
+
+.textbox-overflow {
+    font-weight: $semi-bold;
+    margin-bottom:10px;
+
+    p {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 13px;
+        transition: opacity 200ms ease-in;
+    }
+
+    .textbox {
+        margin-top: 0;
+        padding-top: 20px;
+        padding-bottom: 14px;
+        font-weight: $semi-bold;
+
+        &:focus {
+            padding-top: 17px;
+            padding-bottom: 17px;
+            
+        }
+
+        &:focus + p {
+            opacity: 0;
+        }
+    }
+}
+
+//BUTTON
+
+.button {
+    &.minha-conta {
+        margin-left: 235px;
+        margin-bottom: 30px;
+        border-radius: 3px;
+        background-color: #222428;
+        transition: 300ms ease;
+        border: none;
     }
 }
