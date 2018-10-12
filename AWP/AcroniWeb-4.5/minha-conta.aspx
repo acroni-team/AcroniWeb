@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/logado.Master" AutoEventWireup="true" CodeBehind="minha-conta.aspx.cs" Inherits="AcroniWeb_4._5.editar_conta" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/logado.js"></script>
+    <script src="js/uploadImagem.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="right right-logado right-minha-conta">
@@ -14,7 +13,7 @@
                     <h1> Informações básicas </h1>
                     <div class="textbox-overflow">
                         <asp:TextBox ID="Nome" runat="server" class="textbox focus dark"></asp:TextBox>
-                        <p>Nome completo</p>
+                        <p>Nome</p>
                     </div>
                     <div class="textbox-overflow">
                         <asp:TextBox ID="CPF" runat="server" class="textbox focus dark"></asp:TextBox>
@@ -50,6 +49,7 @@
                             <figcaption class="uploadaimg">
                                 <asp:FileUpload ID="FileUpload1" CssClass="upload-imagem" onchange="loadFile(event);" runat="server" accept="image/*"/>
                                 <label class="alteraimg" "ContentPlaceHolder1_FileUpload1">ALTERAR</label>
+
                             </figcaption>
                             <asp:Image ID="fotoPerfil" runat="server" ImageUrl='img/imgperf.jpeg'/>
                         </figure>
@@ -65,12 +65,12 @@
                                 <li>Customização basica</li>
                            </ul>
                        </div>
-                        <asp:Button ID="btnAlteraPlano" ng-class="enabled ? ''" runat="server" Text="Alterar Plano" class="button-alt dark minha-conta" OnClick="btnSalva_Click" />
+                        <asp:Button ID="btnAlteraPlano" runat="server" Text="Alterar Plano" class="button-alt dark minha-conta" OnClick="btnSalva_Click" />
                     </div>
                     
                 </div>
             </div> 
-            <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button dark minha-conta disabled" OnClick="btnSalva_Click" disabled/>
+            <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button dark minha-conta" OnClick="btnSalva_Click" />
         </div>    
      </div>      
      <script>

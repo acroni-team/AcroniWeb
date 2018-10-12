@@ -13,7 +13,8 @@ namespace AcroniWeb_4._5
 {
     public partial class galeria : System.Web.UI.Page
     {
-
+        
+        DataSet ds;
         protected void Page_Load(object sender, EventArgs e)
         {
             using (SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao))

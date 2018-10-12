@@ -90,7 +90,7 @@ public class Valida
     {
         bool retorno = false;
         Regex rgx = new Regex("[0-9]{5}-[0-9]{3}");
-        if (cep.Length < 8)
+        if (cep.Length < 9)
         {
             return retorno = false;
         }
