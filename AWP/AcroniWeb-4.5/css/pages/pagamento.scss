@@ -73,6 +73,8 @@
 
 .right-pagamento-cc {
     background-color: #30333a;
+    min-height: 100vh;
+    height: auto;
 }
 
 .align {
@@ -87,13 +89,35 @@
             width: 450px;
             height: 350px;
             background: url("../../img/pagamento/card.png") no-repeat;
-            background-size:100%;
+            background-size: 100%;
+        }
+    }
+
+    &.align-align {
+        display: flex;
+        justify-content: center;
+    }
+
+    &.align-card-form {
+        display: flex;
+        background-color: #30333a;
+        text-align: start;
+        flex-wrap: wrap;
+        /* align-content: center; */
+        /* justify-content: center; */
+        width: 954px;
+
+        .overflow-type3 {
+            font-weight: $semi-bold;
+            margin-bottom: 10px;
+            width: 467px;
+            margin: 5px;
         }
     }
 }
 
 .card-form {
     display: flex;
-    flex-wrap: wrap;
-    
+    padding: 50px 30px 40px 30px;
+
 }
