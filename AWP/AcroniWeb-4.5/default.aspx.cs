@@ -23,15 +23,12 @@ namespace AcroniWeb
         protected void Page_Load(object sender, EventArgs e)
         {
             Session["logado"] = "0";
-
-            HttpCookie cookie = Request.Cookies["credenciais"];
-            if (cookie != null)
+                       
+            if (Request.Cookies["credenciais"] != null)
             {
-                string[] valores = cookie.Value.ToString().Split('&');
-
-                if (sql.selectHasRows("*", "tblCliente", "usuario='" + valores[0].Replace("usuario=", "") + "' AND senha='" + valores[1].Replace("senha=", "") + "'"))
+                if (sql.selectHasRows("*", "tblCliente", "usuario='" + Request.Cookies["credenciais"]["usuario"] + "' AND senha='" + Request.Cookies["credenciais"]["senha"] + "'"))
                 {
-                    Session["usuario"] = valores[0].Replace("usuario=", "");
+                    Session["usuario"] = Request.Cookies["credenciais"]["usuario"];
                     Session["logado"] = "1";
                     Response.Redirect("galeria.aspx");
                 }
@@ -59,16 +56,11 @@ namespace AcroniWeb
                             Session["usuario"] = txtUsu.Text;
                             if (ckbLogin.Checked)
                             {
-                                HttpCookie cookie = Request.Cookies["credenciais"];
-                                if (cookie == null)
-                                {
-                                    cookie = new HttpCookie("credenciais");
-                                    cookie.Values.Add("usuario", txtUsu.Text);
-                                    cookie.Values.Add("senha", txtPass.Text);
-                                    cookie.Expires = DateTime.Now.AddDays(365);
-                                    cookie.HttpOnly = true;
-                                    this.Page.Response.AppendCookie(cookie);
-                                }
+                                HttpCookie cookie = new HttpCookie("credenciais");
+                                cookie.Values["usuario"] =  txtUsu.Text;
+                                cookie.Values["senha"] = txtPass.Text;
+                                cookie.Expires = DateTime.Now.AddDays(365);
+                                Response.Cookies.Add(cookie);
                             }
                             Response.Redirect("galeria.aspx");
                             txtPass.Attributes.Add("style", "border-color:#0093ff");
@@ -179,7 +171,7 @@ namespace AcroniWeb
             }
             else if (txtSenha.Text.Equals(txtCSenha.Text))
             {
-                sql.update("senha", "tblCliente", "email = '" + Session["email"] + "'", txtSenha.Text);
+                sql.update("tblCliente", "email = '" + Session["email"] + "'", "senha = '"+txtSenha.Text+"'");
                 Response.Redirect("default.aspx");
             }
             else

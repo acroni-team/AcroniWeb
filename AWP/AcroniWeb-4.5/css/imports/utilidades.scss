@@ -41,24 +41,6 @@
     }
 }
 
-@mixin placeholderTransform($value,$value2) {
-    &:-moz-placeholder {
-        transform: translateY($value) scale($value2);
-    }
-
-    &:-ms-input-placeholder {
-        transform: translateY($value) scale($value2);
-    }
-
-    &::-webkit-input-placeholder {
-        transform: translateY($value) scale($value2);
-    }
-
-    &::-moz-placeholder {
-        transform: translateY($value) scale($value2);
-    }
-}
-
 @mixin placeholderTransition($transition) {
     &:-moz-placeholder {
         @include transition($transition);
