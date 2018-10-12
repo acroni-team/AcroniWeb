@@ -31,7 +31,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body ng-app="myApp">
+<body>
     <form id="form1" runat="server">
         <section class="galeria-section">
             <div class="left left-galeria">

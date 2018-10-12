@@ -114,7 +114,7 @@
     <Content Include="img\pagamento\cc.png" />
     <Content Include="img\pagamento\cd.png" />
     <Content Include="img\pagamento\dc.png" />
-    <Content Include="js\uploadImagem.js" />
+    <Content Include="js\logado.js" />
     <Content Include="minha-conta.aspx" />
     <Content Include="galeria.aspx" />
     <Content Include="img\apple.jpg" />
