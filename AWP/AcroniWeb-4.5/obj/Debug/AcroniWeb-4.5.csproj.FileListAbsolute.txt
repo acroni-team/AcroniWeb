@@ -631,3 +631,25 @@ C:\Users\gusta\Documents\-- Minha Tralha\GitHub\asp\AWP\AcroniWeb-4.5\obj\Debug\
 C:\Users\gusta\Documents\-- Minha Tralha\GitHub\asp\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
 C:\Users\gusta\Documents\-- Minha Tralha\GitHub\asp\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
 C:\Users\gusta\Documents\-- Minha Tralha\GitHub\asp\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\x64\libsass.dll
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\LibSassHost.dll
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\WebGrease.dll
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\LibSassHost.xml
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+C:\Users\gusta\Desktop\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb

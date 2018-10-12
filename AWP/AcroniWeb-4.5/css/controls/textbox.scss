@@ -52,7 +52,6 @@ input:focus {
 }
 
 .textbox::-webkit-input-placeholder {
-    transition: 0.2s ease-in;
     color: rgba($cinza, 0.60);
 }
 
@@ -94,8 +93,35 @@ input:focus {
 .textbox-overflow {
     background-color: #36393f;
     color: #72767d;
-    border-radius:5px;
-    position:relative;
-    padding:0;
+    border-radius: 5px;
+    position: relative;
+    padding: 0;
 
+
+    &.overflow-type3 {
+        p {
+            top: 17px;
+            font-size: 17px;
+            transition: transform 200ms ease-in;
+
+            &.stay {
+                transform: translate(-7px,-12px) scale(0.7);
+            }
+        }
+
+        .textbox-type3 {
+            padding-top: 20px;
+            padding-bottom: 14px;
+
+            &:focus {
+                padding-top: 20px;
+                padding-bottom: 14px;
+            }
+
+            &:focus + p {
+                transform: translate(-7px,-12px) scale(0.7);
+                opacity: 1;
+            }
+        }
+    }
 }

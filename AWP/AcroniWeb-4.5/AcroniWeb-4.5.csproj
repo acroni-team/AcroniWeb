@@ -110,6 +110,10 @@
     <None Include="css\base.scss" />
     <Content Include="css\area-restrita.css" />
     <Content Include="default.aspx" />
+    <Content Include="img\pagamento\card.png" />
+    <Content Include="img\pagamento\cc.png" />
+    <Content Include="img\pagamento\cd.png" />
+    <Content Include="img\pagamento\dc.png" />
     <Content Include="js\uploadImagem.js" />
     <Content Include="minha-conta.aspx" />
     <Content Include="galeria.aspx" />
@@ -150,6 +154,8 @@
     <Content Include="js\transition.js" />
     <Content Include="js\verificaSenha.js" />
     <Content Include="loja.aspx" />
+    <Content Include="pagamento-cc.aspx" />
+    <Content Include="pagamento.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -213,6 +219,20 @@
     <Compile Include="loja.aspx.designer.cs">
       <DependentUpon>loja.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pagamento-cc.aspx.cs">
+      <DependentUpon>pagamento-cc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagamento-cc.aspx.designer.cs">
+      <DependentUpon>pagamento-cc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagamento.aspx.cs">
+      <DependentUpon>pagamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagamento.aspx.designer.cs">
+      <DependentUpon>pagamento.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -240,6 +260,7 @@
     <Content Include="fontes\qanelas\Qanelas-Thin.ttf" />
     <Content Include="fontes\qanelas\Qanelas-UltraLight.ttf" />
     <Content Include="logado.Master" />
+    <Content Include="css\pages\pagamento.scss" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

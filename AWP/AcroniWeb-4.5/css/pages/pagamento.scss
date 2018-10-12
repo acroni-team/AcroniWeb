@@ -1,0 +1,99 @@
+﻿// SCSS
+
+@import '../imports/todos';
+
+
+//alinha
+
+.right-pagamento{
+    display:flex;
+    align-items:center;
+    
+}
+
+//CABECALHO
+
+.pagamento-cabecalho {
+    text-align: center;
+    font-weight: $semi-bold;
+    margin-bottom: 50px;
+
+    h1 {
+        width: 100%;
+        font-size: 25px;
+        font-weight: $semi-bold;
+    }
+
+    p {
+        font-size: 20px;
+        color: #72767d;
+        font-weight: $semi-bold;
+    }
+}
+
+//CONTAINERS
+
+.formas-pagamento {
+    text-align: center;
+    padding: 10px 30px 15px 30px;
+
+    .container-logado {
+        font-weight: $semi-bold;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        border-width: 15px 2px 2px 2px;
+        border-color: #72767d;
+        border-style: solid;
+        max-width: 800px;
+        height: 100px;
+        display: flex;
+
+        img {
+            float: left;
+            width: 300px;
+            margin: 10px 10px 10px 15px;
+        }
+
+        .debitoConta {
+            width: 230px;
+        }
+
+        p {
+            font-size: 20px;
+            color: $texto;
+            float: left;
+            align-self: center;
+            margin-right: 40px;
+        }
+    }
+}
+
+
+//CARTAO DE CREDITO
+
+.right-pagamento-cc {
+    background-color: #30333a;
+}
+
+.align {
+    background-color: #292b31;
+
+    &.align-cc {
+        height: 350px;
+        display: flex;
+        align-items: center;
+
+        .card {
+            width: 450px;
+            height: 350px;
+            background: url("../../img/pagamento/card.png") no-repeat;
+            background-size:100%;
+        }
+    }
+}
+
+.card-form {
+    display: flex;
+    flex-wrap: wrap;
+    
+}

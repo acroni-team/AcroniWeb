@@ -2,6 +2,40 @@
 
 @import '../imports/todos';
 
+//CABECALHO
+
+
+.cabecalho {
+    background-color: #36393f;
+    width: 100%;
+    height: 60px;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.cabecalho-cc {
+        height: 100px;
+        background-color: #363940;
+
+
+        h1 {
+            width: 100%;
+            font-size: 20px;
+            font-weight: $semi-bold;
+        }
+
+        p {  
+            color: #72767d;
+            font-size: 13px;
+            font-weight: $semi-bold;
+        }
+
+        img{
+            width:200px;
+        }
+    }
+}
 
 //FUNDO
 
@@ -98,33 +132,27 @@
 // MENU
 
 .menu-lateral {
-    ul {
-        list-style-type: none;
-        text-align: center;
-        padding: 0px;
-        margin: 0;
-        padding-top: 60px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    padding-top:70px;
 
-        li {
-            margin-bottom: 20px;
+    a {
+        margin-bottom:15px;
+        color: $texto;
+        font-size: 19px;
+        padding: 6px;
+        border-radius: 5px;
+        text-decoration: none;
+        width:70%;
 
-            a {
-                color: $texto;
-                font-size: 20px;
-                padding: 6px;
-                padding-left: 60px;
-                padding-right: 60px;
-                border-radius: 5px;
-                text-decoration: none;
+        &:hover {
+            background-color: #303339;
+        }
 
-                &:hover {
-                    background-color: #303339;
-                }
-
-                &.active {
-                    background-color: #303339;
-                }
-            }
+        &.active {
+            background-color: #303339;
         }
     }
 }
+
