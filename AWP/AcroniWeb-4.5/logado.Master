@@ -56,7 +56,7 @@
                     <ul>
                    <li><a id="galeria" href="galeria.aspx">Minha galeria</a></li>
                    <li><a id="minha-conta" href="minha-conta.aspx">Editar minha conta</a></li>
-                   <li><a>Customizar por código</a></li>
+                   <li><a id="pagamento" href="pagamento.aspx">Pagamento</a></li>
                    <li><asp:LinkButton ID="deslogar" runat="server" OnClick="deslogar_Click">Sair</asp:LinkButton></li>
                     </ul>
                 </div>
