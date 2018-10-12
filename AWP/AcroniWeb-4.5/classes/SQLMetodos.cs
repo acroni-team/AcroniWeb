@@ -45,7 +45,7 @@ public class SQLMetodos
 
     public void updateImagem(byte[] imgBytes, string tabela, string condicao)
     {
-        string update = "UPDATE " + tabela + " SET imagem = (@image) WHERE "+condicao;
+        string update = "UPDATE " + tabela + " SET imagem_cliente = (@image) WHERE "+condicao;
         using (SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao))
         {
             if (conexao_SQL.State == ConnectionState.Closed)

@@ -28,7 +28,7 @@ namespace AcroniWeb_4._5
                 {
                     if (conexao_SQL.State != ConnectionState.Open)
                         conexao_SQL.Open();
-                    String select = "SELECT imagem FROM tblCliente where usuario = '" + Session["usuario"] + "'";
+                    String select = "SELECT imagem_cliente FROM tblCliente where usuario = '" + Session["usuario"] + "'";
                     using (SqlCommand comando_sql = new SqlCommand(select, conexao_SQL))
                     {
                         using (SqlDataReader tabela = comando_sql.ExecuteReader())

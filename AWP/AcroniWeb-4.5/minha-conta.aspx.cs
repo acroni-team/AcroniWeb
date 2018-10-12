@@ -20,25 +20,33 @@ namespace AcroniWeb_4._5
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string urlFotoPerfil;
+            string urlFotoPerfil = "";
             List<string> campos = new List<string>();
             if (Session["usuarioNovo"] != null)
             {
                 campos = sql.selectCampos("nome, cpf, cep, email, usuario, senha", "tblCliente", "usuario = '" + Session["usuarioNovo"] + "'");
-                urlFotoPerfil = Convert.ToBase64String((byte[])sql.selectImagem("imagem", "tblCliente", "usuario = '" + Session["usuarioNovo"] + "'"));
+                object imgObj = sql.selectImagem("imagem_cliente", "tblCliente", "usuario = '" + Session["usuarioNovo"] + "'");
+                if(!object.ReferenceEquals(null, imgObj))
+                    urlFotoPerfil = Convert.ToBase64String((byte[])imgObj);
             }
             else
             {
                 campos = sql.selectCampos("nome, cpf, cep, email, usuario, senha", "tblCliente", "usuario = '" + Session["usuario"] + "'");
-                urlFotoPerfil = Convert.ToBase64String((byte[])sql.selectImagem("imagem", "tblCliente", "usuario = '" + Session["usuario"] + "'"));
+                object imgObj = sql.selectImagem("imagem_cliente", "tblCliente", "usuario = '" + Session["usuario"] + "'");
+                if (!object.ReferenceEquals(null, imgObj))
+                    urlFotoPerfil = Convert.ToBase64String((byte[])imgObj);
             }
+
             Nome.Attributes["placeholder"] = campos[0];
             CPF.Attributes["placeholder"] = campos[1];
             CEP.Attributes["placeholder"] = campos[2];
             Email.Attributes["placeholder"] = campos[3];
             Usuario.Attributes["placeholder"] = campos[4];
             Senha.Attributes["placeholder"] = campos[5];
-            fotoPerfil.ImageUrl = "data:image/jpg;base64," + urlFotoPerfil;
+            if (urlFotoPerfil == "")
+                fotoPerfil.ImageUrl = "img/imgperf.jpeg";
+            else
+                fotoPerfil.ImageUrl = "data:image/jpg;base64," + urlFotoPerfil;
         }
 
         protected void btnSalva_Click(object sender, EventArgs e)

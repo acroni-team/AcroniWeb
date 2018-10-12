@@ -29,12 +29,12 @@ $(document).ready(function () {
             $('.upload-imagem').val() != "") {
             $('.button.dark.minha-conta').removeAttr('disabled');
             $('.button.dark.minha-conta').removeClass('disabled');
-            $('.button.dark.minha-conta').text('Salvar');
+            $('.button.dark.minha-conta').attr('value','Salvar');
         }
         else {
             $('.button.dark.minha-conta').attr('disabled');
             $('.button.dark.minha-conta').addClass('disabled');
-            $('.button.dark.minha-conta').text('Salvo');
+            $('.button.dark.minha-conta').attr('value','Salvo');
         }
 
     });

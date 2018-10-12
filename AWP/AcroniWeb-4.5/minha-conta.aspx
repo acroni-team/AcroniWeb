@@ -51,7 +51,7 @@
                                 <asp:FileUpload ID="FileUpload1" CssClass="upload-imagem" onchange="loadFile(event);" runat="server" accept="image/*"/>
                                 <label class="alteraimg" "ContentPlaceHolder1_FileUpload1">ALTERAR</label>
                             </figcaption>
-                            <asp:Image ID="fotoPerfil" runat="server" ImageUrl='img/imgperf.jpeg'/>
+                            <asp:Image ID="fotoPerfil" runat="server" ImageUrl='img/imgperf.jpeg' ImageAlign="Middle"/>
                         </figure>
                      </div>
                     <div class="plano">

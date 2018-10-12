@@ -39,7 +39,7 @@
                     <div>
                         <figure class="profile-wraper">
                             <div>
-                                <asp:Image ID="profilePicture" class="profile-picture" runat="server"  ImageUrl='img/imgperf.jpeg' />
+                                <asp:Image ID="profilePicture" class="profile-picture" runat="server"  ImageUrl='img/imgperf.jpeg' ImageAlign="Middle" />
                             </div>
                         </figure>
                         <figcaption class="profile-settings">
