@@ -11,7 +11,6 @@ using System.Web;
 public class Utilitarios
 {
     SqlCommand comando_SQL;
-    SqlDataReader resposta;
     string select = "";
     public bool verificarCampoExistenteBanco(string atributo, string campo)
     {

@@ -16,6 +16,8 @@ namespace AcroniWeb_4._5
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["usuarioNovo"] != null)
+                Session["usuario"] = Session["usuarioNovo"];
             if (Session["logado"].ToString() != "1")
                 Response.Redirect("default.aspx");
             else
