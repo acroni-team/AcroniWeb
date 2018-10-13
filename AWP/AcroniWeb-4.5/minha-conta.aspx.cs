@@ -58,7 +58,7 @@ namespace AcroniWeb_4._5
             {
                 novosValores = "";
             }
-            else if (!(FileUpload1.PostedFile.ContentType == "image/jpeg" ||
+            else if (!(FileUpload1.PostedFile.ContentType == "image/jpg" ||
                        FileUpload1.PostedFile.ContentType == "image/png" ||
                        FileUpload1.PostedFile.ContentType == "image/bmp" ||
                        FileUpload1.PostedFile.ContentType == "image/tiff" ||

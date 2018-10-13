@@ -22,6 +22,11 @@ namespace AcroniWeb
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Environment.MachineName.Equals("PALMA-PC"))
+            {
+                acroni.classes.Conexao.param = "Data Source = " + Environment.MachineName + "; Initial Catalog = ACRONI_SQL; User ID = Acroni; Password = acroni7";
+                acroni.classes.Conexao.nome_conexao = "Data Source = " + Environment.MachineName + "; Initial Catalog = ACRONI_SQL; User ID = Acroni; Password = acroni7";
+            }
             Session["logado"] = "0";
                        
             if (Request.Cookies["credenciais"] != null)
