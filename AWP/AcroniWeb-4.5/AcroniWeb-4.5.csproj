@@ -261,6 +261,10 @@
     <Content Include="fontes\qanelas\Qanelas-UltraLight.ttf" />
     <Content Include="logado.Master" />
     <Content Include="css\pages\pagamento.scss" />
+    <Content Include="fontes\kredit\kredit back.ttf" />
+    <Content Include="fontes\kredit\kredit front.ttf" />
+    <Content Include="fontes\kredit\kredit shine.ttf" />
+    <Content Include="fontes\kredit\kredit.ttf" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

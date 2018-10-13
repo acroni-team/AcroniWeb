@@ -90,6 +90,45 @@
             height: 350px;
             background: url("../../img/pagamento/card.png") no-repeat;
             background-size: 100%;
+            position: relative;
+
+            p {
+                position: absolute;
+                font-family: 'kredit',sans-serif;
+                font-weight: $bold;
+                color: $texto;
+                text-shadow: -1px 1px 2px black;
+                letter-spacing: 3px;
+            }
+
+            p:nth-child(1) {
+                margin-top: 155px;
+                margin-left: 80px;
+                font-size: 25px;
+            }
+
+            p:nth-child(2) {
+                font-size: 17px;
+                float: left;
+                margin-top: 230px;
+                margin-left: 80px;
+                position: relative;
+            }
+
+            p:nth-child(3) {
+                margin-left: 10px;
+                font-size: 17px;
+                float: left;
+                margin-top: 230px;
+                position: relative;
+            }
+
+            p:nth-child(4) {
+                margin-top: 230px;
+                margin-left: 310px;
+                font-size: 17px;
+                float: left;
+            }
         }
     }
 

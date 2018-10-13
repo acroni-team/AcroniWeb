@@ -68,3 +68,21 @@ $extra-bold: 900;
     font-style: normal;
 }
 
+
+/* Kredit */
+
+
+@font-face {
+    font-family: 'kredit';
+    src: url('../fontes/kredit/kredit shine.ttf');
+    font-weight: $normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kredit';
+    src: url('../fontes/kredit/kredit back.ttf');
+    font-weight: $bold;
+    font-style: normal;
+
+}

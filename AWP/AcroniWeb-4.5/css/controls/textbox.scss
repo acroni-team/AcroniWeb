@@ -103,9 +103,11 @@ input:focus {
             top: 17px;
             font-size: 17px;
             transition: transform 200ms ease-in;
+            transform-origin: left;
 
             &.stay {
-                transform: translate(-7px,-12px) scale(0.7);
+                transform: translateY(-12px) scale(0.7);
+                transform-origin: left;
             }
         }
 
@@ -116,11 +118,11 @@ input:focus {
             &:focus {
                 padding-top: 20px;
                 padding-bottom: 14px;
-
             }
 
             &:focus + p {
-                transform: translate(-7px,-12px) scale(0.7);
+                transform: translateY(-12px) scale(0.7);
+                transform-origin: left;
                 opacity: 1;
             }
         }
