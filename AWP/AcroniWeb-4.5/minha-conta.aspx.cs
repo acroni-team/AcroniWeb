@@ -26,14 +26,14 @@ namespace AcroniWeb_4._5
             {
                 campos = sql.selectCampos("nome, cpf, cep, email, usuario, senha", "tblCliente", "usuario = '" + Session["usuarioNovo"] + "'");
                 object imgObj = sql.selectImagem("imagem_cliente", "tblCliente", "usuario = '" + Session["usuarioNovo"] + "'");
-                if(!object.ReferenceEquals(null, imgObj))
+                if(!(imgObj == System.DBNull.Value))
                     urlFotoPerfil = Convert.ToBase64String((byte[])imgObj);
             }
             else
             {
                 campos = sql.selectCampos("nome, cpf, cep, email, usuario, senha", "tblCliente", "usuario = '" + Session["usuario"] + "'");
                 object imgObj = sql.selectImagem("imagem_cliente", "tblCliente", "usuario = '" + Session["usuario"] + "'");
-                if (!object.ReferenceEquals(null, imgObj))
+                if (!(imgObj == System.DBNull.Value))
                     urlFotoPerfil = Convert.ToBase64String((byte[])imgObj);
             }
 
