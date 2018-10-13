@@ -62,7 +62,8 @@ namespace AcroniWeb_4._5
                        FileUpload1.PostedFile.ContentType == "image/png" ||
                        FileUpload1.PostedFile.ContentType == "image/bmp" ||
                        FileUpload1.PostedFile.ContentType == "image/tiff" ||
-                       FileUpload1.PostedFile.ContentType == "image/gif"))
+                       FileUpload1.PostedFile.ContentType == "image/gif" ||
+                       FileUpload1.PostedFile.ContentType == "image/jpeg"))
             {
                 //Mensagem de erro porque não é imagem K
             }
@@ -81,7 +82,7 @@ namespace AcroniWeb_4._5
                     {
                         byte[] imgBytes = null;
 
-                        if (Path.GetExtension(hpf.FileName) == ".jpeg")
+                        if (Path.GetExtension(hpf.FileName) == ".jpeg" || Path.GetExtension(hpf.FileName) == ".jpg")
                             imgBytes = ut.ConvertImageToByteArray(image, System.Drawing.Imaging.ImageFormat.Jpeg);
                         else if (Path.GetExtension(hpf.FileName) == ".png")
                             imgBytes = ut.ConvertImageToByteArray(image, System.Drawing.Imaging.ImageFormat.Png);
@@ -91,6 +92,7 @@ namespace AcroniWeb_4._5
                             imgBytes = ut.ConvertImageToByteArray(image, System.Drawing.Imaging.ImageFormat.Tiff);
                         else if (Path.GetExtension(hpf.FileName) == ".gif")
                             imgBytes = ut.ConvertImageToByteArray(image, System.Drawing.Imaging.ImageFormat.Gif);
+                   
 
                         sql.updateImagem(imgBytes, "tblCliente", "usuario = '" + Session["usuario"] + "'");
                         IsImageUpload = true;
