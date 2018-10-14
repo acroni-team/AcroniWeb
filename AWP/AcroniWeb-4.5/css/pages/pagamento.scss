@@ -160,3 +160,14 @@
     padding: 50px 30px 40px 30px;
 
 }
+
+//textbox with button
+.textbox-with-button {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #30333a;
+
+    .minha-conta {
+        margin: 0;
+    }
+}

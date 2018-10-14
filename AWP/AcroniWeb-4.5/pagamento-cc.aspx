@@ -1,19 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/logado.Master" AutoEventWireup="true" CodeBehind="pagamento-cc.aspx.cs" Inherits="AcroniWeb_4._5.pagamento_cc" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-    <script type="text/javascript">
-
-        function placehoderStay(index) {
-            var id = $('.textbox-type3').eq(index).val();
-            if (id != "" ) {
-                $('.overflow-type3').eq(index).children('p').addClass('stay');
-            }
-            if (id == "") {
-                $('.overflow-type3').eq(index).children('p').removeClass('stay');
-            }
-        }
-
-    </script>
 
 </asp:Content>
 
@@ -57,6 +44,9 @@
                             <div class="textbox-overflow overflow-type3">
                                 <asp:TextBox ID="CodigoSeguranca" runat="server" class="textbox textbox-type3 focus dark" aria-label="Código de segurança" onblur="placehoderStay(4);"></asp:TextBox>
                                 <p>Código de segurança</p>
+                            </div>
+                            <div class="textbox-overflow overflow-type3 textbox-with-button">
+                                <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button dark minha-conta disabled" disabled/>
                             </div>
                         </div>
                     </div>

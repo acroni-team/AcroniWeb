@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/logado.Master" AutoEventWireup="true" CodeBehind="minha-conta.aspx.cs" Inherits="AcroniWeb_4._5.editar_conta" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/logado.js"></script>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="right right-logado right-minha-conta">

@@ -144,7 +144,7 @@
     <Content Include="img\produtos\Img%287%29.png" />
     <Content Include="img\produtos\Img%288%29.png" />
     <Content Include="img\produtos\Img%289%29.png" />
-    <Content Include="js\cadastro.js" />
+    <Content Include="js\masks.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\jquery.mask.min.js" />
     <Content Include="js\jquery.nicescroll.min.js" />

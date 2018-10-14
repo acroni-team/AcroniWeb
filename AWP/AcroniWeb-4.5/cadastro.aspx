@@ -3,7 +3,7 @@
     
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/angular.min.js"></script>
-    <script src="js/cadastro.js"></script>
+    <script src="js/masks.js"></script>
     <script src="js/verificaSenha.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -27,7 +27,7 @@
                <asp:TextBox  ID="txtCpf" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="CPF" autocomplete="off"></asp:TextBox>
                <asp:TextBox ng-model="senha" TextMode="Password" ng-change="verificar()" ID="txtSenha" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Senha" autocomplete="off"></asp:TextBox>
                <asp:TextBox  ID="txtCSenha" TextMode="Password" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Confirmar Senha" autocomplete="off"></asp:TextBox>
-               <asp:Button ID="btnValida" class="button dark button-type2 button-cad" runat="server" Text="Enviar" OnClick="btnValida_Click" OnClientClick="loader();"/>
+               <asp:Button ID="btnValida" class="button dark button-type2 button-cad" runat="server" Text="Enviar" OnClick="btnValida_Click" OnClientClick="loader('.lds-ellipsis','.button-cad');"/>
                <div class="lds-ellipsis" style="top:8px;"><div></div><div></div><div></div><div></div></div>
             </div>
         </div>
@@ -36,7 +36,7 @@
             <asp:Label ID="lblErro" runat="server" Text=""></asp:Label><br/>
             <asp:Label ng-bind="mensagem" ID="lblNivelSenha" runat="server" Text=""></asp:Label><br/>
             <asp:Label ID="lblDica" CssClass="dica" runat="server" Text=""></asp:Label>
-            <asp:Button ID="ReenviarEmail" runat="server" Text="Reenviar Email" OnClientClick="loader();" OnClick="ReenviarEmail_Click" CssClass="ReenviarEmail"/>
+            <asp:Button ID="ReenviarEmail" runat="server" Text="Reenviar Email" OnClientClick="loader('.lds-ellipsis','.button-cad');" OnClick="ReenviarEmail_Click" CssClass="ReenviarEmail"/>
         </div>
     </div>
     <div id="info">
