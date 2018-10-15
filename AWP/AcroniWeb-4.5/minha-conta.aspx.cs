@@ -65,19 +65,11 @@ namespace AcroniWeb_4._5
                        FileUpload1.PostedFile.ContentType == "image/gif" ||
                        FileUpload1.PostedFile.ContentType == "image/jpeg"))
             {
-                //Mensagem de erro porque não é imagem K
-                titleErro.Text = "Não é imagem";
-                msgErro.Text = "Esse arquivo que você jogou ai não é uma imagem, por favor insira um arquivo que seja uma imagem";
-                modal.Attributes["class"] = "modal-wrap is-showing";
-                modalback.Attributes.Add("style", "pointer-events:auto");
+                showErrorMessage("Não é imagem", "Esse arquivo que você jogou ai não é uma imagem, por favor insira um arquivo que seja uma imagem");
             }
             else if (FileUpload1.PostedFile.ContentLength > 8388608)
             {
-                //Criar uma mensagem de erro pois a imagem é muito grande
-                titleErro.Text = "Imagem muito grande";
-                msgErro.Text = "Essa imagem que você colocou ai tem um tamanho muito grande. Por favor insira uma imagem menor que 'algumvalorai'";
-                modal.Attributes["class"] = "modal-wrap is-showing";
-                modalback.Attributes.Add("style", "pointer-events:auto");
+                showErrorMessage("Imagem muito grande", "Essa imagem que você colocou aí tem um tamanho muito grande. Por favor insira uma imagem menor que 8MB");
             }
             else
             {
@@ -115,30 +107,20 @@ namespace AcroniWeb_4._5
             {
                 string nomeSemEspacos = ut.retirarEspacos(Nome.Text);
                 if (!nomeSemEspacos.Contains(' '))
-                    Nome.Text = "Nome completo inválido";
+                {
+                    showErrorMessage("Nome inválido", "Não se esqueça que deve ser seu nome completo!");
+                    return;
+                }
                 else if (v.validarNome(nomeSemEspacos))
                 {
                     first = true;
                     novosValores += "nome = '" + Nome.Text + "'";
                 }
                 else
-                    Nome.Text = "Nome completo inválido"; //Mensagem de erro: nome inválido
-            }
-
-            if (!string.IsNullOrEmpty(CEP.Text))
-            {
-                if (v.validarCep(CEP.Text))
                 {
-                    if (first)
-                        novosValores += ",cep = '" + CEP.Text + "'";
-                    else
-                    {
-                        novosValores += "cep = '" + CEP.Text + "'";
-                        first = true;
-                    }
+                    showErrorMessage("Nome inválido", "Não se esqueça que deve ser seu nome completo!");
+                    return;
                 }
-                else
-                    CEP.Text = "CEP inválido"; //Mensagem de erro: CEP inválido
             }
 
             if (!string.IsNullOrEmpty(CPF.Text))
@@ -156,11 +138,38 @@ namespace AcroniWeb_4._5
                         }
                     }
                     else
-                        CPF.Text = "CPF já cadastrado"; //Mensagem de erro: CEP em uso
+                    {
+                        showErrorMessage("CPF em uso", "Provavelmente você já tem uma conta com esse CPF!");
+                        return;
+                    }
                 }
                 else
-                    CPF.Text = "CPF inválido"; //Mensagem de erro: CEP inválido
+                {
+                    showErrorMessage("CPF inválido", "Infelizmente esse CPF não é válido!");
+                    return;
+                }
             }
+
+            if (!string.IsNullOrEmpty(CEP.Text))
+            {
+                if (v.validarCep(CEP.Text))
+                {
+                    if (first)
+                        novosValores += ",cep = '" + CEP.Text + "'";
+                    else
+                    {
+                        novosValores += "cep = '" + CEP.Text + "'";
+                        first = true;
+                    }
+                }
+                else
+                {
+                    showErrorMessage("CEP inválido", "Relaxa, não vamos invadir sua casa.");
+                    return;
+                }
+            }
+
+            
 
             if (!string.IsNullOrEmpty(Email.Text))
             {
@@ -178,10 +187,16 @@ namespace AcroniWeb_4._5
                         }
                     }
                     else
-                        Email.Text = "Email já cadastrado"; //Mensagem de erro: email em uso
+                    {
+                        showErrorMessage("Email em uso", "Provavelmente você já tem uma conta com esse email!");
+                        return;
+                    }
                 }
                 else
-                    Email.Text = "Email inválido"; //Mensagem de erro: email inválido
+                {
+                    showErrorMessage("Email inválido", "Infelizmente esse email não é válido!");
+                    return;
+                }
             }
 
             if (!string.IsNullOrEmpty(Usuario.Text))
@@ -202,10 +217,16 @@ namespace AcroniWeb_4._5
                         userChanged = true;
                     }
                     else
-                        Usuario.Text = "Usu já cadastrado"; //Mensagem de erro: usu em uso
+                    {
+                        showErrorMessage("Usuário em uso", "Outra pessoa também gosta desse nome de usuário :/");
+                        return;
+                    }
                 }
                 else
-                    Usuario.Text = "Usu inválido"; //Mensagem de erro: usu inválido
+                {
+                    showErrorMessage("Usuário inválido", "Apenas caracteres alfanuméricos, _ e - são permitidos aqui!");
+                    return;
+                }
             }
 
             if (!string.IsNullOrEmpty(Senha.Text))
@@ -219,7 +240,7 @@ namespace AcroniWeb_4._5
                 }
                 passChanged = true;
             }
-
+            
             if (userChanged && passChanged)
             {
                 HttpCookie cookie = new HttpCookie("credenciais");
@@ -261,6 +282,13 @@ namespace AcroniWeb_4._5
             }
         }
 
+        public void showErrorMessage(string title, string msg)
+        {
+            titleErro.Text = title;
+            msgErro.Text = msg;
+            modal.Attributes["class"] = "modal-wrap is-showing";
+            modalback.Attributes.Add("style", "pointer-events:auto");
+        }
 
     }
 }

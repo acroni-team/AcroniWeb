@@ -62,7 +62,7 @@
                    <a id="pagamento" href="pagamento.aspx">Pagamento</a>
                    <a id="fale-conosco" href="fale-conosco.aspx">Fale conosco</a>
                    <a id="quem-somos" href="quem-somos.aspx">Quem somos</a>
-                   <a id="download" href="download.aspx">Donwload</a>
+                   <a id="download" href="download.aspx">Download</a>
                    <asp:LinkButton ID="deslogar" runat="server" OnClick="deslogar_Click">Sair</asp:LinkButton>
                 </div>
             </div> 
