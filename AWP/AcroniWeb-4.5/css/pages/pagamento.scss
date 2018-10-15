@@ -146,11 +146,26 @@
         /* justify-content: center; */
         width: 954px;
 
+        &.align-dc {
+            display: block;
+            width: auto;
+        }
+
         .overflow-type3 {
             font-weight: $semi-bold;
             margin-bottom: 10px;
             width: 467px;
             margin: 5px;
+
+            &.dc {
+                margin-top: 15px;
+            }
+
+            .button-dc {
+                width: 100%;
+                border-radius: 10px;
+                padding: 12px;
+            }
         }
     }
 }
@@ -158,6 +173,7 @@
 .card-form {
     display: flex;
     padding: 50px 30px 40px 30px;
+
 
 }
 
@@ -167,6 +183,9 @@
     justify-content: flex-end;
     background-color: #30333a;
 
+    &.dc{
+        margin-top:20px;
+    }
     .minha-conta {
         margin: 0;
     }

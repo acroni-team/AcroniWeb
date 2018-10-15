@@ -18,10 +18,10 @@
                     <asp:Image ID="cartaoDebito" runat="server" ImageUrl='img/pagamento/cd.png' />
                     <p>Cartão de débito</p>
                  </div>
-                <div class="container-logado">
+                <a href="pagamento-dc.aspx"><div class="container-logado">
                     <asp:Image ID="debitoConta" CssClass="debitoConta" runat="server" ImageUrl='img/pagamento/dc.png'/>
                     <p>Débito em conta</p>
-                 </div>
+                 </div></a>
             </div>
         </div>
     </div>

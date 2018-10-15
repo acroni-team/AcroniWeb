@@ -157,6 +157,7 @@
     <Content Include="js\verificaSenha.js" />
     <Content Include="loja.aspx" />
     <Content Include="pagamento-cc.aspx" />
+    <Content Include="pagamento-dc.aspx" />
     <Content Include="pagamento.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -227,6 +228,13 @@
     </Compile>
     <Compile Include="pagamento-cc.aspx.designer.cs">
       <DependentUpon>pagamento-cc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagamento-dc.aspx.cs">
+      <DependentUpon>pagamento-dc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagamento-dc.aspx.designer.cs">
+      <DependentUpon>pagamento-dc.aspx</DependentUpon>
     </Compile>
     <Compile Include="pagamento.aspx.cs">
       <DependentUpon>pagamento.aspx</DependentUpon>
