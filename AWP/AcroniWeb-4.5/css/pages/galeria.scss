@@ -41,6 +41,7 @@
 
 .galeria-section {
     background: #2d2e2f;
+
 }
 
 .left-galeria,.right-logado{
@@ -50,11 +51,19 @@
 .left-galeria {
     width: 25%;
     background: #36393f;
-    position:fixed;
+    position: fixed;
+
+    &.blur {
+        filter: blur(2px);
+    }
 }
 .right-logado {
     width: 75%;
-    margin-left:25%;
+    margin-left: 25%;
+
+    &.blur {
+        filter: blur(2px);
+    }
 
     &.right-galeria {
         display: flex;

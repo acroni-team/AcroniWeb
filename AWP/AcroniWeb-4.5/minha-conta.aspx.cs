@@ -66,10 +66,18 @@ namespace AcroniWeb_4._5
                        FileUpload1.PostedFile.ContentType == "image/jpeg"))
             {
                 //Mensagem de erro porque não é imagem K
+                titleErro.Text = "Não é imagem";
+                msgErro.Text = "Esse arquivo que você jogou ai não é uma imagem, por favor insira um arquivo que seja uma imagem";
+                modal.Attributes["class"] = "modal-wrap is-showing";
+                modalback.Attributes.Add("style", "pointer-events:auto");
             }
             else if (FileUpload1.PostedFile.ContentLength > 8388608)
             {
                 //Criar uma mensagem de erro pois a imagem é muito grande
+                titleErro.Text = "Imagem muito grande";
+                msgErro.Text = "Essa imagem que você colocou ai tem um tamanho muito grande. Por favor insira uma imagem menor que 'algumvalorai'";
+                modal.Attributes["class"] = "modal-wrap is-showing";
+                modalback.Attributes.Add("style", "pointer-events:auto");
             }
             else
             {
@@ -130,7 +138,7 @@ namespace AcroniWeb_4._5
                     }
                 }
                 else
-                    Nome.Text = "CEP inválido"; //Mensagem de erro: CEP inválido
+                    CEP.Text = "CEP inválido"; //Mensagem de erro: CEP inválido
             }
 
             if (!string.IsNullOrEmpty(CPF.Text))
@@ -148,10 +156,10 @@ namespace AcroniWeb_4._5
                         }
                     }
                     else
-                        Nome.Text = "CPF já cadastrado"; //Mensagem de erro: CEP em uso
+                        CPF.Text = "CPF já cadastrado"; //Mensagem de erro: CEP em uso
                 }
                 else
-                    Nome.Text = "CPF inválido"; //Mensagem de erro: CEP inválido
+                    CPF.Text = "CPF inválido"; //Mensagem de erro: CEP inválido
             }
 
             if (!string.IsNullOrEmpty(Email.Text))

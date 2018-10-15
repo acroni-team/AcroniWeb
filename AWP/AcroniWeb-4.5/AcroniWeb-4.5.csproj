@@ -110,6 +110,7 @@
     <None Include="css\base.scss" />
     <Content Include="css\area-restrita.css" />
     <Content Include="default.aspx" />
+    <Content Include="img\error-icon.png" />
     <Content Include="img\pagamento\card.png" />
     <Content Include="img\pagamento\cc.png" />
     <Content Include="img\pagamento\cd.png" />

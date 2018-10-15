@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var $step = $('.modal-body-step1');
         $step.toggleClass('animate-first-in animate-first-out');
         setTimeout(function () {
-            $('section').removeClass('blur');
+            $('section,.left-galeria,.right-logado ').removeClass('blur');
             $('.modal-wrap').removeClass('is-showing');
             $step.toggleClass('animate-first-out animate-first-in');
             $("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none" });

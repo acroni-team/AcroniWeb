@@ -209,3 +209,45 @@ lds-eas {
     top: 125px;
     left: 520px;
 }
+
+//MODAL V2
+
+.modal-overflow-alt {
+    width: 450px;
+    height: 550px;
+
+    .modal-body-alt {
+        background: -webkit-linear-gradient(top, #fa3d3d, #fa3d3d 50%, #36393f 50%, #36393f);
+        width: 370px;
+        height: 470px;
+
+
+        .h1-modal, h1 {
+            color: $texto;
+            font-size: 2em;
+            font-weight: $semi-bold;
+            display: inherit;
+            margin-top: 25px;
+        }
+
+        .p-modal, p {
+            font-size: 1em;
+            margin-bottom: 20px;
+            display: inline-block;
+            font-family: 'open';
+            font-weight: $semi-bold;
+            color: $texto;
+            display: inherit;
+            margin-top: 65px;
+            width:60%;
+        }
+
+        .modal-alt-button {
+            border: 2px solid #fa3d3d;
+            background-color: #fa3d3d;
+            width: 200px;
+            border-radius: 50px;
+            margin-top: 10px;
+        }
+    }
+}
