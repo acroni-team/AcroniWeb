@@ -9,11 +9,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="padrao" ng-controller="validaSenha">
         <div class="modal-wrap" id="modal" runat="server">
-            <div class="modal-overflow hidden" id="overflow" runat="server">
-                 <div class="modal-body modal-body-alt modal-body-cad is-showing animate-first-in" id="modalcad" runat="server">
+            <div class="modal-overflow modal-overflow-alt hidden" id="overflow" runat="server">
+                 <div class="modal-body modal-body-step1 modal-body-alt modal-body-cad is-showing animate-first-in" id="modalcad" runat="server">
                     <h1>Só precisamos confirmar que é você mesmo.</h1>
                     <p>A gente te enviou um código no e-mail. Cuidado pra não errar.</p>
-                    <input type="button" class="button dark modal-button-cad" value="Ok :D"/>
+                    <input type="button" class="button dark modal-button-cad modal-alt-button" value="Entendi"/>
                 </div> 
             </div>
             <div class="modal-background fadeIn" runat="server" id="modalback"></div>

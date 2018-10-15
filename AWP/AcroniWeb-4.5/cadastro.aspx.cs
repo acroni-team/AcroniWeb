@@ -60,7 +60,7 @@ namespace AcroniWeb_4._5
                     }
                     
                 case 1:
-
+                    txtNome.Attributes["class"] = "textbox textbox-type2 textbox-cad";
 
                     if (string.IsNullOrEmpty(txtUsu.Text) || string.IsNullOrWhiteSpace(txtUsu.Text))
                     {
@@ -94,6 +94,8 @@ namespace AcroniWeb_4._5
                     }
                     
                 case 2:
+                    txtUsu.Attributes["class"] = "textbox textbox-type2 textbox-cad";
+
                     if (string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrWhiteSpace(txtEmail.Text))
                     {
                         IsNotValid(txtUsu, "Email inválido.", 2, txtEmail);
@@ -126,8 +128,10 @@ namespace AcroniWeb_4._5
                     }
 
                 case 3:
+                    txtEmail.Attributes["class"] = "textbox textbox-type2 textbox-cad";
                     modal.Attributes["class"] = "modal-wrap";
                     modalback.Attributes.Add("style", "pointer-events:none");
+                    ReenviarEmail.Attributes.Add("style", "display: block");
 
                     if (!txtCodigo.Text.ToLower().Equals(Session["codigo"].ToString().ToLower()))
                     {
@@ -143,10 +147,18 @@ namespace AcroniWeb_4._5
                     {
                         IsValid("codigo", txtCodigo, txtCpf, 4);
                         ReenviarEmail.Attributes.Add("style", "display: none");
+                        modal.Attributes["class"] = "modal-wrap";
+                        modalback.Attributes.Add("style", "pointer-events:none");
                         break;
                     }
 
                 case 4:
+                    txtUsu.Attributes["class"] = "textbox textbox-type2 textbox-cad";
+                    txtCodigo.Attributes["class"] = "textbox textbox-type2 textbox-cad";
+                    modal.Attributes["class"] = "modal-wrap";
+                    modalback.Attributes.Add("style", "pointer-events:none");
+                    ReenviarEmail.Attributes.Add("style", "display: none");
+
                     if (!v.validarCPF(txtCpf.Text))
                     {
                         IsNotValid(txtEmail, "CPF inválido", 4, txtCpf);
@@ -165,6 +177,11 @@ namespace AcroniWeb_4._5
                     }
 
                 case 5:
+                    modal.Attributes["class"] = "modal-wrap";
+                    modalback.Attributes.Add("style", "pointer-events:none");
+                    txtCpf.Attributes["class"] = "textbox textbox-type2 textbox-cad";
+
+
                     if (txtSenha.Text == "" || string.IsNullOrWhiteSpace(txtSenha.Text))
                     {
                         IsNotValid(txtEmail, "Campo de senha vazio :/", 5, txtSenha);
@@ -177,6 +194,7 @@ namespace AcroniWeb_4._5
                     }
 
                 case 6:
+                    txtSenha.Attributes["class"] = "textbox textbox-type2 textbox-cad";
                     if (txtCSenha.Text != Session["senha"].ToString())
                     {
                         IsNotValid(txtCSenha, "As senhas não coincidem", 6, txtCSenha);
@@ -242,6 +260,8 @@ namespace AcroniWeb_4._5
             //    Response.Redirect("default.aspx");
             Session["codigo"] = ut.gerarStringConfirmacao();
             ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString());
+            modal.Attributes["class"] = "modal-wrap is-showing";
+            modalback.Attributes.Add("style", "pointer-events:auto");
         }
 
         protected void ReenviaImai_Click(object sender, EventArgs e)

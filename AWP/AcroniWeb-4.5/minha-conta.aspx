@@ -5,7 +5,7 @@
         <div class="modal-wrap" id="modal" runat="server">
             <div class="modal-overflow modal-overflow-alt hidden" id="overflow" runat="server">
                  <div class="modal-body modal-body-step1 modal-body-alt is-showing animate-first-in" id="modalcad" runat="server">
-                     <img style="width:150px;" alt="icone-erro" src="img/error-icon.png" />
+                    <img style="width:150px;" alt="icone-erro" src="img/error-icon.png" />
                     <asp:Label ID="titleErro" class="h1-modal" runat="server" Text="Label"></asp:Label>
                     <asp:Label ID="msgErro" class="p-modal" runat="server" Text="Label"></asp:Label>
                     <input type="button" class="button dark modal-button-cad modal-alt-button" value="Entendi"/>
