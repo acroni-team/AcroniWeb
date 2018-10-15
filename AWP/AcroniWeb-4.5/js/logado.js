@@ -6,16 +6,11 @@
 
     if (allowedExtensions.exec(filePath)) {
         idFotoPerfil.src = URL.createObjectURL(event.target.files[0]);
-        $('.btn-enable-salvar').click();
-    }
-    else {
-        //Mensagem de erro pq n ser imagem (popup)
     }
 };
 
 $(document).ready(function () {
-
-
+    
     $('.textbox.focus.dark, .upload-imagem').change(function () {
         
         if ($('.textbox.focus.dark').eq(0).val() != "" ||
@@ -34,8 +29,6 @@ $(document).ready(function () {
             $('.button.dark.minha-conta').addClass('disabled');
             $('.button.dark.minha-conta').attr('value','Salvo');
         }
-
-
     });
 
     $('.textbox.textbox-type3.focus.dark').change(function () {
@@ -57,8 +50,6 @@ $(document).ready(function () {
 
     });
 });
-
-
 
 //funcao do placeholder
 function placehoderStay(index) {

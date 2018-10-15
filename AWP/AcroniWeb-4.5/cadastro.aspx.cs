@@ -29,7 +29,8 @@ namespace AcroniWeb_4._5
                 Session["aux"] = 0;
                 Session["codigo"] = "";
             }
-            lblErro.Text = "{{mensagem}}";
+            lblNivelSenha.Text = "{{mensagem}}";
+            lblErro.Text = "";
         }
                
         protected void btnValida_Click(object sender, EventArgs e)

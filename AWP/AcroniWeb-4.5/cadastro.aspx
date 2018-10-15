@@ -5,6 +5,7 @@
     <script src="js/angular.min.js"></script>
     <script src="js/masks.js"></script>
     <script src="js/verificaSenha.js"></script>
+    <script src="js/disableBackButton.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="padrao" ng-controller="validaSenha">
