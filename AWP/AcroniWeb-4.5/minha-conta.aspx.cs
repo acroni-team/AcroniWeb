@@ -65,11 +65,11 @@ namespace AcroniWeb_4._5
                        FileUpload1.PostedFile.ContentType == "image/gif" ||
                        FileUpload1.PostedFile.ContentType == "image/jpeg"))
             {
-                showErrorMessage("Não é imagem", "Esse arquivo que você jogou ai não é uma imagem, por favor insira um arquivo que seja uma imagem");
+                ut.showErrorMessage("Não é imagem", "Esse arquivo que você jogou ai não é uma imagem, por favor insira um arquivo que seja uma imagem", titleErro, msgErro, modal, modalback);
             }
             else if (FileUpload1.PostedFile.ContentLength > 8388608)
             {
-                showErrorMessage("Imagem muito grande", "Essa imagem que você colocou aí tem um tamanho muito grande. Por favor insira uma imagem menor que 8MB");
+                ut.showErrorMessage("Imagem muito grande", "Essa imagem que você colocou aí tem um tamanho muito grande. Por favor insira uma imagem menor que 8MB", titleErro, msgErro, modal, modalback);
             }
             else
             {
@@ -108,7 +108,7 @@ namespace AcroniWeb_4._5
                 string nomeSemEspacos = ut.retirarEspacos(Nome.Text);
                 if (!nomeSemEspacos.Contains(' '))
                 {
-                    showErrorMessageByLbl("Nome Completo - Inválido, deve estar completo",Nome,lblNome);
+                    ut.showErrorMessageByLbl("Nome Completo - Inválido, deve estar completo",Nome,lblNome);
                     return;
                 }
                 else if (v.validarNome(nomeSemEspacos))
@@ -118,7 +118,7 @@ namespace AcroniWeb_4._5
                 }
                 else
                 {
-                    showErrorMessageByLbl("Nome Completo - Inválido, deve estar completo", Nome, lblNome);
+                    ut.showErrorMessageByLbl("Nome Completo - Inválido, deve estar completo", Nome, lblNome);
                     return;
                 }
             }
@@ -139,13 +139,13 @@ namespace AcroniWeb_4._5
                     }
                     else
                     {
-                        showErrorMessageByLbl("CPF - Em uso, já tem uma conta com esse CPF", CPF, lblCPF);
+                        ut.showErrorMessageByLbl("CPF - Em uso, já tem uma conta com esse CPF", CPF, lblCPF);
                         return;
                     }
                 }
                 else
                 {
-                    showErrorMessageByLbl("CPF - Invalido, este cpf não é valido", CPF, lblCPF);
+                    ut.showErrorMessageByLbl("CPF - Invalido, este cpf não é valido", CPF, lblCPF);
                     return;
                 }
             }
@@ -164,7 +164,7 @@ namespace AcroniWeb_4._5
                 }
                 else
                 {
-                    showErrorMessage("CEP inválido", "Relaxa, não vamos invadir sua casa.");
+                    ut.showErrorMessageByLbl("CEP - Inválido, Relaxa, não vamos invadir sua casa.",CEP,lblCEP);
                     return;
                 }
             }
@@ -188,13 +188,13 @@ namespace AcroniWeb_4._5
                     }
                     else
                     {
-                        showErrorMessageByLbl("E-mail - Em uso, já tem uma conta com esse e-mail", Email, lblEmail);
+                        ut.showErrorMessageByLbl("E-mail - Em uso, já tem uma conta com esse e-mail", Email, lblEmail);
                         return;
                     }
                 }
                 else
                 {
-                    showErrorMessageByLbl("E-mail - Invalido, esse e-mail não é valido", Email, lblEmail);
+                    ut.showErrorMessageByLbl("E-mail - Invalido, esse e-mail não é valido", Email, lblEmail);
                     return;
                 }
             }
@@ -218,13 +218,13 @@ namespace AcroniWeb_4._5
                     }
                     else
                     {
-                        showErrorMessageByLbl("Usuário - Em uso, já existe outra conta com esse usuário :/", Usuario, lblUsuario);
+                        ut.showErrorMessageByLbl("Usuário - Em uso, já existe outra conta com esse usuário :/", Usuario, lblUsuario);
                         return;
                     }
                 }
                 else
                 {
-                    showErrorMessageByLbl("Usuário - Deve conter apenas caracteres alfanuméricos, _ e -", Usuario, lblUsuario);    
+                    ut.showErrorMessageByLbl("Usuário - Deve conter apenas caracteres alfanuméricos, _ e -", Usuario, lblUsuario);    
                     return;
                 }
             }
@@ -282,21 +282,6 @@ namespace AcroniWeb_4._5
             }
         }
 
-        public void showErrorMessage(string title, string msg)
-        {
-            titleErro.Text = title;
-            msgErro.Text = msg;
-            modal.Attributes["class"] = "modal-wrap is-showing";
-            modalback.Attributes.Add("style", "pointer-events:auto");
-        }
 
-        public void showErrorMessageByLbl(string msg, TextBox txtCampoErrado, Label lblCampoErrado) {
-
-            txtCampoErrado.BorderColor = System.Drawing.Color.Red;
-            txtCampoErrado.Text = "";
-            lblCampoErrado.Text = msg;
-            lblCampoErrado.ForeColor = System.Drawing.Color.Red;
-
-        }
     }
 }

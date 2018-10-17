@@ -27,23 +27,23 @@
                         <div class="align align-card-form">
                             <div class="textbox-overflow overflow-type3">
                                 <asp:TextBox ID="Nome" runat="server" class="textbox textbox-type3 focus dark" aria-label="Nome" ng-model="nome" onblur="placehoderStay(0);"></asp:TextBox>
-                                <p>Nome</p>
+                                <asp:Label ID="lblNome" class="p" runat="server" Text="Nome"></asp:Label>
                             </div>
                             <div class="textbox-overflow overflow-type3">
                                 <asp:TextBox ID="Sobrenome" runat="server" class="textbox textbox-type3 focus dark" aria-label="Sobrenome" ng-model="sobrenome" onblur="placehoderStay(1);"></asp:TextBox>
-                                <p>Sobrenome</p>
+                                <asp:Label ID="lblSobrenome" class="p" runat="server" Text="Sobrenome"></asp:Label>
                             </div>
                             <div class="textbox-overflow overflow-type3">
                                 <asp:TextBox ID="Numero" runat="server" class="textbox textbox-type3 focus dark" aria-label="Número do cartão" ng-model="numero" onblur="placehoderStay(2);"></asp:TextBox>
-                                <p>Número do cartão</p>
+                                <asp:Label ID="lblNumero" class="p" runat="server" Text="Numero"></asp:Label>
                             </div>
                             <div class="textbox-overflow overflow-type3">
                                 <asp:TextBox ID="DataValidade" runat="server" class="textbox textbox-type3 focus dark" aria-label="Data de validade" ng-model="data" onblur="placehoderStay(3);"></asp:TextBox>
-                                <p>Data de validade</p>
+                                <asp:Label ID="lblDataValidade" class="p" runat="server" Text="Data de validade"></asp:Label>
                             </div> 
                             <div class="textbox-overflow overflow-type3">
                                 <asp:TextBox ID="CodigoSeguranca" runat="server" class="textbox textbox-type3 focus dark" aria-label="Código de segurança" onblur="placehoderStay(4);"></asp:TextBox>
-                                <p>Código de segurança</p>
+                                <asp:Label ID="lblCodigo" class="p" runat="server" Text="Código de segurança"></asp:Label>
                             </div>
                             <div class="textbox-overflow overflow-type3 textbox-with-button">
                                 <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button dark minha-conta disabled" disabled/>

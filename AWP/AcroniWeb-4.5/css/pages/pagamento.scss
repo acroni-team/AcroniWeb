@@ -1,7 +1,7 @@
 ﻿// SCSS
 
 @import '../imports/todos';
-
+@import '../controls/fontawesome.css';
 
 //alinha
 
@@ -165,6 +165,38 @@
                 width: 100%;
                 border-radius: 10px;
                 padding: 12px;
+            }
+
+            &.with-select {
+
+                select {
+                    background-color: #36393f;
+                    color: #72767d;
+                    border-radius: 5px;
+                    font-size: 17px;
+                    font-family: 'open';
+                    font-weight: $semi-bold;
+                    width: 100%;
+                    border: none;
+                    padding: 17px;
+                    outline: none;
+                }
+
+                &:before {
+                    content: '\f0dd';
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    font-size: 27px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 40px;
+                    height: 100%;
+                    background: #36393f;
+                    border-radius: 5px;
+                    pointer-events: none;
+                    line-height: 50px;
+                }
             }
         }
     }

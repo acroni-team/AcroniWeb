@@ -55,9 +55,9 @@ $(document).ready(function () {
 function placehoderStay(index) {
     var id = $('.textbox-type3').eq(index).val();
     if (id != "") {
-        $('.overflow-type3').eq(index).children('p').addClass('stay');
+        $('.overflow-type3').eq(index).children('.p').addClass('stay');
     }
     if (id == "") {
-        $('.overflow-type3').eq(index).children('p').removeClass('stay');
+        $('.overflow-type3').eq(index).children('.p').removeClass('stay');
     }
 }

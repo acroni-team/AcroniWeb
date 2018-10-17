@@ -22,6 +22,15 @@ namespace AcroniWeb_4._5 {
         protected global::System.Web.UI.WebControls.TextBox Nome;
         
         /// <summary>
+        /// lblNome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNome;
+        
+        /// <summary>
         /// Sobrenome control.
         /// </summary>
         /// <remarks>
@@ -31,22 +40,31 @@ namespace AcroniWeb_4._5 {
         protected global::System.Web.UI.WebControls.TextBox Sobrenome;
         
         /// <summary>
-        /// Numero control.
+        /// lblSobrenome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Numero;
+        protected global::System.Web.UI.WebControls.Label lblSobrenome;
         
         /// <summary>
-        /// DataValidade control.
+        /// CPF control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox DataValidade;
+        protected global::System.Web.UI.WebControls.TextBox CPF;
+        
+        /// <summary>
+        /// lblCPF control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCPF;
         
         /// <summary>
         /// btnSalva control.

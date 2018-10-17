@@ -15,20 +15,23 @@
                         <div class="align align-card-form align-dc">
                             <div class="textbox-overflow overflow-type3 dc">
                                 <asp:TextBox ID="Nome" runat="server" class="textbox textbox-type3 focus dark" aria-label="Nome" ng-model="nome" onblur="placehoderStay(0);"></asp:TextBox>
-                                <p>Nome</p>
+                                <asp:Label ID="lblNome" class="p" runat="server" Text="Nome"></asp:Label>
                             </div>
                             <div class="textbox-overflow overflow-type3 dc">
                                 <asp:TextBox ID="Sobrenome" runat="server" class="textbox textbox-type3 focus dark" aria-label="Sobrenome" ng-model="sobrenome" onblur="placehoderStay(1);"></asp:TextBox>
-                                <p>Sobrenome</p>
+                                <asp:Label ID="lblSobrenome" class="p" runat="server" Text="Sobrenome"></asp:Label>
                             </div>
                             <div class="textbox-overflow overflow-type3 dc">
-                                <asp:TextBox ID="Numero" runat="server" class="textbox textbox-type3 focus dark" aria-label="Número do cartão" ng-model="numero" onblur="placehoderStay(2);"></asp:TextBox>
-                                <p>Número do cartão</p>
-                            </div>
-                            <div class="textbox-overflow overflow-type3 dc">
-                                <asp:TextBox ID="DataValidade" runat="server" class="textbox textbox-type3 focus dark" aria-label="Data de validade" ng-model="data" onblur="placehoderStay(3);"></asp:TextBox>
-                                <p>Data de validade</p>
+                                <asp:TextBox ID="CPF" runat="server" class="textbox textbox-type3 focus dark" aria-label="Data de validade" ng-model="data" onblur="placehoderStay(3);"></asp:TextBox>
+                                <asp:Label ID="lblCPF" class="p" runat="server" Text="CPF"></asp:Label>
                             </div> 
+                            <div class="textbox-overflow overflow-type3 dc  with-select">
+                                <select>
+                                    <option>Banco</option>
+                                    <option>Wix.cu</option>
+                                </select>
+                            </div>
+
                             <div class="textbox-overflow overflow-type3 textbox-with-button dc">
                                 <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button button-dc dark minha-conta disabled" disabled/>
                             </div>

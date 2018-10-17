@@ -6,7 +6,8 @@ using System.IO;
 using System.Linq;
 using System.Net.Mail;
 using System.Web;
-
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
 
 public class Utilitarios
 {
@@ -144,6 +145,25 @@ public class Utilitarios
         catch (Exception) { throw; }
         return Ret;
     }
+    
+    // Mensagens de erro
 
-  
+    public void showErrorMessage(string title, string msg, Label titleErro, Label msgErro,  HtmlGenericControl modal, HtmlGenericControl modalback)
+    {
+        titleErro.Text = title;
+        msgErro.Text = msg;
+        modal.Attributes["class"] = "modal-wrap is-showing";
+        modalback.Attributes.Add("style", "pointer-events:auto");
+    }
+
+    public void showErrorMessageByLbl(string msg, TextBox txtCampoErrado, Label lblCampoErrado)
+    {
+
+        txtCampoErrado.BorderColor = System.Drawing.Color.Red;
+        txtCampoErrado.Text = "";
+        lblCampoErrado.Text = msg;
+        lblCampoErrado.ForeColor = System.Drawing.Color.Red;
+
+    }
+
 }

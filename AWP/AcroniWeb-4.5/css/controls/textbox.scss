@@ -99,7 +99,7 @@ input:focus {
 
 
     &.overflow-type3 {
-        p {
+        .p {
             top: 17px;
             font-size: 17px;
             transition: transform 200ms ease-in;
@@ -121,7 +121,7 @@ input:focus {
                 padding-bottom: 14px;
             }
 
-            &:focus + p {
+            &:focus + .p {
                 transform: translateY(-12px) scale(0.7);
                 transform-origin: left;
                 opacity: 1;

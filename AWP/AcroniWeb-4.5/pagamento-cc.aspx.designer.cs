@@ -22,6 +22,15 @@ namespace AcroniWeb_4._5 {
         protected global::System.Web.UI.WebControls.TextBox Nome;
         
         /// <summary>
+        /// lblNome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNome;
+        
+        /// <summary>
         /// Sobrenome control.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,15 @@ namespace AcroniWeb_4._5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Sobrenome;
+        
+        /// <summary>
+        /// lblSobrenome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSobrenome;
         
         /// <summary>
         /// Numero control.
@@ -40,6 +58,15 @@ namespace AcroniWeb_4._5 {
         protected global::System.Web.UI.WebControls.TextBox Numero;
         
         /// <summary>
+        /// lblNumero control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNumero;
+        
+        /// <summary>
         /// DataValidade control.
         /// </summary>
         /// <remarks>
@@ -49,6 +76,15 @@ namespace AcroniWeb_4._5 {
         protected global::System.Web.UI.WebControls.TextBox DataValidade;
         
         /// <summary>
+        /// lblDataValidade control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDataValidade;
+        
+        /// <summary>
         /// CodigoSeguranca control.
         /// </summary>
         /// <remarks>
@@ -56,6 +92,15 @@ namespace AcroniWeb_4._5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox CodigoSeguranca;
+        
+        /// <summary>
+        /// lblCodigo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCodigo;
         
         /// <summary>
         /// btnSalva control.
