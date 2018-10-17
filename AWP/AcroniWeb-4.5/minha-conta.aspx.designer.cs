@@ -76,6 +76,15 @@ namespace AcroniWeb_4._5 {
         protected global::System.Web.UI.WebControls.TextBox Nome;
         
         /// <summary>
+        /// lblNome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNome;
+        
+        /// <summary>
         /// CPF control.
         /// </summary>
         /// <remarks>
@@ -83,6 +92,15 @@ namespace AcroniWeb_4._5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox CPF;
+        
+        /// <summary>
+        /// lblCPF control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCPF;
         
         /// <summary>
         /// CEP control.
@@ -94,6 +112,15 @@ namespace AcroniWeb_4._5 {
         protected global::System.Web.UI.WebControls.TextBox CEP;
         
         /// <summary>
+        /// lblCEP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCEP;
+        
+        /// <summary>
         /// Email control.
         /// </summary>
         /// <remarks>
@@ -101,6 +128,15 @@ namespace AcroniWeb_4._5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Email;
+        
+        /// <summary>
+        /// lblEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEmail;
         
         /// <summary>
         /// Usuario control.
@@ -112,6 +148,15 @@ namespace AcroniWeb_4._5 {
         protected global::System.Web.UI.WebControls.TextBox Usuario;
         
         /// <summary>
+        /// lblUsuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblUsuario;
+        
+        /// <summary>
         /// Senha control.
         /// </summary>
         /// <remarks>
@@ -119,6 +164,15 @@ namespace AcroniWeb_4._5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Senha;
+        
+        /// <summary>
+        /// lblSenha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSenha;
         
         /// <summary>
         /// FileUpload1 control.

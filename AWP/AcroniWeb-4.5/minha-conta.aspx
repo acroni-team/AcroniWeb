@@ -23,30 +23,30 @@
                     <h1> Informações básicas </h1>
                     <div class="textbox-overflow">
                         <asp:TextBox ID="Nome" runat="server" class="textbox focus dark"></asp:TextBox>
-                        <p>Nome completo</p>
+                        <asp:Label ID="lblNome" class="p" runat="server" Text="Nome completo"></asp:Label>
                     </div>
                     <div class="textbox-overflow">
                         <asp:TextBox ID="CPF" runat="server" class="textbox focus dark"></asp:TextBox>
-                        <p>CPF</p>
+                        <asp:Label ID="lblCPF" class="p" runat="server" Text="CPF"></asp:Label>
                     </div>
                     <div class="textbox-overflow">
                         <asp:TextBox ID="CEP" runat="server" class="textbox focus dark"></asp:TextBox>
-                        <p>CEP</p>
+                        <asp:Label ID="lblCEP" class="p" runat="server" Text="CEP"></asp:Label>
                     </div>
                 </div>  
                 <div id="credenciais">
                      <h1> Credenciais </h1>
                     <div class="textbox-overflow">
                         <asp:TextBox ID="Email" runat="server" class="textbox focus dark"></asp:TextBox>
-                         <p>E-mail</p>
+                        <asp:Label ID="lblEmail" class="p" runat="server" Text="Nome completo"></asp:Label>
                     </div>
                      <div class="textbox-overflow">
                         <asp:TextBox ID="Usuario" runat="server" class="textbox focus dark"></asp:TextBox>
-                         <p>Usuário</p>
+                         <asp:Label ID="lblUsuario" class="p" runat="server" Text="E-mail"></asp:Label>
                     </div>
                     <div class="textbox-overflow">
                         <asp:TextBox ID="Senha" runat="server" class="textbox focus dark"></asp:TextBox>
-                         <p>Senha</p>
+                        <asp:Label ID="lblSenha" class="p" runat="server" Text="Senha"></asp:Label>
                     </div>
                 </div> 
             </div>

@@ -149,7 +149,7 @@
     font-weight: $semi-bold;
     margin-bottom:10px;
 
-    p {
+    .p {
         position: absolute;
         top: 10px;
         left: 20px;
@@ -169,7 +169,7 @@
             
         }
 
-        &:focus + p {
+        &:focus + .p {
             opacity: 0;
         }
     }

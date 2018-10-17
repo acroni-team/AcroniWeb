@@ -108,7 +108,7 @@ namespace AcroniWeb_4._5
                 string nomeSemEspacos = ut.retirarEspacos(Nome.Text);
                 if (!nomeSemEspacos.Contains(' '))
                 {
-                    showErrorMessage("Nome inválido", "Não se esqueça que deve ser seu nome completo!");
+                    showErrorMessageByLbl("Nome Completo - Inválido, deve estar completo",Nome,lblNome);
                     return;
                 }
                 else if (v.validarNome(nomeSemEspacos))
@@ -118,7 +118,7 @@ namespace AcroniWeb_4._5
                 }
                 else
                 {
-                    showErrorMessage("Nome inválido", "Não se esqueça que deve ser seu nome completo!");
+                    showErrorMessageByLbl("Nome Completo - Inválido, deve estar completo", Nome, lblNome);
                     return;
                 }
             }
@@ -139,13 +139,13 @@ namespace AcroniWeb_4._5
                     }
                     else
                     {
-                        showErrorMessage("CPF em uso", "Provavelmente você já tem uma conta com esse CPF!");
+                        showErrorMessageByLbl("CPF - Em uso, já tem uma conta com esse CPF", CPF, lblCPF);
                         return;
                     }
                 }
                 else
                 {
-                    showErrorMessage("CPF inválido", "Infelizmente esse CPF não é válido!");
+                    showErrorMessageByLbl("CPF - Invalido, este cpf não é valido", CPF, lblCPF);
                     return;
                 }
             }
@@ -188,13 +188,13 @@ namespace AcroniWeb_4._5
                     }
                     else
                     {
-                        showErrorMessage("Email em uso", "Provavelmente você já tem uma conta com esse email!");
+                        showErrorMessageByLbl("E-mail - Em uso, já tem uma conta com esse e-mail", Email, lblEmail);
                         return;
                     }
                 }
                 else
                 {
-                    showErrorMessage("Email inválido", "Infelizmente esse email não é válido!");
+                    showErrorMessageByLbl("E-mail - Invalido, esse e-mail não é valido", Email, lblEmail);
                     return;
                 }
             }
@@ -218,13 +218,13 @@ namespace AcroniWeb_4._5
                     }
                     else
                     {
-                        showErrorMessage("Usuário em uso", "Outra pessoa também gosta desse nome de usuário :/");
+                        showErrorMessageByLbl("Usuário - Em uso, já existe outra conta com esse usuário :/", Usuario, lblUsuario);
                         return;
                     }
                 }
                 else
                 {
-                    showErrorMessage("Usuário inválido", "Apenas caracteres alfanuméricos, _ e - são permitidos aqui!");
+                    showErrorMessageByLbl("Usuário - Deve conter apenas caracteres alfanuméricos, _ e -", Usuario, lblUsuario);    
                     return;
                 }
             }
@@ -290,5 +290,13 @@ namespace AcroniWeb_4._5
             modalback.Attributes.Add("style", "pointer-events:auto");
         }
 
+        public void showErrorMessageByLbl(string msg, TextBox txtCampoErrado, Label lblCampoErrado) {
+
+            txtCampoErrado.BorderColor = System.Drawing.Color.Red;
+            txtCampoErrado.Text = "";
+            lblCampoErrado.Text = msg;
+            lblCampoErrado.ForeColor = System.Drawing.Color.Red;
+
+        }
     }
 }
