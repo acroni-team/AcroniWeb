@@ -216,10 +216,16 @@ lds-eas {
     width: 450px;
     height: 550px;
 
+    &.overflow-dc {
+        width: 350px;
+        height: 400px;
+    }
+
     .modal-body-alt {
         background: -webkit-linear-gradient(top, #fa3d3d, #fa3d3d 50%, #36393f 50%, #36393f);
         width: 370px;
         height: 470px;
+        box-shadow: 5px 5px 50px #161616;
 
 
         .h1-modal, h1 {
@@ -263,6 +269,12 @@ lds-eas {
                 background-color: $cor-primaria;
                 margin-top: 35px;
             }
+        }
+
+        &.modal-dc {
+            background: #30333a;
+            width: 270px;
+            height: 320px;
         }
     }
 }

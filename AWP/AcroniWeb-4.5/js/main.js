@@ -29,14 +29,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Modal-eas
 
-    $('#abre-senha').click(function () {
+    function abremodal() {
         $('.modal-overflow').removeClass('hidden');
         $('.modal-wrap').addClass('is-showing');
         $('section').addClass('blur');
         $("body").niceScroll().remove();
-    });
+    }
 
-    $('.modal-background,.modal-button-cad').click(function () {
+    $('#abre-senha').click(abremodal);
+
+
+    $('.modal-background,.modal-button-cad,.modal-button-dc').click(function () {
         var $step = $('.modal-body-step1');
         $step.toggleClass('animate-first-in animate-first-out');
         setTimeout(function () {

@@ -1,7 +1,36 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/logado.Master" AutoEventWireup="true" CodeBehind="pagamento-dc.aspx.cs" Inherits="AcroniWeb_4._5.pagamento_dc" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript"> 
+        function abremodal() {
+            $('.modal-overflow').removeClass('hidden');
+            $('.modal-wrap').addClass('is-showing');
+            $("body").niceScroll().remove();
+            }
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="modal-wrap" id="modal" runat="server">
+            <div class="modal-overflow modal-overflow-alt overflow-dc hidden" id="overflow" runat="server">
+                 <div class="modal-body modal-body-step1 modal-body-alt modal-dc is-showing animate-first-in" id="modaldc" runat="server">
+                    <div class="textbox-overflow overflow-type3 dc">
+                        <asp:TextBox ID="NumeroAgencia" runat="server" class="textbox textbox-type3 focus dark" aria-label="Nome" onblur="placehoderStay(0);"></asp:TextBox>
+                        <asp:Label ID="lblNumeroAgencia" class="p" runat="server" Text="Número da agência" ></asp:Label>
+                    </div>
+                    <div class="textbox-overflow overflow-type3 dc">
+                        <asp:TextBox ID="Conta" runat="server" class="textbox textbox-type3 focus dark" aria-label="Sobrenome" onblur="placehoderStay(1);"></asp:TextBox>
+                        <asp:Label ID="lblConta" class="p" runat="server" Text="Conta"></asp:Label>
+                    </div>
+                    <div class="textbox-overflow overflow-type3 dc">
+                        <asp:TextBox ID="Digito" runat="server" class="textbox textbox-type3 focus dark" aria-label="Data de validade" onblur="placehoderStay(3);"></asp:TextBox>
+                        <asp:Label ID="lblDigito" class="p" runat="server" Text="Dígito"></asp:Label>
+                    </div>
+                    <div class="textbox-overflow overflow-type3 textbox-with-button dc">
+                        <input type="button" value="Confirmar" class="button button-dc dark minha-conta modal-button-dc disabled"/>
+                    </div>
+                </div> 
+            </div>
+            <div class="modal-background fadeIn" runat="server" id="modalback"></div>
+         </div>
     <div class="right right-logado right-pagamento-cc" ng-app="">
             <div class="cabecalho cabecalho-cc">
                 <div class="cabecalho-info">
@@ -26,9 +55,11 @@
                                 <asp:Label ID="lblCPF" class="p" runat="server" Text="CPF"></asp:Label>
                             </div> 
                             <div class="textbox-overflow overflow-type3 dc  with-select">
-                                <select>
-                                    <option>Banco</option>
-                                    <option>Wix.cu</option>
+                                <select onchange="abremodal()"> 
+                                    <option value="default">Banco</option>
+                                    <option value="bradesco">Bradesco</option>
+                                    <option value="santander">Santander</option>
+                                    <option value="caixa">Caixa</option>
                                 </select>
                             </div>
 
