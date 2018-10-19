@@ -49,45 +49,91 @@ namespace AcroniWeb
         {
             if (!string.IsNullOrEmpty(txtUsu.Text) && !string.IsNullOrEmpty(txtPass.Text))
             {
-                try
+                if (!txtUsu.Text.Contains("@"))
                 {
-                    if (sql.selectHasRows("*", "tblCliente", "usuario='" + txtUsu.Text + "'"))
+                    try
                     {
-                        txtUsu.Attributes.Add("style", "border-color:#0093ff");
-
-                        if (sql.selectHasRows("usuario", "tblCliente", "senha='" + txtPass.Text + "' and usuario='" + txtUsu.Text + "'"))
+                        if (sql.selectHasRows("*", "tblCliente", "usuario='" + txtUsu.Text + "'"))
                         {
-                            Session["logado"] = "1";
-                            Session["usuario"] = txtUsu.Text;
-                            if (ckbLogin.Checked)
+                            txtUsu.Attributes.Add("style", "border-color:#0093ff");
+
+                            if (sql.selectHasRows("usuario", "tblCliente", "senha='" + txtPass.Text + "' and usuario='" + txtUsu.Text + "'"))
                             {
-                                HttpCookie cookie = new HttpCookie("credenciais");
-                                cookie.Values["usuario"] =  txtUsu.Text;
-                                cookie.Values["senha"] = txtPass.Text;
-                                cookie.Expires = DateTime.Now.AddDays(365);
-                                Response.Cookies.Add(cookie);
+                                Session["logado"] = "1";
+                                Session["usuario"] = txtUsu.Text;
+                                if (ckbLogin.Checked)
+                                {
+                                    HttpCookie cookie = new HttpCookie("credenciais");
+                                    cookie.Values["usuario"] = txtUsu.Text;
+                                    cookie.Values["senha"] = txtPass.Text;
+                                    cookie.Expires = DateTime.Now.AddDays(365);
+                                    Response.Cookies.Add(cookie);
+                                }
+                                Response.Redirect("galeria.aspx");
+                                txtPass.Attributes.Add("style", "border-color:#0093ff");
                             }
-                            Response.Redirect("galeria.aspx");
-                            txtPass.Attributes.Add("style", "border-color:#0093ff");
+                            else
+                            {
+                                lblMsg.Text = "Senha incorreta";
+                                lblMsg.ForeColor = System.Drawing.Color.Red;
+                                txtPass.Attributes.Add("style", "border-color:red");
+                                Session["logado"] = "0";
+                            }
                         }
                         else
                         {
-                            lblMsg.Text = "Senha incorreta";
+                            lblMsg.Text = "Usuário e senha incorretos";
                             lblMsg.ForeColor = System.Drawing.Color.Red;
+                            txtUsu.Attributes.Add("style", "border-color:red");
                             txtPass.Attributes.Add("style", "border-color:red");
                             Session["logado"] = "0";
                         }
                     }
-                    else
-                    {
-                        lblMsg.Text = "Usuário e senha incorretos";
-                        lblMsg.ForeColor = System.Drawing.Color.Red;
-                        txtUsu.Attributes.Add("style", "border-color:red");
-                        txtPass.Attributes.Add("style", "border-color:red");
-                        Session["logado"] = "0";
-                    }
+                    catch { }
                 }
-                catch { }
+                else
+                {
+                    try
+                    {
+                        if (sql.selectHasRows("*", "tblCliente", "email='" + txtUsu.Text + "'"))
+                        {
+                            txtUsu.Attributes.Add("style", "border-color:#0093ff");
+
+                            if (sql.selectHasRows("usuario", "tblCliente", "senha='" + txtPass.Text + "' and email='" + txtUsu.Text + "'"))
+                            {
+                                Session["logado"] = "1";
+
+                                Session["usuario"] = sql.selectCampos("usuario", "tblCliente", "email= '"+txtUsu.Text+"'")[0];
+                                if (ckbLogin.Checked)
+                                {
+                                    HttpCookie cookie = new HttpCookie("credenciais");
+                                    cookie.Values["usuario"] = Session["usuario"].ToString();
+                                    cookie.Values["senha"] = txtPass.Text;
+                                    cookie.Expires = DateTime.Now.AddDays(365);
+                                    Response.Cookies.Add(cookie);
+                                }
+                                Response.Redirect("galeria.aspx");
+                                txtPass.Attributes.Add("style", "border-color:#0093ff");
+                            }
+                            else
+                            {
+                                lblMsg.Text = "Senha incorreta";
+                                lblMsg.ForeColor = System.Drawing.Color.Red;
+                                txtPass.Attributes.Add("style", "border-color:red");
+                                Session["logado"] = "0";
+                            }
+                        }
+                        else
+                        {
+                            lblMsg.Text = "Usuário e senha incorretos";
+                            lblMsg.ForeColor = System.Drawing.Color.Red;
+                            txtUsu.Attributes.Add("style", "border-color:red");
+                            txtPass.Attributes.Add("style", "border-color:red");
+                            Session["logado"] = "0";
+                        }
+                    }
+                    catch { }
+                }
             }
             else
             {

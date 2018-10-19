@@ -78,8 +78,6 @@
     <!--    Primeira seção -->
     <section>
 
-         <%--<div id="player"></div>--%>
-
         <div id="principal"> 
             <div data-aos="fade-up" data-aos-delay="300">
                 <h1>Compre teclados de marcas famosas ou crie o seu.</h1>
@@ -100,7 +98,7 @@
 					<asp:Label runat="server" Text="Relaxa, não vamos usar seus dados para o mal." id="lblMsg"></asp:Label>
                     </div>
                     <div class="login" style="width: 99%;">
-					   <asp:Textbox id="txtUsu" class="textbox focus" type="text" placeholder="Usuário" spellcheck="false" runat="server"></asp:Textbox>
+					   <asp:Textbox id="txtUsu" class="textbox focus" type="text" placeholder="Email ou usuário" spellcheck="false" runat="server"></asp:Textbox>
 					   <asp:Textbox id="txtPass" class="textbox focus" type="password" placeholder="Senha" spellcheck="false" runat="server"></asp:Textbox>
                        <asp:CheckBox ID="ckbLogin" class="checkbox" runat="server" />
                     </div>
