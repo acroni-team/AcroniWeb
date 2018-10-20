@@ -43,7 +43,6 @@
         -webkit-animation-duration: 0.25s;
         animation-duration: 0.25s;
         animation-fill-mode: forwards;
-        z-index: 1;
 
 
         .div--fadeIn {
@@ -66,6 +65,11 @@
             -webkit-animation-name: fadeIn;
             animation-name: fadeIn;
         }
+    }
+
+    .section--fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
     }
 
     &.saindo-da-pagina {

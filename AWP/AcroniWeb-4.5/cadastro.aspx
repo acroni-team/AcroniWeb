@@ -8,8 +8,8 @@
     <script src="js/verificaSenha.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div id="main" class="m-div">
-    <div id="padrao" ng-controller="validaSenha">
+    <div class="m-div">
+    <div id="padrao" ng-controller="validaSenha" class="section section--fadeIn">
         <div class="modal-wrap" id="modal" runat="server">
             <div class="modal-overflow modal-overflow-alt hidden" id="overflow" runat="server">
                 <div class="modal-body modal-body-step1 modal-body-alt modal-body-cad is-showing animate-first-in" id="modalcad" runat="server">
@@ -51,6 +51,7 @@
     </div>
     <script>
         document.getElementById("cadastro").classList.add("active");
+        document.getElementById("logoacr").style.color = "#959595";
     </script>
     <script src="js/disableBackButton.js"></script>
 
