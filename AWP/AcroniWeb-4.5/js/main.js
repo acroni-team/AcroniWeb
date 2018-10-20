@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function abremodal() {
         $('.modal-overflow').removeClass('hidden');
         $('.modal-wrap').addClass('is-showing');
-        $('section').addClass('blur');
+        //$('section').addClass('blur');
         $("body").niceScroll().remove();
     }
 
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         var $step = $('.modal-body-step1');
         $step.toggleClass('animate-first-in animate-first-out');
         setTimeout(function () {
-            $('section,.left-galeria,.right-logado ').removeClass('blur');
+            //$('section,.left-galeria,.right-logado ').removeClass('blur');
             $('.modal-wrap').removeClass('is-showing');
             $step.toggleClass('animate-first-out animate-first-in');
             $("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none" });

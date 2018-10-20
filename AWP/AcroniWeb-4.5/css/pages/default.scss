@@ -94,6 +94,7 @@ section{
     div {
         width: 75%;
         height: 40%;
+        position: relative;
     }
 
     .c-quadrado {
@@ -160,6 +161,10 @@ section{
         font-size:13.5px;
         position:absolute;
         top:255px;
+    }
+
+    .centraliza{
+        position:relative;
     }
 }
 

@@ -214,3 +214,23 @@
         transform: translate(19px, 0);
     }
 }
+
+@-webkit-keyframes fadeIn-right {
+    0% {
+        transform: scaleX(4.1);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes fadeIn-right {
+    0% {
+        transform: scaleX(4.1);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}

@@ -3,7 +3,9 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="css/controls/transicao.css" rel="stylesheet" />
     <script type="text/javascript" src="js/preload.js"></script>
+    <script type="text/javascript" src="js/transition.js"></script>
     <script>
         //Preload
         $(window).on('load', function () {
@@ -23,9 +25,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <!--        Preloader       -->
-     <div class="preload">
+<%--     <div class="preload">
         <p class="logo animado">Acroni</p>
-    </div>
+    </div>--%>
 
     <asp:ScriptManager ID="SCManager" runat="server" />
     
@@ -74,22 +76,23 @@
         <div class="modal-background fadeIn"></div>
 
      </div>
-
+    
     <!--    Primeira seção -->
+    <div id="main" class="m-div">
     <section>
 
-        <div id="principal"> 
-            <div data-aos="fade-up" data-aos-delay="300">
+        <div id="principal" > 
+            <div>
                 <h1>Compre teclados de marcas famosas ou crie o seu.</h1>
                 <h3>Obtenha uma conta agora - e tenha acesso à nossa plataforma <a> completa</a>, de graça.</h3>
                 <div class="c-quadrado"></div>
             </div>
         </div>
 
-        <div id="login">
+        <div id="login" class="section section-animate section--fadeIn-right">
             <form id="loginform" method="post">               
-				<div class="centraliza" data-aos="fade-up" data-aos-delay="300">
-                    <a id="abre-senha" class="link">Por acaso você esqueceu a senha?</a>
+				<div class="centraliza div--fadeIn">
+                    <p id="abre-senha" class="link">Por acaso você esqueceu a senha?</p>
                     <asp:UpdatePanel ID="SCPanel"  runat="server" UpdateMode="Conditional" ChildrenAsTriggers="false">
                     <ContentTemplate>
                     <asp:Panel ID="LoginPanel" DefaultButton="btnEntra" runat="server">
@@ -179,7 +182,7 @@
             </ul>
         </div>
     </footer>
-
+    </div>
     <!--                            Scripts                      -->
 
     <script>

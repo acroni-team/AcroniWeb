@@ -1,12 +1,12 @@
 $(function(){
   'use strict';
-  var $page = $('#modal'),
+  var $page = $('#modal,#main'),
       options = {
        debug: true, //Ainda tentando entender esses comandos aqui
         prefetch: true,
         cacheLength: 2,
         onStart: {  // No incio da página/ loading
-          duration: 250, // Duração da animação
+          duration: 500, // Duração da animação
           render: function ($container) { //Função daquela 'classe' (smoothStatejs) que ativa tal ação quando o usuário estiver saindo de uma página
             
             $container.addClass('saindo-da-pagina'); // Adiciona aquela classe la pra reverter a animação
