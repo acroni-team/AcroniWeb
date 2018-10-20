@@ -8,6 +8,7 @@
     <script src="js/verificaSenha.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="main" class="m-div">
     <div id="padrao" ng-controller="validaSenha">
         <div class="modal-wrap" id="modal" runat="server">
             <div class="modal-overflow modal-overflow-alt hidden" id="overflow" runat="server">
@@ -47,7 +48,7 @@
     </div>
     <div id="info">
     </div>
-
+    </div>
     <script>
         document.getElementById("cadastro").classList.add("active");
     </script>

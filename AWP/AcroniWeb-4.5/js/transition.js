@@ -2,7 +2,7 @@ $(function(){
   'use strict';
   var $page = $('#modal,#main'),
       options = {
-       debug: true, //Ainda tentando entender esses comandos aqui
+       debug: false, //Ainda tentando entender esses comandos aqui
         prefetch: true,
         cacheLength: 2,
         onStart: {  // No incio da página/ loading

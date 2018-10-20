@@ -23,7 +23,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+     <div id="main" class="m-div">
     <!--        Preloader       -->
 <%--     <div class="preload">
         <p class="logo animado">Acroni</p>
@@ -78,7 +78,7 @@
      </div>
     
     <!--    Primeira seção -->
-    <div id="main" class="m-div">
+
     <section>
 
         <div id="principal" > 
@@ -182,9 +182,8 @@
             </ul>
         </div>
     </footer>
-    </div>
     <!--                            Scripts                      -->
-
+   </div>
     <script>
         document.getElementById("home").classList.add("active");
     </script>

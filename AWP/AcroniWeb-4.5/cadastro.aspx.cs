@@ -124,6 +124,7 @@ namespace AcroniWeb_4._5
                         ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString());
                         modal.Attributes["class"] = "modal-wrap is-showing";
                         modalback.Attributes.Add("style", "pointer-events:auto");
+                        overflow.Attributes["class"] = "modal-overflow modal-overflow-alt";
                         ReenviarEmail.Attributes.Add("style", "display: block");
                         break;
                     }

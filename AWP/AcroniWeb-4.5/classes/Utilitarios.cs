@@ -148,12 +148,13 @@ public class Utilitarios
     
     // Mensagens de erro
 
-    public void showErrorMessage(string title, string msg, Label titleErro, Label msgErro,  HtmlGenericControl modal, HtmlGenericControl modalback)
+    public void showErrorMessage(string title, string msg, Label titleErro, Label msgErro,  HtmlGenericControl modal, HtmlGenericControl modalback, HtmlGenericControl overflow)
     {
         titleErro.Text = title;
         msgErro.Text = msg;
         modal.Attributes["class"] = "modal-wrap is-showing";
         modalback.Attributes.Add("style", "pointer-events:auto");
+        overflow.Attributes["class"] = "modal-overflow modal-overflow-alt";
     }
 
     public void showErrorMessageByLbl(string msg, TextBox txtCampoErrado, Label lblCampoErrado)

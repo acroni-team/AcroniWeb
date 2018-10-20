@@ -65,11 +65,11 @@ namespace AcroniWeb_4._5
                        FileUpload1.PostedFile.ContentType == "image/gif" ||
                        FileUpload1.PostedFile.ContentType == "image/jpeg"))
             {
-                ut.showErrorMessage("Não é imagem", "Esse arquivo que você jogou ai não é uma imagem, por favor insira um arquivo que seja uma imagem", titleErro, msgErro, modal, modalback);
+                ut.showErrorMessage("Não é imagem", "Esse arquivo que você jogou ai não é uma imagem, por favor insira um arquivo que seja uma imagem", titleErro, msgErro, modal, modalback, overflow);
             }
             else if (FileUpload1.PostedFile.ContentLength > 8388608)
             {
-                ut.showErrorMessage("Imagem muito grande", "Essa imagem que você colocou aí tem um tamanho muito grande. Por favor insira uma imagem menor que 8MB", titleErro, msgErro, modal, modalback);
+                ut.showErrorMessage("Imagem muito grande", "Essa imagem que você colocou aí tem um tamanho muito grande. Por favor insira uma imagem menor que 8MB", titleErro, msgErro, modal, modalback, overflow);
             }
             else
             {
