@@ -3,21 +3,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="css/controls/transicao.css" rel="stylesheet" />
-    <script type="text/javascript" src="js/preload.js"></script>
-    <script type="text/javascript" src="js/transition.js"></script>
-    <script>
-        //Preload
-        $(window).on('load', function () {
-             $('.preload').addClass('completo');
-              $('body').addClass('completo');
-        });
-
-        //$('.button-eas').on('click', function (loader) {
-            
-        //});
-
-    </script>
 
 </asp:Content>
 

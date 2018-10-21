@@ -1,21 +1,111 @@
 // SCSS
 
 @import '../imports/cor';
+@import '../imports/fontes';
 
 //
+.head-container {
+    width: 100%;
+    position: relative;
 
-.titulo {
-    width:100%;
-    height:100px;
+    .header {
+        background: url('../../img/loja/topposauroRestrito.aspx.jpg') no-repeat;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 0;
+        padding-top: 28.125%;
+        color: $cor-fundo;
+        display: flex;
+
+        div {
+            margin-top: -17.125%;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: $extra-bold;
+        }
+
+        p {
+            display: inline;
+            font-size: 12px;
+
+            &:first-of-type {
+                display: inherit;
+                font-size: 20px;
+                font-weight: $semi-bold;
+            }
+
+            &:nth-of-type(3) {
+                font-style: italic;
+            }
+        }
+    }
+
+    .curve {
+        background: url('../../img/loja/top.png') no-repeat;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 0;
+        padding-top: 47.083%;
+        position: absolute;
+        margin-top: -5.083%;
+        display: flex;
+
+        .div {
+            margin-top: -37.083%;
+            color: #5f5f5f;
+            text-align: center;
+            z-index:7777;
+        }
+
+        h1 {
+            font-weight: $semi-bold;
+            font-size: 23px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 15px;
+            margin-top: 4px;
+            color: #5f5f5f;
+        }
+    }
+}
+
+.classic {
+    background-color: #d3d3d3;
+    margin-top: 37.083%;
+    padding-top: 120px;
+
+    .div {
+        color: #5f5f5f;
+        text-align: center;
+        z-index: 7777;
+    }
+
+    h1 {
+        font-weight: $semi-bold;
+        font-size: 23px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 15px;
+        margin-top: 4px;
+        color: #5f5f5f;
+    }
 }
 
 .grid {
     padding: 20px 20px 100px 20px;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     list-style: none;
     text-align: center;
-   
+
 
 
     li {
@@ -31,44 +121,80 @@
         margin: 0;
         position: relative;
         overflow: hidden;
-        background-color: $cor-primaria;
+        background-color: #cccccc;
         cursor: pointer;
+        transition: box-shadow 0.2s ease-in;
+        box-shadow: 0px 2px 6px $cinza-claro;
+        border-radius: 10px;
 
         .img {
             max-width: 100%;
             display: block;
             position: relative;
-            transition: transform 0.4s;
+            /*transition: transform 0.4s;*/
         }
 
-        &:hover .img {
+        &:hover {
+            box-shadow: 0 0 0 3px $cor-primaria;
+        }
+        /*&:hover .img {
             transform: translateY(-50px);
-        }
-
+            box-shadow: 0 0 0 6px $cor-primaria;
+        }*/
         &:hover figcaption {
             opacity: 1;
-            transform: translateY(0px);
-            transition: transform 0.4s, opacity 0.1s;
+            transition: opacity 0.2s ease-in;
         }
     }
 
     figcaption {
+        width: 100%;
+        height: 100%;
         position: absolute;
-        top: auto;
-        bottom: 0;
+        top: 0;
         left: 0;
-        padding: 20px;
-        background: #262626;
-        color: $texto;
+        background: #fff;
+        color: #fff;
         opacity: 0;
-        height: 60px;
-        transform: translateY(100%);
-        transition: transform 0.4s, opacity 0.1s 0.3s;
+        transition: opacity 0.2s ease-in;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
-        .descricao {
+        .descricao, .preco {
             margin: 0;
             padding: 0;
-            color: #fff;
+            color: #5f5f5f;
+            display: inherit;
+            font-family: 'open';
+            font-weight: 500;
+        }
+
+        .preco{
+            color:$cor-primaria;
+        }
+
+        .descricao:nth-of-type(1) {
+            font-size: 24px;
+            max-width: 100%;
+            margin-top: -15px;
+        }
+
+        .descricao:nth-of-type(2) {
+            margin-bottom: 20px;
+        }
+
+        .preco:nth-of-type(1) {
+            font-size: 40px;
+            display: initial;
+            float: left;
+        }
+
+        .preco:nth-of-type(2) {
+            font-size: 40px;
+            margin-bottom: 25px;
+            display: initial;
         }
 
         a {

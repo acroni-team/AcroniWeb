@@ -11,7 +11,6 @@ namespace AcroniWeb
 {
     public partial class loja : System.Web.UI.Page
     {
-        SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao);
         DataSet ds;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,17 +21,18 @@ namespace AcroniWeb
                     if (conexao_SQL.State != ConnectionState.Open)
                         conexao_SQL.Open();
 
-                    String select = "SELECT * FROM tblProdutosDaLoja";
-                    using (SqlCommand comando_SQL = new SqlCommand(select, conexao_SQL))
+                    String select = "SELECT * FROM tblProdutoDaLoja";
+                    using (SqlDataAdapter da = new SqlDataAdapter(select, conexao_SQL))
                     {
-                        using (SqlDataReader resposta = comando_SQL.ExecuteReader())
-                        {
-                            DataList1.DataSource = resposta[0];
-                            DataList1.DataBind();
-                            conexao_SQL.Close();
-                        }
+                        ds = new DataSet();
+                        da.Fill(ds);
+                        DataList1.DataSource = ds.Tables[0];
+                        DataList1.DataBind();
+                        DataList2.DataSource = ds.Tables[0];
+                        DataList2.DataBind();
+                        conexao_SQL.Close();
+                    }
 
-                    }    
                 }
                 catch (Exception ex)
                 {
@@ -40,5 +40,28 @@ namespace AcroniWeb
                 }
             }
         }
+
+        //SqlConnection conexao_sql = new SqlConnection("Data Source = " + Environment.MachineName + "\\SQLEXPRESS" + ";Initial Catalog = Acroni_SQL; User ID = Acroni; Password = acroni7");
+        //DataSet ds;
+        //protected void Page_Load(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        if (conexao_sql.State != ConnectionState.Open)
+        //            conexao_sql.Open();
+        //        String select = "SELECT * FROM tblProdutoDaLoja";
+        //        SqlDataAdapter da = new SqlDataAdapter(select, conexao_sql);
+        //        ds = new DataSet();
+        //        da.Fill(ds);
+        //        DataList1.DataSource = ds.Tables[0];
+        //        DataList1.DataBind();
+
+        //        conexao_sql.Close();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        conexao_sql.Close();
+        //    }
+        //}
     }  
 }
