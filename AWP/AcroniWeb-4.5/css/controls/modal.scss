@@ -60,7 +60,7 @@ section.blur {
 
 .modal-body {
     position: absolute;
-    background-color: $cor-fundo;
+    background-image: linear-gradient(to bottom right, #ccc, #fff);
     width: 600px;
     height: 170px;
     transition: opacity 300ms ease-in 250ms, transform 300ms ease-in 100ms;
@@ -70,7 +70,6 @@ section.blur {
     z-index: 7777;
     text-align: center;
     display: none;
-
 
     h1 {
         color: $cor-primaria;
@@ -83,6 +82,7 @@ section.blur {
         margin-bottom: 20px;
     }
 
+    
 
     &.is-showing {
         display: block;
@@ -129,6 +129,68 @@ section.blur {
     box-shadow: 5px 5px 50px #333;
     border-radius: 15px;
     overflow: hidden;
+
+    .descricao, .preco {
+        color: #333;
+        display: inherit;
+        font-family: 'open';
+        font-weight: 500;
+        position: absolute;
+        z-index: 1;
+        font-weight: $semi-bold;
+
+
+        &:nth-of-type(1) {
+            font-size: 30px;
+            top: 65px;
+        }
+
+        &:nth-of-type(2) {
+            font-size: 20px;
+            top: 105px;
+        }
+    }
+
+
+    .preco {
+        color: $cor-primaria;
+    
+
+        &:nth-of-type(1) {
+            font-size: 40px;
+            display: initial;
+            float: left;
+        }
+
+        &:nth-of-type(2) {
+            font-size: 40px;
+            display: initial;
+        }
+    }
+
+    .right-loja {
+        width: 60%;
+        height: 100%;
+        background-color: transparent;
+        float: left;
+        display: flex;
+        align-items: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .img-grande {
+            width: 100%;
+            position: absolute;
+        }
+    }
+
+    .left-loja {
+        width: 40%;
+        height: 95%;
+        background-color: rgba(255,255,255,0.7);
+        float: left;
+    }
 }
 
 .modal-wrap-loja {

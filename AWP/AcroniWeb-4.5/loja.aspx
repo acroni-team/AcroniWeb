@@ -45,8 +45,11 @@
                     <div id="Produto<%# Eval("id_produto") %>" class="modal-wrap modal-wrap-loja">
                         <div class="modal-overflow overflow-loja">
                         <div class="modal-body modal-body-loja">
-                            <a class="fecha-janela">x</a>
+                            <%--<a class="fecha-janela">x</a>--%>
                             <div class="right-loja">
+                                <asp:Label class="descricao" ID="lblNomeModal" runat="server" Text='<%# Bind("nome") %>'></asp:Label>
+                                <asp:Label class="descricao" ID="lblMarcaModal" runat="server" Text='<%# Bind("marca") %>'></asp:Label> 
+                                <div style="margin-bottom: 20px;"><asp:Label class="preco" ID="Label2" runat="server" Text='R$'></asp:Label><asp:Label class="preco" ID="lblPrecoModal" runat="server" Text='<%# Bind("preco") %>'></asp:Label></div>
                                 <asp:Image ID="Image1" class="img-grande" runat="server"  ImageUrl='<%# Bind("id_produto","~/img/produtos/Img({0}).png") %>' />
                             </div>
                             <div class="left-loja">
