@@ -130,31 +130,22 @@ section.blur {
     border-radius: 15px;
     overflow: hidden;
 
-    .descricao, .preco {
-        color: #333;
-        display: inherit;
-        font-family: 'open';
-        font-weight: 500;
-        position: absolute;
+    .descricao {
         z-index: 1;
-        font-weight: $semi-bold;
-
 
         &:nth-of-type(1) {
             font-size: 30px;
-            top: 65px;
         }
 
         &:nth-of-type(2) {
             font-size: 20px;
-            top: 105px;
+            margin-bottom: 340px;
         }
     }
 
-
     .preco {
         color: $cor-primaria;
-    
+        z-index: 1;
 
         &:nth-of-type(1) {
             font-size: 40px;
@@ -174,22 +165,82 @@ section.blur {
         background-color: transparent;
         float: left;
         display: flex;
-        align-items: center;
-        position: relative;
-        display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
 
         .img-grande {
-            width: 100%;
+            width: 90%;
             position: absolute;
         }
     }
 
     .left-loja {
         width: 40%;
-        height: 95%;
+        height: 100%;
         background-color: rgba(255,255,255,0.7);
         float: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .p {
+            text-align: left;
+            margin: 0px;
+            left: 0;
+            display: inherit;
+            margin-left: -160px;
+            font-weight: $semi-bold;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size:13px
+        }
+
+        .textbox {
+            width: 75%;
+            background-color: transparent;
+            margin: 0;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .preco:nth-of-type(1) {
+            float: initial;
+            font-size: 23px;
+        }
+
+        .preco:nth-of-type(2) {
+            font-size: 23px;
+            margin-left: 5px
+        }
+
+
+        div {
+            width: 80%;
+
+            p {
+                text-align: left;
+                font-size: 17px;
+                color:$cor-primaria;
+            }
+
+            .desc {
+                text-align: left;
+                font-size: 16px;
+                font-weight: $normal;
+                color: $cinza;
+            }
+        }
+
+        .button-loja{
+            width:80%;
+            border-radius:15px;
+            font-size:20px
+        }
     }
 }
 

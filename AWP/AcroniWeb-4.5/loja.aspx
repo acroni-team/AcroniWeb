@@ -31,7 +31,7 @@
                 
                     <li>  
                         <figure id="click<%# Eval("id_produto") %>" name="<%# Eval("id_produto") %>">
-                            <%--<a href="#Produto<%# Eval("id") %>">--%><asp:Image ID="imgFoto" class="img" runat="server"  ImageUrl='<%# Bind("id_produto","~/img/produtos/Img({0}).png") %>' /><%--</a>--%>
+                            <%--<a href="#Produto<%# Eval("id") %>">--%><asp:Image ID="imgFoto" class="img" runat="server"  ImageUrl='<%# Bind("id_produto","~/img/produtos/Img ({0}).png") %>' /><%--</a>--%>
                             <figcaption>
                                     <asp:Label class="descricao" ID="lblNome" runat="server" Text='<%# Bind("nome") %>'></asp:Label>
                                     <asp:Label class="descricao" ID="lblMarca" runat="server" Text=' <%# Bind("marca") %>'></asp:Label>
@@ -49,10 +49,19 @@
                             <div class="right-loja">
                                 <asp:Label class="descricao" ID="lblNomeModal" runat="server" Text='<%# Bind("nome") %>'></asp:Label>
                                 <asp:Label class="descricao" ID="lblMarcaModal" runat="server" Text='<%# Bind("marca") %>'></asp:Label> 
-                                <div style="margin-bottom: 20px;"><asp:Label class="preco" ID="Label2" runat="server" Text='R$'></asp:Label><asp:Label class="preco" ID="lblPrecoModal" runat="server" Text='<%# Bind("preco") %>'></asp:Label></div>
-                                <asp:Image ID="Image1" class="img-grande" runat="server"  ImageUrl='<%# Bind("id_produto","~/img/produtos/Img({0}).png") %>' />
+                                <div style="margin-bottom: 20px;z-index:1"><asp:Label class="preco" ID="Label2" runat="server" Text='R$'></asp:Label><asp:Label class="preco" ID="lblPrecoModal" runat="server" Text='<%# Bind("preco") %>'></asp:Label></div>
+                                <asp:Image ID="Image1" class="img-grande" runat="server"  ImageUrl='<%# Bind("id_produto","~/img/produtos/Img ({0}).png") %>' />
                             </div>
                             <div class="left-loja">
+                                <asp:Label ID="lblFrete" class="p" runat="server" Text="Indeciso? Calcule o frete."></asp:Label>
+                                <asp:TextBox ID="txtFrete" class="textbox focus" runat="server" placeholder="Digite o frete"></asp:TextBox>
+                                <p>O preço total será de:</p>
+                                <div style="margin-bottom: 20px;"><asp:Label class="preco" ID="Label3" runat="server" Text='R$'></asp:Label><asp:Label class="preco" ID="lblValorPreco" runat="server" Text='00,00'></asp:Label></div>
+                                <div>
+                                    <p>Descrição</p>
+                                    <asp:Label class="descricao desc" ID="lblDescricao" runat="server" Text=' <%# Bind("descricao") %>'></asp:Label>
+                                </div>
+                                <asp:Button ID="btnCompra" class="button dark button-loja" runat="server" Text="Comprar agora" />
                             </div>
                          </div>
                        </div>
@@ -68,16 +77,16 @@
     </div>
     <div class="classic">
         <div class="div">
-            <h1>Os queridinhos do público.</h1>
-             <p>Os teclados mais vendidos estão aqui. Aproveite.</p>
+            <h1>Os clássicos.</h1>
+             <p>Não tente passar pela loja sem levar um destes.</p>
         </div>
-         <ul class="grid">
+           <ul class="grid grid2">
             <asp:DataList ID="DataList2" runat="server" RepeatColumns="3" RepeatDirection="Horizontal">
                 <ItemTemplate>
                 
                     <li>  
                         <figure id="click<%# Eval("id_produto") %>" name="<%# Eval("id_produto") %>">
-                            <%--<a href="#Produto<%# Eval("id") %>">--%><asp:Image ID="imgFoto" class="img" runat="server"  ImageUrl='<%# Bind("id_produto","~/img/produtos/Img({0}).png") %>' /><%--</a>--%>
+                            <%--<a href="#Produto<%# Eval("id") %>">--%><asp:Image ID="imgFoto" class="img" runat="server"  ImageUrl='<%# Bind("id_produto","~/img/produtos/Img ({0}).png") %>' /><%--</a>--%>
                             <figcaption>
                                     <asp:Label class="descricao" ID="lblNome" runat="server" Text='<%# Bind("nome") %>'></asp:Label>
                                     <asp:Label class="descricao" ID="lblMarca" runat="server" Text=' <%# Bind("marca") %>'></asp:Label>
@@ -91,11 +100,23 @@
                     <div id="Produto<%# Eval("id_produto") %>" class="modal-wrap modal-wrap-loja">
                         <div class="modal-overflow overflow-loja">
                         <div class="modal-body modal-body-loja">
-                            <a class="fecha-janela">x</a>
+                            <%--<a class="fecha-janela">x</a>--%>
                             <div class="right-loja">
-                                <asp:Image ID="Image1" class="img-grande" runat="server"  ImageUrl='<%# Bind("id_produto","~/img/produtos/Img({0}).png") %>' />
+                                <asp:Label class="descricao" ID="lblNomeModal" runat="server" Text='<%# Bind("nome") %>'></asp:Label>
+                                <asp:Label class="descricao" ID="lblMarcaModal" runat="server" Text='<%# Bind("marca") %>'></asp:Label> 
+                                <div style="margin-bottom: 20px;z-index:1"><asp:Label class="preco" ID="Label2" runat="server" Text='R$'></asp:Label><asp:Label class="preco" ID="lblPrecoModal" runat="server" Text='<%# Bind("preco") %>'></asp:Label></div>
+                                <asp:Image ID="Image1" class="img-grande" runat="server"  ImageUrl='<%# Bind("id_produto","~/img/produtos/Img ({0}).png") %>' />
                             </div>
                             <div class="left-loja">
+                                <asp:Label ID="lblFrete" class="p" runat="server" Text="Indeciso? Calcule o frete."></asp:Label>
+                                <asp:TextBox ID="txtFrete" class="textbox focus" runat="server" placeholder="Digite o frete"></asp:TextBox>
+                                <p>O preço total será de:</p>
+                                <div style="margin-bottom: 20px;"><asp:Label class="preco" ID="Label3" runat="server" Text='R$'></asp:Label><asp:Label class="preco" ID="lblValorPreco" runat="server" Text='00,00'></asp:Label></div>
+                                <div>
+                                    <p>Descrição</p>
+                                    <asp:Label class="descricao desc" ID="lblDescricao" runat="server" Text=' <%# Bind("descricao") %>'></asp:Label>
+                                </div>
+                                <asp:Button ID="btnCompra" class="button dark button-loja" runat="server" Text="Comprar agora" />
                             </div>
                          </div>
                        </div>
@@ -104,8 +125,7 @@
 
                 </ItemTemplate>
             </asp:DataList>
-          </ul>
-      </div>
+          </ul>      </div>
        <!--<a href="Produto<%# Eval("id") %>.aspx"><div class="info">-->
        <!--<a href="Produto<%# Eval("id") %>.aspx">Produto <%# Eval("id") %></a>-->
     <script>
