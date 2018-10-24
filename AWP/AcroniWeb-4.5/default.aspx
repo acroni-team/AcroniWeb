@@ -112,24 +112,27 @@
     <section id="video">
         <div class="conteiner" data-aos="fade-up" data-aos-delay="300">
             <div class="conteiner-video">
-                <div>
+                <video controls>
+                  <source src="video/Propaganda.mp4" type="video/mp4" />
+                     Seu browser não consegue rodar este vídeo
+                </video>
+                <%--<div>
                     <h1>Vídeo promocional da Acroni</h1>
                     <p>Um vídeo Bon et'fácil da Acroni made in Fi.</p>
                 </div>
-                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/287846455?color=0093ff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/287846455?color=0093ff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>--%>
             </div>
         </div>
+         <div class="frase">
+                <h1>"Nice"</h1>
+                <p>-Michael Rosen</p> 
+         </div>
     </section>
 
 
 
     <!--    Terceira seção -->
 
-    <section id="facilidade">
-        <h2 data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="title-subsection light">Faxcility</h2>
-        <p data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="desc desc-facilidade first">Já pensou em ter um teclado que você sente que é só seu? Fazer tudo isso é mais fácil do que você pensa, e vem com um prazer a mais, o de poder dizer orgulhosamente que foi elaborado por você.</p>
-        <p data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="desc desc-facilidade">Na Acroni seu desejo pode ser realizado. Com o nosso software você poderá fazer tudo que imaginava para o teclado dos sonhos sem sair do conforto do seu computador.</p>
-    </section>
     <section class="same-height" id="tamanhos">
         <div class="lsection">
             <img id="dois-teclados" src="img/dois-teclados.png" alt="Alternate Text" />
