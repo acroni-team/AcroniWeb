@@ -13,18 +13,18 @@
             <div class="modal-overflow modal-overflow-alt overflow-dc hidden" id="overflow" runat="server">
                  <div class="modal-body modal-body-step1 modal-body-alt modal-dc is-showing animate-first-in" id="modaldc" runat="server">
                     <div class="textbox-overflow overflow-type3 dc">
-                        <asp:TextBox ID="NumeroAgencia" runat="server" class="textbox textbox-type3 focus dark" aria-label="Nome" onblur="placehoderStay(0);"></asp:TextBox>
+                        <asp:TextBox ID="NumeroAgencia" runat="server" class="textbox textbox-type3 focus dark" onblur="placehoderStay(0);"></asp:TextBox>
                         <asp:Label ID="lblNumeroAgencia" class="p" runat="server" Text="Número da agência" ></asp:Label>
                     </div>
                     <div class="textbox-overflow overflow-type3 dc">
-                        <asp:TextBox ID="Conta" runat="server" class="textbox textbox-type3 focus dark" aria-label="Sobrenome" onblur="placehoderStay(1);"></asp:TextBox>
+                        <asp:TextBox ID="Conta" runat="server" class="textbox textbox-type3 focus dark"  onblur="placehoderStay(1);"></asp:TextBox>
                         <asp:Label ID="lblConta" class="p" runat="server" Text="Conta"></asp:Label>
                     </div>
                     <div class="textbox-overflow overflow-type3 dc">
-                        <asp:TextBox ID="Digito" runat="server" class="textbox textbox-type3 focus dark" aria-label="Data de validade" onblur="placehoderStay(3);"></asp:TextBox>
+                        <asp:TextBox ID="Digito" runat="server" class="textbox textbox-type3 focus dark" onblur="placehoderStay(2);"></asp:TextBox>
                         <asp:Label ID="lblDigito" class="p" runat="server" Text="Dígito"></asp:Label>
                     </div>
-                    <div class="textbox-overflow overflow-type3 textbox-with-button dc">
+                    <div class="textbox-overflow overflow-typeB textbox-with-button dc">
                         <input type="button" value="Confirmar" class="button button-dc dark minha-conta modal-button-dc disabled"/>
                     </div>
                 </div> 
@@ -43,15 +43,15 @@
                     <div class="align align-align">
                         <div class="align align-card-form align-dc">
                             <div class="textbox-overflow overflow-type3 dc">
-                                <asp:TextBox ID="Nome" runat="server" class="textbox textbox-type3 focus dark" aria-label="Nome" ng-model="nome" onblur="placehoderStay(0);"></asp:TextBox>
+                                <asp:TextBox ID="Nome" runat="server" class="textbox textbox-type3 focus dark"  ng-model="nome" onblur="placehoderStay(3);"></asp:TextBox>
                                 <asp:Label ID="lblNome" class="p" runat="server" Text="Nome"></asp:Label>
                             </div>
                             <div class="textbox-overflow overflow-type3 dc">
-                                <asp:TextBox ID="Sobrenome" runat="server" class="textbox textbox-type3 focus dark" aria-label="Sobrenome" ng-model="sobrenome" onblur="placehoderStay(1);"></asp:TextBox>
+                                <asp:TextBox ID="Sobrenome" runat="server" class="textbox textbox-type3 focus dark" ng-model="sobrenome" onblur="placehoderStay(4);"></asp:TextBox>
                                 <asp:Label ID="lblSobrenome" class="p" runat="server" Text="Sobrenome"></asp:Label>
                             </div>
                             <div class="textbox-overflow overflow-type3 dc">
-                                <asp:TextBox ID="CPF" runat="server" class="textbox textbox-type3 focus dark" aria-label="Data de validade" ng-model="data" onblur="placehoderStay(3);"></asp:TextBox>
+                                <asp:TextBox ID="CPF" runat="server" class="textbox textbox-type3 focus dark" aria-label="CPF" onblur="placehoderStay(5);"></asp:TextBox>
                                 <asp:Label ID="lblCPF" class="p" runat="server" Text="CPF"></asp:Label>
                             </div> 
                             <div class="textbox-overflow overflow-type3 dc  with-select">
@@ -63,7 +63,7 @@
                                 </select>
                             </div>
 
-                            <div class="textbox-overflow overflow-type3 textbox-with-button dc">
+                            <div class="textbox-overflow overflow-typeB  textbox-with-button dc">
                                 <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button button-dc dark minha-conta disabled" disabled/>
                             </div>
                         </div>

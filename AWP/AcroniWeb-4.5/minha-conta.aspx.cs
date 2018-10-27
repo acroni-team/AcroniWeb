@@ -224,7 +224,7 @@ namespace AcroniWeb_4._5
                 }
                 else
                 {
-                    ut.showErrorMessageByLbl("Usuário - Deve conter apenas caracteres alfanuméricos, _ e -", Usuario, lblUsuario);    
+                    ut.showErrorMessageByLbl("Usuário - Deve ter apenas letras,numeros, _ e -", Usuario, lblUsuario);    
                     return;
                 }
             }

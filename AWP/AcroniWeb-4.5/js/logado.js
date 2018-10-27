@@ -31,6 +31,8 @@ $(document).ready(function () {
         }
 
     });
+
+
 });
 
 var logado = angular.module("logado", []);
@@ -78,3 +80,15 @@ controllers.ctrl = function ($scope) {
 }
 
 logado.controller(controllers);
+
+
+//funcao do placeholder
+function placehoderStay(index) {
+    var id = $('.textbox-type3').eq(index).val();
+    if (id != "") {
+        $('.overflow-type3').eq(index).children('.p').addClass('stay');
+    }
+    if (id == "") {
+        $('.overflow-type3').eq(index).children('.p').removeClass('stay');
+    }
+}

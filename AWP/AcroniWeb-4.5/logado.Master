@@ -30,6 +30,7 @@
     </script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/masks.js"></script>
+    <script src="js/logado.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
