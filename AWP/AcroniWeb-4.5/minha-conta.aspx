@@ -40,11 +40,11 @@
                      <h1> Credenciais </h1>
                     <div class="textbox-overflow">
                         <asp:TextBox ID="Email" ng-change="mudaCor()" ng-model="email" runat="server" class="textbox focus dark"></asp:TextBox>
-                        <asp:Label ID="lblEmail" class="p" runat="server" Text="Nome completo"></asp:Label>
+                        <asp:Label ID="lblEmail" class="p" runat="server" Text="Email"></asp:Label>
                     </div>
                      <div class="textbox-overflow">
                         <asp:TextBox ID="Usuario" ng-change="mudaCor()" ng-model="usuario" runat="server" class="textbox focus dark"></asp:TextBox>
-                         <asp:Label ID="lblUsuario" class="p" runat="server" Text="E-mail"></asp:Label>
+                        <asp:Label ID="lblUsuario" class="p" runat="server" Text="Usuario"></asp:Label>
                     </div>
                     <div class="textbox-overflow">
                         <asp:TextBox ID="Senha" ng-change="mudaCor()" ng-model="senha" runat="server" class="textbox focus dark"></asp:TextBox>
