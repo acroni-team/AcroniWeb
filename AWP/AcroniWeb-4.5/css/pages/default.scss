@@ -1,4 +1,4 @@
-// SCSS
+ï»¿// SCSS
 @import '../imports/todos';
 @import '../controls/button';
 @import '../controls/textbox';
@@ -35,7 +35,7 @@
     z-index: 7;
 }
 
-// Primeira seção (é dividida em duas controls direita (principal) e esquerda (login) 
+// Primeira seÃ§Ã£o (Ã© dividida em duas controls direita (principal) e esquerda (login) 
 
 
 section {
@@ -187,7 +187,7 @@ section{
 }
 
 
-// Segunda seção
+// Segunda seÃ§Ã£o
 
 section#video {
     @include wh(110vh);
@@ -234,7 +234,7 @@ section#video {
                 }
 
                 button:before {
-                    content: '\f04b';
+                    content: 'â–º';
                     font-family: 'Font Awesome 5 Free';
                     font-weight: 900;
                     display: inline-block;
@@ -244,11 +244,12 @@ section#video {
                 }
 
                 button.play:before {
-                    content: '\f04b';
+                    content: 'â–º';
                 }
 
                 button.pause:before {
-                    content: '\f04c';
+                    content: 'â–Œâ–Œ';
+                    font-size: 60px;
                 }
             }
 
@@ -266,6 +267,8 @@ section#video {
                     bottom: 5px;
                     padding: 20px;
                     cursor: pointer;
+
+       
 
                     button {
                         background: none;
@@ -321,7 +324,7 @@ section#video {
 
 
 
-// Terceira seção
+// Terceira seÃ§Ã£o
 
 section#facilidade {
     @include wh(50vh);

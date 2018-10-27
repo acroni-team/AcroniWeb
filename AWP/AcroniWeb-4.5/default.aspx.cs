@@ -187,6 +187,7 @@ namespace AcroniWeb
 
         protected void btnSendCode_Click(object sender, EventArgs e)
         {
+            
             step2.Attributes["class"] = "modal-body modal-body-step2 is-showing";
             if (txtCodigo.Text.ToLower().Equals(Session["codigo"].ToString().ToLower()))
             {
