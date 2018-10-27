@@ -201,12 +201,101 @@ section#video {
         padding: 0px 110px;
         width: 100%;
 
-        video {
+        .c-video {
+            position: relative;
             width: 75%;
-            box-shadow: -14px 14px 16px 0px rgba(0, 0, 0, 0.25);
             float: left;
+
+            video {
+                width: 100%;
+                box-shadow: -14px 14px 16px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            .play-button {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 300ms ease;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                button {
+                    background: none;
+                    border: 0;
+                    outline: 0;
+                    cursor: pointer;
+                }
+
+                button:before {
+                    content: '\f04b';
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    display: inline-block;
+                    font-size: 100px;
+                    color: #fff;
+                    -webkit-font-smoothing: antialiased;
+                }
+
+                button.play:before {
+                    content: '\f04b';
+                }
+
+                button.pause:before {
+                    content: '\f04c';
+                }
+            }
+
+            .controls-bar {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: flex-end;
+
+                .mute-button {
+                    position: absolute;
+                    right: 0;
+                    bottom: 5px;
+                    padding: 20px;
+                    cursor: pointer;
+
+                    button {
+                        background: none;
+                        border: 0;
+                        outline: 0;
+                        cursor: pointer;
+                    }
+
+                    button:before {
+                        content: '\f028';
+                        font-family: 'Font Awesome 5 Free';
+                        font-weight: 900;
+                        display: inline-block;
+                        font-size: 25px;
+                        color: #fff;
+                        -webkit-font-smoothing: antialiased;
+                    }
+
+                    button.mute:before {
+                        content: '\f028';
+                    }
+
+                    button.muted:before {
+                        content: '\f026';
+                    }
+                }
+            }
         }
     }
+
 
     div.frase {
         position: absolute;

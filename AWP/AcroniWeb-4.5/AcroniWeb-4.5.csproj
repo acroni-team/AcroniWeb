@@ -129,6 +129,7 @@
     <None Include="css\base.scss" />
     <Content Include="css\area-restrita.css" />
     <Content Include="default.aspx" />
+    <Content Include="img\acroni.png" />
     <Content Include="img\error-icon.png" />
     <Content Include="img\pagamento\card.png" />
     <Content Include="img\pagamento\cc.png" />
@@ -156,6 +157,7 @@
     <Content Include="img\produtos\Img %288%29.png" />
     <Content Include="img\produtos\Img %289%29.png" />
     <Content Include="js\angular.min.js" />
+    <Content Include="js\acroniPlayer.js" />
     <Content Include="js\calculoFrete.js" />
     <Content Include="js\disableBackButton.js" />
     <Content Include="js\logado.js" />

@@ -3,7 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+    <script src="js/acroniPlayer.js"></script>
 </asp:Content>
 
 
@@ -111,12 +111,18 @@
 
     <section id="video">
         <div class="conteiner" data-aos="fade-up" data-aos-delay="300">
-            <div class="conteiner-video">
-                <video controls>
-                  <source src="video/Propaganda.mp4" type="video/mp4" />
-                     Seu browser não consegue rodar este vídeo
-                </video>
-                <%--<div>
+            <div class="c-video">
+                <video class="video" src="video/Propaganda.mp4" id="videozinho" poster="img/acroni.png"></video>
+                <div class="play-button" onclick="toggleVideo();">
+                    <button id="play-pause" type="button" ></button>
+                    
+                </div>
+                <div class="controls-bar">
+                   <div class="mute-button" onclick="toggleMute();">
+                       <button aria-label="Mute" id="mute-unmute" type="button" ></button>
+                   </div>
+                </div>
+<%--                <div>
                     <h1>Vídeo promocional da Acroni</h1>
                     <p>Um vídeo Bon et'fácil da Acroni made in Fi.</p>
                 </div>
