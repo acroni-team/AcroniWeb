@@ -63,6 +63,8 @@
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -88,9 +90,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cadastro.aspx" />
+    <Content Include="Connected Services\WSCorreiosFrete\AcroniWeb_4._5.WSCorreiosFrete.cResultado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WSCorreiosFrete\AcroniWeb_4._5.WSCorreiosFrete.cResultadoObjeto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\WSCorreiosFrete\AcroniWeb_4._5.WSCorreiosFrete.cResultadoServicos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\WSCorreiosFrete\CalcPrecoPrazo.disco" />
+    <None Include="Connected Services\WSCorreiosFrete\configuration91.svcinfo" />
+    <None Include="Connected Services\WSCorreiosFrete\configuration.svcinfo" />
+    <None Include="Connected Services\WSCorreiosFrete\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="construct.aspx" />
     <Content Include="AcroniWeb.cd" />
     <Content Include="css\controls\checkbox.scss" />
+    <None Include="Connected Services\WSCorreiosFrete\CalcPrecoPrazo.wsdl" />
     <None Include="css\pages\cadastro.scss" />
     <Content Include="css\controls\fontawesome.css" />
     <Content Include="css\imports\fontes.scss" />
@@ -136,6 +155,8 @@
     <Content Include="img\produtos\Img %287%29.png" />
     <Content Include="img\produtos\Img %288%29.png" />
     <Content Include="img\produtos\Img %289%29.png" />
+    <Content Include="js\angular.min.js" />
+    <Content Include="js\calculoFrete.js" />
     <Content Include="js\disableBackButton.js" />
     <Content Include="js\logado.js" />
     <Content Include="minha-conta.aspx" />
@@ -195,6 +216,11 @@
     <Compile Include="classes\SQLMetodos.cs" />
     <Compile Include="classes\Utilitarios.cs" />
     <Compile Include="classes\Valida.cs" />
+    <Compile Include="Connected Services\WSCorreiosFrete\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="construct.aspx.cs">
       <DependentUpon>construct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -305,7 +331,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\WSCorreiosFrete\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

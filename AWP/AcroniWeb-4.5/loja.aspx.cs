@@ -11,6 +11,17 @@ namespace AcroniWeb
 {
     public partial class loja : System.Web.UI.Page
     {
+        static SQLMetodos sql = new SQLMetodos();
+
+        [System.Web.Services.WebMethod]
+        public static double  calcularFrete(string cep, string id)
+        {
+            List<string> teclado = sql.selectCampos("*", "tblProdutoDaLoja", "id_produto = "+id+"");
+            var correios = new AcroniWeb_4._5.WSCorreiosFrete.CalcPrecoPrazoWSSoapClient();
+            var resposta = correios.CalcPrecoPrazo(string.Empty, string.Empty, "40010", "01101010", cep, teclado[3].ToString(), 1, decimal.Parse(teclado[6]), decimal.Parse(teclado[4]), decimal.Parse(teclado[5]), 0, "N", decimal.Parse(teclado[7]), "N");
+            var respostaReal = resposta.Servicos.FirstOrDefault();
+            return double.Parse(respostaReal.Valor);
+        }
         DataSet ds;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -53,27 +64,6 @@ namespace AcroniWeb
             }
         }
 
-        //SqlConnection conexao_sql = new SqlConnection("Data Source = " + Environment.MachineName + "\\SQLEXPRESS" + ";Initial Catalog = Acroni_SQL; User ID = Acroni; Password = acroni7");
-        //DataSet ds;
-        //protected void Page_Load(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        if (conexao_sql.State != ConnectionState.Open)
-        //            conexao_sql.Open();
-        //        String select = "SELECT * FROM tblProdutoDaLoja";
-        //        SqlDataAdapter da = new SqlDataAdapter(select, conexao_sql);
-        //        ds = new DataSet();
-        //        da.Fill(ds);
-        //        DataList1.DataSource = ds.Tables[0];
-        //        DataList1.DataBind();
-
-        //        conexao_sql.Close();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        conexao_sql.Close();
-        //    }
-        //}
+        
     }
 }
