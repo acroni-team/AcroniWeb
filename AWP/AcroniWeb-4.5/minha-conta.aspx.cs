@@ -130,11 +130,17 @@ namespace AcroniWeb_4._5
                     if (!sql.selectHasRows("*", "tblCliente", "cpf = '" + CPF.Text + "'"))
                     {
                         if (first)
+                        {
                             novosValores += ",cpf = '" + CPF.Text + "'";
+                            ut.showErrorMessage("Só precisamos confirmar que é você mesmo.", "A gente te enviou um código no e-mail.Cuidado pra não errar.", titleErro, msgErro, modal, modalback, overflow);
+                            return;
+                        }
                         else
                         {
                             novosValores += "cpf = '" + CPF.Text + "'";
                             first = true;
+                            ut.showErrorMessage("Só precisamos confirmar que é você mesmo.", "A gente te enviou um código no e-mail.Cuidado pra não errar.", titleErro, msgErro, modal, modalback, overflow);
+                            return;
                         }
                     }
                     else
@@ -180,6 +186,7 @@ namespace AcroniWeb_4._5
                     {
                         if (first)
                             novosValores += ",email = '" + emailSemEspacos + "'";
+                            
                         else
                         {
                             novosValores += "email = '" + emailSemEspacos + "'";

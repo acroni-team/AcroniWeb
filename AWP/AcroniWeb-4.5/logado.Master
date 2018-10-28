@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="logado.master.cs" Inherits="AcroniWeb_4._5.logado" %>
+﻿a<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="logado.master.cs" Inherits="AcroniWeb_4._5.logado" %>
 
 <!DOCTYPE html>
 

@@ -40,6 +40,7 @@
             </div>
 
             <div id="erro">
+                <div id="passStrength" runat="server" class="grow-bar-wrapper"><div class="grow-bar"></div></div>
                 <asp:Label ID="lblErro" runat="server" Text=""></asp:Label><br />
                 <asp:Label ng-bind="mensagem" ID="lblNivelSenha" runat="server" Text=""></asp:Label><br />
                 <asp:Label ID="lblDica" CssClass="dica" runat="server" Text=""></asp:Label>
