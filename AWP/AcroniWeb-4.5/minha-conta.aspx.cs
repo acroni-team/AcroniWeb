@@ -26,7 +26,7 @@ namespace AcroniWeb_4._5
             {
                 campos = sql.selectCampos("nome, cpf, cep, email, usuario, senha", "tblCliente", "usuario = '" + Session["usuarioNovo"] + "'");
                 object imgObj = sql.selectImagem("imagem_cliente", "tblCliente", "usuario = '" + Session["usuarioNovo"] + "'");
-                if(!(imgObj == System.DBNull.Value))
+                if (!(imgObj == System.DBNull.Value))
                     urlFotoPerfil = Convert.ToBase64String((byte[])imgObj);
             }
             else
@@ -92,7 +92,7 @@ namespace AcroniWeb_4._5
                             imgBytes = ut.ConvertImageToByteArray(image, System.Drawing.Imaging.ImageFormat.Tiff);
                         else if (Path.GetExtension(hpf.FileName) == ".gif")
                             imgBytes = ut.ConvertImageToByteArray(image, System.Drawing.Imaging.ImageFormat.Gif);
-                   
+
 
                         sql.updateImagem(imgBytes, "tblCliente", "usuario = '" + Session["usuario"] + "'");
                         IsImageUpload = true;
@@ -108,7 +108,7 @@ namespace AcroniWeb_4._5
                 string nomeSemEspacos = ut.retirarEspacos(Nome.Text);
                 if (!nomeSemEspacos.Contains(' '))
                 {
-                    ut.showErrorMessageByLbl("Nome Completo - Inválido, deve estar completo",Nome,lblNome);
+                    ut.showErrorMessageByLbl("Nome Completo - Inválido, deve estar completo", Nome, lblNome);
                     return;
                 }
                 else if (v.validarNome(nomeSemEspacos))
@@ -164,12 +164,12 @@ namespace AcroniWeb_4._5
                 }
                 else
                 {
-                    ut.showErrorMessageByLbl("CEP - Inválido, Relaxa, não vamos invadir sua casa.",CEP,lblCEP);
+                    ut.showErrorMessageByLbl("CEP - Inválido, Relaxa, não vamos invadir sua casa.", CEP, lblCEP);
                     return;
                 }
             }
 
-            
+
 
             if (!string.IsNullOrEmpty(Email.Text))
             {
@@ -224,7 +224,7 @@ namespace AcroniWeb_4._5
                 }
                 else
                 {
-                    ut.showErrorMessageByLbl("Usuário - Deve ter apenas letras,numeros, _ e -", Usuario, lblUsuario);    
+                    ut.showErrorMessageByLbl("Usuário - Deve ter apenas letras,numeros, _ e -", Usuario, lblUsuario);
                     return;
                 }
             }
@@ -240,37 +240,39 @@ namespace AcroniWeb_4._5
                 }
                 passChanged = true;
             }
-            
-            if (userChanged && passChanged)
-            {
-                HttpCookie cookie = new HttpCookie("credenciais");
-                cookie.Values["usuario"] = Session["usuarioNovo"].ToString();
-                cookie.Values["senha"] = Senha.Text;
-                cookie.Expires = DateTime.Now.AddDays(365);
-                Response.Cookies.Add(cookie);
-                userChanged = true;
-            }
-            else if (userChanged == true && passChanged == false)
-            {
-                string senha = Request.Cookies["credenciais"]["senha"];
-                HttpCookie cookie = new HttpCookie("credenciais");
-                cookie.Values["usuario"] = Session["usuarioNovo"].ToString();
-                cookie.Values["senha"] = senha;
-                cookie.Expires = DateTime.Now.AddDays(365);
-                Response.Cookies.Add(cookie);
-                userChanged = true;
-            }
-            else if (userChanged == false && passChanged == true)
-            {
-                string usuario = Request.Cookies["credenciais"]["usuario"];
-                HttpCookie cookie = new HttpCookie("credenciais");
-                cookie.Values["usuario"] = usuario;
-                cookie.Values["senha"] = Senha.Text;
-                cookie.Expires = DateTime.Now.AddDays(365);
-                Response.Cookies.Add(cookie);
-                userChanged = true;
-            }
 
+            if (Request.Cookies["credenciais"] != null)
+            {
+                if (userChanged && passChanged)
+                {
+                    HttpCookie cookie = new HttpCookie("credenciais");
+                    cookie.Values["usuario"] = Session["usuarioNovo"].ToString();
+                    cookie.Values["senha"] = Senha.Text;
+                    cookie.Expires = DateTime.Now.AddDays(365);
+                    Response.Cookies.Add(cookie);
+                    userChanged = true;
+                }
+                else if (userChanged == true && passChanged == false)
+                {
+                    string senha = Request.Cookies["credenciais"]["senha"];
+                    HttpCookie cookie = new HttpCookie("credenciais");
+                    cookie.Values["usuario"] = Session["usuarioNovo"].ToString();
+                    cookie.Values["senha"] = senha;
+                    cookie.Expires = DateTime.Now.AddDays(365);
+                    Response.Cookies.Add(cookie);
+                    userChanged = true;
+                }
+                else if (userChanged == false && passChanged == true)
+                {
+                    string usuario = Request.Cookies["credenciais"]["usuario"];
+                    HttpCookie cookie = new HttpCookie("credenciais");
+                    cookie.Values["usuario"] = usuario;
+                    cookie.Values["senha"] = Senha.Text;
+                    cookie.Expires = DateTime.Now.AddDays(365);
+                    Response.Cookies.Add(cookie);
+                    userChanged = true;
+                }
+            }
             if (first)
             {
                 sql.update("tblCliente", "usuario = '" + Session["usuario"] + "'", novosValores);
