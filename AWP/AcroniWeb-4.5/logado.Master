@@ -21,8 +21,10 @@
         <script>
             $(window).on('load', function () {
                 $("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none" });
+                $(".nicescroll-box").niceScroll(".menu-lateral", { cursorcolor: "#72767d", cursorwidth: "10px", cursorborder: "none" });
                  $('.preload').addClass('completo');
             });
+
             function loader(){
                 $('.lds-ellipsis').css("opacity", "1");
                 $('.button-eas,.button-type2').css("color", "#0093ff");
@@ -56,14 +58,16 @@
                         </figcaption>
                     </div>
                 </div>
-                <div class="menu-lateral">
-                   <a id="galeria" href="galeria.aspx">Minha galeria</a>
-                   <a id="minha-conta" href="minha-conta.aspx">Editar minha conta</a>
-                   <a id="pagamento" href="pagamento.aspx">Pagamento</a>
-                   <a id="fale-conosco" href="fale-conosco.aspx">Fale conosco</a>
-                   <a id="quem-somos" href="quem-somos.aspx">Quem somos</a>
-                   <a id="download" href="download.aspx">Download</a>
-                   <asp:LinkButton ID="deslogar" runat="server" OnClick="deslogar_Click">Sair</asp:LinkButton>
+                <div class="nicescroll-box" style="height:450px">
+                    <div class="menu-lateral" style="min-height:600px">
+                       <a id="galeria" href="galeria.aspx">Minha galeria</a>
+                       <a id="minha-conta" href="minha-conta.aspx">Editar minha conta</a>
+                       <a id="pagamento" href="pagamento.aspx">Pagamento</a>
+                       <a id="fale-conosco" href="fale-conosco.aspx">Fale conosco</a>
+                       <a id="quem-somos" href="quem-somos.aspx">Quem somos</a>
+                       <a id="download" href="download.aspx">Download</a>
+                       <asp:LinkButton ID="deslogar" runat="server" OnClick="deslogar_Click">Sair</asp:LinkButton>
+                    </div>
                 </div>
             </div> 
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

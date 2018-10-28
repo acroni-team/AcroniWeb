@@ -99,9 +99,16 @@ public class Utilitarios
 
     public void enviarEmailConfirmacao(string codigo, string email)
     {
+        string[] divide = email.Split('@');
+
         string titulo = "Alterar senha";
-        string mensagem = "Oi, eu sou o código " + codigo + " :D ";
+        string corpo = File.ReadAllText(HttpContext.Current.Server.MapPath("email.html"));
+        string na = corpo.Replace("#Codigo#", codigo);
+        string mensagem = na.Replace("#NomedeUsuario#", divide[0]);
+
+        //string mensagem = "<div> Oi, "+divide[0]+"! </br>, eu sou o código " + codigo + " :D ";
         MailMessage mail = new MailMessage("acroni.acroni7@gmail.com", email, titulo, mensagem);
+        mail.IsBodyHtml = true;
         SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
         client.EnableSsl = true;
         client.Credentials = new System.Net.NetworkCredential("acroni.acroni7@gmail.com", "acroni77");

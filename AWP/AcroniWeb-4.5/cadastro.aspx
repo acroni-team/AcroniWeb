@@ -22,13 +22,13 @@
             </div>
             <div class="cad-wraper">
                 <div class="textbox-type2-overflow overflow-cad">
-                    <asp:TextBox ID="txtNome" runat="server" type="text" class="textbox textbox-type2 textbox-cad aparece" placeholder="Nome Completo" autocomplete="off"></asp:TextBox>
-                    <asp:TextBox ID="txtUsu" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Usuário" autocomplete="off"></asp:TextBox>
+                    <asp:TextBox ID="txtNome" runat="server" type="text" class="textbox textbox-type2 textbox-cad aparece" placeholder="Digite seu Nome Completo" autocomplete="off"></asp:TextBox>
+                    <asp:TextBox ID="txtUsu" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite o nome de usuário desejado" autocomplete="off"></asp:TextBox>
                     <asp:TextBox ID="txtEmail" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite o seu email :D" autocomplete="off"></asp:TextBox>
-                    <asp:TextBox ID="txtCodigo" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Enviamos um código no seu email" autocomplete="off"></asp:TextBox>
-                    <asp:TextBox ID="txtCpf" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="CPF" autocomplete="off"></asp:TextBox>
-                    <asp:TextBox ng-model="senha" TextMode="Password" ng-change="verificar()" ID="txtSenha" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Senha" autocomplete="off"></asp:TextBox>
-                    <asp:TextBox ID="txtCSenha" TextMode="Password" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Confirmar Senha" autocomplete="off"></asp:TextBox>
+                    <asp:TextBox ID="txtCodigo" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite o seu código" autocomplete="off"></asp:TextBox>
+                    <asp:TextBox ID="txtCpf" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite seu CPF" autocomplete="off"></asp:TextBox>
+                    <asp:TextBox ng-model="senha" TextMode="Password" ng-change="verificar()" ID="txtSenha" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite sua melhor senha :D" autocomplete="off"></asp:TextBox>
+                    <asp:TextBox ID="txtCSenha" TextMode="Password" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Confirmae sua Senha" autocomplete="off"></asp:TextBox>
                     <asp:Button ID="btnValida" class="button dark button-type2 button-cad" runat="server" Text="Enviar" OnClick="btnValida_Click" OnClientClick="loader('.lds-ellipsis','.button-cad');" />
                     <div class="lds-ellipsis" style="top: 8px;">
                         <div></div>

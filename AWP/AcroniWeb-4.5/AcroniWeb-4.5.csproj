@@ -129,6 +129,7 @@
     <None Include="css\base.scss" />
     <Content Include="css\area-restrita.css" />
     <Content Include="default.aspx" />
+    <Content Include="email.html" />
     <Content Include="img\acroni.png" />
     <Content Include="img\error-icon.png" />
     <Content Include="img\pagamento\card.png" />
