@@ -37,6 +37,32 @@
     }
 }
 
+//Cabcalho galeria
+
+.galeria-header{
+    position:absolute;
+    top:70px;
+
+    h1, .nome{
+        font-size:30px;
+        color:$texto;
+        font-weight:$semi-bold;
+        display:inline;
+    }
+    .nome{
+        font-weight:$bold;
+    }
+
+    p{
+        font-weight:$semi-bold;
+        color:#363940;
+        font-size:28px;
+    }
+
+
+}
+
+
 //FUNDO
 
 .galeria-section {
@@ -71,14 +97,28 @@
         justify-content: center;
     }
 
+    &.colecao {
+        text-align:center;
+        flex-direction:column;
+    }
+
     img {
         width: 100px;
+    }
+
+    .img-colecao {
+        width: 100%;
+        border-radius:5px;
     }
 }
 
 .galeria-status{
     position:absolute;
 }
+
+
+
+
 
 //PERFIL DO CLIENTE
 
