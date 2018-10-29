@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="cadastro.aspx" />
+    <Content Include="colecao.aspx" />
     <Content Include="Connected Services\WSCorreiosFrete\AcroniWeb_4._5.WSCorreiosFrete.cResultado.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -219,6 +220,13 @@
     <Compile Include="classes\SQLMetodos.cs" />
     <Compile Include="classes\Utilitarios.cs" />
     <Compile Include="classes\Valida.cs" />
+    <Compile Include="colecao.aspx.cs">
+      <DependentUpon>colecao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="colecao.aspx.designer.cs">
+      <DependentUpon>colecao.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\WSCorreiosFrete\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

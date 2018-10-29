@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">  
     <div class="right right-logado right-galeria">
-            <asp:Image ID="imgColecao" class="colecao-picture" runat="server" ImageUrl='' />
+            <a href="colecao.aspx"><asp:Image ID="imgColecao" class="colecao-picture" runat="server" ImageUrl='' /></a>
             <asp:Image ID="imgStatus" class="galeria-status" runat="server"  ImageUrl='img/galeria-vazia.png' />
     </div>
       <script>

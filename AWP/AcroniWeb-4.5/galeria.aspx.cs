@@ -33,6 +33,7 @@ namespace AcroniWeb_4._5
                             byte[] imgBytes = (byte[])tabela[0];
                             string imgString = Convert.ToBase64String(imgBytes);
                             imgColecao.ImageUrl = "data:image/jpg;base64," + imgString;
+
                         }
                     }
                 }
