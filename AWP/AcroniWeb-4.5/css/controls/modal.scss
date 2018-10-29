@@ -368,6 +368,11 @@ lds-eas {
             margin-top: 10px;
         }
 
+        .btn-valida {
+            border: 2px solid #0093ff;
+            background-color: #0093ff;
+        }
+
         &.modal-body-cad {
             background: -webkit-linear-gradient(top, $cor-primaria, $cor-primaria 50%, $cor-fundo 50%, $cor-fundo);
 
@@ -388,5 +393,60 @@ lds-eas {
             width: 270px;
             height: 320px;
         }
+    }
+}
+
+.modal-wrap {
+    .btn-valida {
+        display: none;
+        border: 2px solid #0093ff;
+        background-color: #0093ff;
+        position: absolute;
+        left: 250px;
+    }
+
+    .textbox {
+        display: none;
+        margin-top: 80px;
+        background: #303339;
+        margin-bottom: 30px;
+    }
+}
+
+.modal-wrap.codigo {
+    img {
+        display: none;
+    }
+
+    .modal-overflow {
+        width: 700px;
+        height: 400px;
+    }
+
+    .modal-body {
+        background: -webkit-linear-gradient(top, #0093ff, #0093ff 35%, #36393f 35%, #36393f);
+        width: 630px;
+        height: 330px;
+    }
+
+    .h1-modal {
+        margin-top: 0
+    }
+
+    .p-modal {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .btn-fecha {
+        display: none;
+    }
+
+    .btn-valida {
+        display: block
+    }
+
+    .textbox {
+        display: block;
     }
 }

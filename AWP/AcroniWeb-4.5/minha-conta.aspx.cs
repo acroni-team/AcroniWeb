@@ -132,14 +132,12 @@ namespace AcroniWeb_4._5
                         if (first)
                         {
                             novosValores += ",cpf = '" + CPF.Text + "'";
-                            ut.showErrorMessage("Só precisamos confirmar que é você mesmo.", "A gente te enviou um código no e-mail.Cuidado pra não errar.", titleErro, msgErro, modal, modalback, overflow);
                             return;
                         }
                         else
                         {
                             novosValores += "cpf = '" + CPF.Text + "'";
                             first = true;
-                            ut.showErrorMessage("Só precisamos confirmar que é você mesmo.", "A gente te enviou um código no e-mail.Cuidado pra não errar.", titleErro, msgErro, modal, modalback, overflow);
                             return;
                         }
                     }
@@ -184,13 +182,32 @@ namespace AcroniWeb_4._5
                 {
                     if (!sql.selectHasRows("*", "tblCliente", "email = '" + emailSemEspacos + "'"))
                     {
+
                         if (first)
+                        {
                             novosValores += ",email = '" + emailSemEspacos + "'";
-                            
+
+                            //img.Attributes.Add("style", "display:none");
+                            //modalcad.Attributes.Add("style", "background: -webkit-linear-gradient(top, #0093ff, #0093ff 35%, #36393f 35%, #36393f);width: 630px;height: 330px;");
+                            //overflow.Attributes.Add("style", "width: 700px;height: 400px;");
+                            //titleErro.Attributes.Add("style", "margin-top: 0");
+                            //msgErro.Attributes.Add("style", "margin-top: 0;width: 100%;");
+                            //button.Attributes.Add("style", "display:none");
+                            //btnValidaEmail.Attributes.Add("style", "display:block");
+                            //overflow.Attributes.Add("style","")
+
+                            ut.showErrorMessage("Estamos quase lá.", "Um código foi enviado pro seu email. Agora é só colocar ele aqui.", titleErro, msgErro, modal, modalback, overflow);
+                            modal.Attributes["class"] = "modal-wrap is-showing codigo";
+                            return;
+
+                        }
                         else
                         {
                             novosValores += "email = '" + emailSemEspacos + "'";
                             first = true;
+                            ut.showErrorMessage("Estamos quase lá.", "Um código foi enviado pro seu email. Agora é só colocar ele aqui.", titleErro, msgErro, modal, modalback, overflow);
+                            modal.Attributes["class"] = "modal-wrap is-showing codigo";
+                            return;
                         }
                     }
                     else

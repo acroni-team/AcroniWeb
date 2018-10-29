@@ -9,7 +9,9 @@
                     <img style="width:150px;" alt="icone-erro" src="img/error-icon.png" />
                     <asp:Label ID="titleErro" class="h1-modal" runat="server" Text="Label"></asp:Label>
                     <asp:Label ID="msgErro" class="p-modal" runat="server" Text="Label"></asp:Label>
-                    <input type="button" class="button dark modal-button-cad modal-alt-button" value="Entendi"/>
+                     <asp:TextBox ID="txtValidaEmail" runat="server" class="textbox focus dark" ></asp:TextBox>
+                     <asp:Button ID="btnValidaEmail" runat="server" Text="Entendi" class="button dark modal-button-cad modal-alt-button btn-valida" />
+                    <input id="button" runat="server" type="button" class="button dark modal-button-cad modal-alt-button btn-fecha" value="Entendi"/>
                 </div> 
             </div>
             <div class="modal-background fadeIn" runat="server" id="modalback"></div>
