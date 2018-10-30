@@ -60,12 +60,12 @@ var controllers = {};
 controllers.ctrl = function ($scope) {
     $scope.mudaCor = function ($event) {
         var btnSalva = document.getElementById('ContentPlaceHolder1_btnSalva');
-        if (document.querySelectorAll('.textbox.focus.dark')[0].value != "" ||
-            document.querySelectorAll('.textbox.focus.dark')[1].value != "" ||
+        if (document.querySelectorAll('.textbox.focus.dark')[1].value != "" ||
             document.querySelectorAll('.textbox.focus.dark')[2].value != "" ||
             document.querySelectorAll('.textbox.focus.dark')[3].value != "" ||
             document.querySelectorAll('.textbox.focus.dark')[4].value != "" ||
-            document.querySelectorAll('.textbox.focus.dark')[5].value != "" ) {
+            document.querySelectorAll('.textbox.focus.dark')[5].value != "" ||
+            document.querySelectorAll('.textbox.focus.dark')[6].value != "" ) {
             btnSalva.classList.remove("disabled");
             btnSalva.setAttribute("value", "Salvar");
             btnSalva.disabled = false;
