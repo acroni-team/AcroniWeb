@@ -56,7 +56,7 @@ namespace AcroniWeb_4._5
 
             if (!FileUpload1.HasFile)
             {
-                novosValores = "";
+                Session["novosValores"] = "";
             }
             else if (!(FileUpload1.PostedFile.ContentType == "image/jpg" ||
                        FileUpload1.PostedFile.ContentType == "image/png" ||
@@ -114,7 +114,7 @@ namespace AcroniWeb_4._5
                 else if (v.validarNome(nomeSemEspacos))
                 {
                     first = true;
-                    novosValores += "nome = '" + Nome.Text + "'";
+                    Session["novosValores"] += "nome = '" + Nome.Text + "'";
                 }
                 else
                 {
@@ -131,12 +131,12 @@ namespace AcroniWeb_4._5
                     {
                         if (first)
                         {
-                            novosValores += ",cpf = '" + CPF.Text + "'";
+                            Session["novosValores"] += ",cpf = '" + CPF.Text + "'";
                             return;
                         }
                         else
                         {
-                            novosValores += "cpf = '" + CPF.Text + "'";
+                            Session["novosValores"] += "cpf = '" + CPF.Text + "'";
                             first = true;
                             return;
                         }
@@ -159,10 +159,10 @@ namespace AcroniWeb_4._5
                 if (v.validarCep(CEP.Text))
                 {
                     if (first)
-                        novosValores += ",cep = '" + CEP.Text + "'";
+                        Session["novosValores"] += ",cep = '" + CEP.Text + "'";
                     else
                     {
-                        novosValores += "cep = '" + CEP.Text + "'";
+                        Session["novosValores"] += "cep = '" + CEP.Text + "'";
                         first = true;
                     }
                 }
@@ -173,41 +173,24 @@ namespace AcroniWeb_4._5
                 }
             }
 
-
-
+            string emailSemEspacos = "";
             if (!string.IsNullOrEmpty(Email.Text))
             {
-                string emailSemEspacos = ut.retirarEspacos(Email.Text);
+                emailSemEspacos = ut.retirarEspacos(Email.Text);
                 if (v.validarEmail(emailSemEspacos))
                 {
                     if (!sql.selectHasRows("*", "tblCliente", "email = '" + emailSemEspacos + "'"))
                     {
-
                         if (first)
                         {
-                            novosValores += ",email = '" + emailSemEspacos + "'";
-
-                            //img.Attributes.Add("style", "display:none");
-                            //modalcad.Attributes.Add("style", "background: -webkit-linear-gradient(top, #0093ff, #0093ff 35%, #36393f 35%, #36393f);width: 630px;height: 330px;");
-                            //overflow.Attributes.Add("style", "width: 700px;height: 400px;");
-                            //titleErro.Attributes.Add("style", "margin-top: 0");
-                            //msgErro.Attributes.Add("style", "margin-top: 0;width: 100%;");
-                            //button.Attributes.Add("style", "display:none");
-                            //btnValidaEmail.Attributes.Add("style", "display:block");
-                            //overflow.Attributes.Add("style","")
-
-                            ut.showErrorMessage("Estamos quase lá.", "Um código foi enviado pro seu email. Agora é só colocar ele aqui.", titleErro, msgErro, modal, modalback, overflow);
-                            modal.Attributes["class"] = "modal-wrap is-showing codigo";
-                            return;
-
+                            Session["novosValores"] += ",email = '" + emailSemEspacos + "'";
+                            
                         }
                         else
                         {
-                            novosValores += "email = '" + emailSemEspacos + "'";
+                            Session["novosValores"] += "email = '" + emailSemEspacos + "'";
                             first = true;
-                            ut.showErrorMessage("Estamos quase lá.", "Um código foi enviado pro seu email. Agora é só colocar ele aqui.", titleErro, msgErro, modal, modalback, overflow);
-                            modal.Attributes["class"] = "modal-wrap is-showing codigo";
-                            return;
+                            
                         }
                     }
                     else
@@ -231,10 +214,10 @@ namespace AcroniWeb_4._5
                     if (!sql.selectHasRows("*", "tblCliente", "usuario = '" + usuSemEspacos + "'"))
                     {
                         if (first)
-                            novosValores += ",usuario = '" + usuSemEspacos + "'";
+                            Session["novosValores"] += ",usuario = '" + usuSemEspacos + "'";
                         else
                         {
-                            novosValores += "usuario = '" + usuSemEspacos + "'";
+                            Session["novosValores"] += "usuario = '" + usuSemEspacos + "'";
                             first = true;
                         }
                         Session["usuarioNovo"] = usuSemEspacos;
@@ -256,10 +239,10 @@ namespace AcroniWeb_4._5
             if (!string.IsNullOrEmpty(Senha.Text))
             {
                 if (first)
-                    novosValores += ",senha = '" + Senha.Text + "'";
+                    Session["novosValores"] += ",senha = '" + Senha.Text + "'";
                 else
                 {
-                    novosValores += "senha = '" + Senha.Text + "'";
+                    Session["novosValores"] += "senha = '" + Senha.Text + "'";
                     first = true;
                 }
                 passChanged = true;
@@ -299,8 +282,19 @@ namespace AcroniWeb_4._5
             }
             if (first)
             {
-                sql.update("tblCliente", "usuario = '" + Session["usuario"] + "'", novosValores);
-                Response.Redirect("minha-conta.aspx");
+                if (Session["novosValores"].ToString().Contains("email"))
+                {
+                    ut.showErrorMessage("Estamos quase lá.", "Um código foi enviado pro seu email. Agora é só colocar ele aqui.", titleErro, msgErro, modal, modalback, overflow);
+                    Session["codigo-mudanca"] = ut.gerarStringConfirmacao();
+                    ut.enviarEmailConfirmacao(Session["codigo-mudanca"].ToString(), emailSemEspacos);
+                    modal.Attributes["class"] = "modal-wrap is-showing codigo";
+                    return;
+                }
+                else
+                {
+                    sql.update("tblCliente", "usuario = '" + Session["usuario"] + "'", Session["novosValores"].ToString());
+                    Response.Redirect("minha-conta.aspx");
+                }
             }
             else if (IsImageUpload)
             {
@@ -308,6 +302,13 @@ namespace AcroniWeb_4._5
             }
         }
 
-
+        protected void btnValidaEmail_Click(object sender, EventArgs e)
+        {
+            if (txtValidaEmail.Text.ToLower().Equals(Session["codigo-mudanca"].ToString().ToLower()))
+            {
+                sql.update("tblCliente", "usuario = '" + Session["usuario"] + "'", Session["novosValores"].ToString());
+                Response.Redirect("minha-conta.aspx");
+            }
+        }
     }
 }

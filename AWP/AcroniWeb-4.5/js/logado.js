@@ -65,8 +65,7 @@ controllers.ctrl = function ($scope) {
             document.querySelectorAll('.textbox.focus.dark')[2].value != "" ||
             document.querySelectorAll('.textbox.focus.dark')[3].value != "" ||
             document.querySelectorAll('.textbox.focus.dark')[4].value != "" ||
-            document.querySelectorAll('.textbox.focus.dark')[5].value != "" ||
-            document.getElementById('ContentPlaceHolder1_FileUpload1').value != "") {
+            document.querySelectorAll('.textbox.focus.dark')[5].value != "" ) {
             btnSalva.classList.remove("disabled");
             btnSalva.setAttribute("value", "Salvar");
             btnSalva.disabled = false;

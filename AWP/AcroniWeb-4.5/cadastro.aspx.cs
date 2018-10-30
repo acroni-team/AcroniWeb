@@ -90,7 +90,6 @@ namespace AcroniWeb_4._5
                     else
                     {
                         IsValid("usu", txtUsu, txtEmail, 2, usuario);
-                        //btnValida.Attributes["class"] = "buttonv2 extended";
                         break;
                     }
                     
