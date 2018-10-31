@@ -120,7 +120,7 @@ namespace AcroniWeb_4._5
                         IsValid("email", txtEmail, txtCodigo, 3, email);
                         Session["email"] = email;
                         Session["codigo"] = ut.gerarStringConfirmacao();
-                        ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString());
+                        ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Confirmar E-mail", "Utilize o código abaixo para corfimar seu email. Se você não está criando uma conta na Acroni, finja que nunca nem viu esse email.");
                         modal.Attributes["class"] = "modal-wrap is-showing";
                         modalback.Attributes.Add("style", "pointer-events:auto");
                         overflow.Attributes["class"] = "modal-overflow modal-overflow-alt";
@@ -262,7 +262,7 @@ namespace AcroniWeb_4._5
         {
             //    Response.Redirect("default.aspx");
             Session["codigo"] = ut.gerarStringConfirmacao();
-            ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString());
+            ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Confirmar E-mail", "Utilize o código abaixo para corfimar seu email. Se você não está criando uma conta na Acroni, finja que nunca nem viu esse email.");
             modal.Attributes["class"] = "modal-wrap is-showing";
             modalback.Attributes.Add("style", "pointer-events:auto");
         }
@@ -270,7 +270,7 @@ namespace AcroniWeb_4._5
         protected void ReenviaImai_Click(object sender, EventArgs e)
         {
             Session["codigo"] = ut.gerarStringConfirmacao();
-            ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString());
+            ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Confirmar E-mail", "Utilize o código abaixo para corfimar seu email. Se você não está criando uma conta na Acroni, finja que nunca nem viu esse email.");
         }
 
 

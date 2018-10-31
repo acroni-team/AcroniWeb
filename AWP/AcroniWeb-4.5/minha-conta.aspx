@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="modal-wrap" id="modal" runat="server">
+    <div class="modal-wrap minha-conta" id="modal" runat="server">
         <div class="modal-overflow modal-overflow-alt hidden" id="overflow" runat="server">
             <div class="modal-body modal-body-step1 modal-body-alt is-showing animate-first-in" id="modalcad" runat="server">
                 <img style="width: 150px;" alt="icone-erro" src="img/error-icon.png" />
@@ -11,6 +11,7 @@
                 <asp:Label ID="msgErro" class="p-modal" runat="server" Text="Label"></asp:Label>
                 <asp:TextBox ID="txtValidaEmail" runat="server" class="textbox focus dark"></asp:TextBox>
                 <asp:Button ID="btnValidaEmail" runat="server" Text="Entendi" class="button dark modal-button-cad modal-alt-button btn-valida" OnClick="btnValidaEmail_Click" />
+                <input id="button" runat="server" type="button" class="button dark modal-button-cad modal-alt-button btn-fecha" value="Entendi" />
             </div>
         </div>
         <div class="modal-background fadeIn" runat="server" id="modalback"></div>
@@ -47,7 +48,7 @@
                         <asp:Label ID="lblUsuario" class="p" runat="server" Text="Usuario"></asp:Label>
                     </div>
                     <div class="textbox-overflow">
-                        <asp:TextBox ID="Senha" ng-change="mudaCor()" ng-model="senha" runat="server" class="textbox focus dark"></asp:TextBox>
+                        <asp:TextBox ID="Senha" ng-change="mudaCor()" ng-model="senha" runat="server" class="textbox focus dark" type="password"></asp:TextBox>
                         <asp:Label ID="lblSenha" class="p" runat="server" Text="Senha"></asp:Label>
                     </div>
                 </div>
@@ -81,7 +82,7 @@
 
                 </div>
             </div>
-            <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button dark minha-conta disabled" OnClick="btnSalva_Click" disabled />
+            <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button dark minha-conta disabled" OnClientClick="loader('.lds-eas-1','.button.minha-conta');" OnClick="btnSalva_Click" disabled />
         </div>
     </div>
     <script>

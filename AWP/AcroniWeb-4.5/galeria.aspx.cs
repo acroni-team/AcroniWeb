@@ -38,7 +38,8 @@ namespace AcroniWeb_4._5
                                 string imgString = Convert.ToBase64String(imgBytes);
                                 imgColecao.ImageUrl = "data:image/jpg;base64," + imgString;
                                 imgStatus.Attributes.Add("style", "display:none");
-                            }
+                                header.Attributes["class"] = "galeria-header is-showing";
+                           }
 
                         }
                     }

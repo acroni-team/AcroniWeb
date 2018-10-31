@@ -20,8 +20,8 @@
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1"/> 
         <script>
             $(window).on('load', function () {
-                $("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none" });
-                $(".nicescroll-box").niceScroll(".menu-lateral", { cursorcolor: "#72767d", cursorwidth: "10px", cursorborder: "none" });
+                $("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false });
+                $(".nicescroll-box").niceScroll(".menu-lateral", { cursorcolor: "#72767d", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false });
                  $('.preload').addClass('completo');
             });
 
@@ -37,7 +37,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" autocomplete="off" runat="server">
         <section class="galeria-section">
             <div class="left left-galeria">
                 <div class="perfil-cliente">

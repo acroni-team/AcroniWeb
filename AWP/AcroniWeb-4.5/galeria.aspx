@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">  
     <div class="right right-logado right-galeria colecao">
-        <div class="galeria-header">
+        <div id="header" runat="server" class="galeria-header">
             <h1>Seja bem-vindo, </h1><asp:Label ID="Nome" class="nome" runat="server" Text=""></asp:Label>
         </div>
         <div>

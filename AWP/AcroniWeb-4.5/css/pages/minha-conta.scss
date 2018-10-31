@@ -74,12 +74,13 @@
             background-color: #303339;
             border-radius: 50%;
             overflow: hidden;
-            width: 190px;
-            height: 190px;
+            width: 90px;
+            height: 90px;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
+            transform: scale(2);
 
             img {
                 width: 120%;
@@ -92,7 +93,7 @@
                 overflow: hidden;
                 position: absolute;
                 cursor: pointer;
-                background-color: rgba(0, 0, 0, 0.2);
+                background-color: rgba(0, 0, 0, 0.5);
                 display: flex;
                 align-items: center;
 
@@ -102,6 +103,7 @@
                     width: 50%;
                     text-align: center;
                     cursor: pointer;
+                    font-size: 10px;
                 }
 
                 .upload-imagem {
@@ -127,13 +129,13 @@
     .plano {
         font-weight: $semi-bold;
         color: #72767d;
-        text-align:center;
+        text-align: center;
 
         .info-plano {
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align:justify;
+            text-align: justify;
 
             ul {
                 font-size: 14px;

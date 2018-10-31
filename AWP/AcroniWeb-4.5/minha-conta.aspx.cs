@@ -286,8 +286,8 @@ namespace AcroniWeb_4._5
                 {
                     ut.showErrorMessage("Estamos quase lá.", "Um código foi enviado pro seu email. Agora é só colocar ele aqui.", titleErro, msgErro, modal, modalback, overflow);
                     Session["codigo-mudanca"] = ut.gerarStringConfirmacao();
-                    ut.enviarEmailConfirmacao(Session["codigo-mudanca"].ToString(), emailSemEspacos);
-                    modal.Attributes["class"] = "modal-wrap is-showing codigo";
+                    ut.enviarEmailConfirmacao(Session["codigo-mudanca"].ToString(), emailSemEspacos, "Alterar email", "Seu email pode ser redefinido utilizando o código abaixo. Se você não pediu uma troca, finja que nunca nem viu esse email.");
+                    modal.Attributes["class"] = "modal-wrap minha-conta is-showing codigo";
                     return;
                 }
                 else

@@ -10,9 +10,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div id="main" class="m-div">
     <!--        Preloader       -->
-<%--     <div class="preload">
+     <div class="preload">
         <p class="logo animado">Acroni</p>
-    </div>--%>
+    </div>
 
     <asp:ScriptManager ID="SCManager" runat="server" />
     

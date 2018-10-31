@@ -174,7 +174,7 @@ namespace AcroniWeb
                 step2.Attributes["class"] = "modal-body modal-body-step2 is-showing animate-in";
                 Session["email"] = txtEmail.Text;
                 Session["codigo"] = ut.gerarStringConfirmacao();
-                ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString());
+                ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Alterar senha", "Sua senha pode ser redefinida utilizando o código abaixo. Se você não pediu uma troca, finja que nunca nem viu esse email.");
             }
             else
             {

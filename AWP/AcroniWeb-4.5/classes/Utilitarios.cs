@@ -97,14 +97,14 @@ public class Utilitarios
         return stringConfirmacao;
     }
 
-    public void enviarEmailConfirmacao(string codigo, string email)
+    public void enviarEmailConfirmacao(string codigo, string email, string titulo, string msg)
     {
         string[] divide = email.Split('@');
 
-        string titulo = "Alterar senha";
         string corpo = File.ReadAllText(HttpContext.Current.Server.MapPath("email.html"));
-        string na = corpo.Replace("#Codigo#", codigo);
-        string mensagem = na.Replace("#NomedeUsuario#", divide[0]);
+        string replaceCodigo = corpo.Replace("#Codigo#", codigo);
+        string replaceNome = replaceCodigo.Replace("#NomedeUsuario#", divide[0]);
+        string mensagem = replaceNome.Replace("#Mensagem#", msg);
 
         //string mensagem = "<div> Oi, "+divide[0]+"! </br>, eu sou o código " + codigo + " :D ";
         MailMessage mail = new MailMessage("acroni.acroni7@gmail.com", email, titulo, mensagem);
@@ -159,7 +159,7 @@ public class Utilitarios
     {
         titleErro.Text = title;
         msgErro.Text = msg;
-        modal.Attributes["class"] = "modal-wrap is-showing";
+        modal.Attributes["class"] = "modal-wrap minha-conta is-showing";
         modalback.Attributes.Add("style", "pointer-events:auto");
         overflow.Attributes["class"] = "modal-overflow modal-overflow-alt";
     }

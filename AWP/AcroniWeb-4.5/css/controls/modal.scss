@@ -396,7 +396,7 @@ lds-eas {
     }
 }
 
-.modal-wrap {
+.modal-wrap.minha-conta {
     .btn-valida {
         display: none;
         border: 2px solid #0093ff;
@@ -413,7 +413,7 @@ lds-eas {
     }
 }
 
-.modal-wrap.codigo {
+.modal-wrap.minha-conta.codigo {
     img {
         display: none;
     }
@@ -424,7 +424,7 @@ lds-eas {
     }
 
     .modal-body {
-        background: -webkit-linear-gradient(top, #0093ff, #0093ff 35%, #36393f 35%, #36393f);
+        background: -webkit-linear-gradient(top, #0093ff, #0093ff 36%, #36393f 36%, #36393f);
         width: 630px;
         height: 330px;
     }
