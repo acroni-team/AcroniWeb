@@ -132,6 +132,7 @@
     <Content Include="default.aspx" />
     <Content Include="email.html" />
     <Content Include="img\acroni.png" />
+    <Content Include="img\curva-lateral.png" />
     <Content Include="img\error-icon.png" />
     <Content Include="img\pagamento\card.png" />
     <Content Include="img\pagamento\cc.png" />
@@ -139,6 +140,7 @@
     <Content Include="img\pagamento\dc.png" />
     <Content Include="img\loja\top.png" />
     <Content Include="img\loja\topposauroRestrito.aspx.jpg" />
+    <Content Include="img\pczinho.png" />
     <Content Include="img\produtos\Img %281%29.png" />
     <Content Include="img\produtos\Img %2810%29.png" />
     <Content Include="img\produtos\Img %2811%29.png" />

@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             $('.modal-wrap').removeClass('is-showing');
             $step.toggleClass('animate-first-out animate-first-in');
             $step2.removeClass('animate-first-out').addClass('animate-first-in');
-            $("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none" });
+            $("body").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', cursoropacitymin: 1 });
             $('.modal-overflow').addClass('hidden');
         }, 200);
     });

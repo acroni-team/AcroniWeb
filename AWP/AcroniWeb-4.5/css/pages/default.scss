@@ -73,7 +73,6 @@ section{
     float: left;
     z-index: 0;
     display: flex;
-   
 }
 
 //Principal
@@ -188,6 +187,41 @@ section{
 
 
 // Segunda seção
+
+#bem-vindo {
+    background: url("../../img/curva-lateral.png") no-repeat #f2f2f2;
+    background-size: 35%;
+    height: 70vh;
+    display: flex;
+    text-align: right;
+    align-items: center;
+
+    .align-text {
+        width: 60%;
+        margin: 0;
+        position: absolute;
+        right: 0;
+
+        .text {
+            max-width: 600px;
+            text-align: center;
+
+            h1 {
+                width: auto;
+                color: $cor-primaria;
+                margin-bottom: 30px;
+                font-weight: $semi-bold;
+                font-size: 37px;
+            }
+
+            p {
+                color: $cinza;
+            }
+        }
+    }
+}
+
+// Terceira seção
 
 section#video {
     @include wh(110vh);
@@ -319,12 +353,45 @@ section#video {
     }
 }
 
+// Quarta seção
+
+section#download {
+    background-color: #303339;
+    display: flex;
+    align-items: flex-end;
+    height: 110vh;
+    margin-top:-10px;
+
+    img {
+        float: left;
+        margin-right: 0;
+    }
+
+    .align-text {
+        align-self: center;
 
 
+        .text {
+            max-width: 330px;
+            text-align: center;
+
+            h1 {
+                width: auto;
+                color: $texto;
+                margin-bottom: 30px;
+                font-weight: $semi-bold;
+                font-size: 28px;
+            }
+
+            p {
+                color: $texto;
+            }
+        }
+    }
+}
 
 
-
-// Terceira seção
+// FOOTI
 
 section#facilidade {
     @include wh(50vh);

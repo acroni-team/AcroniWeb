@@ -21,7 +21,7 @@
         <script>
             $(window).on('load', function () {
                 $("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false });
-                $(".nicescroll-box").niceScroll(".menu-lateral", { cursorcolor: "#72767d", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false });
+                $("body").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false, autohidemode:'leave', cursoropacitymin:1 });
                  $('.preload').addClass('completo');
             });
 

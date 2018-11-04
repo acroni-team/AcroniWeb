@@ -108,8 +108,25 @@
 
     </section>
 
+    <!-- Segunda seção -->
+    
+    <section id="bem-vindo">
+        <div class="align-text">
+            <div class="text">
+                <h1>Bem-Vindo(a)!</h1>
+                <p>Você está procuirando por teclados pro seu PC? Se não, eu tenho 
+                    uma má notícia para te dar. Mas, se por um acaso você estiver a procura
+                    de teclados diferentes, baratos e bonitos, então se liga:
+                    A Acroni é especializada na fabricação de teclados <b>customizados</b>- O que
+                    significa que todo teclado que você comprar aqui que seja da marca 
+                    <b>Acroni</b> será inteiramente <b>feito por você</b>.
+                </p>
+                <a href="loja.aspx"><input type="button" value="Visite a loja" class="button dark button-eas" /></a>
+            </div>
+         </div>
+    </section>    
 
-    <!--    Segunda seção -->
+    <!-- Terceira seção -->
 
     <section id="video">
         <div class="conteiner" data-aos="fade-up" data-aos-delay="300">
@@ -136,33 +153,23 @@
                 <p>-Michael Rosen</p> 
          </div>
     </section>
+    
+    <!-- Quarta seção -->
 
-
-
-    <!--    Terceira seção -->
-
-    <section class="same-height" id="tamanhos">
-        <div class="lsection">
-            <img id="dois-teclados" src="img/dois-teclados.png" alt="Alternate Text" />
-        </div>
-        <div class="rsection">
-            <h2 data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="title-subsection dark tamanhos">Tamanhos para todos</h2>
-            <br />
-            <p data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="desc desc-tamanhos">Aqui você escolhe o tamanho de teclado que mais combina com você e que melhor cabe em sua mesa.</p>
-            <asp:Button data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" ID="btnComeceJa" class="button-hover button dark btn-comece-ja" runat="server" Text="Começe já" />
-        </div>
-    </section>
-    <section class="same-height" id="escolha-cor">
-        <div class="lsection-escolha section-white">
-            <h2 data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="title-subsection title-escolha">Escolha a sua cor</h2>
-            <p data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="desc escolha">Escolha suas cores preferidas para criar um teclado único, elaborado por você.</p>
-            <p data-aos="fade-up" data-aos-delay="60" data-aos-duration="800" data-aos-easing="ease-out-cubic" class="desc escolha">Nosso software oferece a customização de forma fácil e rápida. Em apenas alguns minutos você conseguirá criar o teclado dos seus sonhos.</p>
-        </div>
-        <div class="rsection-escolha section-white">
-            <img src="img/demo-acroni.jpg" id="demo-acroni" alt="Alternate Text" />
-        </div>
+    <section id="download">
+         <img alt="imagem do software de customização" src="../../img/pczinho.png" />
+        <div class="align-text">
+            <div class="text">
+                <h1>Baixe agora o software.</h1>
+                <p>Através do nosso programa pra desktop, você consegue fazer as customizações que deseja no seu teclado. O que está esperando?
+                </p>
+                <a href="loja.aspx"><input type="button" value="Download" class="button dark button-eas" /></a>
+            </div>
+         </div>
     </section>
 
+    
+    <!-- FOOTI -->
 
     <footer id="footi">
         <div id="div-logo">
