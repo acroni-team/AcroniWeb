@@ -76,10 +76,19 @@
         <nav>
             <div id="logotext">
                 <a href="default.aspx" id="logoacr">Acroni</a>
+            </div>
+            <div id="user" style="display:none" runat="server">
+                <a href="minha-conta.aspx"><figure class="profile-wraper on-loja">
+                    <div>
+                        <asp:Image ID="profilePicture" class="profile-picture" runat="server"  ImageUrl='img/imgperf.jpeg' ImageAlign="Middle" />
+                     </div>
+                    <figcaption class="profile-settings on-loja">
+                        <asp:Label class="user-name" ID="lblUser" runat="server" Text='fhjfhdjkhkdhjkdsahjkdashjkdsa'></asp:Label><br/>
+                    </figcaption>
+                </figure></a>
 
             </div>
             <div id="menu-icon">
-
                 <div class="hamburger"></div>
             </div>
         </nav>

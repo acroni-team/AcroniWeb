@@ -25,11 +25,11 @@ namespace AcroniWeb
         DataSet ds;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Environment.MachineName.Equals("PALMA-PC"))
-            {
-                acroni.classes.Conexao.param = "Data Source = " + Environment.MachineName + "; Initial Catalog = ACRONI_SQL; User ID = Acroni; Password = acroni7";
-                acroni.classes.Conexao.nome_conexao = "Data Source = " + Environment.MachineName + "; Initial Catalog = ACRONI_SQL; User ID = Acroni; Password = acroni7";
-            }
+            //if (Environment.MachineName.Equals("PALMA-PC"))
+            //{
+            //    acroni.classes.Conexao.param = "Data Source = " + Environment.MachineName + "; Initial Catalog = ACRONI_SQL; User ID = Acroni; Password = acroni7";
+            //    acroni.classes.Conexao.nome_conexao = "Data Source = " + Environment.MachineName + "; Initial Catalog = ACRONI_SQL; User ID = Acroni; Password = acroni7";
+            //}
             using (SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao))
             {
                 try
@@ -62,6 +62,10 @@ namespace AcroniWeb
                     conexao_SQL.Close();
                 }
             }
+
+      
+                
+
         }
 
         

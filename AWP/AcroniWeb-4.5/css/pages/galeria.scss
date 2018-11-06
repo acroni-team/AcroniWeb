@@ -126,6 +126,19 @@
     justify-content: center;
     height: 150px;
 
+    &.on-loja {
+        height: 100%;
+        position: absolute;
+        right: 125px;
+        cursor: pointer;
+
+        div {
+            margin-top: 5px;
+            transform: scale(0.35);
+            border: none;
+        }
+    }
+
     div {
         width: 90px;
         height: 90px;
@@ -138,7 +151,6 @@
 
         img {
             width: 120%;
-            
         }
     }
 }
@@ -173,6 +185,14 @@
     .user-mb {
         top: -5px;
         font-size: 10px;
+    }
+
+    &.on-loja {
+        .user-name {
+            display: inline-block;
+            margin-left: -15px;
+            margin-top: 5px;
+        }
     }
 }
 
