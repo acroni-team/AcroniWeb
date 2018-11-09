@@ -37,7 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
         $('.modal-overflow').removeClass('hidden');
         $('.modal-wrap').addClass('is-showing');
         //$('section').addClass('blur');
-        $("body").niceScroll().remove();
+        $("body").
+
+
+
+
+
+
+            Scroll().remove();
     }
 
     $('#abre-senha').click(abremodal);
@@ -53,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             $('.modal-wrap').removeClass('is-showing');
             $step.toggleClass('animate-first-out animate-first-in');
             $step2.removeClass('animate-first-out').addClass('animate-first-in');
-            $("body").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', cursoropacitymin: 1 });
+            $("body").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', cursoropacitymin: 1, zindex: '99999999' });
             $('.modal-overflow').addClass('hidden');
         }, 200);
     });

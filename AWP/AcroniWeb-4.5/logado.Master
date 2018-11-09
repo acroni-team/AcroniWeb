@@ -20,8 +20,9 @@
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1"/> 
         <script>
             $(window).on('load', function () {
-                $("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false });
-                $("body").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false, autohidemode:'leave', cursoropacitymin:1 });
+                //$("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false });
+                $("body").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', cursoropacitymin: 1, zindex:'99999999' });
+                $(".nicescroll-box").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', zindex:'99999999'});
                  $('.preload').addClass('completo');
             });
 
@@ -58,8 +59,8 @@
                         </figcaption>
                     </div>
                 </div>
-                <div class="nicescroll-box" style="height:450px">
-                    <div class="menu-lateral" style="min-height:600px">
+                <div class="nicescroll-box" style="height:390px;">
+                    <div class="menu-lateral" style="height:100%">
                        <a id="galeria" href="galeria.aspx">Minha galeria</a>
                        <a id="minha-conta" href="minha-conta.aspx">Editar minha conta</a>   
                        <a id="pagamento" href="pagamento.aspx">Pagamento</a>

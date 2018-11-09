@@ -111,6 +111,8 @@
     <!-- Segunda seção -->
     
     <section id="bem-vindo">
+  
+
         <div class="align-text">
             <div class="text">
                 <h1>Bem-Vindo(a)!</h1>

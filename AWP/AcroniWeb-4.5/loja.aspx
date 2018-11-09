@@ -152,7 +152,8 @@
             $("body").niceScroll().remove();
 
             $('.modal-background, .fecha-janela').click(function () {
-                $("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none" });
+                //$("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none" });
+                $("body").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false, autohidemode:'leave', cursoropacitymin:1, zindex:'99999999' });
                 $("#Produto" + id).removeClass("is-showing animate-in").addClass("animate-out");
             });
         });
