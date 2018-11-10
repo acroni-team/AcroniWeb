@@ -11,6 +11,8 @@ namespace AcroniWeb
 {
     public partial class loja : System.Web.UI.Page
     {
+
+
         static SQLMetodos sql = new SQLMetodos();
 
         [System.Web.Services.WebMethod]
@@ -25,6 +27,11 @@ namespace AcroniWeb
         DataSet ds;
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (Session["logado"].ToString() == "1")
+            {
+                sobre.Attributes.Add("style", "display:none");
+            }
             //if (Environment.MachineName.Equals("PALMA-PC"))
             //{
             //    acroni.classes.Conexao.param = "Data Source = " + Environment.MachineName + "; Initial Catalog = ACRONI_SQL; User ID = Acroni; Password = acroni7";

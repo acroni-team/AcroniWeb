@@ -14,6 +14,7 @@ namespace AcroniWeb
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            
 
             if (Session["usuarioNovo"] != null)
                 Session["usuario"] = Session["usuarioNovo"];

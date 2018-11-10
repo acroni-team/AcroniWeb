@@ -6,6 +6,19 @@
     <script src="js/acroniPlayer.js"></script>
 </asp:Content>
 
+<asp:Content ID="menu" ContentPlaceHolderID="menu" runat="server">
+    <div id="logotext">
+       <a href="#principal" id="logoacr">Acroni</a>
+    </div>
+
+    <ul id="menu-items">
+        <li><a id="sobre" href="#video">Sobre</a></li>
+        <li><a id="bem-vindo-vai" href="#bem-vindo">Loja</a></li>
+        <li><a id="dowload" href="default.aspx#download" runat="server">Download</a></li>
+        <li><a id="fale-conosco" href="construct.aspx">Fale Conosco</a></li>
+<%--                <li><a id="cadastro" href="cadastro.aspx">Cadastrar</a></li>--%>
+   </ul>
+</asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <div id="main" class="m-div">
@@ -123,7 +136,7 @@
                     significa que todo teclado que você comprar aqui que seja da marca 
                     <b>Acroni</b> será inteiramente <b>feito por você</b>.
                 </p>
-                <a href="loja.aspx"><input type="button" value="Visite a loja" class="button dark button-eas" /></a>
+                <asp:Button ID="BtnIrloja" runat="server" class="button dark button-eas" Text="Visite a loja" Onclick="BtnIrloja_Click"/>
             </div>
          </div>
     </section>    

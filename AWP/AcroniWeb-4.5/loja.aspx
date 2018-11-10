@@ -17,6 +17,21 @@
         $(".textbox.focus").mask('00000-000');
     </script>
 </asp:Content>
+
+
+<asp:Content ID="menu" ContentPlaceHolderID="menu" runat="server">
+    <div id="logotext">
+       <a href="default.aspx" id="logoacr">Acroni</a>
+    </div>
+
+   <ul id="menu-items">
+        <li><a id="sobre" href="cadastro.aspx" class="li-loja" runat="server">Cadastrar</a></li>
+        <%--<li><a id="cadastro" href="cadastro.aspx">Cadastrar</a></li>--%>
+   </ul>
+
+</asp:Content>
+
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
     <div class="head-container">

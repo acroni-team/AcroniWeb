@@ -2,29 +2,66 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     //Função do menu
-    var v = true;
-    $("#menu-icon").click(function () {
-        $('#menu-icon').toggleClass('active');
-        if (v == true) {
-            $("#menu").css("opacity", "1");
-            $("#menu").css("pointer-events", "auto");
-            $("#login").css("opacity", "0");
-            $("#login").css("pointer-events", "none");
-
-            v = false;
-        }
-        else {
-            $("#menu").css("opacity", "0");
-            $("#menu").css("pointer-events", "none");
-            $("#login").css("opacity", "1");
-            $("#login").css("pointer-events", "auto");
-
-            v = true;
-        }
+    $(document).ready(function () {
+        $("a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
     });
 
+    var lastScroll = 0;
+    $(window).on('scroll', function () {
+        var st = $(window).scrollTop();
+        if (st === 0) {
+            $('nav').removeClass('hidden visible');
+        }
+        else if (st > lastScroll) {
+            $('nav').removeClass('visible').addClass('hidden');
+        }
+        else {
+            $('nav').removeClass('hidden').addClass('visible');
+        }
+
+        lastScroll = st;
+    });
+
+    //var v = true;
+    //$("#menu-icon").click(function () {
+    //    $('#menu-icon').toggleClass('active');
+    //    if (v == true) {
+    //        $("#menu").css("opacity", "1");
+    //        $("#menu").css("pointer-events", "auto");
+    //        $("#login").css("opacity", "0");
+    //        $("#login").css("pointer-events", "none");
+
+    //        v = false;
+    //    }
+    //    else {
+    //        $("#menu").css("opacity", "0");
+    //        $("#menu").css("pointer-events", "none");
+    //        $("#login").css("opacity", "1");
+    //        $("#login").css("pointer-events", "auto");
+
+    //        v = true;
+    //    }
+    //});
+
+
+
+
     //Loader
-    
+
+    function loader(lds, btn) {
+        $(lds).css("opacity", "1");
+        $(btn).css("color", "#0093ff");
+    }
 
 
     // Modal-eas

@@ -7,6 +7,13 @@
     <script src="js/masks.js"></script>
     <script src="js/verificaSenha.js"></script>
 </asp:Content>
+
+<asp:Content ID="menu" ContentPlaceHolderID="menu" runat="server">
+    <div id="logotext">
+       <a href="default.aspx" id="logoacr" style="color:#0093ff">Acroni</a>
+    </div>
+</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="m-div" ng-app="acroni">
         <div id="padrao" ng-controller="validaSenha" class="section section--fadeIn">

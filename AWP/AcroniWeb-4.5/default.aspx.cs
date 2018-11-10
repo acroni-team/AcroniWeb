@@ -40,9 +40,9 @@ namespace AcroniWeb
             }
         }
 
-        protected void btnIrCad_Click(object sender, EventArgs e)
+        protected void BtnIrloja_Click(object sender, EventArgs e)
         {
-            Response.Redirect("cadastro.aspx");
+            Response.Redirect("loja.aspx");
         }
 
         protected void btnEntra_Click(object sender, EventArgs e)
@@ -103,7 +103,7 @@ namespace AcroniWeb
                             {
                                 Session["logado"] = "1";
 
-                                Session["usuario"] = sql.selectCampos("usuario", "tblCliente", "email= '"+txtUsu.Text+"'")[0];
+                                Session["usuario"] = sql.selectCampos("usuario", "tblCliente", "email= '" + txtUsu.Text + "'")[0];
                                 if (ckbLogin.Checked)
                                 {
                                     HttpCookie cookie = new HttpCookie("credenciais");
@@ -150,6 +150,7 @@ namespace AcroniWeb
                 Session["logado"] = "0";
             }
             SCPanel.Update();
+
         }
 
 

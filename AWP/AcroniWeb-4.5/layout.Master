@@ -24,27 +24,6 @@
             $("body").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false, autohidemode:'leave', cursoropacitymin:1, zindex:'99999999' });
             $('.preload').addClass('completo');
         });
-
-        function loader(lds, btn) {
-            $(lds).css("opacity", "1");
-            $(btn).css("color", "#0093ff");
-        }
-
-        var lastScroll = 0;
-        $(window).on('scroll', function () {
-            var st = $(window).scrollTop();
-            if (st == 0) {
-                $('nav').removeClass('hidden visible');
-            }
-            else if (st > lastScroll) {
-                $('nav').removeClass('visible').addClass('hidden');
-            }
-            else {
-                $('nav').removeClass('hidden').addClass('visible');
-            }
-
-            lastScroll = st;
-        })
     </script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -52,7 +31,7 @@
 </head>
 <body>
     <form id="form1" autocomplete="off" runat="server">
-        <div id="menu">
+        <%--<div id="menu">
             <div id="left" class="left">
                 <div id="logo">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
@@ -88,25 +67,25 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div>--%>
         <nav>
-            <div id="logotext">
-                <a href="default.aspx" id="logoacr">Acroni</a>
-            </div>
+            <asp:ContentPlaceHolder ID="menu" runat="server">
+            </asp:ContentPlaceHolder>
+
             <div id="user" style="display:none" runat="server">
                 <a href="minha-conta.aspx"><figure class="profile-wraper on-loja">
                     <div>
                         <asp:Image ID="profilePicture" class="profile-picture" runat="server"  ImageUrl='img/imgperf.jpeg' ImageAlign="Middle" />
-                     </div>
+                    </div>
                     <figcaption class="profile-settings on-loja">
                         <asp:Label class="user-name" ID="lblUser" runat="server" Text='fhjfhdjkhkdhjkdsahjkdashjkdsa'></asp:Label><br/>
-                    </figcaption>
+                     </figcaption>
                 </figure></a>
-
             </div>
-            <div id="menu-icon">
+    
+<%--            <div id="menu-icon">
                 <div class="hamburger"></div>
-            </div>
+            </div>--%>
         </nav>
 
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

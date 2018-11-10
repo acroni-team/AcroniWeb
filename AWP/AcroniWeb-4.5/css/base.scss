@@ -45,6 +45,47 @@ nav {
         #logotext a {
             color: #0093ff;
         }
+
+        #menu-items {
+            .li-loja {
+                color: #92989b;
+            }
+        }
+
+        #lblUser {
+            color: #92989b;
+        }
+    }
+
+    #menu-items {
+        list-style: none;
+        font-family: 'open',sans-serif;
+        font-weight: $semi-bold;
+        text-transform: uppercase;
+        float: right;
+        margin-right: 50px;
+
+        li {
+            text-align: center;
+            display: inline-block;
+
+            a {
+                font-size: .875rem;
+                padding: 0 10px;
+                line-height: 80px;
+                box-sizing: border-box;
+                display: inline-block;
+                color: #92989b;
+
+                &:active {
+                    color: $cor-primaria;
+                }
+            }
+        }
+
+        .li-loja {
+            color: $texto;
+        }
     }
 }
 

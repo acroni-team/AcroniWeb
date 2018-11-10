@@ -8,9 +8,9 @@ $(function(){
         onStart: {  // No incio da página/ loading
           duration: 500, // Duração da animação
           render: function ($container) { //Função daquela 'classe' (smoothStatejs) que ativa tal ação quando o usuário estiver saindo de uma página
-            
+
             $container.addClass('saindo-da-pagina'); // Adiciona aquela classe la pra reverter a animação
-    
+           
             smoothState.restartCSSAnimations();  // Reinicia a animção
           }
         },
