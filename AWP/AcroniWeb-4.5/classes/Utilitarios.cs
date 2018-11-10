@@ -124,7 +124,7 @@ public class Utilitarios
                 if (conexao_SQL.State == ConnectionState.Closed)
                     conexao_SQL.Open();
 
-                string insert = $"INSERT INTO tblCliente (nome, usuario, senha, email, cpf) VALUES ('{nome}', '{usu}', '{senha}', '{email}', '{cpf}')";
+                string insert = "INSERT INTO tblCliente (nome, usuario, senha, email, cpf) VALUES ('"+nome+"', '"+usu+"', '"+senha+"', '"+email+"', '"+cpf+"')";
                 using (comando_SQL = new SqlCommand(insert, conexao_SQL))
                 {
                     comando_SQL.ExecuteNonQuery();
