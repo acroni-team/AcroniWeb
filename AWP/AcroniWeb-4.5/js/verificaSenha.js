@@ -79,22 +79,33 @@ controllers.validaSenha = function($scope) {
         qtdVal.forEach(contarOp);
 
         if (i == 0) {
-            bar.style.transform = "translateX(-650px)";
+            bar.style.transform = "translateX(-450px)";
+            $scope.mensagem = "";
         }
         else if (i == 1) {
-            bar.style.transform = "translateX(-520px)";
+            bar.style.transform = "translateX(-360px)";
+            bar.style.background = "red";
+            $scope.mensagem = "Muito fraca"; 
         }
         else if (i == 2) {
-            bar.style.transform = "translateX(-390px)";
+            bar.style.transform = "translateX(-270px)";
+            bar.style.background = "orange";
+            $scope.mensagem = "Continua fraca";
         }
         else if (i == 3) {
-            bar.style.transform = "translateX(-260px)";
+            bar.style.transform = "translateX(-180px)";
+            $scope.mensagem = "Podia ser melhor";
+            bar.style.background = "yellow";
         }
         else if (i == 4) {
-            bar.style.transform = "translateX(-130px)";
+            bar.style.transform = "translateX(-90px)";
+            $scope.mensagem = "Tá ficando bom";
+            bar.style.background = "green";
         }
         else {
             bar.style.transform = "translateX(0px)";
+            $scope.mensagem = "Perfeitinha, atingiu";
+            bar.style.background = "#0093ff";
         }
         
     };

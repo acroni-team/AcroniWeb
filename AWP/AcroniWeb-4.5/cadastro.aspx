@@ -49,7 +49,10 @@
             </div>
 
             <div id="erro">
-                <div id="passStrength" runat="server" class="grow-bar-wrapper"><div class="grow-bar"></div></div>
+                <div class="grow-bar-align">
+                    <div id="passStrength" runat="server" class="grow-bar-wrapper"><div class="grow-bar"></div></div>
+                    <asp:Label ID="lblNivelSenha" class="nivel-senha" ng-bind="mensagem" runat="server" Text=""></asp:Label><br />
+                 </div> 
                 <asp:Label ID="lblErro" runat="server" Text=""></asp:Label><br />
                 <asp:Label ID="lblDica" CssClass="dica" runat="server" Text=""></asp:Label>
                 <asp:Button ID="ReenviarEmail" runat="server" Text="Reenviar Email" OnClientClick="loader('.lds-ellipsis','.button-cad');" OnClick="ReenviarEmail_Click" CssClass="ReenviarEmail" />

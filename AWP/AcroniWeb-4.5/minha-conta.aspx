@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Panel ID="Panel1" runat="server" DefaultButton="btnValidaEmail">
     <div class="modal-wrap minha-conta" id="modal" runat="server">
         <div class="modal-overflow modal-overflow-alt hidden" id="overflow" runat="server">
             <div class="modal-body modal-body-step1 modal-body-alt is-showing animate-first-in" id="modalcad" runat="server">
@@ -16,10 +17,12 @@
         </div>
         <div class="modal-background fadeIn" runat="server" id="modalback"></div>
     </div>
+    </asp:Panel>
     <div class="right right-logado right-minha-conta" ng-app="logado">
         <div id="cabecalho">
             <h1>Editar os meus dados pessoais</h1>
         </div>
+        <asp:Panel ID="Panel2" runat="server" DefaultButton="btnSalva">
         <div style="margin-top: 30px;" ng-controller="ctrl">
             <div class="minha-conta-forms">
                 <div id="informacoes-basicas">
@@ -84,6 +87,7 @@
             </div>
             <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button dark minha-conta disabled" OnClientClick="loader('.lds-eas-1','.button.minha-conta');" OnClick="btnSalva_Click" disabled />
         </div>
+        </asp:Panel>
     </div>
     <script>
         document.getElementById("minha-conta").classList.add("active");

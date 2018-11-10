@@ -64,7 +64,7 @@ body{
 
 .textbox-cad.some {
     animation: fadeOutBottom 200ms ease-in forwards;
-    opacity: 0;
+    //opacity: 0;
     pointer-events: none;
 }
 
@@ -112,14 +112,20 @@ body{
 
 //Senha
 
+.grow-bar-align{
+    width:650px;
+
+}
 .grow-bar-wrapper {
     height: 12px;
     border-radius: 15px;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
-    width: 650px;
+    width: 450px;
+    margin: 0;
     background: #e2e2e2;
     overflow: hidden;
-    display:none;
+    display: none;
+    float: left;
+    margin-top: 5px;
 
     .grow-bar {
         width: 100%;
@@ -128,4 +134,11 @@ body{
         transform: translateX(-650px);
         transition: transform 200ms ease;
     }
+
+   
+}
+
+.nivel-senha {
+    color: #787878;
+    font-weight: $semi-bold;
 }

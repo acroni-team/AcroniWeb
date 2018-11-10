@@ -225,7 +225,7 @@ namespace AcroniWeb_4._5
                     }
                     else
                     {
-                        ut.showErrorMessageByLbl("Usuário - Em uso, já existe outra conta com esse usuário :/", Usuario, lblUsuario);
+                        ut.showErrorMessageByLbl("Usuário - Em uso, já existe uma conta com esse usuário :/", Usuario, lblUsuario);
                         return;
                     }
                 }

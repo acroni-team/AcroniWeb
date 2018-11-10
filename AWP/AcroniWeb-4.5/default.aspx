@@ -13,7 +13,7 @@
 
     <ul id="menu-items">
         <li><a id="sobre" href="#video">Sobre</a></li>
-        <li><a id="bem-vindo-vai" href="#bem-vindo">Loja</a></li>
+        <li><a id="bem-vindo-vai" href="loja.aspx">Loja</a></li>
         <li><a id="dowload" href="default.aspx#download" runat="server">Download</a></li>
         <li><a id="fale-conosco" href="construct.aspx">Fale Conosco</a></li>
 <%--                <li><a id="cadastro" href="cadastro.aspx">Cadastrar</a></li>--%>

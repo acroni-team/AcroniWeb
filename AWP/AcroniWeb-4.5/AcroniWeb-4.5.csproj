@@ -130,6 +130,7 @@
     <None Include="css\base.scss" />
     <Content Include="css\area-restrita.css" />
     <Content Include="default.aspx" />
+    <Content Include="download.aspx" />
     <Content Include="email.html" />
     <Content Include="img\acroni.png" />
     <Content Include="img\curva-lateral.png" />
@@ -250,6 +251,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="download.aspx.cs">
+      <DependentUpon>download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="download.aspx.designer.cs">
+      <DependentUpon>download.aspx</DependentUpon>
     </Compile>
     <Compile Include="minha-conta.aspx.cs">
       <DependentUpon>minha-conta.aspx</DependentUpon>

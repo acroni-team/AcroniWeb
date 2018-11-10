@@ -58,10 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Loader
 
-    function loader(lds, btn) {
-        $(lds).css("opacity", "1");
-        $(btn).css("color", "#0093ff");
-    }
 
 
     // Modal-eas
@@ -74,14 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         $('.modal-overflow').removeClass('hidden');
         $('.modal-wrap').addClass('is-showing');
         //$('section').addClass('blur');
-        $("body").
-
-
-
-
-
-
-            Scroll().remove();
+        $("body").niceScroll().remove();
     }
 
     $('#abre-senha').click(abremodal);

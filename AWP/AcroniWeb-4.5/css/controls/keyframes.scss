@@ -234,3 +234,23 @@
         transform: scaleX(1);
     }
 }
+
+@-webkit-keyframes translate-down {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes translate-down {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
