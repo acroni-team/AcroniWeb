@@ -20,6 +20,7 @@
                 </div>
                 <div class="modal-background fadeIn" runat="server" id="modalback"></div>
             </div>
+            <div class="btn-preencher"></div>
             <div class="cad-wraper">
                 <div class="textbox-type2-overflow overflow-cad">
                     <asp:TextBox ID="txtNome" runat="server" type="text" class="textbox textbox-type2 textbox-cad aparece" placeholder="Digite seu Nome Completo" autocomplete="off"></asp:TextBox>
@@ -28,8 +29,9 @@
                     <asp:TextBox ID="txtCodigo" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite o seu código" autocomplete="off"></asp:TextBox>
                     <asp:TextBox ID="txtCpf" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite seu CPF" autocomplete="off"></asp:TextBox>
                     <asp:TextBox ng-model="senha" TextMode="Password" ng-change="verificar()" ID="txtSenha" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite sua melhor senha :D" autocomplete="off"></asp:TextBox>
-                    <asp:TextBox ID="txtCSenha" TextMode="Password" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Confirmae sua Senha" autocomplete="off"></asp:TextBox>
+                    <asp:TextBox ID="txtCSenha" TextMode="Password" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Confirmar sua Senha" autocomplete="off"></asp:TextBox>
                     <asp:Button ID="btnValida" class="button dark button-type2 button-cad" runat="server" Text="Enviar" OnClick="btnValida_Click" OnClientClick="loader('.lds-ellipsis','.button-cad');" />
+                    
                     <div class="lds-ellipsis" style="top: 8px;">
                         <div></div>
                         <div></div>
@@ -42,7 +44,6 @@
             <div id="erro">
                 <div id="passStrength" runat="server" class="grow-bar-wrapper"><div class="grow-bar"></div></div>
                 <asp:Label ID="lblErro" runat="server" Text=""></asp:Label><br />
-                <asp:Label ng-bind="mensagem" ID="lblNivelSenha" runat="server" Text=""></asp:Label><br />
                 <asp:Label ID="lblDica" CssClass="dica" runat="server" Text=""></asp:Label>
                 <asp:Button ID="ReenviarEmail" runat="server" Text="Reenviar Email" OnClientClick="loader('.lds-ellipsis','.button-cad');" OnClick="ReenviarEmail_Click" CssClass="ReenviarEmail" />
             </div>

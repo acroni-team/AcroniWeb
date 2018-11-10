@@ -79,27 +79,21 @@ controllers.validaSenha = function($scope) {
         qtdVal.forEach(contarOp);
 
         if (i == 0) {
-            $scope.mensagem = "";
             bar.style.transform = "translateX(-650px)";
         }
         else if (i == 1) {
-            $scope.mensagem = "mds q licho de senha KKKK";
             bar.style.transform = "translateX(-520px)";
         }
         else if (i == 2) {
-            $scope.mensagem = "ainda ta licho, cara";
             bar.style.transform = "translateX(-390px)";
         }
         else if (i == 3) {
-            $scope.mensagem = "o hackerman ainda te pega";
             bar.style.transform = "translateX(-260px)";
         }
         else if (i == 4) {
-            $scope.mensagem = "agora ta ficando harddi";
             bar.style.transform = "translateX(-130px)";
         }
         else {
-            $scope.mensagem = "saiu da jaaula a senhaaaa";
             bar.style.transform = "translateX(0px)";
         }
         

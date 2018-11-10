@@ -29,7 +29,6 @@ namespace AcroniWeb_4._5
                 Session["aux"] = 0;
                 Session["codigo"] = "";
             }
-            lblNivelSenha.Text = "{{mensagem}}";
             lblErro.Text = "";
         }
                
@@ -272,6 +271,16 @@ namespace AcroniWeb_4._5
             Session["codigo"] = ut.gerarStringConfirmacao();
             ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Confirmar E-mail", "Utilize o código abaixo para corfimar seu email. Se você não está criando uma conta na Acroni, finja que nunca nem viu esse email.");
         }
+
+        //protected void btnPreencher_Click(object sender, EventArgs e)
+        //{
+        //    txtNome.Text = "";
+        //    txtUsu.Text = "";
+        //    txtEmail.Text = "";
+        //    txtCpf.Text = "025.471.988-00";
+        //    txtSenha.Text = "1";
+        //    txtCSenha.Text = "1";
+        //}
 
 
         //protected void ReenviaEmail_Click(object sender, EventArgs e)
