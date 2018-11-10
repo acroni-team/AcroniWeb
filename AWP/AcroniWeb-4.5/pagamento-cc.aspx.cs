@@ -11,6 +11,17 @@ namespace AcroniWeb_4._5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string type = Request.QueryString["type"];
+            if(type != "cc")
+            {
+                informe.Text += "débito";
+                imgCards.ImageUrl = "img/pagamento/cd.png";
+            }
+            else
+            {
+                informe.Text += "crédito";
+                imgCards.ImageUrl = "img/pagamento/cc.png";
+            }
         }
     }
 }
