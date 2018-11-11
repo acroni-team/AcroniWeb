@@ -21,35 +21,28 @@ namespace AcroniWeb_4._5
 
             using (SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao))
             {
-                try
-                {
-                    if (conexao_SQL.State != ConnectionState.Open)
-                        conexao_SQL.Open();
-                    String select = "SELECT imagem_colecao FROM tblColecao AS colec INNER JOIN tblCliente AS cli ON cli.id_cliente = colec.id_cliente AND usuario ='" + Session["usuario"] + "'";
-
-                    using (SqlCommand comando_SQL = new SqlCommand(select, conexao_SQL))
+                try {
+                    if (!Page.IsPostBack)
                     {
-                        using (SqlDataReader tabela = comando_SQL.ExecuteReader())
+                        if (conexao_SQL.State != ConnectionState.Open)
+                            conexao_SQL.Open();
+                        String select = "SELECT * FROM tblColecao";
+                        using (SqlDataAdapter da = new SqlDataAdapter(select, conexao_SQL))
                         {
-                            tabela.Read();
-                            if (tabela.HasRows)
-                            {
-                                byte[] imgBytes = (byte[])tabela[0];
-                                string imgString = Convert.ToBase64String(imgBytes);
-                                imgColecao.ImageUrl = "data:image/jpg;base64," + imgString;
-                                imgStatus.Attributes.Add("style", "display:none");
-                                header.Attributes["class"] = "galeria-header is-showing";
-                           }
-
+                            ds = new DataSet();
+                            da.Fill(ds);
+                            DataList1.DataSource = ds.Tables[0];
+                            DataList1.DataBind();
                         }
-                    }
 
-                    
+
+                    }
                 }
                 catch (Exception ex)
                 {
                     conexao_SQL.Close();
                 }
+                
             }
         }
     }

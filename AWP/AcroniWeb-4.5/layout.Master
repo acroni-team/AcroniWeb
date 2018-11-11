@@ -98,7 +98,19 @@
 
 
    <footer id="footi">
-       
+       <div class="align-logo">
+           <img alt="logo Acroni" src="img/acroni-logo.png"/>
+           <h1>Acroni</h1>
+       </div>
+       <div class="pedope">
+           <ul id="footi-items">
+               <li><a href="#download">Donwload</a></li>|
+               <li><a href="construct.aspx">Fale conosco</a></li>|
+               <li><a href="loja.aspx">Loja</a></li>|
+               <li><a href="construct.aspx">Unidades presenciais</a></li>
+           </ul>
+           <p>O mais brabo grupo de TCM A.K.A (Motinhas Corp.), 2018. Todos os direitos reservados.</p>
+       </div>
     </footer>
         
         

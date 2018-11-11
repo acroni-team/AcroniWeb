@@ -132,6 +132,8 @@
     <Content Include="default.aspx" />
     <Content Include="download.aspx" />
     <Content Include="email.html" />
+    <Content Include="GetImage.aspx" />
+    <Content Include="img\acroni-logo.png" />
     <Content Include="img\acroni.png" />
     <Content Include="img\curva-lateral.png" />
     <Content Include="img\curvav3.jpg" />
@@ -164,6 +166,12 @@
     <Content Include="img\produtos\Img %287%29.png" />
     <Content Include="img\produtos\Img %288%29.png" />
     <Content Include="img\produtos\Img %289%29.png" />
+    <Content Include="img\team\Bragamen.jpg" />
+    <Content Include="img\team\Fillers.jpg" />
+    <Content Include="img\team\Moutinhas.jpg" />
+    <Content Include="img\team\palmen.jpg" />
+    <Content Include="img\team\pezinho.jpg" />
+    <Content Include="img\team\picepalm.jpg" />
     <Content Include="js\angular.min.js" />
     <Content Include="js\acroniPlayer.js" />
     <Content Include="js\calculoFrete.js" />
@@ -258,6 +266,13 @@
     </Compile>
     <Compile Include="download.aspx.designer.cs">
       <DependentUpon>download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetImage.aspx.cs">
+      <DependentUpon>GetImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetImage.aspx.designer.cs">
+      <DependentUpon>GetImage.aspx</DependentUpon>
     </Compile>
     <Compile Include="minha-conta.aspx.cs">
       <DependentUpon>minha-conta.aspx</DependentUpon>
@@ -361,6 +376,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\WSCorreiosFrete\" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

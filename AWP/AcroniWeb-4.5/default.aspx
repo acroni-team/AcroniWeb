@@ -21,7 +21,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div id="main" class="m-div">
+     <div id="main" class="m-div default">
     <!--        Preloader       -->
      <div class="preload">
         <p class="logo animado">Acroni</p>
@@ -212,11 +212,79 @@
         </div>
         
     </section>  
-         <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="253" viewBox="0 0 1920 253"><path d="M0,0V242.6c49.51,3.19,80.85-14.85,137.48-46.35,116.72-64.93,202.06-74.41,277.13,8.89S542.25,73,633,66s132.6,75.65,222.4,55.42S1068.51-31,1240.51,9.75s160.22,200.74,264.39,170.89,125.46-98.79,203.36-79.85c64.65,15.77,100.49,121.11,177.74,87a218.89,218.89,0,0,1,34-12V0Z" fill="#303339"/></svg>
+         <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="253" viewBox="0 0 1920 253"><path d="M0,0V242.6c49.51,3.19,80.85-14.85,137.48-46.35,116.72-64.93,202.06-74.41,277.13,8.89S542.25,73,633,66s132.6,75.65,222.4,55.42S1068.51-31,1240.51,9.75s160.22,200.74,264.39,170.89,125.46-98.79,203.36-79.85c64.65,15.77,100.49,121.11,177.74,87a218.89,218.89,0,0,1,34-12V0Z" fill="#363942"/></svg>
 
     <section id="team">
         <h1>Equipe</h1>
         <p>Sem eles, a Acroni simplesmente não existiria.</p>
+        <div class="team-members-wrapper">
+            <div class="team-members-box">
+                <figure>
+                    <div>
+                        <img alt="Felipi Yuri" src="img/team/picepalm.jpg" />
+                    </div>
+                    <figcaption>
+                        <h1>Felipi Yuri</h1>
+                        <p>Desenvolvedor <br /> Desktop</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="team-members-box">
+                  <figure>
+                    <div>
+                        <img alt="Felipi Figueira" src="img/team/Fillers.jpg" />
+                    </div>
+                    <figcaption>
+                        <h1>Felipi Figueira</h1>
+                        <p>Designer</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="team-members-box">
+                  <figure>
+                    <div>
+                        <img alt="Gabriel Braga" src="img/team/Bragamen.jpg" />
+                    </div>
+                    <figcaption>
+                        <h1>Gabriel Braga</h1>
+                        <p>Desenvolvedor <br /> Desktop</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="team-members-box">
+                  <figure>
+                    <div>
+                        <img alt="Guilherme Mota" src="img/team/Moutinhas.jpg" />
+                    </div>
+                    <figcaption>
+                        <h1>Guilherme Mota</h1>
+                        <p>Desenvolvedor <br /> Desktop</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="team-members-box">
+                 <figure>
+                    <div>
+                        <img alt="Gustavo Palma" src="img/team/palmen.jpg" />
+                    </div>
+                    <figcaption>
+                        <h1>Gustavo Palma</h1>
+                        <p>Desenvolvedor <br /> Web</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="team-members-box">
+                  <figure>
+                    <div>
+                        <img alt="Gustavo Pereira" src="img/team/pezinho.jpg" />
+                    </div>
+                    <figcaption>
+                        <h1>Gustavo Pereira</h1>
+                        <p>Desenvolvedor <br /> Web</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
      </section>
     <!-- FOOTI -->
 

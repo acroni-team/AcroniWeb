@@ -7,7 +7,11 @@
             <h1>Seja bem-vindo, </h1><asp:Label ID="Nome" class="nome" runat="server" Text=""></asp:Label>
         </div>
         <div>
-            <a href="colecao.aspx"><asp:Image ID="imgColecao" class="img-colecao" runat="server" ImageUrl='' /></a>
+            <asp:DataList ID="DataList1" runat="server">
+                <ItemTemplate>
+                    <a href="colecao.aspx"><asp:Image ID="imgColecao" class="img-colecao" runat="server" ImageUrl='<%# "GetImage.aspx?id=" + Eval("id_colecao") %>' /></a>
+                </ItemTemplate>
+            </asp:DataList>
             <asp:Image ID="imgStatus" class="galeria-status" runat="server"  ImageUrl='img/galeria-vazia.png' />
         </div>
     </div>
