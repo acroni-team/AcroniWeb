@@ -49,6 +49,15 @@ namespace AcroniWeb_4._5 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl modalback;
         
         /// <summary>
+        /// lblErro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblErro;
+        
+        /// <summary>
         /// txtNome control.
         /// </summary>
         /// <remarks>
@@ -121,31 +130,13 @@ namespace AcroniWeb_4._5 {
         protected global::System.Web.UI.WebControls.Button btnValida;
         
         /// <summary>
-        /// passStrength control.
+        /// ReenviarEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl passStrength;
-        
-        /// <summary>
-        /// lblNivelSenha control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNivelSenha;
-        
-        /// <summary>
-        /// lblErro control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblErro;
+        protected global::System.Web.UI.WebControls.Button ReenviarEmail;
         
         /// <summary>
         /// lblDica control.
@@ -155,14 +146,5 @@ namespace AcroniWeb_4._5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDica;
-        
-        /// <summary>
-        /// ReenviarEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ReenviarEmail;
     }
 }

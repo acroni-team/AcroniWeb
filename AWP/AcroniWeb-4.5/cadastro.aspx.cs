@@ -173,7 +173,7 @@ namespace AcroniWeb_4._5
                     {
                         IsValid("cpf", txtCpf, txtSenha, 5);
                         lblDica.Text = "Dica: use uma senha que contenha mais de 8 dígitos, letras maiúsculas e minúsculas, números e símbolos.";
-                        passStrength.Attributes.Add("style", "display: block");
+                        //passStrength.Attributes.Add("style", "display: block");
                         break;
                     }
 
@@ -191,7 +191,7 @@ namespace AcroniWeb_4._5
                     else
                     {
                         IsValid("senha", txtSenha, txtCSenha, 6);
-                        passStrength.Attributes.Add("style", "display: none");
+                        //passStrength.Attributes.Add("style", "display: none");
                         break;
                     }
 

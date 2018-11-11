@@ -6,14 +6,16 @@ body{
 
 }
 
-#padrao{
-    display:flex;
-    width:100vw;
-    height:100vh;
+#padrao {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
     z-index: 1;
     align-content: center;
+    align-items: center;
     justify-content: center;
-		vertical-align:middle;
+    vertical-align: middle;
+    flex-direction: column;
 }
 
 
@@ -21,26 +23,27 @@ body{
     display: flex;
     align-self: center;
     width: 100%;
-    height:80px;
-    position: absolute;
+    height: 120px;
     pointer-events: none;
     justify-content: center;
+    position: relative;
 }
 
 .overflow-cad {
-    width: 650px;
+    width: 800px;
     height: 100%;
     position: absolute;
-    box-shadow: 0px 5px 6px #959595;
-    border-radius:10px;
+    border: solid $cor-primaria;
+    border-width: 4px 4px 20px 4px;
+    border-radius: 15px;
 }
 
 .textbox-cad {
     position: absolute;
     pointer-events: none;
     opacity: 0;
-    width: 598px;
-    font-size: 22px;
+    width: 675px;
+    font-size: 30px;
     text-indent: 30px;
     font-weight: $semi-bold;
 }
@@ -48,7 +51,14 @@ body{
 
 .button-cad {
     position: absolute;
-    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+    align-self: center;
+    margin-top: 35px;
+    margin-right: 35px;
+    border-radius: 50%;
+    background: url(../../img/imgperf.jpeg);
 }
 
 
@@ -72,13 +82,21 @@ body{
     color: #333;
 }
 
-#erro {
+.cad-msg {
     width: 100%;
     align-self: center;
     text-align: center;
     margin-top: 200px;
     color:red;
     position: relative;
+}
+
+.erro {
+    margin-top: -30px;
+    width: 800px;
+    text-align: right;
+    color: red;
+    font-weight: 500;
 }
 
 .modal-button-cad{
@@ -93,7 +111,10 @@ body{
     text-decoration: none;
     cursor: pointer;
     text-align: center;
-    display: none;
+    position: absolute;
+    z-index: 11;
+    margin-top: 20px;
+    display:none;
 
 
     &:hover {
