@@ -394,6 +394,123 @@ section#download {
     }
 }
 
+//Quinta e sexta seção
+section#planos {
+    height: 115vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    .plan-box {
+        width: 400px;
+        height: 580px;
+        background-color: $texto;
+        box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.25);
+        margin: 0px 30px 0px 30px;
+        border-radius: 15px;
+
+        &.plan-premium {
+            overflow: hidden;
+            border: 3.5px solid $cor-primaria;
+            position:relative;
+
+            header {
+                background: linear-gradient(45deg, #0093ff, #7ac7ff);
+                margin: 0;
+                padding: 0;
+                width: 115%;
+                margin-left: -7.5%;
+
+                h1, h3 {
+                    color: $texto;
+                }
+
+                h1 {
+                    font-size: 29px;
+                }
+
+                h3 {
+                    font-size: 17px;
+                }
+
+
+            }
+        }
+
+        header {
+            width: 100%;
+            height: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1, h3 {
+                color: $cor-primaria;
+                text-align: center;
+                font-weight: $semi-bold;
+                width: auto;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            h3 {
+            }
+        }
+
+        ul {
+            list-style: disc;
+            color: $cor-primaria;
+            padding-top: 45px;
+            padding-left: 75px;
+            line-height: 35px;
+            font-weight: $semi-bold;
+
+            p {
+                color: $cinza;
+
+                &.blue-left {
+                    display: inline;
+                }
+
+                &.blue {
+                    line-height: 0;
+                    display: inline-block;
+                    margin-left: 5px;
+                    color: $cor-primaria;
+                }
+            }
+        }
+    }
+}
+
+//SVG
+    svg {
+        fill: #303339;
+        pointer-events: none;
+        transform: rotate(0deg) translate(-263px,-380px) scale(1.7,-1.7);
+    }
+
+
+section#team {
+    background-color: #303339;
+    transform: translateY(-300px);
+    height: 120vh;
+
+    h1, p {
+        width: auto;
+        text-align: center;
+        color: #72767d;
+        font-weight: $semi-bold;
+    }
+
+    h1 {
+        padding-top: 30px;
+    }
+}
+
+
 
 // FOOTI
 

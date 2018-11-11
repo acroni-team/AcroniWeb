@@ -183,23 +183,43 @@
          </div>
     </section>
 
-    
+     <!-- Quinta e Sexta seção -->
+    <section id="planos">
+        <div class="plan-box plan-basic">
+            <header>
+                <h1>Plano Básico</h1>
+                <h3>Características</h3>
+            </header>
+            <ul>
+                <li><p style="line-height: 5px;margin-bottom:20px">Acesso a 3 teclados<br/> customizados;</p></li>
+                <li><p>Acesso a 5 coleções;</p></li>
+                <li><p class="blue-left">Customização</p><p class="blue">limitada</p>;</li>
+            </ul>
+
+        </div>
+        <div class="plan-box plan-premium">
+            <header>
+                <h1>Plano Completo</h1>
+                <h3>Características</h3>
+            </header>
+            <ul>
+                <li><p style="line-height: 5px;margin-bottom:20px">Acesso a 10 teclados<br/> customizados;</p></li>
+                <li><p>Acesso a 15 coleções;</p></li>
+                <li><p class="blue-left">Customização</p><p class="blue">completa</p>;</li>
+                <li><p style="line-height: 5px;">Descontos exclusivos <br/> nos teclados da loja;</p></li>
+            </ul>
+            <asp:Button ID="btnPlano" runat="server" Text="Quero agora!" class="button dark button-plan" />
+        </div>
+        
+    </section>  
+         <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="253" viewBox="0 0 1920 253"><path d="M0,0V242.6c49.51,3.19,80.85-14.85,137.48-46.35,116.72-64.93,202.06-74.41,277.13,8.89S542.25,73,633,66s132.6,75.65,222.4,55.42S1068.51-31,1240.51,9.75s160.22,200.74,264.39,170.89,125.46-98.79,203.36-79.85c64.65,15.77,100.49,121.11,177.74,87a218.89,218.89,0,0,1,34-12V0Z" fill="#303339"/></svg>
+
+    <section id="team">
+        <h1>Equipe</h1>
+        <p>Sem eles, a Acroni simplesmente não existiria.</p>
+     </section>
     <!-- FOOTI -->
 
-    <footer id="footi">
-        <div id="div-logo">
-            <h1 id="logo-footer">Acroni</h1>
-            <p id="subtitulo-logo-footer">Construindo o seu teclado</p>
-        </div>
-        <hr class="divisor"/>
-        <div id="menu-footer">
-            <ul id="menu-lista">
-                <li><a href="#">Fale Conosco</a></li>
-                <li><a href="#">Sobre a Acroni</a></li>
-                <li><a href="#">Unidades</a></li>
-            </ul>
-        </div>
-    </footer>
     <!--                            Scripts                      -->
    </div>
     <script>
