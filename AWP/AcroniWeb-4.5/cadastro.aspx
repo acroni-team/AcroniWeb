@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/layout.Master" AutoEventWireup="true" CodeBehind="cadastro.aspx.cs" Inherits="AcroniWeb_4._5.cadastro" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
+    <link href="css/area-restrita.css" rel="stylesheet" />
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/masks.js"></script>
@@ -30,7 +30,7 @@
             <div class="btn-preencher"></div>
             <div class="cad-wraper">
                 <div class="step-error-wrapper">
-                    <div class="step">
+                    <div class="step" runat="server" id="step">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -40,30 +40,20 @@
                     </div>
                     <asp:Label ID="lblErro" runat="server" class="erro" Text=""></asp:Label>
                 </div>
-                <div class="textbox-type2-overflow overflow-cad">
-                    <asp:TextBox ID="txtNome" runat="server" type="text" class="textbox textbox-type2 textbox-cad aparece" placeholder="Digite seu Nome Completo" autocomplete="off"></asp:TextBox>
-                    <asp:TextBox ID="txtUsu" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite o nome de usuário desejado" autocomplete="off"></asp:TextBox>
-                    <asp:TextBox ID="txtEmail" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite o seu email :D" autocomplete="off"></asp:TextBox>
-                    <asp:TextBox ID="txtCodigo" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite o seu código" autocomplete="off"></asp:TextBox>
-                    <asp:TextBox ID="txtCpf" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite seu CPF" autocomplete="off"></asp:TextBox>
-                    <asp:TextBox ng-model="senha" TextMode="Password" ng-change="verificar()" ID="txtSenha" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite sua melhor senha :D" autocomplete="off"></asp:TextBox>
-                    <asp:TextBox ID="txtCSenha" TextMode="Password" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Confirmar sua Senha" autocomplete="off"></asp:TextBox>
-                    <asp:Button ID="btnValida" class="button dark button-type2 button-cad" style="background-size: 100%;" runat="server" Text="" OnClick="btnValida_Click" OnClientClick="loader('.lds-ellipsis','.button-cad');" />
+                <div id="border" runat="server" class="textbox-type2-overflow overflow-cad">
+                    <asp:TextBox ID="txtNome" ng-model="nome" ng-change="mudaCor()" runat="server" type="text" class="textbox textbox-type2 textbox-cad aparece" placeholder="Digite seu Nome Completo" autocomplete="off"></asp:TextBox>
+                    <asp:TextBox ID="txtUsu" ng-model="usu" ng-change="mudaCor()" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite o nome de usuário desejado" autocomplete="off"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" ng-model="email" ng-change="mudaCor()" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite o seu email :D" autocomplete="off"></asp:TextBox>
+                    <asp:TextBox ID="txtCodigo" ng-model="cod" ng-change="mudaCor()" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite o seu código" autocomplete="off"></asp:TextBox>
+                    <asp:TextBox ID="txtCpf" ng-model="cpf" ng-change="mudaCor()" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite seu CPF" autocomplete="off"></asp:TextBox>
+                    <asp:TextBox ng-model="senha" TextMode="Password" ng-change="mudaCor()" ID="txtSenha" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite sua melhor senha :D" autocomplete="off"></asp:TextBox>
+                    <asp:TextBox ID="txtCSenha" ng-model="csenha" ng-change="mudaCor()" TextMode="Password" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Confirmar sua Senha" autocomplete="off"></asp:TextBox>
+                    <asp:Button ID="btnValida" class="button dark button-type2 button-cad disableded" style="background-size: 100%;" runat="server" Text="" OnClick="btnValida_Click" OnClientClick="loader('.lds-ellipsis','.button-cad');" disabled/>
                     
-<%--                    <div class="lds-ellipsis" style="top: 8px;">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>--%>
                 </div>
             </div>
             <asp:Button ID="ReenviarEmail" runat="server" Text="Reenviar Email" OnClientClick="loader('.lds-ellipsis','.button-cad');" OnClick="ReenviarEmail_Click" CssClass="ReenviarEmail" />
             <div class="cad-msg">
-<%--                <div class="grow-bar-align">
-                    <div id="passStrength" runat="server" class="grow-bar-wrapper"><div class="grow-bar"></div></div>
-                    <asp:Label ID="lblNivelSenha" class="nivel-senha" ng-bind="mensagem" runat="server" Text=""></asp:Label><br />
-                 </div> --%>
                 <br />
                 <asp:Label ID="lblH1Dica" CssClass="h1dica" runat="server" Text="Hey!"></asp:Label> <br />                
                 <asp:Label ID="lblDica" CssClass="dica" runat="server" Text="Você está prestes a entrar pra família Acroni!"></asp:Label>

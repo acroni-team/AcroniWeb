@@ -56,6 +56,7 @@ const symbolValidator = (pass) => {
     }
 };
 
+
 controllers.validaSenha = function($scope) {
     $scope.senha = "";
     $scope.mensagem = "";
@@ -73,8 +74,6 @@ controllers.validaSenha = function($scope) {
                 i += 1;
             }
         }
-
-        var bar = document.querySelector('.grow-bar');
 
         qtdVal.forEach(contarOp);
 
@@ -109,6 +108,65 @@ controllers.validaSenha = function($scope) {
         }
         
     };
+
+    $scope.mudaCor = function ($event) {
+        const btnSalva = document.getElementById('ContentPlaceHolder1_btnValida');
+        const bordinha = document.getElementById('ContentPlaceHolder1_border');
+        if (document.querySelectorAll('.textbox.textbox-type2.textbox-cad')[0].value != "" ||
+            document.querySelectorAll('.textbox.textbox-type2.textbox-cad')[1].value != "" ||
+            document.querySelectorAll('.textbox.textbox-type2.textbox-cad')[2].value != "" ||
+            document.querySelectorAll('.textbox.textbox-type2.textbox-cad')[3].value != "" ||
+            document.querySelectorAll('.textbox.textbox-type2.textbox-cad')[4].value != "" ||
+            document.querySelectorAll('.textbox.textbox-type2.textbox-cad')[5].value != "" ) {
+            btnSalva.classList.remove("disableded");
+            btnSalva.classList.add("button-cad-next");
+            btnSalva.disabled = false;
+            if (document.querySelectorAll('.textbox.textbox-type2.textbox-cad')[5].value != "") {
+                bordinha.classList.add("textbox-expanded");
+
+                lengthValidator($scope.senha);
+                capitalValidator($scope.senha);
+                lowercaseValidator($scope.senha);
+                numberValidator($scope.senha);
+                symbolValidator($scope.senha);
+
+                var i = 0;
+
+                function contarOp(element) {
+                    if (element) {
+                        i += 1;
+                    }
+                }
+
+                qtdVal.forEach(contarOp);
+
+                if (i == 1) {
+                    bordinha.style.borderColor = "#FF393A";
+                }
+                else if (i == 2) {
+                    bordinha.style.borderColor = "#E29400";
+                }
+                else if (i == 3) {
+                    bordinha.style.borderColor = "#D5CD00";
+                }
+                else if (i == 4) {
+                    bordinha.style.borderColor = "#00ff6b";
+                }
+                else if (i == 5) {
+                    bordinha.style.borderColor = "#0093ff";
+                 }
+                
+            }
+        }
+        else {
+            btnSalva.classList.add("disableded");
+            btnSalva.disabled = true;
+            if (bordinha.classList.contains("textbox-expanded")) {
+                bordinha.classList.remove("textbox-expanded");
+            }
+            bordinha.style.borderColor = "#0093ff";
+        }
+    }
     
 }
 

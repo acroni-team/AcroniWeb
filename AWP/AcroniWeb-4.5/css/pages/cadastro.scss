@@ -40,6 +40,41 @@ body{
 
 }
 
+.not-valid {
+    border: solid #FF393A;
+    border-width: 4px 4px 20px 4px;
+}
+
+.textbox-expanded {
+    border: solid $cor-primaria;
+    border-width: 4px 4px 120px 4px;
+}
+
+.mto-fraca {
+    border: solid #FF393A;
+    border-width: 4px 4px 120px 4px;
+}
+
+.fraca {
+    border: solid #E29400;
+    border-width: 4px 4px 120px 4px;
+}
+
+.media {
+    border: solid #D5CD00;
+    border-width: 4px 4px 120px 4px;
+}
+
+.forte {
+    border: solid #00ff6b;
+    border-width: 4px 4px 120px 4px;
+}
+
+.mto-forte {
+    border: solid $cor-primaria;
+    border-width: 4px 4px 120px 4px;
+}
+
 .textbox-cad {
     position: absolute;
     pointer-events: none;
@@ -176,15 +211,18 @@ body{
         text-align: left;
         position: absolute;
 
-
         div {
             width: 10px;
             height: 10px;
-            background: #0093ff;
+            background: #cecece;
             border-radius: 10px;
             margin: 0;
             float: left;
             margin-left: 5px;
         }
+
+		div:nth-of-type(1) {
+			background: $cor-primaria;
+		}
     }
 }

@@ -1,3 +1,49 @@
-.button-cad.disable {
-    filter: grayscale(100%);
+.button-cad.disableded {
+    filter: brightness(150%) saturate(25%);
+    transition: ease .3s;
+}
+
+.button-cad-next {
+    filter: none;
+    transition: ease .3s;
+}
+
+.step.step1 div:nth-of-type(1) {
+    background-color: #00ff6b;
+}
+
+.step.step1 div:nth-of-type(2) {
+    background-color: #0093ff;
+}
+
+.step.step2 div:nth-of-type(1), .step.step2  div:nth-of-type(2) {
+    background-color: #00ff6b;
+}
+
+.step.step2 div:nth-of-type(3) {
+    background-color: #0093ff;
+}
+
+.step.step3 div:nth-of-type(1), .step.step3  div:nth-of-type(2), .step.step3 div:nth-of-type(3) {
+    background-color: #00ff6b;
+}
+
+.step.step3 div:nth-of-type(4) {
+    background-color: #0093ff;
+}
+
+.step.step4 div:nth-of-type(1), .step.step4  div:nth-of-type(2), .step.step4 div:nth-of-type(3), .step.step4 div:nth-of-type(4) {
+    background-color: #00ff6b;
+}
+
+.step.step4 div:nth-of-type(5) {
+    background-color: #0093ff;
+}
+
+.step.step5 div:nth-of-type(1), .step.step5  div:nth-of-type(2), .step.step5 div:nth-of-type(3), .step.step5 div:nth-of-type(4), .step.step5 div:nth-of-type(5) {
+    background-color: #00ff6b;
+}
+
+.step.step5 div:nth-of-type(6) {
+    background-color: #0093ff;
 }
