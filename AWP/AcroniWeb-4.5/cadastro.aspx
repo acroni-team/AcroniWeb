@@ -29,7 +29,17 @@
             </div>
             <div class="btn-preencher"></div>
             <div class="cad-wraper">
-                <asp:Label ID="lblErro" runat="server" class="erro" Text=""></asp:Label>
+                <div class="step-error-wrapper">
+                    <div class="step">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <asp:Label ID="lblErro" runat="server" class="erro" Text=""></asp:Label>
+                </div>
                 <div class="textbox-type2-overflow overflow-cad">
                     <asp:TextBox ID="txtNome" runat="server" type="text" class="textbox textbox-type2 textbox-cad aparece" placeholder="Digite seu Nome Completo" autocomplete="off"></asp:TextBox>
                     <asp:TextBox ID="txtUsu" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite o nome de usuário desejado" autocomplete="off"></asp:TextBox>
@@ -38,7 +48,7 @@
                     <asp:TextBox ID="txtCpf" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite seu CPF" autocomplete="off"></asp:TextBox>
                     <asp:TextBox ng-model="senha" TextMode="Password" ng-change="verificar()" ID="txtSenha" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite sua melhor senha :D" autocomplete="off"></asp:TextBox>
                     <asp:TextBox ID="txtCSenha" TextMode="Password" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Confirmar sua Senha" autocomplete="off"></asp:TextBox>
-                    <asp:Button ID="btnValida" class="button dark button-type2 button-cad" runat="server" Text="Enviar" OnClick="btnValida_Click" OnClientClick="loader('.lds-ellipsis','.button-cad');" />
+                    <asp:Button ID="btnValida" class="button dark button-type2 button-cad" style="background-size: 100%;" runat="server" Text="" OnClick="btnValida_Click" OnClientClick="loader('.lds-ellipsis','.button-cad');" />
                     
 <%--                    <div class="lds-ellipsis" style="top: 8px;">
                         <div></div>
@@ -55,7 +65,8 @@
                     <asp:Label ID="lblNivelSenha" class="nivel-senha" ng-bind="mensagem" runat="server" Text=""></asp:Label><br />
                  </div> --%>
                 <br />
-                <asp:Label ID="lblDica" CssClass="dica" runat="server" Text=""></asp:Label>
+                <asp:Label ID="lblH1Dica" CssClass="h1dica" runat="server" Text="Hey!"></asp:Label> <br />                
+                <asp:Label ID="lblDica" CssClass="dica" runat="server" Text="Você está prestes a entrar pra família Acroni!"></asp:Label>
             </div>
         </div>
         <div id="info">

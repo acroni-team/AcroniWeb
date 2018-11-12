@@ -38,6 +38,21 @@
         padding: 21px;
         border: none;
     }
+
+    &.button-cad {
+        border: none;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-size: 100%;
+        align-self: center;
+        margin-top: 35px;
+        margin-right: 35px;
+        border-radius: 50%;
+        background: url("../../img/arrow-circle-right-solid5.png");
+
+
+    }
 }
 
 .button-hover {

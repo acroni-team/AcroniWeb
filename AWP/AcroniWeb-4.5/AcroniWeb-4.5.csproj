@@ -135,6 +135,7 @@
     <Content Include="GetImage.aspx" />
     <Content Include="img\acroni-logo.png" />
     <Content Include="img\acroni.png" />
+    <Content Include="img\arrow-circle-right-solid5.png" />
     <Content Include="img\curva-lateral.png" />
     <Content Include="img\curvav3.jpg" />
     <Content Include="img\curvinha.svg" />

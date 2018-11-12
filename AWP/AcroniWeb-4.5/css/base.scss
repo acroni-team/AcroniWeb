@@ -10,7 +10,8 @@ body {
     overflow: hidden;
     font-family: 'open',sans-serif;
     font-weight: $normal;
-    transition: filter 200ms ease-in;
+    transition: 
+        200ms ease-in;
 }
 
 input {
