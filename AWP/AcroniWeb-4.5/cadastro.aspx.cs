@@ -283,34 +283,36 @@ namespace AcroniWeb_4._5
 
         protected void btnVoltar_Click(object sender, EventArgs e)
         {
-            Session["aux"] = Convert.ToInt32(Session["aux"]) - 1;
-            if (txtUsu.Attributes["active"].ToString() == "1")
+            if (txtNome.Attributes["class"].ToString() != "textbox textbox-type2 textbox-cad aparece")
             {
-                voltar(txtUsu, txtNome, "step", "Hey!", "Você está prestes a entrar pra família Acroni!");
-            }
-            else if (txtEmail.Attributes["active"].ToString() == "1")
-            {
-                voltar(txtEmail, txtUsu, "step step1", "Hey, " + Session["nome"] + "!", "Defina um apelido pra você. <br/> Ele deve ter no mínimo 4 letras e caracteres especiais, exceto _ e - não são permitidos.");
-            }
-            else if (txtCodigo.Attributes["active"].ToString() == "1")
-            {
-                voltar(txtCodigo, txtEmail, "step step1 step2", "Agora vamos te chamar de " + Session["usu"] + ".", "Agora insira seu melhor e-mail.");
-            }
-            else if (txtCpf.Attributes["active"].ToString() == "1")
-            {
-                voltar(txtCpf, txtCodigo, "step step1 step2 step3", "Legal! Agora você só precisa confirmar que é você.", "Confira o código no seu e-mail.");
-            }
-            else if (txtSenha.Attributes["active"].ToString() == "1")
-            {
-                voltar(txtSenha, txtCpf, "step step1 step2 step3 step4", "Uma pessoa sempre tem um CPF.", "Digita ele aí pra nós.");
-            }
-            else if (txtCSenha.Attributes["active"].ToString() == "1")
-            {
-                voltar(txtCSenha, txtSenha, "step step1 step2 step3 step4 step5", "E por fim, sua senha.", "As senhas dos melhores tem mais de 8 dígitos, com letras maiúsculas e minúsculas, números e símbolos.");
+                Session["aux"] = Convert.ToInt32(Session["aux"]) - 1;
+                if (txtUsu.Attributes["active"].ToString() == "1")
+                {
+                    voltar(txtUsu, txtNome, "step", "Hey!", "Você está prestes a entrar pra família Acroni!");
+                }
+                else if (txtEmail.Attributes["active"].ToString() == "1")
+                {
+                    voltar(txtEmail, txtUsu, "step step1", "Hey, " + Session["nome"] + "!", "Defina um apelido pra você. <br/> Ele deve ter no mínimo 4 letras e caracteres especiais, exceto _ e - não são permitidos.");
+                }
+                else if (txtCodigo.Attributes["active"].ToString() == "1")
+                {
+                    voltar(txtCodigo, txtEmail, "step step1 step2", "Agora vamos te chamar de " + Session["usu"] + ".", "Agora insira seu melhor e-mail.");
+                }
+                else if (txtCpf.Attributes["active"].ToString() == "1")
+                {
+                    voltar(txtCpf, txtCodigo, "step step1 step2 step3", "Legal! Agora você só precisa confirmar que é você.", "Confira o código no seu e-mail.");
+                }
+                else if (txtSenha.Attributes["active"].ToString() == "1")
+                {
+                    voltar(txtSenha, txtCpf, "step step1 step2 step3 step4", "Uma pessoa sempre tem um CPF.", "Digita ele aí pra nós.");
+                }
+                else if (txtCSenha.Attributes["active"].ToString() == "1")
+                {
+                    voltar(txtCSenha, txtSenha, "step step1 step2 step3 step4 step5", "E por fim, sua senha.", "As senhas dos melhores tem mais de 8 dígitos, com letras maiúsculas e minúsculas, números e símbolos.");
+                }
             }
         }
-
-
+        
         public void voltar(TextBox txtAtual, TextBox txtAnterior, string classesStep, string textH1, string textDica)
         {
             txtAtual.Attributes["class"] = "textbox textbox-type2 textbox-cad";
