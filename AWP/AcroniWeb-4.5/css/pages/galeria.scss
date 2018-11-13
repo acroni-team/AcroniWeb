@@ -162,8 +162,16 @@
 
     .line {
         background-color: #72767d;
-        width: 90%;
+        width: 300px;
         height: 5px;
+        overflow:hidden;
+
+        div {
+            width: 100%;
+            height: 100%;
+            background: $cor-primaria;
+            transform:translateX(-300px);
+        }
     }
 }
 

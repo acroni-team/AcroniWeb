@@ -199,7 +199,7 @@
         </div>
         <div class="plan-box plan-premium">
             <header>
-                <h1>Plano Completo</h1>
+                <h1>Plano Premium</h1>
                 <h3>Características</h3>
             </header>
             <ul>

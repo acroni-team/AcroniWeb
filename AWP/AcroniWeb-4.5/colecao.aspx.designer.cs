@@ -13,30 +13,12 @@ namespace AcroniWeb_4._5 {
     public partial class colecao {
         
         /// <summary>
-        /// imgFoto control.
+        /// DataList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgFoto;
-        
-        /// <summary>
-        /// lblNome control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNome;
-        
-        /// <summary>
-        /// DataList2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList DataList2;
+        protected global::System.Web.UI.WebControls.DataList DataList1;
     }
 }

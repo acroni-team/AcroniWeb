@@ -4,26 +4,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="right right-logado right-galeria">
         <ul class="grid grid2">
-            <li>
-                <figure class="teclado" id="teclado">
-                    <asp:Image ID="imgFoto" class="img" runat="server" ImageUrl='' />
-                    <asp:Label class="descricao nome" ID="lblNome" runat="server" Text=''></asp:Label>
-                </figure>
-            </li>
-        </ul>
-            <asp:DataList ID="DataList2" runat="server" RepeatColumns="3" RepeatDirection="Horizontal">
+            <asp:DataList ID="DataList1" runat="server" RepeatColumns="3" RepeatDirection="Horizontal">
                 <ItemTemplate>
                     <li>
-                        <figure id="<%# Eval("id_teclado_customizado") %>">
-                            <asp:Image ID="imgFoto" class="img" runat="server" ImageUrl='' />
-                            <figcaption>
-                                <asp:Label class="descricao" ID="lblNome" runat="server" Text='<%# Bind("nickname") %>'></asp:Label>
-                                <%--<asp:Label class="descricao" ID="lblMarca" runat="server" Text=' <%# Bind("marca") %>'></asp:Label>--%>
-                                <div style="margin-bottom: 20px;">
-                                    <asp:Label class="preco" ID="Label1" runat="server" Text='R$'></asp:Label><asp:Label class="preco" ID="lblPreco" runat="server" Text='<%# Bind("preco") %>'></asp:Label></div>
-                                <p>Clique para</p>
-                                <p>ver mais detalhes</p>
-                            </figcaption>
+                        <figure class="teclado" id="teclado">
+                            <asp:Image ID="imgFoto" class="img" runat="server" ImageUrl='<%# "GetImageTeclado.aspx?id=" + Eval("id_teclado_customizado") %>' />
+                            <asp:Label class="descricao nome" ID="lblNome" runat="server" Text='<%# Bind("nickname") %>'></asp:Label>
                         </figure>
                     </li>
                 </ItemTemplate>

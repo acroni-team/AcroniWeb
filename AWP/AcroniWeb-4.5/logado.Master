@@ -52,10 +52,10 @@
                             <asp:Label class="user-name" ID="lblUser" runat="server" Text='Fillers'></asp:Label><br />
                             <asp:Label class="user-plan" ID="lblPlan" runat="server" Text='Plano Básico'></asp:Label>
                         </figcaption>
-                        <div class="line"></div>
+                        <div class="line"><div id="blueLine" runat="server"></div></div>
                         <figcaption class="profile-settings">
-                            <asp:Label class="user-mb user-plan" ID="lblMbStart" runat="server" Text='0 MB' Style="left: -125px;"></asp:Label>
-                            <asp:Label class="user-mb user-plan" ID="lblMbEnd" runat="server" Text='50 MB' Style="right: -125px;"></asp:Label>
+                            <asp:Label class="user-mb user-plan" ID="lblMbStart" runat="server" Text='1 ' Style="left: -125px;"></asp:Label>
+                            <asp:Label class="user-mb user-plan" ID="lblMbEnd" runat="server" Text='5' Style="right: -125px;"></asp:Label>
                         </figcaption>
                     </div>
                 </div>

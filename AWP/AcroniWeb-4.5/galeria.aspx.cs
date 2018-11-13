@@ -42,7 +42,41 @@ namespace AcroniWeb_4._5
                 {
                     conexao_SQL.Close();
                 }
-                
+
+                try
+                {
+                    if (conexao_SQL.State != ConnectionState.Open)
+                        conexao_SQL.Open();
+                    String select = "SELECT imagem_colecao FROM tblColecao AS colec INNER JOIN tblCliente AS cli ON cli.id_cliente = colec.id_cliente AND usuario ='" + Session["usuario"] + "'";
+
+                    using (SqlCommand comando_SQL = new SqlCommand(select, conexao_SQL))
+                    {
+                        using (SqlDataReader tabela = comando_SQL.ExecuteReader())
+                        {
+                            tabela.Read();
+                            if (tabela.HasRows)
+                            {
+                                imgStatus.Attributes.Add("style", "display:none");
+                                header.Attributes["class"] = "galeria-header is-showing";
+                            }
+                            else {
+                                imgStatus.Attributes.Add("style", "display:block");
+                                header.Attributes["class"] = "galeria-header";
+                                ds.Tables[0].Rows[0].Delete();
+                                DataList1.DataSource = ds;
+                                DataList1.DataBind();
+                            }
+
+                        }
+                    }
+
+
+                }
+                catch (Exception ex)
+                {
+                    conexao_SQL.Close();
+                }
+
             }
         }
     }
