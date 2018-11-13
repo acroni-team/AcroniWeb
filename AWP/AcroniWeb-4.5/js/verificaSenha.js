@@ -112,7 +112,7 @@ controllers.validaSenha = function($scope) {
     $scope.mudaCor = function ($event) {
         const btnSalva = document.getElementById('ContentPlaceHolder1_btnValida');
         const bordinha = document.getElementById('ContentPlaceHolder1_border');
-        if (document.querySelectorAll('.textbox.textbox-type2.textbox-cad')[0].value != "" ||
+       if (document.querySelectorAll('.textbox.textbox-type2.textbox-cad')[0].value != "" ||
             document.querySelectorAll('.textbox.textbox-type2.textbox-cad')[1].value != "" ||
             document.querySelectorAll('.textbox.textbox-type2.textbox-cad')[2].value != "" ||
             document.querySelectorAll('.textbox.textbox-type2.textbox-cad')[3].value != "" ||
@@ -142,18 +142,28 @@ controllers.validaSenha = function($scope) {
 
                 if (i == 1) {
                     bordinha.style.borderColor = "#FF393A";
+                    bordinha.style.color = "#FF393A";
+                    $scope.mensagem = "ta de curtisao com a minha cara poar?";
                 }
                 else if (i == 2) {
                     bordinha.style.borderColor = "#E29400";
+                    bordinha.style.color = "#E29400";
+                    $scope.mensagem = "pode até passar mas ta lixo";
                 }
                 else if (i == 3) {
                     bordinha.style.borderColor = "#D5CD00";
+                    bordinha.style.color = "#D5CD00";
+                    $scope.mensagem = "podia ter sido MB";
                 }
                 else if (i == 4) {
                     bordinha.style.borderColor = "#00ff6b";
+                    bordinha.style.color = "#00ff6b";
+                    $scope.mensagem = "hmm... TOMA ESSA, hacker";
                 }
                 else if (i == 5) {
                     bordinha.style.borderColor = "#0093ff";
+                    bordinha.style.color = "#0093ff";
+                    $scope.mensagem = "Nossa! Muito forte, cara, impressionante!";
                  }
                 
             }
@@ -165,6 +175,7 @@ controllers.validaSenha = function($scope) {
                 bordinha.classList.remove("textbox-expanded");
             }
             bordinha.style.borderColor = "#0093ff";
+            bordinha.style.color = "#0093ff";
         }
     }
     

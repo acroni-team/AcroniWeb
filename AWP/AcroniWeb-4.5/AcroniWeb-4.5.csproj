@@ -128,7 +128,7 @@
     <None Include="css\pages\loja.scss" />
     <None Include="css\controls\preload.scss" />
     <None Include="css\base.scss" />
-    <Content Include="css\area-restrita.css" />
+    <Content Include="css\cad-stuff.css" />
     <Content Include="default.aspx" />
     <Content Include="download.aspx" />
     <Content Include="email.html" />

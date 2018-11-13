@@ -59,7 +59,7 @@ namespace AcroniWeb_4._5
                         IsValid("nome", txtNome, txtUsu, 1, nome);
                         step.Attributes["class"] = "step step1";
                         lblH1Dica.Text = "Hey, " + Session["nome"] + "!";
-                        lblDica.Text = "Defina um apelido pra você.";
+                        lblDica.Text = "Defina um apelido pra você. <br/> Ele deve ter no mínimo 4 letras e caracteres especiais, exceto _ e - não são permitidos.";
                         break;
                     }
                     
@@ -77,17 +77,17 @@ namespace AcroniWeb_4._5
                     
                     if (!v.validarUsu(usuario))
                     {
-                        IsNotValid(txtNome, "O nome de usuário deve ter no mínimo 4 letras <br /> Caracteres especiais, exceto _ e - não são permitidos", 1, txtUsu);
+                        IsNotValid(txtNome, "Esse apelido é inválido.", 1, txtUsu);
                         break;
                     }
                     else if (existe)
                     {
-                        IsNotValid(txtNome, "Usuário já em uso", 1, txtUsu);
+                        IsNotValid(txtNome, "Usuário já em uso.", 1, txtUsu);
                         break;
                     }
                     else if (usuario.Contains(" "))
                     {
-                        IsNotValid(txtNome, "O usuário não pode conter espaços", 1, txtUsu);
+                        IsNotValid(txtNome, "O usuário não pode conter espaços.", 1, txtUsu);
                         break;
                     }
                     else
@@ -128,9 +128,6 @@ namespace AcroniWeb_4._5
                         Session["email"] = email;
                         Session["codigo"] = ut.gerarStringConfirmacao();
                         ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Confirmar E-mail", "Utilize o código abaixo para corfimar seu email. Se você não está criando uma conta na Acroni, finja que nunca nem viu esse email.");
-                        modal.Attributes["class"] = "modal-wrap is-showing";
-                        modalback.Attributes.Add("style", "pointer-events:auto");
-                        overflow.Attributes["class"] = "modal-overflow modal-overflow-alt";
                         ReenviarEmail.Attributes.Add("style", "display: block");
                         lblH1Dica.Text = "Legal! Agora você só precisa confirmar que é você.";
                         lblDica.Text = "Confira o código no seu e-mail.";
@@ -139,8 +136,6 @@ namespace AcroniWeb_4._5
 
                 case 3:
                     txtEmail.Attributes["class"] = "textbox textbox-type2 textbox-cad";
-                    modal.Attributes["class"] = "modal-wrap";
-                    modalback.Attributes.Add("style", "pointer-events:none");
                     ReenviarEmail.Attributes.Add("style", "display: block");
 
                     if (!txtCodigo.Text.ToLower().Equals(Session["codigo"].ToString().ToLower()))
@@ -159,8 +154,6 @@ namespace AcroniWeb_4._5
                         IsValid("codigo", txtCodigo, txtCpf, 4);
                         step.Attributes["class"] = "step step4";
                         ReenviarEmail.Attributes.Add("style", "display: none");
-                        modal.Attributes["class"] = "modal-wrap";
-                        modalback.Attributes.Add("style", "pointer-events:none");
                         lblH1Dica.Text = "Uma pessoa sempre tem um CPF.";
                         lblDica.Text = "Digita ele aí pra nós.";
                         break;
@@ -169,8 +162,6 @@ namespace AcroniWeb_4._5
                 case 4:
                     txtUsu.Attributes["class"] = "textbox textbox-type2 textbox-cad";
                     txtCodigo.Attributes["class"] = "textbox textbox-type2 textbox-cad";
-                    modal.Attributes["class"] = "modal-wrap";
-                    modalback.Attributes.Add("style", "pointer-events:none");
                     ReenviarEmail.Attributes.Add("style", "display: none");
 
                     if (!v.validarCPF(txtCpf.Text))
@@ -187,15 +178,12 @@ namespace AcroniWeb_4._5
                     {
                         IsValid("cpf", txtCpf, txtSenha, 5);
                         step.Attributes["class"] = "step step5";
-                        lblDica.Text = "Dica: use uma senha que contenha mais de 8 dígitos, letras maiúsculas e minúsculas, números e símbolos.";
                         lblH1Dica.Text = "E por fim, sua senha.";
-                        lblDica.Text = "As senhas dos melhores tem com letras maiúsculas e minúsculas, números e símbolos.";
+                        lblDica.Text = "As senhas dos melhores tem mais de 8 dígitos, com letras maiúsculas e minúsculas, números e símbolos.";
                         break;
                     }
 
                 case 5:
-                    modal.Attributes["class"] = "modal-wrap";
-                    modalback.Attributes.Add("style", "pointer-events:none");
                     txtCpf.Attributes["class"] = "textbox textbox-type2 textbox-cad";
                     
 
@@ -276,10 +264,11 @@ namespace AcroniWeb_4._5
 
         protected void ReenviarEmail_Click(object sender, EventArgs e)
         {
+            lblH1Dica.Text = "Esse tipo de coisa acontece.";
+            lblDica.Text = "Relaxa,apenas confira o código no seu e-mail novamente.";
             Session["codigo"] = ut.gerarStringConfirmacao();
             ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Confirmar E-mail", "Utilize o código abaixo para corfimar seu email. Se você não está criando uma conta na Acroni, finja que nunca nem viu esse email.");
-            modal.Attributes["class"] = "modal-wrap is-showing";
-            modalback.Attributes.Add("style", "pointer-events:auto");
+
         }
 
         protected void ReenviaImai_Click(object sender, EventArgs e)
