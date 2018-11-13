@@ -96,26 +96,31 @@ controllers.validaSenha = function ($scope) {
                 if (i == 1) {
                     bordinha.style.borderColor = "#FF393A";
                     bordinha.style.color = "#FF393A";
-                    $scope.mensagem = "Vamos lá, você consegue melhorar isso.";
+                    btnSalva.style.filter = "hue-rotate(150deg)";
+                    $scope.mensagem = "ta de curtisao com a minha cara poar?" //"Vamos lá, você consegue melhorar isso.";
                 }
                 else if (i == 2) {
                     bordinha.style.borderColor = "#E29400";
                     bordinha.style.color = "#E29400";
+                    btnSalva.style.filter = "hue-rotate(195deg)";
                     $scope.mensagem = "Não é a senha dos sonhos, mas...";
                 }
                 else if (i == 3) {
                     bordinha.style.borderColor = "#D5CD00";
                     bordinha.style.color = "#D5CD00";
+                    btnSalva.style.filter = "hue-rotate(215deg)";
                     $scope.mensagem = "Existem senhas mais fortes.";
                 }
                 else if (i == 4) {
                     bordinha.style.borderColor = "#00ff6b";
                     bordinha.style.color = "#00ff6b";
-                    $scope.mensagem = "Já é o sufuciente por aqui.";
+                    btnSalva.style.filter = "hue-rotate(300deg)";
+                    $scope.mensagem = "hmm... TOMA ESSA, hacker"//"Já é o sufuciente por aqui.";
                 }
                 else if (i == 5) {
                     bordinha.style.borderColor = "#0093ff";
                     bordinha.style.color = "#0093ff";
+                    btnSalva.style.filter = "hue-rotate(350deg)";
                     $scope.mensagem = "Nossa! Muito forte, cara, impressionante!";
                 }
 
@@ -129,6 +134,7 @@ controllers.validaSenha = function ($scope) {
             }
             bordinha.style.borderColor = "#0093ff";
             bordinha.style.color = "#0093ff";
+            btnSalva.style.filter = "hue-rotate(350deg)";
             $scope.mensagem = "";
         }
     }

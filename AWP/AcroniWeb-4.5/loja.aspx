@@ -21,7 +21,7 @@
 
 <asp:Content ID="menu" ContentPlaceHolderID="menu" runat="server">
     <div id="logotext">
-       <a href="default.aspx" id="logoacr">Acroni</a>
+       <a href="default.aspx" id="logoacr" runat="server">Acroni</a>
     </div>
 
    <ul id="menu-items">

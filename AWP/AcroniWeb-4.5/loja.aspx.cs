@@ -31,6 +31,7 @@ namespace AcroniWeb
             if (Session["logado"].ToString() == "1")
             {
                 sobre.Attributes.Add("style", "display:none");
+                logoacr.Attributes["href"] = "galeria.aspx";
             }
             //if (Environment.MachineName.Equals("PALMA-PC"))
             //{

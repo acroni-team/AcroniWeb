@@ -30,6 +30,8 @@ namespace AcroniWeb_4._5
                 Session["codigo"] = "";
             }
             lblErro.Text = "";
+            
+     
         }
                
         protected void btnValida_Click(object sender, EventArgs e)

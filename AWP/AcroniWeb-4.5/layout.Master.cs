@@ -22,6 +22,7 @@ namespace AcroniWeb
             {
                 lblUser.Text = Session["usuario"].ToString();
                 user.Attributes.Add("style", "display:block");
+                
             }
             using (SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao))
             {
