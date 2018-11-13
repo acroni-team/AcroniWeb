@@ -89,7 +89,9 @@ body{
     position: absolute;
     pointer-events: none;
     opacity: 0;
-    width: 675px;
+    width: 600px;
+    left:90px;
+    /*width: 675px;*/
     font-size: 30px;
     text-indent: 30px;
     font-weight: $semi-bold;
@@ -295,5 +297,8 @@ body{
 }
 
 .voltar {
-	margin-top: 100px;
+    position: absolute;
+    left: 0;
+    transform:rotate(180deg);
+    margin-left:35px;
 }

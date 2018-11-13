@@ -18,6 +18,13 @@
             filter: none;
             transition: ease .3s;
         }
+
+        nav{
+            pointer-events:none;
+        }
+        #logotext{
+            pointer-events:all;
+        }
     </style>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/angular.min.js"></script>
@@ -50,10 +57,11 @@
                     <asp:TextBox ID="txtCpf" ng-model="cpf" ng-change="mudaCor()" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite seu CPF" autocomplete="off"></asp:TextBox>
                     <asp:TextBox ng-model="senha" TextMode="Password" ng-change="mudaCor()" ID="txtSenha" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Digite sua melhor senha :D" autocomplete="off"></asp:TextBox>
                     <asp:TextBox ID="txtCSenha" ng-model="csenha" ng-change="mudaCor()" TextMode="Password" runat="server" type="text" class="textbox textbox-type2 textbox-cad" placeholder="Confirmar sua Senha" autocomplete="off"></asp:TextBox>
-                    <asp:Button ID="btnValida" class="button dark button-type2 button-cad disableded" style="background-size: 100%;" runat="server" Text="" OnClick="btnValida_Click" OnClientClick="loader('.lds-ellipsis','.button-cad');" disabled/>
+                    <asp:Button ID="btnValida" class="button dark button-type2 button-cad disableded" style="background-size: 100%;" runat="server" Text="" OnClick="btnValida_Click" OnClientClick="loader('.lds-ellipsis','.button-cad');" disabled/>   
+                    <asp:Button ID="btnVoltar" runat="server" CssClass="button dark button-type2 button-cad voltar" style="background-size: 100%;" OnClick="btnVoltar_Click"/>
                 </div>
+
             </div>
-            <asp:Button ID="btnVoltar" runat="server" CssClass="voltar" Text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" OnClick="btnVoltar_Click"/>
             <asp:Button ID="ReenviarEmail" runat="server" Text="Reenviar Email" OnClientClick="loader('.lds-ellipsis','.button-cad');" OnClick="ReenviarEmail_Click" CssClass="ReenviarEmail" />
             <div class="cad-msg">
                 <br />
