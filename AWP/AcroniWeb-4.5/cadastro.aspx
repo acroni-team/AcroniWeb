@@ -36,7 +36,7 @@
         <div id="padrao" ng-controller="validaSenha" class="section section--fadeIn">
             <div class="btn-preencher"></div>
             <div class="cad-wraper">
-                <asp:Label ID="lblSenhaForca" CssClass="h1senha" ng-modal="mensagem" runat="server" Text="Esse é o palhaço que vai ter as msg de senha"></asp:Label>
+                <asp:Label ID="lblSenhaForca" CssClass="h1senha" ng-modal="mensagem" runat="server" Text="{{mensagem}}"></asp:Label>
                 <div class="lds-ellipsis lds-cad"><div></div><div></div><div></div><div></div></div>
                 <div class="step-error-wrapper">
                     <div class="step" runat="server" id="step"><div></div><div></div><div></div><div></div><div></div><div></div></div>
