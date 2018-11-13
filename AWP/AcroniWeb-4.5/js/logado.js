@@ -8,9 +8,7 @@
         idFotoPerfil.src = URL.createObjectURL(event.target.files[0]);
         $('.btn-enable-salvar').click();
     }
-    else {
-        //Mensagem de erro pq n ser imagem (popup)
-    }
+
 };
 
 $(document).ready(function () {
@@ -80,8 +78,6 @@ controllers.ctrl = function ($scope) {
 
 logado.controller(controllers);
 
-
-//funcao do placeholder
 function placehoderStay(index) {
     var id = $('.textbox-type3').eq(index).val();
     if (id != "") {

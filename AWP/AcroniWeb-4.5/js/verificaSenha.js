@@ -56,7 +56,6 @@ const symbolValidator = (pass) => {
     }
 };
 
-
 controllers.validaSenha = function ($scope) {
     $scope.senha = "";
     $scope.mensagem = "";
@@ -97,7 +96,7 @@ controllers.validaSenha = function ($scope) {
                     bordinha.style.borderColor = "#FF393A";
                     bordinha.style.color = "#FF393A";
                     btnSalva.style.filter = "hue-rotate(150deg)";
-                    $scope.mensagem = "ta de curtisao com a minha cara poar?" //"Vamos lá, você consegue melhorar isso.";
+                    $scope.mensagem = "Vamos lá, você consegue melhorar isso." //"Vamos lá, você consegue melhorar isso.";
                 }
                 else if (i == 2) {
                     bordinha.style.borderColor = "#E29400";
@@ -115,7 +114,7 @@ controllers.validaSenha = function ($scope) {
                     bordinha.style.borderColor = "#00ff6b";
                     bordinha.style.color = "#00ff6b";
                     btnSalva.style.filter = "hue-rotate(300deg)";
-                    $scope.mensagem = "hmm... TOMA ESSA, hacker"//"Já é o sufuciente por aqui.";
+                    $scope.mensagem = "Já é o sufuciente por aqui."//"Já é o sufuciente por aqui.";
                 }
                 else if (i == 5) {
                     bordinha.style.borderColor = "#0093ff";

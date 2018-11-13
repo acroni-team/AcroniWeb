@@ -715,3 +715,25 @@ C:\Users\ETESP\Desktop\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\ru-ru\BundleTransf
 C:\Users\ETESP\Desktop\AcroniWeb-master\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojResolveAssemblyReference.cache
 C:\Users\ETESP\Desktop\AcroniWeb-master\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
 C:\Users\ETESP\Desktop\AcroniWeb-master\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\x64\libsass.dll
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\LibSassHost.dll
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\WebGrease.dll
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\LibSassHost.xml
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojAssemblyReference.cache
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CoreCompileInputs.cache
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb

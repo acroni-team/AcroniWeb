@@ -105,8 +105,6 @@ public class Utilitarios
         string replaceCodigo = corpo.Replace("#Codigo#", codigo);
         string replaceNome = replaceCodigo.Replace("#NomedeUsuario#", divide[0]);
         string mensagem = replaceNome.Replace("#Mensagem#", msg);
-
-        //string mensagem = "<div> Oi, "+divide[0]+"! </br>, eu sou o código " + codigo + " :D ";
         MailMessage mail = new MailMessage("acroni.acroni7@gmail.com", email, titulo, mensagem);
         mail.IsBodyHtml = true;
         SmtpClient client = new SmtpClient("smtp.gmail.com", 587);

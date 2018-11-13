@@ -53,7 +53,7 @@
                     <asp:Button ID="btnValida" class="button dark button-type2 button-cad disableded" style="background-size: 100%;" runat="server" Text="" OnClick="btnValida_Click" OnClientClick="loader('.lds-ellipsis','.button-cad');" disabled/>
                 </div>
             </div>
-            
+            <asp:Button ID="btnVoltar" runat="server" CssClass="voltar" Text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" OnClick="btnVoltar_Click"/>
             <asp:Button ID="ReenviarEmail" runat="server" Text="Reenviar Email" OnClientClick="loader('.lds-ellipsis','.button-cad');" OnClick="ReenviarEmail_Click" CssClass="ReenviarEmail" />
             <div class="cad-msg">
                 <br />
