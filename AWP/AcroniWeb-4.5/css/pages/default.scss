@@ -262,7 +262,7 @@ section#video {
                     opacity: 1;
                 }
 
-                
+
 
                 button {
                     background: none;
@@ -271,23 +271,20 @@ section#video {
                     cursor: pointer;
                 }
 
-                button:before {
-                    content: '►';
-                    font-family: 'Font Awesome 5 Free';
-                    font-weight: 900;
-                    display: inline-block;
+
+
+                i.material-icons:before {
                     font-size: 100px;
+                    content: 'play_circle_filled';
                     color: #fff;
-                    -webkit-font-smoothing: antialiased;
                 }
 
-                button.play:before {
-                    content: '►';
+                i.play:before {
+                    content: 'pause_circle_filled';
                 }
 
-                button.pause:before {
-                    content: '▌▌';
-                    font-size: 60px;
+                i.pause:before {
+                    content: 'play_circle_filled';
                 }
             }
 
@@ -306,7 +303,7 @@ section#video {
                     padding: 20px;
                     cursor: pointer;
 
-       
+
 
                     button {
                         background: none;
@@ -315,22 +312,18 @@ section#video {
                         cursor: pointer;
                     }
 
-                    button:before {
-                        content: '\f028';
-                        font-family: 'Font Awesome 5 Free';
-                        font-weight: 900;
-                        display: inline-block;
+                    i:before {
+                        content: 'volume_up';
                         font-size: 25px;
                         color: #fff;
-                        -webkit-font-smoothing: antialiased;
                     }
 
-                    button.mute:before {
-                        content: '\f028';
+                    i.mute:before {
+                        content: 'volume_up';
                     }
 
-                    button.muted:before {
-                        content: '\f026';
+                    i.muted:before {
+                        content: 'volume_off';
                     }
                 }
             }

@@ -4,6 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="js/acroniPlayer.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </asp:Content>
 
 <asp:Content ID="menu" ContentPlaceHolderID="menu" runat="server">
@@ -148,12 +149,13 @@
             <div class="c-video">
                 <video class="video" src="video/Propaganda.mp4" id="videozinho" poster="img/acroni.png"></video>
                 <div class="play-button" onclick="toggleVideo();">
-                    <button id="play-pause" type="button" ></button>
+                    <i class="material-icons" id="play-pause"></i>
+                    <%--<button id="play-pause" type="button" ></button>--%>
                     
                 </div>
                 <div class="controls-bar">
                    <div class="mute-button" onclick="toggleMute();">
-                       <button aria-label="Mute" id="mute-unmute" type="button" ></button>
+                       <i class="material-icons" aria-label="Mute" id="mute-unmute"></i>
                    </div>
                 </div>
 <%--                <div>

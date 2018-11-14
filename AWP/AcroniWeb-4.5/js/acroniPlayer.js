@@ -5,11 +5,11 @@
 
 
     if (video.paused) {
-        btn.className = 'pause';
+        btn.className = 'material-icons pause';
         video.play();
     }
     else {
-        btn.className = 'play';
+        btn.className = 'material-icons play';
         video.pause();
     }
 
@@ -20,11 +20,11 @@ function toggleMute() {
     const mute = document.getElementById('mute-unmute');
     if (video.muted) {
         video.muted = false;
-        mute.className = 'mute';
+        mute.className = 'material-icons mute';
     }
     else {
         video.muted = true;
-        mute.className = 'muted';
+        mute.className = 'material-icons muted';
     }
 }
 

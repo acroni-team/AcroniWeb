@@ -33,6 +33,15 @@ nav {
     z-index: 999;
     display: flex;
     transition: 0.3s;
+    opacity: 0;
+
+    &.completo {
+        opacity: 1;
+    }
+
+    &.saindo-da-pagina {
+        opacity: 0;
+    }
 
     &.hidden {
         transform: translateY(-100px);
