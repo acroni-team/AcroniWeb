@@ -9,7 +9,7 @@
         <div>
             <asp:DataList ID="DataList1" runat="server">
                 <ItemTemplate>
-                    <a href="colecao.aspx"><asp:Image ID="imgColecao" class="img-colecao" runat="server" ImageUrl='<%# "GetImage.aspx?id=" + Eval("id_colecao") %>' /></a>
+                    <a href="<%# "colecao.aspx?id=" + Eval("id_colecao") %>"><asp:Image ID="imgColecao" class="img-colecao" runat="server" ImageUrl='<%# "GetImage.aspx?id=" + Eval("id_colecao") %>' /></a>
                 </ItemTemplate>
             </asp:DataList>
             <asp:Image ID="imgStatus" class="galeria-status" runat="server"  ImageUrl='img/galeria-vazia.png' />

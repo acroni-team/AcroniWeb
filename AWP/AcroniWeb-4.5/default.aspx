@@ -80,7 +80,7 @@
     
     <!--    Primeira seção -->
 
-    <section>
+    <section id="primeira">
 
         <div id="principal" > 
             <div>
@@ -288,6 +288,7 @@
             </div>
         </div>
      </section>
+    <section id="last-section"></section>               
     <!-- FOOTI -->
 
     <!--                            Scripts                      -->

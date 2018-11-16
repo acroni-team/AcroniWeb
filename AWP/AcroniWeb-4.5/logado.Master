@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html style="background:#2d2e2f">
 <head runat="server">
     <title>Acroni </title>
     <meta charset="utf-8" />
@@ -21,10 +21,11 @@
     <script>
         $(window).on('load', function () {
             //$("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false });
-            $("body").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', cursoropacitymin: 1, zindex: '99999999' });
-            $(".nicescroll-box").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', zindex: '99999999' });
+            $("body").niceScroll({ cursorcolor: "#72767d", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', cursoropacitymin: 1, zindex: '99999999' });
+            $(".nicescroll-box").niceScroll({ cursorcolor: "#72767d", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', zindex: '99999999' });
             $('.preload').addClass('completo');
             $('nav').addClass('completo');
+            $('section').addClass('completo');
         });
 
         function loader(lds, btn) {
@@ -38,7 +39,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body style="background:#2d2e2f">
     <form id="form1" autocomplete="off" runat="server">
         <section class="galeria-section">
             <div class="left left-galeria">

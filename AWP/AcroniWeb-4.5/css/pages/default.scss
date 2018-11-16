@@ -35,7 +35,7 @@
     z-index: 7;
 }
 
-// Primeira seção (é dividida em duas controls direita (principal) e esquerda (login) 
+// Primeira seção (é dividida em duas controls direita (principal) e esquerda (login)
 
 
 section {
@@ -49,24 +49,20 @@ section {
         margin: 0;
     }
 
-    
-}
-
-
-section{ 
     h3 {
         color: $texto;
-        font-size:0.9em;
-        width:290px;
+        font-size: 0.9em;
+        width: 290px;
         margin: 0;
-        font-weight:$normal;
+        font-weight: $normal;
 
         a {
             color: $texto;
-            font-weight:$bold;
+            font-weight: $bold;
         }
     }
 }
+
 
 #principal, #login{
     height: 100vh;
@@ -569,8 +565,17 @@ section#team {
     }
 }
 
+#last-section {
+    position: absolute;
+    background: #363942;
+    margin-top: -100vh;
+    z-index: -6;
+}
+
 
 .m-div.default {
-    background-color: #363942;
+    /*&.completo{
+        background-color: #363942;
+    }*/
 }
 

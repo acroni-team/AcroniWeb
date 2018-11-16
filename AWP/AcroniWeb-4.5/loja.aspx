@@ -33,7 +33,12 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="m-div">
+    <div class="m-div loja">
+        <!--        Preloader       -->
+         <div class="preload">
+            <p class="logo animado">Acroni</p>
+        </div>
+
     <div class="head-container">
         <div class="header">
             <div>
@@ -157,6 +162,7 @@
             </asp:DataList>
         </ul>
     </div>
+    </div>
     <!--<a href="Produto<%# Eval("id") %>.aspx"><div class="info">-->
     <!--<a href="Produto<%# Eval("id") %>.aspx">Produto <%# Eval("id") %></a>-->
     <script>
@@ -174,6 +180,6 @@
         });
 
     </script>
-    </div>
+
 </asp:Content>
 

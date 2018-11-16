@@ -32,7 +32,7 @@ nav {
     background-color: transparent;
     z-index: 999;
     display: flex;
-    transition: 0.3s;
+    transition: 0.25s 0.6s ease;
     opacity: 0;
 
     &.completo {

@@ -4,13 +4,15 @@
 @import '../imports/fontes';
 
 //
+
+
 .head-container {
     width: 100%;
     position: relative;
 
     h1, p {
         opacity: 0;
-        animation: fadeIn 250ms 250ms forwards ease-in;
+        
     }
 
     .header {
@@ -23,8 +25,6 @@
         color: $cor-fundo;
         display: flex;
         transform: translateY(-100%);
-        animation: translate-down 250ms forwards ease-in-out;
-
 
         div {
             margin-top: -17.125%;
@@ -79,6 +79,8 @@
             margin-top: 4px;
             color: #5f5f5f;
         }
+
+
     }
 }
 
@@ -137,7 +139,7 @@
         box-shadow: 0px 2px 6px $cinza-claro;
         border-radius: 10px;
         opacity: 0;
-        animation: fadeIn 250ms 250ms forwards ease-in-out;
+
         //COLECAO
         &.teclado {
             margin: 0;

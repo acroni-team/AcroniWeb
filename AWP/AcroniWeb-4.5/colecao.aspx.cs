@@ -63,18 +63,26 @@ namespace AcroniWeb_4._5
                 {
                     if (!Page.IsPostBack)
                     {
+                        string id = Request.QueryString["id"];
                         if (conexao_SQL.State != ConnectionState.Open)
                             conexao_SQL.Open();
-                        String select = "SELECT * FROM tblTecladoCustomizado";
+                        String select = "SELECT * FROM tblTecladoCustomizado t INNER JOIN tblCliente c ON c.id_cliente = t.id_cliente AND usuario='" + Session["usuario"] + "' AND id_colecao = @id_colecao";
+
                         using (SqlDataAdapter da = new SqlDataAdapter(select, conexao_SQL))
                         {
+                            da.SelectCommand.Parameters.Add(new SqlParameter
+                            {
+                                ParameterName = "@id_colecao",
+                                Value = "%" + id + "%",
+                                SqlDbType = SqlDbType.NVarChar,
+                                Size = 2000  // Assuming a 2000 char size of the field annotation (-1 for MAX)
+                            });
+
                             ds = new DataSet();
                             da.Fill(ds);
                             DataList1.DataSource = ds.Tables[0];
                             DataList1.DataBind();
                         }
-
-
                     }
                 }
                 catch (Exception ex)

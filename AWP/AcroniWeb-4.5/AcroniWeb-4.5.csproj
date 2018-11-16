@@ -112,7 +112,6 @@
     <Content Include="css\controls\checkbox.scss" />
     <None Include="Connected Services\WSCorreiosFrete\CalcPrecoPrazo.wsdl" />
     <None Include="css\pages\cadastro.scss" />
-    <Content Include="css\controls\fontawesome.css" />
     <Content Include="css\imports\fontes.scss" />
     <Content Include="css\main.scss" />
     <Content Include="css\controls\button.scss" />

@@ -26,7 +26,7 @@ namespace AcroniWeb_4._5
                     {
                         if (conexao_SQL.State != ConnectionState.Open)
                             conexao_SQL.Open();
-                        String select = "SELECT * FROM tblColecao";
+                        String select = "SELECT * FROM tblColecao c  INNER JOIN tblCliente cl ON cl.id_cliente = c.id_cliente AND usuario ='"+ Session["usuario"] + "'";
                         using (SqlDataAdapter da = new SqlDataAdapter(select, conexao_SQL))
                         {
                             ds = new DataSet();
