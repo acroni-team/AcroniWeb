@@ -9,6 +9,8 @@ using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using System.Net.Mail;
 using System.Threading;
+using System.Net;
+using System.IO;
 
 namespace AcroniWeb
 {
@@ -236,5 +238,40 @@ namespace AcroniWeb
             }
             SCPanel2.Update();
         }
+
+        //download
+        Thread installer;
+        protected void BtnDownload_Click(object sender, EventArgs e)
+        {
+            
+            installer = new Thread(Install);
+            installer.Start();
+            SP = Environment.SpecialFolder.Desktop;
+        }
+
+        private Environment.SpecialFolder SP;
+        private void Install()
+        {
+            try
+            {
+                WebClient wc = new WebClient();
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Ssl3;
+                String url = "https://github.com/acroni-team/AcroniDesktop/blob/testes-instalador/AcroniInstaller/Debug/AcroniInstaller.msi";
+                wc.DownloadFile(url, $@"{Environment.GetFolderPath(SP)}/AcroniDesktop{Path.GetExtension(url)}");
+                url = "https://github.com/acroni-team/AcroniDesktop/blob/testes-instalador/AcroniInstaller/Debug/setup.exe";
+                wc.DownloadFile(url, $@"{Environment.GetFolderPath(SP)}/AcroniDesktop{Path.GetExtension(url)}");
+                //MessageBox.Show("INSTALAÇÃO CONCLUÍDA :D");
+                installer.Interrupt();
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show(ex.Message);
+            }
+        }
+
+
     }
+
+
 }
+

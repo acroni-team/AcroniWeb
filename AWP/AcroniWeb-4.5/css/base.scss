@@ -37,6 +37,7 @@ nav {
 
     &.completo {
         opacity: 1;
+        transition: 0.25s ease;
     }
 
     &.saindo-da-pagina {
