@@ -82,11 +82,11 @@
                         </div>
                         <asp:Button ID="btnAlteraPlano" runat="server" Text="Alterar Plano" class="button-alt dark minha-conta" OnClick="btnSalva_Click" />
                     </div>
-
+                    <div class="lds-ellipsis lds-minha-conta"><div></div><div></div><div></div><div></div></div>
                 </div>
             </div>
-            <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button dark minha-conta disabled" OnClientClick="loader('.lds-eas-1','.button.minha-conta');" OnClick="btnSalva_Click" disabled />
-            <div class="lds-ellipsis lds-eas-1"><div></div><div></div><div></div><div></div></div>
+            <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button dark minha-conta disabled" OnClientClick="loader('.lds-minha-conta','.button.minha-conta');" OnClick="btnSalva_Click" disabled />
+            
         </div>
         </asp:Panel>
     </div>

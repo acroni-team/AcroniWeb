@@ -63,6 +63,7 @@
     border-radius: 15px;
     width: 400px;
     margin: 0;
+    position:relative;
 
     .foto {
         height: 50%;
@@ -197,5 +198,19 @@
     }
 }
 
+//LOADER
+
+.lds-minha-conta {
+    display: inline-block;
+    position: absolute;
+    width: 64px;
+    right: 50px;
+    height: 64px;
+    pointer-events: none;
+    opacity: 0;
+    bottom: -98px;
+    top: auto;
+    left: auto;
+}
 
 
