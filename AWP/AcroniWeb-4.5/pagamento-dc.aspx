@@ -8,6 +8,7 @@
             $("body").niceScroll().remove();
         }
     </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="modal-wrap" id="modal" runat="server">

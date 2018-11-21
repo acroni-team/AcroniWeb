@@ -1,9 +1,6 @@
 ﻿// SCSS
-@import '../imports/todos';
-@import '../controls/button';
-@import '../controls/textbox';
-@import '../controls/modal';
-@import '../controls/checkbox';
+@import '../imports/all-imports';
+
 
 // media 
 
@@ -35,9 +32,15 @@
     z-index: 7;
 }
 
+
+//Checkbox
+.checkbox {
+    position: absolute;
+    top: 257px;
+    right: 10px;
+}
+
 // Primeira seção (é dividida em duas controls direita (principal) e esquerda (login)
-
-
 section {
     @include wh(100vh);
 
@@ -149,17 +152,25 @@ section {
     .link {
         color: $cor-primaria;
         font-weight: $normal;
-        cursor:pointer;
+        cursor: pointer;
+
+        &.link-sqn {
+            top: 255px;
+            right: 30px;
+            cursor: initial;
+            position:absolute;
+            font-size:13.5px;
+        }
     }
 
-    #abre-senha{
-        font-size:13.5px;
-        position:absolute;
-        top:255px;
+    #abre-senha {
+        font-size: 13.5px;
+        position: absolute;
+        top: 255px;
     }
 
-    .centraliza{
-        position:relative;
+    .centraliza {
+        position: relative;
     }
 }
 
@@ -572,10 +583,4 @@ section#team {
     z-index: -6;
 }
 
-
-.m-div.default {
-    /*&.completo{
-        background-color: #363942;
-    }*/
-}
 

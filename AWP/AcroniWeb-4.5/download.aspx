@@ -9,7 +9,7 @@
 </asp:Content>
 <asp:Content ID="menu" ContentPlaceHolderID="menu" runat="server">
     <div id="logotext">
-       <a href="default.aspx" id="logoacr">Acroni</a>
+       <a href="galeria.aspx" id="logoacr">Acroni</a>
     </div>
 
 </asp:Content>

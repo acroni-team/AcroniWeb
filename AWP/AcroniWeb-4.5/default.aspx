@@ -93,7 +93,9 @@
         <div id="login" class="section section-animate section--fadeIn-right">
             <form id="loginform" method="post">               
 				<div class="centraliza div--fadeIn">
-                    <p id="abre-senha" class="link">Por acaso você esqueceu a senha?</p>
+                    <p id="abre-senha" class="link">Você esqueceu a sua senha?</p>
+                    <p class="link link-sqn">Manter logado</p>
+                    <asp:CheckBox ID="ckbLogin" class="checkbox" runat="server" />
                     <asp:UpdatePanel ID="SCPanel"  runat="server" UpdateMode="Conditional" ChildrenAsTriggers="false">
                     <ContentTemplate>
                     <asp:Panel ID="LoginPanel" DefaultButton="btnEntra" runat="server">
@@ -104,7 +106,6 @@
                     <div class="login" style="width: 99%;">
 					   <asp:Textbox id="txtUsu" class="textbox focus" type="text" placeholder="Email ou usuário" spellcheck="false" runat="server"></asp:Textbox>
 					   <asp:Textbox id="txtPass" class="textbox focus" type="password" placeholder="Senha" spellcheck="false" runat="server"></asp:Textbox>
-                       <asp:CheckBox ID="ckbLogin" class="checkbox" runat="server" />
                     </div>
                     <div class="centralizabotao" style="width: 100%;">
 					   <asp:Button ID="btnEntra" class="button dark button-login" type="button" Text="Entrando!" OnClientClick="loader('.lds-login','.button-login');" runat="server" OnClick="btnEntra_Click" /> 
@@ -210,7 +211,7 @@
                 <li><p class="blue-left">Customização</p><p class="blue">completa</p>;</li>
                 <li><p style="line-height: 5px;">Descontos exclusivos <br/> nos teclados da loja;</p></li>
             </ul>
-            <asp:Button ID="btnPlano" runat="server" Text="Quero agora!" class="button dark button-plan" />
+            <asp:Button ID="btnPlano" runat="server" Text="Quero agora!" class="button dark button-gradient" disabled/>
         </div>
         
     </section>  

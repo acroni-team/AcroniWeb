@@ -1,11 +1,18 @@
 ﻿// imports
-@import 'base';
+@import 'imports/all-imports';
+@import 'imports/font-face';
 
 // controls
 @import 'controls/preload';
 @import 'controls/keyframes';
 @import 'controls/searchbox';
+@import 'controls/button';
+@import 'controls/textbox';
+@import 'controls/modal';
+@import 'controls/transicao';
 
+// essentials
+@import 'base';
 
 // pages
 @import 'pages/default';
@@ -15,7 +22,3 @@
 @import 'pages/minha-conta';
 @import 'pages/pagamento';
 
-
-
-//Extras
-@import 'controls/transicao';

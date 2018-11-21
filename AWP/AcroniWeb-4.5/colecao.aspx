@@ -15,6 +15,7 @@
                 </ItemTemplate>
             </asp:DataList>
         </ul>
+        <asp:Label class="descricao nome" ID="lblhue" runat="server"></asp:Label>
     </div>
     <script>
         document.getElementById("galeria").classList.add("active");

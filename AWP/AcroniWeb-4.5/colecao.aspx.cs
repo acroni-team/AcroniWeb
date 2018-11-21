@@ -63,25 +63,46 @@ namespace AcroniWeb_4._5
                 {
                     if (!Page.IsPostBack)
                     {
-                        string id = Request.QueryString["id"];
                         if (conexao_SQL.State != ConnectionState.Open)
                             conexao_SQL.Open();
-                        String select = "SELECT * FROM tblTecladoCustomizado t INNER JOIN tblCliente c ON c.id_cliente = t.id_cliente AND usuario='" + Session["usuario"] + "' AND id_colecao = @id_colecao";
+                        //string id = Request.QueryString["id"];
+                        //String select = "SELECT * FROM tblTecladoCustomizado t INNER JOIN tblCliente c ON c.id_cliente = t.id_cliente AND usuario='" + Session["usuario"] + "' AND id_colecao = @id_colecao";
+                        //String select2 = "SELECT * FROM tblTecladoCustomizado t INNER JOIN tblCliente c ON c.id_cliente = t.id_cliente AND usuario = '" + Session["usuario"] + "'";
+                        //using (SqlCommand comando_SQL = new SqlCommand(select, conexao_SQL))
+                        //{
+                        //    comando_SQL.Parameters.Add("@id_colecao", SqlDbType.Int).Value = Int32.Parse(id);
+                        //    using (SqlDataReader tabela = comando_SQL.ExecuteReader())
+                        //    {
+                        //        tabela.Read();
+                        //        if (tabela.HasRows)
+                        //        {
+                        //            using (SqlDataAdapter da = new SqlDataAdapter(select2, conexao_SQL))
+                        //            {
+                        //                ds = new DataSet();
+                        //                da.Fill(ds);
+                        //                DataList1.DataSource = ds.Tables[0];
+                        //                DataList1.DataBind();
+                        //            }
+
+                        //        }
+
+                        //    }
+                        //}
+                        string CurrentUrl = HttpContext.Current.Request.Url.AbsoluteUri;
+                        CurrentUrl = CurrentUrl.Substring(CurrentUrl.LastIndexOf("=") + 1);
+                        //string id = Request.QueryString["id"];
+                        String select = "SELECT * FROM tblTecladoCustomizado t INNER JOIN tblCliente c ON c.id_cliente = t.id_cliente AND usuario='" + Session["usuario"] + "' AND id_colecao =" + CurrentUrl;
 
                         using (SqlDataAdapter da = new SqlDataAdapter(select, conexao_SQL))
                         {
-                            da.SelectCommand.Parameters.Add(new SqlParameter
-                            {
-                                ParameterName = "@id_colecao",
-                                Value = "%" + id + "%",
-                                SqlDbType = SqlDbType.NVarChar,
-                                Size = 2000  // Assuming a 2000 char size of the field annotation (-1 for MAX)
-                            });
+                            //da.SelectCommand.Parameters.AddWithValue("@id_colecao", "%" + id + "%");
 
                             ds = new DataSet();
                             da.Fill(ds);
                             DataList1.DataSource = ds.Tables[0];
                             DataList1.DataBind();
+                            
+                           
                         }
                     }
                 }
@@ -90,6 +111,14 @@ namespace AcroniWeb_4._5
                     conexao_SQL.Close();
                 }
 
+
+                //string s = Page.Request.Url.AbsolutePath;
+                //s = s.Substring(s.LastIndexOf("/") + 1);
+                //string CurrentUrl = HttpContext.Current.Request.Url.AbsoluteUri;
+                //CurrentUrl = CurrentUrl.Substring(CurrentUrl.LastIndexOf("=") + 1);
+                ////s = Form.Attributes["action"].ToString();
+                //lblhue.Text = CurrentUrl;
+               
             }
         }
     }

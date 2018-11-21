@@ -7,7 +7,6 @@
     <title>Acroni </title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -22,10 +21,11 @@
         $(window).on('load', function () {
             //$("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false });
             $("body").niceScroll({ cursorcolor: "#72767d", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', cursoropacitymin: 1, zindex: '99999999' });
-            $(".nicescroll-box").niceScroll({ cursorcolor: "#72767d", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', zindex: '99999999' });
+            //$(".nicescroll-box").niceScroll({ cursorcolor: "#72767d", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', zindex: '99999999' });
             $('.preload').addClass('completo');
             $('nav').addClass('completo');
             $('section').addClass('completo');
+            $('.right').addClass('completo');
         });
 
         function loader(lds, btn) {
@@ -66,8 +66,8 @@
                         <a id="galeria" href="galeria.aspx">Minha galeria</a>
                         <a id="minha-conta" href="minha-conta.aspx">Editar minha conta</a>
                         <a id="pagamento" href="pagamento.aspx">Pagamento</a>
-                        <a id="fale-conosco" href="construct.aspx">Fale conosco</a>
-                        <a id="quem-somos" href="construct.aspx">Quem somos</a>
+                       <%-- <a id="fale-conosco" href="construct.aspx">Fale conosco</a>
+                        <a id="quem-somos" href="construct.aspx">Quem somos</a>--%>
                         <a id="download" href="download.aspx">Download</a>
                         <a href="loja.aspx">Ir a Loja</a>
                         <asp:LinkButton ID="deslogar" runat="server" OnClick="deslogar_Click">Sair</asp:LinkButton>

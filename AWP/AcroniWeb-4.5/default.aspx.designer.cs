@@ -202,6 +202,15 @@ namespace AcroniWeb {
         protected global::System.Web.UI.WebControls.Label lblErro3;
         
         /// <summary>
+        /// ckbLogin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox ckbLogin;
+        
+        /// <summary>
         /// SCPanel control.
         /// </summary>
         /// <remarks>
@@ -245,15 +254,6 @@ namespace AcroniWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPass;
-        
-        /// <summary>
-        /// ckbLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox ckbLogin;
         
         /// <summary>
         /// btnEntra control.

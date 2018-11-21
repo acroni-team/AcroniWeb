@@ -1,7 +1,6 @@
 ﻿// SCSS
 
-@import '../imports/todos';
-@import '../controls/fontawesome.css';
+@import '../imports/all-imports';
 
 //alinha
 
@@ -206,15 +205,15 @@
         }
 
         &:before {
-            content: '\f0dd';
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
+            content: 'arrow_drop_down';
+            font-family: 'Material Icons';
+            font-weight: normal;
             font-size: 27px;
             position: absolute;
-            top: 0;
+            top: 5px;
             right: 0;
             width: 40px;
-            height: 100%;
+            height: 60%;
             background: #36393f;
             border-radius: 5px;
             pointer-events: none;

@@ -1,6 +1,5 @@
 
-@import '../imports/cor';
-@import '../imports/fontes';
+@import '../imports/all-imports';
 
 /* Buttons */
 .button {
@@ -21,13 +20,15 @@
     font-size: 17px;
     outline: 0;
 
+    //Botão com fundo azul e letra branca
     &.dark {
         border: 2px solid $cor-primaria;
         color: $texto;
         background-color: $cor-primaria;
     }
 
-    &.button-plan {
+    //Botão com gradiente
+    &.button-gradient {
         background: linear-gradient(45deg, #0093ff, #7ac7ff);
         position: absolute;
         transform: translateX(-50%);
@@ -55,12 +56,11 @@
     }
 }
 
+//Botão com hover
 .button-hover {
     &:hover {
         color: $texto;
         background-color: $cor-primaria;
-        transform: translateY(0px);
-        cursor: pointer;
 
         h3 {
             color: $texto;
@@ -71,8 +71,6 @@
         &:hover {
             color: $cor-primaria;
             background-color: transparent;
-            transform: translateY(0px);
-            cursor: pointer;
 
             h3 {
                 color: $texto;
@@ -86,7 +84,29 @@
     }
 }
 
+//Botao Alternativo
+.button-alt {
+    font-weight: $semi-bold;
+    font-family: 'open';
+    font-size: 14px;
+    padding: 10px 45px 10px 45px;
+    border: none;
+    background-color: $texto;
+    color: $cinza;
+    outline: 0;
 
+    &.dark {
+        background-color: #30333a;
+        color: $texto;
+    }
+
+    &.minha-conta {
+        margin-top: 20px;
+    }
+}
+
+
+//botão type2 - do lado esquerdo da textbox;
 .button-type2 {
     border: none;
     float: left;
@@ -100,7 +120,6 @@
     margin: 0;
     border-radius: 0;
     font-weight: $semi-bold;
-
 }
 
 
@@ -153,25 +172,3 @@
 }
 
 
-//Botao Alternativo
-
-
-.button-alt {
-    font-weight: $semi-bold;
-    font-family: 'open';
-    font-size: 14px;
-    padding: 10px 45px 10px 45px;
-    border: none;
-    background-color: $texto;
-    color: $cinza;
-    outline: 0;
-
-    &.dark {
-        background-color: #30333a;
-        color: $texto;
-    }
-
-    &.minha-conta {
-        margin-top: 20px;
-    }
-}

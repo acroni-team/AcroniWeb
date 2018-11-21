@@ -109,10 +109,10 @@
     </None>
     <Content Include="construct.aspx" />
     <Content Include="AcroniWeb.cd" />
-    <Content Include="css\controls\checkbox.scss" />
     <None Include="Connected Services\WSCorreiosFrete\CalcPrecoPrazo.wsdl" />
+    <Content Include="css\imports\font-vars.scss" />
     <None Include="css\pages\cadastro.scss" />
-    <Content Include="css\imports\fontes.scss" />
+    <Content Include="css\imports\font-face.scss" />
     <Content Include="css\main.scss" />
     <Content Include="css\controls\button.scss" />
     <None Include="css\pages\default.scss" />
@@ -127,7 +127,6 @@
     <None Include="css\pages\loja.scss" />
     <None Include="css\controls\preload.scss" />
     <None Include="css\base.scss" />
-    <Content Include="css\cad-stuff.css" />
     <Content Include="default.aspx" />
     <Content Include="download.aspx" />
     <Content Include="email.html" />
@@ -342,8 +341,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="layout.Master" />
-    <Content Include="css\imports\todos.scss" />
-    <Content Include="css\imports\utilidades.scss" />
+    <Content Include="css\imports\all-imports.scss" />
+    <Content Include="css\imports\mixin.scss" />
     <Content Include="fontes\open\OpenSans-Bold.ttf" />
     <Content Include="fontes\open\OpenSans-BoldItalic.ttf" />
     <Content Include="fontes\open\OpenSans-ExtraBold.ttf" />

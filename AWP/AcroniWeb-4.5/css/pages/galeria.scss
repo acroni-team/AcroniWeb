@@ -1,8 +1,22 @@
 // SCSS
 
-@import '../imports/todos';
+@import '../imports/all-imports';
 
 //CABECALHO
+
+.right {
+    opacity: 0;
+    transition: opacity 250ms ease;
+
+    &.completo {
+        opacity: 1;
+
+        .grid figure {
+            transition: opacity 250ms ease;
+            opacity: 1;
+        }
+    }
+}
 
 
 .cabecalho {
@@ -211,7 +225,7 @@
     display:flex;
     flex-direction:column;
     text-align:center;
-    padding-top:70px;
+    padding-top:50px;
 
     a {
         margin-bottom:15px;

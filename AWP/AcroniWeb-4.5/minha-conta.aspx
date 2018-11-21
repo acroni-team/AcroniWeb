@@ -86,6 +86,7 @@
                 </div>
             </div>
             <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button dark minha-conta disabled" OnClientClick="loader('.lds-eas-1','.button.minha-conta');" OnClick="btnSalva_Click" disabled />
+            <div class="lds-ellipsis lds-eas-1"><div></div><div></div><div></div><div></div></div>
         </div>
         </asp:Panel>
     </div>
