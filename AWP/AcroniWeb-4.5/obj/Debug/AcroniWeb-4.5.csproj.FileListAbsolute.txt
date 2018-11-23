@@ -737,23 +737,3 @@ F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.
 F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
 F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
 F:\Área de Trabalho\AcroniWeb-master\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\x64\libsass.dll
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\BundleTransformer.Core.dll
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\BundleTransformer.SassAndScss.dll
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\LibSassHost.dll
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\System.Web.Optimization.dll
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\WebGrease.dll
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\LibSassHost.xml
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\System.Web.Optimization.xml
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\bin\ru-ru\BundleTransformer.Core.resources.dll
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojResolveAssemblyReference.cache
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
-C:\Users\zeusm\Documents\GitHub\AcroniWeb\AWP\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
