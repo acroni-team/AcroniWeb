@@ -310,5 +310,19 @@ namespace AcroniWeb_4._5
                 Response.Redirect("minha-conta.aspx");
             }
         }
+
+        //Alterar plano lol
+        protected void btnAltera_Click(object sender, EventArgs e)
+        {
+            button.Attributes.Add("style", "display:none");
+            btnReload.Attributes.Add("style", "display:block;float:initial;margin: auto;");
+            sql.update("tblCliente", "usuario = '" + Session["usuario"] + "'", "tipoConta = 'p'");
+            ut.showErrorMessage("Não era pra ser assim!", "Agora você é um usuário premium, usou de meios ilícitos mais é", titleErro, msgErro, modal, modalback, overflow);
+        }
+        protected void btnReload_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(Request.RawUrl);
+        }
+
     }
 }

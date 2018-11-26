@@ -12,7 +12,8 @@
                 <asp:Label ID="msgErro" class="p-modal" runat="server" Text="Label"></asp:Label>
                 <asp:TextBox ID="txtValidaEmail" runat="server" class="textbox focus dark"></asp:TextBox>
                 <asp:Button ID="btnValidaEmail" runat="server" Text="Entendi" class="button dark modal-button-cad modal-alt-button btn-valida" OnClick="btnValidaEmail_Click" />
-                <input id="button" runat="server" type="button" class="button dark modal-button-cad modal-alt-button btn-fecha" value="Entendi" />
+                <input id="button" runat="server" type="button" class="button dark modal-button-cad modal-alt-button btn-fecha" style="float:initial" value="Entendi" />
+                <asp:Button ID="btnReload" runat="server" Text="Entendi" class="button dark modal-button-cad modal-alt-button btn-fecha" style="display:none;" OnClick="btnReload_Click" />
             </div>
         </div>
         <div class="modal-background fadeIn" runat="server" id="modalback"></div>
@@ -80,7 +81,7 @@
                                 <li>Customização basica</li>
                             </ul>
                         </div>
-                        <asp:Button ID="btnAlteraPlano" runat="server" Text="Alterar Plano" class="button-alt dark minha-conta" OnClick="btnSalva_Click" />
+                        <asp:Button ID="btnAlteraPlano" runat="server" Text="Alterar Plano" class="button-alt dark minha-conta" OnClick="btnAltera_Click" />
                     </div>
                     <div class="lds-ellipsis lds-minha-conta"><div></div><div></div><div></div><div></div></div>
                 </div>

@@ -16,7 +16,8 @@
         <li><a id="sobre" href="#video">Sobre</a></li>
         <li><a id="bem-vindo-vai" href="loja.aspx">Loja</a></li>
         <li><a id="dowload" href="default.aspx#download" runat="server">Download</a></li>
-        <li><a id="fale-conosco" href="construct.aspx">Fale Conosco</a></li>
+        <li><a id="equipe" href="default.aspx#team" runat="server">Equipe</a></li>
+        <%--<li><a id="fale-conosco" href="construct.aspx">Fale Conosco</a></li>--%>
 <%--                <li><a id="cadastro" href="cadastro.aspx">Cadastrar</a></li>--%>
    </ul>
 </asp:Content>
@@ -64,8 +65,8 @@
                 <div class="modal-body modal-body-step3" id="step3" runat="server">
                     <h1>Ótimo! Agora é só mudar sua senha.</h1>
                     <p>Esperamos que você consiga lembrar dessa.</p>
-                    <asp:Textbox id="txtSenha" class="textbox" type="text"  placeholder="Nova Senha" spellcheck="false" autocomplete="off" runat="server"></asp:Textbox>
-                    <asp:Textbox id="txtCSenha" class="textbox" type="text"  placeholder="Confirmar Nova Senha" spellcheck="false" runat="server"></asp:Textbox>
+                    <asp:Textbox id="txtSenha" class="textbox" type="password"  placeholder="Nova Senha" spellcheck="false" autocomplete="off" runat="server"></asp:Textbox>
+                    <asp:Textbox id="txtCSenha" class="textbox" type="password"  placeholder="Confirmar Nova Senha" spellcheck="false" runat="server"></asp:Textbox>
                     <asp:Button ID="btnTrocaSenha" runat="server" Text="Enviar" class="button dark button-eas-final" OnClick="btnTrocaSenha_Click"/>
                     <asp:Label runat="server" Text="" id="lblErro3"></asp:Label>
                  </div>
