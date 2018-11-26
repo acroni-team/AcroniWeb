@@ -11,7 +11,10 @@ namespace AcroniWeb_4._5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+        }
+        protected void BtnDownload_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("https://github.com/acroni-team/AcroniDesktop/raw/testes-instalador/AcroniInstaller/Debug/AcroniInstaller.msi");
         }
     }
 }

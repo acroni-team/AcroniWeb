@@ -21,7 +21,7 @@
                 <h1>Baixe agora o software.</h1>
                 <p>Através do nosso programa pra desktop, você consegue fazer as customizações que deseja no seu teclado. O que está esperando?
                 </p>
-                <a href="loja.aspx"><input type="button" value="Download" class="button dark button-eas" /></a>
+                <asp:Button ID="BtnDownload" runat="server" Text="Download" class="button dark button-eas" OnClick="BtnDownload_Click"/>
             </div>
          </div>
     </section>
