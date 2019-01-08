@@ -82,6 +82,7 @@
                             </ul>
                         </div>
                         <asp:Button ID="btnAlteraPlano" runat="server" Text="Alterar Plano" class="button-alt dark minha-conta" OnClick="btnAltera_Click" />
+                        <asp:Button ID="btnExcluiConta" runat="server" Text="Apagar conta" class="button-alt dark minha-conta" OnClick="btnExcluiConta_Click" />
                     </div>
                     <div class="lds-ellipsis lds-minha-conta"><div></div><div></div><div></div><div></div></div>
                 </div>

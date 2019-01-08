@@ -319,9 +319,18 @@ namespace AcroniWeb_4._5
             sql.update("tblCliente", "usuario = '" + Session["usuario"] + "'", "tipoConta = 'p'");
             ut.showErrorMessage("Não era pra ser assim!", "Agora você é um usuário premium, usou de meios ilícitos mais é", titleErro, msgErro, modal, modalback, overflow);
         }
+
         protected void btnReload_Click(object sender, EventArgs e)
         {
             Response.Redirect(Request.RawUrl);
+        }
+
+        protected void btnExcluiConta_Click(object sender, EventArgs e)
+        {
+            List<string> id = sql.selectCampos("id_cliente", "tblCliente", "usuario = '" + Session["usuario"] + "'");
+            sql.delete("tblColecao", "id_cliente = " + id[0]);
+            sql.delete("tblCliente", "id_cliente = " + id[0]);
+            Response.Redirect("default.aspx");
         }
 
     }

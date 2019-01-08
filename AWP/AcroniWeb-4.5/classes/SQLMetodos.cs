@@ -90,14 +90,25 @@ public class SQLMetodos
                     leitor.Read();
                     List<string> lista = new List<string>();
                     for (int i = 0; i < leitor.FieldCount; i++)
-                    {
                         lista.Add(leitor[i].ToString());
-                    }
 
                     return lista;
                 }
             }
         }
-
     }
+
+    public void delete(string tabela, string condicao)
+    {
+        string delete = "DELETE FROM " + tabela + " WHERE " + condicao;
+        using (SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao))
+        {
+            if (conexao_SQL.State == ConnectionState.Closed)
+                conexao_SQL.Open();
+            using (SqlCommand comando_sql = new SqlCommand(delete, conexao_SQL))
+                comando_sql.ExecuteNonQuery();
+        }
+    }
+
+    
 }
