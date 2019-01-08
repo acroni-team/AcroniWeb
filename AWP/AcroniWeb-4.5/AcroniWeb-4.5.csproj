@@ -139,6 +139,7 @@
     <Content Include="img\curvav3.jpg" />
     <Content Include="img\curvinha.svg" />
     <Content Include="img\error-icon.png" />
+    <Content Include="img\favicons\favicon.ico" />
     <Content Include="img\pagamento\card.png" />
     <Content Include="img\pagamento\cc.png" />
     <Content Include="img\pagamento\cd.png" />

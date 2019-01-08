@@ -8,6 +8,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />   
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
