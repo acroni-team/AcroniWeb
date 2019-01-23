@@ -1,0 +1,169 @@
+﻿//------------------------------------------------
+// Configurações da barra de navegação (AKA Menu) 
+//------------------------------------------------
+nav {
+    position: fixed;
+    @include wh(80px);
+    background-color: transparent;
+    z-index: 999;
+    display: flex;
+    transition: 0.25s 0.6s ease;
+    opacity: 0;
+
+    &.completo {
+        opacity: 1;
+        transition: 0.25s ease;
+    }
+
+    &.saindo-da-pagina {
+        opacity: 0;
+    }
+
+    &.hidden {
+        transform: translateY(-100px);
+    }
+
+    &.visible {
+        transform: translateY(0px);
+        background-color: #f2f2f2;
+        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.25);
+
+        #logotext a {
+            color: #0093ff;
+        }
+
+        #menu-items {
+            .li-loja {
+                color: #92989b;
+            }
+        }
+
+        #lblUser {
+            color: #92989b;
+        }
+    }
+
+    #menu-items {
+        list-style: none;
+        font-family: 'open',sans-serif;
+        font-weight: $semi-bold;
+        text-transform: uppercase;
+        float: right;
+        margin-right: 50px;
+
+        li {
+            text-align: center;
+            display: inline-block;
+
+            a {
+                font-size: .875rem;
+                padding: 0 10px;
+                line-height: 80px;
+                box-sizing: border-box;
+                display: inline-block;
+                color: #92989b;
+
+                &:active {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .li-loja {
+            color: $white;
+        }
+    }
+}
+
+#logotext {
+    display: flex;
+    background: transparent;
+    height: 100%;
+    width: 200px;
+    margin: 0px;
+    z-index: 2;
+}
+
+#logotext a {
+    font-family: 'qanelas';
+    font-weight: $extra-bold;
+    font-size: 1.4em;
+    color: #f2f2f2;
+    align-self: center;
+    z-index: 2;
+    cursor: pointer;
+    transition: opacity 300ms ease;
+}
+
+#home.active a {
+    color: #f2f2f2
+}
+
+
+#menu-icon {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    height: 100%;
+    width: 100px;
+    margin: 0px;
+    z-index: 20;
+    cursor: pointer;
+    transition: transform 300ms ease, background-color 300ms ease;
+}
+
+
+
+//---------------
+/* Código antigo
+//---------------
+
+
+// Hamburger Icon 
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background: #959595;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    transition: transform 300ms ease, background-color 300ms ease;
+}
+
+.hamburger:before, .hamburger:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #959595;
+    transition: transform 300ms ease, background-color 300ms ease;
+}
+
+.hamburger:before {
+    top: -8px;
+}
+
+.hamburger:after {
+    top: 8px;
+}
+
+#menu-icon.active {
+    z-index: 20;
+}
+
+#menu-icon.active .hamburger {
+    background-color: rgba(0,0,0,0);
+}
+
+#menu-icon.active .hamburger:before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+#menu-icon.active .hamburger:after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+*/ 

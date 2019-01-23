@@ -1,0 +1,242 @@
+﻿//------------
+// Div alinha
+//------------
+.right-pagamento{
+    display:flex;
+    align-items:center;
+    
+}
+
+//---------------------
+// Cabecalho pagamento
+//---------------------
+.pagamento-cabecalho {
+    text-align: center;
+    font-weight: $semi-bold;
+    margin-bottom: 50px;
+
+    h1 {
+        width: 100%;
+        font-size: 25px;
+        font-weight: $semi-bold;
+    }
+
+    p {
+        font-size: 20px;
+        color: $light-bgray;
+        font-weight: $semi-bold;
+    }
+}
+
+.cartaoTitle {
+    width: 100%;
+    font-size: 20px;
+    font-weight: $semi-bold;
+    color: #fff;
+}
+
+//------------
+// Containers
+//------------
+.formas-pagamento {
+    text-align: center;
+    padding: 10px 30px 15px 30px;
+
+    .container-logado {
+        font-weight: $semi-bold;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        border-width: 15px 2px 2px 2px;
+        border-color: $light-bgray;
+        border-style: solid;
+        max-width: 800px;
+        height: 100px;
+        display: flex;
+
+        img {
+            float: left;
+            width: 300px;
+            margin: 10px 10px 10px 15px;
+        }
+
+        .debitoConta {
+            width: 230px;
+        }
+
+        p {
+            font-size: 20px;
+            color: $white;
+            float: left;
+            align-self: center;
+            margin-right: 40px;
+        }
+    }
+}
+
+//-------------------
+// Cartão de credito
+//-------------------
+.right-pagamento-cc {
+    background-color: $medium-bgray2;
+    min-height: 100vh;
+    height: auto;
+}
+
+.align {
+    background-color: #292b31;
+
+    &.align-cc {
+        height: 350px;
+        display: flex;
+        align-items: center;
+
+        .card {
+            width: 450px;
+            height: 350px;
+            background: url("../img/pagamento/card.png") no-repeat;
+            background-size: 100%;
+            position: relative;
+
+            p {
+                position: absolute;
+                font-family: 'kredit',sans-serif;
+                font-weight: $bold;
+                color: $white;
+                text-shadow: -1px 1px 2px black;
+                letter-spacing: 3px;
+            }
+
+            p:nth-child(1) {
+                margin-top: 155px;
+                margin-left: 80px;
+                font-size: 25px;
+            }
+
+            p:nth-child(2) {
+                font-size: 17px;
+                float: left;
+                margin-top: 230px;
+                margin-left: 80px;
+                position: relative;
+            }
+
+            p:nth-child(3) {
+                margin-left: 10px;
+                font-size: 17px;
+                float: left;
+                margin-top: 230px;
+                position: relative;
+            }
+
+            p:nth-child(4) {
+                margin-top: 230px;
+                margin-left: 310px;
+                font-size: 17px;
+                float: left;
+            }
+        }
+    }
+
+    &.align-align {
+        display: flex;
+        justify-content: center;
+    }
+
+    &.align-card-form {
+        display: flex;
+        background-color: $medium-bgray2;
+        text-align: start;
+        flex-wrap: wrap;
+        /* align-content: center; */
+        /* justify-content: center; */
+        width: 954px;
+
+        &.align-dc {
+            display: block;
+            width: auto;
+        }
+
+        .overflow-type3 {
+            font-weight: $semi-bold;
+            margin-bottom: 10px;
+            width: 467px;
+            margin: 5px;
+
+            &.dc {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.card-form {
+    display: flex;
+    padding: 50px 30px 40px 30px;
+
+
+}
+
+//textbox
+.overflow-type3, .overflow-typeB {
+    &.dc {
+        margin-top: 15px;
+    }
+
+    .button-dc {
+        width: 100%;
+        border-radius: 10px;
+        padding: 12px;
+    }
+
+    &.with-select {
+
+        select {
+            background-color: #36393f;
+            color: $light-bgray;
+            border-radius: 5px;
+            font-size: 17px;
+            font-family: 'open';
+            font-weight: $semi-bold;
+            width: 100%;
+            border: none;
+            padding: 17px;
+            outline: none;
+        }
+
+        &:before {
+            content: 'arrow_drop_down';
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-size: 27px;
+            position: absolute;
+            top: 5px;
+            right: 0;
+            width: 40px;
+            height: 60%;
+            background: #36393f;
+            border-radius: 5px;
+            pointer-events: none;
+            line-height: 50px;
+        }
+    }
+}
+
+
+
+
+
+//
+//textbox com botão
+//
+.textbox-with-button {
+    display: flex;
+    justify-content: flex-end;
+    background-color: $medium-bgray2;
+
+    &.dc{
+        margin-top:20px;
+    }
+    .minha-conta {
+        margin: 0;
+    }
+}

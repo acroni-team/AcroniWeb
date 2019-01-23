@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="logado.master.cs" Inherits="AcroniWeb_4._5.logado" %>
+
+<!DOCTYPE html>
+
+<html style="background:#2d2e2f">
+<head runat="server">
+    <title>Acroni </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" />
+    <script>
+        $(window).on('load', function () {
+            //$("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false });
+            $("body").niceScroll({ cursorcolor: "#72767d", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', cursoropacitymin: 1, zindex: '99999999' });
+            //$(".nicescroll-box").niceScroll({ cursorcolor: "$light-bgray", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', zindex: '99999999' });
+            $('.preload').addClass('completo');
+            $('nav').addClass('completo');
+            $('section').addClass('completo');
+            $('.right').addClass('completo');
+        });
+
+        function loader(lds, btn) {
+            $(lds).css("opacity", "1");
+            $(btn).css("color", "#0093ff");
+        }
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background:#2d2e2f">
+    <form id="form1" autocomplete="off" runat="server">
+        <section class="galeria-section">
+            <div class="left left-galeria">
+                <div class="perfil-cliente">
+                    <div>
+                        <figure class="profile-wraper">
+                            <div>
+                                <asp:Image ID="profilePicture" class="profile-picture" runat="server" ImageUrl='assets/img/imgperf.jpeg' ImageAlign="Middle" />
+                            </div>
+                        </figure>
+                        <figcaption class="profile-settings">
+                            <asp:Label class="user-name" ID="lblUser" runat="server" Text='Fillers'></asp:Label><br />
+                            <asp:Label class="user-plan" ID="lblPlan" runat="server" Text='Plano Básico'></asp:Label>
+                        </figcaption>
+                        <div class="line"><div id="blueLine" runat="server"></div></div>
+                        <figcaption class="profile-settings">
+                            <asp:Label class="user-mb user-plan" ID="lblMbStart" runat="server" Text='1 ' Style="left: -125px;"></asp:Label>
+                            <asp:Label class="user-mb user-plan" ID="lblMbEnd" runat="server" Text='5' Style="right: -125px;"></asp:Label>
+                        </figcaption>
+                    </div>
+                </div>
+                <div class="nicescroll-box" style="height: 390px;">
+                    <div class="menu-lateral" style="height: 100%">
+                        <a id="galeria" href="galeria.aspx">Minha galeria</a>
+                        <a id="minha-conta" href="minha-conta.aspx">Editar minha conta</a>
+                        <a id="pagamento" href="pagamento.aspx">Pagamento</a>
+                       <%-- <a id="fale-conosco" href="construct.aspx">Fale conosco</a>
+                        <a id="quem-somos" href="construct.aspx">Quem somos</a>--%>
+                        <a id="download" href="download.aspx">Download</a>
+                        <a href="loja.aspx">Ir a Loja</a>
+                        <asp:LinkButton ID="deslogar" runat="server" OnClick="deslogar_Click">Sair</asp:LinkButton>
+                    </div>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/scripts/vendors/jquery.js"></script>
+    <script src="assets/scripts/vendors/jquery.nicescroll.min.js"></script>
+    <script src="assets/scripts/vendors/jquery.smoothState.js"></script>
+    <script src="assets/scripts/vendors/angular.min.js"></script>
+    <script src="assets/scripts/vendors/jquery.mask.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/logado.js"></script>
+</body>
+</html>

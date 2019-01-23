@@ -1,0 +1,149 @@
+//----------------------------------------------------------------------------
+// Nesse css estaram os comandos básicos que quase todas as páginas usarão :D 
+//----------------------------------------------------------------------------
+
+//---------------
+// Media queries
+//---------------
+@media (max-width:576px) {
+}
+
+@media (max-width:768px) {
+}
+
+@media (max-width:992px) {
+}
+
+@media (max-width:1600px) {
+    .centraliza {
+        width: 75%;
+    }
+}
+
+@media (min-width:1366px) {
+    .centraliza {
+        width: 410px;
+    }
+}
+
+//-----------------
+// Comandos gerais
+//-----------------
+*{margin: 0 auto; user-select:none;}
+
+body {
+    background-color: $bgray;
+    transition: background-color 300ms ease;
+    overflow: hidden;
+    font-family: 'open',sans-serif;
+    font-weight: $normal;
+    transition: 200ms ease-in;
+}
+
+input {
+    font-family: 'open',sans-serif;
+}
+
+
+//-------------------
+// Left e Right divs
+//-------------------
+.left, .right{
+	width: 50%;
+	height: 100%;
+	background: $background;
+	float:left;
+
+}
+
+#left{display: flex;align-items: center;}
+
+#right {
+    display: flex;
+    align-items: center;
+}
+
+#right div {
+    width: 60%;
+}
+
+
+
+//----------------
+/* Código antigo 
+//---------------
+
+
+// Menu 
+#menu {
+    pointer-events: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+
+.st0 {
+    fill: #333333;
+}
+
+.st1 {
+    fill: #0093FF;
+}
+
+.st2 {
+    fill: #F2F2F2;
+}
+
+#logo {
+    width: 500px;
+}
+
+#menu.active input::-webkit-input-placeholder {
+    color: #f2f2f2;
+}
+
+#menu input:focus {
+    outline-color: #0093ff;
+}
+
+// light theme 
+
+div#right li {
+    text-align: right;
+    font-size: 40px;
+    color: #333;
+    transition: color 300ms ease;
+}
+
+div#rightli a {
+    color: #333;
+}
+
+
+
+div#right li a:hover:not(.active), div#right li a.active {
+    color: #0093ff;
+}
+
+
+// dark theme 
+
+div#right li.active a.active, div#right li.active a:hover:not(.active) {
+    color: #0093ff;
+}
+
+div#right li.active a, div#right li.active {
+    color: #f2f2f2;
+}
+
+div#right ul {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+
+*/

@@ -1,0 +1,163 @@
+//---------
+// TEXTBOX
+//---------
+
+.textbox {
+    outline: none;
+    border: 0.15rem solid #dfdfdf;
+    border-radius: 5px;
+    text-indent: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 17px;
+    color: #333;
+    width: 100%;
+    transition: 0.3s ease-in;
+    margin-top: 15px;
+    background-color: #dfdfdf;
+    box-sizing: border-box;
+    font-weight: $normal;
+    caret-color: $primary-color;
+
+    &.focus {
+        &:focus {
+            border: 0.15rem solid $primary-color;
+        }
+    }
+
+    &.dark {
+        background-color: #36393f;
+        border: 0.15rem solid #36393f;
+        color: $white;
+    }
+}
+
+
+input {
+    @include placeholderOpacity(1);
+    @include placeholderColor($light-gray);
+    @include placeholderTransition(opacity 200ms ease-in);
+
+    &.dark {
+        @include placeholderOpacity(1);
+        @include placeholderColor($light-bgray);
+        @include placeholderTransition(opacity 200ms ease-in);
+    }
+}
+
+input:focus {
+    @include placeholderOpacity(0);
+}
+
+.textbox::-webkit-input-placeholder {
+    color: rgba($default-gray, 0.60);
+}
+
+.textbox-type2-overflow {
+    overflow: hidden;
+    background-color: $white;
+    /*@include transition(border-width 0.2s ease-in-out);
+    border: 0rem solid $primary-color;
+
+    &:focus-within {
+        border: 0.15rem solid $primary-color;
+    }*/
+}
+/*inputs e botao */
+.textbox-type2 {
+    border-radius: 0;
+    margin: 0;
+    color: $default-gray;
+    height: 100%;
+    border: none;
+    caret-color: $primary-color;
+    font-weight: $normal;
+    background: transparent;
+
+    &:focus {
+        .textbox-type2-overflow {
+            border: 0.15rem solid $primary-color;
+        }
+    }
+}
+
+
+
+.textbox-type2::-webkit-input-placeholder, .textbox-type2:-ms-input-placeholder, .textbox-type2::-moz-input-placeholder {
+    color: $light-gray;
+    font-weight: $semi-bold;
+}
+
+.textbox-overflow {
+    background-color: #36393f;
+    color: $light-bgray;
+    border-radius: 5px;
+    position: relative;
+    padding: 0;
+
+
+    &.overflow-type3 {
+        .p {
+            top: 17px;
+            font-size: 17px;
+            transition: transform 200ms ease-in;
+            transform-origin: left;
+            pointer-events:none;
+
+            &.stay {
+                transform: translateY(-12px) scale(0.7);
+                transform-origin: left;
+            }
+        }
+
+        .textbox-type3 {
+            padding-top: 20px;
+            padding-bottom: 14px;
+
+            &:focus {
+                padding-top: 20px;
+                padding-bottom: 14px;
+            }
+
+            &:focus + .p {
+                transform: translateY(-12px) scale(0.7);
+                transform-origin: left;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+//------------------
+// Textbox cadastro
+//------------------
+.textbox-cad {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    width: 600px;
+    left:90px;
+    /*width: 675px;*/
+    font-size: 30px;
+    text-indent: 30px;
+    font-weight: $semi-bold;
+}
+
+
+.textbox-cad.aparece {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.textbox-cad.animate-in {
+    animation: fadeInTop 200ms ease-in alternate-reverse;
+}
+
+
+.textbox-cad.some {
+    animation: fadeOutBottom 200ms ease-in forwards;
+    //opacity: 0;
+    pointer-events: none;
+}
+

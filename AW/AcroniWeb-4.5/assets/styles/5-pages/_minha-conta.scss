@@ -1,0 +1,214 @@
+//-----------------------
+// Cabecalho Minha-conta
+//-----------------------
+#cabecalho {
+   background-color: #36393f;
+   width:100%;
+   height:60px;
+   align-self:flex-start;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+
+   h1{
+       font-weight:$semi-bold;
+       width:100%;
+       text-align:center;
+       font-size:22px;
+
+   }
+}
+
+//-----------------------------------
+// Informações básicas e credenciais
+//-----------------------------------
+.right-minha-conta {
+    background-color: $medium-bgray2;
+    height: auto;
+    min-height: 100vh;
+}
+
+#informacoes-basicas, #credenciais, #foto-pricing {
+    h1 {
+        width: auto;
+        font-size: 17px;
+        font-weight: $semi-bold;
+        margin-bottom: 12px;
+    }
+}
+
+#credenciais{
+    margin-top:35px;
+}
+
+#informacoes-basicas, #credenciais {
+    width: 380px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-right: 40px;
+}
+
+.minha-conta-forms, #foto-pricing {
+    float: left;
+    width: 50%;
+}
+
+#foto-pricing-conteudo {
+    height: 484px;
+    background-color: #36393f;
+    border-radius: 15px;
+    width: 400px;
+    margin: 0;
+    position:relative;
+
+    .foto {
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        figure {
+            background-color: #303339;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 90px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transform: scale(2);
+
+            img {
+                width: 120%;
+            }
+
+            figcaption {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                overflow: hidden;
+                position: absolute;
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: flex;
+                align-items: center;
+
+                label {
+                    color: $white;
+                    font-weight: $semi-bold;
+                    width: 50%;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 10px;
+                }
+
+                .upload-imagem {
+                    /* width: 0.1px;
+                    height: 0.1px;
+                    opacity: 0;
+                    overflow: hidden;
+                    position: absolute;
+                    z-index:-1;*/
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    position: absolute;
+                    cursor: pointer;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    .plano {
+        font-weight: $semi-bold;
+        color: $light-bgray;
+        text-align: center;
+
+        .info-plano {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: justify;
+
+            ul {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+//---------
+// Textbox
+//---------
+.textbox-overflow {
+    font-weight: $semi-bold;
+    margin-bottom: 10px;
+
+    .p {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 13px;
+        transition: opacity 200ms ease-in;
+        pointer-events: none;
+    }
+
+    .textbox {
+        margin-top: 0;
+        padding-top: 20px;
+        padding-bottom: 14px;
+        font-weight: $semi-bold;
+
+        &:focus {
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }
+
+        &:focus + .p {
+            opacity: 0;
+        }
+    }
+}
+
+//--------
+// Button
+//--------
+.button {
+    &.minha-conta {
+        margin-left: 235px;
+        margin-bottom: 30px;
+        border-radius: 3px;
+        transition: 300ms ease;
+        border: none;
+        transition: background-color .3s ease-in-out;
+    }
+
+
+    &.disabled {
+        background-color: #222428;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+//--------
+// Loader
+//--------
+.lds-minha-conta {
+    display: inline-block;
+    position: absolute;
+    width: 64px;
+    right: 50px;
+    height: 64px;
+    pointer-events: none;
+    opacity: 0;
+    bottom: -98px;
+    top: auto;
+    left: auto;
+}
+
+

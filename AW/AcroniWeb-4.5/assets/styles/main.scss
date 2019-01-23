@@ -1,0 +1,33 @@
+﻿// Todos os @imports vão aqui pra gerar um único arquivo .css
+
+// 0 - Helpers
+@import '0-helpers/_vars.scss';
+@import '0-helpers/_mixin.scss';
+
+// 1 - Tools
+@import '1-tools/_keyframes.scss';
+@import '1-tools/_preload.scss';
+@import '1-tools/_transition.scss';
+
+// 2 - Base
+@import '2-base/_typography.scss';
+@import '2-base/_global.scss';
+
+// 3 - Layout
+@import '3-layout/_navbar.scss';
+@import '3-layout/_footer.scss';
+
+// 4 - Modules
+@import '4-modules/_button.scss';
+@import '4-modules/_searchbox.scss';
+@import '4-modules/_textbox.scss';
+@import '4-modules/_modal.scss';
+@import '4-modules/_video.scss';
+
+// 5 - Pages
+@import '5-pages/_default.scss';
+@import '5-pages/_cadastro.scss';
+@import '5-pages/_loja.scss';
+@import '5-pages/_galeria.scss';
+@import '5-pages/_minha-conta.scss';
+@import '5-pages/_pagamento.scss';

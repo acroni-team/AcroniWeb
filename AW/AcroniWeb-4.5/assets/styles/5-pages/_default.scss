@@ -1,0 +1,480 @@
+﻿//---------
+//Checkbox
+//---------
+.checkbox {
+    position: absolute;
+    top: 257px;
+    right: 10px;
+}
+
+
+//------------------------------------------------------------------------------------
+// Primeira seção (é dividida em duas controls direita (principal) e esquerda (login)
+//------------------------------------------------------------------------------------
+section {
+    @include wh(100vh);
+
+    h1 {
+        font-weight: $extra-bold;
+        font-size: 2.1em;
+        color: $white;
+        width: 340px;
+        margin: 0;
+    }
+
+    h3 {
+        color: $white;
+        font-size: 0.9em;
+        width: 290px;
+        margin: 0;
+        font-weight: $normal;
+
+        a {
+            color: $white;
+            font-weight: $bold;
+        }
+    }
+}
+
+
+#principal, #login{
+    height: 100vh;
+    float: left;
+    z-index: 0;
+    display: flex;
+}
+
+//----------
+//Principal
+//----------
+#principal {
+    background-color: $primary-color;
+    width: 60%;
+    opacity: 0.67;
+    background: rgba(0,149,255,1);
+    background: -moz-linear-gradient(-45deg, rgba(0,149,255,1) 0%, rgba(61,116,219,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,149,255,1)), color-stop(100%, rgba(61,116,219,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(0,149,255,1) 0%, rgba(61,116,219,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(0,149,255,1) 0%, rgba(61,116,219,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(0,149,255,1) 0%, rgba(61,116,219,1) 100%);
+    background: linear-gradient(135deg, rgba(0,149,255,1) 0%, rgba(61,116,219,1) 100%);
+    align-items: flex-end;
+
+    div {
+        width: 75%;
+        height: 40%;
+        position: relative;
+    }
+
+    .c-quadrado {
+        position: absolute;
+        top: 5px;
+        left: -7.5px;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.3);
+        transform: rotate(45deg);
+        border-radius: 7px;
+    }
+}
+
+#bg-img {
+    margin: 0;
+    z-index: 0;
+    width: 65%;
+    height: 100vh;
+    background: url("../img/index-bg.jpg") no-repeat;
+    background-size: 118%;
+    background-position: bottom 0px right 0px;
+}
+
+//-------
+// Login
+//-------
+#login {
+    background-color: $background;
+    width: 40%;
+    align-items: center;
+
+    p:first-of-type {
+        color: $primary-color;
+        font-size: 34px;
+        margin-left: 10px;
+    }
+
+    #logintitle {
+        font-weight: $semi-bold;
+    }
+
+    #cadastre-se {
+        color: $default-gray;
+        font-size: 15px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    span {
+        color: $primary-color;
+        font-size: 13.5px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .link {
+        color: $primary-color;
+        font-weight: $normal;
+        cursor: pointer;
+
+        &.link-sqn {
+            top: 255px;
+            right: 30px;
+            cursor: initial;
+            position:absolute;
+            font-size:13.5px;
+        }
+    }
+
+    #abre-senha {
+        font-size: 13.5px;
+        position: absolute;
+        top: 255px;
+    }
+
+    .centraliza {
+        position: relative;
+    }
+}
+
+.login{
+    width:100%;
+    margin-top:30px;
+}
+
+.centralizalogin {
+    .link {
+        font-size:13px;
+        margin-top:0;
+        cursor:pointer;
+    }
+}
+
+.centralizabotao {
+    display: flex;
+    align-content: center;
+}
+
+//---------------
+// Segunda seção
+//---------------
+#bem-vindo {
+    background: url("../img/fale-back.jpg") no-repeat #f2f2f2;
+    /*background:#f2f2f2;*/
+    background-size: 100%;
+    height: 110vh;
+    display: flex;
+    text-align: right;
+    align-items: center;
+
+    .align-text {
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        right: 0;
+
+        .text {
+            max-width: 600px;
+            text-align: center;
+
+            h1 {
+                width: auto;
+                color: $primary-color;
+                margin-bottom: 30px;
+                font-weight: $semi-bold;
+                font-size: 37px;
+            }
+
+            p {
+                color: $default-gray;
+            }
+        }
+    }
+}
+
+//----------------
+// Terceira seção
+//----------------
+section#video {
+    @include wh(110vh);
+    background: -webkit-linear-gradient(left, $background, $background 40%, #303339 40%, #303339);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .conteiner {
+        padding: 0px 110px;
+        width: 100%;
+
+        .c-video {
+            position: relative;
+            width: 75%;
+            float: left;
+
+        }
+    }
+
+
+    div.frase {
+        position: absolute;
+        right: 75px;
+        text-align: right;
+    }
+
+    h1 {
+        font-weight: $semi-bold;
+        color: $light-bgray;
+        font-size: 2em;
+        width: 100%;
+    }
+
+    p {
+        font-size: 1.2em;
+        color: $light-bgray;
+    }
+}
+
+//--------------
+// Quarta seção
+//--------------
+section#download {
+    background-color: #303339;
+    display: flex;
+    align-items: flex-end;
+    height: 110vh;
+    margin-top:-10px;
+
+    img {
+        float: left;
+        margin-right: 0;
+    }
+
+    .align-text {
+        align-self: center;
+
+
+        .text {
+            max-width: 330px;
+            text-align: center;
+
+            h1 {
+                width: auto;
+                color: $white;
+                margin-bottom: 30px;
+                font-weight: $semi-bold;
+                font-size: 28px;
+            }
+
+            p {
+                color: $white;
+            }
+        }
+    }
+}
+
+//-------------
+//Quinta seção
+//-------------
+section#planos {
+    height: 115vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background:$background;
+
+    .plan-box {
+        width: 400px;
+        height: 580px;
+        background-color: $white;
+        box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.25);
+        margin: 0px 30px 0px 30px;
+        border-radius: 15px;
+
+        &.plan-premium {
+            overflow: hidden;
+            border: 3.5px solid $primary-color;
+            position:relative;
+
+            header {
+                background: linear-gradient(45deg, #0093ff, #7ac7ff);
+                margin: 0;
+                padding: 0;
+                width: 115%;
+                margin-left: -7.5%;
+
+                h1, h3 {
+                    color: $white;
+                }
+
+                h1 {
+                    font-size: 29px;
+                }
+
+                h3 {
+                    font-size: 17px;
+                }
+
+
+            }
+        }
+
+        header {
+            width: 100%;
+            height: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1, h3 {
+                color: $primary-color;
+                text-align: center;
+                font-weight: $semi-bold;
+                width: auto;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            h3 {
+            }
+        }
+
+        ul {
+            list-style: disc;
+            color: $primary-color;
+            padding-top: 45px;
+            padding-left: 75px;
+            line-height: 35px;
+            font-weight: $semi-bold;
+
+            p {
+                color: $default-gray;
+
+                &.blue-left {
+                    display: inline;
+                }
+
+                &.blue {
+                    line-height: 0;
+                    display: inline-block;
+                    margin-left: 5px;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+//SVG
+svg {
+    fill: $bgray;
+    pointer-events: none;
+    transform: rotate(0deg) translate(-263px,-380px) scale(1.7,-1.7);
+}
+//END SVG
+
+//-------------
+// Sexta seção
+//-------------
+section#team {
+    background-color: $bgray;
+    transform: translateY(-300px);
+    height: 80vh;
+    text-align: center;
+
+    h1, p {
+        width: auto;
+        text-align: center;
+        color: $light-bgray;
+        font-weight: $semi-bold;
+    }
+
+    h1 {
+        padding-top: 30px;
+    }
+
+    .team-members-wrapper {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        -webkit-align-content: center;
+        align-content: center;
+        flex-direction: row;
+        max-width: 1000px;
+        margin-top: 40px;
+
+        .team-members-box {
+            width: 400px;
+            height: 150px;
+            border: solid $medium-bgray;
+            border-width: 20px 4px 4px 4px;
+            border-radius: 10px;
+            margin: 10px 15px 0 0;
+
+
+            figure {
+                display: flex;
+                height: 100%;
+                align-items: center;
+
+                div {
+                    margin-left: 35px;
+                    margin-right: 55px;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border: 4px solid $medium-bgray;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                h1 {
+                    color: #fff;
+                    font-size: 22px;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                figcaption {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+#last-section {
+    position: absolute;
+    background: $bgray;
+    margin-top: -100vh;
+    z-index: -6;
+}
+
+
