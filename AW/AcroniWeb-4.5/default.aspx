@@ -2,8 +2,6 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="js/acroniPlayer.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </asp:Content>
 
@@ -23,7 +21,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div id="main" class="m-div default">
+<div id="main" class="m-div default">
     <!--        Preloader       -->
      <div class="preload">
         <p class="logo animado">Acroni</p>
@@ -147,9 +145,9 @@
     <!-- Terceira seção -->
 
     <section id="video">
-        <div class="conteiner" data-aos="fade-up" data-aos-delay="300">
+        <div class="conteiner">
             <div class="c-video">
-                <video class="video" src="video/Propaganda.mp4" id="videozinho" poster="assets/img/acroni.png"></video>
+                <video class="video" src="assets/video/Propaganda.mp4" id="videozinho" poster="assets/img/acroni.png"></video>
                 <div class="play-button" onclick="toggleVideo();">
                     <i class="material-icons" id="play-pause"></i>
                     <%--<button id="play-pause" type="button" ></button>--%>
@@ -291,17 +289,10 @@
             </div>
         </div>
      </section>
-    <section id="last-section"></section>               
-    <!-- FOOTI -->
+    <section id="last-section"></section>  
+</div>     
+    
+    <!-- Scripts -->
 
-    <!--                            Scripts                      -->
-   </div>
-    <script>
-        document.getElementById("home").classList.add("active");
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 
 </asp:Content>

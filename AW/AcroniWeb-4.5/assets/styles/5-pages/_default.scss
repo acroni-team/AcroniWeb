@@ -1,14 +1,4 @@
-﻿//---------
-//Checkbox
-//---------
-.checkbox {
-    position: absolute;
-    top: 257px;
-    right: 10px;
-}
-
-
-//------------------------------------------------------------------------------------
+﻿//------------------------------------------------------------------------------------
 // Primeira seção (é dividida em duas controls direita (principal) e esquerda (login)
 //------------------------------------------------------------------------------------
 section {
@@ -37,7 +27,7 @@ section {
 }
 
 
-#principal, #login{
+#principal, #login {
     height: 100vh;
     float: left;
     z-index: 0;
@@ -131,8 +121,8 @@ section {
             top: 255px;
             right: 30px;
             cursor: initial;
-            position:absolute;
-            font-size:13.5px;
+            position: absolute;
+            font-size: 13.5px;
         }
     }
 
@@ -147,16 +137,16 @@ section {
     }
 }
 
-.login{
-    width:100%;
-    margin-top:30px;
+.login {
+    width: 100%;
+    margin-top: 30px;
 }
 
 .centralizalogin {
     .link {
-        font-size:13px;
-        margin-top:0;
-        cursor:pointer;
+        font-size: 13px;
+        margin-top: 0;
+        cursor: pointer;
     }
 }
 
@@ -221,7 +211,6 @@ section#video {
             position: relative;
             width: 75%;
             float: left;
-
         }
     }
 
@@ -253,7 +242,7 @@ section#download {
     display: flex;
     align-items: flex-end;
     height: 110vh;
-    margin-top:-10px;
+    margin-top: -10px;
 
     img {
         float: left;
@@ -291,7 +280,7 @@ section#planos {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background:$background;
+    background: $background;
 
     .plan-box {
         width: 400px;
@@ -304,7 +293,7 @@ section#planos {
         &.plan-premium {
             overflow: hidden;
             border: 3.5px solid $primary-color;
-            position:relative;
+            position: relative;
 
             header {
                 background: linear-gradient(45deg, #0093ff, #7ac7ff);
@@ -324,8 +313,6 @@ section#planos {
                 h3 {
                     font-size: 17px;
                 }
-
-
             }
         }
 
@@ -476,5 +463,3 @@ section#team {
     margin-top: -100vh;
     z-index: -6;
 }
-
-

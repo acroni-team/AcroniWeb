@@ -1,4 +1,6 @@
-﻿// Width and height
+﻿//------------------
+// Width and height
+//------------------
 @mixin wh($valor) {
     width: 100%;
     height: $valor;
@@ -9,7 +11,9 @@
     height: 100%;
 }
 
+//--------------
 // Placeholders
+//--------------
 @mixin transition($transition...) {
     -webkit-transition: $transition;
     -moz-transition: $transition;

@@ -1,4 +1,6 @@
-﻿// Todos os @imports vão aqui pra gerar um único arquivo .css
+﻿//------------------------------------------------------------
+// Todos os @imports vão aqui pra gerar um único arquivo .css
+//------------------------------------------------------------
 
 // 0 - Helpers
 @import '0-helpers/_vars.scss';
@@ -23,6 +25,7 @@
 @import '4-modules/_textbox.scss';
 @import '4-modules/_modal.scss';
 @import '4-modules/_video.scss';
+@import '4-modules/_checkbox.scss';
 
 // 5 - Pages
 @import '5-pages/_default.scss';

@@ -2,7 +2,6 @@
 
 //$(document).ready(function () {
 document.addEventListener('DOMContentLoaded', () => {
-
     //----------------
     // Função do menu 
     //----------------
@@ -46,6 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
         $('nav').addClass('completo');
         $('.m-div').addClass('completo');
     });
+
+            
+ 
 
     //----------- 
     // Modal-eas
@@ -130,6 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
 //------------------
 // Função do loader
 //------------------
@@ -192,6 +195,29 @@ $('.btn-preencher').click(function () {
     btnSalva.disabled = false;
 });
 
+//---------
+//CSS RULE
+//---------
+var s = document.styleSheets[1];
+
+console.log(s);
+
+function changeStylesheetRule(stylesheet, selector, property, value) {
+    selector = selector.toLowerCase();
+    property = property.toLowerCase();
+    value = value.toLowerCase();
+
+    for (var i = 0; i < s.cssRules.length; i++) {
+        var rule = s.cssRules[i];
+        if (rule.selectorText === selector) {
+            rule.style[property] = value;
+            return;
+        }
+    }
+
+    stylesheet.insertRule(selector + " { " + property + ": " + value + "; }", 0);
+}
+
 
 //---------------              
 // Acroni Player 
@@ -200,14 +226,18 @@ function toggleVideo() {
     const video = document.getElementById('videozinho');
     const btn = document.getElementById('play-pause');
     var play = document.querySelector('.play-button');
-
+    const cvideo = document.querySelector('.c-video');
 
     if (video.paused) {
         btn.className = 'material-icons pause';
+        play.className = 'play-button play';
+        cvideo.onmouseout = function () { play.className = 'play-button playing'; };
         video.play();
     }
     else {
         btn.className = 'material-icons play';
+        play.className = 'play-button';
+        cvideo.onmouseout = null;
         video.pause();
     }
 

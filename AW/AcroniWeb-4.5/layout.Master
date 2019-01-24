@@ -9,7 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />   
     <link rel="stylesheet" type="text/css" href="assets/styles/main.css" />
     <link rel="shortcut icon" href="assets/img/favicons/favicon.ico" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet" />
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -57,13 +56,11 @@
         </footer>      
     </form>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/scripts/vendors/jquery.js"></script>
     <script src="assets/scripts/vendors/jquery.nicescroll.min.js"></script>
     <script src="assets/scripts/vendors/jquery.smoothState.js"></script>
-    <script src="assets/scripts/vendors/angular.min.js"></script>
     <script src="assets/scripts/vendors/jquery.mask.min.js"></script>
+    <script src="assets/scripts/vendors/angular.min.js"></script>
     <script src="assets/scripts/main.js"></script>
 </body>
 </html>

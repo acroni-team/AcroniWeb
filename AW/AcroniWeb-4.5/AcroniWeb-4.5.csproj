@@ -95,6 +95,7 @@
     <Content Include="assets\styles\3-layout\_navbar.scss" />
     <None Include="assets\styles\3-layout\_footer.scss" />
     <None Include="assets\styles\4-modules\_video.scss" />
+    <None Include="assets\styles\4-modules\_checkbox.scss" />
     <Content Include="cadastro.aspx" />
     <Content Include="colecao.aspx" />
     <Content Include="Connected Services\WSCorreiosFrete\AcroniWeb_4._5.WSCorreiosFrete.cResultado.datasource">
