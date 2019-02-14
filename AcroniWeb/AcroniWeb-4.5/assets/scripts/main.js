@@ -35,18 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScroll = st;
     });
 
-
-    //---------
-    // On load
-    //---------
-    $(window).on('load', function () {
-        $("body").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', cursoropacitymin: 1, zindex: '99999999' });
-        $('.preload').addClass('completo');
-        $('nav').addClass('completo');
-        $('.m-div').addClass('completo');
-    });
-
-            
+    
  
 
     //----------- 
@@ -85,7 +74,21 @@ document.addEventListener('DOMContentLoaded', () => {
     //Função das TextBox e buttons
     var bool = false;
 
+    //------------------
+    // Click da loja
+    //------------------
+    $('figure').click(function () {
+        var id = $(this).attr("name");
+        $('.modal-overflow').removeClass('hidden');
+        $("#Produto" + id).removeClass("animate-out").addClass("is-showing animate-in");
+        $("body").niceScroll().remove();
 
+        $('.modal-background, .fecha-janela').click(function () {
+            //$("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none" });
+            $("body").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', cursoropacitymin: 1, zindex: '99999999' });
+            $("#Produto" + id).removeClass("is-showing animate-in").addClass("animate-out");
+        });
+    });
 
 
     //----------

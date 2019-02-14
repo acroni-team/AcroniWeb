@@ -9,22 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" type="text/css" href="assets/styles/main.css" />
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" />
-    <script>
-        $(window).on('load', function () {
-            //$("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false });
-            $("body").niceScroll({ cursorcolor: "#72767d", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', cursoropacitymin: 1, zindex: '99999999' });
-            //$(".nicescroll-box").niceScroll({ cursorcolor: "$light-bgray", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', zindex: '99999999' });
-            $('.preload').addClass('completo');
-            $('nav').addClass('completo');
-            $('section').addClass('completo');
-            $('.right').addClass('completo');
-        });
-
-        function loader(lds, btn) {
-            $(lds).css("opacity", "1");
-            $(btn).css("color", "#0093ff");
-        }
-    </script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -76,5 +60,21 @@
     <script src="assets/scripts/vendors/angular.min.js"></script>
     <script src="assets/scripts/main.js"></script>
     <script src="assets/scripts/logado.js"></script>
+    <script>
+        $(window).on('load', function () {
+            //$("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false });
+            $("body").niceScroll({ cursorcolor: "#72767d", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', cursoropacitymin: 1, zindex: '99999999' });
+            //$(".nicescroll-box").niceScroll({ cursorcolor: "$light-bgray", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', zindex: '99999999' });
+            $('.preload').addClass('completo');
+            $('nav').addClass('completo');
+            $('section').addClass('completo');
+            $('.right').addClass('completo');
+        });
+
+        function loader(lds, btn) {
+            $(lds).css("opacity", "1");
+            $(btn).css("color", "#0093ff");
+        }
+    </script>
 </body>
 </html>

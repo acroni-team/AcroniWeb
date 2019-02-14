@@ -165,21 +165,6 @@
     </div>
     <!--<a href="Produto<%# Eval("id") %>.aspx"><div class="info">-->
     <!--<a href="Produto<%# Eval("id") %>.aspx">Produto <%# Eval("id") %></a>-->
-    <script>
-        $('figure').click(function () {
-            var id = $(this).attr("name");
-            $('.modal-overflow').removeClass('hidden');
-            $("#Produto" + id).removeClass("animate-out").addClass("is-showing animate-in");
-            $("body").niceScroll().remove();
-
-            $('.modal-background, .fecha-janela').click(function () {
-                //$("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none" });
-                $("body").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false, autohidemode:'leave', cursoropacitymin:1, zindex:'99999999' });
-                $("#Produto" + id).removeClass("is-showing animate-in").addClass("animate-out");
-            });
-        });
-
-    </script>
 
 </asp:Content>
 
