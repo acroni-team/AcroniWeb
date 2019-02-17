@@ -81,16 +81,16 @@ namespace AcroniWeb_4._5
                     if (hpf.ContentLength > 0)
                     {
                         byte[] imgBytes = null;
-
-                        if (Path.GetExtension(hpf.FileName) == ".jpeg" || Path.GetExtension(hpf.FileName) == ".jpg")
+                        string ext = Path.GetExtension(hpf.FileName).ToLower();
+                        if (ext == ".jpeg" || ext == ".jpg")
                             imgBytes = ut.ConvertImageToByteArray(image, System.Drawing.Imaging.ImageFormat.Jpeg);
-                        else if (Path.GetExtension(hpf.FileName) == ".png")
+                        else if (ext == ".png")
                             imgBytes = ut.ConvertImageToByteArray(image, System.Drawing.Imaging.ImageFormat.Png);
-                        else if (Path.GetExtension(hpf.FileName) == ".bmp")
+                        else if (ext == ".bmp")
                             imgBytes = ut.ConvertImageToByteArray(image, System.Drawing.Imaging.ImageFormat.Bmp);
-                        else if (Path.GetExtension(hpf.FileName) == ".tiff")
+                        else if (ext == ".tiff")
                             imgBytes = ut.ConvertImageToByteArray(image, System.Drawing.Imaging.ImageFormat.Tiff);
-                        else if (Path.GetExtension(hpf.FileName) == ".gif")
+                        else if (ext == ".gif")
                             imgBytes = ut.ConvertImageToByteArray(image, System.Drawing.Imaging.ImageFormat.Gif);
 
 
@@ -132,13 +132,13 @@ namespace AcroniWeb_4._5
                         if (first)
                         {
                             Session["novosValores"] += ",cpf = '" + CPF.Text + "'";
-                            return;
+                            
                         }
                         else
                         {
                             Session["novosValores"] += "cpf = '" + CPF.Text + "'";
                             first = true;
-                            return;
+                            
                         }
                     }
                     else
