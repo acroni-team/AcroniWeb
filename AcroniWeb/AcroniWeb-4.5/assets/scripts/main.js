@@ -102,11 +102,10 @@ document.addEventListener('DOMContentLoaded', () => {
     $("#ContentPlaceHolder1_Numero").mask('0000 0000 0000 0000');
     $("#ContentPlaceHolder1_DataValidade").mask('00/00');
 
-
     //---------------------------- 
     // Função do calculo de frete
     //----------------------------
-    $(".textbox.focus").keyup(function () {
+    $(".textbox.focus.loja").keyup(function () {
         if ($(this).val().length == 9) {
             //adiciona o loader aqui
             var txt = $(this);
@@ -128,8 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
-
-
 
 
 });
