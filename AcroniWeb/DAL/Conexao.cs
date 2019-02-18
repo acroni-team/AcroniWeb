@@ -2,7 +2,7 @@
 using System.Data;
 using System;
 
-namespace acroni.classes
+namespace DAL
 {
     class Conexao
     {

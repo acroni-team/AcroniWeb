@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BLL;
 
 namespace AcroniWeb_4._5
 {
     public partial class cadastro : System.Web.UI.Page
     {
-        Valida v = new Valida();
-        Utilitarios ut = new Utilitarios();
+        BLL.Valida v = new BLL.Valida();
+        BLL.Utilitarios ut = new BLL.Utilitarios();
+        BLL.SQLChamadas sql = new BLL.SQLChamadas();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -75,14 +78,13 @@ namespace AcroniWeb_4._5
                     }
 
                     string usuario = ut.retirarEspacos(txtUsu.Text);
-                    existe = ut.verificarCampoExistenteBanco("usuario", usuario);
-                    
+                                        
                     if (!v.validarUsu(usuario))
                     {
                         IsNotValid(txtNome, "Esse apelido é inválido.", 1, txtUsu);
                         break;
                     }
-                    else if (existe)
+                    else if (sql.selectHasRows("usuario", "tblCliente", "usuario = '"+usuario+"'"))
                     {
                         IsNotValid(txtNome, "Usuário já em uso.", 1, txtUsu);
                         break;
@@ -111,14 +113,13 @@ namespace AcroniWeb_4._5
                     }
 
                     string email = ut.retirarEspacos(txtEmail.Text);
-                    existe = ut.verificarCampoExistenteBanco("email", email);
-
+                    
                     if (!v.validarEmail(email))
                     {
                         IsNotValid(txtUsu, "Email inválido.", 2, txtEmail);
                         break;
                     }
-                    else if (existe)
+                    else if (sql.selectHasRows("email", "tblCliente", "email = '" + email + "'"))
                     {
                         IsNotValid(txtUsu, "Email já em uso.", 2, txtEmail);
                         break;
@@ -129,7 +130,7 @@ namespace AcroniWeb_4._5
                         step.Attributes["class"] = "step step3";
                         Session["email"] = email;
                         Session["codigo"] = ut.gerarStringConfirmacao();
-                        ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Confirmar E-mail", "Utilize o código abaixo para corfimar seu email. Se você não está criando uma conta na Acroni, finja que nunca nem viu esse email.");
+                        ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Confirmar E-mail", "Utilize o código abaixo para corfimar seu email. Se você não está criando uma conta na Acroni, finja que nunca nem viu esse email.", File.ReadAllText(HttpContext.Current.Server.MapPath("email.html")));
                         ReenviarEmail.Attributes.Add("style", "display: block");
                         lblH1Dica.Text = "Legal! Agora você só precisa confirmar que é você.";
                         lblDica.Text = "Confira o código no seu e-mail.";
@@ -171,7 +172,7 @@ namespace AcroniWeb_4._5
                         IsNotValid(txtEmail, "CPF inválido", 4, txtCpf);
                         break;
                     }
-                    else if (ut.verificarCampoExistenteBanco("cpf", txtCpf.Text))
+                    else if (sql.selectHasRows("cpf", "tblCliente", "cpf = '" + txtCpf.Text + "'"))
                     {
                         IsNotValid(txtEmail, "CPF já cadastrado", 4, txtCpf);
                         break;
@@ -210,7 +211,7 @@ namespace AcroniWeb_4._5
                     }
                     else
                     {
-                        ut.inserirUsuario(Session["nome"].ToString(), Session["usu"].ToString(), Session["email"].ToString(), Session["cpf"].ToString(), Session["senha"].ToString());
+                        sql.inserirUsuario(Session["nome"].ToString(), Session["usu"].ToString(), Session["email"].ToString(), Session["cpf"].ToString(), Session["senha"].ToString());
                         Response.Redirect("default.aspx");
                         break;
                     }
@@ -271,14 +272,14 @@ namespace AcroniWeb_4._5
             lblH1Dica.Text = "Esse tipo de coisa acontece.";
             lblDica.Text = "Relaxa,apenas confira o código no seu e-mail novamente.";
             Session["codigo"] = ut.gerarStringConfirmacao();
-            ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Confirmar E-mail", "Utilize o código abaixo para corfimar seu email. Se você não está criando uma conta na Acroni, finja que nunca nem viu esse email.");
+            ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Confirmar E-mail", "Utilize o código abaixo para corfimar seu email. Se você não está criando uma conta na Acroni, finja que nunca nem viu esse email.", File.ReadAllText(HttpContext.Current.Server.MapPath("email.html")));
 
         }
 
         protected void ReenviaImai_Click(object sender, EventArgs e)
         {
             Session["codigo"] = ut.gerarStringConfirmacao();
-            ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Confirmar E-mail", "Utilize o código abaixo para corfimar seu email. Se você não está criando uma conta na Acroni, finja que nunca nem viu esse email.");
+            ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Confirmar E-mail", "Utilize o código abaixo para corfimar seu email. Se você não está criando uma conta na Acroni, finja que nunca nem viu esse email.", File.ReadAllText(HttpContext.Current.Server.MapPath("email.html")));
         }
 
         protected void btnVoltar_Click(object sender, EventArgs e)

@@ -1,0 +1,6 @@
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\DAL\bin\Debug\DAL.dll
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\DAL\bin\Debug\DAL.pdb
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\DAL\obj\Debug\DAL.dll
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\DAL\obj\Debug\DAL.pdb

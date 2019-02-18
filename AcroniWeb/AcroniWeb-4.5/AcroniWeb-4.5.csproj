@@ -230,10 +230,6 @@
     <Compile Include="cadastro.aspx.designer.cs">
       <DependentUpon>cadastro.aspx</DependentUpon>
     </Compile>
-    <Compile Include="classes\Conexao.cs" />
-    <Compile Include="classes\SQLMetodos.cs" />
-    <Compile Include="classes\Utilitarios.cs" />
-    <Compile Include="classes\Valida.cs" />
     <Compile Include="colecao.aspx.cs">
       <DependentUpon>colecao.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -382,7 +378,15 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\WSCorreiosFrete\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{923f6588-690e-4134-b7a1-1cf4f4de3b54}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="classes\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

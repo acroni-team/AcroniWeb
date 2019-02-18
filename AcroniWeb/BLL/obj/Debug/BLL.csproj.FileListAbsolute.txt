@@ -1,0 +1,9 @@
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\BLL\bin\Debug\BLL.dll
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\BLL\bin\Debug\BLL.pdb
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\BLL\bin\Debug\DAL.dll
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\BLL\bin\Debug\DAL.pdb
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\BLL\obj\Debug\BLL.csproj.CopyComplete
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\BLL\obj\Debug\BLL.dll
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\BLL\obj\Debug\BLL.pdb

@@ -57,7 +57,7 @@ namespace AcroniWeb_4._5
             //    }
             //}
 
-            using (SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao))
+            /* EU COMENTEI AQUI  using (SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao))
             {
                 try
                 {
@@ -119,7 +119,7 @@ namespace AcroniWeb_4._5
                 ////s = Form.Attributes["action"].ToString();
                 //lblhue.Text = CurrentUrl;
                
-            }
+            } TERMINA AQUI */
         }
     }
 }

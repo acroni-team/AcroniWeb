@@ -11,13 +11,15 @@ using System.Net.Mail;
 using System.Threading;
 using System.Net;
 using System.IO;
+using BLL;
 
 namespace AcroniWeb
 {
     public partial class _default1 : System.Web.UI.Page
     {
-        Utilitarios ut = new Utilitarios();
-        SQLMetodos sql = new SQLMetodos();
+        BLL.SQLChamadas sql = new BLL.SQLChamadas();
+        BLL.Valida v = new BLL.Valida();
+        BLL.Utilitarios ut = new BLL.Utilitarios();
         public string stringConfirmacao;
         string email = "";
         public string Email { get; set; }
@@ -26,8 +28,7 @@ namespace AcroniWeb
         {
             if (Environment.MachineName.Equals("PALMA-PC"))
             {
-                acroni.classes.Conexao.param = "Data Source = " + Environment.MachineName + "; Initial Catalog = ACRONI_SQL; User ID = Acroni; Password = acroni7";
-                acroni.classes.Conexao.nome_conexao = "Data Source = " + Environment.MachineName + "; Initial Catalog = ACRONI_SQL; User ID = Acroni; Password = acroni7";
+                sql.retirarSQLEXPRESS();
             }
             Session["logado"] = "0";
                        
@@ -155,20 +156,11 @@ namespace AcroniWeb
 
         }
 
-
-        Regex validacao_email = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
-
         protected void btnSendEmail_Click(object sender, EventArgs e)
         {
             step1.Attributes["class"] = "modal-body modal-body-step1 is-showing";
-            bool existe = true;
-
-            if (sql.selectHasRows("usuario", "tblCliente", "email = '" + txtEmail.Text + "'"))
-                existe = true;
-            else
-                existe = false;
-
-            if (validacao_email.IsMatch(txtEmail.Text) && existe)
+            
+            if (v.validarEmail(txtEmail.Text) && sql.selectHasRows("usuario", "tblCliente", "email = '" + txtEmail.Text + "'"))
             {
                 txtEmail.Attributes.Add("style", "border-color:#0093ff");
                 lblErro1.Text = "";
@@ -177,7 +169,7 @@ namespace AcroniWeb
                 step2.Attributes["class"] = "modal-body modal-body-step2 is-showing animate-in";
                 Session["email"] = txtEmail.Text;
                 Session["codigo"] = ut.gerarStringConfirmacao();
-                ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Alterar senha", "Sua senha pode ser redefinida utilizando o código abaixo. Se você não pediu uma troca, finja que nunca nem viu esse email.");
+                ut.enviarEmailConfirmacao(Session["codigo"].ToString(), Session["email"].ToString(), "Alterar senha", "Sua senha pode ser redefinida utilizando o código abaixo. Se você não pediu uma troca, finja que nunca nem viu esse email.", File.ReadAllText(HttpContext.Current.Server.MapPath("email.html")));
             }
             else
             {
@@ -244,31 +236,7 @@ namespace AcroniWeb
         protected void BtnDownload_Click(object sender, EventArgs e)
         {
             Response.Redirect("https://github.com/acroni-team/AcroniDesktop/raw/testes-instalador/AcroniInstaller/Debug/AcroniInstaller.msi");
-            //installer = new Thread(Install);
-            //installer.Start();
-            //SP = Environment.SpecialFolder.Desktop;
         }
-
-        //private Environment.SpecialFolder SP;
-        //private void Install()
-        //{
-        //    try
-        //    {
-        //        WebClient wc = new WebClient();
-        //        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Ssl3;
-        //        String url = "https://github.com/acroni-team/AcroniDesktop/raw/testes-instalador/AcroniInstaller/Debug/AcroniInstaller.msi";
-        //        wc.DownloadFile(url, $@"{Environment.GetFolderPath(SP)}/AcroniDesktop{Path.GetExtension(url)}");
-        //        url = "https://github.com/acroni-team/AcroniDesktop/raw/testes-instalador/AcroniInstaller/Debug/setup.exe";
-        //        wc.DownloadFile(url, $@"{Environment.GetFolderPath(SP)}/AcroniDesktop{Path.GetExtension(url)}");
-        //        //MessageBox.Show("INSTALAÇÃO CONCLUÍDA :D");
-        //        installer.Interrupt();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        //MessageBox.Show(ex.Message);
-        //    }
-        //}
-
 
     }
 

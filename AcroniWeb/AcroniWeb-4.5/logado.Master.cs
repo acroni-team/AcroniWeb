@@ -8,12 +8,13 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BLL;
 
 namespace AcroniWeb_4._5
 {
     public partial class logado : System.Web.UI.MasterPage
     {
-
+        BLL.SQLChamadas sql = new BLL.SQLChamadas();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["usuarioNovo"] != null)
@@ -22,102 +23,42 @@ namespace AcroniWeb_4._5
                 Response.Redirect("default.aspx");
             else
                 lblUser.Text = Session["usuario"].ToString();
-            using (SqlConnection conexao_SQL = new SqlConnection(acroni.classes.Conexao.nome_conexao))
+
+            profilePicture.ImageUrl = "data:image/png;base64," + Convert.ToBase64String((byte[])sql.selectImagem("imagem_cliente", "tblCliente", "usuario = '" + Session["usuario"] + "'"));
+            if (sql.selectHasRows("quantidade_teclados", "tblCliente", "usuario = '" + Session["usuario"] + "'"))
             {
-                try
+                string qtde = sql.selectCampos("quantidade_teclados", "tblCliente", "usuario = '" + Session["usuario"] + "'")[0];
+                if (qtde == "1")
                 {
-                    if (conexao_SQL.State != ConnectionState.Open)
-                        conexao_SQL.Open();
-                    String select = "SELECT imagem_cliente FROM tblCliente where usuario = '" + Session["usuario"] + "'";
-                    using (SqlCommand comando_sql = new SqlCommand(select, conexao_SQL))
-                    {
-                        using (SqlDataReader tabela = comando_sql.ExecuteReader())
-                        {
-                            tabela.Read();
-                            byte[] imgBytes = (byte[])tabela[0];
-
-                            string imgString = Convert.ToBase64String(imgBytes);
-                            profilePicture.ImageUrl = "data:image/png;base64," + imgString;
-                            conexao_SQL.Close();
-                        }
-                    }
+                    blueLine.Attributes.Add("style", "transform:translateX(-240px)");
                 }
-                catch (Exception ex)
+                else if (qtde == "2")
                 {
-                    conexao_SQL.Close();
+                    blueLine.Attributes.Add("style", "transform:translateX(-180px)");
                 }
-
-                try
+                else if (qtde == "3")
                 {
-                    if (conexao_SQL.State != ConnectionState.Open)
-                        conexao_SQL.Open();
-                    String select = "SELECT quantidade_teclados FROM tblCliente where usuario = '" + Session["usuario"] + "'";
-                    using (SqlCommand comando_sql = new SqlCommand(select, conexao_SQL))
-                    {
-                        using (SqlDataReader tabela = comando_sql.ExecuteReader())
-                        {
-                            String qtde;
-                            tabela.Read();
-                            if (tabela.HasRows)
-                            {
-                                qtde = tabela[0].ToString();
-                                if (qtde == "1")
-                                {
-                                    blueLine.Attributes.Add("style", "transform:translateX(-240px)");
-                                }
-                                else if (qtde == "2")
-                                {
-                                    blueLine.Attributes.Add("style", "transform:translateX(-180px)");
-                                }
-                                else if (qtde == "3")
-                                {
-                                    blueLine.Attributes.Add("style", "transform:translateX(-120px)");
-                                }
-                                else if (qtde == "4")
-                                {
-                                    blueLine.Attributes.Add("style", "transform:translateX(-60px)");
-                                }
-                                else if (qtde == "5")
-                                {
-                                    blueLine.Attributes.Add("style", "transform:translateX(0px)");
-                                }
-
-                            }
-                        }
-                    }
+                    blueLine.Attributes.Add("style", "transform:translateX(-120px)");
                 }
-                catch (Exception ex)
+                else if (qtde == "4")
                 {
-                    conexao_SQL.Close();
+                    blueLine.Attributes.Add("style", "transform:translateX(-60px)");
                 }
-
-                try
+                else if (qtde == "5")
                 {
-                    if (conexao_SQL.State != ConnectionState.Open)
-                        conexao_SQL.Open();
-                    String select = "SELECT tipoConta FROM tblCliente where usuario = '" + Session["usuario"] + "'";
-                    using (SqlCommand comando_sql = new SqlCommand(select, conexao_SQL))
-                    {
-                        using (SqlDataReader tabela = comando_sql.ExecuteReader())
-                        {
-                            String tipoConta;
-                            tabela.Read();
-                            if (tabela.HasRows) {
-                                tipoConta = tabela[0].ToString();
-                                if (tipoConta == "p") {
-                                    blueLine.Attributes.Add("style", "transform:translateX(0px)");
-                                    lblPlan.Text = "Plano Premium";
-                                }
-
-                            }
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    conexao_SQL.Close();
+                    blueLine.Attributes.Add("style", "transform:translateX(0px)");
                 }
             }
+
+            if (sql.selectHasRows("tipoConta", "tblCliente", "usuario = '" + Session["usuario"] + "'"))
+            {
+                if (sql.selectCampos("tipoConta", "tblCliente", "usuario = '" + Session["usuario"] + "'")[0] == "p")
+                {
+                    blueLine.Attributes.Add("style", "transform:translateX(0px)");
+                    lblPlan.Text = "Plano Premium";
+                }
+            }
+
         }
 
         protected void deslogar_Click(object sender, EventArgs e)
