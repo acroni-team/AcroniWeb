@@ -46,9 +46,9 @@ namespace BLL
             sql.inserirUsuario(nome, usu, email, cpf, senha);
         }
 
-        public DataSet primeiroGaleria(string usu)
+        public DataSet retornaDs(string select)
         {
-            return sql.primeiroGaleria(usu);
+            return sql.retornaDs(select);
         }
 
         public bool segundoGaleria(string usu)

@@ -134,7 +134,7 @@ namespace DAL
             }
         }
 
-        public DataSet primeiroGaleria(string usu)
+        public DataSet retornaDs(string select)
         {
             DataSet ds = new DataSet();
             using (SqlConnection conexao_SQL = new SqlConnection(DAL.Conexao.nome_conexao))
@@ -143,7 +143,7 @@ namespace DAL
                 {
                     if (conexao_SQL.State != ConnectionState.Open)
                         conexao_SQL.Open();
-                    String select = "SELECT * FROM tblColecao c  INNER JOIN tblCliente cl ON cl.id_cliente = c.id_cliente AND usuario ='" + usu + "'";
+                    
                     using (SqlDataAdapter da = new SqlDataAdapter(select, conexao_SQL))
                     {
                         da.Fill(ds);

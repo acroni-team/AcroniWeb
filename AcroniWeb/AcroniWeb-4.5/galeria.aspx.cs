@@ -18,28 +18,28 @@ namespace AcroniWeb_4._5
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Nome.Text = Session["usuario"].ToString();
-            //DataSet ds = sql.primeiroGaleria(Session["usuario"].ToString());
-            //if (!Page.IsPostBack)
-            //{
-            //    DataList1.DataSource = ds.Tables[0];
-            //    DataList1.DataBind();
-            //}
+            Nome.Text = Session["usuario"].ToString();
+            DataSet ds = sql.retornaDs("SELECT * FROM tblColecao c  INNER JOIN tblCliente cl ON cl.id_cliente = c.id_cliente AND usuario ='" + Session["usuario"].ToString() + "'");
+            if (!Page.IsPostBack)
+            {
+                DataList1.DataSource = ds.Tables[0];
+                DataList1.DataBind();
+            }
 
-            //if (sql.segundoGaleria(Session["usuario"].ToString()))
-            //{
-            //    imgStatus.Attributes.Add("style", "display:none");
-            //    header.Attributes["class"] = "galeria-header is-showing";
-            //}
-            //else
-            //{
-            //    imgStatus.Attributes.Add("style", "display:block");
-            //    header.Attributes["class"] = "galeria-header";
-            //    ds.Tables[0].Rows[0].Delete();
-            //    DataList1.DataSource = ds;
-            //    DataList1.DataBind();
-            //}
-                
+            if (sql.segundoGaleria(Session["usuario"].ToString()))
+            {
+                imgStatus.Attributes.Add("style", "display:none");
+                header.Attributes["class"] = "galeria-header is-showing";
+            }
+            else
+            {
+                imgStatus.Attributes.Add("style", "display:block");
+                header.Attributes["class"] = "galeria-header";
+                ds.Tables[0].Rows[0].Delete();
+                DataList1.DataSource = ds;
+                DataList1.DataBind();
+            }
+
         }
     }
 }
