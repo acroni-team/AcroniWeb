@@ -882,7 +882,47 @@ F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\AcroniWeb-4.5\obj\Debug\Ac
 F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csproj.CopyComplete
 F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
 F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
-F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\AcroniWeb-4.5\bin\BLL.dll
-F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\AcroniWeb-4.5\bin\DAL.dll
-F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\AcroniWeb-4.5\bin\BLL.pdb
-F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\AcroniWeb-4.5\bin\DAL.pdb
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\x64\libsass.dll
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\LibSassHost.dll
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\Owin.dll
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\WebGrease.dll
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\LibSassHost.xml
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojResolveAssemblyReference.cache
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+C:\Users\Lab\Desktop\AcroniWeb-9f54f4c7b22e515a37eb783bf2fc60fce973de8d\AcroniWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\x64\libsass.dll
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll.config
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.dll
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\AcroniWeb-4.5.pdb
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\Antlr3.Runtime.dll
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\LibSassHost.dll
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\Newtonsoft.Json.dll
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\Owin.dll
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\System.Web.Optimization.dll
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\WebGrease.dll
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\Antlr3.Runtime.pdb
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\LibSassHost.xml
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\Newtonsoft.Json.xml
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\System.Web.Optimization.xml
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojResolveAssemblyReference.cache
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
+C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb

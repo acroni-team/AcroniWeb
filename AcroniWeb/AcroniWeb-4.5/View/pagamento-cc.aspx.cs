@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace AcroniWeb_4._5
+{
+    public partial class pagamento_cc : System.Web.UI.Page
+    {
+        PagamentoCC p = new PagamentoCC();
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            p.pageLoad(imgCards, informe);
+        }
+    }
+}

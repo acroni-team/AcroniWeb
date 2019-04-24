@@ -96,8 +96,8 @@
     <None Include="assets\styles\3-layout\_footer.scss" />
     <None Include="assets\styles\4-modules\_video.scss" />
     <None Include="assets\styles\4-modules\_checkbox.scss" />
-    <Content Include="cadastro.aspx" />
-    <Content Include="colecao.aspx" />
+    <Content Include="View\cadastro.aspx" />
+    <Content Include="View\colecao.aspx" />
     <Content Include="Connected Services\WSCorreiosFrete\AcroniWeb_4._5.WSCorreiosFrete.cResultado.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -114,7 +114,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="construct.aspx" />
+    <Content Include="View\construct.aspx" />
     <Content Include="AcroniWeb.cd" />
     <None Include="Connected Services\WSCorreiosFrete\CalcPrecoPrazo.wsdl" />
     <None Include="assets\styles\5-pages\_cadastro.scss" />
@@ -133,11 +133,11 @@
     <None Include="assets\styles\5-pages\_loja.scss" />
     <None Include="assets\styles\1-tools\_preload.scss" />
     <None Include="assets\styles\2-base\_global.scss" />
-    <Content Include="default.aspx" />
-    <Content Include="download.aspx" />
-    <Content Include="email.html" />
-    <Content Include="GetImage.aspx" />
-    <Content Include="GetImageTeclado.aspx" />
+    <Content Include="View\default.aspx" />
+    <Content Include="View\download.aspx" />
+    <Content Include="View\email.html" />
+    <Content Include="View\GetImage.aspx" />
+    <Content Include="View\GetImageTeclado.aspx" />
     <Content Include="assets\img\acroni-logo.png" />
     <Content Include="assets\img\acroni.png" />
     <Content Include="assets\img\arrow-circle-right-solid5.png" />
@@ -181,8 +181,8 @@
     <Content Include="assets\img\team\picepalm.jpg" />
     <Content Include="assets\scripts\vendors\angular.min.js" />
     <Content Include="assets\scripts\logado.js" />
-    <Content Include="minha-conta.aspx" />
-    <Content Include="galeria.aspx" />
+    <Content Include="View\minha-conta.aspx" />
+    <Content Include="View\galeria.aspx" />
     <Content Include="assets\img\apple.jpg" />
     <Content Include="assets\img\apple.png" />
     <Content Include="assets\img\demo-acroni.jpg" />
@@ -215,26 +215,35 @@
     <Content Include="assets\scripts\vendors\jquery.nicescroll.min.js" />
     <Content Include="assets\scripts\vendors\jquery.smoothState.js" />
     <Content Include="assets\scripts\main.js" />
-    <Content Include="loja.aspx" />
-    <Content Include="pagamento-cc.aspx" />
-    <Content Include="pagamento-dc.aspx" />
-    <Content Include="pagamento.aspx" />
+    <Content Include="View\loja.aspx" />
+    <Content Include="View\pagamento-cc.aspx" />
+    <Content Include="View\pagamento-dc.aspx" />
+    <Content Include="View\pagamento.aspx" />
     <Content Include="assets\video\Propaganda.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cadastro.aspx.cs">
+    <Compile Include="Controller\Cadastro.cs" />
+    <Compile Include="Controller\Default.cs" />
+    <Compile Include="Controller\Loja.cs" />
+    <Compile Include="Controller\MinhaConta.cs" />
+    <Compile Include="Controller\PagamentoCC.cs" />
+    <Compile Include="View\cadastro.aspx.cs">
       <DependentUpon>cadastro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="cadastro.aspx.designer.cs">
+    <Compile Include="View\cadastro.aspx.designer.cs">
       <DependentUpon>cadastro.aspx</DependentUpon>
     </Compile>
-    <Compile Include="colecao.aspx.cs">
+    <Compile Include="Model\Conexao.cs" />
+    <Compile Include="Model\SQLMetodos.cs" />
+    <Compile Include="Controller\Utilitarios.cs" />
+    <Compile Include="Controller\Valida.cs" />
+    <Compile Include="View\colecao.aspx.cs">
       <DependentUpon>colecao.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="colecao.aspx.designer.cs">
+    <Compile Include="View\colecao.aspx.designer.cs">
       <DependentUpon>colecao.aspx</DependentUpon>
     </Compile>
     <Compile Include="Connected Services\WSCorreiosFrete\Reference.cs">
@@ -242,101 +251,101 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="construct.aspx.cs">
+    <Compile Include="View\construct.aspx.cs">
       <DependentUpon>construct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="construct.aspx.designer.cs">
+    <Compile Include="View\construct.aspx.designer.cs">
       <DependentUpon>construct.aspx</DependentUpon>
     </Compile>
-    <Compile Include="default.aspx.cs">
+    <Compile Include="View\default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="default.aspx.designer.cs">
+    <Compile Include="View\default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="download.aspx.cs">
+    <Compile Include="View\download.aspx.cs">
       <DependentUpon>download.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="download.aspx.designer.cs">
+    <Compile Include="View\download.aspx.designer.cs">
       <DependentUpon>download.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GetImage.aspx.cs">
+    <Compile Include="View\GetImage.aspx.cs">
       <DependentUpon>GetImage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GetImage.aspx.designer.cs">
+    <Compile Include="View\GetImage.aspx.designer.cs">
       <DependentUpon>GetImage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GetImageTeclado.aspx.cs">
+    <Compile Include="View\GetImageTeclado.aspx.cs">
       <DependentUpon>GetImageTeclado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GetImageTeclado.aspx.designer.cs">
+    <Compile Include="View\GetImageTeclado.aspx.designer.cs">
       <DependentUpon>GetImageTeclado.aspx</DependentUpon>
     </Compile>
-    <Compile Include="minha-conta.aspx.cs">
+    <Compile Include="View\minha-conta.aspx.cs">
       <DependentUpon>minha-conta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="minha-conta.aspx.designer.cs">
+    <Compile Include="View\minha-conta.aspx.designer.cs">
       <DependentUpon>minha-conta.aspx</DependentUpon>
     </Compile>
-    <Compile Include="galeria.aspx.cs">
+    <Compile Include="View\galeria.aspx.cs">
       <DependentUpon>galeria.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="galeria.aspx.designer.cs">
+    <Compile Include="View\galeria.aspx.designer.cs">
       <DependentUpon>galeria.aspx</DependentUpon>
     </Compile>
-    <Compile Include="layout.Master.cs">
+    <Compile Include="View\layout.Master.cs">
       <DependentUpon>layout.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="layout.Master.designer.cs">
+    <Compile Include="View\layout.Master.designer.cs">
       <DependentUpon>layout.Master</DependentUpon>
     </Compile>
-    <Compile Include="logado.Master.cs">
+    <Compile Include="View\logado.Master.cs">
       <DependentUpon>logado.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="logado.Master.designer.cs">
+    <Compile Include="View\logado.Master.designer.cs">
       <DependentUpon>logado.Master</DependentUpon>
     </Compile>
-    <Compile Include="loja.aspx.cs">
+    <Compile Include="View\loja.aspx.cs">
       <DependentUpon>loja.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="loja.aspx.designer.cs">
+    <Compile Include="View\loja.aspx.designer.cs">
       <DependentUpon>loja.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pagamento-cc.aspx.cs">
+    <Compile Include="View\pagamento-cc.aspx.cs">
       <DependentUpon>pagamento-cc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pagamento-cc.aspx.designer.cs">
+    <Compile Include="View\pagamento-cc.aspx.designer.cs">
       <DependentUpon>pagamento-cc.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pagamento-dc.aspx.cs">
+    <Compile Include="View\pagamento-dc.aspx.cs">
       <DependentUpon>pagamento-dc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pagamento-dc.aspx.designer.cs">
+    <Compile Include="View\pagamento-dc.aspx.designer.cs">
       <DependentUpon>pagamento-dc.aspx</DependentUpon>
     </Compile>
-    <Compile Include="pagamento.aspx.cs">
+    <Compile Include="View\pagamento.aspx.cs">
       <DependentUpon>pagamento.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pagamento.aspx.designer.cs">
+    <Compile Include="View\pagamento.aspx.designer.cs">
       <DependentUpon>pagamento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="layout.Master" />
+    <Content Include="View\layout.Master" />
     <Content Include="assets\styles\0-helpers\_mixin.scss" />
     <Content Include="assets\fonts\open\OpenSans-Bold.ttf" />
     <Content Include="assets\fonts\open\OpenSans-BoldItalic.ttf" />
@@ -358,7 +367,7 @@
     <Content Include="assets\fonts\qanelas\Qanelas-SemiBold.ttf" />
     <Content Include="assets\fonts\qanelas\Qanelas-Thin.ttf" />
     <Content Include="assets\fonts\qanelas\Qanelas-UltraLight.ttf" />
-    <Content Include="logado.Master" />
+    <Content Include="View\logado.Master" />
     <Content Include="assets\styles\5-pages\_pagamento.scss" />
     <Content Include="assets\fonts\kredit\kredit back.ttf" />
     <Content Include="assets\fonts\kredit\kredit front.ttf" />
@@ -378,15 +387,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\WSCorreiosFrete\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{923f6588-690e-4134-b7a1-1cf4f4de3b54}</Project>
-      <Name>BLL</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="classes\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
