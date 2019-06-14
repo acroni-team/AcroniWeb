@@ -926,3 +926,7 @@ C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\bin\System.Web.Opt
 C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.csprojResolveAssemblyReference.cache
 C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.dll
 C:\Users\Lab\Desktop\AcroniWebMVClixo\AcroniWeb\AcroniWeb-4.5\obj\Debug\AcroniWeb-4.5.pdb
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\AcroniWeb-4.5\bin\Boleto2Net.dll
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\AcroniWeb-4.5\bin\NReco.PdfGenerator.dll
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\AcroniWeb-4.5\bin\Boleto2Net.pdb
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\AcroniWeb-4.5\bin\NReco.PdfGenerator.xml

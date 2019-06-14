@@ -1,0 +1,34 @@
+C:\Users\Marcio\Desktop\Recursos\Referencias\Boleto2.Net\Boleto2Net.dll
+C:\Users\Marcio\Desktop\Recursos\Referencias\Boleto2.Net\Boleto2Net.pdb
+C:\Users\Marcio\Desktop\Temp\boleto2net-master\Boleto2.Net\obj\Debug\Boleto2Net.Html.resources
+C:\Users\Marcio\Desktop\Temp\boleto2net-master\Boleto2.Net\obj\Debug\Boleto2.Net.csproj.GenerateResource.cache
+C:\Users\Marcio\Desktop\Temp\boleto2net-master\Boleto2.Net\obj\Debug\Boleto2.Net.csproj.CoreCompileInputs.cache
+C:\Users\Marcio\Desktop\Temp\boleto2net-master\Boleto2.Net\obj\Debug\Boleto2.Net.csproj.CopyComplete
+C:\Users\Marcio\Desktop\Temp\boleto2net-master\Boleto2.Net\obj\Debug\Boleto2Net.dll
+C:\Users\Marcio\Desktop\Temp\boleto2net-master\Boleto2.Net\obj\Debug\Boleto2Net.pdb
+C:\Users\Marcio\Desktop\Temp\boleto2net-master\Boleto2.Net\obj\Debug\Boleto2.Net.csprojAssemblyReference.cache
+D:\Projetos Youtube\Recursos\Referencias\Boleto2.Net\Boleto2Net.dll
+D:\Projetos Youtube\Recursos\Referencias\Boleto2.Net\Boleto2Net.pdb
+D:\Projetos Youtube\ProjetoGerarBoleto\boleto2net-master\Boleto2.Net\obj\Debug\Boleto2.Net.csprojResolveAssemblyReference.cache
+D:\Projetos Youtube\ProjetoGerarBoleto\boleto2net-master\Boleto2.Net\obj\Debug\Boleto2Net.Html.resources
+D:\Projetos Youtube\ProjetoGerarBoleto\boleto2net-master\Boleto2.Net\obj\Debug\Boleto2.Net.csproj.GenerateResource.Cache
+D:\Projetos Youtube\ProjetoGerarBoleto\boleto2net-master\Boleto2.Net\obj\Debug\Boleto2.Net.csproj.CoreCompileInputs.cache
+D:\Projetos Youtube\ProjetoGerarBoleto\boleto2net-master\Boleto2.Net\obj\Debug\Boleto2Net.dll
+D:\Projetos Youtube\ProjetoGerarBoleto\boleto2net-master\Boleto2.Net\obj\Debug\Boleto2Net.pdb
+D:\Recursos\Referencias\Boleto2.Net\Boleto2Net.dll
+D:\Recursos\Referencias\Boleto2.Net\Boleto2Net.pdb
+D:\Projetos Youtube\BoletoNet\Boleto2.Net\obj\Debug\Boleto2.Net.csprojResolveAssemblyReference.cache
+D:\Projetos Youtube\BoletoNet\Boleto2.Net\obj\Debug\Boleto2Net.Html.resources
+D:\Projetos Youtube\BoletoNet\Boleto2.Net\obj\Debug\Boleto2.Net.csproj.GenerateResource.Cache
+D:\Projetos Youtube\BoletoNet\Boleto2.Net\obj\Debug\Boleto2.Net.csproj.CoreCompileInputs.cache
+D:\Projetos Youtube\BoletoNet\Boleto2.Net\obj\Debug\Boleto2Net.dll
+D:\Projetos Youtube\BoletoNet\Boleto2.Net\obj\Debug\Boleto2Net.pdb
+F:\Gustavo Palma\Documents\GitHub\Recursos\Referencias\Boleto2.Net\Boleto2Net.dll
+F:\Gustavo Palma\Documents\GitHub\Recursos\Referencias\Boleto2.Net\Boleto2Net.pdb
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\Boleto2.Net\obj\Debug\Boleto2.Net.csprojAssemblyReference.cache
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\Boleto2.Net\obj\Debug\Boleto2Net.Html.resources
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\Boleto2.Net\obj\Debug\Boleto2.Net.csproj.GenerateResource.cache
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\Boleto2.Net\obj\Debug\Boleto2.Net.csproj.CoreCompileInputs.cache
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\Boleto2.Net\obj\Debug\Boleto2.Net.csproj.CopyComplete
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\Boleto2.Net\obj\Debug\Boleto2Net.dll
+F:\Gustavo Palma\Documents\GitHub\AcroniWeb\AcroniWeb\Boleto2.Net\obj\Debug\Boleto2Net.pdb

@@ -67,7 +67,7 @@
                     </div>
 
                     <div class="textbox-overflow overflow-typeB  textbox-with-button dc">
-                        <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button button-dc dark minha-conta disabled" disabled />
+                        <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button button-dc dark minha-conta" OnClick="btnSalva_Click"/>
                     </div>
                 </div>
             </div>

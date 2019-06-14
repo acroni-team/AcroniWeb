@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Boleto2Net;
 
 namespace AcroniWeb_4._5
 {
@@ -18,6 +20,7 @@ namespace AcroniWeb_4._5
        
         protected void btnSalva_Click(object sender, EventArgs e)
         {
+            
             
         }
     }
