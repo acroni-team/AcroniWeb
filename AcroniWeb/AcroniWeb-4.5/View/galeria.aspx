@@ -12,7 +12,7 @@
                     <a href="<%# "colecao.aspx?id=" + Eval("id_colecao") %>"><asp:Image ID="imgColecao" class="img-colecao" runat="server" ImageUrl='<%# "GetImage.aspx?id=" + Eval("id_colecao") %>' /></a>
                 </ItemTemplate>
             </asp:DataList>
-            <asp:Image ID="imgStatus" class="galeria-status" runat="server"  ImageUrl='assets/img/galeria-vazia.png' />
+            <asp:Image ID="imgStatus" class="galeria-status" runat="server"  ImageUrl='../assets/img/galeria-vazia.png' />
         </div>
     </div>
       <script>

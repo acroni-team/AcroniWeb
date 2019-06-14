@@ -14,19 +14,19 @@
             <div class="formas-pagamento">
                 <a id="pagamentoCC" href="pagamento-cc.aspx?type=cc">
                     <div class="container-logado">
-                        <asp:Image ID="cartaoCredito" runat="server" ImageUrl='assets/img/pagamento/cc.png' />
+                        <asp:Image ID="cartaoCredito" runat="server" ImageUrl='../assets/img/pagamento/cc.png' />
                         <p>Cartão de crédito</p>
                     </div>
                 </a>
                 <a id="pagamentoCD" href="pagamento-cc.aspx?type=cd">
                     <div class="container-logado">
-                        <asp:Image ID="cartaoDebito" runat="server" ImageUrl='assets/img/pagamento/cd.png' />
+                        <asp:Image ID="cartaoDebito" runat="server" ImageUrl='../assets/img/pagamento/cd.png' />
                         <p>Cartão de débito</p>
                     </div>
                 </a>
                 <a href="pagamento-dc.aspx">
                     <div class="container-logado">
-                        <asp:Image ID="debitoConta" CssClass="debitoConta" runat="server" ImageUrl='assets/img/pagamento/dc.png' />
+                        <asp:Image ID="debitoConta" CssClass="debitoConta" runat="server" ImageUrl='../assets/img/pagamento/dc.png' />
                         <p>Débito em conta</p>
                     </div>
                 </a>

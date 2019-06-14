@@ -13,6 +13,12 @@ namespace AcroniWeb_4._5
         protected void Page_Load(object sender, EventArgs e)
         {
             p.pageLoad(imgCards, informe);
+            btnSalva.Enabled = true;
+        }
+       
+        protected void btnSalva_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

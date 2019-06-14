@@ -13,12 +13,12 @@ public class PagamentoCC
         if (type != "cc")
         {
             informe.Text += "débito";
-            imgCards.ImageUrl = "assets/img/pagamento/cd.png";
+            imgCards.ImageUrl = "../assets/img/pagamento/cd.png";
         }
         else
         {
             informe.Text += "crédito";
-            imgCards.ImageUrl = "assets/img/pagamento/cc.png";
+            imgCards.ImageUrl = "../assets/img/pagamento/cc.png";
         }
     }
 

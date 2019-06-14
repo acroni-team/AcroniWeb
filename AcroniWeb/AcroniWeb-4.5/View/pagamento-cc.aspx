@@ -4,7 +4,8 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="right right-logado right-pagamento-cc" ng-app="">
+    
+    <div class="right right-logado right-pagamento-cc" ng-app="cartao">
         <div class="cabecalho cabecalho-cc">
             <div class="cabecalho-info">
                 <asp:Label ID="informe" runat="server" class="cartaoTitle" Text="Informe os dados do seu cartão de "></asp:Label>
@@ -13,13 +14,13 @@
             </div>
             <asp:Image ID="imgCards" runat="server" />
         </div>
-        <div class="card-section">
+        <div class="card-section" ng-controller="ctrl">
             <div class="align align-cc">
                 <div class="card">
-                    <p ng-bind="numero">5674 7564 7325 32</p>
+                    <p ng-bind="numero"></p>
                     <p ng-bind="nome"></p>
                     <p ng-bind="sobrenome"></p>
-                    <p ng-bind="data">12/19</p>
+                    <p ng-bind="data"></p>
                 </div>
             </div>
             <div class="card-form">
@@ -34,7 +35,7 @@
                             <asp:Label ID="lblSobrenome" class="p" runat="server" Text="Sobrenome"></asp:Label>
                         </div>
                         <div class="textbox-overflow overflow-type3">
-                            <asp:TextBox ID="Numero" runat="server" class="textbox textbox-type3 focus dark" aria-label="Número do cartão" ng-model="numero" onblur="placehoderStay(2);"></asp:TextBox>
+                            <asp:TextBox ID="Numero" runat="server" class="textbox textbox-type3 focus dark cartaozinho" aria-label="Número do cartão" ng-model="numero" ng-change="verificarCartao()" onblur="placehoderStay(2);"></asp:TextBox>
                             <asp:Label ID="lblNumero" class="p" runat="server" Text="Número"></asp:Label>
                         </div>
                         <div class="textbox-overflow overflow-type3">
@@ -46,7 +47,7 @@
                             <asp:Label ID="lblCodigo" class="p" runat="server" Text="Código de segurança"></asp:Label>
                         </div>
                         <div class="textbox-overflow overflow-type3 textbox-with-button">
-                            <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button dark minha-conta disabled" disabled />
+                            <asp:Button ID="btnSalva" runat="server" Text="Salvo" class="button dark minha-conta" OnClick="btnSalva_Click" />
                         </div>
                     </div>
                 </div>
