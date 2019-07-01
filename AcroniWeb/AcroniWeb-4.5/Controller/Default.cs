@@ -12,6 +12,7 @@ public class Default
     Utilitarios ut = new Utilitarios();
     public void pageLoad()
     {
+        sql.update("tblVisita", "1=1", "cont = cont + 1");
         if (Environment.MachineName.Equals("PALMA-PC"))
         {
             Conexao.param = "Data Source = " + Environment.MachineName + "; Initial Catalog = ACRONI_SQL; User ID = Acroni; Password = acroni7";
