@@ -237,6 +237,12 @@ section.blur {
             }
         }
 
+        a {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
         .button-loja {
             width: 80%;
             border-radius: 10px;

@@ -1,0 +1,75 @@
+//-----------
+// Pré-code
+//-----------
+
+.m-div.carrinho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 80px;
+
+    &.completo {
+        opacity: 1;
+
+        .right-carrinho {
+            opacity: 1;
+        }
+
+        .figure-carrinho {
+            opacity: 1;
+        }
+    }
+}
+
+.grid-carrinho{
+    padding: 0px 20px 20px 20px;
+}
+
+.right-carrinho {
+    width:40%;
+}
+.left-carrinho{
+    width:60%;
+    display:flex;
+    flex-direction:column;
+
+    li{
+        width:700px;
+    }
+}
+
+.produto-carrinho {
+    width:100%;
+    height:230px;
+    border-radius:5px;
+    box-shadow: 0px 2px 6px $light-gray;
+    display:flex;
+    align-items:center;
+
+    .figure-carrinho {
+        box-shadow:none;
+        width:300px;
+        background-color:transparent;
+
+
+        &:hover{
+            box-shadow:none;
+        }
+    }
+
+    .desc-carrinho {
+
+        .descricao.nome.carrinho{
+            font-size:20px;
+        }
+
+        div{
+            font-size:30px;
+            span{
+                display:unset;
+                color:#0093ff;
+            }
+        }
+
+    }
+}

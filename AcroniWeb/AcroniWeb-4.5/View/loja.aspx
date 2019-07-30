@@ -151,7 +151,7 @@
                                         <p>Descrição</p>
                                         <asp:Label class="descricao desc" ID="lblDescricao" runat="server" Text=' <%# Bind("descricao") %>'></asp:Label>
                                     </div>
-                                    <asp:Button ID="btnCompra" class="button dark button-loja" runat="server" Text="Comprar agora" />
+                                    <a href="<%# "carrinho.aspx?id=" + Eval("id_produto") %>"><input type="button" class="button dark button-loja" runat="server" value="Comprar agora" /></a>
                                 </div>
                             </div>
                         </div>

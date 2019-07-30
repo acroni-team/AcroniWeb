@@ -98,6 +98,7 @@
     <None Include="assets\styles\4-modules\_video.scss" />
     <None Include="assets\styles\4-modules\_checkbox.scss" />
     <Content Include="View\cadastro.aspx" />
+    <Content Include="View\carrinho.aspx" />
     <Content Include="View\colecao.aspx" />
     <Content Include="Connected Services\WSCorreiosFrete\AcroniWeb_4._5.WSCorreiosFrete.cResultado.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -108,6 +109,7 @@
     <Content Include="Connected Services\WSCorreiosFrete\AcroniWeb_4._5.WSCorreiosFrete.cResultadoServicos.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="assets\styles\5-pages\_carrinho.scss" />
     <None Include="Connected Services\WSCorreiosFrete\CalcPrecoPrazo.disco" />
     <None Include="Connected Services\WSCorreiosFrete\configuration91.svcinfo" />
     <None Include="Connected Services\WSCorreiosFrete\configuration.svcinfo" />
@@ -226,6 +228,7 @@
   <ItemGroup>
     <Compile Include="Controller\Cadastro.cs" />
     <Compile Include="Controller\Default.cs" />
+    <Compile Include="Controller\Carrinho.cs" />
     <Compile Include="Controller\Loja.cs" />
     <Compile Include="Controller\MinhaConta.cs" />
     <Compile Include="Controller\PagamentoCC.cs" />
@@ -240,6 +243,13 @@
     <Compile Include="Model\SQLMetodos.cs" />
     <Compile Include="Controller\Utilitarios.cs" />
     <Compile Include="Controller\Valida.cs" />
+    <Compile Include="View\carrinho.aspx.cs">
+      <DependentUpon>carrinho.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\carrinho.aspx.designer.cs">
+      <DependentUpon>carrinho.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\colecao.aspx.cs">
       <DependentUpon>colecao.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

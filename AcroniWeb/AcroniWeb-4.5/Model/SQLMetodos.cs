@@ -36,10 +36,10 @@ public class SQLMetodos
         {
             if (conexao_SQL.State == ConnectionState.Closed)
                 conexao_SQL.Open();
-            using (SqlCommand comando_sql = new SqlCommand(update, conexao_SQL))
-            {
-                comando_sql.ExecuteNonQuery();
-            }
+            //using (SqlCommand comando_sql = new SqlCommand(update, conexao_SQL))
+            //{
+            //    comando_sql.ExecuteNonQuery();
+            // }
         }
     }
 
