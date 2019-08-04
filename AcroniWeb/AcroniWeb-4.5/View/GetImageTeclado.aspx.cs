@@ -20,7 +20,7 @@ namespace AcroniWeb_4._5
                     if (conexao_SQL.State != ConnectionState.Open)
                         conexao_SQL.Open();
                     string id = Request.QueryString["id"];
-                    String select = "EXEC usp_GetImage "+Session["usuario"]+","+id;
+                    String select = "EXEC usp_GetImageTeclado '"+Session["usuario"].ToString()+"',"+id;
 
                     using (SqlCommand comando_SQL = new SqlCommand(select, conexao_SQL))
                     {

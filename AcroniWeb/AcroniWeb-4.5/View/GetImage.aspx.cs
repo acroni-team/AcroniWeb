@@ -21,7 +21,7 @@ namespace AcroniWeb_4._5
                     if (conexao_SQL.State != ConnectionState.Open)
                         conexao_SQL.Open();
                     string id = Request.QueryString["id"];
-                    String select = "SELECT imagem_colecao FROM tblColecao AS colec INNER JOIN tblCliente AS cli ON cli.id_cliente = colec.id_cliente AND usuario ='" + Session["usuario"] + "' AND id_colecao = @id_colecao";
+                    String select = "EXEC usp_GetImage '"+Session["usuario"].ToString()+"', "+id;
 
                     using (SqlCommand comando_SQL = new SqlCommand(select, conexao_SQL))
                     {
