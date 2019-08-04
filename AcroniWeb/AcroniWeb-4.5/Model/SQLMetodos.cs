@@ -11,7 +11,7 @@ public class SQLMetodos
 
     public bool selectHasRows(string campos, string tabela, string condicao)
     {
-        string select = "SELECT " + campos + " FROM " + tabela + " WHERE " + condicao;
+        string select = "EXEC usp_select '"+campos+"', '"+tabela+"', '"+condicao+"'";
         using (SqlConnection conexao_SQL = new SqlConnection(Conexao.nome_conexao))
         {
             if (conexao_SQL.State == ConnectionState.Closed)
@@ -31,21 +31,22 @@ public class SQLMetodos
 
     public void update(string tabela, string condicao, string novaAtribuicao)
     {
-        string update = "UPDATE " + tabela + " SET " + novaAtribuicao + " WHERE " + condicao;
+        //string update = "UPDATE " + tabela + " SET " + novaAtribuicao + " WHERE " + condicao;
+        string update = "EXEC usp_update "+tabela+", "+condicao+", "+novaAtribuicao;
         using (SqlConnection conexao_SQL = new SqlConnection(Conexao.nome_conexao))
         {
             if (conexao_SQL.State == ConnectionState.Closed)
                 conexao_SQL.Open();
-            //using (SqlCommand comando_sql = new SqlCommand(update, conexao_SQL))
-            //{
-            //    comando_sql.ExecuteNonQuery();
-            // }
+            using (SqlCommand comando_sql = new SqlCommand(update, conexao_SQL))
+            {
+                comando_sql.ExecuteNonQuery();
+            }
         }
     }
 
-    public void updateImagem(byte[] imgBytes, string tabela, string condicao)
+    public void updateImagem(byte[] imgBytes, string usuario)
     {
-        string update = "UPDATE " + tabela + " SET imagem_cliente = (@image) WHERE " + condicao;
+        string update = "EXEC usp_updateImagemCliente @image, '"+usuario+"'";
         using (SqlConnection conexao_SQL = new SqlConnection(Conexao.nome_conexao))
         {
             if (conexao_SQL.State == ConnectionState.Closed)
@@ -78,7 +79,7 @@ public class SQLMetodos
 
     public List<string> selectCampos(string campos, string tabela, string condicao)
     {
-        string select = "SELECT " + campos + " FROM " + tabela + " WHERE " + condicao;
+        string select = "EXEC usp_select '" + campos + "', '" + tabela + "', '" + condicao + "'";
         using (SqlConnection conexao_SQL = new SqlConnection(Conexao.nome_conexao))
         {
             if (conexao_SQL.State == ConnectionState.Closed)
@@ -100,7 +101,7 @@ public class SQLMetodos
 
     public void delete(string tabela, string condicao)
     {
-        string delete = "DELETE FROM " + tabela + " WHERE " + condicao;
+        string delete = "EXEC usp_delete "+tabela+", " + condicao;
         using (SqlConnection conexao_SQL = new SqlConnection(Conexao.nome_conexao))
         {
             if (conexao_SQL.State == ConnectionState.Closed)
@@ -142,7 +143,7 @@ public class SQLMetodos
             {
                 if (conexao_SQL.State != ConnectionState.Open)
                     conexao_SQL.Open();
-                String select = "SELECT imagem_colecao FROM tblColecao AS colec INNER JOIN tblCliente AS cli ON cli.id_cliente = colec.id_cliente AND usuario ='" + usu + "'";
+                String select = "EXEC usp_segundoGaleria "+usu;
 
                 using (SqlCommand comando_SQL = new SqlCommand(select, conexao_SQL))
                 {

@@ -61,6 +61,10 @@
     <script src="../assets/scripts/main.js"></script>
     <script src="../assets/scripts/logado.js"></script>
     <script src="../assets/scripts/verificaCartao.js"></script>
+    <script src="../assets/scripts/calculoFrete.js"></script>
+    <script>
+        $(".textbox.focus").mask('00000-000');
+    </script>
     <script>
         $(window).on('load', function () {
             //$("body").niceScroll({ cursorcolor: "#0093ff", cursorwidth: "10px", cursorborder: "none", horizrailenabled:false });

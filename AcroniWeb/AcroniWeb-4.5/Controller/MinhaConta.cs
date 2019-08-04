@@ -15,16 +15,17 @@ public class MinhaConta
     {
         string urlFotoPerfil = "";
         List<string> campos = new List<string>();
-        if (HttpContext.Current.Session["usuarioNovo"] != null)
+        //HttpContext.Current.Session["usuarioNovo"] = null;
+        if (HttpContext.Current.Session["usuarioNovo"] != null && HttpContext.Current.Session["usuarioNovo"] != HttpContext.Current.Session["usuario"])
         {
-            campos = sql.selectCampos("nome, cpf, cep, email, usuario, senha", "tblCliente", "usuario = '" + HttpContext.Current.Session["usuarioNovo"] + "'");
+            campos = sql.selectCampos("nome, cpf, cep, email, usuario, senha", "tblCliente", "usuario = ''" + HttpContext.Current.Session["usuarioNovo"] + "''");
             object imgObj = sql.selectImagem("imagem_cliente", "tblCliente", "usuario = '" + HttpContext.Current.Session["usuarioNovo"] + "'");
             if (!(imgObj == System.DBNull.Value))
                 urlFotoPerfil = Convert.ToBase64String((byte[])imgObj);
         }
         else
         {
-            campos = sql.selectCampos("nome, cpf, cep, email, usuario, senha", "tblCliente", "usuario = '" + HttpContext.Current.Session["usuario"] + "'");
+            campos = sql.selectCampos("nome, cpf, cep, email, usuario, senha", "tblCliente", "usuario = ''" + HttpContext.Current.Session["usuario"] + "''");
             object imgObj = sql.selectImagem("imagem_cliente", "tblCliente", "usuario = '" + HttpContext.Current.Session["usuario"] + "'");
             if (!(imgObj == System.DBNull.Value))
                 urlFotoPerfil = Convert.ToBase64String((byte[])imgObj);
@@ -87,11 +88,11 @@ public class MinhaConta
                         imgBytes = ut.ConvertImageToByteArray(image, System.Drawing.Imaging.ImageFormat.Gif);
 
 
-                    sql.updateImagem(imgBytes, "tblCliente", "usuario = '" + HttpContext.Current.Session["usuario"] + "'");
+                    sql.updateImagem(imgBytes, HttpContext.Current.Session["usuario"].ToString());
                     IsImageUpload = true;
                 }
             }
-            catch { }
+            catch (Exception e){ }
         }
 
 
@@ -107,7 +108,7 @@ public class MinhaConta
             else if (v.validarNome(nomeSemEspacos))
             {
                 first = true;
-                HttpContext.Current.Session["novosValores"] += "nome = '" + Nome.Text + "'";
+                HttpContext.Current.Session["novosValores"] += "nome = ''" + Nome.Text + "''";
             }
             else
             {
@@ -120,16 +121,16 @@ public class MinhaConta
         {
             if (v.validarCPF(CPF.Text))
             {
-                if (!sql.selectHasRows("*", "tblCliente", "cpf = '" + CPF.Text + "'"))
+                if (!sql.selectHasRows("*", "tblCliente", "cpf = ''" + CPF.Text + "''"))
                 {
                     if (first)
                     {
-                        HttpContext.Current.Session["novosValores"] += ",cpf = '" + CPF.Text + "'";
+                        HttpContext.Current.Session["novosValores"] += ",cpf = ''" + CPF.Text + "''";
 
                     }
                     else
                     {
-                        HttpContext.Current.Session["novosValores"] += "cpf = '" + CPF.Text + "'";
+                        HttpContext.Current.Session["novosValores"] += "cpf = ''" + CPF.Text + "''";
                         first = true;
 
                     }
@@ -142,7 +143,7 @@ public class MinhaConta
             }
             else
             {
-                ut.showErrorMessageByLbl("CPF - Invalido, este cpf não é valido", CPF, lblCPF);
+                ut.showErrorMessageByLbl("CPF - Inválido, este cpf não é válido", CPF, lblCPF);
                 return;
             }
         }
@@ -152,10 +153,10 @@ public class MinhaConta
             if (v.validarCep(CEP.Text))
             {
                 if (first)
-                    HttpContext.Current.Session["novosValores"] += ",cep = '" + CEP.Text + "'";
+                    HttpContext.Current.Session["novosValores"] += ",cep = ''" + CEP.Text + "''";
                 else
                 {
-                    HttpContext.Current.Session["novosValores"] += "cep = '" + CEP.Text + "'";
+                    HttpContext.Current.Session["novosValores"] += "cep = ''" + CEP.Text + "''";
                     first = true;
                 }
             }
@@ -172,16 +173,16 @@ public class MinhaConta
             emailSemEspacos = ut.retirarEspacos(Email.Text);
             if (v.validarEmail(emailSemEspacos))
             {
-                if (!sql.selectHasRows("*", "tblCliente", "email = '" + emailSemEspacos + "'"))
+                if (!sql.selectHasRows("*", "tblCliente", "email = ''" + emailSemEspacos + "''"))
                 {
                     if (first)
                     {
-                        HttpContext.Current.Session["novosValores"] += ",email = '" + emailSemEspacos + "'";
+                        HttpContext.Current.Session["novosValores"] += ",email = ''" + emailSemEspacos + "''";
 
                     }
                     else
                     {
-                        HttpContext.Current.Session["novosValores"] += "email = '" + emailSemEspacos + "'";
+                        HttpContext.Current.Session["novosValores"] += "email = ''" + emailSemEspacos + "''";
                         first = true;
 
                     }
@@ -204,16 +205,18 @@ public class MinhaConta
             string usuSemEspacos = ut.retirarEspacos(Usuario.Text);
             if (v.validarUsu(usuSemEspacos))
             {
-                if (!sql.selectHasRows("*", "tblCliente", "usuario = '" + usuSemEspacos + "'"))
+                if (!sql.selectHasRows("*", "tblCliente", "usuario = ''" + usuSemEspacos + "''"))
                 {
                     if (first)
-                        HttpContext.Current.Session["novosValores"] += ",usuario = '" + usuSemEspacos + "'";
+                        HttpContext.Current.Session["novosValores"] += ",usuario = ''" + usuSemEspacos + "''";
                     else
                     {
-                        HttpContext.Current.Session["novosValores"] += "usuario = '" + usuSemEspacos + "'";
+                        HttpContext.Current.Session["novosValores"] += "usuario = ''" + usuSemEspacos + "''";
                         first = true;
                     }
-                    HttpContext.Current.Session["usuarioNovo"] = usuSemEspacos;
+                    if (!HttpContext.Current.Session["novosValores"].ToString().Contains("email")) {
+                        HttpContext.Current.Session["usuarioNovo"] = usuSemEspacos;
+                    }
                     userChanged = true;
                 }
                 else
@@ -232,10 +235,10 @@ public class MinhaConta
         if (!string.IsNullOrEmpty(Senha.Text))
         {
             if (first)
-                HttpContext.Current.Session["novosValores"] += ",senha = '" + Senha.Text + "'";
+                HttpContext.Current.Session["novosValores"] += ",senha = ''" + Senha.Text + "''";
             else
             {
-                HttpContext.Current.Session["novosValores"] += "senha = '" + Senha.Text + "'";
+                HttpContext.Current.Session["novosValores"] += "senha = ''" + Senha.Text + "''";
                 first = true;
             }
             passChanged = true;
@@ -272,7 +275,9 @@ public class MinhaConta
                 HttpContext.Current.Response.Cookies.Add(cookie);
                 userChanged = true;
             }
+            
         }
+
         if (first)
         {
             if (HttpContext.Current.Session["novosValores"].ToString().Contains("email"))
@@ -281,25 +286,30 @@ public class MinhaConta
                 HttpContext.Current.Session["codigo-mudanca"] = ut.gerarStringConfirmacao();
                 ut.enviarEmailConfirmacao(HttpContext.Current.Session["codigo-mudanca"].ToString(), emailSemEspacos, "Alterar email", "Seu email pode ser redefinido utilizando o código abaixo. Se você não pediu uma troca, finja que nunca nem viu esse email.");
                 modal.Attributes["class"] = "modal-wrap minha-conta is-showing codigo";
+                HttpContext.Current.Session["temp"] = ut.retirarEspacos(Usuario.Text);
                 return;
             }
             else
             {
-                sql.update("tblCliente", "usuario = '" + HttpContext.Current.Session["usuario"] + "'", HttpContext.Current.Session["novosValores"].ToString());
-                HttpContext.Current.Response.Redirect("minha-conta.aspx");
+                string usuSemEspacos = ut.retirarEspacos(Usuario.Text);
+                sql.update("tblCliente", "'usuario = ''" + HttpContext.Current.Session["usuario"].ToString() + "'''", "'"+HttpContext.Current.Session["novosValores"].ToString()+"'");
+                               
             }
         }
         else if (IsImageUpload)
         {
             HttpContext.Current.Response.Redirect("minha-conta.aspx");
         }
+        HttpContext.Current.Response.Redirect("minha-conta.aspx");
     }
 
-    public void btnValidaEmail(TextBox txtValidaEmail)
+    public void btnValidaEmail(TextBox txtValidaEmail, TextBox Usuario)
     {
         if (txtValidaEmail.Text.ToLower().Equals(HttpContext.Current.Session["codigo-mudanca"].ToString().ToLower()))
         {
-            sql.update("tblCliente", "usuario = '" + HttpContext.Current.Session["usuario"] + "'", HttpContext.Current.Session["novosValores"].ToString());
+            sql.update("tblCliente", "'usuario = ''" + HttpContext.Current.Session["usuario"].ToString() + "'''", "'"+HttpContext.Current.Session["novosValores"].ToString()+"'");
+            HttpContext.Current.Session["usuarioNovo"] = HttpContext.Current.Session["temp"];
+            HttpContext.Current.Session["temp"] = null;
             HttpContext.Current.Response.Redirect("minha-conta.aspx");
         }
     }
@@ -308,15 +318,15 @@ public class MinhaConta
     {
         button.Attributes.Add("style", "display:none");
         btnReload.Attributes.Add("style", "display:block;float:initial;margin: auto;");
-        sql.update("tblCliente", "usuario = '" + HttpContext.Current.Session["usuario"] + "'", "tipoConta = 'p'");
+        sql.update("tblCliente", "'usuario = ''" + HttpContext.Current.Session["usuario"] + "'''", "'tipoConta = ''p'''");
         ut.showErrorMessage("Não era pra ser assim!", "Agora você é um usuário premium, usou de meios ilícitos mais é", titleErro, msgErro, modal, modalback, overflow);
     }
 
     public void btnExcluiConta()
     {
-        List<string> id = sql.selectCampos("id_cliente", "tblCliente", "usuario = '" + HttpContext.Current.Session["usuario"] + "'");
-        sql.delete("tblColecao", "id_cliente = " + id[0]);
-        sql.delete("tblCliente", "id_cliente = " + id[0]);
+        List<string> id = sql.selectCampos("id_cliente", "tblCliente", "usuario = ''" + HttpContext.Current.Session["usuario"] + "''");
+        sql.delete("tblColecao", "'id_cliente = " + id[0]+"'");
+        sql.delete("tblCliente", "'id_cliente = " + id[0]+"'");
         HttpContext.Current.Response.Redirect("default.aspx");
     }
 

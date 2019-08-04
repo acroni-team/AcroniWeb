@@ -62,6 +62,10 @@
     <script src="../assets/scripts/vendors/jquery.mask.min.js"></script>
     <script src="../assets/scripts/vendors/angular.min.js"></script>
     <script src="../assets/scripts/main.js"></script>
+    <script src="../assets/scripts/calculoFrete.js"></script>
+    <script>
+        $(".textbox.focus.loja").mask('00000-000');
+    </script>
     <script>
             $(window).on('load', function () {
                 $("body").niceScroll({ cursorcolor: "#ccc", cursorwidth: "10px", cursorborder: "none", horizrailenabled: false, autohidemode: 'leave', cursoropacitymin: 1, zindex: '99999999' });

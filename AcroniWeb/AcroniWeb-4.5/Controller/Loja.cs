@@ -18,11 +18,11 @@ public class Loja
             logoacr.Attributes["href"] = "galeria.aspx";
         }
 
-        ds = sql.retornaDs("SELECT TOP 3 * FROM tblProdutoDaLoja");
+        ds = sql.retornaDs("EXEC usp_retornaDs 0,loja1");
         DataList1.DataSource = ds.Tables[0];
         DataList1.DataBind();
 
-        ds = sql.retornaDs("SELECT * FROM tblProdutoDaloja WHERE id_produto > 3");
+        ds = sql.retornaDs("EXEC usp_retornaDs 0,loja2");
         DataList2.DataSource = ds.Tables[0];
         DataList2.DataBind();
     }

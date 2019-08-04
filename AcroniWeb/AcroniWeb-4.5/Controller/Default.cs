@@ -12,7 +12,7 @@ public class Default
     Utilitarios ut = new Utilitarios();
     public void pageLoad()
     {
-        sql.update("tblVisita", "1=1", "cont = cont + 1");
+        //sql.update("tblVisita", "1=1", "cont = cont + 1");
         if (Environment.MachineName.Equals("PALMA-PC"))
         {
             Conexao.param = "Data Source = " + Environment.MachineName + "; Initial Catalog = ACRONI_SQL; User ID = Acroni; Password = acroni7";
@@ -22,7 +22,7 @@ public class Default
 
         if (System.Web.HttpContext.Current.Request.Cookies["credenciais"] != null)
         {
-            if (sql.selectHasRows("*", "tblCliente", "usuario='" + System.Web.HttpContext.Current.Request.Cookies["credenciais"]["usuario"] + "' AND senha='" + HttpContext.Current.Request.Cookies["credenciais"]["senha"] + "'"))
+            if (sql.selectHasRows("*", "tblCliente", "usuario=''" + System.Web.HttpContext.Current.Request.Cookies["credenciais"]["usuario"] + "'' AND senha=''" + HttpContext.Current.Request.Cookies["credenciais"]["senha"] + "''"))
             {
                 HttpContext.Current.Session["usuario"] = System.Web.HttpContext.Current.Request.Cookies["credenciais"]["usuario"];
                 HttpContext.Current.Session["logado"] = "1";
@@ -38,11 +38,11 @@ public class Default
             {
                 try
                 {
-                    if (sql.selectHasRows("*", "tblCliente", "usuario='" + txtUsu.Text + "'"))
+                    if (sql.selectHasRows("*", "tblCliente", "usuario=''" + txtUsu.Text + "''"))
                     {
                         txtUsu.Attributes.Add("style", "border-color:#0093ff");
 
-                        if (sql.selectHasRows("usuario", "tblCliente", "senha='" + txtPass.Text + "' and usuario='" + txtUsu.Text + "'"))
+                        if (sql.selectHasRows("usuario", "tblCliente", "senha=''" + txtPass.Text + "'' and usuario=''" + txtUsu.Text + "''"))
                         {
                             HttpContext.Current.Session["logado"] = "1";
                             HttpContext.Current.Session["usuario"] = txtUsu.Text;
@@ -80,15 +80,15 @@ public class Default
             {
                 try
                 {
-                    if (sql.selectHasRows("*", "tblCliente", "email='" + txtUsu.Text + "'"))
+                    if (sql.selectHasRows("*", "tblCliente", "email=''" + txtUsu.Text + "''"))
                     {
                         txtUsu.Attributes.Add("style", "border-color:#0093ff");
 
-                        if (sql.selectHasRows("usuario", "tblCliente", "senha='" + txtPass.Text + "' and email='" + txtUsu.Text + "'"))
+                        if (sql.selectHasRows("usuario", "tblCliente", "senha=''" + txtPass.Text + "'' and email=''" + txtUsu.Text + "''"))
                         {
                             HttpContext.Current.Session["logado"] = "1";
 
-                            HttpContext.Current.Session["usuario"] = sql.selectCampos("usuario", "tblCliente", "email= '" + txtUsu.Text + "'")[0];
+                            HttpContext.Current.Session["usuario"] = sql.selectCampos("usuario", "tblCliente", "email= ''" + txtUsu.Text + "''")[0];
                             if (ckbLogin.Checked)
                             {
                                 HttpCookie cookie = new HttpCookie("credenciais");
@@ -141,7 +141,7 @@ public class Default
         step1.Attributes["class"] = "modal-body modal-body-step1 is-showing";
         bool existe = true;
 
-        if (sql.selectHasRows("usuario", "tblCliente", "email = '" + txtEmail.Text + "'"))
+        if (sql.selectHasRows("usuario", "tblCliente", "email = ''" + txtEmail.Text + "''"))
             existe = true;
         else
             existe = false;
@@ -201,7 +201,7 @@ public class Default
         }
         else if (txtSenha.Text.Equals(txtCSenha.Text))
         {
-            sql.update("tblCliente", "email = '" + HttpContext.Current.Session["email"] + "'", "senha = '" + txtSenha.Text + "'");
+            sql.update("tblCliente", "'email = ''" + HttpContext.Current.Session["email"] + "'''", "'senha = ''" + txtSenha.Text + "'''");
             HttpContext.Current.Response.Redirect("~/View/default.aspx");
         }
         else

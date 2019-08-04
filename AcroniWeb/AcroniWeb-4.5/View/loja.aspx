@@ -12,10 +12,9 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
-    <script src="../js/calculoFrete.js"></script>
-    <script>
-        $(".textbox.focus").mask('00000-000');
-    </script>
+    
+    
+    
 </asp:Content>
 
 
@@ -165,6 +164,6 @@
     </div>
     <!--<a href="Produto<%# Eval("id") %>.aspx"><div class="info">-->
     <!--<a href="Produto<%# Eval("id") %>.aspx">Produto <%# Eval("id") %></a>-->
-
+    
 </asp:Content>
 

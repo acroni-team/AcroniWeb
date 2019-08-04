@@ -20,7 +20,7 @@ namespace AcroniWeb_4._5
                     if (conexao_SQL.State != ConnectionState.Open)
                         conexao_SQL.Open();
                     string id = Request.QueryString["id"];
-                    String select = "SELECT imagem_teclado FROM tblTecladoCustomizado AS tec INNER JOIN tblCliente AS cli ON cli.id_cliente = tec.id_cliente AND usuario ='" + Session["usuario"] + "' AND id_teclado_customizado = @id_teclado_customizado";
+                    String select = "EXEC usp_GetImage "+Session["usuario"]+","+id;
 
                     using (SqlCommand comando_SQL = new SqlCommand(select, conexao_SQL))
                     {
@@ -32,10 +32,7 @@ namespace AcroniWeb_4._5
                             {
                                 byte[] imgData = (byte[])tabela["imagem_teclado"];
                                 Response.BinaryWrite(imgData);
-                                //byte[] imgBytes = (byte[])tabela[0];
-                                //string imgString = Convert.ToBase64String(imgBytes);
-                                //imgStatus.Attributes.Add("style", "display:none");
-                                //header.Attributes["class"] = "galeria-header is-showing";
+                                
                             }
 
                         }

@@ -30,7 +30,7 @@ namespace AcroniWeb_4._5
 
         protected void btnValidaEmail_Click(object sender, EventArgs e)
         {
-            m.btnValidaEmail(txtValidaEmail);
+            m.btnValidaEmail(txtValidaEmail, Usuario);
         }
 
         //Alterar plano lol
