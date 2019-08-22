@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/layout.Master" AutoEventWireup="true" CodeBehind="carrinho.aspx.cs" Inherits="AcroniWeb_4._5.View.carrinho" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="menu" runat="server">
     <div id="logotext">
@@ -30,6 +31,15 @@
                                          <asp:Label class="preco" ID="lblPreco" runat="server" Text='<%# Bind("preco") %>'></asp:Label>
                                      </div>
                                 </div>
+                                <div class="btns-carrinho">
+                                     <asp:Button ID="BtnDeleteItem" runat="server" class="btn-delete material-icons" Text="x"/>
+                                     <i class="delete material-icons"></i>   
+                                     <div class="qtde-carrinho">
+                                         <i class="menos material-icons"></i> 
+                                         <asp:Label class="lbl-qtde" ID="lblQtde" runat="server" Text='1'></asp:Label>
+                                         <i class="mais material-icons"></i>
+                                     </div>
+                                </div>
                             </div>
                         </li>
                     </ItemTemplate>
@@ -37,7 +47,38 @@
             </ul>
         </div>
         <div class="right right-carrinho">
-            <h1>Resumo da compra</h1>
+            <div class="resumo-compra">
+                <h1 style="margin-bottom: 25px;">Resumo da compra</h1>
+                <div class="resumo-compra-itens">
+                    <ul>
+                        <li class="resumo-item">
+                            <div class="resumo-item-label">
+                                <asp:Label ID="lblSub" runat="server" Text='Subtotal'></asp:Label>
+                            </div>
+                            <div class="resumo-item-valor">
+                                <asp:Label ID="lblPreco" runat="server" Text='R$'></asp:Label>
+                            </div>
+                        </li>
+                        <li class="resumo-item">
+                            <div class="resumo-item-label">
+                                <asp:Label ID="Label2" runat="server" Text='Descontos'></asp:Label>
+                            </div>
+                            <div class="resumo-item-valor">
+                                <asp:Label ID="Label3" runat="server" Text='R$'></asp:Label>
+                            </div>
+                        </li>
+                        <li class="resumo-item">
+                            <div class="resumo-item-label">
+                                <asp:Label ID="Label4" runat="server" Text='Valor-Total'></asp:Label>
+                            </div>
+                            <div class="resumo-item-valor">
+                                <asp:Label ID="Label5" runat="server" Text='R$'></asp:Label>
+                            </div>
+                        </li>
+                    </ul>
+                    <asp:Button ID="btnEntra" class="button dark button-carrinho" type="button" Text="Continuar" OnClientClick="loader('.lds-login','.button-login');" runat="server"  />
+                </div>
+            </div>
         </div>
     </div>
 </asp:Content>

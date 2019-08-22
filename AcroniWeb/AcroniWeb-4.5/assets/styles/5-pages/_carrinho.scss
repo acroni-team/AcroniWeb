@@ -7,6 +7,7 @@
     flex-direction: row;
     align-items: center;
     padding-top: 80px;
+    max-width:1300px;
 
     &.completo {
         opacity: 1;
@@ -28,6 +29,7 @@
 .right-carrinho {
     width:40%;
 }
+
 .left-carrinho{
     width:60%;
     display:flex;
@@ -39,37 +41,147 @@
 }
 
 .produto-carrinho {
-    width:100%;
-    height:230px;
-    border-radius:5px;
+    width: 100%;
+    height: 230px;
+    border-radius: 5px;
     box-shadow: 0px 2px 6px $light-gray;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
+    position: relative;
 
     .figure-carrinho {
-        box-shadow:none;
-        width:300px;
-        background-color:transparent;
+        box-shadow: none;
+        width: 300px;
+        background-color: transparent;
 
 
-        &:hover{
-            box-shadow:none;
+        &:hover {
+            box-shadow: none;
         }
     }
 
     .desc-carrinho {
 
-        .descricao.nome.carrinho{
-            font-size:20px;
+        .descricao.nome.carrinho {
+            font-size: 20px;
         }
 
-        div{
-            font-size:30px;
-            span{
-                display:unset;
-                color:#0093ff;
+        div {
+            font-size: 30px;
+
+            span {
+                display: unset;
+                color: #0093ff;
+            }
+        }
+    }
+
+    .btns-carrinho {
+
+
+        .delete {
+            position: absolute;
+            right: 15px;
+            top: 5px;
+            width: 34px;
+            text-align: center;
+            pointer-events: none;
+
+            &.material-icons:before {
+                font-size: 20px;
+                content: "delete_filled";
+                color: #333;
             }
         }
 
+        .btn-delete {
+            position: absolute;
+            right: 15px;
+            top: 5px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        .qtde-carrinho {
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+
+            .lbl-qtde {
+                font-size: 20px;
+            }
+
+            .menos, .mais, .delete {
+                width: 24px;
+                cursor: pointer;
+
+                &:hover {
+                    &.material-icons:before {
+                        color: #0093ff;
+                    }
+                }
+            }
+
+            .menos {
+
+                &.material-icons:before {
+                    font-size: 17px;
+                    content: "remove_filled";
+                    color: #333;
+                }
+            }
+
+
+
+            .mais.material-icons:before {
+                font-size: 17px;
+                content: "add_filled";
+                color: #333;
+            }
+        }
     }
 }
+
+.resumo-compra{
+    max-width:1000px;
+    padding:20px;
+}
+
+.resumo-compra-itens {
+    background: #fff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px #808080;
+
+    .button-carrinho {
+        width: 100%;
+        margin: 0;
+        float: inherit;
+        margin-top:40px;
+    }
+
+    ul {
+        text-decoration: none;
+        list-style: none;
+        padding: 0;
+
+        li {
+            padding: 20px 0;
+            display: flex;
+        }
+    }
+
+    .resumo-item {
+        &-valor, &-label {
+            width: 50%;
+            font-size: 20px;
+            float: left;
+        }
+
+        &-valor {
+            display: inline-flex;
+        }
+    }
+}   

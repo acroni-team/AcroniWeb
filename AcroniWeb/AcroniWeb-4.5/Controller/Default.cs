@@ -74,7 +74,7 @@ public class Default
                         HttpContext.Current.Session["logado"] = "0";
                     }
                 }
-                catch { }
+                catch (Exception ex){ }
             }
             else
             {

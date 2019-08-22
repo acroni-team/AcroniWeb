@@ -14,7 +14,7 @@ public class Carrinho
     {
         string CurrentUrl = HttpContext.Current.Request.Url.AbsoluteUri;
         CurrentUrl = CurrentUrl.Substring(CurrentUrl.LastIndexOf("=") + 1);
-        ds = sql.retornaDs("EXEC usp_retornaDs "+ CurrentUrl + ",loja1");
+        ds = sql.retornaDs("EXEC usp_retornaDs "+ CurrentUrl + ",carrinho");
         DataList1.DataSource = ds.Tables[0];
         DataList1.DataBind();
 
