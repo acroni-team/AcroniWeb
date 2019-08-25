@@ -144,5 +144,26 @@ public class Valida
         return retorno;
     }
 
-
+    public string vacina(string s)
+    {
+        if (s == string.Empty || s == "")
+            return s;
+        s = s.Replace("--", " ");
+        s = s.Replace("/*", " ");
+        s = s.Replace("*/", " ");
+        s = s.Replace(" or ", " ");
+        s = s.Replace(" and ", "");
+        s = s.Replace("update", "");
+        s = s.Replace("-shutdown", "");
+        s = s.Replace("--", "");
+        s = s.Replace("'or'1'='1'", "");
+        s = s.Replace("insert", "");
+        s = s.Replace("drop", "");
+        s = s.Replace("delete", "");
+        s = s.Replace("xp_", "");
+        s = s.Replace("sp_", "");
+        s = s.Replace("select", "");
+        s = s.Replace("1 union select", "");
+        return s;
+    }
 }

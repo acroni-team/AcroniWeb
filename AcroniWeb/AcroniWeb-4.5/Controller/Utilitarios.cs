@@ -12,6 +12,7 @@ using System.Web.UI.WebControls;
 public class Utilitarios
 {
     SqlCommand comando_SQL;
+    Valida v = new Valida();
     string select = "";
     public bool verificarCampoExistenteBanco(string atributo, string campo)
     {
@@ -122,7 +123,7 @@ public class Utilitarios
                 if (conexao_SQL.State == ConnectionState.Closed)
                     conexao_SQL.Open();
 
-                string insert = "INSERT INTO tblCliente (nome, usuario, senha, email, cpf) VALUES ('"+nome+"', '"+usu+"', '"+senha+"', '"+email+"', '"+cpf+"')";
+                string insert = "Exec usp_insertCliente '"+v.vacina(nome)+"', '"+v.vacina(usu)+"', '"+v.vacina(senha)+"', '"+v.vacina(email)+"', '"+v.vacina(cpf)+"'";
                 using (comando_SQL = new SqlCommand(insert, conexao_SQL))
                 {
                     comando_SQL.ExecuteNonQuery();

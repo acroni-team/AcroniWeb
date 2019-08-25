@@ -10,6 +10,7 @@ public class Default
 {
     SQLMetodos sql = new SQLMetodos();
     Utilitarios ut = new Utilitarios();
+    Valida v = new Valida();
     public void pageLoad()
     {
         //sql.update("tblVisita", "1=1", "cont = cont + 1");
@@ -38,11 +39,11 @@ public class Default
             {
                 try
                 {
-                    if (sql.selectHasRows("*", "tblCliente", "usuario=''" + txtUsu.Text + "''"))
+                    if (sql.selectHasRows("*", "tblCliente", "usuario=''" + v.vacina(txtUsu.Text) + "''"))
                     {
                         txtUsu.Attributes.Add("style", "border-color:#0093ff");
 
-                        if (sql.selectHasRows("usuario", "tblCliente", "senha=''" + txtPass.Text + "'' and usuario=''" + txtUsu.Text + "''"))
+                        if (sql.selectHasRows("usuario", "tblCliente", "senha=''" + v.vacina(txtPass.Text) + "'' and usuario=''" + v.vacina(txtUsu.Text) + "''"))
                         {
                             HttpContext.Current.Session["logado"] = "1";
                             HttpContext.Current.Session["usuario"] = txtUsu.Text;
@@ -80,15 +81,15 @@ public class Default
             {
                 try
                 {
-                    if (sql.selectHasRows("*", "tblCliente", "email=''" + txtUsu.Text + "''"))
+                    if (sql.selectHasRows("*", "tblCliente", "email=''" + v.vacina(txtUsu.Text) + "''"))
                     {
                         txtUsu.Attributes.Add("style", "border-color:#0093ff");
 
-                        if (sql.selectHasRows("usuario", "tblCliente", "senha=''" + txtPass.Text + "'' and email=''" + txtUsu.Text + "''"))
+                        if (sql.selectHasRows("usuario", "tblCliente", "senha=''" + v.vacina(txtPass.Text) + "'' and email=''" + v.vacina(txtUsu.Text) + "''"))
                         {
                             HttpContext.Current.Session["logado"] = "1";
 
-                            HttpContext.Current.Session["usuario"] = sql.selectCampos("usuario", "tblCliente", "email= ''" + txtUsu.Text + "''")[0];
+                            HttpContext.Current.Session["usuario"] = sql.selectCampos("usuario", "tblCliente", "email= ''" + v.vacina(txtUsu.Text) + "''")[0];
                             if (ckbLogin.Checked)
                             {
                                 HttpCookie cookie = new HttpCookie("credenciais");
@@ -201,7 +202,7 @@ public class Default
         }
         else if (txtSenha.Text.Equals(txtCSenha.Text))
         {
-            sql.update("tblCliente", "'email = ''" + HttpContext.Current.Session["email"] + "'''", "'senha = ''" + txtSenha.Text + "'''");
+            sql.update("tblCliente", "'email = ''" + v.vacina(HttpContext.Current.Session["email"].ToString()) + "'''", "'senha = ''" + v.vacina(txtSenha.Text) + "'''");
             HttpContext.Current.Response.Redirect("~/View/default.aspx");
         }
         else

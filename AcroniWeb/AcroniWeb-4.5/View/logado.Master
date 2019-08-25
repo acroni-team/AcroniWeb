@@ -63,7 +63,7 @@
     <script src="../assets/scripts/verificaCartao.js"></script>
     <script src="../assets/scripts/calculoFrete.js"></script>
     <script>
-        $(".textbox.focus").mask('00000-000');
+        $(".textbox.focus.loja").mask('00000-000');
     </script>
     <script>
         $(window).on('load', function () {

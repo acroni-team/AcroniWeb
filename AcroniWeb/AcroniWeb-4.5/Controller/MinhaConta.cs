@@ -307,7 +307,7 @@ public class MinhaConta
     {
         if (txtValidaEmail.Text.ToLower().Equals(HttpContext.Current.Session["codigo-mudanca"].ToString().ToLower()))
         {
-            sql.update("tblCliente", "'usuario = ''" + HttpContext.Current.Session["usuario"].ToString() + "'''", "'"+HttpContext.Current.Session["novosValores"].ToString()+"'");
+            sql.update("tblCliente", "'usuario = ''" + HttpContext.Current.Session["usuario"].ToString() + "'''", "'"+v.vacina(HttpContext.Current.Session["novosValores"].ToString())+"'");
             HttpContext.Current.Session["usuarioNovo"] = HttpContext.Current.Session["temp"];
             HttpContext.Current.Session["temp"] = null;
             HttpContext.Current.Response.Redirect("minha-conta.aspx");
