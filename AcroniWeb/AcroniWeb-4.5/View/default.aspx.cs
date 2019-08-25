@@ -22,6 +22,7 @@ namespace AcroniWeb
         string email = "";
         public string Email { get; set; }
         Default d = new Default();
+        
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -35,7 +36,7 @@ namespace AcroniWeb
 
         protected void btnEntra_Click(object sender, EventArgs e)
         {
-            d.btnEntra(txtUsu, txtPass, ckbLogin, lblMsg);
+            d.btnEntra(txtUsu, txtPass, ckbLogin, lblMsg, "~/View/galeria.aspx");
             SCPanel.Update();
         }
 

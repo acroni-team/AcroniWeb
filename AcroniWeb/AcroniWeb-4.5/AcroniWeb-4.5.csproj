@@ -186,6 +186,7 @@
     <Content Include="assets\img\team\picepalm.jpg" />
     <Content Include="assets\scripts\vendors\angular.min.js" />
     <Content Include="assets\scripts\logado.js" />
+    <Content Include="View\login-carrinho.aspx" />
     <Content Include="View\minha-conta.aspx" />
     <Content Include="View\galeria.aspx" />
     <Content Include="assets\img\apple.jpg" />
@@ -298,6 +299,13 @@
     </Compile>
     <Compile Include="View\GetImageTeclado.aspx.designer.cs">
       <DependentUpon>GetImageTeclado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\login-carrinho.aspx.cs">
+      <DependentUpon>login-carrinho.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\login-carrinho.aspx.designer.cs">
+      <DependentUpon>login-carrinho.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\minha-conta.aspx.cs">
       <DependentUpon>minha-conta.aspx</DependentUpon>

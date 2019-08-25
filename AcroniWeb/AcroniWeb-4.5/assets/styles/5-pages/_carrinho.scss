@@ -6,20 +6,24 @@
     display: flex;
     flex-direction: row;
     padding-top: 80px;
-    max-width:1300px;
+    max-width: 1300px;
     margin-bottom: 400px;
 
     &.completo {
         opacity: 1;
 
-        .right-carrinho {
+        .right-carrinho, 
+        .figure-carrinho,
+        .left-carrinho {
             opacity: 1;
         }
 
-        .figure-carrinho {
-            opacity: 1;
-        }
     }
+}
+
+.m-div.login-carrinho{
+    margin:0 auto;
+    padding:0;
 }
 
 .grid-carrinho{
@@ -31,6 +35,7 @@
 }
 
 .left-carrinho{
+    opacity: 0;
     width:60%;
     display:flex;
     flex-direction:column;
@@ -81,7 +86,7 @@
 
         .delete {
             position: absolute;
-            right: 15px;
+            right: 10px;
             top: 5px;
             width: 34px;
             text-align: center;
@@ -153,6 +158,11 @@
     }
 }
 
+.frete-h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #5f5f5f;
+}
 
 .resumo-compra {
     max-width: 1000px;

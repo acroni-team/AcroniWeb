@@ -24,5 +24,9 @@ namespace AcroniWeb_4._5.View
             Response.Redirect("carrinho.aspx?id=0");
         }
 
+        protected void btnEntra_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("login-carrinho.aspx");
+        }
     }
 }

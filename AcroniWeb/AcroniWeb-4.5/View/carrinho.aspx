@@ -46,7 +46,9 @@
                     </ItemTemplate>
                 </asp:DataList>
             </ul>
+            <h1 class="frete-h1"> Calcule o Frete </h1>
             <div class="textbox-type2-overflow eas-overflow frete-carrinho">
+                
                 <asp:TextBox ID="txtFrete" class="textbox focus textbox-eas-2 textbox-type2 carrinho txt-frete" runat="server" placeholder="Digite o CEP"></asp:TextBox>
                 <input id="freteCarrinho" class="button dark button-type2" type="button" name="name" value="Calcular" />
             </div>
@@ -90,7 +92,8 @@
                             </div>
                         </li>
                     </ul>
-                    <asp:Button ID="btnEntra" class="button dark button-carrinho" type="button" Text="Continuar" OnClientClick="loader('.lds-login','.button-login');" runat="server"  />
+                    <asp:Button ID="btnEntra" class="button dark button-carrinho" type="button" Text="Continuar" OnClientClick="loader('.lds-login','.button-login');" runat="server"  OnClick="btnEntra_Click"/>
+                    <a href="loja.aspx"><input type="button" style="margin-top:15px" class="button button-carrinho" value="Escolher mais produtos" /></a>
                 </div>
             </div>
         </div>

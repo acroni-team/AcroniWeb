@@ -50,10 +50,12 @@ nav {
         text-transform: uppercase;
         float: right;
         margin-right: 50px;
+        flex:1;
 
         li {
             text-align: center;
             display: inline-block;
+            float:right;
 
             a {
                 font-size: .875rem;

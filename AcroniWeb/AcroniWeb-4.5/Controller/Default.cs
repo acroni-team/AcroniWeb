@@ -31,7 +31,7 @@ public class Default
             }
         }
     }
-    public void btnEntra(TextBox txtUsu, TextBox txtPass, CheckBox ckbLogin, Label lblMsg)
+    public void btnEntra(TextBox txtUsu, TextBox txtPass, CheckBox ckbLogin, Label lblMsg, String redirect)
     {
         if (!string.IsNullOrEmpty(txtUsu.Text) && !string.IsNullOrEmpty(txtPass.Text))
         {
@@ -55,7 +55,7 @@ public class Default
                                 cookie.Expires = DateTime.Now.AddDays(365);
                                 HttpContext.Current.Response.Cookies.Add(cookie);
                             }
-                            HttpContext.Current.Response.Redirect("~/View/galeria.aspx");
+                            HttpContext.Current.Response.Redirect(redirect);
                             txtPass.Attributes.Add("style", "border-color:#0093ff");
                         }
                         else
