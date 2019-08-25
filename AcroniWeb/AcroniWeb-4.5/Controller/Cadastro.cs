@@ -202,7 +202,16 @@ public class Cadastro
                 else
                 {
                     ut.inserirUsuario(HttpContext.Current.Session["nome"].ToString(), HttpContext.Current.Session["usu"].ToString(), HttpContext.Current.Session["email"].ToString(), HttpContext.Current.Session["cpf"].ToString(), HttpContext.Current.Session["senha"].ToString());
-                    HttpContext.Current.Response.Redirect("~/View/default.aspx");
+                    if (HttpContext.Current.Request.QueryString["compra"] != "1") {
+                        HttpContext.Current.Response.Redirect("~/View/default.aspx");
+                    }
+                    else
+                    {
+                        HttpContext.Current.Session["usuario"] = HttpContext.Current.Session["usu"];
+                        HttpContext.Current.Session["logado"] = 1;
+                        HttpContext.Current.Response.Redirect("~/View/escolher-pagamento.aspx");
+                    }
+
                     break;
                 }
         }

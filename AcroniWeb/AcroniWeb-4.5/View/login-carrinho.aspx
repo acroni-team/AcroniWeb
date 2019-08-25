@@ -84,7 +84,7 @@
 					   <asp:Button ID="btnEntra" class="button dark button-login" type="button" Text="Entrando!" OnClientClick="loader('.lds-login','.button-login');" runat="server" OnClick="btnEntra_Click" /> 
                        <div class="lds-ellipsis lds-login"><div></div><div></div><div></div><div></div></div>
                     </div>
-                    <p id="cadastre-se">Ainda não tem conta? <a href="cadastro.aspx" class="link">Crie uma!</a></p>
+                    <p id="cadastre-se">Ainda não tem conta? <a href="cadastro.aspx?compra=1" class="link">Crie uma!</a></p>
                     </asp:Panel>
                     </ContentTemplate>
                     </asp:UpdatePanel>

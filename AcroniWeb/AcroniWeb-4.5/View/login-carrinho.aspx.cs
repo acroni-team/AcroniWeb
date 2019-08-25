@@ -18,7 +18,7 @@ namespace AcroniWeb_4._5.View
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(System.Web.HttpContext.Current.Session["logado"] == "1") {
+            if(Session["logado"].ToString() == "1") {
                 Response.Redirect("escolher-pagamento.aspx");
             }
         }
