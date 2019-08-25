@@ -24,7 +24,7 @@
     </div>
 
    <ul id="menu-items">
-        <li><asp:LinkButton runnat="server" id="carrinho" href="#" class="li-loja" runat="server" >Carrinho</asp:LinkButton></li>
+        <li><asp:LinkButton runnat="server" id="carrinho" href="carrinho.aspx?id=0" class="li-loja" runat="server" >Carrinho</asp:LinkButton></li>
         <li><a id="sobre" href="cadastro.aspx" class="li-loja" runat="server">Cadastrar</a></li>
         <%--<li><a id="cadastro" href="cadastro.aspx">Cadastrar</a></li>--%>
         
