@@ -62,9 +62,11 @@
     <script src="../assets/scripts/vendors/jquery.mask.min.js"></script>
     <script src="../assets/scripts/vendors/angular.min.js"></script>
     <script src="../assets/scripts/main.js"></script>
+    <script src="../assets/scripts/freteCarrinho.js"></script>
     <script src="../assets/scripts/calculoFrete.js"></script>
     <script>
         $(".textbox.focus.loja").mask('00000-000');
+        $(".textbox.focus.carrinho").mask('00000-000');
     </script>
     <script>
             $(window).on('load', function () {

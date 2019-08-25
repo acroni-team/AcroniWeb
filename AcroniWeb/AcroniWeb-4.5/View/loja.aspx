@@ -142,7 +142,7 @@
                                 </div>
                                 <div class="left-loja">
                                     <asp:Label ID="lblFrete" class="p" runat="server" Text="Indeciso? Calcule o frete."></asp:Label>
-                                    <asp:TextBox ID="txtFrete" class="textbox focus loja" runat="server" placeholder="Digite o frete" data-idProduto='<%# Eval("id_produto") %>' data-precoBase='<%# Eval("preco") %>'></asp:TextBox>
+                                    <asp:TextBox ID="txtFrete" class="textbox focus loja" runat="server" placeholder="Digite o CEP" data-idProduto='<%# Eval("id_produto") %>' data-precoBase='<%# Eval("preco") %>'></asp:TextBox>
                                     <p>O preço total será de:</p>
                                     <div style="margin-bottom: 20px;">
                                         <asp:Label class="preco" ID="Label3" runat="server" Text='R$'></asp:Label><asp:Label class="preco" ID="lblValorPreco" runat="server" Text='<%# Bind("preco") %>'></asp:Label></div>

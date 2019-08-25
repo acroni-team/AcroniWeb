@@ -18,11 +18,11 @@ public class Loja
             logoacr.Attributes["href"] = "galeria.aspx";
         }
 
-        ds = sql.retornaDs("EXEC usp_retornaDs 0,loja1");
+        ds = sql.retornaDs("EXEC usp_retornaDs 0,0,0,loja1");
         DataList1.DataSource = ds.Tables[0];
         DataList1.DataBind();
 
-        ds = sql.retornaDs("EXEC usp_retornaDs 0,loja2");
+        ds = sql.retornaDs("EXEC usp_retornaDs 0,0,0,loja2");
         DataList2.DataSource = ds.Tables[0];
         DataList2.DataBind();
     }

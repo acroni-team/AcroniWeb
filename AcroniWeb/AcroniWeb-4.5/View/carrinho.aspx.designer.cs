@@ -40,6 +40,15 @@ namespace AcroniWeb_4._5.View {
         protected global::System.Web.UI.WebControls.DataList DataList1;
         
         /// <summary>
+        /// Controle txtFrete.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFrete;
+        
+        /// <summary>
         /// Controle lblSub.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,24 @@ namespace AcroniWeb_4._5.View {
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPreco;
+        
+        /// <summary>
+        /// Controle Label6.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label6;
+        
+        /// <summary>
+        /// Controle lblFrete.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFrete;
         
         /// <summary>
         /// Controle Label2.

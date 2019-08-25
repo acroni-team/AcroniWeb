@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/layout.Master" AutoEventWireup="true" CodeBehind="carrinho.aspx.cs" Inherits="AcroniWeb_4._5.View.carrinho" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/layout.Master" AutoEventWireup="true" CodeBehind="carrinho.aspx.cs" Inherits="AcroniWeb_4._5.View.carrinho" EnableEventValidation="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </asp:Content>
@@ -32,7 +32,7 @@
                                      </div>
                                 </div>
                                 <div class="btns-carrinho">
-                                     <asp:Button ID="BtnDeleteItem" runat="server" class="btn-delete material-icons" Text="x"/>
+                                     <asp:Button ID="BtnDeleteItem"  OnClick="BtnDeleteItem_Click" runat="server" class="btn-delete material-icons" Text='<%# Bind("id_produto") %>'/>
                                      <i class="delete material-icons"></i>   
                                      <div class="qtde-carrinho">
                                          <i class="menos material-icons"></i> 
@@ -45,6 +45,8 @@
                     </ItemTemplate>
                 </asp:DataList>
             </ul>
+            <asp:TextBox ID="txtFrete" class="textbox focus carrinho" runat="server" placeholder="Digite o CEP"></asp:TextBox>
+            <input id="freteCarrinho" type="button" name="name" value="Calcular" />
         </div>
         <div class="right right-carrinho">
             <div class="resumo-compra">
@@ -61,15 +63,24 @@
                         </li>
                         <li class="resumo-item">
                             <div class="resumo-item-label">
+                                <asp:Label ID="Label6" runat="server" Text='Frete'></asp:Label>
+                            </div>
+                            <div class="resumo-item-valor">
+                                <asp:Label ID="lblFrete" CssClass="freteCarrinho" runat="server" Text='--'></asp:Label>
+                            </div>
+                        </li>
+                        <li class="resumo-item">
+                            <div class="resumo-item-label">
                                 <asp:Label ID="Label2" runat="server" Text='Descontos'></asp:Label>
                             </div>
                             <div class="resumo-item-valor">
                                 <asp:Label ID="Label3" runat="server" Text='R$'></asp:Label>
                             </div>
                         </li>
+                                                
                         <li class="resumo-item">
                             <div class="resumo-item-label">
-                                <asp:Label ID="Label4" runat="server" Text='Valor-Total'></asp:Label>
+                                <asp:Label ID="Label4" runat="server" Text='Valor Total'></asp:Label>
                             </div>
                             <div class="resumo-item-valor">
                                 <asp:Label ID="Label5" runat="server" Text='R$'></asp:Label>
@@ -81,4 +92,5 @@
             </div>
         </div>
     </div>
+    
 </asp:Content>
