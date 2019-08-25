@@ -5,9 +5,9 @@
 .m-div.carrinho {
     display: flex;
     flex-direction: row;
-    align-items: center;
     padding-top: 80px;
     max-width:1300px;
+    margin-bottom: 400px;
 
     &.completo {
         opacity: 1;
@@ -143,23 +143,39 @@
     }
 }
 
-.resumo-compra{
-    max-width:1000px;
-    padding:20px;
+.frete-carrinho {
+    width: auto;
+
+    .txt-frete {
+        width: 535px;
+        border: 0.15rem solid #fff;
+        border-radius:1px;
+    }
 }
+
+
+.resumo-compra {
+    max-width: 1000px;
+    padding: 0 40px;
+
+    h1 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
 
 .resumo-compra-itens {
     background: #fff;
-    width: 100%;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0px 2px 6px #808080;
+    //box-shadow: 0px 2px 6px #808080;
 
     .button-carrinho {
-        width: 100%;
         margin: 0;
         float: inherit;
         margin-top:40px;
+        width: 100%;
     }
 
     ul {

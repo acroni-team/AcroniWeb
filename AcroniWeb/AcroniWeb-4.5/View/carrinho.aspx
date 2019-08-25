@@ -7,6 +7,7 @@
        <a href="default.aspx" id="logoacr" runat="server" style="color:#0093ff">Acroni</a>
     </div>
    <ul id="menu-items">
+        <li><a id="loja" href="loja.aspx" runat="server">Loja</a></li>
         <li><a id="sobre" href="cadastro.aspx" runat="server">Cadastrar</a></li>
         <%--<li><a id="cadastro" href="cadastro.aspx">Cadastrar</a></li>--%>
    </ul>
@@ -45,12 +46,14 @@
                     </ItemTemplate>
                 </asp:DataList>
             </ul>
-            <asp:TextBox ID="txtFrete" class="textbox focus carrinho" runat="server" placeholder="Digite o CEP"></asp:TextBox>
-            <input id="freteCarrinho" type="button" name="name" value="Calcular" />
+            <div class="textbox-type2-overflow eas-overflow frete-carrinho">
+                <asp:TextBox ID="txtFrete" class="textbox focus textbox-eas-2 textbox-type2 carrinho txt-frete" runat="server" placeholder="Digite o CEP"></asp:TextBox>
+                <input id="freteCarrinho" class="button dark button-type2" type="button" name="name" value="Calcular" />
+            </div>
         </div>
         <div class="right right-carrinho">
             <div class="resumo-compra">
-                <h1 style="margin-bottom: 25px;">Resumo da compra</h1>
+                <h1>Resumo da compra</h1>
                 <div class="resumo-compra-itens">
                     <ul>
                         <li class="resumo-item">
