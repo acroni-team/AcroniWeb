@@ -10,7 +10,7 @@ public class Carrinho
 {
     SQLMetodos sql = new SQLMetodos();
     DataSet ds;
-    public void pageLoad(DataList DataList1, Label preco)
+    public void pageLoad(DataList DataList1, Label preco, Label lblTotal)
     {
         string CurrentUrl = HttpContext.Current.Request.Url.AbsoluteUri;
         CurrentUrl = CurrentUrl.Substring(CurrentUrl.LastIndexOf("=") + 1);
@@ -40,16 +40,22 @@ public class Carrinho
             {
                 ds = sql.retornaDs("EXEC usp_retornaDs " + teclados[0] + "," + teclados[1] + "," + teclados[2] + ",carrinho");
                 preco.Text = "R$" + (Convert.ToDouble(ds.Tables[0].Rows[0]["preco"]) + Convert.ToDouble(ds.Tables[0].Rows[1]["preco"]) + Convert.ToDouble(ds.Tables[0].Rows[2]["preco"]));
+                lblTotal.Text = "R$" + (Convert.ToDouble(ds.Tables[0].Rows[0]["preco"]) + Convert.ToDouble(ds.Tables[0].Rows[1]["preco"]) + Convert.ToDouble(ds.Tables[0].Rows[2]["preco"]));
+                HttpContext.Current.Session["valorF"] = (Convert.ToDouble(ds.Tables[0].Rows[0]["preco"]) + Convert.ToDouble(ds.Tables[0].Rows[1]["preco"]) + Convert.ToDouble(ds.Tables[0].Rows[2]["preco"]));
             }
             else if (teclados.Count == 2)
             {
                 ds = sql.retornaDs("EXEC usp_retornaDs " + teclados[0] + "," + teclados[1] + ",0,carrinho");
                 preco.Text = "R$" + (Convert.ToDouble(ds.Tables[0].Rows[0]["preco"]) + Convert.ToDouble(ds.Tables[0].Rows[1]["preco"]));
+                lblTotal.Text = "R$" + (Convert.ToDouble(ds.Tables[0].Rows[0]["preco"]) + Convert.ToDouble(ds.Tables[0].Rows[1]["preco"]));
+                HttpContext.Current.Session["valorF"] = (Convert.ToDouble(ds.Tables[0].Rows[0]["preco"]) + Convert.ToDouble(ds.Tables[0].Rows[1]["preco"]));
             }
             else if (teclados.Count == 1)
             {
                 ds = sql.retornaDs("EXEC usp_retornaDs " + teclados[0] + ",0,0,carrinho");
                 preco.Text = "R$" + Convert.ToDouble(ds.Tables[0].Rows[0]["preco"]);
+                lblTotal.Text = "R$" + Convert.ToDouble(ds.Tables[0].Rows[0]["preco"]);
+                HttpContext.Current.Session["valorF"] = Convert.ToDouble(ds.Tables[0].Rows[0]["preco"]);
             }
             DataList1.DataSource = ds.Tables[0];
             DataList1.DataBind();

@@ -88,7 +88,7 @@
                                 <asp:Label ID="Label4" runat="server" Text='Valor Total'></asp:Label>
                             </div>
                             <div class="resumo-item-valor">
-                                <asp:Label ID="Label5" runat="server" Text='R$'></asp:Label>
+                                <asp:Label ID="lblTotal" CssClass="carrinhoTotal" runat="server" Text='R$'></asp:Label>
                             </div>
                         </li>
                     </ul>

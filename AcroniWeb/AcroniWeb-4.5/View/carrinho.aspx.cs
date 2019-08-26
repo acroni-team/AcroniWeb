@@ -13,7 +13,7 @@ namespace AcroniWeb_4._5.View
         Carrinho c = new Carrinho();
         protected void Page_Load(object sender, EventArgs e)
         {
-            c.pageLoad(DataList1, lblPreco);
+            c.pageLoad(DataList1, lblPreco, lblTotal);
         }
 
         protected void BtnDeleteItem_Click(object sender, EventArgs e)

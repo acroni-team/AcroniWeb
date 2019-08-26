@@ -16,7 +16,7 @@
             <div class="pagamento-item-carrinho">
                 <asp:Label ID="lblValorTotalBoleto" runat="server" Text='R$ (colocar valor total aqui)'></asp:Label>
                 <p> Você poderá visualizar ou imprimir após a finalização do pedido. A data de vencimento é de X dias corridos após a conclusão do pedido. Após esta data, ele perderá a validade. </p>
-                <a href="sucesso.aspx"><input type="button" class="button dark button-carrinho" value="Concluir pedido com boleto" /></a>
+                <a href="sucesso.aspx"><asp:Button ID="btnGerar" runat="server" OnClick="btnGerar_Click" class="button dark button-carrinho" Text="Concluir pedido com boleto" /></a>
             </div>
 
         </div>
@@ -55,7 +55,7 @@
                                 <asp:Label ID="Label4" runat="server" Text='Valor Total'></asp:Label>
                             </div>
                             <div class="resumo-item-valor">
-                                <asp:Label ID="Label5" runat="server" Text='R$'></asp:Label>
+                                <asp:Label ID="lblTotal" runat="server" Text='R$'></asp:Label>
                             </div>
                         </li>
                     </ul>
