@@ -19,7 +19,7 @@
             <asp:ContentPlaceHolder ID="menu" runat="server">
             </asp:ContentPlaceHolder>
 
-            <div id="user" style="display:none" runat="server">
+            <div id="user" style="display:none;" runat="server">
                 <a href="minha-conta.aspx"><figure class="profile-wraper on-loja">
                     <div>
                         <asp:Image ID="profilePicture" class="profile-picture" runat="server"  ImageUrl='assets/img/imgperf.jpeg' ImageAlign="Middle" />

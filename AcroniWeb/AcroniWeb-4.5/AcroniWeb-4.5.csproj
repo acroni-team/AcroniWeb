@@ -141,6 +141,7 @@
     <Content Include="View\default.aspx" />
     <Content Include="View\download.aspx" />
     <Content Include="View\email.html" />
+    <Content Include="View\escolher-pagamento.aspx" />
     <Content Include="View\GetImage.aspx" />
     <Content Include="View\GetImageTeclado.aspx" />
     <Content Include="assets\img\acroni-logo.png" />
@@ -226,6 +227,7 @@
     <Content Include="View\pagamento-dc.aspx" />
     <Content Include="View\pagamento.aspx" />
     <Content Include="assets\video\Propaganda.mp4" />
+    <Content Include="View\sucesso.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -285,6 +287,13 @@
     </Compile>
     <Compile Include="View\download.aspx.designer.cs">
       <DependentUpon>download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\escolher-pagamento.aspx.cs">
+      <DependentUpon>escolher-pagamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\escolher-pagamento.aspx.designer.cs">
+      <DependentUpon>escolher-pagamento.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\GetImage.aspx.cs">
       <DependentUpon>GetImage.aspx</DependentUpon>
@@ -364,6 +373,13 @@
       <DependentUpon>pagamento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\sucesso.aspx.cs">
+      <DependentUpon>sucesso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\sucesso.aspx.designer.cs">
+      <DependentUpon>sucesso.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="View\layout.Master" />

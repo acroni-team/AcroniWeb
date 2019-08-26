@@ -43,6 +43,13 @@
     li{
         width:700px;
     }
+
+    h3{
+        text-align:left;
+        color:#5f5f5f;
+        margin-bottom:15px;
+      
+    }
 }
 
 .produto-carrinho {
@@ -211,3 +218,45 @@
         }
     }
 }   
+
+
+//Pagamento
+
+
+.pagamento-item-carrinho {
+    width: 80%;
+    padding: 20px;
+    box-shadow: 0px 2px 6px $light-gray;
+    border-radius:5px;
+    margin-bottom:30px;
+
+    span {
+        font-weight: $bold;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color:$primary-color;
+    }
+
+    input {
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+    }
+}
+
+//Sucesso
+
+
+.sucesso{
+    border:5px solid $primary-color;
+    padding: 40px;
+    display: flex;
+    flex-direction:column;
+    align-content:center;
+    border-radius:10px;
+
+    a{
+        color:$primary-color;
+    }
+}
+
