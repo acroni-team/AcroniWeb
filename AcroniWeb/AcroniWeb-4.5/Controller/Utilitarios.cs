@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net.Mail;
@@ -171,6 +172,16 @@ public class Utilitarios
         txtCampoErrado.Text = "";
         lblCampoErrado.Text = msg;
         lblCampoErrado.ForeColor = System.Drawing.Color.Red;
+
+    }
+
+    public void removeErrorMessageByLbl(string msg, TextBox txtCampoErrado, Label lblCampoErrado)
+    {
+
+        txtCampoErrado.BorderColor = Color.Transparent;
+        txtCampoErrado.Text = "";
+        lblCampoErrado.Text = msg;
+        lblCampoErrado.ForeColor = Color.FromArgb(1, 114, 118, 125);
 
     }
 

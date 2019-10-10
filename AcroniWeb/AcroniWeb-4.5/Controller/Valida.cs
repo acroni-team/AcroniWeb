@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -18,7 +19,13 @@ public class Valida
         return ret;
     }
 
+    public bool Luhn(string digits)
+    {
+        return digits.All(char.IsDigit) && digits.Reverse().Select(c => c - 48).Select((thisNum, i) => i % 2 == 0 ? thisNum : ((thisNum *= 2) > 9 ? thisNum - 9 : thisNum)).Sum() % 10 == 0;
+    }
+
     
+
     public bool validarCPF(String CPF)
     {
         int verify = 0, verifyCheck = 0, cont = 0;

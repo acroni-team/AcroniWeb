@@ -111,6 +111,18 @@ public class SQLMetodos
         }
     }
 
+    public void insertCompra(string marca)
+    {
+        string delete = "EXEC usp_insertMarca " + marca;
+        using (SqlConnection conexao_SQL = new SqlConnection(Conexao.nome_conexao))
+        {
+            if (conexao_SQL.State == ConnectionState.Closed)
+                conexao_SQL.Open();
+            using (SqlCommand comando_sql = new SqlCommand(delete, conexao_SQL))
+                comando_sql.ExecuteNonQuery();
+        }
+    }
+
     public DataSet retornaDs(string select)
     {
         DataSet ds = new DataSet();

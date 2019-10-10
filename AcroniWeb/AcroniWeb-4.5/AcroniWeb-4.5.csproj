@@ -227,6 +227,7 @@
     <Content Include="View\pagamento-dc.aspx" />
     <Content Include="View\pagamento.aspx" />
     <Content Include="assets\video\Propaganda.mp4" />
+    <Content Include="View\sucesso-cc.aspx" />
     <Content Include="View\sucesso.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -373,6 +374,13 @@
       <DependentUpon>pagamento.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\sucesso-cc.aspx.cs">
+      <DependentUpon>sucesso-cc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\sucesso-cc.aspx.designer.cs">
+      <DependentUpon>sucesso-cc.aspx</DependentUpon>
+    </Compile>
     <Compile Include="View\sucesso.aspx.cs">
       <DependentUpon>sucesso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
